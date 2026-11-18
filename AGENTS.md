@@ -5,6 +5,7 @@
 - `src/house.template.html` 为主模板，`src/interior.js` 管理分房间材质、门与整栋透明结构；`src/environment.js` 管理室外环境。
 - `python src/build_house.py` 生成 `docs/index.html`，最终页面必须保持单 HTML、自包含、无 CDN、无外部资源请求。
 - 编辑源码后重新构建。不要只改生成的 HTML。
+- 用户要求：每次修改完成后，进行对应验证，提交 Git 并推送到 GitHub；展示页变更需同步更新 `docs/index.html` 并检查 Pages 发布。
 - 所有墙体必须横平竖直；照片的斜线是纸面褶皱。
 - 保留微信和手机适配，设置面板默认收起、canvas 显式视口尺寸及 WebGL1 兼容。
 - 修改几何或门洞后，通过浏览器 `houseBakeSource()` 导出 `src/bake-source.json`，再依次运行 `bake_lighting.py`、`bake_sun.py`、`build_house.py`。

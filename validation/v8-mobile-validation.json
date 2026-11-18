@@ -1,0 +1,182 @@
+[
+  {
+    "name": "android",
+    "controls": {
+      "door": {
+        "id": "master",
+        "name": "主卧门",
+        "open": false,
+        "type": "sliding",
+        "transparent": true,
+        "angle": 0,
+        "hingeSide": "right",
+        "hinge": [
+          -0.06299999999999994,
+          0,
+          1.9499999999999993
+        ],
+        "opening": [
+          1.95,
+          3.115
+        ],
+        "wallClearance": 0.054,
+        "leafFrameOverlap": 0.022
+      },
+      "scrollWidth": 360,
+      "width": 360
+    },
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "diagnostics": {
+        "version": "8.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          720,
+          1560
+        ],
+        "viewport": [
+          360,
+          780
+        ],
+        "shaderCount": 28,
+        "drawCalls": 339
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "maps": [
+        146,
+        146
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "ios",
+    "controls": {
+      "door": {
+        "id": "master",
+        "name": "主卧门",
+        "open": false,
+        "type": "sliding",
+        "transparent": true,
+        "angle": 0,
+        "hingeSide": "right",
+        "hinge": [
+          -0.06299999999999994,
+          0,
+          1.9499999999999993
+        ],
+        "opening": [
+          1.95,
+          3.115
+        ],
+        "wallClearance": 0.054,
+        "leafFrameOverlap": 0.022
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "diagnostics": {
+        "version": "8.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          780,
+          1688
+        ],
+        "viewport": [
+          390,
+          844
+        ],
+        "shaderCount": 28,
+        "drawCalls": 339
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "maps": [
+        146,
+        146
+      ]
+    },
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "controls": {
+      "door": {
+        "id": "master",
+        "name": "主卧门",
+        "open": false,
+        "type": "sliding",
+        "transparent": true,
+        "angle": 0,
+        "hingeSide": "right",
+        "hinge": [
+          -0.06299999999999994,
+          0,
+          1.9499999999999993
+        ],
+        "opening": [
+          1.95,
+          3.115
+        ],
+        "wallClearance": 0.054,
+        "leafFrameOverlap": 0.022
+      },
+      "scrollWidth": 740,
+      "width": 740
+    },
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "diagnostics": {
+        "version": "8.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          1480,
+          720
+        ],
+        "viewport": [
+          740,
+          360
+        ],
+        "shaderCount": 28,
+        "drawCalls": 391
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "maps": [
+        146,
+        146
+      ]
+    },
+    "errors": []
+  }
+]

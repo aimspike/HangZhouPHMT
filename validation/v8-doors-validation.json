@@ -1,0 +1,180 @@
+{
+  "hinged": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "sliding": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "transparency": [
+    {
+      "id": "entry",
+      "transparent": true
+    },
+    {
+      "id": "study",
+      "transparent": true
+    },
+    {
+      "id": "kitchen",
+      "transparent": true
+    },
+    {
+      "id": "bath",
+      "transparent": true
+    },
+    {
+      "id": "storage",
+      "transparent": true
+    },
+    {
+      "id": "master",
+      "transparent": true
+    },
+    {
+      "id": "second",
+      "transparent": true
+    }
+  ],
+  "bedroom": [
+    {
+      "id": "master",
+      "name": "主卧门",
+      "open": true,
+      "type": "hinged",
+      "transparent": false,
+      "angle": 1.5707963267948966,
+      "hingeSide": "right",
+      "hinge": [
+        -0.06299999999999994,
+        0,
+        1.9499999999999993
+      ],
+      "opening": [
+        1.95,
+        3.115
+      ],
+      "wallClearance": 0.054,
+      "leafFrameOverlap": 0.022
+    },
+    {
+      "id": "second",
+      "name": "次卧门",
+      "open": true,
+      "type": "hinged",
+      "transparent": false,
+      "angle": -1.5707963267948966,
+      "hingeSide": "left",
+      "hinge": [
+        0.26300000000000007,
+        0,
+        1.9499999999999993
+      ],
+      "opening": [
+        3.285,
+        4.4
+      ],
+      "wallClearance": 0.054,
+      "leafFrameOverlap": 0.022
+    }
+  ],
+  "errors": {
+    "errors": [],
+    "shader": []
+  }
+}
