@@ -1,0 +1,22 @@
+"""Build the complete offline viewer and GitHub Pages assets, with no CDN."""
+from pathlib import Path
+import shutil
+
+SOURCE = Path(__file__).resolve().parent
+ROOT = SOURCE.parent
+OUTPUT = ROOT / 'docs'
+OUTPUT.mkdir(exist_ok=True)
+html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
+html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js')]:
+    html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
+html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
+html = html.replace('/*__BAKED_LIGHTING__*/', (SOURCE/'baked-lighting.json').read_text(encoding='utf-8'))
+if '/*__' in html:
+    raise RuntimeError('Unresolved template marker')
+(OUTPUT/'index.html').write_text(html, encoding='utf-8')
+(OUTPUT/'.nojekyll').touch()
+(OUTPUT/'plans').mkdir(exist_ok=True)
+for extension in ['svg','pdf','png']:
+    shutil.copy2(ROOT/('plans/restored-floor-plan.'+extension), OUTPUT/'plans'/('restored-floor-plan.'+extension))
+print(f'Built {OUTPUT / "index.html"} ({len(html.encode("utf-8")):,} bytes)')

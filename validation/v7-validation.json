@@ -1,0 +1,123 @@
+{
+  "desktop": {
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "diagnostics": {
+      "version": "7.0",
+      "antialias": true,
+      "fxaa": true,
+      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+      "maxTextureUnits": 16,
+      "contextLost": false,
+      "canvas": [
+        1920,
+        1350
+      ],
+      "viewport": [
+        1280,
+        900
+      ],
+      "shaderCount": 15,
+      "drawCalls": 298
+    },
+    "roof": {
+      "gaps": 0,
+      "examples": []
+    },
+    "doors": [
+      {
+        "id": "entry",
+        "name": "入户门",
+        "open": false,
+        "angle": 0
+      },
+      {
+        "id": "study",
+        "name": "书房门",
+        "open": true,
+        "angle": -1.5079644737231006
+      },
+      {
+        "id": "kitchen",
+        "name": "厨房门",
+        "open": true,
+        "angle": -1.5079644737231006
+      },
+      {
+        "id": "bath",
+        "name": "卫生间门",
+        "open": true,
+        "angle": 1.5079644737231006
+      },
+      {
+        "id": "storage",
+        "name": "储藏间门",
+        "open": true,
+        "angle": -1.5079644737231006
+      },
+      {
+        "id": "master",
+        "name": "主卧门",
+        "open": true,
+        "angle": -1.5079644737231006
+      },
+      {
+        "id": "second",
+        "name": "次卧门",
+        "open": true,
+        "angle": -1.5079644737231006
+      }
+    ],
+    "maps": [
+      146,
+      146
+    ]
+  },
+  "doors": {
+    "closed": true,
+    "opened": true
+  },
+  "isolated": {
+    "kitchen": {
+      "wall": {
+        "color": "#6c98b2",
+        "material": "plaster"
+      },
+      "ceiling": {
+        "color": "#e5e5dc",
+        "material": "paint"
+      },
+      "floor": {
+        "color": "#c5d0c9",
+        "material": "tile"
+      }
+    },
+    "study": {
+      "wall": {
+        "color": "#e8ece5",
+        "material": "paint"
+      },
+      "ceiling": {
+        "color": "#e5e5dc",
+        "material": "paint"
+      },
+      "floor": {
+        "color": "#d7c9a7",
+        "material": "wood"
+      }
+    }
+  },
+  "indoor": {
+    "mode": "walk",
+    "ceiling": true,
+    "eyeHeight": 1.5,
+    "fov": 105,
+    "building": false
+  },
+  "errors": {
+    "errors": [],
+    "console": []
+  }
+}

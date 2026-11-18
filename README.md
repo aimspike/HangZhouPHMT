@@ -1,0 +1,54 @@
+# 杭州 89-A 户型浏览器
+
+根据用户提供的户型照片复原正交平面图，并生成可离线打开的单文件 3D 网页。
+
+[在线浏览](https://aimspike.github.io/hangzhou-89a-house-viewer/) · [矢量 SVG](plans/restored-floor-plan.svg) · [矢量 PDF](plans/restored-floor-plan.pdf)
+
+## 使用
+
+下载 `docs/index.html`，直接在支持 WebGL 的浏览器打开。手机微信建议点击在线浏览链接。可切换三维、平面、室内；拖动转向、双指缩放，室内使用方向按钮或电脑 WASD / 方向键移动。右上角设置可修改各房间三类表面的颜色和材质、门的开关、FOV、眼高、灯光和楼层。
+
+清晨、正午、黄昏、夜晚采用杭州和阳台南偏西 10° 的太阳方向。默认所在楼层 18 层、层高 3m；透明楼栋默认 26 层，可调整。“整栋建筑”查看整体，“重置视角”返回户型。
+
+## 文件
+
+| 路径 | 内容 |
+| --- | --- |
+| `docs/index.html` | 最终自包含 HTML，GitHub Pages 入口 |
+| `plans/` | 复原平面图 SVG、PDF、PNG |
+| `references/` | 用户提供的两张参考图片 |
+| `src/` | 模板、脚本、内嵌依赖和烘焙数据 |
+| `context/` | 会话需求、实现说明和续接上下文 |
+| `validation/` | 浏览器验证记录与截图 |
+| `.local/` | 完整会话记录本地快照，已被 Git 忽略 |
+
+## 构建与维护
+
+Python 3.10+ 构建无需额外依赖：
+
+```sh
+python src/build_house.py
+python -m http.server 8879 --directory docs
+```
+
+访问 `http://localhost:8879/`。重新计算光照或生成平面图先安装 `pip install -r requirements.txt`。平面图字体默认使用 Windows 微软雅黑；其他系统需将 `HOUSE_FONT` 设置为支持中文的 TTF/TTC 文件。
+
+几何变化时，在已启动网页的开发者工具导出 `JSON.stringify(houseBakeSource())` 至 `src/bake-source.json`，依次运行：
+
+```sh
+python src/bake_lighting.py
+python src/bake_sun.py
+python src/build_house.py
+```
+
+更改太阳参考日期或朝向时先修改并运行 `src/make_solar.py`，再重算太阳光照。
+
+## 发布
+
+GitHub Pages 从 `main` 分支的 `/docs` 目录发布。修改后构建、提交并推送即可更新。运行时没有 CDN、在线字体、远程贴图或打包服务依赖。第三方库授权见 `licenses/THIRD_PARTY.md`。
+
+## 精度和验证范围
+
+室内几何来自照片复原；墙高、家具及未标注尺寸为估算，不能用于施工。整栋轮廓参照用户整层示意图，左端是本户型；楼栋总层数和邻户内部是示意。日照是 2026-11-18 的近似太阳位置，云、城市、小区均为程序化示意环境。
+
+已进行 Chromium 桌面、Android / iPhone 微信 UA、横竖屏和 WebGL1 模拟验证；尚未进行手机微信真机测试。材质设置即时生效，刷新恢复默认。

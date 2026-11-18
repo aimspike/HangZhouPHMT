@@ -1,0 +1,155 @@
+[
+  {
+    "name": "wechat-android",
+    "initial": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 780,
+        "top": 0,
+        "right": 360,
+        "bottom": 780,
+        "left": 0
+      },
+      "sidebarHidden": true,
+      "diagnostics": {
+        "version": "7.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          720,
+          1560
+        ],
+        "viewport": [
+          360,
+          780
+        ],
+        "shaderCount": 15,
+        "drawCalls": 298
+      }
+    },
+    "settings": {
+      "x": 10,
+      "y": 239.609375,
+      "width": 340,
+      "height": 530.390625
+    },
+    "indoor": {
+      "mode": "walk",
+      "roof": true,
+      "fov": 105,
+      "frames": 21
+    },
+    "errors": []
+  },
+  {
+    "name": "wechat-ios",
+    "initial": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "sidebarHidden": true,
+      "diagnostics": {
+        "version": "7.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          780,
+          1688
+        ],
+        "viewport": [
+          390,
+          844
+        ],
+        "shaderCount": 15,
+        "drawCalls": 298
+      }
+    },
+    "settings": {
+      "x": 10,
+      "y": 260.09375,
+      "width": 370,
+      "height": 573.90625
+    },
+    "indoor": {
+      "mode": "walk",
+      "roof": true,
+      "fov": 105,
+      "frames": 20
+    },
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "initial": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 360,
+        "top": 0,
+        "right": 740,
+        "bottom": 360,
+        "left": 0
+      },
+      "sidebarHidden": true,
+      "diagnostics": {
+        "version": "7.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          1480,
+          720
+        ],
+        "viewport": [
+          740,
+          360
+        ],
+        "shaderCount": 15,
+        "drawCalls": 298
+      }
+    },
+    "settings": {
+      "x": 390,
+      "y": 70,
+      "width": 340,
+      "height": 280
+    },
+    "indoor": {
+      "mode": "walk",
+      "roof": true,
+      "fov": 105,
+      "frames": 20
+    },
+    "errors": []
+  }
+]
