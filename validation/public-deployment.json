@@ -1,0 +1,60 @@
+{
+  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/",
+  "httpStatus": 200,
+  "boot": {
+    "ready": true,
+    "failed": false
+  },
+  "diagnostics": {
+    "version": "8.0",
+    "antialias": true,
+    "fxaa": true,
+    "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+    "maxTextureUnits": 16,
+    "contextLost": false,
+    "canvas": [
+      780,
+      1688
+    ],
+    "viewport": [
+      390,
+      844
+    ],
+    "shaderCount": 15,
+    "drawCalls": 368
+  },
+  "externalDependencies": [],
+  "errors": [],
+  "door": {
+    "id": "second",
+    "name": "次卧门",
+    "open": true,
+    "type": "sliding",
+    "transparent": true,
+    "angle": -1.5707963267948966,
+    "hingeSide": "left",
+    "hinge": [
+      0.26300000000000007,
+      0,
+      1.9499999999999993
+    ],
+    "opening": [
+      3.285,
+      4.4
+    ],
+    "wallClearance": 0.054,
+    "leafFrameOverlap": 0.022
+  },
+  "indoor": {
+    "mode": "walk",
+    "roof": true,
+    "coverage": {
+      "gaps": 0,
+      "examples": []
+    },
+    "maps": [
+      146,
+      146
+    ]
+  }
+}
