@@ -1,0 +1,122 @@
+[
+  {
+    "viewport": {
+      "width": 360,
+      "height": 780
+    },
+    "selectCount": 4,
+    "errors": [],
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "maps": [
+        146,
+        146
+      ],
+      "version": "9.0",
+      "doors": [
+        {
+          "id": "entry",
+          "type": "hinged",
+          "allowed": false
+        },
+        {
+          "id": "study",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "kitchen",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "bath",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "storage",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "master",
+          "type": "hinged",
+          "allowed": false
+        },
+        {
+          "id": "second",
+          "type": "hinged",
+          "allowed": false
+        }
+      ],
+      "canvas": [
+        360,
+        780
+      ]
+    }
+  },
+  {
+    "viewport": {
+      "width": 740,
+      "height": 360
+    },
+    "selectCount": 4,
+    "errors": [],
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "maps": [
+        146,
+        146
+      ],
+      "version": "9.0",
+      "doors": [
+        {
+          "id": "entry",
+          "type": "hinged",
+          "allowed": false
+        },
+        {
+          "id": "study",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "kitchen",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "bath",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "storage",
+          "type": "sliding",
+          "allowed": true
+        },
+        {
+          "id": "master",
+          "type": "hinged",
+          "allowed": false
+        },
+        {
+          "id": "second",
+          "type": "hinged",
+          "allowed": false
+        }
+      ],
+      "canvas": [
+        740,
+        360
+      ]
+    }
+  }
+]

@@ -1,6 +1,6 @@
 # Codex 续接上下文
 
-更新时间：2026-11-18。当前版本 V8。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。
+更新时间：2026-11-18。当前版本 V9。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。
 
 ## 模型与环境
 
@@ -47,3 +47,15 @@
 - 木纹改为同一灰度值控制RGB，去除彩色噪声，降低色差、拼缝和凹凸；墙面竖向木纹，地板横向木纹，默认色改成低饱和浅橡木。
 - 用户明确要求：每次修改完成、验证后提交并推送GitHub，更新Pages。已写入AGENTS.md。
 - Codex app-server已创建项目并将本会话projectId关联到它；当前桌面侧栏未成功登记，本轮运行目录仍为原工作区；需在应用“添加项目”选择独立目录。新项目完整文件在独立目录，下一次在新目录继续可直接读取上下文。
+
+## V9 门型与安装位置（覆盖V8选择规则）
+
+用户确认：两间卧室不能推拉，只能贴墙开合。master/second不再显示门型下拉框，维持原门洞。entry仍平开。study/kitchen/bath/storage默认sliding，可切回平开；推拉双扇向同一侧移出洞口叠合，安装在房间外墙面，书房向左、厨房向右、卫生间向左、储藏间向右。外侧双轨避开门框，把手采用薄型内嵌造型。
+
+诊断houseViewer.doorMotion()对每扇推拉门25步、其他门型及开合5625种状态进行包络检查；墙体、门框与其他门无相交，四扇均在房间外。另检查完整移动扫掠包围盒，也无相交。houseViewer.doorClosure()每扇1426条射线，默认门型均无缺口。记录见validation/v9-motion-validation.json。
+
+## D盘迁移
+
+项目现位于 `D:/hangzhou-89a-house-viewer`，原位置为 `C:/Users/Admin/Documents/Codex/hangzhou-89a-house-viewer`。全部源码、图纸、Git历史及完整本地会话备份已迁移；早期工作区work/outputs归档在 `.local/legacy-workspace/`。183个项目文件及1086个历史文件复制后逐一SHA256核对一致，再在D盘重新构建和验证。
+
+后续命令与编辑明确使用D盘项目，切勿继续改历史C盘目录。桌面本轮cwd不会自动切换；后续从D盘目录打开项目。

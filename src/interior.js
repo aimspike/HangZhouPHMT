@@ -73,7 +73,7 @@ function createHouseDoors(options){
   }
  }
  function add(config){
-  const item={...config,open:!config.entry,type:'hinged',transparent:false};
+  const item={...config,open:!config.entry,type:config.allowSliding?'sliding':'hinged',transparent:false};
   item.width=item.end-item.start;
   item.materials={wood:clone(normalWood),entry:clone(entryFinish),frame:clone(config.entry?entryFinish:frameFinish),bronze:clone(bronze),black:clone(black),seal:clone(seal)};
   const container=item.container=new THREE.Group();container.position.set(config.axis==='x'?config.start:config.fixed,0,config.axis==='x'?config.fixed:config.start);container.rotation.y=config.axis==='z'?-Math.PI/2:0;group.add(container);
@@ -92,32 +92,33 @@ function createHouseDoors(options){
   const span=leafRight-leafLeft;leaf(item,pivot,hingeLeft?0:-span,hingeLeft?span:0,.048,config.entry);
   item.hingedSegments=[{parent:pivot,a:hingeLeft?0:-span,b:hingeLeft?span:0,z:0}];
   const sliding=item.sliding=new THREE.Group();container.add(sliding);
-  const panelWidth=W/2+.014;
+  const run=(W-.056)/2,panelWidth=run+.02,outside=config.outside||1;
+  item.closedPositions=[.028,.028+run-.02];
+  item.parkPosition=config.stack==='left'?-panelWidth-.04:W+.04;
   item.panels=[];
   for(let i=0;i<2;i++){
-   const panel=new THREE.Group();panel.position.set(i===0?.028:W/2-.014,0,i===0?-.026:.026);sliding.add(panel);
-   box(panel,panelWidth/2,1.045,0,panelWidth,2.066,.027,item.materials.wood);
-   for(const face of [-1,1])box(panel,i===0?.075:panelWidth-.075,1.02,face*.023,.025,.18,.012,item.materials.bronze);
+   const panel=new THREE.Group();panel.position.set(item.closedPositions[i],0,outside*(depth/2+.0535+i*.035));sliding.add(panel);
+   box(panel,panelWidth/2,(leafTop+.001)/2,0,panelWidth,leafTop-.001,.022,item.materials.wood);
+   for(const face of [-1,1])box(panel,config.stack==='left'?panelWidth-.055:.055,1.02,face*.014,.024,.17,.006,item.materials.bronze);
    item.panels.push(panel);
   }
-  box(sliding,W/2,2.075,0,W+.055,.037,.14,item.materials.bronze);
-  box(sliding,W/2,.016,0,W,.016,.13,item.materials.bronze);
+  const railStart=Math.min(-.045,item.parkPosition-.035),railEnd=Math.max(W+.045,item.parkPosition+panelWidth+.035);
+  box(sliding,(railStart+railEnd)/2,2.183,outside*(depth/2+.076),railEnd-railStart,.055,.083,item.materials.bronze);
   item.panelWidth=panelWidth;items.push(item);
  }
  add({id:'entry',name:'入户门',axis:'z',fixed:6.2,start:2.9,end:3.94,depth:.18,hingeSide:'left',angle:Math.PI/2,entry:true});
- add({id:'study',name:'书房门',axis:'x',fixed:2.9,start:3.24,end:4.14,depth:.115,hingeSide:'right',angle:-Math.PI/2,stack:'left'});
- add({id:'kitchen',name:'厨房门',axis:'x',fixed:2.9,start:4.38,end:5.4,depth:.16,hingeSide:'left',angle:Math.PI/2,stack:'right'});
- add({id:'bath',name:'卫生间门',axis:'z',fixed:1.8,start:7.28,end:8.12,depth:.085,hingeSide:'right',angle:Math.PI/2,stack:'left'});
- add({id:'storage',name:'储藏间门',axis:'z',fixed:4.4,start:6.85,end:7.6,depth:.085,hingeSide:'left',angle:Math.PI/2,stack:'right'});
+ add({id:'study',name:'书房门',axis:'x',fixed:2.9,start:3.24,end:4.14,depth:.115,hingeSide:'right',angle:-Math.PI/2,stack:'left',outside:1,allowSliding:true});
+ add({id:'kitchen',name:'厨房门',axis:'x',fixed:2.9,start:4.38,end:5.4,depth:.16,hingeSide:'left',angle:Math.PI/2,stack:'right',outside:1,allowSliding:true});
+ add({id:'bath',name:'卫生间门',axis:'z',fixed:1.8,start:7.28,end:8.12,depth:.085,hingeSide:'right',angle:Math.PI/2,stack:'left',outside:-1,allowSliding:true});
+ add({id:'storage',name:'储藏间门',axis:'z',fixed:4.4,start:6.85,end:7.6,depth:.085,hingeSide:'left',angle:Math.PI/2,stack:'right',outside:1,allowSliding:true});
  // The centre partition is 170 mm thick. Wider hinge jambs leave room for
  // the handle and a stopper when each bedroom leaf parks against that wall.
  add({id:'master',name:'主卧门',axis:'x',fixed:8.2,start:1.95,end:3.115,depth:.085,hingeSide:'right',angle:Math.PI/2,stack:'left',sideWall:3.115});
  add({id:'second',name:'次卧门',axis:'x',fixed:8.2,start:3.285,end:4.4,depth:.085,hingeSide:'left',angle:-Math.PI/2,stack:'right',sideWall:3.285});
  let liveSegments=[];
- function pose(item){
-  item.hinged.visible=item.type==='hinged';item.sliding.visible=item.type==='sliding';item.hinge.rotation.y=item.open?item.angle:0;
-  item.panels[0].position.x=.028+(item.type==='sliding'&&item.open&&item.stack!=='left'?item.width/2-.042:0);
-  item.panels[1].position.x=item.width/2-.014-(item.type==='sliding'&&item.open&&item.stack==='left'?item.width/2-.042:0);
+ function pose(item,progress=item.open?1:0){
+  item.hinged.visible=item.type==='hinged';item.sliding.visible=item.type==='sliding';item.hinge.rotation.y=progress*item.angle;
+  item.panels.forEach((panel,i)=>panel.position.x=THREE.MathUtils.lerp(item.closedPositions[i],item.parkPosition,progress));
  }
  function updateSegments(){
   for(const item of items)pose(item);options.root.updateMatrixWorld(true);liveSegments=[];
@@ -136,7 +137,7 @@ function createHouseDoors(options){
   const row=document.createElement('div');row.className='door-row';row.dataset.doorRow=item.id;
   const head=document.createElement('div');head.className='door-row-head';const name=document.createElement('span');name.textContent=item.name;const button=document.createElement('button');button.className='door-button';button.dataset.door=item.id;button.onclick=()=>{item.open=!item.open;sync();};head.append(name,button);row.appendChild(head);
   const controls=document.createElement('div');controls.className='door-row-controls';
-  if(!item.entry){const select=document.createElement('select');select.setAttribute('aria-label',item.name+'形式');for(const [value,label] of [['hinged','平开门'],['sliding','双扇推拉门']]){const option=document.createElement('option');option.value=value;option.textContent=label;select.appendChild(option);}select.onchange=()=>{item.type=select.value;sync();};controls.appendChild(select);}else{const style=document.createElement('span');style.className='door-style';style.textContent='深木色 · 古铜五金';controls.appendChild(style);}
+  if(item.allowSliding){const select=document.createElement('select');select.setAttribute('aria-label',item.name+'形式');for(const [value,label] of [['hinged','平开门'],['sliding','房外单侧推拉']]){const option=document.createElement('option');option.value=value;option.textContent=label;select.appendChild(option);}select.onchange=()=>{item.type=select.value;sync();};controls.appendChild(select);}else{const style=document.createElement('span');style.className='door-style';style.textContent=item.entry?'深木色 · 古铜五金':'贴墙平开 · 90°';controls.appendChild(style);}
   const label=document.createElement('label');label.className='door-transparent';const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.setAttribute('aria-label',item.name+'透明显示');checkbox.onchange=()=>{item.transparent=checkbox.checked;sync();};label.append(checkbox,document.createTextNode('透明'));controls.appendChild(label);row.appendChild(controls);document.getElementById('doorList').appendChild(row);
  }
  document.getElementById('openAllDoors').onclick=()=>{items.forEach(i=>i.open=true);sync();};document.getElementById('closeAllDoors').onclick=()=>{items.forEach(i=>i.open=false);sync();};document.getElementById('transparentAllDoors').onchange=e=>{items.forEach(i=>i.transparent=e.target.checked);sync();};sync();
@@ -145,7 +146,29 @@ function createHouseDoors(options){
   const ray=new THREE.Raycaster(),results=[];for(const item of items){let misses=0,total=0;const examples=[];for(let u=0;u<=30;u++)for(let v=0;v<=45;v++){const x=.004+(item.width-.008)*u/30,y=.004+(h-.008)*v/45,origin=new THREE.Vector3(x,y,-.32).applyMatrix4(item.container.matrixWorld),direction=new THREE.Vector3(0,0,1).transformDirection(item.container.matrixWorld);ray.set(origin,direction);ray.far=.7;const hits=ray.intersectObject(item.container,true).filter(hit=>hit.object.visible&&hit.object.parent.visible&&hit.object.parent.parent.visible);total++;if(!hits.length){misses++;if(examples.length<3)examples.push([x,y]);}}results.push({id:item.id,type:item.type,rays:total,gaps:misses,examples});}
   items.forEach((item,i)=>item.open=previous[i]);updateSegments();return results;
  }
- return {segments,update(mode){group.visible=mode!=='plan';},validateClosed,clearAt(x,z){for(const s of liveSegments){const dx=s.b.x-s.a.x,dz=s.b.z-s.a.z,t=THREE.MathUtils.clamp(((x-s.a.x)*dx+(z-s.a.z)*dz)/(dx*dx+dz*dz),0,1);if(Math.hypot(x-s.a.x-t*dx,z-s.a.z-t*dz)<s.radius)return false;}return true;},get diagnostics(){return items.map(item=>({id:item.id,name:item.name,open:item.open,type:item.type,transparent:item.transparent,angle:item.hinge.rotation.y,hingeSide:item.hingeSide,hinge:new THREE.Vector3().setFromMatrixPosition(item.hinge.matrixWorld).toArray(),opening:[item.start,item.end],wallClearance:item.sideWall===undefined?null:.054,leafFrameOverlap:overlap}));}};
+ function validateMotion(){
+  const previous=items.map(item=>({type:item.type,open:item.open})),results=[];
+  options.root.updateMatrixWorld(true);
+  const boxFor=object=>new THREE.Box3().setFromObject(object).expandByScalar(-.0005);
+  const walls=(options.walls||[]).filter(mesh=>mesh.userData.surface==='wall').map(mesh=>({id:'wall-'+mesh.userData.bakeId,box:boxFor(mesh)}));
+  const meshBoxes=object=>{const list=[];object.traverse(mesh=>{if(mesh.isMesh)list.push(boxFor(mesh));});return list;};
+  const bodyBoxes=item=>item.type==='hinged'?meshBoxes(item.hinge):item.panels.flatMap(meshBoxes);
+  const inverse=options.root.matrixWorld.clone().invert();
+  for(const target of items.filter(item=>item.allowSliding)){
+   target.type='sliding';const collisions=new Set(),envelopeCollisions=new Set(),sweep=new THREE.Box3(),otherSweeps={};let samples=0,outside=true;
+   const room=options.rooms.find(room=>room.id===target.id);
+   for(let step=0;step<=24;step++){
+    pose(target,step/24);options.root.updateMatrixWorld(true);const moving=bodyBoxes(target);
+    for(const panel of target.panels){const b=boxFor(panel).applyMatrix4(inverse);if(!(b.max.x<=room.x||b.min.x>=room.x+room.w||b.max.z<=room.z||b.min.z>=room.z+room.d))outside=false;}
+    for(const b of moving){sweep.union(b);for(const wall of walls)if(b.intersectsBox(wall.box))collisions.add(wall.id);for(const other of items)for(const frame of other.container.children.filter(object=>object.isMesh))if(b.intersectsBox(boxFor(frame)))collisions.add(other.id+'-frame');}
+    for(const other of items){if(other===target)continue;for(const type of other.allowSliding?['hinged','sliding']:['hinged']){other.type=type;const key=other.id+'-'+type;if(!otherSweeps[key])otherSweeps[key]=new THREE.Box3();for(let otherStep=0;otherStep<=24;otherStep++){pose(other,otherStep/24);options.root.updateMatrixWorld(true);const obstacles=bodyBoxes(other);for(const b of obstacles)otherSweeps[key].union(b);samples++;if(moving.some(a=>obstacles.some(b=>a.intersectsBox(b))))collisions.add(key);}}}
+   }
+   for(const wall of walls)if(sweep.intersectsBox(wall.box))envelopeCollisions.add(wall.id);for(const [key,b] of Object.entries(otherSweeps))if(sweep.intersectsBox(b))envelopeCollisions.add(key);
+   results.push({id:target.id,pathSteps:25,otherDoorStates:samples,outsideRoom:outside,stackSide:target.stack,collisions:[...collisions],sweepEnvelopeCollisions:[...envelopeCollisions]});
+  }
+  items.forEach((item,i)=>Object.assign(item,previous[i]));updateSegments();return results;
+ }
+ return {segments,update(mode){group.visible=mode!=='plan';},validateClosed,validateMotion,clearAt(x,z){for(const s of liveSegments){const dx=s.b.x-s.a.x,dz=s.b.z-s.a.z,t=THREE.MathUtils.clamp(((x-s.a.x)*dx+(z-s.a.z)*dz)/(dx*dx+dz*dz),0,1);if(Math.hypot(x-s.a.x-t*dx,z-s.a.z-t*dz)<s.radius)return false;}return true;},get diagnostics(){return items.map(item=>({id:item.id,name:item.name,open:item.open,type:item.type,transparent:item.transparent,angle:item.hinge.rotation.y,hingeSide:item.hingeSide,hinge:new THREE.Vector3().setFromMatrixPosition(item.hinge.matrixWorld).toArray(),opening:[item.start,item.end],wallClearance:item.sideWall===undefined?null:.054,leafFrameOverlap:overlap,slidingAllowed:!!item.allowSliding,mountedOutside:!!item.allowSliding,stackSide:item.allowSliding?item.stack:null,panelBounds:item.allowSliding?item.panels.map(panel=>{const b=new THREE.Box3().setFromObject(panel);return {min:b.min.toArray(),max:b.max.toArray()};}):null}));}};
 }
 
 
