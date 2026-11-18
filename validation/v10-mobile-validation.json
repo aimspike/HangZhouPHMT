@@ -1,0 +1,263 @@
+[
+  {
+    "name": "android",
+    "readyMs": 493,
+    "states": [
+      {
+        "time": "morning",
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "noon",
+        "weights": [
+          0,
+          1,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "dusk",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "sky": 64
+      },
+      {
+        "time": "night",
+        "weights": [
+          0,
+          0,
+          0
+        ],
+        "sky": 64
+      }
+    ],
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "maps": [
+        219,
+        219
+      ],
+      "diagnostics": {
+        "version": "10.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          720,
+          1560
+        ],
+        "viewport": [
+          360,
+          780
+        ],
+        "shaderCount": 28,
+        "drawCalls": 61
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bake": {
+        "phases": [
+          "07:09",
+          "11:45",
+          "16:38"
+        ],
+        "gain": 1.8,
+        "skyGain": 1.8,
+        "skySamples": 64,
+        "indirect": true
+      },
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "name": "ios",
+    "readyMs": 493,
+    "states": [
+      {
+        "time": "morning",
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "noon",
+        "weights": [
+          0,
+          1,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "dusk",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "sky": 64
+      },
+      {
+        "time": "night",
+        "weights": [
+          0,
+          0,
+          0
+        ],
+        "sky": 64
+      }
+    ],
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "maps": [
+        219,
+        219
+      ],
+      "diagnostics": {
+        "version": "10.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          780,
+          1688
+        ],
+        "viewport": [
+          390,
+          844
+        ],
+        "shaderCount": 28,
+        "drawCalls": 61
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bake": {
+        "phases": [
+          "07:09",
+          "11:45",
+          "16:38"
+        ],
+        "gain": 1.8,
+        "skyGain": 1.8,
+        "skySamples": 64,
+        "indirect": true
+      },
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "readyMs": 479,
+    "states": [
+      {
+        "time": "morning",
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "noon",
+        "weights": [
+          0,
+          1,
+          0
+        ],
+        "sky": 64
+      },
+      {
+        "time": "dusk",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "sky": 64
+      },
+      {
+        "time": "night",
+        "weights": [
+          0,
+          0,
+          0
+        ],
+        "sky": 64
+      }
+    ],
+    "state": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "maps": [
+        219,
+        219
+      ],
+      "diagnostics": {
+        "version": "10.0",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          1480,
+          720
+        ],
+        "viewport": [
+          740,
+          360
+        ],
+        "shaderCount": 28,
+        "drawCalls": 134
+      },
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bake": {
+        "phases": [
+          "07:09",
+          "11:45",
+          "16:38"
+        ],
+        "gain": 1.8,
+        "skyGain": 1.8,
+        "skySamples": 64,
+        "indirect": true
+      },
+      "overflow": false
+    },
+    "errors": []
+  }
+]

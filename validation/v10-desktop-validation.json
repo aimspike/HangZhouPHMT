@@ -1,0 +1,29 @@
+{
+  "bake": {
+    "phases": [
+      "07:09",
+      "11:45",
+      "16:38"
+    ],
+    "gain": 1.7,
+    "skyGain": 1.4,
+    "skySamples": 64,
+    "indirect": true
+  },
+  "boot": {
+    "ready": true,
+    "failed": false
+  },
+  "maps": [
+    219,
+    219
+  ],
+  "roof": {
+    "gaps": 0,
+    "examples": []
+  },
+  "errors": {
+    "errors": [],
+    "shader": []
+  }
+}

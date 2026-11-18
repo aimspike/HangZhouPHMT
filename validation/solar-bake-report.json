@@ -1,0 +1,123 @@
+{
+  "version": 2,
+  "times": [
+    "07:09",
+    "11:45",
+    "16:38"
+  ],
+  "direct": "5 solar disk rays per texel; mullions and sealed roof",
+  "bounce": "diffuse surfels, 40 importance samples, per-room trilinear irradiance volume",
+  "bounceEncoding": "sqrt-irradiance",
+  "channels": [
+    "morning",
+    "noon",
+    "dusk"
+  ],
+  "blockers": 117,
+  "rooms": [
+    {
+      "room": "living",
+      "reflectedFlux": [
+        0.89499,
+        0.14814,
+        1.11448
+      ],
+      "grid": [
+        14,
+        7,
+        9
+      ]
+    },
+    {
+      "room": "hall",
+      "reflectedFlux": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid": [
+        7,
+        7,
+        5
+      ]
+    },
+    {
+      "room": "study",
+      "reflectedFlux": [
+        0.21447,
+        0.0,
+        0.58224
+      ],
+      "grid": [
+        7,
+        7,
+        6
+      ]
+    },
+    {
+      "room": "kitchen",
+      "reflectedFlux": [
+        0.40986,
+        0.0,
+        0.0
+      ],
+      "grid": [
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "room": "bath",
+      "reflectedFlux": [
+        0.0,
+        0.0,
+        0.41076
+      ],
+      "grid": [
+        5,
+        7,
+        5
+      ]
+    },
+    {
+      "room": "storage",
+      "reflectedFlux": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid": [
+        5,
+        7,
+        4
+      ]
+    },
+    {
+      "room": "master",
+      "reflectedFlux": [
+        0.41054,
+        0.86271,
+        0.812
+      ],
+      "grid": [
+        8,
+        7,
+        9
+      ]
+    },
+    {
+      "room": "second",
+      "reflectedFlux": [
+        0.42692,
+        1.60315,
+        0.58321
+      ],
+      "grid": [
+        8,
+        7,
+        9
+      ]
+    }
+  ]
+}

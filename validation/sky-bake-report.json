@@ -1,0 +1,57 @@
+{
+  "hemisphereSamples": 64,
+  "skyModel": "zenith-weighted upper hemisphere",
+  "directAndBounce": true,
+  "encoding": "sqrt-irradiance with sub-texel dither",
+  "storage": "lamp atlas R; original G/B preserved",
+  "rooms": [
+    {
+      "room": "living",
+      "meanExposure": 0.02243,
+      "meanBounce": 0.01218,
+      "reflectedFlux": 1.42916
+    },
+    {
+      "room": "hall",
+      "meanExposure": 0.00549,
+      "meanBounce": 0.0031,
+      "reflectedFlux": 0.1257
+    },
+    {
+      "room": "study",
+      "meanExposure": 0.02784,
+      "meanBounce": 0.01288,
+      "reflectedFlux": 0.69385
+    },
+    {
+      "room": "kitchen",
+      "meanExposure": 0.01009,
+      "meanBounce": 0.00485,
+      "reflectedFlux": 0.2874
+    },
+    {
+      "room": "bath",
+      "meanExposure": 0.01051,
+      "meanBounce": 0.00471,
+      "reflectedFlux": 0.17913
+    },
+    {
+      "room": "storage",
+      "meanExposure": 0.00043,
+      "meanBounce": 0.00022,
+      "reflectedFlux": 0.00762
+    },
+    {
+      "room": "master",
+      "meanExposure": 0.01349,
+      "meanBounce": 0.007,
+      "reflectedFlux": 0.50165
+    },
+    {
+      "room": "second",
+      "meanExposure": 0.0195,
+      "meanBounce": 0.01082,
+      "reflectedFlux": 0.76932
+    }
+  ]
+}

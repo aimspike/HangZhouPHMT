@@ -1,6 +1,6 @@
 # Codex 续接上下文
 
-更新时间：2026-11-18。当前版本 V9。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。
+更新时间：2026-11-18。当前版本 V10。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。
 
 ## 模型与环境
 
@@ -14,10 +14,10 @@
 - `src/house.template.html`：建模、UI、主循环、烘焙shader和诊断接口。
 - `src/interior.js`：按房间裁切可见墙面、地面和屋顶下表面生成独立材质；7扇门及开关/碰撞；整栋透明结构。
 - `src/environment.js`：程序化云、城市、小区以及地面随楼层偏移。
-- `src/build_house.py`：将Three r128、OrbitControls、FXAA、Lucide子集、环境代码及146张内嵌PNG纹理写进一个HTML。
+- `src/build_house.py`：将Three r128、OrbitControls、FXAA、Lucide子集、环境代码及219张内嵌PNG纹理写进一个HTML。
 - `src/redraw_plan.py`：重建SVG、PDF和PNG；`src/make_solar.py`计算四种天空时间。
 - `src/bake-source.json`：122个mesh、屋顶id119、卧室新增门楣id120/121。`houseBakeSource()`可重新导出原始几何；材质拆分前已捕获快照。
-- `src/bake_lighting.py`烘焙73张灯光贴图；`src/bake_sun.py`为3个太阳方向生成RGB贴图，最终`baked-lighting.json`含146张图。
+- `src/bake_lighting.py`烘焙73张灯光贴图；`src/bake_sun.py`为3个太阳方向生成RGB贴图，最终`baked-lighting.json`含219张图（73灯光/天光 + 73三时段太阳直射 + 73三时段太阳反射）。
 
 ## 关键修复
 
@@ -59,3 +59,16 @@
 项目现位于 `D:/hangzhou-89a-house-viewer`，原位置为 `C:/Users/Admin/Documents/Codex/hangzhou-89a-house-viewer`。全部源码、图纸、Git历史及完整本地会话备份已迁移；早期工作区work/outputs归档在 `.local/legacy-workspace/`。183个项目文件及1086个历史文件复制后逐一SHA256核对一致，再在D盘重新构建和验证。
 
 后续命令与编辑明确使用D盘项目，切勿继续改历史C盘目录。桌面本轮cwd不会自动切换；后续从D盘目录打开项目。
+
+## V10 日光与天光
+
+用户要求增强白天阳光入室，并计入天空亮度对室内的辐射。早中晚继续按杭州/朝向计算07:09、11:45、16:38三组太阳方向。
+
+- `daylight_transport.py`共享117个含细窗框的遮挡体、完整屋顶、射线可见性和房间体积插值。
+- `solar_bake.py`：每texel采样太阳盘5个方向；按照到墙地面的能量计算40个重要性采样的漫反射面元，生成每房间的方向辐照度体积，再三线性插值到贴图。太阳直射与反射各RGB三时段独立存储。
+- `sky_bake.py`：64个上半球方向按天顶亮度加权采样，计算窗口可见天空的漫射，并用48个面元样本计算反射。天光体积只在单房间内平滑，避免稀疏采样斑块，不跨墙滤波。客餐厅视为连通房间。
+- 灯图R重用为天光+反射，G/B灯具数据逐字节保持；新加太阳反射图，总计219张内嵌PNG。天光和太阳反射使用sqrt辐照度编码，弱光精度提高，shader解码；天光加微量抖动减少色阶。
+- UI分别调整室内日照强度（默认170%）和天光强度（默认140%）。室内白天曝光校准为preset×1.42，夜间仍×1.08。夜间太阳权重全零；灯具G/B校验完全一致。
+- 219/219加载、屋顶直接太阳max0且反射和天光为正；手机360×780、390×844、740×360模拟无溢出/脚本错误；天光低/高实际像素亮度有明显变化。截图含关闭顶灯的自然采光以及夜间回归。
+- 运行`python src/bake_sun.py`全量重烘焙；`--bounce-only`重算太阳反射与天光但保留已有直射贴图。几何改变必须全量。`bake_lighting.py`之后始终再运行`bake_sun.py`，再构建。
+- 漫反射为静态近似，按默认门洞和固定中性色反射率烘焙；动态门提供太阳直射遮挡，不能实时重烘焙间接光。周边建筑为示意，不用于太阳遮挡计算。
