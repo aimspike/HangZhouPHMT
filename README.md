@@ -1,73 +1,81 @@
-# HangZhouPHMT
+# 杭州 · 璞荟铭庭
 
-杭州 89-A 户型浏览器：根据用户提供的户型照片复原正交平面图，并生成可离线打开的单文件 3D 网页。
+**HangZhouPHMT** — 璞荟铭庭 89-A 户型的平面图复原与 3D 交互浏览项目。
 
-[在线浏览](https://aimspike.github.io/HangZhouPHMT/) · [矢量 SVG](plans/restored-floor-plan.svg) · [矢量 PDF](plans/restored-floor-plan.pdf)
+从一张户型照片出发，把空间、采光、材质和门的开合放进浏览器，方便在电脑、手机和微信里查看与讨论。
 
-## 使用
+**[打开 3D 在线体验](https://aimspike.github.io/HangZhouPHMT/)** · [查看矢量平面图](plans/restored-floor-plan.svg) · [下载 PDF](plans/restored-floor-plan.pdf) · [小区资料与来源](references/phmt/README.md)
 
-下载 `docs/index.html`，直接在支持 WebGL 的浏览器打开。手机微信建议点击在线浏览链接。可切换三维、平面、室内；拖动转向、双指缩放，室内使用方向按钮或电脑 WASD / 方向键移动。右上角设置可修改各房间三类表面的颜色和材质、门的开关、FOV、眼高、灯光和楼层。
+## 关于璞荟铭庭
 
-清晨、正午、黄昏、夜晚采用杭州和阳台南偏西 10° 的太阳方向。默认所在楼层 18 层、层高 3m；透明楼栋默认 26 层，可调整。“整栋建筑”查看整体，“重置视角”返回户型。
+璞荟铭庭位于**杭州市滨江区**，是人才共有产权保障住房项目，由**杭州滨江城建发展有限公司**开发建设。2024 年公开配售房源涉及 1—4 号楼，共 **368 套**，户型面积为 **65、89㎡**，采用毛坯交付。[2] [3]
 
-## 文件
-
-| 路径 | 内容 |
+| 项目 | 公开资料摘要 |
 | --- | --- |
-| `docs/index.html` | 最终自包含 HTML，GitHub Pages 入口 |
-| `plans/` | 复原平面图 SVG、PDF、PNG |
-| `references/` | 用户提供的两张参考图片 |
-| `src/` | 模板、脚本、内嵌依赖和烘焙数据 |
-| `context/` | 会话需求、实现说明和续接上下文 |
-| `validation/` | 浏览器验证记录与截图 |
-| `.local/` | 完整会话记录本地快照，已被 Git 忽略 |
+| 位置 | 诚业南路西侧、创智街北侧；地名公告记载北至仁荣街。[1] [4] |
+| 房源 | 1—4 号楼，2024 年公开配售共 368 套。[2] [3] |
+| 户型与交付 | 65、89㎡，毛坯交付。[3] [4] |
+| 楼栋规模 | 房产平台记载为 4 幢高层，21—25 层。[5] |
+| 规划指标 | 房产平台记载容积率 2.5、绿化率 35%。[5] |
+| 建设单位 | 杭州滨江城建发展有限公司。[2] [4] |
 
-## 构建与维护
+以上为公开资料整理，查阅于 **2026-11-19**。不同来源的面积、道路和个别字段存在差异，详见[资料核对说明](references/phmt/README.md#资料差异与采用原则)。本仓库为个人户型可视化项目，楼栋和周边环境包含示意内容。
 
-Python 3.10+ 构建无需额外依赖：
+## 可以体验什么
 
-```sh
-python src/build_house.py
-python -m http.server 8879 --directory docs
-```
+- **三维 / 平面 / 室内漫游**：查看空间关系、门洞和原图实黑墙段标记。
+- **日照与灯光**：清晨、正午、黄昏、夜晚四种环境，包含太阳、天光和室内灯的烘焙光照。
+- **材质搭配**：按房间或全屋更换墙壁、天花板、地板的颜色与材质。
+- **门与楼层**：查看平开门、吊轨推拉门的开合，调整所在楼层和透明楼栋。
+- **设置保存**：浏览器自动保存，支持 JSON 导入、导出；账号云同步已准备接入步骤，需自行配置服务后启用。
 
-访问 `http://localhost:8879/`。重新计算光照或生成平面图先安装 `pip install -r requirements.txt`。平面图字体默认使用 Windows 微软雅黑；其他系统需将 `HOUSE_FONT` 设置为支持中文的 TTF/TTC 文件。
+### 打开与操作
 
-几何变化时，在已启动网页的开发者工具导出 `JSON.stringify(houseBakeSource())` 至 `src/bake-source.json`，依次运行：
+手机、微信可直接打开[在线链接](https://aimspike.github.io/HangZhouPHMT/)。也可以下载 [docs/index.html](docs/index.html)，在支持 WebGL 的浏览器中离线打开；模型、贴图和脚本全部内嵌在一个 HTML 中。
 
-```sh
-python src/bake_lighting.py
-python src/bake_sun.py
-python src/build_house.py
-```
+拖动转向，双指缩放；室内使用方向按钮，电脑可用 WASD / 方向键移动。右上角设置可调整 FOV、眼高、灯光、材质、门和楼层。
 
-更改太阳参考日期或朝向时先修改并运行 `src/make_solar.py`，再重算太阳光照。
+模型按用户提供的**阳台南偏西 10°**设置朝向，日照采用杭州的近似太阳位置。默认所在楼层 18 层、层高 3m；透明楼栋的总层数可调整，默认值仅作演示。
 
-## 发布
+[![89-A 户型复原平面图](plans/restored-floor-plan.png)](plans/restored-floor-plan.svg)
 
-GitHub Pages 从 `main` 分支的 `/docs` 目录发布。修改后构建、提交并推送即可更新。运行时没有 CDN、在线字体、远程贴图或打包服务依赖。云同步未配置时不产生云请求；用户启用账号同步后通过 HTTPS 连接自己的 Supabase 项目。第三方库授权见 `licenses/THIRD_PARTY.md`。
+照片复原的尺寸、墙高和未标注几何含估算，图纸不能用于施工；承重标记转录自原图实黑区域，结构性质以正式结构图为准。已做桌面和手机 / 微信 UA 模拟验证，手机微信真机表现仍需实机核验。
 
-## 精度和验证范围
+## 赞赏支持
 
-室内几何来自照片复原；墙高、家具及未标注尺寸为估算，不能用于施工。整栋轮廓参照用户整层示意图，左端是本户型；楼栋总层数和邻户内部是示意。日照是 2026-11-18 的近似太阳位置，云、城市、小区均为程序化示意环境。
+如果这个项目对你有帮助，欢迎自愿赞赏，支持后续整理与维护。
 
-已进行 Chromium 桌面、Android / iPhone 微信 UA、横竖屏和 WebGL1 模拟验证；尚未进行手机微信真机测试。材质与显示设置即时生效，并自动保存在当前浏览器；可导出 / 导入 JSON。
+<p align="center">
+  <a href="assets/wechat-appreciation.png"><img src="assets/wechat-appreciation.png" alt="微信赞赏码，头像已模糊处理" width="280"></a>
+</p>
+<p align="center">使用微信扫码；点击图片可查看大图。</p>
 
-V9：两间卧室固定贴墙平开；书房、厨房、卫生间、储藏间默认房外单侧推拉，双扇同向移出洞口并叠合停放，保留门洞净宽。所有门支持透明显示；门框搭接密合，木纹统一为自然浅木色。
+在线展示页在前台浏览满一分钟后，也会显示一次可关闭的赞赏提示，附带 GitHub Star 入口。
 
-本地项目目录：`D:/HangZhouPHMT`。历史工作区与旧版本已归档在 `.local/legacy-workspace/`，不会上传GitHub。
+## 资料与维护
 
-V11：对照原照片重新复核 SVG/PDF/PNG 与网页。修正厨房门洞、储藏间入口位置、卧室入口及阳台玻璃门；图纸和网页共用 `src/plan-layout.json` 的墙线与门洞。三维和平面默认以赭红色标记原图实黑墙段，可关闭，结构性质以正式结构图为准。推拉门采用上悬吊轨、独立薄门套和带端盖的双轨罩壳，无地轨与门槛；平开门采用40 mm窄边全包门框，完整覆盖门洞内衬和两侧墙口。平面模式显示随门型与开关变化的门扇符号。详见 [复核记录](context/PLAN_AUDIT.md)。
+| 目录 / 文档 | 内容 |
+| --- | --- |
+| [小区资料](references/phmt/README.md) | 项目概况、历史节点、来源与差异核对 |
+| [plans/](plans/) | 复原平面图 SVG、PDF、PNG |
+| [references/](references/) | 用户提供的户型 / 整层参考图与小区资料 |
+| [开发说明](context/DEVELOPMENT.md) | 构建、光照重烘焙、版本说明与验证范围 |
+| [发布记录](context/DEPLOYMENT.md) | GitHub Pages 部署与维护 |
+| [云同步部署](cloud/README.md) | 可选 Supabase 账号同步配置步骤 |
+| [续接上下文](context/HANDOFF.md) | 需求和实现摘要，便于继续维护 |
 
-V10：清晨07:09、正午11:45、黄昏16:38分别烘焙太阳直射与漫反射；另用64方向天空采样和反射计算室内天光。设置面板可分别调整日照与天光强度，关闭室内灯能查看自然采光。新增数据均内嵌在单HTML内，共219张贴图。天光与太阳反射采用弱光编码，避免暗部色阶。
+Pages 从 `main` 分支的 `/docs` 发布。源码在 `src/`，使用 `python src/build_house.py` 生成最终 HTML。第三方库授权见 [licenses/THIRD_PARTY.md](licenses/THIRD_PARTY.md)。
 
+### 介绍资料来源
 
-## V12.1 实时光照与保存
+1. [杭州市民政局：地名公告（杭地公告〔2024〕21号）](https://mz.hangzhou.gov.cn/art/2024/8/2/art_1229321287_4288303.html)，2024-08-02。名称和位置采用该条目；政区字段的冲突见资料核对说明。
+2. [杭州市国立公证处：璞荟铭庭人才共有产权房公开销售公证摇号公告](https://www.hz-notary.com/lottery/detail_content?lotteryContent.id=5273cf95c5d84933990d8bc3f41161a4)，2024-09-20。
+3. [住在杭州网：璞荟铭庭（人才共有产权房）摇号详情](https://xinpan.zjol.com.cn/m/lottery/4180.html)，2024 年配售信息。
+4. [住在杭州网：璞荟铭庭楼盘详情](https://xinpan.zjol.com.cn/m/more-detail/4179.html)。
+5. [房天下：璞荟铭庭基本信息](https://hz.newhouse.fang.com/loupan/2010201150/housedetail.htm)。
 
-用户反馈路径追踪效果未达预期，现已移除其入口、设置和CPU/GPU运行代码，恢复原有实时浏览和219张内嵌烘焙光照图。其他V12功能保留；旧设置中的路径追踪选项会被忽略，不影响材质、门和光照恢复。
-
-颜色与材质可选择“当前房间 / 全屋更换”；三类表面分别修改，室外没有天花板。墙端11处缺失外角按同一数据补成直角，同步SVG/PDF，并全量重烘焙太阳、天空与顶灯。
-
-“保存与账号同步”提供浏览器自动保存和JSON备份。邮箱验证码登录、跨设备同步、离线待同步与版本冲突流程已接入，**当前尚未配置云服务**。按 [云同步部署步骤](cloud/README.md) 创建Supabase项目、执行SQL并填入公开URL/key后启用。模拟REST测试通过，真实邮件和RLS权限仍需部署后验收。导出文件不包含账号令牌或云密钥。
-
-进一步提升光照的方案评估见 [光照品质方案](context/LIGHTING_OPTIONS.md)。当前尚未替换实时照明或引入新的渲染模式。
+[1]: https://mz.hangzhou.gov.cn/art/2024/8/2/art_1229321287_4288303.html
+[2]: https://www.hz-notary.com/lottery/detail_content?lotteryContent.id=5273cf95c5d84933990d8bc3f41161a4
+[3]: https://xinpan.zjol.com.cn/m/lottery/4180.html
+[4]: https://xinpan.zjol.com.cn/m/more-detail/4179.html
+[5]: https://hz.newhouse.fang.com/loupan/2010201150/housedetail.htm

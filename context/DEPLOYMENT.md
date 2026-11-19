@@ -34,3 +34,9 @@
 本地目录改为`D:/HangZhouPHMT`，GitHub仓库改为`aimspike/HangZhouPHMT`，仓库ID仍为1462767122。origin使用`https://github.com/aimspike/HangZhouPHMT.git`；Pages仍从`main:/docs`发布，新展示地址为`https://aimspike.github.io/HangZhouPHMT/`。云服务部署说明的Site URL已更新。旧仓库链接可能由GitHub重定向，分享网页应使用新的Pages链接。
 
 新Pages地址实测返回200，公开HTML与本地构建统一换行后SHA256一致。390×844微信UA模拟正常启动、219/219图、设置默认关闭、无溢出和脚本错误。完整重命名及校验记录见`validation/repository-rename.json`；历史页面内容和功能未变。
+
+## 2026-11-19 项目首页与邻居支持
+
+README改为“杭州·璞荟铭庭”，小区资料、来源与差异记录在`references/phmt/`，公开赞赏码为`assets/wechat-appreciation.png`处理图。原首页工程说明迁至`context/DEVELOPMENT.md`。
+
+展示页增加GitHub项目入口和前台浏览一分钟后单次可关闭的赞赏/Star弹窗；PNG与脚本构建内嵌，仍只需`docs/index.html`。本地六尺寸、三模式和定时/后台/关闭交互验证通过，见`validation/public-home-browser.json`、`public-home-prompt-edges.json`和截图。仅Chromium模拟，微信真机及扫码未测试。按既有`main:/docs`流程提交推送，无需变更Pages配置。

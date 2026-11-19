@@ -2,6 +2,7 @@
 from pathlib import Path
 import shutil
 import json
+import base64
 from wall_junctions import junction_fills
 
 SOURCE = Path(__file__).resolve().parent
@@ -10,7 +11,8 @@ OUTPUT = ROOT / 'docs'
 OUTPUT.mkdir(exist_ok=True)
 html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
 html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
-for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js')]:
+html = html.replace('/*__APPRECIATION_IMAGE__*/', 'data:image/png;base64,' + base64.b64encode((ROOT/'assets/wechat-appreciation.png').read_bytes()).decode('ascii'))
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js'),('APPRECIATION','appreciation.js')]:
     html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
 html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text(encoding='utf-8'))

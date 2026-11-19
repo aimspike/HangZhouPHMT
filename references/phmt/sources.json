@@ -1,0 +1,112 @@
+{
+  "project": "杭州·璞荟铭庭",
+  "retrieved_on": "2026-11-19",
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "杭州市民政局",
+      "title": "地名公告（杭地公告〔2024〕21号）",
+      "url": "https://mz.hangzhou.gov.cn/art/2024/8/2/art_1229321287_4288303.html",
+      "published": "2024-08-02",
+      "type": "government_notice",
+      "locator": "表格第3项：璞荟铭庭",
+      "adopted": [
+        "标准名称",
+        "批准时间2024-07-29",
+        "批准文号杭名2024字第160号",
+        "位置描述"
+      ],
+      "caveat": "所在政区原文为拱墅区，与配售项目资料指向滨江区不一致；未采用其政区字段。"
+    },
+    {
+      "id": "S2",
+      "publisher": "浙江省杭州市国立公证处",
+      "title": "“璞荟铭庭”人才共有产权房公开销售公证摇号公告",
+      "url": "https://www.hz-notary.com/lottery/detail_content?lotteryContent.id=5273cf95c5d84933990d8bc3f41161a4",
+      "published": "2024-09-20",
+      "type": "notarial_notice",
+      "locator": "公告正文及落款",
+      "adopted": [
+        "开发单位",
+        "人才共有产权房性质",
+        "可售房源368套",
+        "预售证号",
+        "报名时段",
+        "有效报名家庭884户",
+        "公告安排的摇号时间"
+      ],
+      "caveat": "取得预售许可证日期与S5不同，仅采用证号。"
+    },
+    {
+      "id": "S3",
+      "publisher": "住在杭州网",
+      "title": "璞荟铭庭（人才共有产权房）楼盘摇号动态",
+      "url": "https://xinpan.zjol.com.cn/m/lottery/4180.html",
+      "published": null,
+      "type": "media_sales_information",
+      "locator": "页面头部；项目房源基本情况→01房源情况",
+      "adopted": [
+        "滨江区",
+        "1至4号楼368套",
+        "65、89平方米",
+        "毛坯交付",
+        "2024年配售基准价和产权份额背景"
+      ],
+      "caveat": "未找到页面发布日期；属于媒体刊载资料，非核定的主管部门原始发布页；历史政策不表示当前可申购。"
+    },
+    {
+      "id": "S4",
+      "publisher": "住在杭州网",
+      "title": "璞荟铭庭楼盘详情",
+      "url": "https://xinpan.zjol.com.cn/m/more-detail/4179.html",
+      "published": null,
+      "type": "media_property_profile",
+      "locator": "房源信息；项目信息",
+      "adopted": [
+        "开发单位",
+        "65至89平方米",
+        "高层",
+        "368户",
+        "规划道路四至表述"
+      ],
+      "caveat": "建筑面积54721平方米与S5不同；规划道路和S1表述不同；未采用当前销售、物业状态。"
+    },
+    {
+      "id": "S5",
+      "publisher": "房天下",
+      "title": "璞荟铭庭基本信息",
+      "url": "https://hz.newhouse.fang.com/loupan/2010201150/housedetail.htm",
+      "published": null,
+      "type": "property_platform",
+      "locator": "基本信息；销售信息；小区规划",
+      "adopted": [
+        "开发单位",
+        "预售证号",
+        "4栋368户",
+        "21至25层",
+        "容积率2.5",
+        "绿化率35%"
+      ],
+      "caveat": "平台指标未对照施工总图；建筑面积54635平方米有来源差异；证照日期与S2不同；未采用当前销售和交付状态。"
+    },
+    {
+      "id": "S6",
+      "publisher": "杭州购房通",
+      "title": "璞荟铭庭（人才共有）",
+      "url": "https://hz.cdgoufangtong.com/building/7842?category=hot",
+      "published": null,
+      "type": "property_platform",
+      "locator": "楼盘基本信息；2024-11-19楼盘动态",
+      "adopted": [
+        "滨江区",
+        "开发单位",
+        "4幢368户",
+        "21至25层",
+        "容积率2.5",
+        "绿化率35%",
+        "2024-09-23选房历史"
+      ],
+      "caveat": "2024-11-19为相关动态日期，非整个页面发布日期；面积数据与其他来源差异大，未采用；未转载具体房号和购房信息。"
+    }
+  ]
+}

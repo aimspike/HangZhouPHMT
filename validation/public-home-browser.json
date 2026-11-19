@@ -1,0 +1,760 @@
+{
+  "date": "2026-11-19T09:20:29.216Z",
+  "scope": "Local Chromium desktop and mobile/WeChat-UA simulation; prompt minute advanced with Playwright virtual clock; not physical WeChat testing",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 900,
+      "mobile": false,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 182.171875,
+            "y": 840,
+            "width": 117.484375,
+            "height": 38
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1920,
+            "height": 1350
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 182.171875,
+            "y": 840,
+            "width": 117.484375,
+            "height": 38
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1920,
+            "height": 1350
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 156.734375,
+            "y": 840,
+            "width": 117.484375,
+            "height": 38
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1920,
+            "height": 1350
+          }
+        }
+      ],
+      "automaticExternalRequests": []
+    },
+    {
+      "name": "mobile320",
+      "width": 320,
+      "height": 740,
+      "mobile": true,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 686,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 480,
+            "height": 1110
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 686,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 480,
+            "height": 1110
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 686,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 480,
+            "height": 1110
+          }
+        }
+      ],
+      "automaticExternalRequests": []
+    },
+    {
+      "name": "mobile360",
+      "width": 360,
+      "height": 780,
+      "mobile": true,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 726,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 540,
+            "height": 1170
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 726,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 540,
+            "height": 1170
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 726,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 540,
+            "height": 1170
+          }
+        }
+      ],
+      "automaticExternalRequests": []
+    },
+    {
+      "name": "wechat390",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 790,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 585,
+            "height": 1266
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 790,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 585,
+            "height": 1266
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 12,
+            "y": 790,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 585,
+            "height": 1266
+          }
+        }
+      ],
+      "automaticExternalRequests": [],
+      "popupURL": "https://github.com/aimspike/HangZhouPHMT"
+    },
+    {
+      "name": "landscape",
+      "width": 740,
+      "height": 360,
+      "mobile": true,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 306,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1110,
+            "height": 540
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 306,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1110,
+            "height": 540
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 306,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 1110,
+            "height": 540
+          }
+        }
+      ],
+      "automaticExternalRequests": []
+    },
+    {
+      "name": "small-landscape",
+      "width": 568,
+      "height": 320,
+      "mobile": true,
+      "modes": [
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "orbit",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 266,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 852,
+            "height": 480
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "plan",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 266,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 852,
+            "height": 480
+          }
+        },
+        {
+          "boot": {
+            "ready": true,
+            "failed": false
+          },
+          "version": "12.1",
+          "maps": [
+            219,
+            219
+          ],
+          "mode": "walk",
+          "href": "https://github.com/aimspike/HangZhouPHMT",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "visible": true,
+          "inViewport": true,
+          "clickable": true,
+          "linkBox": {
+            "x": 186,
+            "y": 266,
+            "width": 109.78125,
+            "height": 42
+          },
+          "overlapsTools": false,
+          "overflow": false,
+          "settingsHidden": true,
+          "canvas": {
+            "width": 852,
+            "height": 480
+          }
+        }
+      ],
+      "automaticExternalRequests": []
+    }
+  ],
+  "prompts": [
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 900,
+      "diagnostics": {
+        "delayMs": 60000,
+        "shown": true,
+        "open": true,
+        "remainingMs": 0,
+        "visibleTimeOnly": true,
+        "oncePerPage": true
+      },
+      "card": {
+        "x": 445,
+        "y": 177.78125,
+        "width": 390,
+        "height": 544.421875,
+        "scrollHeight": 544,
+        "clientHeight": 544
+      },
+      "inViewport": true,
+      "closeReachable": true,
+      "imageLoaded": true,
+      "embeddedImage": true,
+      "starLink": "https://github.com/aimspike/HangZhouPHMT",
+      "focused": "closeAppreciation",
+      "overflow": false,
+      "beforeMinuteHidden": true,
+      "defersSettings": true,
+      "movementBlocked": false,
+      "focusTrap": true,
+      "dismissed": true,
+      "noRepeat": true
+    },
+    {
+      "name": "mobile",
+      "width": 360,
+      "height": 780,
+      "diagnostics": {
+        "delayMs": 60000,
+        "shown": true,
+        "open": true,
+        "remainingMs": 0,
+        "visibleTimeOnly": true,
+        "oncePerPage": true
+      },
+      "card": {
+        "x": 16,
+        "y": 103.53125,
+        "width": 328,
+        "height": 572.921875,
+        "scrollHeight": 573,
+        "clientHeight": 573
+      },
+      "inViewport": true,
+      "closeReachable": true,
+      "imageLoaded": true,
+      "embeddedImage": true,
+      "starLink": "https://github.com/aimspike/HangZhouPHMT",
+      "focused": "closeAppreciation",
+      "overflow": false,
+      "beforeMinuteHidden": true,
+      "defersSettings": false,
+      "movementBlocked": true,
+      "focusTrap": true,
+      "dismissed": true,
+      "noRepeat": true
+    },
+    {
+      "name": "landscape",
+      "width": 568,
+      "height": 320,
+      "diagnostics": {
+        "delayMs": 60000,
+        "shown": true,
+        "open": true,
+        "remainingMs": 0,
+        "visibleTimeOnly": true,
+        "oncePerPage": true
+      },
+      "card": {
+        "x": 16,
+        "y": 17.65625,
+        "width": 536,
+        "height": 284.6875,
+        "scrollHeight": 285,
+        "clientHeight": 285
+      },
+      "inViewport": true,
+      "closeReachable": true,
+      "imageLoaded": true,
+      "embeddedImage": true,
+      "starLink": "https://github.com/aimspike/HangZhouPHMT",
+      "focused": "closeAppreciation",
+      "overflow": false,
+      "beforeMinuteHidden": true,
+      "defersSettings": false,
+      "movementBlocked": false,
+      "focusTrap": true,
+      "dismissed": true,
+      "noRepeat": true
+    }
+  ],
+  "readmePreviews": [
+    {
+      "name": "desktop",
+      "title": "杭州 · 璞荟铭庭",
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8879/plans/restored-floor-plan.png",
+          "loaded": true,
+          "width": 949.984375
+        },
+        {
+          "src": "http://127.0.0.1:8879/assets/wechat-appreciation.png",
+          "loaded": true,
+          "width": 280
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "title": "杭州 · 璞荟铭庭",
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8879/plans/restored-floor-plan.png",
+          "loaded": true,
+          "width": 327.984375
+        },
+        {
+          "src": "http://127.0.0.1:8879/assets/wechat-appreciation.png",
+          "loaded": true,
+          "width": 280
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

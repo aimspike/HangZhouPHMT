@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-19",
+  "local_markdown_links": "all_exist",
+  "github_gfm_rendering": [
+    {
+      "document": "README.md",
+      "rendered_bytes": 8188
+    },
+    {
+      "document": "context/DEVELOPMENT.md",
+      "rendered_bytes": 7610
+    },
+    {
+      "document": "references/phmt/README.md",
+      "rendered_bytes": 12287
+    },
+    {
+      "document": "references/phmt/source-notes.md",
+      "rendered_bytes": 4976
+    }
+  ],
+  "sources": 6,
+  "appreciation_image": {
+    "dimensions": [
+      581,
+      581
+    ],
+    "exif_entries": 0,
+    "pixels_outside_avatar_identical": true,
+    "avatar_mean_absolute_change": [
+      56.429378123798536,
+      49.52849865436371,
+      44.95573817762399
+    ],
+    "sha256": "1271bbf866e46a29a325c559afa86367be92000802ac82d55ee448b9e8942867",
+    "visual_privacy_check": "passed",
+    "wechat_scan_test": "not_performed"
+  }
+}
