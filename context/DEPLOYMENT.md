@@ -56,3 +56,9 @@ README改为“杭州·璞荟铭庭”，小区资料、来源与差异记录在
 GitHub Pages 已成功构建 `ae4d030`。2026-11-19 公网 `?decor=a` 返回200，规范化HTML SHA256为 `22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd`，与本地一致；SVG/PDF也返回200且内容一致。390×844 Android微信UA模拟：V13.1、night、7门hinged、219/219贴图、默认设置收起，无溢出/JS/Shader错误或额外资源请求；A/bare切换、9图相册和截图预览通过。磁盘单HTML启动正常，阳台西墙2.96m全高且非guard，云配置仍为空。
 
 本地完整检查见 `validation/decor-a-validation.json`：几何133mesh/roof130一致、屋顶0缺口、家具及全部可选门型无碰撞；毛坯无家具、独立材质保存/迁移、默认夜晚/平开和个人覆盖选择刷新通过；320×740、390×844、740×360、568×320及旋转模拟通过。9张更新场景截图在 `assets/interior/preset-a/`，9张用户JPG字节保持。公网记录为 `validation/decor-a-public.json`，截图为 `decor-a-public-mobile.png`。仍未测试手机微信真机。
+
+### 后续布局与装修面板精简已发布
+
+功能提交 `96e21b9` 已由Pages成功构建：主卧床头朝西贴西墙，床头柜/挂画/地毯同步；阳台东墙改为0.18m厚、2.96m高实墙，与原东墙端接齐，东西侧均不按guard压低。全量重算73张灯光与早中晚太阳/天光，建筑仍133mesh/roof130/219图。装修面板移除参考图、保存效果图快捷按钮与视角选择，相册及9张内嵌预览同步移除，单HTML约3.01MB。原图留在仓库，右上角通用相机、原有房间选择保留。
+
+公网2026-11-19验证：HTML/SVG/PDF均200且内容与本地一致；HTML规范化SHA256为 `6b4326a0b87173ca8099b4845b860cdc50453d7f230a7a4948c21a4c404b35ab`。390×844微信UA下验证west床头/贴墙误差<1mm、东西三段全高实墙、移除控件无DOM/内嵌数据、A/bare切换与通用截图通过，night/7门hinged/219图默认保持，无JS/Shader错误或额外请求；磁盘单HTML通过。本地四尺寸横竖屏、门/家具/屋顶、材质保存/迁移及赞赏后台计时回归均通过。最新记录在 `validation/decor-a-public.json`、`decor-a-validation.json`、`public-home-prompt-edges.json`；未进行真机微信测试。

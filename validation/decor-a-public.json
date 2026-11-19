@@ -1,13 +1,13 @@
 {
   "url": "https://aimspike.github.io/HangZhouPHMT/?decor=a",
-  "functionalCommit": "ae4d030ed96c18885c0940335dc4d08cfa29db65",
-  "checkedAt": "2026-11-19T12:01:58.628Z",
+  "functionalCommit": "96e21b9f54dd33b94e012fe635a8eb9934567613",
+  "checkedAt": "2026-11-19T12:45:40.597Z",
   "scope": "Chromium Android WeChat UA simulation; not a real device",
   "errors": [],
   "extraRequests": [],
   "http": 200,
-  "publicSha256": "22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd",
-  "localSha256": "22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd",
+  "publicSha256": "6b4326a0b87173ca8099b4845b860cdc50453d7f230a7a4948c21a4c404b35ab",
+  "localSha256": "6b4326a0b87173ca8099b4845b860cdc50453d7f230a7a4948c21a4c404b35ab",
   "initial": {
     "boot": {
       "ready": true,
@@ -51,6 +51,42 @@
         "type": "hinged"
       }
     ],
+    "master": {
+      "id": "master-bed",
+      "headWall": "west",
+      "wallFace": 0.09,
+      "headDirection": "west",
+      "headGap": 2.980232449711906e-10,
+      "layout": {
+        "head": 0.09000000029802324,
+        "north": 9.409999978542327,
+        "south": 10.990000021457671,
+        "foot": 2.1099999904632574
+      }
+    },
+    "balconyWalls": [
+      {
+        "id": "balcony-east-post",
+        "height": 2.96,
+        "guard": false,
+        "visibleHeight": 1.1,
+        "thickness": 0.18
+      },
+      {
+        "id": "balcony-east",
+        "height": 2.96,
+        "guard": false,
+        "visibleHeight": 1.1,
+        "thickness": 0.18
+      },
+      {
+        "id": "platform-divider",
+        "height": 2.96,
+        "guard": false,
+        "visibleHeight": 1.1,
+        "thickness": 0.17
+      }
+    ],
     "settingsHidden": true,
     "overflow": false,
     "diagnostics": {
@@ -72,11 +108,7 @@
       "drawCalls": 494
     }
   },
-  "gallery": {
-    "loaded": true,
-    "width": 540,
-    "height": 720
-  },
+  "schemeControls": "gallery, export shortcut and viewpoint picker absent",
   "switching": "passed",
   "capture": true,
   "partyWall": [
