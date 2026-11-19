@@ -152,3 +152,5 @@ README改为“杭州·璞荟铭庭”，包括在线体验、项目介绍、平
 - 已更新SVG/PDF/PNG及9张实际场景导出、captures.json与preview.webp。9张用户JPG字节及SHA256仍与原文件一致。最终HTML约3.48MB，WebGL1、自包含、云配置仍为空。
 
 用户随后要求默认夜晚、所有门默认平开，覆盖前述默认推拉：初始daylight为night，7扇可设置的入户/房间门均hinged；四扇仍可手动切换推拉。`plan-layout.json.defaultDoorType`为图纸与网页默认门型共同入口，平面图门符号同步。阳台原建筑玻璃滑门保持原图构造。个人已保存的时间/门型继续恢复。此默认值变更不改建筑烘焙几何，不需要再次烘焙；浏览器仍逐项核对快照。
+
+功能提交 `3aaa4cb` 与默认值提交 `ae4d030` 已推送，Pages成功构建后公开HTML与本地规范化SHA256一致。390×844微信UA公网检查：V13.1/night/7门hinged/219图、设置收起、无溢出/错误/额外资源请求；切换/相册/截图通过。磁盘单HTML与公开SVG/PDF亦通过。证据在 `validation/decor-a-public.json` 和发布文档中。本地完整检查还验证个人选择dusk/sliding可刷新恢复。后续仍需真机微信核验。

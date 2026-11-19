@@ -1,29 +1,60 @@
 {
   "url": "https://aimspike.github.io/HangZhouPHMT/?decor=a",
-  "functionalCommit": "07396d95037e175e1eab416e346ade359f1dcae6",
-  "checkedAt": "2026-11-19T10:47:18.618Z",
+  "functionalCommit": "ae4d030ed96c18885c0940335dc4d08cfa29db65",
+  "checkedAt": "2026-11-19T12:01:58.628Z",
   "scope": "Chromium Android WeChat UA simulation; not a real device",
   "errors": [],
   "extraRequests": [],
   "http": 200,
-  "publicSha256": "7bc8be14a5e50635e33d8945fdd6db40a4cef7b6a832787fc56139094720a5e4",
-  "localSha256": "7bc8be14a5e50635e33d8945fdd6db40a4cef7b6a832787fc56139094720a5e4",
+  "publicSha256": "22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd",
+  "localSha256": "22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd",
   "initial": {
     "boot": {
       "ready": true,
       "failed": false
     },
-    "version": "13",
+    "version": "13.1",
     "mode": "orbit",
     "maps": [
       219,
       219
     ],
     "preset": "a",
+    "daylight": "night",
+    "doors": [
+      {
+        "id": "entry",
+        "type": "hinged"
+      },
+      {
+        "id": "study",
+        "type": "hinged"
+      },
+      {
+        "id": "kitchen",
+        "type": "hinged"
+      },
+      {
+        "id": "bath",
+        "type": "hinged"
+      },
+      {
+        "id": "storage",
+        "type": "hinged"
+      },
+      {
+        "id": "master",
+        "type": "hinged"
+      },
+      {
+        "id": "second",
+        "type": "hinged"
+      }
+    ],
     "settingsHidden": true,
     "overflow": false,
     "diagnostics": {
-      "version": "13",
+      "version": "13.1",
       "antialias": true,
       "fxaa": true,
       "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -37,8 +68,8 @@
         390,
         844
       ],
-      "shaderCount": 34,
-      "drawCalls": 583
+      "shaderCount": 37,
+      "drawCalls": 494
     }
   },
   "gallery": {
@@ -48,6 +79,14 @@
   },
   "switching": "passed",
   "capture": true,
+  "partyWall": [
+    {
+      "height": 2.96,
+      "guard": false,
+      "visibleHeight": 2.96,
+      "thickness": 0.17
+    }
+  ],
   "offline": {
     "maps": [
       219,
@@ -56,5 +95,15 @@
     "preset": "a",
     "cloudConfigured": false
   },
+  "planResponses": [
+    {
+      "file": "plans/restored-floor-plan.svg",
+      "status": 200
+    },
+    {
+      "file": "plans/restored-floor-plan.pdf",
+      "status": 200
+    }
+  ],
   "result": "passed"
 }

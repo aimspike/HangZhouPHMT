@@ -48,3 +48,11 @@ README改为“杭州·璞荟铭庭”，小区资料、来源与差异记录在
 390×844 Android 微信 UA 模拟：V13、方案 A 自动启用、219/219 贴图、设置默认关闭、无溢出、JS/Shader 错误或外部依赖请求；可切回原有方案，参考图与截图预览正常。另直接打开磁盘上的单 HTML，方案 A 与全部烘焙图正常，云配置仍为空。记录为 `validation/decor-a-public.json`，截图为 `decor-a-public-mobile.png`。仍未测试微信真机。
 
 9 张分类原图在 `references/interior/preset-a/`；8 张实际场景 PNG、总览和相机数据在 `assets/interior/preset-a/`，已随功能提交推送。建筑几何、平面图、原有日光数据未变；具体局部填光和房间定位限制见方案说明。
+
+## V13.1 布局、毛坯与新默认已发布
+
+功能提交 `3aaa4cb` 修正 A 客厅为北侧电视/南侧沙发、床头与衣柜贴墙、家具细节及毛坯方案，并将阳台西侧改为全高实墙后重烘焙。随后 `ae4d030` 将默认时段设为夜晚，7扇入户/房间门默认平开；四扇房门仍可选吊轨推拉，个人已保存的选择继续恢复。SVG/PDF/PNG门符号与网页默认同步。
+
+GitHub Pages 已成功构建 `ae4d030`。2026-11-19 公网 `?decor=a` 返回200，规范化HTML SHA256为 `22f6698f17c6a53e4425dc918a0375bf3f9ca559fea1f532ec49ec97122fc9cd`，与本地一致；SVG/PDF也返回200且内容一致。390×844 Android微信UA模拟：V13.1、night、7门hinged、219/219贴图、默认设置收起，无溢出/JS/Shader错误或额外资源请求；A/bare切换、9图相册和截图预览通过。磁盘单HTML启动正常，阳台西墙2.96m全高且非guard，云配置仍为空。
+
+本地完整检查见 `validation/decor-a-validation.json`：几何133mesh/roof130一致、屋顶0缺口、家具及全部可选门型无碰撞；毛坯无家具、独立材质保存/迁移、默认夜晚/平开和个人覆盖选择刷新通过；320×740、390×844、740×360、568×320及旋转模拟通过。9张更新场景截图在 `assets/interior/preset-a/`，9张用户JPG字节保持。公网记录为 `validation/decor-a-public.json`，截图为 `decor-a-public-mobile.png`。仍未测试手机微信真机。
