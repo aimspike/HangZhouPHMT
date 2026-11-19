@@ -1,38 +1,19 @@
 {
-  "verifiedAt": "2026-11-19T04:16:58.938Z",
-  "featureCommit": "33626d81dd0a1bd6936d8da79f4ded4ef4af2375",
-  "responses": [
-    {
-      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=33626d8",
-      "status": 200,
-      "bytes": 2731270,
-      "title": "89-A · 杭州三维户型 V11"
-    },
-    {
-      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/plans/restored-floor-plan.svg?v=33626d8",
-      "status": 200,
-      "bytes": 37643,
-      "title": null
-    },
-    {
-      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/plans/restored-floor-plan.pdf?v=33626d8",
-      "status": 200,
-      "bytes": 69035,
-      "title": null
-    }
-  ],
-  "sha256": "55a7cfa188a0ae6a2dd730df058b1c884bb06608667ca567649731b8ab1253aa",
-  "state": {
+  "checkedAt": "2026-11-19T07:58:44.224Z",
+  "featureCommit": "864e9980c23535b21845d387de43f378ce9e3e0a",
+  "pageBuild": "built",
+  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=12",
+  "initial": {
     "boot": {
       "ready": true,
       "failed": false
     },
     "diagnostics": {
-      "version": "11.0",
+      "version": "12.0",
       "antialias": true,
       "fxaa": true,
       "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
-      "maxTextureUnits": 32,
+      "maxTextureUnits": 16,
       "contextLost": false,
       "canvas": [
         585,
@@ -42,26 +23,75 @@
         390,
         844
       ],
-      "shaderCount": 25,
-      "drawCalls": 227
+      "shaderCount": 16,
+      "drawCalls": 531
     },
     "maps": [
       219,
       219
     ],
-    "bearing": {
-      "source": "原图实黑区域",
-      "sections": 23,
-      "pieces": 24,
-      "visible": true
+    "storage": {
+      "localAvailable": true,
+      "cloudConfigured": false,
+      "signedIn": false,
+      "pending": false,
+      "revision": 0,
+      "conflict": false
     },
-    "overflow": false,
-    "defaultSettingsClosed": true
+    "junctions": 11,
+    "path": {
+      "enabled": false,
+      "samples": 0,
+      "triangles": 0,
+      "elapsed": 0,
+      "worker": false,
+      "failed": false,
+      "backend": "CPU worker Monte Carlo path tracer",
+      "gpuFallback": "",
+      "targetSamples": 32,
+      "resolution": [
+        300,
+        150
+      ],
+      "bounces": 4
+    },
+    "settingsHidden": true,
+    "overflow": false
+  },
+  "path": {
+    "enabled": true,
+    "samples": 4,
+    "triangles": 12636,
+    "elapsed": 147.70000000018626,
+    "worker": false,
+    "failed": false,
+    "backend": "WebGL2 GPU Monte Carlo path tracer",
+    "gpuFallback": "",
+    "targetSamples": 64,
+    "resolution": [
+      240,
+      519
+    ],
+    "bounces": 4
   },
   "errors": [],
-  "simulation": "Chromium iPhone WeChat UA, not physical WeChat or WebKit",
-  "rawBytesMatchLocal": false,
-  "htmlMatchesLocalAfterNewlineNormalization": true,
-  "newlineNote": "Git core.autocrlf=true: checkout uses CRLF, deployed Git blob uses LF; normalized content is identical.",
-  "localNormalizedSha256": "55a7cfa188a0ae6a2dd730df058b1c884bb06608667ca567649731b8ab1253aa"
+  "externalRequests": [],
+  "scope": "Chromium Android MicroMessenger UA simulation; not physical WeChat.",
+  "http": {
+    "status": 200,
+    "bytes": 2787747,
+    "sameNormalizedHtml": true,
+    "version12": true,
+    "normalizedSHA256": "96fdd81ac3fe25fbce9d8b459abd7876902e81a58e8f0cf008499baa1f4e9d37",
+    "assets": {
+      "restored-floor-plan.svg": {
+        "status": 200,
+        "bytes": 42388
+      },
+      "restored-floor-plan.pdf": {
+        "status": 200,
+        "bytes": 70132
+      }
+    }
+  }
 }
