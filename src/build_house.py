@@ -10,7 +10,7 @@ OUTPUT = ROOT / 'docs'
 OUTPUT.mkdir(exist_ok=True)
 html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
 html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
-for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js'),('PATH_TRACER_GPU','path-tracer-gpu.js'),('PATH_TRACER','path-tracer.js')]:
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js')]:
     html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
 html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text(encoding='utf-8'))

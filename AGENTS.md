@@ -21,6 +21,7 @@
 
 - `src/plan-layout.json` 是图纸与网页墙线、门洞、门配置和原图实黑标记的共同来源；修改门洞必须同步重绘和重烘焙。承重标记仅根据原图实黑区域，不可自动把厚墙全部标为承重。
 
-- V12新增`path-tracer.js` / `path-tracer-gpu.js`，优先WebGL2 GPU、CPU Worker兼容回退；实时渲染器继续WebGL1。改光照/几何/材质的交互需触发invalidate，保留单HTML离线和失败回退。
-- `settings-storage.js`为本地/可选Supabase云同步；配置为空不得发云请求。公开配置在`cloud-config.json`，部署SQL/说明在`cloud/`。会话令牌不得导出或提交。渲染模式不持久化，避免刷新自动启动高耗能采样。
+- `settings-storage.js`为本地/可选Supabase云同步；配置为空不得发云请求。公开配置在`cloud-config.json`，部署SQL/说明在`cloud/`。会话令牌不得导出或提交。
 - `wall_junctions.py`为网页与矢量图共享的11处直角补片。当前烘焙快照134mesh/roof131/219图；变几何才重烘焙，纯渲染改动不需要。
+
+- V12.1按用户要求移除运行时路径追踪、入口及CPU/GPU脚本，保留实时烘焙照明与V12其他改动。替代方案见`context/LIGHTING_OPTIONS.md`；未获新实施要求时仅作评估。

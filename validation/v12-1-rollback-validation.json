@@ -1,0 +1,284 @@
+{
+  "errors": [],
+  "boot": {
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "diag": {
+      "version": "12.1",
+      "antialias": true,
+      "fxaa": true,
+      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+      "maxTextureUnits": 16,
+      "contextLost": false,
+      "canvas": [
+        1920,
+        1350
+      ],
+      "viewport": [
+        1280,
+        900
+      ],
+      "shaderCount": 16,
+      "drawCalls": 531
+    },
+    "maps": [
+      219,
+      219
+    ],
+    "removed": true,
+    "storage": {
+      "localAvailable": true,
+      "cloudConfigured": false,
+      "signedIn": false,
+      "pending": false,
+      "revision": 0,
+      "conflict": false
+    },
+    "junctions": 11
+  },
+  "geometry": {
+    "roof": {
+      "gaps": 0,
+      "examples": []
+    },
+    "doors": [
+      {
+        "id": "entry",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "study",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "kitchen",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "bath",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "storage",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "master",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "second",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      }
+    ],
+    "motion": [
+      {
+        "id": "study",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "left",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "kitchen",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "right",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "bath",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "left",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "storage",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "right",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      }
+    ]
+  },
+  "oldSettings": {
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "floor": 23,
+    "fov": "111",
+    "kitchenWall": {
+      "color": "#d4d1c9",
+      "material": "plaster"
+    },
+    "uiRemoved": true
+  },
+  "mobile": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "walk": {
+        "version": "12.1",
+        "viewport": [
+          390,
+          844
+        ],
+        "maps": [
+          219,
+          219
+        ],
+        "overflow": false,
+        "sidebarHidden": true,
+        "removed": true
+      },
+      "panel": {
+        "x": 10,
+        "y": 260.09375,
+        "width": 370,
+        "height": 573.90625,
+        "top": 260.09375,
+        "right": 380,
+        "bottom": 834,
+        "left": 10
+      }
+    },
+    {
+      "size": {
+        "width": 360,
+        "height": 780
+      },
+      "walk": {
+        "version": "12.1",
+        "viewport": [
+          360,
+          780
+        ],
+        "maps": [
+          219,
+          219
+        ],
+        "overflow": false,
+        "sidebarHidden": true,
+        "removed": true
+      },
+      "panel": {
+        "x": 10,
+        "y": 239.609375,
+        "width": 340,
+        "height": 530.390625,
+        "top": 239.609375,
+        "right": 350,
+        "bottom": 770,
+        "left": 10
+      }
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 360
+      },
+      "walk": {
+        "version": "12.1",
+        "viewport": [
+          740,
+          360
+        ],
+        "maps": [
+          219,
+          219
+        ],
+        "overflow": false,
+        "sidebarHidden": true,
+        "removed": true
+      },
+      "panel": {
+        "x": 390,
+        "y": 70,
+        "width": 340,
+        "height": 280,
+        "top": 70,
+        "right": 730,
+        "bottom": 350,
+        "left": 390
+      }
+    }
+  ],
+  "scope": "Chromium mobile viewports and MicroMessenger UA simulation; no physical WeChat device tested.",
+  "preservedSourceHashes": {
+    "src/bake-source.json": "16baeb7ea8b18697fd4558a61342ee606b97aa2690ff22d06fb21bfc27afccb6",
+    "src/baked-lighting.json": "579eb8a05e7063924f123f9f1d82a7990219f8fdb419066b976441a4866da43a",
+    "src/interior.js": "e5fc196802243f35a4694c320860aa6c0b8a16f6af37c5837aaa6d08d536bf89",
+    "src/settings-storage.js": "bfe44167b6ec99bc18010f7e4974f5def6abcb356384b92594615d5b6bd7b13a",
+    "plans/restored-floor-plan.svg": "4b2807e39410f16649b324651c569946d44ae0eeaa2460a922a2b518a2fb6fa9",
+    "plans/restored-floor-plan.pdf": "ab8a78dff4b9d10857d1a15d04ffa1b9185c672bcf6a83c738fc53506df13db5"
+  },
+  "preservedSourcesByteIdentical": true,
+  "unconfiguredExternalRequests": [],
+  "checkedAt": "2026-11-19T08:15:44.259Z",
+  "timeModes": [
+    {
+      "requested": "morning",
+      "actual": "morning",
+      "roof": true,
+      "mode": "walk"
+    },
+    {
+      "requested": "noon",
+      "actual": "noon",
+      "roof": true,
+      "mode": "walk"
+    },
+    {
+      "requested": "dusk",
+      "actual": "dusk",
+      "roof": true,
+      "mode": "walk"
+    },
+    {
+      "requested": "night",
+      "actual": "night",
+      "roof": true,
+      "mode": "walk"
+    }
+  ],
+  "capture": {
+    "filename": "89-A-3D.png",
+    "bytes": 3021745
+  },
+  "finalErrors": []
+}
