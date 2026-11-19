@@ -1,5 +1,11 @@
 # 开发与维护
 
+V13 增加可选 `src/decor-preset-a.js` 家装层与 9 张内嵌参考图。`references/interior/preset-a/manifest.json`记录原名、分类、尺寸与 SHA256；WebP 仅用于网页预览，JPG 原文件保持不变。[方案与实际截图](../assets/interior/preset-a/README.md)。
+
+家装几何为独立显示层，不在 `bakeMeshes` 中。只有家具和表面材质改变，`houseBakeSource()` 与既有 `src/bake-source.json` 完全一致，不需重烘焙建筑数据。家具在每个房间、可见层内按材质合并；延迟首次启用时构造，室内显示壁画和顶面灯带，俯瞰/平面隐藏高位装饰以便观察。使用房间灯位的近似填光、程序纹理和接触阴影，不声称完整家具 GI 或真实反射。`houseViewer.decorDoorClearance()` 对 7 扇门各 25 个开合位置、全部可选门型检查家具；`walkClearance(x,z)`辅助检查安全观景位置。
+
+`decor` 字段随原 schema1 设置保存，包含当前方案、切换前的材质和 A 的自定义材质。旧 JSON 缺省为原有方案。`?decor=a` 明确打开 A；普通网址遵循已保存设置。参考图 WebP 构建成 data URL，不增加外部请求。截图按钮输出当前 WebGL 画布，移动端提供长按预览。校验脚本保存于 `validation/verify-decor-preset.cjs`；需本地 Playwright 与 Chrome，默认 localhost:8879。
+
 公开首页与小区资料见[项目 README](../README.md)。`src/appreciation.js`管理浏览满一分钟后的单次可关闭赞赏弹窗；构建脚本将`assets/wechat-appreciation.png`处理图内嵌为data URL，仍为自包含单HTML。GitHub外链只在用户点击时访问，不自动发出外部资源请求。
 
 本页从原 README 迁入，保留构建方法、版本记录和验证范围。[返回项目首页](../README.md)。

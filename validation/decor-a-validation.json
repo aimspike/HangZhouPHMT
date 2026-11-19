@@ -1,0 +1,988 @@
+{
+  "scope": "Chromium WebGL1; WeChat UA simulation, not a real WeChat device",
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    {
+      "file": "01-living-day.png",
+      "room": "living",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.25,
+        1.5,
+        -0.6500000000000004
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        0.8017901377054536,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "02-dining-day.png",
+      "room": "dining",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "03-kitchen-day.png",
+      "room": "kitchen",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "04-master-day.png",
+      "room": "master",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -2.14,
+        1.5,
+        2.4700000000000006
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -2.4095788336830797,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "05-second-day.png",
+      "room": "second",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.6299999999999999,
+        1.5,
+        4.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -0.7715741592754424,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "06-bath-day.png",
+      "room": "bath",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "07-living-night.png",
+      "room": "living",
+      "time": "night",
+      "fov": 85,
+      "camera": [
+        -0.25,
+        1.5,
+        -0.6500000000000004
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        0.8017901377054536,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "08-overview.png",
+      "room": "overview",
+      "time": "noon",
+      "fov": 43,
+      "camera": [
+        8.669630012369762,
+        14.511824061060151,
+        14.749288485326463
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        0.8017901377054536,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 740,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "gallery": {
+        "inViewport": true,
+        "closeClickable": true
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "gallery": {
+        "inViewport": true,
+        "closeClickable": true
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 740,
+      "height": 360,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "gallery": {
+        "inViewport": true,
+        "closeClickable": true
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 568,
+      "height": 320,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "gallery": {
+        "inViewport": true,
+        "closeClickable": true
+      },
+      "capture": "long-press preview passed"
+    }
+  ],
+  "architectureUnchanged": true,
+  "roof": {
+    "gaps": 0,
+    "examples": []
+  },
+  "doorClearance": [
+    {
+      "door": "entry",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "study",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "study",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "kitchen",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "kitchen",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "bath",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "bath",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "storage",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "storage",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "master",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "second",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    }
+  ],
+  "doorClosure": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "doorMotion": [
+    {
+      "id": "study",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "kitchen",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "bath",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "storage",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    }
+  ],
+  "decor": {
+    "preset": "a",
+    "built": true,
+    "visible": true,
+    "parts": 181,
+    "mergedMeshes": 78,
+    "items": [
+      {
+        "id": "living-sofa",
+        "room": "living",
+        "min": [
+          0.3599999964237215,
+          -3.5762786898541066e-9,
+          3.3900000017881395
+        ],
+        "max": [
+          2.6400000035762785,
+          0.9649999964237214,
+          4.235000021457672
+        ]
+      },
+      {
+        "id": "coffee-table",
+        "room": "living",
+        "min": [
+          0.9900000035762786,
+          0.027499999925494192,
+          4.570000003576279
+        ],
+        "max": [
+          1.8099999964237212,
+          0.43250000089406965,
+          5.389999996423722
+        ]
+      },
+      {
+        "id": "tv-console",
+        "room": "living",
+        "min": [
+          0.4800000119209291,
+          -2.980232241545089e-9,
+          5.94399999962002
+        ],
+        "max": [
+          2.3799999880790708,
+          0.5100000029802323,
+          6.300000001788139
+        ]
+      },
+      {
+        "id": "television",
+        "room": "living",
+        "min": [
+          0.7800000238418581,
+          0.5349999998509883,
+          5.969999996423721
+        ],
+        "max": [
+          2.079999976158142,
+          1.3699999952316284,
+          6.150000003576278
+        ]
+      },
+      {
+        "id": "dining-table",
+        "room": "dining",
+        "min": [
+          3.900000016689301,
+          0.014999999627470971,
+          4.290000016689301
+        ],
+        "max": [
+          5.0599999833107,
+          0.7824999988079071,
+          5.4499999833107
+        ]
+      },
+      {
+        "id": "chair-3.65-4.86",
+        "room": "dining",
+        "min": [
+          3.4349999964237212,
+          0.014999996423721323,
+          4.644999996423722
+        ],
+        "max": [
+          3.8650000035762786,
+          0.8549999958276748,
+          5.075000003576279
+        ]
+      },
+      {
+        "id": "chair-5.32-4.86",
+        "room": "dining",
+        "min": [
+          5.104999996423722,
+          0.014999996423721323,
+          4.644999996423722
+        ],
+        "max": [
+          5.535000003576279,
+          0.8549999958276748,
+          5.075000003576279
+        ]
+      },
+      {
+        "id": "chair-4.48-5.72",
+        "room": "dining",
+        "min": [
+          4.264999996423722,
+          0.014999996423721323,
+          5.504999996423721
+        ],
+        "max": [
+          4.695000003576279,
+          0.8549999958276748,
+          5.935000003576278
+        ]
+      },
+      {
+        "id": "dining-sideboard",
+        "room": "dining",
+        "min": [
+          5.79100000038743,
+          0.08499999046325685,
+          4.070000028610229
+        ],
+        "max": [
+          6.090000000596047,
+          0.8150000095367431,
+          5.12999997138977
+        ]
+      },
+      {
+        "id": "fridge",
+        "room": "dining",
+        "min": [
+          5.421999999783933,
+          0.009999990463256836,
+          5.559999996423722
+        ],
+        "max": [
+          6.070000002384186,
+          1.9900000095367432,
+          6.239999973773957
+        ]
+      },
+      {
+        "id": "kitchen-east-cabinets",
+        "room": "kitchen",
+        "min": [
+          5.434999991655349,
+          0.050000003576278707,
+          0.1500000286102292
+        ],
+        "max": [
+          6.10500000834465,
+          2.4799999940395354,
+          2.7099999713897702
+        ]
+      },
+      {
+        "id": "kitchen-north-cabinets",
+        "room": "kitchen",
+        "min": [
+          4.400000028610229,
+          0.050000003576278707,
+          0.08500000238418615
+        ],
+        "max": [
+          5.45999997138977,
+          1.2030000002682208,
+          0.7149999976158146
+        ]
+      },
+      {
+        "id": "master-bed",
+        "room": "master",
+        "min": [
+          0.8400000095367433,
+          -2.980232241545089e-9,
+          9.509999978542329
+        ],
+        "max": [
+          2.8599999980628494,
+          1.059999988079071,
+          11.090000021457673
+        ]
+      },
+      {
+        "id": "master-wardrobe",
+        "room": "master",
+        "min": [
+          0.11999998927116406,
+          0.01000002384185783,
+          8.509999985694884
+        ],
+        "max": [
+          0.6830000003799799,
+          2.3099999761581422,
+          9.730000014305114
+        ]
+      },
+      {
+        "id": "master-nightstand",
+        "room": "master",
+        "min": [
+          2.5650000059604645,
+          0.030000009536743144,
+          11.124999997615815
+        ],
+        "max": [
+          3.0149999940395356,
+          0.7850000008940696,
+          11.495000002384186
+        ]
+      },
+      {
+        "id": "second-bed",
+        "room": "second",
+        "min": [
+          4.3599999904632565,
+          -2.980232241545089e-9,
+          8.92999997138977
+        ],
+        "max": [
+          5.840000009536743,
+          1.059999988079071,
+          10.869999969005585
+        ]
+      },
+      {
+        "id": "second-wardrobe",
+        "room": "second",
+        "min": [
+          4.715000019073487,
+          0.01000002384185783,
+          7.735000005960464
+        ],
+        "max": [
+          6.004999980926514,
+          2.3099999761581422,
+          8.204000000216066
+        ]
+      },
+      {
+        "id": "second-nightstand",
+        "room": "second",
+        "min": [
+          3.925000002980232,
+          0.07000000536441803,
+          9.510000002384185
+        ],
+        "max": [
+          4.274999997019767,
+          0.7900000035762786,
+          9.889999997615813
+        ]
+      },
+      {
+        "id": "bath-vanity",
+        "room": "bath",
+        "min": [
+          0.17999999523162868,
+          0.3200000053644181,
+          7.7150000071525575
+        ],
+        "max": [
+          0.9200000047683718,
+          1.8699999856948852,
+          8.147500000186264
+        ]
+      },
+      {
+        "id": "toilet",
+        "room": "bath",
+        "min": [
+          0.26500000178813954,
+          0.0549999976158142,
+          6.639999996423722
+        ],
+        "max": [
+          0.6749999982118609,
+          0.8349999940395355,
+          7.2550000166893005
+        ]
+      },
+      {
+        "id": "study-desk",
+        "room": "study",
+        "min": [
+          1.8849999904632568,
+          0.00999998569488525,
+          0.9400000023841857
+        ],
+        "max": [
+          2.615000009536743,
+          0.7774999998509884,
+          2.319999997615814
+        ]
+      },
+      {
+        "id": "study-chair",
+        "room": "study",
+        "min": [
+          2.7450000059604647,
+          0.010000001192092905,
+          1.389999995827675
+        ],
+        "max": [
+          3.1949999940395357,
+          0.9150000035762786,
+          1.8500000041723252
+        ]
+      },
+      {
+        "id": "storage-shelves",
+        "room": "storage",
+        "min": [
+          5.750000003576279,
+          0.16000000044703483,
+          6.549999994039536
+        ],
+        "max": [
+          6.0699999964237215,
+          2.279999999552965,
+          7.350000005960465
+        ]
+      },
+      {
+        "id": "balcony-laundry",
+        "room": "balcony",
+        "min": [
+          5.375000011920929,
+          0.029999985694885156,
+          11.615000000447035
+        ],
+        "max": [
+          6.024999988079071,
+          2.2500000143051144,
+          12.360000013113021
+        ]
+      }
+    ],
+    "blockingObjects": 23,
+    "architectureUnchanged": true,
+    "lighting": "Existing architectural bake plus approximate local furnishing fill and contact shadows"
+  },
+  "wallClearance": [],
+  "views": [
+    {
+      "id": "living",
+      "camera": [
+        -0.25,
+        1.5,
+        -0.6500000000000004
+      ],
+      "clear": true
+    },
+    {
+      "id": "dining",
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "clear": true
+    },
+    {
+      "id": "kitchen",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "clear": true
+    },
+    {
+      "id": "master",
+      "camera": [
+        -2.14,
+        1.5,
+        2.4700000000000006
+      ],
+      "clear": true
+    },
+    {
+      "id": "second",
+      "camera": [
+        0.6299999999999999,
+        1.5,
+        4.25
+      ],
+      "clear": true
+    },
+    {
+      "id": "bath",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "clear": true
+    },
+    {
+      "id": "study",
+      "camera": [
+        0.7999999999999998,
+        1.5,
+        -3.9
+      ],
+      "clear": true
+    },
+    {
+      "id": "balcony",
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "clear": true
+    }
+  ],
+  "furnitureToggle": "passed",
+  "switchAndRefresh": "passed",
+  "referenceGallery": "9 embedded images decoded; keyboard navigation, focus trap/return and Escape preserving walk mode passed",
+  "desktopCapture": "PNG download passed",
+  "settingsExport": "preset, both finish palettes and no credentials",
+  "settingsImport": "new preset round-trip and old schema1 compatibility passed",
+  "rotation": [
+    844,
+    390
+  ]
+}

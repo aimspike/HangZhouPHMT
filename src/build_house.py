@@ -12,13 +12,17 @@ OUTPUT.mkdir(exist_ok=True)
 html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
 html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
 html = html.replace('/*__APPRECIATION_IMAGE__*/', 'data:image/png;base64,' + base64.b64encode((ROOT/'assets/wechat-appreciation.png').read_bytes()).decode('ascii'))
-for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js'),('APPRECIATION','appreciation.js')]:
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('DECOR_PRESET_A','decor-preset-a.js'),('SETTINGS_STORAGE','settings-storage.js'),('APPRECIATION','appreciation.js')]:
     html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
 html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text(encoding='utf-8'))
 html = html.replace('/*__WALL_JUNCTIONS__*/', json.dumps(junction_fills(json.loads((SOURCE/'plan-layout.json').read_text(encoding='utf-8'))),separators=(',',':')))
 html = html.replace('/*__CLOUD_CONFIG__*/', (SOURCE/'cloud-config.json').read_text(encoding='utf-8'))
 html = html.replace('/*__BAKED_LIGHTING__*/', (SOURCE/'baked-lighting.json').read_text(encoding='utf-8'))
+refs_root=ROOT/'references/interior/preset-a'
+refs=json.loads((refs_root/'manifest.json').read_text(encoding='utf-8'))['images']
+embedded=[dict(title=r['title'],notes=r['notes'],src='data:image/webp;base64,'+base64.b64encode((refs_root/r['preview']).read_bytes()).decode('ascii')) for r in refs]
+html=html.replace('/*__DECOR_REFERENCES__*/',json.dumps(embedded,ensure_ascii=False,separators=(',',':')))
 if '/*__' in html:
     raise RuntimeError('Unresolved template marker')
 (OUTPUT/'index.html').write_text(html, encoding='utf-8')

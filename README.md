@@ -6,6 +6,10 @@
 
 电脑、手机、微信均可浏览，支持三维、平面、室内漫游与采光、材质调整。
 
+**[体验家装预设 A →](https://aimspike.github.io/HangZhouPHMT/?decor=a)** · [查看 3D 场景截图](assets/interior/preset-a/README.md) · [9 张装修参考图](references/interior/preset-a/README.md)
+
+新增暖木、米白与深蓝的可切换装修方案，包含客餐厅、厨房、卧室和卫浴家具。可继续调整材质、保存设置和导出当前效果图。
+
 [查看矢量平面图](plans/restored-floor-plan.svg) · [下载 PDF](plans/restored-floor-plan.pdf) · [小区资料与来源](references/phmt/README.md)
 
 ## 赞赏支持
@@ -45,6 +49,7 @@
 - **三维 / 平面 / 室内漫游**：查看空间关系、门洞和原图实黑墙段标记。
 - **日照与灯光**：清晨、正午、黄昏、夜晚四种环境，包含太阳、天光和室内灯的烘焙光照。
 - **材质搭配**：按房间或全屋更换墙壁、天花板、地板的颜色与材质。
+- **家装预设 A**：按 9 张参考图适配配色与家具，一键切换、分房间观景、查看内嵌参考图并保存场景截图。
 - **门与楼层**：查看平开门、吊轨推拉门的开合，调整所在楼层和透明楼栋。
 - **设置保存**：浏览器自动保存，支持 JSON 导入、导出；账号云同步已准备接入步骤，需自行配置服务后启用。
 
@@ -66,6 +71,8 @@
 | --- | --- |
 | [小区资料](references/phmt/README.md) | 项目概况、历史节点、来源与差异核对 |
 | [plans/](plans/) | 复原平面图 SVG、PDF、PNG |
+| [家装方案 A 截图](assets/interior/preset-a/README.md) | 网页实际 3D 场景截图及方案说明 |
+| [装修参考图](references/interior/preset-a/README.md) | 9 张原图按房间和视角命名，含分类依据与不确定项 |
 | [references/](references/) | 用户提供的户型 / 整层参考图与小区资料 |
 | [开发说明](context/DEVELOPMENT.md) | 构建、光照重烘焙、版本说明与验证范围 |
 | [发布记录](context/DEPLOYMENT.md) | GitHub Pages 部署与维护 |

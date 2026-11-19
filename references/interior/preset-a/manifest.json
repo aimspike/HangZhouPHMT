@@ -1,0 +1,144 @@
+{
+  "name": "家装预设 A",
+  "imported_on": "2026-11-19",
+  "source": "用户提供的9张装修参考图",
+  "originals_unchanged": true,
+  "room_mapping": "按可见特征推断；非测绘定位，卧室和卫浴标记待核实",
+  "images": [
+    {
+      "id": "01-tv-wall-and-dining",
+      "source_file": "微信图片_2026-11-19_173216_831.jpg",
+      "file": "living-dining/01-tv-wall-and-dining.jpg",
+      "preview": "previews/01-tv-wall-and-dining.webp",
+      "title": "客餐厅 · 电视墙与餐桌",
+      "room_id": "living",
+      "confidence": "high",
+      "notes": "电视矮柜、斗柜、橙色吊灯和木地板；相邻木门为参考图中的门位，不据此修改原户型门洞。",
+      "dimensions": [
+        1920,
+        1072
+      ],
+      "sha256": "c65b213e1cb4132584ef3c00e5b71d7eba56d57cdc0127eae4157141ab1a9d82"
+    },
+    {
+      "id": "02-sofa-dining-and-sideboard",
+      "source_file": "微信图片_2026-11-19_173233_246.jpg",
+      "file": "living-dining/02-sofa-dining-and-sideboard.jpg",
+      "preview": "previews/02-sofa-dining-and-sideboard.webp",
+      "title": "客餐厅 · 沙发、餐桌与餐边柜",
+      "room_id": "living",
+      "confidence": "high",
+      "notes": "深蓝条纹沙发、圆餐桌、灰色冰箱和低餐边柜。",
+      "dimensions": [
+        1920,
+        1072
+      ],
+      "sha256": "ce847f451946a593939800c39ef7218e04587f691fee74bd6106b9bd0948b557"
+    },
+    {
+      "id": "03-dining-toward-living-and-kitchen",
+      "source_file": "微信图片_2026-11-19_173236_350.jpg",
+      "file": "living-dining/03-dining-toward-living-and-kitchen.jpg",
+      "preview": "previews/03-dining-toward-living-and-kitchen.webp",
+      "title": "客餐厅 · 从餐桌看客厅与厨房",
+      "room_id": "dining",
+      "confidence": "high",
+      "notes": "前景餐桌、左侧沙发、右侧厨房入口，用于核对客餐厨风格关系。",
+      "dimensions": [
+        1920,
+        1072
+      ],
+      "sha256": "aaacb96ad4a98184c38399e0c725430384cdf837c486f23da535571cf33d9419"
+    },
+    {
+      "id": "04-living-toward-entry-and-dining",
+      "source_file": "微信图片_2026-11-19_173239_239.jpg",
+      "file": "living-dining/04-living-toward-entry-and-dining.jpg",
+      "preview": "previews/04-living-toward-entry-and-dining.webp",
+      "title": "客餐厅 · 从客厅看入口与餐区",
+      "room_id": "living",
+      "confidence": "high",
+      "notes": "近景沙发和电视墙、远景入户及餐桌，四张横图属于同一客餐厅的不同视角。",
+      "dimensions": [
+        1920,
+        1072
+      ],
+      "sha256": "6d5c7a7dd0f5ded67eb590d1b203244b0b301569cc3a8eda6b5519fd2b94868f"
+    },
+    {
+      "id": "05-sofa-window-detail",
+      "source_file": "微信图片_2026-11-19_173243_054.jpg",
+      "file": "living-dining/05-sofa-window-detail.jpg",
+      "preview": "previews/05-sofa-window-detail.webp",
+      "title": "客厅 · 沙发与窗边细节",
+      "room_id": "living",
+      "confidence": "high",
+      "notes": "深蓝沙发、米灰地毯、金属木质茶几与几何挂画。",
+      "dimensions": [
+        1440,
+        1920
+      ],
+      "sha256": "452f9e67ab00bd75dfc58faf971d9f52befb01fd872102f398e404fe18f10142"
+    },
+    {
+      "id": "01-l-shaped-wood-cabinet-kitchen",
+      "source_file": "微信图片_2026-11-19_173245_814.jpg",
+      "file": "kitchen/01-l-shaped-wood-cabinet-kitchen.jpg",
+      "preview": "previews/01-l-shaped-wood-cabinet-kitchen.webp",
+      "title": "厨房 · L形橱柜与餐边区域",
+      "room_id": "kitchen",
+      "confidence": "high",
+      "notes": "木色地柜、奶油白吊柜、浅色台面与竖向小砖；入口关系仅作参考。",
+      "dimensions": [
+        1920,
+        1072
+      ],
+      "sha256": "907ce989bd9c75f259d37286c42cd426cae4867f68e1f800ef504d22829765af"
+    },
+    {
+      "id": "01-bedroom-balcony-laundry",
+      "source_file": "微信图片_2026-11-19_173248_310.jpg",
+      "file": "bedrooms/01-bedroom-balcony-laundry.jpg",
+      "preview": "previews/01-bedroom-balcony-laundry.webp",
+      "title": "卧室 · 邻阳台与洗烘区（暂对应次卧）",
+      "room_id": "second",
+      "confidence": "medium",
+      "notes": "带软包床头、白床品和深蓝床尾毯，右侧可见洗烘柜及大玻璃开口；依据原户型仅次卧邻阳台暂归次卧，未核实是否为同户型。",
+      "dimensions": [
+        1440,
+        1920
+      ],
+      "sha256": "bcf3b03b650e5096c3d680ddf56202f3d8d6916e66e1053d01b0559a6fb08bb8"
+    },
+    {
+      "id": "02-bedroom-window-gallery-wall",
+      "source_file": "微信图片_2026-11-19_173252_055.jpg",
+      "file": "bedrooms/02-bedroom-window-gallery-wall.jpg",
+      "preview": "previews/02-bedroom-window-gallery-wall.webp",
+      "title": "卧室 · 窗边床与画墙（暂对应主卧）",
+      "room_id": "master",
+      "confidence": "medium",
+      "notes": "芥末色床头、深蓝床品和蓝橙画墙；与另一卧室区分，暂归主卧，朝向与准确门窗关系不能仅凭图片确认。",
+      "dimensions": [
+        1440,
+        1920
+      ],
+      "sha256": "36612d53016bac728e24ef8422f0f67fc903302ea3a4137f6ff08eec13982b54"
+    },
+    {
+      "id": "01-dry-vanity-and-dining-view",
+      "source_file": "微信图片_2026-11-19_173255_773.jpg",
+      "file": "bath-hall/01-dry-vanity-and-dining-view.jpg",
+      "preview": "previews/01-dry-vanity-and-dining-view.webp",
+      "title": "卫浴 / 过道 · 干区台盆与餐厅视角",
+      "room_id": "bath",
+      "confidence": "medium",
+      "notes": "悬浮木色台盆柜、浅石台面、发光圆角镜、竖砖背景；参考干区与餐厅相邻，原89-A平面不能直接确认此位置，落地方案保留卫生间原边界。",
+      "dimensions": [
+        1440,
+        1920
+      ],
+      "sha256": "637b0cd4c87db8783a4eabc1e007cfcadc73b9b8178a651b342ecebf8de2bb99"
+    }
+  ]
+}
