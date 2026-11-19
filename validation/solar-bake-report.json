@@ -13,7 +13,7 @@
     "noon",
     "dusk"
   ],
-  "blockers": 129,
+  "blockers": 128,
   "rooms": [
     {
       "room": "living",
@@ -96,7 +96,7 @@
     {
       "room": "master",
       "reflectedFlux": [
-        0.41054,
+        0.05803,
         0.86271,
         0.812
       ],
@@ -111,7 +111,7 @@
       "reflectedFlux": [
         0.38599,
         1.60315,
-        0.58321
+        0.04877
       ],
       "grid": [
         8,

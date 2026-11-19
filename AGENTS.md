@@ -23,8 +23,10 @@
 - `src/plan-layout.json` 是图纸与网页墙线、门洞、门配置和原图实黑标记的共同来源；修改门洞必须同步重绘和重烘焙。承重标记仅根据原图实黑区域，不可自动把厚墙全部标为承重。
 
 - `settings-storage.js`为本地/可选Supabase云同步；配置为空不得发云请求。公开配置在`cloud-config.json`，部署SQL/说明在`cloud/`。会话令牌不得导出或提交。
-- `wall_junctions.py`为网页与矢量图共享的11处直角补片。当前烘焙快照134mesh/roof131/219图；变几何才重烘焙，纯渲染改动不需要。
+- `wall_junctions.py`为网页与矢量图共享的11处直角补片。当前烘焙快照133mesh/roof130/219图；变几何才重烘焙，纯渲染改动不需要。
 
 - V12.1按用户要求移除运行时路径追踪、入口及CPU/GPU脚本，保留实时烘焙照明与V12其他改动。替代方案见`context/LIGHTING_OPTIONS.md`；未获新实施要求时仅作评估。
 
 - 正式项目目录现为`D:/HangZhouPHMT`，GitHub为`aimspike/HangZhouPHMT`，展示地址`https://aimspike.github.io/HangZhouPHMT/`。本会话默认cwd可能仍是C盘旧目录，命令需显式使用新D盘路径。
+
+- 装修方案仅有毛坯（无家具、水泥基底）和A；客厅电视在北侧、沙发在南侧，保留书房推拉门停车空间。阳台西侧与邻居相连，为全高实墙，不能按围栏剖切。衣柜背面与床头应贴墙，卧室门扫掠与床其余三边通行必须验证。

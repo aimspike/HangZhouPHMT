@@ -26,7 +26,7 @@
     {"id":"storage-west","a":[4.4,6.4],"b":[4.4,8.2],"t":0.085,"openings":[{"a":0.1,"b":0.9,"kind":"door","door":"storage"}]},
     {"id":"storage-south","a":[4.4,7.6],"b":[6.2,7.6],"t":0.085},
     {"id":"bedroom-divider","a":[3.2,8.2],"b":[3.2,11.8],"t":0.17},
-    {"id":"platform-divider","a":[3.2,11.8],"b":[3.2,12.5],"t":0.065,"height":0.95,"guard":true},
+    {"id":"platform-divider","a":[3.2,11.8],"b":[3.2,12.5],"t":0.17,"height":2.96,"role":"party-wall","note":"用户确认：阳台西侧为与邻居一体的全高实墙"},
     {"id":"master-south","a":[0,11.8],"b":[3.2,11.8],"t":0.185,"openings":[{"a":0.7,"b":2.4,"kind":"window"}]},
     {"id":"balcony-door","a":[3.2,11],"b":[6.2,11],"t":0.17,"openings":[{"a":0.35,"b":2.5,"kind":"sliding"}]}
   ],

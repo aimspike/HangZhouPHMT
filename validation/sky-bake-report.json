@@ -13,7 +13,7 @@
     },
     {
       "room": "hall",
-      "meanExposure": 0.00549,
+      "meanExposure": 0.00545,
       "meanBounce": 0.00288,
       "reflectedFlux": 0.11623
     },
@@ -43,15 +43,15 @@
     },
     {
       "room": "master",
-      "meanExposure": 0.01349,
-      "meanBounce": 0.007,
-      "reflectedFlux": 0.50165
+      "meanExposure": 0.01322,
+      "meanBounce": 0.00686,
+      "reflectedFlux": 0.48731
     },
     {
       "room": "second",
-      "meanExposure": 0.01897,
-      "meanBounce": 0.01064,
-      "reflectedFlux": 0.74735
+      "meanExposure": 0.01783,
+      "meanBounce": 0.00994,
+      "reflectedFlux": 0.69233
     }
   ]
 }

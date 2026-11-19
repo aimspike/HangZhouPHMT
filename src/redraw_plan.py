@@ -147,8 +147,7 @@ for w in layout['walls']:
 ml(3150,0,3150,700,26)
 mp([(1810,630),(1810,160),(3060,160)],18)
 mp([(5660,170),(6060,170),(6060,460),(5660,460),(5660,170)],18)
-# The glazed partition in the south platform is not a full-height interior window.
-window(3200,11870,3200,12450,65)
+# The balcony west boundary is a full-height solid party wall, confirmed by the user.
 end()
 
 group('doors-current-viewer-scheme')
@@ -208,7 +207,7 @@ line(122,1426,149,1426,7,'#b4513f')
 text(162,1431,'承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。',13,'#626a70',anchor='start')
 text(120,1460,'尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。',13,'#626a70',anchor='start')
 text(120,1487,'门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。',13,'#626a70',anchor='start')
-text(120,1514,'V12 直角补齐 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
+text(120,1514,'阳台西侧为全高实墙 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
 end()
 svg.append('</svg>')
 (OUT/'restored-floor-plan.svg').write_text('\n'.join(svg),encoding='utf-8')

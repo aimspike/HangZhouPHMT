@@ -118,8 +118,8 @@
 <polyline points="565.200,930.200 565.200,1239.800" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
 </g>
 <g id="wall-platform-divider">
-<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#303438" stroke-width="5.590" stroke-linejoin="miter"/>
-<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#ffffff" stroke-width="2.494" stroke-linejoin="miter"/>
+<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
 </g>
 <g id="wall-master-south">
 <polyline points="290.000,1239.800 350.200,1239.800" fill="none" stroke="#303438" stroke-width="15.910" stroke-linejoin="miter"/>
@@ -155,8 +155,6 @@
 <polygon points="656.188,479.345 659.800,479.345 659.800,479.732 656.188,479.732" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="282.260,1239.800 290.000,1239.800 290.000,1247.755 282.260,1247.755" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="283.808,1239.800 290.000,1239.800 290.000,1246.207 283.808,1246.207" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
-<polygon points="565.200,1239.800 572.510,1239.800 572.510,1247.755 565.200,1247.755" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
-<polygon points="565.200,1239.800 570.962,1239.800 570.962,1246.207 565.200,1246.207" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
 </g>
 <g id="bearing-from-source-black-regions">
 <polygon points="823.200,218.120 830.940,218.120 830.940,225.000 823.200,225.000" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
@@ -165,7 +163,6 @@
 <polygon points="282.260,466.660 290.000,466.660 290.000,474.400 282.260,474.400" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="429.320,277.460 436.200,277.460 436.200,285.200 429.320,285.200" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="282.260,1239.800 290.000,1239.800 290.000,1247.755 282.260,1247.755" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
-<polygon points="565.200,1239.800 572.510,1239.800 572.510,1247.755 565.200,1247.755" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
 <polyline points="659.800,225.000 700.220,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
 <polyline points="781.920,225.000 823.200,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
 <polyline points="823.200,225.000 823.200,259.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
@@ -250,13 +247,6 @@
 <line x1="560.900" y1="225.000" x2="560.900" y2="285.200" stroke="#222222" stroke-width="2.236"/>
 <polyline points="445.660,279.180 445.660,238.760 553.160,238.760" fill="none" stroke="#222222" stroke-width="1.548" stroke-linejoin="miter"/>
 <polyline points="776.760,239.620 811.160,239.620 811.160,264.560 776.760,264.560 776.760,239.620" fill="none" stroke="#222222" stroke-width="1.548" stroke-linejoin="miter"/>
-<polyline points="565.200,1245.820 565.200,1295.700" fill="none" stroke="#ffffff" stroke-width="7.740" stroke-linejoin="miter"/>
-<line x1="567.995" y1="1245.820" x2="567.995" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="566.132" y1="1245.820" x2="566.132" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="564.268" y1="1245.820" x2="564.268" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="562.405" y1="1245.820" x2="562.405" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="567.995" y1="1245.820" x2="562.405" y2="1245.820" stroke="#222222" stroke-width="1.376"/>
-<line x1="567.995" y1="1295.700" x2="562.405" y2="1295.700" stroke="#222222" stroke-width="1.376"/>
 </g>
 <g id="doors-current-viewer-scheme">
 <g id="door-entry">
@@ -380,6 +370,6 @@
 <text x="162.000" y="1431.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。</text>
 <text x="120.000" y="1460.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。</text>
 <text x="120.000" y="1487.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。</text>
-<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">V12 直角补齐 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
+<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">阳台西侧为全高实墙 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
 </g>
 </svg>

@@ -1,6 +1,6 @@
 # Codex 续接上下文
 
-更新时间：2026-11-19。当前版本 V13。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。
+更新时间：2026-11-19。当前版本 V13.1。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末 V13.1。
 
 ## 模型与环境
 
@@ -16,7 +16,7 @@
 - `src/environment.js`：程序化云、城市、小区以及地面随楼层偏移。
 - `src/build_house.py`：将Three r128、OrbitControls、FXAA、Lucide子集、环境代码及219张内嵌PNG纹理写进一个HTML。
 - `src/redraw_plan.py`：重建SVG、PDF和PNG；`src/make_solar.py`计算四种天空时间。
-- `src/bake-source.json`：122个mesh、屋顶id119、卧室新增门楣id120/121。`houseBakeSource()`可重新导出原始几何；材质拆分前已捕获快照。
+- `src/bake-source.json`：当前133个mesh、屋顶id130。`houseBakeSource()`可重新导出原始几何；材质拆分前已捕获快照。
 - `src/bake_lighting.py`烘焙73张灯光贴图；`src/bake_sun.py`为3个太阳方向生成RGB贴图，最终`baked-lighting.json`含219张图（73灯光/天光 + 73三时段太阳直射 + 73三时段太阳反射）。
 
 ## 关键修复
@@ -30,7 +30,7 @@
 
 ## 验证
 
-桌面WebGL1启动正常，无JS/shader错误；146/146图完成；roofCoverage()为0缺口；7扇门全关/全开；厨房修改不改变书房；夜间墙面和屋顶平滑，FOV105°、眼高1.5m。手机模拟360×780、390×844、740×360，UA包含MicroMessenger，模型覆盖视口，面板正确开关。详见validation/。仅模拟微信UA与屏幕，尚未真机测试。
+桌面WebGL1启动正常，无JS/shader错误；219/219图完成；roofCoverage()为0缺口；7扇门全关/全开；厨房修改不改变书房；夜间墙面和屋顶平滑，FOV105°、眼高1.5m。手机模拟含320×740、390×844、740×360、568×320，UA包含MicroMessenger，模型覆盖视口，面板正确开关。详见validation/。仅模拟微信UA与屏幕，尚未真机测试。
 
 只读诊断：`houseViewer.diagnostics`、`.roofCoverage()`、`.bakedMaps`、`.finishes`、`.doors`、`.building`。场景数据通过`houseBakeSource()`导出。修改后必须构建，并检查公开部署。
 
@@ -138,3 +138,15 @@ README改为“杭州·璞荟铭庭”，包括在线体验、项目介绍、平
 - 验证：原图字节保持；家具与全高墙不相交；7 门各 25 步、全部可选门型与家具无碰撞；两卧室仅平开，次卧床与床头柜已避开扫掠范围。门闭合 0 缺口、推拉原测试通过、屋顶 0 缺口。桌面 WebGL1、320×740/390×844/740×360/568×320 微信 UA 模拟与旋转，219/219 图、三模式、快捷按钮、相册和截图正常，无自动外部请求或 JS/Shader 错误。真机微信仍未验证。
 - 记录：`validation/decor-a-validation.json`、`verify-decor-preset.cjs` 和移动端截图。发布仍为 `main:/docs`，最终 HTML 约 3.48 MB，全部图与模块内嵌。
 - 功能提交 `07396d9` 已发布，公开 HTML 与本地规范化 SHA256 一致。390×844 微信 UA 模拟和磁盘单 HTML 均启动正常；公开方案切换、相册、截图预览通过。公网证据为 `validation/decor-a-public.json` 与 `decor-a-public-mobile.png`。详细发布记录见 `DEPLOYMENT.md`。
+
+## V13.1 布局修正、家具细节与毛坯方案
+
+- 用户确认阳台西侧为邻居一体实墙：`platform-divider` 改为0.17m厚、2.96m高且不带guard；矢量图移除该段玻璃线。室内全高，三维跟随普通墙剖切（默认1.1m），不会被阳台围栏额外压低到0.38m。未新增未经确认的承重属性。
+- 建筑几何变化后重新导出并全量烘焙灯光、太阳与天光：133 mesh、roof130，73×3共219张图。网页几何导出逐项一致、屋顶0缺口。
+- 客厅按参考图与厨房/书房入口、西侧大窗核对：电视在北侧、沙发在南侧。电视柜位于x2.44/z3.43，宽1.45m，前移避开书房外挂推拉停车空间；新增livingTV观景位置与第9张截图。
+- 主卧床头贴中间隔墙东侧内沿x3.115，次卧床头贴东墙内沿x6.11；两衣柜分别贴bath-south和storage-south北侧墙内沿。由实际模型包围盒测量贴墙误差小于0.001m；主卧床三侧净距约1.005/0.533/0.717m，次卧约0.885/0.734/0.575m（足端/北侧衣柜前/南侧）。这是模型排布净距，不是施工尺寸。
+- 家具390个部件合并为108 mesh，31个独立碰撞检查条目、23个漫游阻挡对象。新增软枕/床品褶皱与包边、柜门缝/把手、管状椅架、厨卫五金/植物/书本与洗烘面板。512px灰度木纹/织物/石材凹凸、材质粗糙度与自包含程序化反射环境改善表面；反射环境按昼夜和开灯降低强度，不反射真实房间，不是完整GI或路径追踪。
+- 删除旧原有方案家具构造，默认bare毛坯：无家具、墙顶地水泥基底。showFurniture在bare强制关闭/禁用，A仍可独立隐藏家具。schema1的decor为preset/bareFinishes/aFinishes，两套自定义材质分别保存；旧original或缺少decor的设置迁移为无家具水泥毛坯，不重新载入旧装饰材质。
+- `validation/verify-decor-preset.cjs` 与 `decor-a-validation.json`：7门全部可选门型25步家具间距无碰撞，闭合无缺口，4扇推拉原扫掠测试通过；床/衣柜贴墙及三侧净距、9个观景位置、全高墙间距检查通过。bare默认/旧JSON迁移、A/bare材质保存刷新与导入导出、9图相册焦点/键盘、桌面下载及移动长按预览通过。
+- 320×740、390×844、740×360、568×320微信UA模拟及旋转均通过，设置默认关闭、画布满视口、三模式无溢出；219/219贴图、无JS/Shader错误或自动外部请求。仍未真机微信测试。
+- 已更新SVG/PDF/PNG及9张实际场景导出、captures.json与preview.webp。9张用户JPG字节及SHA256仍与原文件一致。最终HTML约3.48MB，WebGL1、自包含、云配置仍为空。
