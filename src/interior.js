@@ -10,8 +10,9 @@ function createRoomFinishes(options){
   else {const image=ctx.getImageData(0,0,256,256);for(let i=0;i<image.data.length;i+=4){const v=kind==='paint'?245+rand()*8:kind==='plaster'?229+rand()*23:kind==='concrete'?210+rand()*32:234+rand()*17;image.data[i]=image.data[i+1]=image.data[i+2]=v;}ctx.putImageData(image,0,0);if(kind==='stone'){for(let i=0;i<12;i++){ctx.strokeStyle='rgba(110,110,110,.14)';ctx.lineWidth=1;ctx.beginPath();const y=rand()*256;ctx.moveTo(0,y);ctx.bezierCurveTo(80,y+40,160,y-50,256,y+20);ctx.stroke();}}}
   const map=new THREE.CanvasTexture(c);map.encoding=THREE.sRGBEncoding;map.wrapS=map.wrapT=THREE.RepeatWrapping;map.anisotropy=Math.min(renderer.capabilities.getMaxAnisotropy(),4);textures[key]=map;return map;
  }
+ function dataTexture(kind,surface,channel){const key='data-'+kind+'-'+surface+'-'+channel;if(textures[key])return textures[key];const source=texture(kind,surface),c=document.createElement('canvas');c.width=c.height=256;const ctx=c.getContext('2d');ctx.drawImage(source.image,0,0);if(channel==='roughness'){const image=ctx.getImageData(0,0,256,256);for(let i=0;i<image.data.length;i+=4){const v=224+(image.data[i]-235)*.7;image.data[i]=image.data[i+1]=image.data[i+2]=v;}ctx.putImageData(image,0,0);}const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.LinearEncoding;tx.wrapS=tx.wrapT=THREE.RepeatWrapping;tx.anisotropy=Math.min(renderer.capabilities.getMaxAnisotropy(),4);textures[key]=tx;return tx;}
  function roomAt(x,z){return rooms.find(r=>x>=r.x-1e-5&&x<=r.x+r.w+1e-5&&z>=r.z-1e-5&&z<=r.z+r.d+1e-5);}
- function configure(entry){const value=settings[entry.room.id][entry.kind],m=entry.material;m.color.set(value.color);m.map=texture(value.material,entry.kind);m.bumpMap=value.material==='paint'?null:m.map;m.bumpScale=['wood','parquet'].includes(value.material)?.002:value.material==='tile'?.004:.008;m.roughness=value.material==='tile'?.35:value.material==='stone'?.43:['wood','parquet'].includes(value.material)?.72:.9;m.metalness=0;m.vertexColors=false;m.needsUpdate=true;}
+ function configure(entry){const value=settings[entry.room.id][entry.kind],m=entry.material;m.userData.houseRoom=entry.room.id;m.userData.houseReflectionStrength=entry.kind==='ceiling'?.6:1;m.color.set(value.color).convertSRGBToLinear();m.map=texture(value.material,entry.kind);m.bumpMap=value.material==='paint'?null:dataTexture(value.material,entry.kind,'height');m.roughnessMap=dataTexture(value.material,entry.kind,'roughness');m.bumpScale=['wood','parquet'].includes(value.material)?.002:value.material==='tile'?.004:.008;m.roughness=value.material==='tile'?.35:value.material==='stone'?.43:['wood','parquet'].includes(value.material)?.48:.86;m.metalness=0;m.vertexColors=false;m.needsUpdate=true;}
  function cloneMaterial(base,r,kind){const material=base.clone();material.onBeforeCompile=base.onBeforeCompile;material.customProgramCacheKey=base.customProgramCacheKey;const entry={room:r,kind,material};entries.push(entry);configure(entry);return material;}
  function clip(poly,axis,bound,keepGreater){const result=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length],av=a.world[axis]-bound,bv=b.world[axis]-bound,ai=keepGreater?av>=-1e-7:av<=1e-7,bi=keepGreater?bv>=-1e-7:bv<=1e-7;if(ai)result.push(a);if(ai!==bi){const t=av/(av-bv),v={};for(const key of ['position','normal','uv','uv2','color','world'])if(a[key])v[key]=a[key].map((n,k)=>n+(b[key][k]-n)*t);result.push(v);}}return result;}
  const cutsX=[...new Set(rooms.reduce((a,r)=>a.concat([r.x,r.x+r.w]),[]))].sort((a,b)=>a-b),cutsZ=[...new Set(rooms.reduce((a,r)=>a.concat([r.z,r.z+r.d]),[]))].sort((a,b)=>a-b);
@@ -87,7 +88,7 @@ function createHouseDoors(options){
  const bronze=new THREE.MeshStandardMaterial({color:'#9d8560',roughness:.47,metalness:.55});
  const black=new THREE.MeshStandardMaterial({color:'#252b2c',roughness:.4,metalness:.35});
  const seal=new THREE.MeshStandardMaterial({color:'#504b43',roughness:1});
- [normalWood,entryFinish,frameFinish,bronze,black,seal].forEach(m=>options.shade(m));
+ [normalWood,entryFinish,frameFinish,bronze,black,seal].forEach(m=>{m.color.convertSRGBToLinear();options.shade(m);});
  const h=2.1,overlap=.022,leafBottom=.012,leafTop=2.078;
  function clone(base){const m=base.clone();m.onBeforeCompile=base.onBeforeCompile;m.customProgramCacheKey=base.customProgramCacheKey;return m;}
  function box(parent,x,y,z,w,height,d,material){const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,height,d),material);mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh;}
@@ -120,7 +121,7 @@ function createHouseDoors(options){
  function add(config){
   const item={...config,open:!config.entry,type:config.allowSliding&&options.defaultType==='sliding'?'sliding':'hinged',transparent:false};
   item.width=item.end-item.start;
-  item.materials={wood:clone(normalWood),entry:clone(entryFinish),frame:clone(config.entry?entryFinish:frameFinish),bronze:clone(bronze),black:clone(black),seal:clone(seal)};
+  item.materials={wood:clone(normalWood),entry:clone(entryFinish),frame:clone(config.entry?entryFinish:frameFinish),bronze:clone(bronze),black:clone(black),seal:clone(seal)};for(const m of Object.values(item.materials)){m.userData.houseRoom=config.id==='entry'?'dining':config.id;m.userData.houseReflectionStrength=1;}
   const container=item.container=new THREE.Group();container.position.set(config.axis==='x'?config.start:config.fixed,0,config.axis==='x'?config.fixed:config.start);container.rotation.y=config.axis==='z'?-Math.PI/2:0;group.add(container);
   const W=item.width,depth=config.depth;
   // Jambs cover the raw opening. The leaf overlaps their stops by 22 mm.

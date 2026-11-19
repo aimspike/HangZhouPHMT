@@ -628,8 +628,8 @@
     "preset": "a",
     "built": true,
     "visible": true,
-    "parts": 390,
-    "mergedMeshes": 108,
+    "parts": 766,
+    "mergedMeshes": 109,
     "items": [
       {
         "id": "living-sofa",
@@ -940,31 +940,59 @@
         ]
       },
       {
-        "id": "storage-shelves",
+        "id": "storage-rack-north",
         "room": "storage",
         "min": [
-          5.750000003576279,
-          0.16000000044703483,
-          6.549999994039536
+          5.370000000447035,
+          0.012999999895691873,
+          6.442499999810011
         ],
         "max": [
-          6.0699999964237215,
-          2.279999999552965,
-          7.350000005960465
+          6.109999999552965,
+          2.4600000381469727,
+          6.67049999922514
+        ]
+      },
+      {
+        "id": "storage-rack-east",
+        "room": "storage",
+        "min": [
+          5.852000000774861,
+          0.012999999895691873,
+          6.672500000447036
+        ],
+        "max": [
+          6.11000000018999,
+          2.4600000381469727,
+          7.327499999552964
+        ]
+      },
+      {
+        "id": "storage-rack-south",
+        "room": "storage",
+        "min": [
+          4.650000000447036,
+          0.012999999895691873,
+          7.329500000774859
+        ],
+        "max": [
+          6.109999999552966,
+          2.4600000381469727,
+          7.557500000189989
         ]
       },
       {
         "id": "balcony-laundry",
         "room": "balcony",
         "min": [
-          5.375000011920929,
-          0.029999985694885156,
-          11.615000000447035
+          5.368636265344918,
+          0.02999999523162833,
+          11.61000000038743
         ],
         "max": [
-          6.024999988079071,
-          2.2500000143051144,
-          12.360000013113021
+          6.110000003576279,
+          2.2700000047683715,
+          12.289999999612569
         ]
       },
       {
@@ -1106,12 +1134,90 @@
         "wallFace": 7.6425,
         "back": 7.642499994039536,
         "gap": -5.960464122267695e-9
+      },
+      {
+        "id": "storage-rack-north",
+        "backWall": "storage-north",
+        "wallFace": 6.442500000000001,
+        "back": 6.442499999810011,
+        "gap": -1.899893575796341e-10,
+        "width": 0.7400000000000002,
+        "depth": 0.23,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "storage-rack-east",
+        "backWall": "east",
+        "wallFace": 6.11,
+        "back": 6.11000000018999,
+        "gap": -1.899893575796341e-10,
+        "width": 0.6549999999999985,
+        "depth": 0.26,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "storage-rack-south",
+        "backWall": "storage-south",
+        "wallFace": 7.557499999999999,
+        "back": 7.557500000189989,
+        "gap": -1.899893575796341e-10,
+        "width": 1.46,
+        "depth": 0.23,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "balcony-laundry",
+        "backWall": "balcony-east",
+        "wallFace": 6.11,
+        "back": 6.110000003576279,
+        "gap": -3.5762788286319847e-9,
+        "facing": "west",
+        "frontNormal": [
+          -1,
+          0,
+          -2.220446049250313e-16
+        ],
+        "cabinetWidth": 0.68,
+        "cabinetDepth": 0.68
       }
     ],
-    "blockingObjects": 23,
-    "furnitureCount": 31,
+    "blockingObjects": 25,
+    "furnitureCount": 33,
     "architectureUnchanged": true,
-    "lighting": "Architectural bake; local furnishing fill, contact shadows, bump detail and a procedural reflection environment"
+    "lighting": "Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials"
   },
   "placements": [
     {
@@ -1153,8 +1259,197 @@
       "wallFace": 7.6425,
       "back": 7.642499994039536,
       "gap": -5.960464122267695e-9
+    },
+    {
+      "id": "storage-rack-north",
+      "backWall": "storage-north",
+      "wallFace": 6.442500000000001,
+      "back": 6.442499999810011,
+      "gap": -1.899893575796341e-10,
+      "width": 0.7400000000000002,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-east",
+      "backWall": "east",
+      "wallFace": 6.11,
+      "back": 6.11000000018999,
+      "gap": -1.899893575796341e-10,
+      "width": 0.6549999999999985,
+      "depth": 0.26,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-south",
+      "backWall": "storage-south",
+      "wallFace": 7.557499999999999,
+      "back": 7.557500000189989,
+      "gap": -1.899893575796341e-10,
+      "width": 1.46,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "balcony-laundry",
+      "backWall": "balcony-east",
+      "wallFace": 6.11,
+      "back": 6.110000003576279,
+      "gap": -3.5762788286319847e-9,
+      "facing": "west",
+      "frontNormal": [
+        -1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "cabinetWidth": 0.68,
+      "cabinetDepth": 0.68
     }
   ],
+  "storageRacks": [
+    {
+      "id": "storage-rack-north",
+      "backWall": "storage-north",
+      "wallFace": 6.442500000000001,
+      "back": 6.442499999810011,
+      "gap": -1.899893575796341e-10,
+      "width": 0.7400000000000002,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-east",
+      "backWall": "east",
+      "wallFace": 6.11,
+      "back": 6.11000000018999,
+      "gap": -1.899893575796341e-10,
+      "width": 0.6549999999999985,
+      "depth": 0.26,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-south",
+      "backWall": "storage-south",
+      "wallFace": 7.557499999999999,
+      "back": 7.557500000189989,
+      "gap": -1.899893575796341e-10,
+      "width": 1.46,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    }
+  ],
+  "laundry": {
+    "id": "balcony-laundry",
+    "backWall": "balcony-east",
+    "wallFace": 6.11,
+    "back": 6.110000003576279,
+    "gap": -3.5762788286319847e-9,
+    "facing": "west",
+    "frontNormal": [
+      -1,
+      0,
+      -2.220446049250313e-16
+    ],
+    "cabinetWidth": 0.68,
+    "cabinetDepth": 0.68
+  },
+  "storageAisle": {
+    "intersections": [],
+    "points": [
+      {
+        "x": 4.7,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 4.9,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.15,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.4,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.65,
+        "z": 6.95,
+        "clear": true
+      }
+    ],
+    "width": 0.6590000015497184
+  },
   "bedClearances": [
     {
       "room": "master",
@@ -1355,6 +1650,15 @@
         0.7999999999999998,
         1.5,
         -3.9
+      ],
+      "clear": true
+    },
+    {
+      "id": "storage",
+      "camera": [
+        1.6999999999999997,
+        1.5,
+        0.6500000000000004
       ],
       "clear": true
     },

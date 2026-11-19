@@ -43,7 +43,7 @@ function createHouseDecor(options) {
   const key=room+'-'+name;if(materials[key])return materials[key];
   const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],seam:['#7c8a91'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32']};
   const [color,texture]=definitions[name],fabric=['fabric','stripe'].includes(texture),metal=['steel','brass'].includes(name);const m=new THREE.MeshStandardMaterial({color,roughness:metal?.25:name==='mirror'?.13:fabric?.93:texture==='wood'?.46:name==='stone'?.36:name==='ceramic'?.3:.65,metalness:metal?.82:name==='mirror'?.8:0});m.color.convertSRGBToLinear();
-  if(texture){const tx=surfaceTexture(texture);m.map=tx.map;m.bumpMap=tx.bump;m.bumpScale=fabric?.0009:texture==='wood'?.0014:.0006;}
+  if(texture){const tx=surfaceTexture(texture);m.map=tx.map;m.bumpMap=tx.bump;m.roughnessMap=tx.bump;m.bumpScale=fabric?.0009:texture==='wood'?.0014:.0006;}
   m.envMap=reflections();m.userData.envStrength=metal?.75:name==='mirror'?.95:fabric?.015:.12;m.envMapIntensity=m.userData.envStrength;
   if(name==='glow'){m.emissive.set('#ffcd80');m.emissiveIntensity=.65;glowing.push(m);}
   options.shade(m,room);materials[key]=m;return m;
@@ -58,7 +58,7 @@ function createHouseDecor(options) {
   else if(type==='round'){
    const [w,h,d]=dimensions,r=Math.min(.035,w/5,h/5,d/5),s=new THREE.Shape(),x=-w/2+r,y=-h/2+r,ww=w-2*r,hh=h-2*r,q=Math.min(r,ww/4,hh/4);
    s.moveTo(x+q,y);s.lineTo(x+ww-q,y);s.quadraticCurveTo(x+ww,y,x+ww,y+q);s.lineTo(x+ww,y+hh-q);s.quadraticCurveTo(x+ww,y+hh,x+ww-q,y+hh);s.lineTo(x+q,y+hh);s.quadraticCurveTo(x,y+hh,x,y+hh-q);s.lineTo(x,y+q);s.quadraticCurveTo(x,y,x+q,y);s.closePath();
-   g=new THREE.ExtrudeGeometry(s,{depth:Math.max(.001,d-2*r),bevelEnabled:true,bevelThickness:r,bevelSize:r,bevelSegments:2,curveSegments:3,steps:1});g.translate(0,0,-d/2+r);
+   g=new THREE.ExtrudeGeometry(s,{depth:Math.max(.001,d-2*r),bevelEnabled:true,bevelThickness:r,bevelSize:r,bevelSegments:4,curveSegments:8,steps:1});g.translate(0,0,-d/2+r);const p=g.attributes.position,n=g.attributes.normal,inner=[w/2-r,h/2-r,d/2-r];for(let i=0;i<p.count;i++){const v=[p.getX(i),p.getY(i),p.getZ(i)],normal=new THREE.Vector3(...v.map((a,j)=>a-THREE.MathUtils.clamp(a,-inner[j],inner[j])));if(normal.lengthSq()>1e-10){normal.normalize();n.setXYZ(i,normal.x,normal.y,normal.z);}}
   } else g=new THREE.BoxGeometry(...dimensions);
   if(type==='box'||type==='round'){const p=g.attributes.position,n=g.attributes.normal,u=g.attributes.uv;for(let i=0;i<p.count;i++){const ax=Math.abs(n.getX(i)),ay=Math.abs(n.getY(i)),az=Math.abs(n.getZ(i));u.setXY(i,(ax>ay&&ax>az?p.getZ(i):p.getX(i))*2,ay>ax&&ay>az?p.getZ(i)*2:p.getY(i)*2);}}
   geometries[key]=g;return g;
@@ -130,6 +130,65 @@ function createHouseDecor(options) {
    box(room,cx,2.4,cz,width+.006,.018,depth,'cream');
   });const back=items[items.length-1].min[2],plane=wallFace(backWall,1,1);placements.push({id,backWall,wallFace:plane,back,gap:back-plane});
  }
+ function assembledItem(id,room,cx,cz,angle,build){
+  item(id,room,()=>{build();const assembly=new THREE.Group();assembly.name=id;layer(room).add(assembly);for(const part of currentItem.meshes)assembly.add(part);assembly.position.set(cx,0,cz);assembly.rotation.y=angle;});
+ }
+ function storageRacks(){
+  const north=wallFace('storage-north',1,1),south=wallFace('storage-south',1,-1),east=wallFace('east',0,-1),depth=.23,eastDepth=.26;
+  const levels=[.22,.66,1.10,1.54,1.98,2.42],height=2.46;
+  function rack(id,wall,cx,cz,width,d,angle,axis,side){
+   const first=parts;
+   assembledItem(id,'storage',cx,cz,angle,()=>{
+    // 24 mm square posts, 18 mm inset boards and shallow steel support beams.
+    for(const x of [-width/2+.02,width/2-.02])for(const z of [-d/2+.02,d/2-.02]){
+     box('storage',x,1.25,z,.024,2.42,.024,'steel');box('storage',x,.025,z,.036,.024,.036,'black');
+     for(const y of [.38,1.26,2.14])box('storage',x,y,z,.029,.055,.029,'steel');
+    }
+    for(const y of levels){
+     box('storage',0,y,0,width-.034,.018,d-.034,'oak');
+     for(const z of [-d/2+.016,d/2-.016])box('storage',0,y-.021,z,width-.028,.024,.014,'steel');
+     for(const x of [-width/2+.016,width/2-.016])box('storage',x,y-.021,0,.014,.024,d-.028,'steel');
+     for(const x of [-width/2+.02,width/2-.02]){
+      const bolt=cylinder('storage',x,y-.021,d/2-.006,.004,.004,.004,'black');bolt.rotation.x=Math.PI/2;
+     }
+    }
+    // Adjustment slots and flush wall ties remain inside the rack envelope.
+    for(const x of [-width/2+.02,width/2-.02]){
+     for(let i=0;i<23;i++)box('storage',x,.14+i*.1,d/2-.007,.004,.014,.002,'black');
+     for(const y of [1.25,2.35]){box('storage',x,y,-d/2+.004,.04,.035,.008,'steel');box('storage',x,y+.02,-d/2+.021,.04,.006,.042,'steel');}
+    }
+   });
+   const bounds=items[items.length-1],back=side===1?bounds.min[axis]:bounds.max[axis],plane=wallFace(wall,axis===2?1:0,side);
+   placements.push({id,backWall:wall,wallFace:plane,back,gap:side*(back-plane),width,depth:d,height,boardThickness:.018,postWidth:.024,levels:levels.slice(),parts:parts-first});
+  }
+  // The north rack starts beyond the west door's entire hinged sweep.
+  rack('storage-rack-north','storage-north',(5.37+east)/2,north+depth/2,east-5.37,depth,0,2,1);
+  rack('storage-rack-east','east',east-eastDepth/2,(north+depth+south-depth)/2,south-north-2*depth,eastDepth,-Math.PI/2,0,-1);
+  rack('storage-rack-south','storage-south',(4.65+east)/2,south-depth/2,east-4.65,depth,Math.PI,2,-1);
+ }
+ function laundry(){
+  const east=wallFace('balcony-east',0,-1),depth=.68,cx=east-depth/2,cz=11.95,angle=Math.PI/2;
+  assembledItem('balcony-laundry','balcony',cx,cz,angle,()=>{
+   const width=.68;
+   for(const x of [-width/2+.009,width/2-.009])box('balcony',x,1.15,0,.018,2.24,depth,'cream');
+   box('balcony',0,1.15,depth/2-.009,width-.036,2.24,.018,'cream');
+   for(const y of [.039,1.095,2.261])box('balcony',0,y,0,width-.036,.018,depth,'cream');
+   for(const y of [.58,1.66]){
+    round('balcony',0,y,-.005,.598,.994,.62,'white');box('balcony',0,y,-.325,.58,.94,.018,'white');
+    const drum=cylinder('balcony',0,y-.055,-.351,.207,.207,.027,'steel');drum.rotation.x=Math.PI/2;
+    const glass=cylinder('balcony',0,y-.055,-.372,.169,.169,.018,'black');glass.rotation.x=Math.PI/2;
+    const rim=new THREE.Mesh(new THREE.TorusGeometry(.186,.013,10,56),material('steel','balcony'));rim.position.set(0,y-.055,-.389);layer('balcony').add(rim);currentItem.meshes.push(rim);parts++;
+    box('balcony',-.112,y+.345,-.339,.23,.055,.014,'black');
+    const knob=cylinder('balcony',.18,y+.345,-.351,.027,.027,.024,'steel');knob.rotation.x=Math.PI/2;
+    box('balcony',-.17,y+.43,-.34,.19,.047,.013,'cream');
+    for(let i=0;i<8;i++)box('balcony',.10+i*.014,y-.418,-.34,.007,.017,.012,'black');
+    box('balcony',.192,y-.055,-.392,.022,.106,.015,'steel');
+    for(const x of [-.24,.24])for(const z of [-.23,.23])cylinder('balcony',x,y-.505,z,.015,.015,.025,'black');
+   }
+  });
+  const bounds=items[items.length-1],normal=new THREE.Vector3(0,0,-1).applyAxisAngle(new THREE.Vector3(0,1,0),angle);
+  placements.push({id:'balcony-laundry',backWall:'balcony-east',wallFace:east,back:bounds.max[0],gap:east-bounds.max[0],facing:'west',frontNormal:normal.toArray(),cabinetWidth:.68,cabinetDepth:depth});
+ }
  function build() {
   if(built)return;built=true;
   // Living zone: keep the study sliding-door parking strip clear along z=3.0.
@@ -177,8 +236,7 @@ function createHouseDecor(options) {
   // Secondary spaces keep generous circulation and unobstructed doors.
   item('study-desk','study',()=>{box('study',2.25,.75,1.63,.73,.055,1.38,'oak');for(const z of [1.05,2.21])box('study',2.25,.37,z,.58,.72,.035,'steel');});
   item('study-chair','study',()=>{round('study',2.97,.46,1.62,.45,.08,.46,'green');round('study',3.16,.7,1.62,.06,.43,.45,'linen');for(const z of [1.45,1.8])box('study',2.97,.23,z,.03,.44,.03,'steel');});
-  item('storage-shelves','storage',()=>{for(const y of [.18,.7,1.22,1.74,2.26])box('storage',5.91,y,6.95,.32,.04,.8,'oak');for(const z of [6.57,7.33])box('storage',6.03,1.22,z,.04,2.12,.04,'wood');});
-  item('balcony-laundry','balcony',()=>{box('balcony',5.7,1.14,12.03,.65,2.22,.66,'cream');for(const y of [.62,1.62]){box('balcony',5.7,y,11.685,.58,.83,.025,'white');const ring=cylinder('balcony',5.7,y,11.66,.2,.2,.035,'steel');ring.rotation.x=Math.PI/2;const port=cylinder('balcony',5.7,y,11.635,.155,.155,.04,'black');port.rotation.x=Math.PI/2;}});
+  storageRacks();laundry();
   // Trim lights are emissive surfaces, not additional shadow-casting point lights.
   for(const [room,x,z,w,d] of [['living',1.65,4.65,2.95,3.05],['dining',4.7,4.65,2.65,3.05],['master',1.6,10,2.85,3.1],['second',4.7,9.4,2.6,2.8]]){
    for(const zz of [z-d/2,z+d/2])box(room,x,2.705,zz,w,.02,.025,'glow','ceiling');
@@ -212,10 +270,6 @@ function createHouseDecor(options) {
    tube('bath',[[1.66,.96,6.69],[1.66,2.1,6.69],[1.57,2.13,6.69]],.011,'steel');
    round('bath',1.66,1.14,6.69,.11,.055,.07,'steel');
   },false);
-  for(const y of [.62,1.62]){
-   const bezel=new THREE.Mesh(new THREE.TorusGeometry(.183,.015,8,40),material('steel','balcony'));bezel.position.set(5.7,y,11.612);layer('balcony').add(bezel);parts++;
-   box('balcony',5.58,y+.31,11.666,.21,.054,.012,'black');cylinder('balcony',5.85,y+.31,11.651,.026,.026,.018,'steel').rotation.x=Math.PI/2;
-  }
   book('study',2.24,.798,1.34,.26,.025,.2,'green');book('study',2.24,.829,1.34,.23,.025,.17,'blue');plant('study',2.2,.78,2.09,.08);
   // Pleated fabric panels sit beside the glazing rather than covering a doorway.
   function curtain(room,cx,cz,w,h,angle){const g=new THREE.PlaneGeometry(w,h,16,20),p=g.attributes.position;for(let i=0;i<p.count;i++)p.setZ(i,.016*Math.sin(p.getX(i)/w*Math.PI*12));g.computeVertexNormals();const m=material('linen',room),mesh=new THREE.Mesh(g,m);m.side=THREE.DoubleSide;mesh.position.set(cx,.13+h/2,cz);mesh.rotation.y=angle;mesh.receiveShadow=true;layer(room,'wall').add(mesh);parts++;}
@@ -249,5 +303,5 @@ function createHouseDecor(options) {
  }
  finishes.restore(presetPalette('bare'));
  $('decorPreset').addEventListener('change',e=>apply(e.target.value));
- return {apply,update,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; local furnishing fill, contact shadows, bump detail and a procedural reflection environment'};}};
+ return {apply,update,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials'};}};
 }
