@@ -21,7 +21,6 @@
       "title": null
     }
   ],
-  "htmlMatchesLocal": false,
   "sha256": "55a7cfa188a0ae6a2dd730df058b1c884bb06608667ca567649731b8ab1253aa",
   "state": {
     "boot": {
@@ -60,5 +59,9 @@
     "defaultSettingsClosed": true
   },
   "errors": [],
-  "simulation": "Chromium iPhone WeChat UA, not physical WeChat or WebKit"
+  "simulation": "Chromium iPhone WeChat UA, not physical WeChat or WebKit",
+  "rawBytesMatchLocal": false,
+  "htmlMatchesLocalAfterNewlineNormalization": true,
+  "newlineNote": "Git core.autocrlf=true: checkout uses CRLF, deployed Git blob uses LF; normalized content is identical.",
+  "localNormalizedSha256": "55a7cfa188a0ae6a2dd730df058b1c884bb06608667ca567649731b8ab1253aa"
 }
