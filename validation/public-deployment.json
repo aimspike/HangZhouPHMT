@@ -1,127 +1,64 @@
 {
-  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/",
-  "version": "10.0",
-  "functionalCommit": "4e29b49f448e0b12d824d06fbfff23b1f52c1ab8",
-  "httpStatus": 200,
-  "plans": {
-    "svg": 200,
-    "pdf": 200
-  },
+  "verifiedAt": "2026-11-19T04:16:58.938Z",
+  "featureCommit": "33626d81dd0a1bd6936d8da79f4ded4ef4af2375",
+  "responses": [
+    {
+      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=33626d8",
+      "status": 200,
+      "bytes": 2731270,
+      "title": "89-A · 杭州三维户型 V11"
+    },
+    {
+      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/plans/restored-floor-plan.svg?v=33626d8",
+      "status": 200,
+      "bytes": 37643,
+      "title": null
+    },
+    {
+      "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/plans/restored-floor-plan.pdf?v=33626d8",
+      "status": 200,
+      "bytes": 69035,
+      "title": null
+    }
+  ],
+  "htmlMatchesLocal": false,
+  "sha256": "55a7cfa188a0ae6a2dd730df058b1c884bb06608667ca567649731b8ab1253aa",
   "state": {
     "boot": {
       "ready": true,
       "failed": false
     },
     "diagnostics": {
-      "version": "10.0",
+      "version": "11.0",
       "antialias": true,
       "fxaa": true,
       "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
-      "maxTextureUnits": 16,
+      "maxTextureUnits": 32,
       "contextLost": false,
       "canvas": [
-        780,
-        1688
+        585,
+        1266
       ],
       "viewport": [
         390,
         844
       ],
-      "shaderCount": 28,
-      "drawCalls": 61
+      "shaderCount": 25,
+      "drawCalls": 227
     },
     "maps": [
       219,
       219
     ],
-    "bake": {
-      "phases": [
-        "07:09",
-        "11:45",
-        "16:38"
-      ],
-      "gain": 1.7,
-      "skyGain": 1.8,
-      "skySamples": 64,
-      "indirect": true
+    "bearing": {
+      "source": "原图实黑区域",
+      "sections": 23,
+      "pieces": 24,
+      "visible": true
     },
-    "roof": {
-      "gaps": 0,
-      "examples": []
-    },
-    "doors": [
-      {
-        "id": "entry",
-        "type": "hinged",
-        "slidingAllowed": false
-      },
-      {
-        "id": "study",
-        "type": "sliding",
-        "slidingAllowed": true
-      },
-      {
-        "id": "kitchen",
-        "type": "sliding",
-        "slidingAllowed": true
-      },
-      {
-        "id": "bath",
-        "type": "sliding",
-        "slidingAllowed": true
-      },
-      {
-        "id": "storage",
-        "type": "sliding",
-        "slidingAllowed": true
-      },
-      {
-        "id": "master",
-        "type": "hinged",
-        "slidingAllowed": false
-      },
-      {
-        "id": "second",
-        "type": "hinged",
-        "slidingAllowed": false
-      }
-    ]
+    "overflow": false,
+    "defaultSettingsClosed": true
   },
-  "modes": [
-    {
-      "time": "morning",
-      "weights": [
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "time": "noon",
-      "weights": [
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "time": "dusk",
-      "weights": [
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "time": "night",
-      "weights": [
-        0,
-        0,
-        0
-      ]
-    }
-  ],
   "errors": [],
-  "consoleErrors": [],
-  "externalDependencies": []
+  "simulation": "Chromium iPhone WeChat UA, not physical WeChat or WebKit"
 }
