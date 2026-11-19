@@ -1,0 +1,172 @@
+{
+  "diagnostics": {
+    "version": "11.0",
+    "antialias": true,
+    "fxaa": true,
+    "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+    "maxTextureUnits": 32,
+    "contextLost": false,
+    "canvas": [
+      1920,
+      1350
+    ],
+    "viewport": [
+      1280,
+      900
+    ],
+    "shaderCount": 24,
+    "drawCalls": 211
+  },
+  "maps": [
+    219,
+    219
+  ],
+  "closure": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "motion": [
+    {
+      "id": "study",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "kitchen",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "bath",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "storage",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    }
+  ],
+  "roof": {
+    "gaps": 0,
+    "examples": []
+  },
+  "geometryMatches": true,
+  "layoutMatches": true,
+  "externalRequests": [],
+  "hingedClosure": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "errors": []
+}

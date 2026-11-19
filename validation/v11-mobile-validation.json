@@ -1,0 +1,97 @@
+{
+  "simulation": "Chromium Android/iPhone WeChat UA only; no physical device verification",
+  "android": [
+    {
+      "viewport": [
+        360,
+        780
+      ],
+      "hingedFrame": "narrow-full-wrap",
+      "slidingFrame": "suspended-double-track",
+      "transparent": true,
+      "walk": {
+        "fov": 105,
+        "eye": 1.5,
+        "ceiling": true,
+        "bearing": false
+      },
+      "errors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "canvas": [
+        585,
+        1266
+      ],
+      "maps": [
+        219,
+        219
+      ],
+      "overflow": false,
+      "bearing": {
+        "source": "原图实黑区域",
+        "sections": 23,
+        "pieces": 24,
+        "visible": true
+      },
+      "sidebar": true
+    },
+    {
+      "viewport": [
+        740,
+        360
+      ],
+      "canvas": [
+        1110,
+        540
+      ],
+      "maps": [
+        219,
+        219
+      ],
+      "overflow": false,
+      "bearing": {
+        "source": "原图实黑区域",
+        "sections": 23,
+        "pieces": 24,
+        "visible": true
+      },
+      "sidebar": true
+    }
+  ],
+  "iphone": {
+    "diagnostics": {
+      "version": "11.0",
+      "antialias": true,
+      "fxaa": true,
+      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+      "maxTextureUnits": 32,
+      "contextLost": false,
+      "canvas": [
+        585,
+        1266
+      ],
+      "viewport": [
+        390,
+        844
+      ],
+      "shaderCount": 24,
+      "drawCalls": 211
+    },
+    "maps": [
+      219,
+      219
+    ],
+    "bearing": {
+      "source": "原图实黑区域",
+      "sections": 23,
+      "pieces": 24,
+      "visible": true
+    },
+    "overflow": false
+  },
+  "errors": []
+}

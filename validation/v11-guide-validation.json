@@ -1,0 +1,99 @@
+{
+  "closure": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "sliding",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "motion": [
+    {
+      "id": "study",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "kitchen",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "bath",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "storage",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    }
+  ],
+  "roof": {
+    "gaps": 0,
+    "examples": []
+  },
+  "maps": [
+    219,
+    219
+  ]
+}

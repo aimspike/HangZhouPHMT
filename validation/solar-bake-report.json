@@ -13,7 +13,7 @@
     "noon",
     "dusk"
   ],
-  "blockers": 117,
+  "blockers": 118,
   "rooms": [
     {
       "room": "living",
@@ -109,7 +109,7 @@
     {
       "room": "second",
       "reflectedFlux": [
-        0.42692,
+        0.38599,
         1.60315,
         0.58321
       ],

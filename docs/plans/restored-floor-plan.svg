@@ -7,132 +7,263 @@
 <text x="550.000" y="108.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="14" text-anchor="middle" fill="#626a70">照片复原 · 矢量重绘</text>
 </g>
 <g id="walls">
-<polyline points="436.200,474.400 436.200,225.000 823.200,225.000 823.200,474.400" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
-<polyline points="436.200,474.400 436.200,225.000 823.200,225.000 823.200,474.400" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
-<polyline points="290.000,474.400 436.200,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="290.000,474.400 290.000,1300.000" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="290.000,474.400 290.000,1300.000" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
-<polyline points="823.200,569.000 823.200,1300.000" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="823.200,569.000 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
-<polyline points="290.000,1300.000 823.200,1300.000" fill="none" stroke="#303438" stroke-width="5.590" stroke-linejoin="miter"/>
-<polyline points="290.000,1300.000 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="2.494" stroke-linejoin="miter"/>
-<polyline points="436.200,285.200 659.800,285.200" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<g id="wall-north-platform">
+<polyline points="436.200,225.000 659.800,225.000" fill="none" stroke="#303438" stroke-width="5.590" stroke-linejoin="miter"/>
+<polyline points="436.200,225.000 659.800,225.000" fill="none" stroke="#ffffff" stroke-width="2.494" stroke-linejoin="miter"/>
+</g>
+<g id="wall-kitchen-north">
+<polyline points="659.800,225.000 700.220,225.000" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="659.800,225.000 700.220,225.000" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+<polyline points="781.920,225.000 823.200,225.000" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="781.920,225.000 823.200,225.000" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+</g>
+<g id="wall-platform-west">
+<polyline points="436.200,225.000 436.200,285.200" fill="none" stroke="#303438" stroke-width="5.590" stroke-linejoin="miter"/>
+<polyline points="436.200,225.000 436.200,285.200" fill="none" stroke="#ffffff" stroke-width="2.494" stroke-linejoin="miter"/>
+</g>
+<g id="wall-study-west">
+<polyline points="436.200,285.200 436.200,321.320" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="436.200,285.200 436.200,321.320" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+<polyline points="436.200,435.700 436.200,474.400" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="436.200,435.700 436.200,474.400" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+</g>
+<g id="wall-east">
+<polyline points="823.200,225.000 823.200,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,225.000 823.200,474.400" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+<polyline points="823.200,563.840 823.200,1171.000" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,563.840 823.200,1171.000" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+</g>
+<g id="wall-balcony-east-post">
+<polyline points="823.200,1171.000 823.200,1201.100" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,1171.000 823.200,1201.100" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+</g>
+<g id="wall-balcony-east">
+<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#303438" stroke-width="6.880" stroke-linejoin="miter"/>
+<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="3.784" stroke-linejoin="miter"/>
+</g>
+<g id="wall-living-north">
+<polyline points="290.000,474.400 328.700,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,474.400 328.700,474.400" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+<polyline points="397.500,474.400 436.200,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="397.500,474.400 436.200,474.400" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+</g>
+<g id="wall-west">
+<polyline points="290.000,474.400 290.000,526.000" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,474.400 290.000,526.000" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+<polyline points="290.000,728.100 290.000,791.740" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,728.100 290.000,791.740" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+<polyline points="290.000,850.220 290.000,1239.800" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,850.220 290.000,1239.800" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+</g>
+<g id="wall-south-platform-west">
+<polyline points="290.000,1239.800 290.000,1300.000" fill="none" stroke="#303438" stroke-width="6.880" stroke-linejoin="miter"/>
+<polyline points="290.000,1239.800 290.000,1300.000" fill="none" stroke="#ffffff" stroke-width="3.784" stroke-linejoin="miter"/>
+</g>
+<g id="wall-south-guard">
+<polyline points="290.000,1300.000 823.200,1300.000" fill="none" stroke="#303438" stroke-width="6.880" stroke-linejoin="miter"/>
+<polyline points="290.000,1300.000 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="3.784" stroke-linejoin="miter"/>
+</g>
+<g id="wall-study-north">
+<polyline points="436.200,285.200 476.620,285.200" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="436.200,285.200 476.620,285.200" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+<polyline points="604.760,285.200 659.800,285.200" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="604.760,285.200 659.800,285.200" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
+</g>
+<g id="wall-study-kitchen">
 <polyline points="659.800,225.000 659.800,474.400" fill="none" stroke="#303438" stroke-width="10.320" stroke-linejoin="miter"/>
 <polyline points="659.800,225.000 659.800,474.400" fill="none" stroke="#ffffff" stroke-width="7.224" stroke-linejoin="miter"/>
+</g>
+<g id="wall-study-south">
 <polyline points="436.200,474.400 568.640,474.400" fill="none" stroke="#303438" stroke-width="9.890" stroke-linejoin="miter"/>
 <polyline points="436.200,474.400 568.640,474.400" fill="none" stroke="#ffffff" stroke-width="6.794" stroke-linejoin="miter"/>
 <polyline points="646.040,474.400 659.800,474.400" fill="none" stroke="#303438" stroke-width="9.890" stroke-linejoin="miter"/>
 <polyline points="646.040,474.400 659.800,474.400" fill="none" stroke="#ffffff" stroke-width="6.794" stroke-linejoin="miter"/>
-<polyline points="659.800,474.400 823.200,474.400" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
-<polyline points="659.800,474.400 823.200,474.400" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+</g>
+<g id="wall-kitchen-south">
+<polyline points="659.800,474.400 666.680,474.400" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="659.800,474.400 666.680,474.400" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
 <polyline points="754.400,474.400 823.200,474.400" fill="none" stroke="#303438" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="754.400,474.400 823.200,474.400" fill="none" stroke="#ffffff" stroke-width="10.664" stroke-linejoin="miter"/>
+</g>
+<g id="wall-bath-north">
 <polyline points="290.000,775.400 552.300,775.400" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
 <polyline points="290.000,775.400 552.300,775.400" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+</g>
+<g id="wall-storage-north">
 <polyline points="664.100,775.400 823.200,775.400" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
 <polyline points="664.100,775.400 823.200,775.400" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+</g>
+<g id="wall-bath-east">
 <polyline points="444.800,775.400 444.800,851.080" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
 <polyline points="444.800,775.400 444.800,851.080" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+<polyline points="444.800,923.320 444.800,930.200" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
+<polyline points="444.800,923.320 444.800,930.200" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+</g>
+<g id="wall-bath-south">
 <polyline points="290.000,930.200 457.700,930.200" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
 <polyline points="290.000,930.200 457.700,930.200" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
-<polyline points="668.400,775.400 668.400,859.680" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
-<polyline points="668.400,775.400 668.400,859.680" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
-<polyline points="668.400,876.880 823.200,876.880" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
-<polyline points="668.400,876.880 823.200,876.880" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
-<polyline points="668.400,876.880 668.400,930.200 657.220,930.200" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
-<polyline points="668.400,876.880 668.400,930.200 657.220,930.200" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
-<polyline points="554.020,930.200 576.380,930.200" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
-<polyline points="554.020,930.200 576.380,930.200" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
-<polyline points="565.200,930.200 565.200,1300.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
-<polyline points="565.200,930.200 565.200,1300.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
-<polyline points="290.000,1239.800 565.200,1239.800" fill="none" stroke="#303438" stroke-width="15.910" stroke-linejoin="miter"/>
-<polyline points="565.200,1171.000 823.200,1171.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
-<polyline points="565.200,1171.000 823.200,1171.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
-<polyline points="436.200,285.200 436.200,315.300" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="436.200,440.000 436.200,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="659.800,225.000 659.800,285.200" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="823.200,225.000 823.200,259.400" fill="none" stroke="#303438" stroke-width="18.920" stroke-linejoin="miter"/>
-<polyline points="290.000,474.400 328.700,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="290.000,474.400 290.000,515.680" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="290.000,913.000 290.000,945.680" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="823.200,775.400 823.200,810.660" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="823.200,913.000 823.200,945.680" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
-<polyline points="565.200,1119.400 565.200,1166.700" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
-<polyline points="565.200,1171.000 586.700,1171.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
-<polyline points="778.480,1171.000 823.200,1171.000" fill="none" stroke="#303438" stroke-width="16.340" stroke-linejoin="miter"/>
-<polyline points="290.000,1209.700 290.000,1239.800" fill="none" stroke="#303438" stroke-width="16.340" stroke-linejoin="miter"/>
-<polyline points="823.200,1162.400 823.200,1201.100" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+</g>
+<g id="wall-storage-west">
+<polyline points="668.400,775.400 668.400,784.000" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
+<polyline points="668.400,775.400 668.400,784.000" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+<polyline points="668.400,852.800 668.400,930.200" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
+<polyline points="668.400,852.800 668.400,930.200" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+</g>
+<g id="wall-storage-south">
+<polyline points="668.400,878.600 823.200,878.600" fill="none" stroke="#303438" stroke-width="7.310" stroke-linejoin="miter"/>
+<polyline points="668.400,878.600 823.200,878.600" fill="none" stroke="#ffffff" stroke-width="4.214" stroke-linejoin="miter"/>
+</g>
+<g id="wall-bedroom-divider">
+<polyline points="565.200,930.200 565.200,1239.800" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="565.200,930.200 565.200,1239.800" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
+</g>
+<g id="wall-platform-divider">
+<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#303438" stroke-width="5.590" stroke-linejoin="miter"/>
+<polyline points="565.200,1239.800 565.200,1300.000" fill="none" stroke="#ffffff" stroke-width="2.494" stroke-linejoin="miter"/>
+</g>
+<g id="wall-master-south">
+<polyline points="290.000,1239.800 350.200,1239.800" fill="none" stroke="#303438" stroke-width="15.910" stroke-linejoin="miter"/>
+<polyline points="290.000,1239.800 350.200,1239.800" fill="none" stroke="#ffffff" stroke-width="12.814" stroke-linejoin="miter"/>
+<polyline points="496.400,1239.800 565.200,1239.800" fill="none" stroke="#303438" stroke-width="15.910" stroke-linejoin="miter"/>
+<polyline points="496.400,1239.800 565.200,1239.800" fill="none" stroke="#ffffff" stroke-width="12.814" stroke-linejoin="miter"/>
+</g>
+<g id="wall-balcony-door">
+<polyline points="565.200,1171.000 595.300,1171.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="565.200,1171.000 595.300,1171.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
+<polyline points="780.200,1171.000 823.200,1171.000" fill="none" stroke="#303438" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="780.200,1171.000 823.200,1171.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
+</g>
+</g>
+<g id="bearing-from-source-black-regions">
+<polyline points="659.800,225.000 700.220,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="781.920,225.000 823.200,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="823.200,225.000 823.200,259.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="659.800,225.000 659.800,285.200" fill="none" stroke="#b4513f" stroke-width="10.320" stroke-linejoin="miter"/>
+<polyline points="436.200,285.200 476.620,285.200" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="604.760,285.200 659.800,285.200" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="436.200,285.200 436.200,315.300" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="436.200,440.000 436.200,474.400" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="290.000,474.400 328.700,474.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="397.500,474.400 436.200,474.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,474.400 290.000,515.680" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="754.400,474.400 823.200,474.400" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
+<polyline points="823.200,440.000 823.200,474.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,775.400 823.200,810.660" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,913.000 290.000,945.680" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,913.000 823.200,945.680" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="565.200,1119.400 565.200,1239.800" fill="none" stroke="#b4513f" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="565.200,1171.000 586.700,1171.000" fill="none" stroke="#b4513f" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="780.200,1171.000 823.200,1171.000" fill="none" stroke="#b4513f" stroke-width="14.620" stroke-linejoin="miter"/>
+<polyline points="823.200,1162.400 823.200,1201.100" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,1209.700 290.000,1239.800" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="290.000,1239.800 350.200,1239.800" fill="none" stroke="#b4513f" stroke-width="15.910" stroke-linejoin="miter"/>
+<polyline points="496.400,1239.800 565.200,1239.800" fill="none" stroke="#b4513f" stroke-width="15.910" stroke-linejoin="miter"/>
 </g>
 <g id="windows-and-platforms">
-<polyline points="476.620,285.200 604.760,285.200" fill="none" stroke="#ffffff" stroke-width="15.910" stroke-linejoin="miter"/>
-<line x1="476.620" y1="278.320" x2="604.760" y2="278.320" stroke="#222222" stroke-width="1.118"/>
-<line x1="476.620" y1="282.907" x2="604.760" y2="282.907" stroke="#222222" stroke-width="1.118"/>
-<line x1="476.620" y1="287.493" x2="604.760" y2="287.493" stroke="#222222" stroke-width="1.118"/>
-<line x1="476.620" y1="292.080" x2="604.760" y2="292.080" stroke="#222222" stroke-width="1.118"/>
-<line x1="476.620" y1="278.320" x2="476.620" y2="292.080" stroke="#222222" stroke-width="1.376"/>
-<line x1="604.760" y1="278.320" x2="604.760" y2="292.080" stroke="#222222" stroke-width="1.376"/>
-<polyline points="436.200,321.320 436.200,435.700" fill="none" stroke="#ffffff" stroke-width="14.190" stroke-linejoin="miter"/>
-<line x1="442.220" y1="321.320" x2="442.220" y2="435.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="438.207" y1="321.320" x2="438.207" y2="435.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="434.193" y1="321.320" x2="434.193" y2="435.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="430.180" y1="321.320" x2="430.180" y2="435.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="442.220" y1="321.320" x2="430.180" y2="321.320" stroke="#222222" stroke-width="1.376"/>
-<line x1="442.220" y1="435.700" x2="430.180" y2="435.700" stroke="#222222" stroke-width="1.376"/>
-<polyline points="700.220,225.000 781.920,225.000" fill="none" stroke="#ffffff" stroke-width="15.050" stroke-linejoin="miter"/>
-<line x1="700.220" y1="218.550" x2="781.920" y2="218.550" stroke="#222222" stroke-width="1.118"/>
-<line x1="700.220" y1="222.850" x2="781.920" y2="222.850" stroke="#222222" stroke-width="1.118"/>
-<line x1="700.220" y1="227.150" x2="781.920" y2="227.150" stroke="#222222" stroke-width="1.118"/>
-<line x1="700.220" y1="231.450" x2="781.920" y2="231.450" stroke="#222222" stroke-width="1.118"/>
-<line x1="700.220" y1="218.550" x2="700.220" y2="231.450" stroke="#222222" stroke-width="1.376"/>
-<line x1="781.920" y1="218.550" x2="781.920" y2="231.450" stroke="#222222" stroke-width="1.376"/>
-<polyline points="328.700,474.400 397.500,474.400" fill="none" stroke="#ffffff" stroke-width="14.620" stroke-linejoin="miter"/>
-<line x1="328.700" y1="468.165" x2="397.500" y2="468.165" stroke="#222222" stroke-width="1.118"/>
-<line x1="328.700" y1="472.322" x2="397.500" y2="472.322" stroke="#222222" stroke-width="1.118"/>
-<line x1="328.700" y1="476.478" x2="397.500" y2="476.478" stroke="#222222" stroke-width="1.118"/>
-<line x1="328.700" y1="480.635" x2="397.500" y2="480.635" stroke="#222222" stroke-width="1.118"/>
-<line x1="328.700" y1="468.165" x2="328.700" y2="480.635" stroke="#222222" stroke-width="1.376"/>
-<line x1="397.500" y1="468.165" x2="397.500" y2="480.635" stroke="#222222" stroke-width="1.376"/>
-<polyline points="290.000,526.000 290.000,728.100" fill="none" stroke="#ffffff" stroke-width="15.050" stroke-linejoin="miter"/>
-<line x1="296.450" y1="526.000" x2="296.450" y2="728.100" stroke="#222222" stroke-width="1.118"/>
-<line x1="292.150" y1="526.000" x2="292.150" y2="728.100" stroke="#222222" stroke-width="1.118"/>
-<line x1="287.850" y1="526.000" x2="287.850" y2="728.100" stroke="#222222" stroke-width="1.118"/>
-<line x1="283.550" y1="526.000" x2="283.550" y2="728.100" stroke="#222222" stroke-width="1.118"/>
-<line x1="296.450" y1="526.000" x2="283.550" y2="526.000" stroke="#222222" stroke-width="1.376"/>
-<line x1="296.450" y1="728.100" x2="283.550" y2="728.100" stroke="#222222" stroke-width="1.376"/>
-<polyline points="290.000,791.740 290.000,850.220" fill="none" stroke="#ffffff" stroke-width="15.050" stroke-linejoin="miter"/>
-<line x1="296.450" y1="791.740" x2="296.450" y2="850.220" stroke="#222222" stroke-width="1.118"/>
-<line x1="292.150" y1="791.740" x2="292.150" y2="850.220" stroke="#222222" stroke-width="1.118"/>
-<line x1="287.850" y1="791.740" x2="287.850" y2="850.220" stroke="#222222" stroke-width="1.118"/>
-<line x1="283.550" y1="791.740" x2="283.550" y2="850.220" stroke="#222222" stroke-width="1.118"/>
-<line x1="296.450" y1="791.740" x2="283.550" y2="791.740" stroke="#222222" stroke-width="1.376"/>
-<line x1="296.450" y1="850.220" x2="283.550" y2="850.220" stroke="#222222" stroke-width="1.376"/>
-<polyline points="350.200,1239.800 496.400,1239.800" fill="none" stroke="#ffffff" stroke-width="16.340" stroke-linejoin="miter"/>
-<line x1="350.200" y1="1232.705" x2="496.400" y2="1232.705" stroke="#222222" stroke-width="1.118"/>
-<line x1="350.200" y1="1237.435" x2="496.400" y2="1237.435" stroke="#222222" stroke-width="1.118"/>
-<line x1="350.200" y1="1242.165" x2="496.400" y2="1242.165" stroke="#222222" stroke-width="1.118"/>
-<line x1="350.200" y1="1246.895" x2="496.400" y2="1246.895" stroke="#222222" stroke-width="1.118"/>
-<line x1="350.200" y1="1232.705" x2="350.200" y2="1246.895" stroke="#222222" stroke-width="1.376"/>
-<line x1="496.400" y1="1232.705" x2="496.400" y2="1246.895" stroke="#222222" stroke-width="1.376"/>
-<polyline points="565.200,1245.820 565.200,1295.700" fill="none" stroke="#ffffff" stroke-width="14.620" stroke-linejoin="miter"/>
-<line x1="571.435" y1="1245.820" x2="571.435" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="567.278" y1="1245.820" x2="567.278" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="563.122" y1="1245.820" x2="563.122" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="558.965" y1="1245.820" x2="558.965" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
-<line x1="571.435" y1="1245.820" x2="558.965" y2="1245.820" stroke="#222222" stroke-width="1.376"/>
-<line x1="571.435" y1="1295.700" x2="558.965" y2="1295.700" stroke="#222222" stroke-width="1.376"/>
-<polyline points="436.200,225.000 659.800,225.000" fill="none" stroke="#303438" stroke-width="4.730" stroke-linejoin="miter"/>
-<polyline points="436.200,225.000 659.800,225.000" fill="none" stroke="#ffffff" stroke-width="1.634" stroke-linejoin="miter"/>
-<polyline points="436.200,225.000 436.200,285.200" fill="none" stroke="#303438" stroke-width="4.730" stroke-linejoin="miter"/>
-<polyline points="436.200,225.000 436.200,285.200" fill="none" stroke="#ffffff" stroke-width="1.634" stroke-linejoin="miter"/>
+<polyline points="700.220,225.000 781.920,225.000" fill="none" stroke="#ffffff" stroke-width="15.910" stroke-linejoin="miter"/>
+<line x1="700.220" y1="218.120" x2="781.920" y2="218.120" stroke="#222222" stroke-width="1.118"/>
+<line x1="700.220" y1="222.707" x2="781.920" y2="222.707" stroke="#222222" stroke-width="1.118"/>
+<line x1="700.220" y1="227.293" x2="781.920" y2="227.293" stroke="#222222" stroke-width="1.118"/>
+<line x1="700.220" y1="231.880" x2="781.920" y2="231.880" stroke="#222222" stroke-width="1.118"/>
+<line x1="700.220" y1="218.120" x2="700.220" y2="231.880" stroke="#222222" stroke-width="1.376"/>
+<line x1="781.920" y1="218.120" x2="781.920" y2="231.880" stroke="#222222" stroke-width="1.376"/>
+<polyline points="436.200,321.320 436.200,435.700" fill="none" stroke="#ffffff" stroke-width="15.910" stroke-linejoin="miter"/>
+<line x1="443.080" y1="321.320" x2="443.080" y2="435.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="438.493" y1="321.320" x2="438.493" y2="435.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="433.907" y1="321.320" x2="433.907" y2="435.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="429.320" y1="321.320" x2="429.320" y2="435.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="443.080" y1="321.320" x2="429.320" y2="321.320" stroke="#222222" stroke-width="1.376"/>
+<line x1="443.080" y1="435.700" x2="429.320" y2="435.700" stroke="#222222" stroke-width="1.376"/>
+<polyline points="328.700,474.400 397.500,474.400" fill="none" stroke="#ffffff" stroke-width="17.630" stroke-linejoin="miter"/>
+<line x1="328.700" y1="466.660" x2="397.500" y2="466.660" stroke="#222222" stroke-width="1.118"/>
+<line x1="328.700" y1="471.820" x2="397.500" y2="471.820" stroke="#222222" stroke-width="1.118"/>
+<line x1="328.700" y1="476.980" x2="397.500" y2="476.980" stroke="#222222" stroke-width="1.118"/>
+<line x1="328.700" y1="482.140" x2="397.500" y2="482.140" stroke="#222222" stroke-width="1.118"/>
+<line x1="328.700" y1="466.660" x2="328.700" y2="482.140" stroke="#222222" stroke-width="1.376"/>
+<line x1="397.500" y1="466.660" x2="397.500" y2="482.140" stroke="#222222" stroke-width="1.376"/>
+<polyline points="290.000,526.000 290.000,728.100" fill="none" stroke="#ffffff" stroke-width="17.630" stroke-linejoin="miter"/>
+<line x1="297.740" y1="526.000" x2="297.740" y2="728.100" stroke="#222222" stroke-width="1.118"/>
+<line x1="292.580" y1="526.000" x2="292.580" y2="728.100" stroke="#222222" stroke-width="1.118"/>
+<line x1="287.420" y1="526.000" x2="287.420" y2="728.100" stroke="#222222" stroke-width="1.118"/>
+<line x1="282.260" y1="526.000" x2="282.260" y2="728.100" stroke="#222222" stroke-width="1.118"/>
+<line x1="297.740" y1="526.000" x2="282.260" y2="526.000" stroke="#222222" stroke-width="1.376"/>
+<line x1="297.740" y1="728.100" x2="282.260" y2="728.100" stroke="#222222" stroke-width="1.376"/>
+<polyline points="290.000,791.740 290.000,850.220" fill="none" stroke="#ffffff" stroke-width="17.630" stroke-linejoin="miter"/>
+<line x1="297.740" y1="791.740" x2="297.740" y2="850.220" stroke="#222222" stroke-width="1.118"/>
+<line x1="292.580" y1="791.740" x2="292.580" y2="850.220" stroke="#222222" stroke-width="1.118"/>
+<line x1="287.420" y1="791.740" x2="287.420" y2="850.220" stroke="#222222" stroke-width="1.118"/>
+<line x1="282.260" y1="791.740" x2="282.260" y2="850.220" stroke="#222222" stroke-width="1.118"/>
+<line x1="297.740" y1="791.740" x2="282.260" y2="791.740" stroke="#222222" stroke-width="1.376"/>
+<line x1="297.740" y1="850.220" x2="282.260" y2="850.220" stroke="#222222" stroke-width="1.376"/>
+<polyline points="476.620,285.200 604.760,285.200" fill="none" stroke="#ffffff" stroke-width="17.630" stroke-linejoin="miter"/>
+<line x1="476.620" y1="277.460" x2="604.760" y2="277.460" stroke="#222222" stroke-width="1.118"/>
+<line x1="476.620" y1="282.620" x2="604.760" y2="282.620" stroke="#222222" stroke-width="1.118"/>
+<line x1="476.620" y1="287.780" x2="604.760" y2="287.780" stroke="#222222" stroke-width="1.118"/>
+<line x1="476.620" y1="292.940" x2="604.760" y2="292.940" stroke="#222222" stroke-width="1.118"/>
+<line x1="476.620" y1="277.460" x2="476.620" y2="292.940" stroke="#222222" stroke-width="1.376"/>
+<line x1="604.760" y1="277.460" x2="604.760" y2="292.940" stroke="#222222" stroke-width="1.376"/>
+<polyline points="350.200,1239.800 496.400,1239.800" fill="none" stroke="#ffffff" stroke-width="18.060" stroke-linejoin="miter"/>
+<line x1="350.200" y1="1231.845" x2="496.400" y2="1231.845" stroke="#222222" stroke-width="1.118"/>
+<line x1="350.200" y1="1237.148" x2="496.400" y2="1237.148" stroke="#222222" stroke-width="1.118"/>
+<line x1="350.200" y1="1242.452" x2="496.400" y2="1242.452" stroke="#222222" stroke-width="1.118"/>
+<line x1="350.200" y1="1247.755" x2="496.400" y2="1247.755" stroke="#222222" stroke-width="1.118"/>
+<line x1="350.200" y1="1231.845" x2="350.200" y2="1247.755" stroke="#222222" stroke-width="1.376"/>
+<line x1="496.400" y1="1231.845" x2="496.400" y2="1247.755" stroke="#222222" stroke-width="1.376"/>
+<polyline points="595.300,1171.000 780.200,1171.000" fill="none" stroke="#ffffff" stroke-width="16.770" stroke-linejoin="miter"/>
+<line x1="595.300" y1="1163.690" x2="780.200" y2="1163.690" stroke="#222222" stroke-width="1.118"/>
+<line x1="595.300" y1="1168.563" x2="780.200" y2="1168.563" stroke="#222222" stroke-width="1.118"/>
+<line x1="595.300" y1="1173.437" x2="780.200" y2="1173.437" stroke="#222222" stroke-width="1.118"/>
+<line x1="595.300" y1="1178.310" x2="780.200" y2="1178.310" stroke="#222222" stroke-width="1.118"/>
+<line x1="595.300" y1="1163.690" x2="595.300" y2="1178.310" stroke="#222222" stroke-width="1.376"/>
+<line x1="780.200" y1="1163.690" x2="780.200" y2="1178.310" stroke="#222222" stroke-width="1.376"/>
 <line x1="560.900" y1="225.000" x2="560.900" y2="285.200" stroke="#222222" stroke-width="2.236"/>
 <polyline points="445.660,279.180 445.660,238.760 553.160,238.760" fill="none" stroke="#222222" stroke-width="1.548" stroke-linejoin="miter"/>
 <polyline points="776.760,239.620 811.160,239.620 811.160,264.560 776.760,264.560 776.760,239.620" fill="none" stroke="#222222" stroke-width="1.548" stroke-linejoin="miter"/>
+<polyline points="565.200,1245.820 565.200,1295.700" fill="none" stroke="#ffffff" stroke-width="7.740" stroke-linejoin="miter"/>
+<line x1="567.995" y1="1245.820" x2="567.995" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="566.132" y1="1245.820" x2="566.132" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="564.268" y1="1245.820" x2="564.268" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="562.405" y1="1245.820" x2="562.405" y2="1295.700" stroke="#222222" stroke-width="1.118"/>
+<line x1="567.995" y1="1245.820" x2="562.405" y2="1245.820" stroke="#222222" stroke-width="1.376"/>
+<line x1="567.995" y1="1295.700" x2="562.405" y2="1295.700" stroke="#222222" stroke-width="1.376"/>
 </g>
-<g id="doors">
-<line x1="646.040" y1="474.400" x2="646.040" y2="397.000" stroke="#222222" stroke-width="2.408"/>
-<polyline points="568.640,474.400 568.678,471.969 568.793,469.540 568.984,467.116 569.250,464.699 569.593,462.292 570.011,459.897 570.504,457.516 571.072,455.151 571.713,452.806 572.428,450.482 573.216,448.182 574.075,445.907 575.006,443.661 576.006,441.445 577.076,439.261 578.214,437.112 579.419,435.000 580.689,432.927 582.024,430.895 583.422,428.905 584.882,426.961 586.402,425.063 587.981,423.214 589.618,421.416 591.310,419.670 593.056,417.978 594.854,416.341 596.703,414.762 598.601,413.242 600.545,411.782 602.535,410.384 604.567,409.049 606.640,407.779 608.752,406.574 610.901,405.436 613.085,404.366 615.301,403.366 617.547,402.435 619.822,401.576 622.122,400.788 624.446,400.073 626.791,399.432 629.156,398.864 631.537,398.371 633.932,397.953 636.339,397.610 638.756,397.344 641.180,397.153 643.609,397.038 646.040,397.000" fill="none" stroke="#222222" stroke-width="1.462" stroke-linejoin="miter"/>
-<line x1="823.200" y1="474.400" x2="912.640" y2="474.400" stroke="#222222" stroke-width="2.408"/>
-<polyline points="912.640,474.400 912.596,477.209 912.464,480.016 912.243,482.817 911.935,485.610 911.539,488.391 911.056,491.159 910.486,493.911 909.830,496.643 909.089,499.353 908.262,502.038 907.352,504.697 906.359,507.325 905.284,509.921 904.128,512.482 902.892,515.005 901.577,517.488 900.185,519.929 898.717,522.324 897.174,524.673 895.558,526.972 893.871,529.218 892.115,531.411 890.290,533.548 888.399,535.626 886.444,537.644 884.426,539.599 882.348,541.490 880.211,543.315 878.018,545.071 875.772,546.758 873.473,548.374 871.124,549.917 868.729,551.385 866.288,552.777 863.805,554.092 861.282,555.328 858.721,556.484 856.125,557.559 853.497,558.552 850.838,559.462 848.153,560.289 845.443,561.030 842.711,561.686 839.959,562.256 837.191,562.739 834.410,563.135 831.617,563.443 828.816,563.664 826.009,563.796 823.200,563.840" fill="none" stroke="#222222" stroke-width="1.462" stroke-linejoin="miter"/>
-<line x1="823.200" y1="563.840" x2="823.200" y2="569.000" stroke="#222222" stroke-width="1.892"/>
+<g id="doors-current-viewer-scheme">
+<g id="door-entry">
+<polyline points="823.200,562.980 825.955,562.937 828.708,562.807 831.455,562.591 834.194,562.288 836.922,561.900 839.637,561.426 842.336,560.867 845.015,560.224 847.673,559.497 850.307,558.687 852.914,557.794 855.492,556.820 858.038,555.765 860.549,554.631 863.024,553.419 865.459,552.130 867.853,550.764 870.203,549.324 872.506,547.812 874.761,546.227 876.964,544.572 879.115,542.849 881.210,541.060 883.248,539.205 885.227,537.287 887.145,535.308 889.000,533.270 890.789,531.175 892.512,529.024 894.167,526.821 895.752,524.566 897.264,522.263 898.704,519.913 900.070,517.519 901.359,515.084 902.571,512.609 903.705,510.098 904.760,507.552 905.734,504.974 906.627,502.367 907.437,499.733 908.164,497.075 908.807,494.396 909.366,491.697 909.840,488.982 910.228,486.254 910.531,483.515 910.747,480.768 910.877,478.015 910.920,475.260" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="823.200,475.260 910.920,475.260" fill="none" stroke="#536d68" stroke-width="2.150" stroke-linejoin="miter"/>
+</g>
+<g id="door-study">
+<polygon points="571.048,483.000 609.060,483.000 609.060,484.892 571.048,484.892" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polygon points="605.620,486.010 643.632,486.010 643.632,487.902 605.620,487.902" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="524.178,485.881 649.910,485.881" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="620.240,501.705 594.440,501.705 601.320,496.975" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+</g>
+<g id="door-kitchen">
+<polygon points="669.088,484.935 712.260,484.935 712.260,486.827 669.088,486.827" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polygon points="708.820,487.945 751.992,487.945 751.992,489.837 708.820,489.837" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="662.810,487.816 804.022,487.816" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="697.640,503.640 723.440,503.640 716.560,498.910" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+</g>
+<g id="door-bath">
+<polygon points="454.002,853.488 454.002,888.920 452.110,888.920 452.110,853.488" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polygon points="457.012,885.480 457.012,920.912 455.120,920.912 455.120,885.480" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="454.991,809.198 454.991,927.190" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="470.815,900.100 470.815,874.300 475.545,881.180" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+</g>
+<g id="door-storage">
+<polygon points="661.090,786.408 661.090,820.120 659.198,820.120 659.198,786.408" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polygon points="658.080,816.680 658.080,850.392 656.188,850.392 656.188,816.680" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="658.209,780.130 658.209,892.962" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="642.385,805.500 642.385,831.300 647.115,824.420" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+</g>
+<g id="door-master">
+<polyline points="458.560,930.200 458.606,933.109 458.743,936.016 458.971,938.917 459.290,941.809 459.700,944.689 460.201,947.556 460.791,950.405 461.470,953.234 462.238,956.041 463.093,958.822 464.036,961.575 465.064,964.296 466.178,966.985 467.375,969.637 468.655,972.250 470.017,974.821 471.458,977.348 472.979,979.829 474.576,982.261 476.249,984.642 477.996,986.969 479.816,989.239 481.705,991.452 483.663,993.604 485.688,995.694 487.778,997.719 489.930,999.677 492.143,1001.566 494.413,1003.386 496.740,1005.133 499.121,1006.806 501.553,1008.403 504.034,1009.924 506.561,1011.365 509.132,1012.727 511.745,1014.007 514.397,1015.204 517.086,1016.318 519.807,1017.346 522.560,1018.289 525.341,1019.144 528.148,1019.912 530.977,1020.591 533.826,1021.181 536.693,1021.682 539.573,1022.092 542.465,1022.411 545.366,1022.639 548.273,1022.776 551.182,1022.822" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="551.182,930.200 551.182,1022.822" fill="none" stroke="#536d68" stroke-width="2.150" stroke-linejoin="miter"/>
+</g>
+<g id="door-second">
+<polyline points="667.540,930.200 667.496,932.974 667.366,935.746 667.148,938.512 666.844,941.270 666.453,944.017 665.976,946.750 665.413,949.467 664.765,952.165 664.033,954.841 663.217,957.493 662.318,960.118 661.338,962.713 660.276,965.277 659.134,967.806 657.913,970.297 656.615,972.749 655.240,975.160 653.791,977.525 652.267,979.844 650.672,982.114 649.006,984.333 647.271,986.499 645.469,988.608 643.602,990.661 641.671,992.653 639.679,994.584 637.626,996.451 635.517,998.253 633.351,999.988 631.132,1001.654 628.862,1003.249 626.543,1004.773 624.178,1006.222 621.767,1007.597 619.315,1008.895 616.824,1010.116 614.295,1011.258 611.731,1012.320 609.136,1013.300 606.511,1014.199 603.859,1015.015 601.183,1015.747 598.485,1016.395 595.768,1016.958 593.035,1017.435 590.288,1017.826 587.530,1018.130 584.764,1018.348 581.992,1018.478 579.218,1018.522" fill="none" stroke="#536d68" stroke-width="1.032" stroke-linejoin="miter"/>
+<polyline points="579.218,930.200 579.218,1018.522" fill="none" stroke="#536d68" stroke-width="2.150" stroke-linejoin="miter"/>
+</g>
 </g>
 <g id="room-labels">
 <text x="548.000" y="373.780" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle" fill="#222222">书房</text>
@@ -213,8 +344,11 @@
 <text x="947.000" y="1235.500" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" text-anchor="middle" fill="#40464a" transform="rotate(-90 947.000 1235.500)">1500</text>
 </g>
 <g id="reconstruction-notes">
-<line x1="120.000" y1="1420.000" x2="980.000" y2="1420.000" stroke="#c2c6c9" stroke-width="0.800"/>
-<text x="120.000" y="1452.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="14" text-anchor="start" fill="#626a70">尺寸单位：毫米（mm）｜尺寸数字按原图转录。</text>
-<text x="120.000" y="1480.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="14" text-anchor="start" fill="#626a70">依据照片复原；墙厚、门窗及未标注细节为近似描绘，施工前需实测复核。</text>
+<line x1="120.000" y1="1402.000" x2="980.000" y2="1402.000" stroke="#c2c6c9" stroke-width="0.800"/>
+<line x1="122.000" y1="1426.000" x2="149.000" y2="1426.000" stroke="#b4513f" stroke-width="7.000"/>
+<text x="162.000" y="1431.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。</text>
+<text x="120.000" y="1460.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。</text>
+<text x="120.000" y="1487.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。</text>
+<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">V11 复核重绘 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
 </g>
 </svg>

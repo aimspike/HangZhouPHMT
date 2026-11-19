@@ -1,6 +1,7 @@
 from pathlib import Path
 from html import escape
 import math
+import json
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -99,55 +100,65 @@ text(W/2,73,'89-A 户型平面图',29)
 text(W/2,108,'照片复原 · 矢量重绘',14,'#626a70')
 end()
 
+layout=json.loads((ROOT/'src/plan-layout.json').read_text(encoding='utf-8'))
+
+def model_segment(w,a,b):
+    along=w['a'][1]==w['b'][1]
+    return [(1000*(w['a'][0]+v if along else w['a'][0]),1000*(w['a'][1] if along else w['a'][1]+v)) for v in [a,b]]
+
 group('walls')
-# Paper folds distort the photograph; reconstruct all walls on orthogonal axes.
-wall([(1700,2900),(1700,0),(6200,0),(6200,2900)],160)
-wall([(0,2900),(1700,2900)],180,True)
-wall([(0,2900),(0,12500)],180)
-wall([(6200,4000),(6200,12500)],180)
-wall([(0,12500),(6200,12500)],65)
-wall([(1700,700),(4300,700)],180,True)
-wall([(4300,0),(4300,2900)],120)
-wall([(1700,2900),(3240,2900)],115)
-wall([(4140,2900),(4300,2900)],115)
-wall([(4300,2900),(6200,2900)],160)
-wall([(5400,2900),(6200,2900)],160,True)
-wall([(0,6400),(3050,6400)],85)
-wall([(4350,6400),(6200,6400)],85)
-wall([(1800,6400),(1800,7280)],85)
-wall([(0,8200),(1950,8200)],85)
-wall([(4400,6400),(4400,7380)],85)
-wall([(4400,7580),(6200,7580)],85)
-wall([(4400,7580),(4400,8200),(4270,8200)],85)
-wall([(3070,8200),(3330,8200)],85)
-wall([(3200,8200),(3200,12500)],170)
-wall([(0,11800),(3200,11800)],185,True)
-wall([(3200,11000),(6200,11000)],170)
-for a,b in [([(1700,700),(1700,1050)],180), ([(1700,2500),(1700,2900)],180), ([(4300,0),(4300,700)],180), ([(6200,0),(6200,400)],220), ([(0,2900),(450,2900)],180), ([(0,2900),(0,3380)],180), ([(0,8000),(0,8380)],180), ([(6200,6400),(6200,6810)],180), ([(6200,8000),(6200,8380)],180), ([(3200,10400),(3200,10950)],170), ([(3200,11000),(3450,11000)],170), ([(5680,11000),(6200,11000)],190), ([(0,11450),(0,11800)],190), ([(6200,10900),(6200,11350)],180)]: wall(a,b,True)
+for w in layout['walls']:
+    group('wall-'+w['id'])
+    length=math.dist(w['a'],w['b']); previous=0
+    for op in w.get('openings',[]):
+        if op['a']>previous: wall(model_segment(w,previous,op['a']),w['t']*1000)
+        previous=op['b']
+    if previous<length: wall(model_segment(w,previous,length),w['t']*1000)
+    end()
+end()
+
+group('bearing-from-source-black-regions')
+for s in layout['bearing']:
+    mp([(p[0]*1000,p[1]*1000) for p in [s['a'],s['b']]],s['t']*1000,None,'#b4513f')
 end()
 
 group('windows-and-platforms')
-window(2170,700,3660,700,160)
-window(1700,1120,1700,2450,140)
-window(4770,0,5720,0,150)
-window(450,2900,1250,2900,145)
-window(0,3500,0,5850,150)
-window(0,6590,0,7270,150)
-window(700,11800,2400,11800,165)
-window(3200,11870,3200,12450,145)
-wall([(1700,0),(4300,0)],55)
-wall([(1700,0),(1700,700)],55)
+for w in layout['walls']:
+    for op in w.get('openings',[]):
+        if op['kind'] in ['window','sliding']:
+            a,b=model_segment(w,op['a'],op['b']);window(*a,*b,w['t']*1000)
+# Two low equipment areas and the kitchen service shaft shown in the photograph.
 ml(3150,0,3150,700,26)
 mp([(1810,630),(1810,160),(3060,160)],18)
 mp([(5660,170),(6060,170),(6060,460),(5660,460),(5660,170)],18)
+# The glazed partition in the south platform is not a full-height interior window.
+window(3200,11870,3200,12450,65)
 end()
 
-group('doors')
-ml(4140,2900,4140,2000,28)
-arc(4140,2900,900,180,270)
-ml(6200,2900,7240,2900,28)
-arc(6200,2900,1040,0,90)
-ml(6200,3940,6200,4000,22)
+group('doors-current-viewer-scheme')
+for d in layout['doors']:
+    group('door-'+d['id'])
+    width=d['end']-d['start']
+    def local(u,v):
+        return ((d['start']+u)*1000,(d['fixed']+v)*1000) if d['axis']=='x' else ((d['fixed']-v)*1000,(d['start']+u)*1000)
+    if d.get('allowSliding'):
+        run=(width-.056)/2;panel=run+.02;outside=d['outside']
+        # Closed panel outlines and the external single-side parking track.
+        for i,u in enumerate([.028,.028+run-.02]):
+            v=outside*(d['depth']/2+.0535+i*.035)
+            mp([local(u,v-.011),local(u+panel,v-.011),local(u+panel,v+.011),local(u,v+.011)],12,None,'#536d68',True)
+        park=-panel-.04 if d['stack']=='left' else width+.04
+        mp([local(min(-.045,park-.035),outside*(d['depth']/2+.076)),local(max(width+.045,park+panel+.035),outside*(d['depth']/2+.076))],12,None,'#536d68')
+        center=width/2;direction=-1 if d['stack']=='left' else 1;v=outside*(d['depth']/2+.26)
+        mp([local(center-direction*.15,v),local(center+direction*.15,v),local(center+direction*.07,v-.055)],12,None,'#536d68')
+    else:
+        inset=.068 if 'sideWall' in d else 0
+        pivot=.01+inset if d['hingeSide']=='left' else width-.01-inset
+        span=width-.01-pivot if d['hingeSide']=='left' else pivot-.01
+        sign=1 if d['hingeSide']=='left' else -1
+        points=[local(pivot+sign*span*math.cos(d['angle']*i/50),-sign*span*math.sin(d['angle']*i/50)) for i in range(51)]
+        mp(points,12,None,'#536d68');mp([local(pivot,0),points[-1]],25,None,'#536d68')
+    end()
 end()
 
 group('room-labels')
@@ -169,16 +180,19 @@ label(3275,4955,'89-A',24)
 end()
 
 group('dimensions-mm')
-hdim([0,1700,4300,6200],[1700,2600,1900],166)
-hdim([0,3200,6200],[3200,3000],1361)
-vdim([0,700,2900,6400,8200,11800,12500],[700,2200,3500,1800,3600,700],172)
-vdim([0,2900,6400,7600,11000,12500],[2900,3500,1200,3400,1500],957)
+for key,y in [('north',166),('south',1361)]:
+    data=layout['dimensions'][key];hdim([p*1000 for p in data['points']],data['values'],y)
+for key,x in [('west',172),('east',957)]:
+    data=layout['dimensions'][key];vdim([p*1000 for p in data['points']],data['values'],x)
 end()
 
 group('reconstruction-notes')
-line(120,1420,980,1420,.8,'#c2c6c9')
-text(120,1452,'尺寸单位：毫米（mm）｜尺寸数字按原图转录。',14,'#626a70',anchor='start')
-text(120,1480,'依据照片复原；墙厚、门窗及未标注细节为近似描绘，施工前需实测复核。',14,'#626a70',anchor='start')
+line(120,1402,980,1402,.8,'#c2c6c9')
+line(122,1426,149,1426,7,'#b4513f')
+text(162,1431,'承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。',13,'#626a70',anchor='start')
+text(120,1460,'尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。',13,'#626a70',anchor='start')
+text(120,1487,'门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。',13,'#626a70',anchor='start')
+text(120,1514,'V11 复核重绘 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
 end()
 svg.append('</svg>')
 (OUT/'restored-floor-plan.svg').write_text('\n'.join(svg),encoding='utf-8')

@@ -1,0 +1,19 @@
+{
+  "walls": 25,
+  "openings": 13,
+  "doors": 7,
+  "sourceBlackSections": 23,
+  "dimensionChains": "consistent",
+  "doorOpeningAlignment": "passed",
+  "svgWallAndDoorIds": "passed",
+  "pdf": {
+    "pages": 1,
+    "embeddedRasterImages": 0
+  },
+  "geometry": "all orthogonal",
+  "bakeSourceMeshes": 123,
+  "roofId": 120,
+  "verifiedEmbeddedLightImages": 219,
+  "singleHtml": "self-contained",
+  "uncertainty": "Unlabelled coordinates and widths are approximate"
+}
