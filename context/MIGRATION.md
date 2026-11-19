@@ -1,5 +1,7 @@
 # D盘迁移记录
 
+当前正式目录（2026-11-19重命名后）：`D:/HangZhouPHMT`。以下保留重命名前的D盘迁移记录；GitHub及Pages现为`aimspike/HangZhouPHMT`。
+
 迁移目标：`D:/hangzhou-89a-house-viewer`。
 
 原独立项目：`C:/Users/Admin/Documents/Codex/hangzhou-89a-house-viewer`；早期工作区：`C:/Users/Admin/Documents/Codex/2026-11-18/new-chat`。

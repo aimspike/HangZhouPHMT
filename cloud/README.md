@@ -5,7 +5,7 @@
 1. 在 https://supabase.com/dashboard 创建自己的项目。数据库密码只在 Supabase 保存，不写入本仓库。
 2. 在 SQL Editor 执行本目录的 `supabase.sql`，创建个人设置表、行级权限及版本比较保存函数。
 3. 在 Authentication → Providers → Email 启用邮箱登录和注册。Authentication → Email Templates 中，将 Magic Link 模板正文改成包含验证码的文本，例如：`你的户型浏览器登录验证码是 {{ .Token }}。请勿转发。` 用户在网页内输入验证码，不需要微信跳转登录链接。
-4. 将 Site URL 设为 `https://aimspike.github.io/hangzhou-89a-house-viewer/`。生产环境配置自己的 SMTP；Supabase 默认测试邮件服务通常只允许项目团队成员接收邮件，并有限流，不能直接当作面向所有访客的邮件服务。
+4. 将 Site URL 设为 `https://aimspike.github.io/HangZhouPHMT/`。生产环境配置自己的 SMTP；Supabase 默认测试邮件服务通常只允许项目团队成员接收邮件，并有限流，不能直接当作面向所有访客的邮件服务。
 5. 在 Project Settings → API / API Keys 找到项目 URL 与公开 publishable key（或 legacy anon key）。不要使用 secret/service_role key，它们拥有服务端权限。
 6. 将公开信息填入 `src/cloud-config.json` 的 `url` 和 `publishableKey`，运行 `python src/build_house.py`，提交并推送，等待 Pages 发布。每位访客之后都能看到同一个云服务登录入口。也可先在网页“保存与账号同步 → 云服务连接”填入这两项，在当前浏览器试用；该连接不会自动传给其他设备。
 7. 用两个浏览器分别登录同一邮箱。修改房间材质、门、灯光、楼层等设置，等待“已同步到云端”，另一个浏览器点“立即同步”或重新获得焦点，应恢复相同设置。

@@ -1,0 +1,50 @@
+{
+  "oldRoot": "D:\\hangzhou-89a-house-viewer",
+  "newRoot": "D:\\HangZhouPHMT",
+  "allFilesVerified": true,
+  "verifiedFiles": 2532,
+  "bytes": 334906255,
+  "historyHeadPreserved": "cd6b2dc29f2e19bd5da20de2341d65b65546508c",
+  "oldRootExists": false,
+  "repository": "https://github.com/aimspike/HangZhouPHMT",
+  "githubRepositoryId": 1462767122,
+  "remote": "https://github.com/aimspike/HangZhouPHMT.git",
+  "pages": "https://aimspike.github.io/HangZhouPHMT/",
+  "codexProject": {
+    "id": "01a1ee9e-8fab-7002-b448-acab7a96ec2a",
+    "name": "HangZhouPHMT",
+    "root": "D:/HangZhouPHMT"
+  },
+  "scope": "Repository and directory rename; HTML application remains unchanged.",
+  "publicHttp": {
+    "url": "https://aimspike.github.io/HangZhouPHMT/",
+    "status": 200,
+    "bytes": 2754179,
+    "sameNormalizedHtml": true,
+    "normalizedSHA256": "c7ddf2e460e30a2296b262f71b29d1a2ef82064a7e807a95336269b57308650c"
+  },
+  "publicBrowser": {
+    "checkedAt": "2026-11-19T08:43:32.856Z",
+    "url": "https://aimspike.github.io/HangZhouPHMT/?rename=1",
+    "browser": {
+      "boot": {
+        "ready": true,
+        "failed": false
+      },
+      "version": "12.1",
+      "maps": [
+        219,
+        219
+      ],
+      "viewport": [
+        390,
+        844
+      ],
+      "removedPathTracing": true,
+      "overflow": false,
+      "settingsHidden": true
+    },
+    "errors": [],
+    "scope": "Chromium MicroMessenger UA simulation; no physical WeChat device tested."
+  }
+}

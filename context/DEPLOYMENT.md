@@ -1,11 +1,11 @@
 # 发布信息
 
-- 仓库：https://github.com/aimspike/hangzhou-89a-house-viewer
-- 展示：https://aimspike.github.io/hangzhou-89a-house-viewer/
+- 仓库：https://github.com/aimspike/HangZhouPHMT
+- 展示：https://aimspike.github.io/HangZhouPHMT/
 - GitHub Pages：main分支 /docs，HTTPS。
 - 最终网页：docs/index.html，自包含单HTML。
-- 本地目录：D:/hangzhou-89a-house-viewer
-- Codex后端项目：杭州 89-A 户型浏览器，ID 01a1ee9e-8fab-7002-b448-acab7a96ec2a，root已更新为D盘。桌面侧栏需在“添加项目”选择此目录。
+- 本地目录：D:/HangZhouPHMT
+- Codex后端项目：HangZhouPHMT，ID 01a1ee9e-8fab-7002-b448-acab7a96ec2a，root已更新为D盘。桌面侧栏需在“添加项目”选择此目录。
 - 完整本地会话快照与旧工作区归档位于.local/，Git忽略。C盘仅保留位置说明。
 - 最近公网验证记录：validation/public-deployment.json。V10已在桌面与手机模拟中检查，发布后再次检查。
 - V11完成照片、矢量图和网页复核，承重墙标记、吊轨推拉门及窄边全包平开门框；本地验证见validation/v11-*.json。
@@ -27,3 +27,10 @@
 ## V12.1路径追踪回退已发布
 
 用户要求移除路径追踪并评估替代方案。功能提交`e241113`已由Pages成功构建，公开HTML返回200且统一换行后与本地构建完全一致。390×844 Android微信UA模拟：版本12.1、219/219烘焙图、无路径追踪入口/设置/诊断、无溢出或脚本错误、设置面板默认收起。全屋材质、本地保存、云接入准备、11处直角补角均保留；相关源码和烘焙/几何数据及图纸哈希与回退前一致。旧设置中路径追踪键可忽略。记录见`validation/v12-1-rollback-validation.json`与`validation/public-deployment.json`，截图`v12-1-public-mobile.png`。替代方案仅完成评估，见`context/LIGHTING_OPTIONS.md`，本轮未启用新照明。真机微信尚未测试。
+
+
+## 2026-11-19 重命名
+
+本地目录改为`D:/HangZhouPHMT`，GitHub仓库改为`aimspike/HangZhouPHMT`，仓库ID仍为1462767122。origin使用`https://github.com/aimspike/HangZhouPHMT.git`；Pages仍从`main:/docs`发布，新展示地址为`https://aimspike.github.io/HangZhouPHMT/`。云服务部署说明的Site URL已更新。旧仓库链接可能由GitHub重定向，分享网页应使用新的Pages链接。
+
+新Pages地址实测返回200，公开HTML与本地构建统一换行后SHA256一致。390×844微信UA模拟正常启动、219/219图、设置默认关闭、无溢出和脚本错误。完整重命名及校验记录见`validation/repository-rename.json`；历史页面内容和功能未变。

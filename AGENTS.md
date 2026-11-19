@@ -25,3 +25,5 @@
 - `wall_junctions.py`为网页与矢量图共享的11处直角补片。当前烘焙快照134mesh/roof131/219图；变几何才重烘焙，纯渲染改动不需要。
 
 - V12.1按用户要求移除运行时路径追踪、入口及CPU/GPU脚本，保留实时烘焙照明与V12其他改动。替代方案见`context/LIGHTING_OPTIONS.md`；未获新实施要求时仅作评估。
+
+- 正式项目目录现为`D:/HangZhouPHMT`，GitHub为`aimspike/HangZhouPHMT`，展示地址`https://aimspike.github.io/HangZhouPHMT/`。本会话默认cwd可能仍是C盘旧目录，命令需显式使用新D盘路径。

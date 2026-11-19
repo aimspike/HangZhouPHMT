@@ -1,52 +1,34 @@
 {
-  "checkedAt": "2026-11-19T08:19:52.944Z",
-  "featureCommit": "e241113dce75efb1db5ad60aa2ff81f5a224a2ff",
-  "pageBuild": "built",
-  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=12.1",
-  "initial": {
+  "checkedAt": "2026-11-19T08:43:32.856Z",
+  "url": "https://aimspike.github.io/HangZhouPHMT/?rename=1",
+  "browser": {
     "boot": {
       "ready": true,
       "failed": false
     },
-    "diagnostics": {
-      "version": "12.1",
-      "antialias": true,
-      "fxaa": true,
-      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
-      "maxTextureUnits": 16,
-      "contextLost": false,
-      "canvas": [
-        585,
-        1266
-      ],
-      "viewport": [
-        390,
-        844
-      ],
-      "shaderCount": 16,
-      "drawCalls": 531
-    },
+    "version": "12.1",
     "maps": [
       219,
       219
     ],
-    "pathTracingRemoved": true,
-    "storage": {
-      "localAvailable": true,
-      "cloudConfigured": false,
-      "signedIn": false,
-      "pending": false,
-      "revision": 0,
-      "conflict": false
-    },
-    "junctions": 11,
+    "viewport": [
+      390,
+      844
+    ],
+    "removedPathTracing": true,
     "overflow": false,
     "settingsHidden": true
   },
   "errors": [],
+  "scope": "Chromium MicroMessenger UA simulation; no physical WeChat device tested.",
+  "featureCommit": "cd6b2dc29f2e19bd5da20de2341d65b65546508c",
+  "pageBuild": "built",
+  "repository": "aimspike/HangZhouPHMT",
   "http": {
+    "url": "https://aimspike.github.io/HangZhouPHMT/",
     "status": 200,
-    "normalizedEqual": true
-  },
-  "scope": "Chromium Android MicroMessenger UA and viewport simulation; not physical WeChat."
+    "bytes": 2754179,
+    "sameNormalizedHtml": true,
+    "normalizedSHA256": "c7ddf2e460e30a2296b262f71b29d1a2ef82064a7e807a95336269b57308650c"
+  }
 }

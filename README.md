@@ -1,8 +1,8 @@
-# 杭州 89-A 户型浏览器
+# HangZhouPHMT
 
-根据用户提供的户型照片复原正交平面图，并生成可离线打开的单文件 3D 网页。
+杭州 89-A 户型浏览器：根据用户提供的户型照片复原正交平面图，并生成可离线打开的单文件 3D 网页。
 
-[在线浏览](https://aimspike.github.io/hangzhou-89a-house-viewer/) · [矢量 SVG](plans/restored-floor-plan.svg) · [矢量 PDF](plans/restored-floor-plan.pdf)
+[在线浏览](https://aimspike.github.io/HangZhouPHMT/) · [矢量 SVG](plans/restored-floor-plan.svg) · [矢量 PDF](plans/restored-floor-plan.pdf)
 
 ## 使用
 
@@ -55,7 +55,7 @@ GitHub Pages 从 `main` 分支的 `/docs` 目录发布。修改后构建、提�
 
 V9：两间卧室固定贴墙平开；书房、厨房、卫生间、储藏间默认房外单侧推拉，双扇同向移出洞口并叠合停放，保留门洞净宽。所有门支持透明显示；门框搭接密合，木纹统一为自然浅木色。
 
-本地项目目录：`D:/hangzhou-89a-house-viewer`。历史工作区与旧版本已归档在 `.local/legacy-workspace/`，不会上传GitHub。
+本地项目目录：`D:/HangZhouPHMT`。历史工作区与旧版本已归档在 `.local/legacy-workspace/`，不会上传GitHub。
 
 V11：对照原照片重新复核 SVG/PDF/PNG 与网页。修正厨房门洞、储藏间入口位置、卧室入口及阳台玻璃门；图纸和网页共用 `src/plan-layout.json` 的墙线与门洞。三维和平面默认以赭红色标记原图实黑墙段，可关闭，结构性质以正式结构图为准。推拉门采用上悬吊轨、独立薄门套和带端盖的双轨罩壳，无地轨与门槛；平开门采用40 mm窄边全包门框，完整覆盖门洞内衬和两侧墙口。平面模式显示随门型与开关变化的门扇符号。详见 [复核记录](context/PLAN_AUDIT.md)。
 

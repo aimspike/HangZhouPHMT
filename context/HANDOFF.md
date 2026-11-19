@@ -36,7 +36,7 @@
 
 ## 迁移与发布
 
-源工作区和旧版V3–V6保留。新项目采用`src`、`plans`、`references`、`context`、`validation`及`docs`布局。GitHub仓库和Pages目标为`aimspike/hangzhou-89a-house-viewer`，Pages入口`docs/index.html`。实际发布状态记录在`context/DEPLOYMENT.md`。
+源工作区和旧版V3–V6保留。新项目采用`src`、`plans`、`references`、`context`、`validation`及`docs`布局。GitHub仓库和Pages目标为`aimspike/HangZhouPHMT`，Pages入口`docs/index.html`。实际发布状态记录在`context/DEPLOYMENT.md`。
 
 ## V8 门与木纹更新
 
@@ -56,7 +56,7 @@
 
 ## D盘迁移
 
-项目现位于 `D:/hangzhou-89a-house-viewer`，原位置为 `C:/Users/Admin/Documents/Codex/hangzhou-89a-house-viewer`。全部源码、图纸、Git历史及完整本地会话备份已迁移；早期工作区work/outputs归档在 `.local/legacy-workspace/`。183个项目文件及1086个历史文件复制后逐一SHA256核对一致，再在D盘重新构建和验证。
+项目现位于 `D:/HangZhouPHMT`，原位置为 `C:/Users/Admin/Documents/Codex/hangzhou-89a-house-viewer`。全部源码、图纸、Git历史及完整本地会话备份已迁移；早期工作区work/outputs归档在 `.local/legacy-workspace/`。183个项目文件及1086个历史文件复制后逐一SHA256核对一致，再在D盘重新构建和验证。
 
 后续命令与编辑明确使用D盘项目，切勿继续改历史C盘目录。桌面本轮cwd不会自动切换；后续从D盘目录打开项目。
 
@@ -102,3 +102,8 @@
 ## V12.1 移除路径追踪（覆盖V12相关条目）
 
 用户反馈路径追踪效果完全不符合预期，已撤除路径追踪入口、质量/降噪UI、frame调用、截图分支、保存键与两个路径追踪源文件及构建内嵌。继续使用原实时烘焙照明，219张贴图、134mesh、屋顶id131和几何完全未变。墙角补齐、全屋材质、本地保存与Supabase接入准备保留，旧settings schema1中的多余渲染键可安全忽略。替代方案和实现瓶颈见`LIGHTING_OPTIONS.md`；本轮不实施新光照方案。
+
+
+## 2026-11-19 项目及仓库重命名
+
+正式目录为`D:/HangZhouPHMT`，GitHub为`https://github.com/aimspike/HangZhouPHMT`，展示页为`https://aimspike.github.io/HangZhouPHMT/`。由原D盘目录原地重命名，2532个文件、334906255字节逐一SHA256核对一致，含`.local/`会话备份和旧工作区。Git历史与远程GitHub仓库ID均保持；origin已更新为新clone URL。Codex后端项目名称和root已更新，项目ID不变。旧迁移记录及历史验证中的旧URL/路径是当时的事实，后续操作使用新路径。发布辅助脚本现为本地`work/github_publish.py`。网页功能未修改，路径追踪仍处于撤除状态。
