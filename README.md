@@ -1,10 +1,29 @@
 # 杭州 · 璞荟铭庭
 
+## 3D 在线体验
+
+**[点击打开 3D 在线体验 →](https://aimspike.github.io/HangZhouPHMT/)**
+
+电脑、手机、微信均可浏览，支持三维、平面、室内漫游与采光、材质调整。
+
+[查看矢量平面图](plans/restored-floor-plan.svg) · [下载 PDF](plans/restored-floor-plan.pdf) · [小区资料与来源](references/phmt/README.md)
+
+## 赞赏支持
+
+如果这个项目对你有帮助，欢迎自愿赞赏，支持后续整理与维护。
+
+<p align="center">
+  <a href="assets/wechat-appreciation.png"><img src="assets/wechat-appreciation.png" alt="微信赞赏码，头像已模糊处理" width="280"></a>
+</p>
+<p align="center">使用微信扫码；点击图片可查看大图。</p>
+
+在线展示页在前台浏览满一分钟后，也会显示一次可关闭的赞赏提示，附带 GitHub Star 入口。
+
+## 项目介绍
+
 **HangZhouPHMT** — 璞荟铭庭 89-A 户型的平面图复原与 3D 交互浏览项目。
 
 从一张户型照片出发，把空间、采光、材质和门的开合放进浏览器，方便在电脑、手机和微信里查看与讨论。
-
-**[打开 3D 在线体验](https://aimspike.github.io/HangZhouPHMT/)** · [查看矢量平面图](plans/restored-floor-plan.svg) · [下载 PDF](plans/restored-floor-plan.pdf) · [小区资料与来源](references/phmt/README.md)
 
 ## 关于璞荟铭庭
 
@@ -40,17 +59,6 @@
 [![89-A 户型复原平面图](plans/restored-floor-plan.png)](plans/restored-floor-plan.svg)
 
 照片复原的尺寸、墙高和未标注几何含估算，图纸不能用于施工；承重标记转录自原图实黑区域，结构性质以正式结构图为准。已做桌面和手机 / 微信 UA 模拟验证，手机微信真机表现仍需实机核验。
-
-## 赞赏支持
-
-如果这个项目对你有帮助，欢迎自愿赞赏，支持后续整理与维护。
-
-<p align="center">
-  <a href="assets/wechat-appreciation.png"><img src="assets/wechat-appreciation.png" alt="微信赞赏码，头像已模糊处理" width="280"></a>
-</p>
-<p align="center">使用微信扫码；点击图片可查看大图。</p>
-
-在线展示页在前台浏览满一分钟后，也会显示一次可关闭的赞赏提示，附带 GitHub Star 入口。
 
 ## 资料与维护
 
