@@ -134,7 +134,38 @@
 <polyline points="780.200,1171.000 823.200,1171.000" fill="none" stroke="#ffffff" stroke-width="11.524" stroke-linejoin="miter"/>
 </g>
 </g>
+<g id="square-wall-junctions">
+<polygon points="433.405,222.205 436.200,222.205 436.200,225.000 433.405,225.000" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="434.953,223.753 436.200,223.753 436.200,225.000 434.953,225.000" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,218.120 830.940,218.120 830.940,225.000 823.200,225.000" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,219.668 829.392,219.668 829.392,225.000 823.200,225.000" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="654.640,218.120 659.800,218.120 659.800,225.000 654.640,225.000" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="656.188,219.668 659.800,219.668 659.800,225.000 656.188,225.000" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="436.200,479.345 443.080,479.345 443.080,482.140 436.200,482.140" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="436.200,479.345 441.532,479.345 441.532,480.592 436.200,480.592" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="282.260,466.660 290.000,466.660 290.000,474.400 282.260,474.400" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="283.808,468.208 290.000,468.208 290.000,474.400 283.808,474.400" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,1300.000 826.640,1300.000 826.640,1303.440 823.200,1303.440" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,1300.000 825.092,1300.000 825.092,1301.892 823.200,1301.892" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="286.560,1300.000 290.000,1300.000 290.000,1303.440 286.560,1303.440" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="288.108,1300.000 290.000,1300.000 290.000,1301.892 288.108,1301.892" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="429.320,277.460 436.200,277.460 436.200,285.200 429.320,285.200" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="430.868,279.008 436.200,279.008 436.200,285.200 430.868,285.200" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="654.640,479.345 659.800,479.345 659.800,481.280 654.640,481.280" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="656.188,479.345 659.800,479.345 659.800,479.732 656.188,479.732" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="282.260,1239.800 290.000,1239.800 290.000,1247.755 282.260,1247.755" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="283.808,1239.800 290.000,1239.800 290.000,1246.207 283.808,1246.207" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="565.200,1239.800 572.510,1239.800 572.510,1247.755 565.200,1247.755" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="565.200,1239.800 570.962,1239.800 570.962,1246.207 565.200,1246.207" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+</g>
 <g id="bearing-from-source-black-regions">
+<polygon points="823.200,218.120 830.940,218.120 830.940,225.000 823.200,225.000" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="654.640,218.120 659.800,218.120 659.800,225.000 654.640,225.000" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="436.200,479.345 443.080,479.345 443.080,482.140 436.200,482.140" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="282.260,466.660 290.000,466.660 290.000,474.400 282.260,474.400" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="429.320,277.460 436.200,277.460 436.200,285.200 429.320,285.200" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="282.260,1239.800 290.000,1239.800 290.000,1247.755 282.260,1247.755" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="565.200,1239.800 572.510,1239.800 572.510,1247.755 565.200,1247.755" fill="#b4513f" stroke="#b4513f" stroke-width="0.000" stroke-linejoin="miter"/>
 <polyline points="659.800,225.000 700.220,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
 <polyline points="781.920,225.000 823.200,225.000" fill="none" stroke="#b4513f" stroke-width="13.760" stroke-linejoin="miter"/>
 <polyline points="823.200,225.000 823.200,259.400" fill="none" stroke="#b4513f" stroke-width="15.480" stroke-linejoin="miter"/>
@@ -349,6 +380,6 @@
 <text x="162.000" y="1431.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。</text>
 <text x="120.000" y="1460.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。</text>
 <text x="120.000" y="1487.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。</text>
-<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">V11 复核重绘 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
+<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">V12 直角补齐 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
 </g>
 </svg>

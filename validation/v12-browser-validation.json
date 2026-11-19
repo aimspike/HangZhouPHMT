@@ -1,0 +1,356 @@
+{
+  "errors": [],
+  "network": [],
+  "finishes": {
+    "allWalls": true,
+    "floorsUnaffected": true,
+    "ceilingScope": true,
+    "roomIsolation": true
+  },
+  "localRestore": true,
+  "cloudMock": {
+    "offlineDidNotUpload": true,
+    "conflictDetected": true,
+    "remoteChosen": true,
+    "localChosen": true,
+    "twoDevices": true,
+    "tokenRefreshed": true,
+    "exportContainsOnlySettings": true,
+    "badImportPreserved": true,
+    "logoutRestoresGuest": true,
+    "accountIsolated": true,
+    "rejectsServiceKey": true,
+    "scope": "Client tested against mocked Supabase REST; real email delivery and deployed RLS require a Supabase project.",
+    "realCloudEnabled": false
+  },
+  "pathHigh": {
+    "enabled": true,
+    "samples": 256,
+    "triangles": 12636,
+    "elapsed": 20603.599999999627,
+    "worker": false,
+    "failed": false,
+    "backend": "WebGL2 GPU Monte Carlo path tracer",
+    "gpuFallback": "",
+    "targetSamples": 256,
+    "resolution": [
+      800,
+      600
+    ],
+    "bounces": 6
+  },
+  "pathReset": true,
+  "night": {
+    "enabled": true,
+    "samples": 256,
+    "triangles": 13596,
+    "elapsed": 18553.099999999627,
+    "worker": false,
+    "failed": false,
+    "backend": "WebGL2 GPU Monte Carlo path tracer",
+    "gpuFallback": "",
+    "targetSamples": 256,
+    "resolution": [
+      800,
+      600
+    ],
+    "bounces": 6
+  },
+  "materialInvalidation": true,
+  "doorInvalidation": true,
+  "movementInvalidation": true,
+  "realtimeReturn": true,
+  "geometry": {
+    "roof": {
+      "gaps": 0,
+      "examples": []
+    },
+    "closed": [
+      {
+        "id": "entry",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "study",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "kitchen",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "bath",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "storage",
+        "type": "sliding",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "master",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      },
+      {
+        "id": "second",
+        "type": "hinged",
+        "rays": 1426,
+        "gaps": 0,
+        "examples": []
+      }
+    ],
+    "motion": [
+      {
+        "id": "study",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "left",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "kitchen",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "right",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "bath",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "left",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      },
+      {
+        "id": "storage",
+        "pathSteps": 25,
+        "otherDoorStates": 5625,
+        "outsideRoom": true,
+        "stackSide": "right",
+        "collisions": [],
+        "sweepEnvelopeCollisions": []
+      }
+    ],
+    "junctions": 11,
+    "maps": [
+      219,
+      219
+    ],
+    "sourceMatches": true
+  },
+  "cpuFallback": {
+    "enabled": true,
+    "samples": 1,
+    "triangles": 12636,
+    "elapsed": 4884.699999999255,
+    "worker": true,
+    "failed": false,
+    "backend": "CPU worker Monte Carlo path tracer",
+    "gpuFallback": "",
+    "targetSamples": 32,
+    "resolution": [
+      128,
+      277
+    ],
+    "bounces": 4
+  },
+  "failureFallback": {
+    "path": {
+      "enabled": false,
+      "samples": 0,
+      "triangles": 12064,
+      "elapsed": 0,
+      "worker": false,
+      "failed": true,
+      "backend": "CPU worker Monte Carlo path tracer",
+      "gpuFallback": "",
+      "targetSamples": 32,
+      "resolution": [
+        300,
+        150
+      ],
+      "bounces": 4
+    },
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "overlayHidden": true
+  },
+  "mobile": [
+    {
+      "size": [
+        390,
+        844
+      ],
+      "path": {
+        "enabled": true,
+        "samples": 256,
+        "triangles": 12636,
+        "elapsed": 14476.799999999814,
+        "worker": false,
+        "failed": false,
+        "backend": "WebGL2 GPU Monte Carlo path tracer",
+        "gpuFallback": "",
+        "targetSamples": 256,
+        "resolution": [
+          390,
+          844
+        ],
+        "bounces": 6
+      },
+      "overflow": false,
+      "panelHidden": true,
+      "statusBox": {
+        "x": 104.765625,
+        "y": 612,
+        "width": 180.46875,
+        "height": 28,
+        "top": 612,
+        "right": 285.234375,
+        "bottom": 640,
+        "left": 104.765625
+      }
+    },
+    {
+      "size": [
+        360,
+        780
+      ],
+      "viewport": [
+        360,
+        780
+      ],
+      "maps": [
+        219,
+        219
+      ],
+      "overflow": false,
+      "panel": {
+        "x": 10,
+        "y": 239.609375,
+        "width": 340,
+        "height": 530.390625,
+        "top": 239.609375,
+        "right": 350,
+        "bottom": 770,
+        "left": 10
+      },
+      "pathButton": {
+        "x": 282,
+        "y": 255,
+        "width": 66,
+        "height": 35,
+        "top": 255,
+        "right": 348,
+        "bottom": 290,
+        "left": 282
+      }
+    },
+    {
+      "size": [
+        740,
+        360
+      ],
+      "viewport": [
+        740,
+        360
+      ],
+      "maps": [
+        219,
+        219
+      ],
+      "overflow": false,
+      "panel": {
+        "x": 390,
+        "y": 70,
+        "width": 340,
+        "height": 280,
+        "top": 70,
+        "right": 730,
+        "bottom": 350,
+        "left": 390
+      },
+      "pathButton": {
+        "x": 662,
+        "y": 125,
+        "width": 66,
+        "height": 35,
+        "top": 125,
+        "right": 728,
+        "bottom": 160,
+        "left": 662
+      }
+    }
+  ],
+  "mobileScope": "Chromium viewport and MicroMessenger UA simulation; no physical WeChat device tested.",
+  "final": {
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "maps": [
+      219,
+      219
+    ],
+    "diag": {
+      "version": "12.0",
+      "antialias": true,
+      "fxaa": true,
+      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+      "maxTextureUnits": 16,
+      "contextLost": false,
+      "canvas": [
+        1920,
+        1350
+      ],
+      "viewport": [
+        1280,
+        900
+      ],
+      "shaderCount": 17,
+      "drawCalls": 573
+    },
+    "cloud": {
+      "localAvailable": true,
+      "cloudConfigured": false,
+      "signedIn": false,
+      "pending": true,
+      "revision": 0,
+      "conflict": false
+    },
+    "sourceMeshes": 134
+  },
+  "jsSyntax": "passed",
+  "pathOrbitAndPlan": true,
+  "consoleErrors": [],
+  "finishReset": {
+    "allMaterial": true,
+    "currentResetIsolated": true,
+    "allReset": true
+  },
+  "noCloudRequestsWhenUnconfigured": true
+}

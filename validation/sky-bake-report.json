@@ -7,9 +7,9 @@
   "rooms": [
     {
       "room": "living",
-      "meanExposure": 0.02243,
-      "meanBounce": 0.01218,
-      "reflectedFlux": 1.42916
+      "meanExposure": 0.02242,
+      "meanBounce": 0.0119,
+      "reflectedFlux": 1.43524
     },
     {
       "room": "hall",
@@ -19,9 +19,9 @@
     },
     {
       "room": "study",
-      "meanExposure": 0.02784,
-      "meanBounce": 0.01288,
-      "reflectedFlux": 0.69385
+      "meanExposure": 0.0277,
+      "meanBounce": 0.0129,
+      "reflectedFlux": 0.69326
     },
     {
       "room": "kitchen",
@@ -49,9 +49,9 @@
     },
     {
       "room": "second",
-      "meanExposure": 0.01911,
-      "meanBounce": 0.01086,
-      "reflectedFlux": 0.7583
+      "meanExposure": 0.01897,
+      "meanBounce": 0.01064,
+      "reflectedFlux": 0.74735
     }
   ]
 }

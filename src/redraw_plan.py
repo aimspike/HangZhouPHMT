@@ -2,6 +2,7 @@ from pathlib import Path
 from html import escape
 import math
 import json
+from wall_junctions import junction_fills
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -117,7 +118,22 @@ for w in layout['walls']:
     end()
 end()
 
+group('square-wall-junctions')
+for fill in junction_fills(layout):
+    a,b=fill['min'],fill['max'];corner=fill['corner']
+    points=[(a[0]*1000,a[1]*1000),(b[0]*1000,a[1]*1000),(b[0]*1000,b[1]*1000),(a[0]*1000,b[1]*1000)]
+    mp(points,0,'#303438','#303438',True)
+    inset=.018
+    low=[a[k]+(inset if a[k]<corner[k]-1e-6 else 0) for k in range(2)]
+    high=[b[k]-(inset if b[k]>corner[k]+1e-6 else 0) for k in range(2)]
+    mp([(low[0]*1000,low[1]*1000),(high[0]*1000,low[1]*1000),(high[0]*1000,high[1]*1000),(low[0]*1000,high[1]*1000)],0,'#ffffff','#ffffff',True)
+end()
+
 group('bearing-from-source-black-regions')
+for fill in junction_fills(layout):
+    if fill['bearing']:
+        a,b=fill['min'],fill['max']
+        mp([(a[0]*1000,a[1]*1000),(b[0]*1000,a[1]*1000),(b[0]*1000,b[1]*1000),(a[0]*1000,b[1]*1000)],0,'#b4513f','#b4513f',True)
 for s in layout['bearing']:
     mp([(p[0]*1000,p[1]*1000) for p in [s['a'],s['b']]],s['t']*1000,None,'#b4513f')
 end()
@@ -192,7 +208,7 @@ line(122,1426,149,1426,7,'#b4513f')
 text(162,1431,'承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。',13,'#626a70',anchor='start')
 text(120,1460,'尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。',13,'#626a70',anchor='start')
 text(120,1487,'门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。',13,'#626a70',anchor='start')
-text(120,1514,'V11 复核重绘 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
+text(120,1514,'V12 直角补齐 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
 end()
 svg.append('</svg>')
 (OUT/'restored-floor-plan.svg').write_text('\n'.join(svg),encoding='utf-8')

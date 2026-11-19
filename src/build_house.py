@@ -1,6 +1,8 @@
 """Build the complete offline viewer and GitHub Pages assets, with no CDN."""
 from pathlib import Path
 import shutil
+import json
+from wall_junctions import junction_fills
 
 SOURCE = Path(__file__).resolve().parent
 ROOT = SOURCE.parent
@@ -8,10 +10,12 @@ OUTPUT = ROOT / 'docs'
 OUTPUT.mkdir(exist_ok=True)
 html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
 html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
-for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js')]:
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('SETTINGS_STORAGE','settings-storage.js'),('PATH_TRACER_GPU','path-tracer-gpu.js'),('PATH_TRACER','path-tracer.js')]:
     html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
 html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text(encoding='utf-8'))
+html = html.replace('/*__WALL_JUNCTIONS__*/', json.dumps(junction_fills(json.loads((SOURCE/'plan-layout.json').read_text(encoding='utf-8'))),separators=(',',':')))
+html = html.replace('/*__CLOUD_CONFIG__*/', (SOURCE/'cloud-config.json').read_text(encoding='utf-8'))
 html = html.replace('/*__BAKED_LIGHTING__*/', (SOURCE/'baked-lighting.json').read_text(encoding='utf-8'))
 if '/*__' in html:
     raise RuntimeError('Unresolved template marker')
