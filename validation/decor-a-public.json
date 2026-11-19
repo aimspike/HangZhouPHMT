@@ -1,0 +1,60 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/?decor=a",
+  "functionalCommit": "07396d95037e175e1eab416e346ade359f1dcae6",
+  "checkedAt": "2026-11-19T10:47:18.618Z",
+  "scope": "Chromium Android WeChat UA simulation; not a real device",
+  "errors": [],
+  "extraRequests": [],
+  "http": 200,
+  "publicSha256": "7bc8be14a5e50635e33d8945fdd6db40a4cef7b6a832787fc56139094720a5e4",
+  "localSha256": "7bc8be14a5e50635e33d8945fdd6db40a4cef7b6a832787fc56139094720a5e4",
+  "initial": {
+    "boot": {
+      "ready": true,
+      "failed": false
+    },
+    "version": "13",
+    "mode": "orbit",
+    "maps": [
+      219,
+      219
+    ],
+    "preset": "a",
+    "settingsHidden": true,
+    "overflow": false,
+    "diagnostics": {
+      "version": "13",
+      "antialias": true,
+      "fxaa": true,
+      "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+      "maxTextureUnits": 32,
+      "contextLost": false,
+      "canvas": [
+        585,
+        1266
+      ],
+      "viewport": [
+        390,
+        844
+      ],
+      "shaderCount": 34,
+      "drawCalls": 583
+    }
+  },
+  "gallery": {
+    "loaded": true,
+    "width": 540,
+    "height": 720
+  },
+  "switching": "passed",
+  "capture": true,
+  "offline": {
+    "maps": [
+      219,
+      219
+    ],
+    "preset": "a",
+    "cloudConfigured": false
+  },
+  "result": "passed"
+}

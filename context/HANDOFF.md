@@ -137,3 +137,4 @@ README改为“杭州·璞荟铭庭”，包括在线体验、项目介绍、平
 - `assets/interior/preset-a/`：8 张实际 WebGL PNG（日间 6 房间、夜间客厅、全屋）及总览 WebP；captures.json 记录相机、FOV85°、眼高1.5m、时段。网页默认 FOV105° 不变。
 - 验证：原图字节保持；家具与全高墙不相交；7 门各 25 步、全部可选门型与家具无碰撞；两卧室仅平开，次卧床与床头柜已避开扫掠范围。门闭合 0 缺口、推拉原测试通过、屋顶 0 缺口。桌面 WebGL1、320×740/390×844/740×360/568×320 微信 UA 模拟与旋转，219/219 图、三模式、快捷按钮、相册和截图正常，无自动外部请求或 JS/Shader 错误。真机微信仍未验证。
 - 记录：`validation/decor-a-validation.json`、`verify-decor-preset.cjs` 和移动端截图。发布仍为 `main:/docs`，最终 HTML 约 3.48 MB，全部图与模块内嵌。
+- 功能提交 `07396d9` 已发布，公开 HTML 与本地规范化 SHA256 一致。390×844 微信 UA 模拟和磁盘单 HTML 均启动正常；公开方案切换、相册、截图预览通过。公网证据为 `validation/decor-a-public.json` 与 `decor-a-public-mobile.png`。详细发布记录见 `DEPLOYMENT.md`。

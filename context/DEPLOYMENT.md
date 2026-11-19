@@ -40,3 +40,11 @@
 README改为“杭州·璞荟铭庭”，小区资料、来源与差异记录在`references/phmt/`，公开赞赏码为`assets/wechat-appreciation.png`处理图。原首页工程说明迁至`context/DEVELOPMENT.md`。
 
 展示页增加GitHub项目入口和前台浏览一分钟后单次可关闭的赞赏/Star弹窗；PNG与脚本构建内嵌，仍只需`docs/index.html`。本地六尺寸、三模式和定时/后台/关闭交互验证通过，见`validation/public-home-browser.json`、`public-home-prompt-edges.json`和截图。仅Chromium模拟，微信真机及扫码未测试。按既有`main:/docs`流程提交推送，无需变更Pages配置。
+
+## V13 家装预设 A 已发布
+
+功能提交 `07396d9` 已由 GitHub Pages 成功构建。公开 `?decor=a` 返回 200；HTML 统一换行后的 SHA256 为 `7bc8be14a5e50635e33d8945fdd6db40a4cef7b6a832787fc56139094720a5e4`，与本地构建一致。
+
+390×844 Android 微信 UA 模拟：V13、方案 A 自动启用、219/219 贴图、设置默认关闭、无溢出、JS/Shader 错误或外部依赖请求；可切回原有方案，参考图与截图预览正常。另直接打开磁盘上的单 HTML，方案 A 与全部烘焙图正常，云配置仍为空。记录为 `validation/decor-a-public.json`，截图为 `decor-a-public-mobile.png`。仍未测试微信真机。
+
+9 张分类原图在 `references/interior/preset-a/`；8 张实际场景 PNG、总览和相机数据在 `assets/interior/preset-a/`，已随功能提交推送。建筑几何、平面图、原有日光数据未变；具体局部填光和房间定位限制见方案说明。
