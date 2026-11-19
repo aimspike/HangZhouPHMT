@@ -1,19 +1,19 @@
 {
   "url": "https://aimspike.github.io/HangZhouPHMT/?decor=a",
-  "functionalCommit": "96e21b9f54dd33b94e012fe635a8eb9934567613",
-  "checkedAt": "2026-11-19T12:45:40.597Z",
+  "functionalCommit": "b4f9d2d68fb14008dfe59a44afa7ef26ce2180a6",
+  "checkedAt": "2026-11-19T13:54:03.733Z",
   "scope": "Chromium Android WeChat UA simulation; not a real device",
   "errors": [],
   "extraRequests": [],
   "http": 200,
-  "publicSha256": "6b4326a0b87173ca8099b4845b860cdc50453d7f230a7a4948c21a4c404b35ab",
-  "localSha256": "6b4326a0b87173ca8099b4845b860cdc50453d7f230a7a4948c21a4c404b35ab",
+  "publicSha256": "8d8962d6c0e6938c7f443e6d304db5fd407f7ca14494b664eeeae79e1195b876",
+  "localSha256": "8d8962d6c0e6938c7f443e6d304db5fd407f7ca14494b664eeeae79e1195b876",
   "initial": {
     "boot": {
       "ready": true,
       "failed": false
     },
-    "version": "13.1",
+    "version": "14.0",
     "mode": "orbit",
     "maps": [
       219,
@@ -90,7 +90,7 @@
     "settingsHidden": true,
     "overflow": false,
     "diagnostics": {
-      "version": "13.1",
+      "version": "14.0",
       "antialias": true,
       "fxaa": true,
       "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -104,9 +104,33 @@
         390,
         844
       ],
-      "shaderCount": 37,
-      "drawCalls": 494
+      "shaderCount": 40,
+      "drawCalls": 495
     }
+  },
+  "render": {
+    "quality": "auto",
+    "effective": "balanced",
+    "ao": true,
+    "probeRoom": "living",
+    "captures": 1,
+    "revision": 24,
+    "reflectionError": null,
+    "hdrSupported": true,
+    "depthSupported": true,
+    "aoSize": [
+      293,
+      633
+    ],
+    "samples": 12,
+    "probeResolution": 64,
+    "cachedRooms": [
+      "living"
+    ],
+    "materials": 276,
+    "mode": "walk",
+    "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+    "pathTracing": false
   },
   "schemeControls": "gallery, export shortcut and viewpoint picker absent",
   "switching": "passed",
