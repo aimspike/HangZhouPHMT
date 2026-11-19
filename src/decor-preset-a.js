@@ -121,8 +121,8 @@ function createHouseDecor(options) {
   for(const x of [-width/2+.1,width/2-.1])for(const z of [-length/2+.15,length/2-.15]){const leg=new THREE.Mesh(shape('cylinder',[.018,.014,.14]),material('black',room));leg.position.set(x,.07,z);g.add(leg);parts++;}
   piping(room,0,.44,0,width-.03,length-.04,'linen',g);
   root.updateMatrixWorld(true);const b=new THREE.Box3().setFromObject(g).applyMatrix4(root.matrixWorld.clone().invert());items.push({id:room+'-bed',room,min:b.min.toArray(),max:b.max.toArray()});blockers.push({id:room+'-bed',minX:b.min.x,maxX:b.max.x,minZ:b.min.z,maxZ:b.max.z});currentItem=previous;contact(room,cx,cz,angle?length:width,angle?width:length);
-  const headWall=room==='master'?'bedroom-divider':'east',plane=wallFace(headWall,0,-1);
-  placements.push({id:room+'-bed',headWall,wallFace:plane,headGap:plane-b.max.x,layout:{head:b.max.x,north:b.min.z,south:b.max.z,foot:b.min.x}});
+  const west=angle>0,headWall=room==='master'?(west?'west':'bedroom-divider'):'east',plane=wallFace(headWall,0,west?1:-1);
+  placements.push({id:room+'-bed',headWall,wallFace:plane,headDirection:west?'west':'east',headGap:west?b.min.x-plane:plane-b.max.x,layout:{head:west?b.min.x:b.max.x,north:b.min.z,south:b.max.z,foot:west?b.max.x:b.min.x}});
  }
  function wardrobe(room,id,cx,cz,width,depth,backWall){
   item(id,room,()=>{box(room,cx,1.2,cz,width,2.4,depth,'cream');box(room,cx,.055,cz+.01,width-.06,.11,depth-.06,'black');
@@ -163,10 +163,10 @@ function createHouseDecor(options) {
   box('kitchen',5.75,.948,2.07,.48,.015,.53,'black');for(const z of [1.92,2.23]){cylinder('kitchen',5.74,.96,z,.1,.1,.018,'steel');cylinder('kitchen',5.74,1.02,z,.085,.085,.11,'black');}
   box('kitchen',5.91,1.79,2.08,.36,.09,.6,'black','wall');box('kitchen',5.94,1.72,1.5,.32,.016,2.4,'glow','wall');
   // Bedrooms are mapped by balcony adjacency, not by an assumed photograph compass.
-  bed('master',2.105,10.2,1.55,2.02,-Math.PI/2,'mustard');box('master',1.95,.014,10.2,2.3,.022,2.1,'rug');
+  bed('master',1.1,10.2,1.55,2.02,Math.PI/2,'mustard');box('master',1.25,.014,10.2,2.3,.022,2.1,'rug');
   wardrobe('master','master-wardrobe',.95,8.5425,1.6,.6,'bath-south');
-  item('master-nightstand','master',()=>{box('master',2.79,.29,11.31,.45,.52,.37,'wood');cylinder('master',2.79,.7,11.31,.12,.12,.17,'cream');});
-  art('master',3.105,1.75,10.05,.55,.75,-Math.PI/2,0);art('master',3.105,1.7,10.85,.36,.48,-Math.PI/2,1);
+  item('master-nightstand','master',()=>{box('master',.43,.29,11.31,.45,.52,.37,'wood');cylinder('master',.43,.7,11.31,.12,.12,.17,'cream');});
+  art('master',.105,1.75,10.05,.55,.75,Math.PI/2,0);art('master',.105,1.7,10.85,.36,.48,Math.PI/2,1);
   bed('second',5.14,9.65,1.35,1.94,-Math.PI/2,'linen');box('second',5.0,.014,9.65,2.25,.022,1.85,'blue');
   wardrobe('second','second-wardrobe',5.25,7.9175,1.5,.55,'storage-south');
   item('second-nightstand','second',()=>{round('second',5.88,.31,8.66,.34,.48,.30,'wood');box('second',5.88,.39,8.504,.25,.006,.008,'brass');cylinder('second',5.88,.64,8.66,.045,.045,.13,'steel');cylinder('second',5.88,.77,8.66,.1,.12,.13,'linen');});art('second',6.095,1.7,9.5,.58,.72,-Math.PI/2,2);
@@ -203,7 +203,7 @@ function createHouseDecor(options) {
   item('kitchen-counter-accessories','kitchen',()=>{
    round('kitchen',5.89,1.1,.85,.21,.3,.015,'wood');cylinder('kitchen',5.69,1.03,.95,.048,.045,.16,'cream');
   },false);
-  for(const [r,x,z] of [['master',2.79,11.31],['second',5.88,8.66]]){box(r,x,.41,z-.195,.28,.008,.008,'brass');book(r,x,.565,z,.23,.022,.16,'blue');}
+  for(const [r,x,z] of [['master',.43,11.31],['second',5.88,8.66]]){box(r,x,.41,z-.195,.28,.008,.008,'brass');book(r,x,.565,z,.23,.022,.16,'blue');}
   item('bath-vanity-detail','bath',()=>{for(const y of [.48,.66])box('bath',.55,y,7.721,.59,.006,.012,'black');box('bath',.55,.61,7.707,.16,.008,.013,'brass');
    const bowl=new THREE.Mesh(new THREE.TorusGeometry(.135,.018,8,40),material('ceramic','bath'));bowl.rotation.x=-Math.PI/2;bowl.position.set(.55,.866,7.9);layer('bath').add(bowl);currentItem.meshes.push(bowl);parts++;
    cylinder('bath',.55,.867,7.9,.109,.109,.008,'stone');cylinder('bath',.79,.932,8.015,.027,.027,.17,'ceramic');box('bath',.79,1.021,8.015,.032,.015,.025,'black');

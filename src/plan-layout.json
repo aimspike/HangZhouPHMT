@@ -11,7 +11,7 @@
     {"id":"study-west","a":[1.7,0.7],"b":[1.7,2.9],"t":0.16,"openings":[{"a":0.42,"b":1.75,"kind":"window"}]},
     {"id":"east","a":[6.2,0],"b":[6.2,11],"t":0.18,"openings":[{"a":2.9,"b":3.94,"kind":"door","door":"entry"}]},
     {"id":"balcony-east-post","a":[6.2,11],"b":[6.2,11.35],"t":0.18},
-    {"id":"balcony-east","a":[6.2,11.35],"b":[6.2,12.5],"t":0.08,"height":0.95,"guard":true},
+    {"id":"balcony-east","a":[6.2,11.35],"b":[6.2,12.5],"t":0.18,"height":2.96,"role":"solid-wall","note":"用户确认：阳台东侧为全高实墙，与东侧墙端接齐"},
     {"id":"living-north","a":[0,2.9],"b":[1.7,2.9],"t":0.18,"openings":[{"a":0.45,"b":1.25,"kind":"window"}]},
     {"id":"west","a":[0,2.9],"b":[0,11.8],"t":0.18,"openings":[{"a":0.6,"b":2.95,"kind":"window"},{"a":3.69,"b":4.37,"kind":"window"}]},
     {"id":"south-platform-west","a":[0,11.8],"b":[0,12.5],"t":0.08,"height":0.95,"guard":true},

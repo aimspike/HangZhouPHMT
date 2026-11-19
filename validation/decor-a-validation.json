@@ -69,13 +69,13 @@
       "time": "noon",
       "fov": 85,
       "camera": [
-        -2.55,
+        -0.5500000000000003,
         1.5,
-        2.9000000000000004
+        2.8499999999999996
       ],
       "eyeHeight": 1.5,
       "angles": [
-        -2.124090652117189,
+        2.1319597390832485,
         -0.12
       ],
       "canvas": [
@@ -235,9 +235,12 @@
           "clear": true
         }
       ],
-      "gallery": {
-        "inViewport": true,
-        "closeClickable": true
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -291,9 +294,12 @@
           "clear": true
         }
       ],
-      "gallery": {
-        "inViewport": true,
-        "closeClickable": true
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -347,9 +353,12 @@
           "clear": true
         }
       ],
-      "gallery": {
-        "inViewport": true,
-        "closeClickable": true
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -403,9 +412,12 @@
           "clear": true
         }
       ],
-      "gallery": {
-        "inViewport": true,
-        "closeClickable": true
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     }
@@ -791,12 +803,12 @@
         "id": "master-bed",
         "room": "master",
         "min": [
-          1.0950000095367431,
+          0.09000000029802324,
           -2.98023217215615e-10,
           9.409999978542327
         ],
         "max": [
-          3.114999999701977,
+          2.1099999904632574,
           1.1899999809265136,
           10.990000021457671
         ]
@@ -819,12 +831,12 @@
         "id": "master-nightstand",
         "room": "master",
         "min": [
-          2.5650000059604645,
+          0.20500000596046464,
           0.030000009536743144,
           11.124999997615815
         ],
         "max": [
-          3.0149999940395356,
+          0.6549999940395357,
           0.7850000008940696,
           11.495000002384186
         ]
@@ -1057,14 +1069,15 @@
     "placements": [
       {
         "id": "master-bed",
-        "headWall": "bedroom-divider",
-        "wallFace": 3.115,
-        "headGap": 2.9802338374906867e-10,
+        "headWall": "west",
+        "wallFace": 0.09,
+        "headDirection": "west",
+        "headGap": 2.980232449711906e-10,
         "layout": {
-          "head": 3.114999999701977,
+          "head": 0.09000000029802324,
           "north": 9.409999978542327,
           "south": 10.990000021457671,
-          "foot": 1.0950000095367431
+          "foot": 2.1099999904632574
         }
       },
       {
@@ -1078,6 +1091,7 @@
         "id": "second-bed",
         "headWall": "east",
         "wallFace": 6.11,
+        "headDirection": "east",
         "headGap": -2.8610228852699038e-8,
         "layout": {
           "head": 6.110000028610229,
@@ -1102,14 +1116,15 @@
   "placements": [
     {
       "id": "master-bed",
-      "headWall": "bedroom-divider",
-      "wallFace": 3.115,
-      "headGap": 2.9802338374906867e-10,
+      "headWall": "west",
+      "wallFace": 0.09,
+      "headDirection": "west",
+      "headGap": 2.980232449711906e-10,
       "layout": {
-        "head": 3.114999999701977,
+        "head": 0.09000000029802324,
         "north": 9.409999978542327,
         "south": 10.990000021457671,
-        "foot": 1.0950000095367431
+        "foot": 2.1099999904632574
       }
     },
     {
@@ -1123,6 +1138,7 @@
       "id": "second-bed",
       "headWall": "east",
       "wallFace": 6.11,
+      "headDirection": "east",
       "headGap": -2.8610228852699038e-8,
       "layout": {
         "head": 6.110000028610229,
@@ -1142,7 +1158,7 @@
   "bedClearances": [
     {
       "room": "master",
-      "foot": 1.005000009536743,
+      "foot": 1.0050000095367428,
       "north": 0.53349997832626,
       "south": 0.7174999785423299
     },
@@ -1188,6 +1204,86 @@
       ]
     }
   ],
+  "balconyWalls": [
+    {
+      "mode": "orbit",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.17
+        }
+      ]
+    },
+    {
+      "mode": "plan",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.17
+        }
+      ]
+    },
+    {
+      "mode": "walk",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.17
+        }
+      ]
+    }
+  ],
   "wallClearance": [],
   "views": [
     {
@@ -1229,9 +1325,9 @@
     {
       "id": "master",
       "camera": [
-        -2.55,
+        -0.5500000000000003,
         1.5,
-        2.9000000000000004
+        2.8499999999999996
       ],
       "clear": true
     },
@@ -1274,7 +1370,7 @@
   ],
   "furnitureToggle": "passed",
   "switchAndRefresh": "passed",
-  "referenceGallery": "9 embedded images decoded; keyboard navigation, focus trap/return and Escape preserving walk mode passed",
+  "schemeControls": "Only scheme selector and notes remain; gallery, preset export and view picker removed",
   "desktopCapture": "PNG download passed",
   "settingsExport": "preset, both finish palettes and no credentials",
   "settingsImport": "A/bare palette round-trip; old original/missing schema1 migrates to unfurnished concrete bare",

@@ -38,8 +38,8 @@
 <polyline points="823.200,1171.000 823.200,1201.100" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
 </g>
 <g id="wall-balcony-east">
-<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#303438" stroke-width="6.880" stroke-linejoin="miter"/>
-<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="3.784" stroke-linejoin="miter"/>
+<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
+<polyline points="823.200,1201.100 823.200,1300.000" fill="none" stroke="#ffffff" stroke-width="12.384" stroke-linejoin="miter"/>
 </g>
 <g id="wall-living-north">
 <polyline points="290.000,474.400 328.700,474.400" fill="none" stroke="#303438" stroke-width="15.480" stroke-linejoin="miter"/>
@@ -145,8 +145,8 @@
 <polygon points="436.200,479.345 441.532,479.345 441.532,480.592 436.200,480.592" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="282.260,466.660 290.000,466.660 290.000,474.400 282.260,474.400" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="283.808,468.208 290.000,468.208 290.000,474.400 283.808,474.400" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
-<polygon points="823.200,1300.000 826.640,1300.000 826.640,1303.440 823.200,1303.440" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
-<polygon points="823.200,1300.000 825.092,1300.000 825.092,1301.892 823.200,1301.892" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,1300.000 830.940,1300.000 830.940,1303.440 823.200,1303.440" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
+<polygon points="823.200,1300.000 829.392,1300.000 829.392,1301.892 823.200,1301.892" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="286.560,1300.000 290.000,1300.000 290.000,1303.440 286.560,1303.440" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="288.108,1300.000 290.000,1300.000 290.000,1301.892 288.108,1301.892" fill="#ffffff" stroke="#ffffff" stroke-width="0.000" stroke-linejoin="miter"/>
 <polygon points="429.320,277.460 436.200,277.460 436.200,285.200 429.320,285.200" fill="#303438" stroke="#303438" stroke-width="0.000" stroke-linejoin="miter"/>
@@ -362,6 +362,6 @@
 <text x="162.000" y="1431.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。</text>
 <text x="120.000" y="1460.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。</text>
 <text x="120.000" y="1487.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" text-anchor="start" fill="#626a70">门扇按当前网页默认补充：全部入户与房间门窄边全包平开，卧室贴墙开启。</text>
-<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">阳台西侧为全高实墙 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
+<text x="120.000" y="1514.000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" text-anchor="start" fill="#626a70">阳台东、西侧均为全高实墙 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。</text>
 </g>
 </svg>
