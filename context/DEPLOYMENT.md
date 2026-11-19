@@ -22,3 +22,8 @@
 ## V12公网验证完成
 
 功能提交`864e998`已由GitHub Pages成功构建。HTML、SVG、PDF返回200；统一CRLF/LF后公网HTML与本地SHA256一致。390×844 Android微信UA模拟，219/219贴图、11处直角补角、设置面板默认收起，无溢出、JS/Shader错误或外部资源请求；GPU路径追踪240×519、64采样模式可切换。云配置仍为空，本地自动保存已启用。公网证据见`validation/public-deployment.json`和`v12-public-mobile.png`。路径追踪精细/CPU回退、全屋材质、模拟账号冲突等验证见`v12-browser-validation.json`。仍未真机微信测试。
+
+
+## V12.1路径追踪回退已发布
+
+用户要求移除路径追踪并评估替代方案。功能提交`e241113`已由Pages成功构建，公开HTML返回200且统一换行后与本地构建完全一致。390×844 Android微信UA模拟：版本12.1、219/219烘焙图、无路径追踪入口/设置/诊断、无溢出或脚本错误、设置面板默认收起。全屋材质、本地保存、云接入准备、11处直角补角均保留；相关源码和烘焙/几何数据及图纸哈希与回退前一致。旧设置中路径追踪键可忽略。记录见`validation/v12-1-rollback-validation.json`与`validation/public-deployment.json`，截图`v12-1-public-mobile.png`。替代方案仅完成评估，见`context/LIGHTING_OPTIONS.md`，本轮未启用新照明。真机微信尚未测试。

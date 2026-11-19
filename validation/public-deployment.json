@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-11-19T07:58:44.224Z",
-  "featureCommit": "864e9980c23535b21845d387de43f378ce9e3e0a",
+  "checkedAt": "2026-11-19T08:19:52.944Z",
+  "featureCommit": "e241113dce75efb1db5ad60aa2ff81f5a224a2ff",
   "pageBuild": "built",
-  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=12",
+  "url": "https://aimspike.github.io/hangzhou-89a-house-viewer/?v=12.1",
   "initial": {
     "boot": {
       "ready": true,
       "failed": false
     },
     "diagnostics": {
-      "version": "12.0",
+      "version": "12.1",
       "antialias": true,
       "fxaa": true,
       "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -30,6 +30,7 @@
       219,
       219
     ],
+    "pathTracingRemoved": true,
     "storage": {
       "localAvailable": true,
       "cloudConfigured": false,
@@ -39,59 +40,13 @@
       "conflict": false
     },
     "junctions": 11,
-    "path": {
-      "enabled": false,
-      "samples": 0,
-      "triangles": 0,
-      "elapsed": 0,
-      "worker": false,
-      "failed": false,
-      "backend": "CPU worker Monte Carlo path tracer",
-      "gpuFallback": "",
-      "targetSamples": 32,
-      "resolution": [
-        300,
-        150
-      ],
-      "bounces": 4
-    },
-    "settingsHidden": true,
-    "overflow": false
-  },
-  "path": {
-    "enabled": true,
-    "samples": 4,
-    "triangles": 12636,
-    "elapsed": 147.70000000018626,
-    "worker": false,
-    "failed": false,
-    "backend": "WebGL2 GPU Monte Carlo path tracer",
-    "gpuFallback": "",
-    "targetSamples": 64,
-    "resolution": [
-      240,
-      519
-    ],
-    "bounces": 4
+    "overflow": false,
+    "settingsHidden": true
   },
   "errors": [],
-  "externalRequests": [],
-  "scope": "Chromium Android MicroMessenger UA simulation; not physical WeChat.",
   "http": {
     "status": 200,
-    "bytes": 2787747,
-    "sameNormalizedHtml": true,
-    "version12": true,
-    "normalizedSHA256": "96fdd81ac3fe25fbce9d8b459abd7876902e81a58e8f0cf008499baa1f4e9d37",
-    "assets": {
-      "restored-floor-plan.svg": {
-        "status": 200,
-        "bytes": 42388
-      },
-      "restored-floor-plan.pdf": {
-        "status": 200,
-        "bytes": 70132
-      }
-    }
-  }
+    "normalizedEqual": true
+  },
+  "scope": "Chromium Android MicroMessenger UA and viewport simulation; not physical WeChat."
 }
