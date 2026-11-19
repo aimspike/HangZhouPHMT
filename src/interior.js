@@ -118,7 +118,7 @@ function createHouseDoors(options){
   }
  }
  function add(config){
-  const item={...config,open:!config.entry,type:config.allowSliding?'sliding':'hinged',transparent:false};
+  const item={...config,open:!config.entry,type:config.allowSliding&&options.defaultType==='sliding'?'sliding':'hinged',transparent:false};
   item.width=item.end-item.start;
   item.materials={wood:clone(normalWood),entry:clone(entryFinish),frame:clone(config.entry?entryFinish:frameFinish),bronze:clone(bronze),black:clone(black),seal:clone(seal)};
   const container=item.container=new THREE.Group();container.position.set(config.axis==='x'?config.start:config.fixed,0,config.axis==='x'?config.fixed:config.start);container.rotation.y=config.axis==='z'?-Math.PI/2:0;group.add(container);

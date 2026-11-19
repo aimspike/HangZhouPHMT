@@ -89,3 +89,5 @@ V10：清晨07:09、正午11:45、黄昏16:38分别烘焙太阳直射与漫反�
 阳台西侧按用户确认改为全高实墙，图纸与模型同步后全量重烘焙。当前建筑快照133 mesh、屋顶id130、219张光照图；仅调整家具不需要重烘焙建筑。毛坯和A分别保存自定义材质；旧original/无decor设置自动迁移到无家具水泥毛坯。
 
 浏览器回归脚本为`validation/verify-decor-preset.cjs`（设置`PLAYWRIGHT_MODULE`和可选`CHROME_PATH`，本地8879端口需以项目根目录提供服务）。它核对几何、屋顶、贴墙净距、全部门型开合、保存迁移、观景点及手机/微信UA模拟，并重新导出`assets/interior/preset-a/`的9张实际WebGL截图。截图不是AI生成或离线写实渲染。结果见`validation/decor-a-validation.json`。
+
+当前默认夜晚，7扇入户与房间门均平开，覆盖V9默认推拉规则。`plan-layout.json.defaultDoorType`同步网页初值和矢量图门符号；四扇房门仍可选吊轨推拉，已有保存设置继续优先恢复。阳台原玻璃滑门保持原图。改变默认门型不改建筑烘焙快照。

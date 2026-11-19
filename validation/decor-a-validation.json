@@ -416,6 +416,40 @@
     "visible": false,
     "disabled": true
   },
+  "defaults": {
+    "daylight": "night",
+    "nightPressed": "true",
+    "doors": [
+      {
+        "id": "entry",
+        "type": "hinged"
+      },
+      {
+        "id": "study",
+        "type": "hinged"
+      },
+      {
+        "id": "kitchen",
+        "type": "hinged"
+      },
+      {
+        "id": "bath",
+        "type": "hinged"
+      },
+      {
+        "id": "storage",
+        "type": "hinged"
+      },
+      {
+        "id": "master",
+        "type": "hinged"
+      },
+      {
+        "id": "second",
+        "type": "hinged"
+      }
+    ]
+  },
   "architectureUnchanged": true,
   "roof": {
     "gaps": 0,
@@ -499,28 +533,28 @@
     },
     {
       "id": "study",
-      "type": "sliding",
+      "type": "hinged",
       "rays": 1426,
       "gaps": 0,
       "examples": []
     },
     {
       "id": "kitchen",
-      "type": "sliding",
+      "type": "hinged",
       "rays": 1426,
       "gaps": 0,
       "examples": []
     },
     {
       "id": "bath",
-      "type": "sliding",
+      "type": "hinged",
       "rays": 1426,
       "gaps": 0,
       "examples": []
     },
     {
       "id": "storage",
-      "type": "sliding",
+      "type": "hinged",
       "rays": 1426,
       "gaps": 0,
       "examples": []
@@ -1244,6 +1278,7 @@
   "desktopCapture": "PNG download passed",
   "settingsExport": "preset, both finish palettes and no credentials",
   "settingsImport": "A/bare palette round-trip; old original/missing schema1 migrates to unfurnished concrete bare",
+  "savedDefaultOverrides": "explicit dusk and sliding choices survive reload",
   "rotation": [
     844,
     390

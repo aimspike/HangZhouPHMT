@@ -156,7 +156,7 @@ for d in layout['doors']:
     width=d['end']-d['start']
     def local(u,v):
         return ((d['start']+u)*1000,(d['fixed']+v)*1000) if d['axis']=='x' else ((d['fixed']-v)*1000,(d['start']+u)*1000)
-    if d.get('allowSliding'):
+    if d.get('allowSliding') and d.get('defaultType',layout.get('defaultDoorType','hinged'))=='sliding':
         run=(width-.056)/2;panel=run+.02;outside=d['outside']
         # Closed panel outlines and the external single-side parking track.
         for i,u in enumerate([.028,.028+run-.02]):
@@ -206,7 +206,7 @@ line(120,1402,980,1402,.8,'#c2c6c9')
 line(122,1426,149,1426,7,'#b4513f')
 text(162,1431,'承重墙标记：按原图实黑区域转录，结构性质以正式结构图为准。',13,'#626a70',anchor='start')
 text(120,1460,'尺寸单位：mm；标注数字按原图转录，门窗净宽及墙厚为近似值。',13,'#626a70',anchor='start')
-text(120,1487,'门扇按当前网页方案补充：卧室窄边全包平开，其余房门外侧吊轨推拉。',13,'#626a70',anchor='start')
+text(120,1487,'门扇按当前网页默认补充：全部入户与房间门窄边全包平开，卧室贴墙开启。',13,'#626a70',anchor='start')
 text(120,1514,'阳台西侧为全高实墙 · 图纸与网页共用墙线 / 门洞数据 · 仅供空间浏览。',12,'#626a70',anchor='start')
 end()
 svg.append('</svg>')

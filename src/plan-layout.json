@@ -1,6 +1,7 @@
 {
   "version": 11,
   "units": "metres",
+  "defaultDoorType": "hinged",
   "source": "references/apartment-original.jpg",
   "note": "标注尺寸来自照片；未标尺寸、门窗净宽及墙厚为近似值。bearing仅转录原图实黑区域，不代替结构图。",
   "walls": [

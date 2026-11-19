@@ -16,7 +16,7 @@
 - `src/decor-preset-a.js` 是独立可选家装层；原图与分类在 `references/interior/preset-a/`，实际场景截图在 `assets/interior/preset-a/`。仅调整此层家具不改变建筑烘焙快照；应验证 `houseBakeSource()` 一致、`decorDoorClearance()` 无碰撞及观景位置可移动。建筑墙线/门洞更改仍须全量重烘焙。
 - 中间文件写入 `work/`。无需创建新会话或子代理。
 
-- 两间卧室门仅允许贴墙平开；书房、厨房、卫生间、储藏间默认房外单侧推拉。改门位置需运行 `houseViewer.doorMotion()` 和 `doorClosure()` 检查墙、门扇与门框。
+- 当前默认夜晚；7扇入户/房间门全部默认平开。两间卧室门仅允许贴墙平开；书房、厨房、卫生间、储藏间仍可选房外单侧推拉。保留用户已有保存设置。改门位置需运行 `houseViewer.doorMotion()` 和 `doorClosure()` 检查墙、门扇与门框。
 
 - 日光与天光各自有增益控件。`bake_sun.py`依次调用solar_bake.py和sky_bake.py；天空占用灯光贴图R通道，G/B是夜间灯具，必须保持。太阳反射和天光用sqrt编码，shader解码后参与线性照明。
 
