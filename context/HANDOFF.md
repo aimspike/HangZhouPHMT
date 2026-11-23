@@ -194,3 +194,5 @@ V14功能提交 `b4f9d2d` 已发布，公网HTML规范化SHA256 `8d8962d6c0e6938
 `verify-contact-occlusion.cjs` 以真实 WebGL1 渲染18组平面（16位/默认深度，1.5/4/8m，三种倾角）及两组凸块接触阴影；旧代码平面测试失败，新代码平面无误暗像素且接触阴影保留。`verify-render-quality.cjs` 桌面/微信UA/缺扩展、昼夜、画质保存、反射更新通过，结果另存 `mobile-shadow-render-quality.json`，V14历史证据保留。`verify-mobile-shadows.cjs` 核对毛坯、219贴图、屋顶、几何快照、横竖屏、三模式、屋顶开关与移动。新图为 `mobile-shadow-*.png`。这是 Chromium 模拟，仍未进行真机 iPhone/微信验证。
 
 当前执行环境只挂载 `C:/PHMT`，没有 `D:/HangZhouPHMT`，本次在现有干净 Git 仓库修复；origin与main均核对为正式GitHub项目。未迁移目录、未修改建筑或重新烘焙。
+
+功能提交 `c6efa6d` 已发布，公开HTML规范化SHA256 `82b54b659f05575a216c77a4bbc86ee604a895767b55452d2f34867359dce56f` 与本地一致。公网及磁盘单HTML的390×844 iPhone/微信UA模拟：V14.1、219图、night默认、7门平开、面板收起、屋顶0缺口、正午AO与反射均通过，无额外请求或JS/Shader错误；见 `validation/mobile-shadow-public.json`。GitHub构建API遇到公开速率限制，使用实际发布内容与浏览器结果确认部署。

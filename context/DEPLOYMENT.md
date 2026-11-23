@@ -72,3 +72,11 @@ GitHub Pages 已成功构建 `ae4d030`。2026-11-19 公网 `?decor=a` 返回200�
 桌面4时段、画质/保存、房门反射更新、390微信UA、740横屏缺depth/half-float扩展回退测试通过，证据`validation/v14-render-quality.json`。完整家具回归含320×740/390×844/740×360/568×320、旋转、贴墙/通道/25步全门型净空/闭合/屋顶/材质保存与旧JSON迁移，均通过。9张原JPG字节/SHA不变，9张WebGL图与新细节图已更新。
 
 公网390×844微信UA：V14/night/7门hinged/219图，反射采样成功、均衡档，无JS/Shader错误、额外请求或溢出；A/bare、精简装修UI和通用截图通过。磁盘file单HTML启动、SVG/PDF内容一致。公网证据为`validation/decor-a-public.json`。尚未进行微信真机测试，反射和屏幕遮蔽为实时近似，家具未纳入完整GI。
+
+## V14.1 手机阴影条纹修复已发布
+
+2026-11-23，功能提交 `c6efa6d` 已推送至 `main`。公开 `?release=14.1` 返回200，HTML规范化SHA256为 `82b54b659f05575a216c77a4bbc86ee604a895767b55452d2f34867359dce56f`，与本地构建完全一致。GitHub公开构建API返回403速率限制；发布确认以实际公网HTML逐字节规范化比对及浏览器启动为依据。
+
+AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消除平面自遮挡形成的条纹。页面标题和诊断版本同步为V14.1。建筑、门洞和219张烘焙图不变，无需重烘焙。
+
+本地验证含18组平面、2组凸块接触阴影、390竖屏/740横屏毛坯、A方案、三视图、移动、屋顶开关、昼夜与画质保存、缺扩展回退、几何快照相等和屋顶0缺口。证据为 `contact-occlusion.json`、`mobile-shadow.json`、`mobile-shadow-render-quality.json` 及 `mobile-shadow-*.png`；公网和独立单HTML的手机微信UA验证见 `mobile-shadow-public.json`。均为Chromium模拟，未进行真机iPhone/微信核验。
