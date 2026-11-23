@@ -1,6 +1,6 @@
 # Codex 续接上下文
 
-更新时间：2026-11-19。当前版本 V14.0。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末 V13.1。
+更新时间：2026-11-23。当前版本 V14.1。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末。
 
 ## 模型与环境
 
@@ -186,3 +186,11 @@ README改为“杭州·璞荟铭庭”，包括在线体验、项目介绍、平
 验证：`validation/verify-decor-preset.cjs`为家具/门/屋顶/源快照/材质保存与4种手机视口回归；`verify-render-quality.cjs`为4时段、画质与刷新、房门反射更新、桌面/微信UA/缺扩展降级。运行时间超过1分钟时，测试通过正常关闭赞赏弹窗继续操作。新细节图在validation/v14-*；9张原图保持SHA和字节不变。仍须真机微信核验，屏幕AO只覆盖画面内接触关系，房间反射是缓存的近似，不是真实平面镜，也没有完整家具GI/实时全局路径求解。
 
 V14功能提交 `b4f9d2d` 已发布，公网HTML规范化SHA256 `8d8962d6c0e6938c7f443e6d304db5fd407f7ca14494b664eeeae79e1195b876` 与本地一致；390微信UA、磁盘离线和公开图纸通过。最新结果见`validation/decor-a-public.json`与`v14-render-quality.json`。
+
+## V14.1 手机阴影条纹（2026-11-23）
+
+用户提供 iPhone 微信截图，墙面和天花板出现重复斜向阴影。在 Chromium 手机尺寸下复现 AO 条纹，关闭 AO 后消失。`render-quality.js` 原算法只比较视空间 z，倾斜平面的相邻深度会被误作遮挡；低精度深度与单像素法线放大问题。现在增加接收平面的半球判定、按距离和保守16位深度步长计算偏置，法线基线扩大到3像素，并跳过相机后方采样。保留接触阴影、房间反射、画质设置和全部烘焙数据。
+
+`verify-contact-occlusion.cjs` 以真实 WebGL1 渲染18组平面（16位/默认深度，1.5/4/8m，三种倾角）及两组凸块接触阴影；旧代码平面测试失败，新代码平面无误暗像素且接触阴影保留。`verify-render-quality.cjs` 桌面/微信UA/缺扩展、昼夜、画质保存、反射更新通过，结果另存 `mobile-shadow-render-quality.json`，V14历史证据保留。`verify-mobile-shadows.cjs` 核对毛坯、219贴图、屋顶、几何快照、横竖屏、三模式、屋顶开关与移动。新图为 `mobile-shadow-*.png`。这是 Chromium 模拟，仍未进行真机 iPhone/微信验证。
+
+当前执行环境只挂载 `C:/PHMT`，没有 `D:/HangZhouPHMT`，本次在现有干净 Git 仓库修复；origin与main均核对为正式GitHub项目。未迁移目录、未修改建筑或重新烘焙。

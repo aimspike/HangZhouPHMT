@@ -1,0 +1,165 @@
+{
+  "scope": "Chromium WebGL1, including forced 16-bit depth; not a physical phone",
+  "cases": [
+    {
+      "depth": 16,
+      "distance": 1.5,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 1.5,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 1.5,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 4,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 4,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 4,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 8,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 8,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "distance": 8,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 16,
+      "contact": true,
+      "min": 219,
+      "darkFraction": 0.015798032682849437,
+      "mean": 254.77205299063937
+    },
+    {
+      "depth": 32,
+      "distance": 1.5,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 1.5,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 1.5,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 4,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 4,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 4,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 8,
+      "tilt": -0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 8,
+      "tilt": 0,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "distance": 8,
+      "tilt": 0.6,
+      "min": 255,
+      "darkFraction": 0,
+      "mean": 255
+    },
+    {
+      "depth": 32,
+      "contact": true,
+      "min": 218,
+      "darkFraction": 0.015798032682849437,
+      "mean": 254.77032762176742
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

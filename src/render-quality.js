@@ -18,11 +18,15 @@ function createHouseRenderQuality(options){
  varying vec2 vUv;uniform sampler2D depthMap;uniform mat4 inverseProjection,projection;uniform vec2 pixel;uniform vec3 kernel[20];uniform int sampleCount;uniform float radius;
  vec3 positionAt(vec2 uv){float d=texture2D(depthMap,uv).r;vec4 p=inverseProjection*vec4(uv*2.0-1.0,d*2.0-1.0,1.0);return p.xyz/p.w;}
  void main(){float d=texture2D(depthMap,vUv).r;if(d>.999999){gl_FragColor=vec4(1.0);return;}vec3 p=positionAt(vUv);
- vec3 l=positionAt(vUv-vec2(pixel.x,0.0)),r=positionAt(vUv+vec2(pixel.x,0.0)),b=positionAt(vUv-vec2(0.0,pixel.y)),t=positionAt(vUv+vec2(0.0,pixel.y));
+ // A wider baseline stabilizes normals on quantized mobile depth buffers.
+ vec3 l=positionAt(vUv-vec2(pixel.x*3.0,0.0)),r=positionAt(vUv+vec2(pixel.x*3.0,0.0)),b=positionAt(vUv-vec2(0.0,pixel.y*3.0)),t=positionAt(vUv+vec2(0.0,pixel.y*3.0));
  vec3 dx=abs(r.z-p.z)<abs(l.z-p.z)?r-p:p-l,dy=abs(t.z-p.z)<abs(b.z-p.z)?t-p:p-b,n=normalize(cross(dx,dy));if(dot(n,-p)<0.0)n=-n;
  float angle=fract(sin(dot(floor(gl_FragCoord.xy),vec2(12.9898,78.233)))*43758.5453)*6.2831853;
  vec3 tangent=normalize(cross(n,abs(n.z)<.9?vec3(0.0,0.0,1.0):vec3(0.0,1.0,0.0))),bitangent=cross(n,tangent),a=tangent*cos(angle)+bitangent*sin(angle),c=-tangent*sin(angle)+bitangent*cos(angle);mat3 basis=mat3(a,c,n);
- float blocked=0.0,weight=0.0;for(int i=0;i<20;i++){if(i>=sampleCount)break;vec3 s=p+n*.012+basis*kernel[i]*radius;vec4 q=projection*vec4(s,1.0);vec2 uv=q.xy/q.w*.5+.5;if(uv.x<0.0||uv.y<0.0||uv.x>1.0||uv.y>1.0)continue;vec3 hit=positionAt(uv);float range=1.0-smoothstep(radius*.6,radius*1.8,length(hit-p));blocked+=step(s.z+.014,hit.z)*range;weight+=1.0;}
+ // Screen-depth ordering alone mistakes a sloped plane for an occluder.
+ // Require a hit above its receiver plane; budget for 16-bit depth error.
+ float depthStep=abs(inverseProjection[2][3])*p.z*p.z/32768.0,bias=max(.018,depthStep*2.0);
+ float blocked=0.0,weight=0.0;for(int i=0;i<20;i++){if(i>=sampleCount)break;vec3 s=p+n*.012+basis*kernel[i]*radius;vec4 q=projection*vec4(s,1.0);vec2 uv=q.xy/q.w*.5+.5;if(q.w<=0.0||uv.x<0.0||uv.y<0.0||uv.x>1.0||uv.y>1.0)continue;vec3 hit=positionAt(uv),delta=hit-p;float range=1.0-smoothstep(radius*.6,radius*1.8,length(delta));float abovePlane=smoothstep(bias,bias*2.0,dot(n,delta));blocked+=step(s.z+bias,hit.z)*abovePlane*range;weight+=1.0;}
  float ao=1.0-.76*blocked/max(weight,1.0);gl_FragColor=vec4(vec3(max(.42,ao)),1.0);}
  `});
  const postScene=new THREE.Scene(),postCamera=new THREE.OrthographicCamera(-1,1,1,-1,0,1);postScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),aoMaterial));
