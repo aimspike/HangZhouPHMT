@@ -1,0 +1,168 @@
+{
+  "poster": {
+    "cards": 6,
+    "width": 1800,
+    "height": 2400,
+    "images": true,
+    "overflow": false,
+    "daylightText": "白天　｜　夜晚\n04\n昼夜采光\n关闭室内灯，\n面向窗外看昼夜。\n自然采光 · 窗外景色"
+  },
+  "playback": {
+    "duration": 30,
+    "width": 1080,
+    "height": 1920,
+    "started": true,
+    "error": null,
+    "seeking": false
+  },
+  "bareTour": [
+    {
+      "name": "start",
+      "preset": "bare",
+      "furniture": 0,
+      "lights": true,
+      "time": "noon",
+      "camera": [
+        1.9,
+        1.5,
+        -1.75
+      ],
+      "look": [
+        1.7278759594743864,
+        -0.04
+      ],
+      "clear": true,
+      "baked": [
+        219,
+        219
+      ]
+    },
+    {
+      "name": "living",
+      "preset": "bare",
+      "furniture": 0,
+      "lights": true,
+      "time": "noon",
+      "camera": [
+        1.9,
+        1.5,
+        -1.75
+      ],
+      "look": [
+        2.0678759594743865,
+        -0.07199999999999998
+      ],
+      "clear": true,
+      "baked": [
+        219,
+        219
+      ]
+    },
+    {
+      "name": "window",
+      "preset": "bare",
+      "furniture": 0,
+      "lights": true,
+      "time": "noon",
+      "camera": [
+        0.8232508274992459,
+        1.5,
+        -1.1658457228446049
+      ],
+      "look": [
+        1.4478759594743882,
+        -0.051999999999999935
+      ],
+      "clear": true,
+      "baked": [
+        219,
+        219
+      ]
+    },
+    {
+      "name": "end",
+      "preset": "bare",
+      "furniture": 0,
+      "lights": true,
+      "time": "noon",
+      "camera": [
+        -0.16099140816703394,
+        1.5,
+        -1.287442174913101
+      ],
+      "look": [
+        1.647875959474388,
+        -0.07599999999999997
+      ],
+      "clear": true,
+      "baked": [
+        219,
+        219
+      ]
+    }
+  ],
+  "daylight": [
+    {
+      "file": "window-noon.png",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "lights": false,
+      "preset": "bare",
+      "time": "noon",
+      "baked": [
+        219,
+        219
+      ],
+      "mode": "walk"
+    },
+    {
+      "file": "window-dusk.png",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "lights": false,
+      "preset": "bare",
+      "time": "dusk",
+      "baked": [
+        219,
+        219
+      ],
+      "mode": "walk"
+    },
+    {
+      "file": "window-night.png",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "lights": false,
+      "preset": "bare",
+      "time": "night",
+      "baked": [
+        219,
+        219
+      ],
+      "mode": "walk"
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}
