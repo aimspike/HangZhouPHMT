@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-24T10:35:40.103Z",
+  "scope": "Desktop and mobile viewport browser playback; synthetic Mandarin neural voice, no physical phone test",
+  "output": {
+    "file": "mobile-feature-tour-60s-soft-voice.mp4",
+    "durationSeconds": 60,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 30,
+    "frames": 1800,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audio": "AAC 48kHz stereo, warm Mandarin neural female narration and original music",
+    "fastStart": true,
+    "bytes": 10046147,
+    "sha256": "5e531c6ea7707166f50db74ffb9ff1cfbcc9619538a969e26761a25486302d86",
+    "decodedWithoutErrors": true
+  },
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-6%",
+  "pitch": "-1Hz",
+  "wordAlignedSubtitleCues": 14,
+  "subtitlesNoOverlap": true,
+  "allChaptersFitWithoutTimeStretch": true,
+  "voiceOverDuckedMusicDb": 25.48,
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1080,
+      "height": 1920,
+      "playback": {
+        "duration": 60,
+        "width": 1080,
+        "height": 1920,
+        "playing": true,
+        "advanced": true,
+        "audioDecodedBytes": 19112,
+        "seeks": 14,
+        "error": null,
+        "seeking": false
+      }
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "playback": {
+        "duration": 60,
+        "width": 1080,
+        "height": 1920,
+        "playing": true,
+        "advanced": true,
+        "audioDecodedBytes": 22679,
+        "seeks": 14,
+        "error": null,
+        "seeking": false
+      }
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

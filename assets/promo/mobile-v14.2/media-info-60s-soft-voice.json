@@ -1,0 +1,224 @@
+{
+  "version": "14.2",
+  "revision": 4,
+  "checkedAt": "2026-11-24T10:34:58.857211+00:00",
+  "scope": "Existing actual Chromium mobile viewport recordings, new Mandarin natural neural narration and aligned subtitles; not a physical phone recording",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "output": {
+    "file": "mobile-feature-tour-60s-soft-voice.mp4",
+    "durationSeconds": 60,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 30,
+    "frames": 1800,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audio": "AAC 48kHz stereo, warm Mandarin neural female narration and original music",
+    "fastStart": true,
+    "bytes": 10046147,
+    "sha256": "5e531c6ea7707166f50db74ffb9ff1cfbcc9619538a969e26761a25486302d86",
+    "decodedWithoutErrors": true
+  },
+  "audioProduction": {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "voiceGender": "Female",
+    "provider": "Microsoft Edge online natural neural speech",
+    "personality": "Warm (voice catalogue descriptor)",
+    "rate": "-6%",
+    "pitch": "-1Hz",
+    "method": "Synthesize complete chapter sentences; preserve original neural speaking pace, no audio time stretching",
+    "script": [
+      {
+        "id": "01-overview",
+        "title": "三维总览",
+        "start": 0,
+        "duration": 8,
+        "text": "打开网页，把户型放大、转一转。家里的空间关系，就更清楚了。",
+        "spokenStart": 0.39,
+        "spokenEnd": 6.67,
+        "audioClipSeconds": 6.55,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "02-plan",
+        "title": "平面户型",
+        "start": 8,
+        "duration": 6,
+        "text": "切到平面图，房间布局和门窗位置，一眼就明白。",
+        "spokenStart": 8.39,
+        "spokenEnd": 12.978,
+        "audioClipSeconds": 4.858,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "03-walk",
+        "title": "家装室内漫游",
+        "start": 14,
+        "duration": 8,
+        "text": "走进家装方案，转头看看，再往前走。看看客厅里的家具和通道。",
+        "spokenStart": 14.39,
+        "spokenEnd": 20.949,
+        "audioClipSeconds": 6.829,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "04-bare",
+        "title": "毛坯室内漫游",
+        "start": 22,
+        "duration": 11,
+        "text": "也可以换成没有家具的毛坯。慢慢转个身，再往前走，感受房间的大小和走动的路线。",
+        "spokenStart": 22.39,
+        "spokenEnd": 30.824,
+        "audioClipSeconds": 8.704,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "05-daylight",
+        "title": "昼夜采光",
+        "start": 33,
+        "duration": 9,
+        "text": "把室内灯关掉，来到同一个阳台。从清晨到夜晚，看看窗外的天空和楼景。",
+        "spokenStart": 33.39,
+        "spokenEnd": 40.561,
+        "audioClipSeconds": 7.441,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "06-decor",
+        "title": "装修对比",
+        "start": 42,
+        "duration": 7,
+        "text": "毛坯和家装方案，点一下就能切换。对比一下，找找喜欢的感觉。",
+        "spokenStart": 42.39,
+        "spokenEnd": 48.537,
+        "audioClipSeconds": 6.417,
+        "playbackSpeed": 1
+      },
+      {
+        "id": "07-settings",
+        "title": "随心设置",
+        "start": 49,
+        "duration": 11,
+        "text": "地板材质、房门开关、所在楼层，都可以自己调。设置会自动保存，打开网页，就能开始看房。",
+        "spokenStart": 49.39,
+        "spokenEnd": 58.901,
+        "audioClipSeconds": 9.781,
+        "playbackSpeed": 1
+      }
+    ],
+    "subtitles": [
+      {
+        "start": 0.33,
+        "speechEnd": 3.502,
+        "end": 3.752,
+        "text": "打开网页，把户型放大、转一转。",
+        "chapter": "01-overview"
+      },
+      {
+        "start": 4.043,
+        "speechEnd": 6.67,
+        "end": 6.92,
+        "text": "家里的空间关系，就更清楚了。",
+        "chapter": "01-overview"
+      },
+      {
+        "start": 8.33,
+        "speechEnd": 12.978,
+        "end": 13.228,
+        "text": "切到平面图，房间布局和门窗位置，一眼就明白。",
+        "chapter": "02-plan"
+      },
+      {
+        "start": 14.33,
+        "speechEnd": 18.06,
+        "end": 18.31,
+        "text": "走进家装方案，转头看看，再往前走。",
+        "chapter": "03-walk"
+      },
+      {
+        "start": 18.602,
+        "speechEnd": 20.949,
+        "end": 21.199,
+        "text": "看看客厅里的家具和通道。",
+        "chapter": "03-walk"
+      },
+      {
+        "start": 22.33,
+        "speechEnd": 24.956,
+        "end": 25.206,
+        "text": "也可以换成没有家具的毛坯。",
+        "chapter": "04-bare"
+      },
+      {
+        "start": 25.498,
+        "speechEnd": 27.779,
+        "end": 27.945,
+        "text": "慢慢转个身，再往前走，",
+        "chapter": "04-bare"
+      },
+      {
+        "start": 27.985,
+        "speechEnd": 30.824,
+        "end": 31.074,
+        "text": "感受房间的大小和走动的路线。",
+        "chapter": "04-bare"
+      },
+      {
+        "start": 33.33,
+        "speechEnd": 36.262,
+        "end": 36.512,
+        "text": "把室内灯关掉，来到同一个阳台。",
+        "chapter": "05-daylight"
+      },
+      {
+        "start": 36.804,
+        "speechEnd": 40.561,
+        "end": 40.811,
+        "text": "从清晨到夜晚，看看窗外的天空和楼景。",
+        "chapter": "05-daylight"
+      },
+      {
+        "start": 42.33,
+        "speechEnd": 45.502,
+        "end": 45.752,
+        "text": "毛坯和家装方案，点一下就能切换。",
+        "chapter": "06-decor"
+      },
+      {
+        "start": 46.057,
+        "speechEnd": 48.537,
+        "end": 48.787,
+        "text": "对比一下，找找喜欢的感觉。",
+        "chapter": "06-decor"
+      },
+      {
+        "start": 49.33,
+        "speechEnd": 54.111,
+        "end": 54.361,
+        "text": "地板材质、房门开关、所在楼层，都可以自己调。",
+        "chapter": "07-settings"
+      },
+      {
+        "start": 54.652,
+        "speechEnd": 58.901,
+        "end": 59.151,
+        "text": "设置会自动保存，打开网页，就能开始看房。",
+        "chapter": "07-settings"
+      }
+    ],
+    "subtitleAlignment": "Online word boundary metadata in 100ns ticks",
+    "music": "Reuse original 96 BPM synthesized piano/bass instrumental from revision 3; duck under narration",
+    "musicGainDuringSpeech": 0.33,
+    "voiceOverDuckedMusicDb": 25.48,
+    "audioMeter": "Summary:\n\n  Integrated loudness:\n    I:         -15.2 LUFS\n    Threshold: -26.3 LUFS\n\n  Loudness range:\n    LRA:         3.4 LU\n    Threshold: -36.2 LUFS\n    LRA low:   -18.4 LUFS\n    LRA high:  -15.0 LUFS\n\n  True peak:\n    Peak:       -3.4 dBFS\n[out#0/null @ 000001b8d45b5600] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:01:00.00 bitrate=N/A speed= 411x elapsed=0:00:00.14    \n"
+  },
+  "visuals": {
+    "source": "Revision 3 pre-subtitle silent composition",
+    "sourceSha256": "f7516f635c7f6e00c0458048d8e7b0fdc74b5edf23f072d8e5d01e833b36c475",
+    "timelineUnchanged": true,
+    "posterUnchanged": "app-features-six-grid-v3.png"
+  }
+}

@@ -256,3 +256,11 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 本地验证：GitHub官方Markdown API的GFM输出在1280×900和390×844视口显示，两个README均无页面横向溢出，首页3张图片全部加载，视频/看房链接保留；65个相对链接目标存在。记录为`validation/repository-readme-layout.json`，临时渲染HTML与截图在`work/readme-home/`。本地CSS近似GitHub排版，实际仓库展示在推送后另行核对。
 
 文档提交`f1aaef1`推送后，实际GitHub仓库桌面/移动页均显示宣传首页标题与六个内容分区，3张图片全部加载、正文无横向溢出，视频封面及根README链接正确；根README可单独打开维护标题。main部署元数据为该提交，release仍为`102bb16`。结果见`validation/repository-readme-public.json`；实际页面截图保留在`work/readme-home/github-home-*.png`。
+
+## 宣传素材第四版：自然亲切配音（2026-11-24）
+
+用户反馈第三版Huihui Desktop语音生硬，要求柔和亲切的女声或男声。本轮选择Microsoft在线神经普通话女声`zh-CN-XiaoxiaoNeural`，目录人格标签Warm，rate -6%、pitch -1Hz；解说改为口语化整章合成，保留句间韵律，不使用语音变速。通过`edge-tts`客户端生成，只有公开宣传稿发送至在线语音服务；依赖安装在未提交`work/neural-speech-runtime/`。
+
+新成品`mobile-feature-tour-60s-soft-voice.mp4`及同名SRT保留60秒原画面/7章/22–33秒毛坯漫游；从第三版无字幕画面重新烧录14条词语边界对齐字幕，原原创音乐在说话时平滑降低。规格仍1080×1920/30fps/1800帧/H.264/AAC/fast start。旧视频、封面、六宫格和应用均保持，`.github/README.md`视频及字幕链接改为新文件。中间文件在`work/mobile-promo-r4/`和`work/*promo-r4*`。
+
+元数据为`assets/promo/mobile-v14.2/media-info-60s-soft-voice.json`，本地结果`revision-4-validation.json`：全帧解码、桌面/手机视口播放与音频解码、每视口14处跳转通过，无字幕重叠，各章语音原速完整容纳；原混音约-15.2 LUFS，真峰值-3.4 dBFS，解说与降低后的音乐整体RMS差约25.5dB。仅推送main、检查测试素材，不推进release。
