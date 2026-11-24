@@ -1,0 +1,98 @@
+{
+  "content": {
+    "checkedAt": "2026-11-24T06:25:09.282782+00:00",
+    "base": "https://aimspike.github.io/HangZhouPHMT/",
+    "entries": [
+      {
+        "branch": "release",
+        "commit": "102bb16876141e85c874bfb446d5062279172f02",
+        "url": "https://aimspike.github.io/HangZhouPHMT/",
+        "htmlSha256": "5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9",
+        "htmlMatchesBranch": true,
+        "assets": [
+          {
+            "path": "plans/restored-floor-plan.svg",
+            "sha256": "0957e1483462f45cba47d96178adcca37e64a0a5c3452cceeab423c6c3f60a9b",
+            "bytes": 43002
+          },
+          {
+            "path": "plans/restored-floor-plan.pdf",
+            "sha256": "7da381328069a5803e2f3c6a2e6a03999b5d11cd534b87f36e666afae93dae25",
+            "bytes": 71241
+          },
+          {
+            "path": "promo/mobile-feature-tour-30s.mp4",
+            "sha256": "171c05d144cd369813f71e8530c94508b90f2fcc7cff459e8b704002779ebb88",
+            "bytes": 6005500
+          }
+        ]
+      },
+      {
+        "branch": "main",
+        "commit": "102bb16876141e85c874bfb446d5062279172f02",
+        "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+        "htmlSha256": "6f1acb0db0cbf99a192f5b35946b126edc6291b4f55a1f31b4bf64ee7898260c",
+        "htmlMatchesBranch": true,
+        "assets": [
+          {
+            "path": "plans/restored-floor-plan.svg",
+            "sha256": "0957e1483462f45cba47d96178adcca37e64a0a5c3452cceeab423c6c3f60a9b",
+            "bytes": 43002
+          },
+          {
+            "path": "plans/restored-floor-plan.pdf",
+            "sha256": "7da381328069a5803e2f3c6a2e6a03999b5d11cd534b87f36e666afae93dae25",
+            "bytes": 71241
+          },
+          {
+            "path": "promo/mobile-feature-tour-30s.mp4",
+            "sha256": "171c05d144cd369813f71e8530c94508b90f2fcc7cff459e8b704002779ebb88",
+            "bytes": 6005500
+          }
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "browser": {
+    "base": "https://aimspike.github.io/HangZhouPHMT/",
+    "scope": "Chromium mobile viewport simulation; not a physical device",
+    "cases": [
+      {
+        "branch": "release",
+        "title": "89-A · 杭州三维户型 V14.2 · 家装预设 A",
+        "maps": [
+          219,
+          219
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "overflow": false
+      },
+      {
+        "branch": "main",
+        "title": "[main 测试] 89-A · 杭州三维户型 V14.2 · 家装预设 A",
+        "maps": [
+          219,
+          219
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "overflow": false
+      }
+    ],
+    "settingsIsolated": true,
+    "errors": [],
+    "externalRequests": [],
+    "passed": true
+  },
+  "unitTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "workflowUrl": "https://github.com/aimspike/HangZhouPHMT/actions/runs/45340147536"
+}

@@ -36,6 +36,12 @@ git switch main
 
 首次在其他机器检出 release 可使用 `git switch --track origin/release`。若无法快进，先检查分叉与已有工作，不自动重写历史或强推。正式修复应先进入 main 并测试，再推进 release，避免两条分支产生独立提交。推送后须确认工作流成功、两个 `deployment.json` 与预期 SHA 相符，并检查正式页面实际内容。
 
+### 双分支首次发布已验证（2026-11-24）
+
+初始化提交 `102bb16` 已推送 main 与 release，Pages API 确认 `build_type=workflow`、正式来源 `release:/docs`，github-pages 环境允许两条分支部署。[首次手动部署](https://github.com/aimspike/HangZhouPHMT/actions/runs/45340147536)成功。
+
+正式根入口与 main 测试入口均返回200，`deployment.json` 与分支 SHA 一致；正式 HTML 与 release 中的文件逐字节一致（SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`），测试 HTML 有独立标题和设置命名空间。两边 SVG/PDF 与30秒宣传视频均与对应分支逐字节一致。Chromium 390×844 手机尺寸下两个入口启动、219张贴图、无页面错误或额外资源请求；测试版设置操作不改变正式版 localStorage。此为浏览器模拟，不代表真机微信验证。证据见 `validation/branch-pages-public.json`。
+
 ## V10公网验证完成
 
 功能提交`4e29b49`已由GitHub Pages成功构建。实际公开地址返回200，SVG/PDF平面图也返回200。手机390×844微信UA模拟中V10启动正常、219/219贴图，四时段切换、天光滑块正常，无脚本/Shader错误和外部资源依赖。真机微信尚未测试。记录见validation/public-deployment.json。
