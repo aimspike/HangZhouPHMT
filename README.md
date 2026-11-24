@@ -76,6 +76,7 @@
 
 | 目录 / 文档 | 内容 |
 | --- | --- |
+| [项目 TodoList](context/TODO.md) | 效果提升、其他户型、小区展示、家具配置与墙体增删的状态、子任务和验收标准 |
 | [小区资料](references/phmt/README.md) | 项目概况、历史节点、来源与差异核对 |
 | [plans/](plans/) | 复原平面图 SVG、PDF、PNG |
 | [家装方案 A 截图](assets/interior/preset-a/README.md) | 网页实际 3D 场景截图及方案说明 |
