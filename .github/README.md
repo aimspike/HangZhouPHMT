@@ -26,10 +26,10 @@
 点击封面观看新版竖屏演示，包含柔和自然的普通话女声、同步字幕和背景音乐。
 
 <p align="center">
-  <a href="https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-soft-voice.mp4"><img src="../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg" alt="60秒功能演示封面：三维户型近景，点击播放自然女声版视频" width="300"></a>
+  <a href="https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4"><img src="../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg" alt="60秒功能演示封面：三维户型近景，点击播放自然女声版视频" width="300"></a>
 </p>
 
-**[观看或下载 60 秒自然女声版 →](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-soft-voice.mp4)** · [下载字幕](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-soft-voice.srt)
+**[观看或下载 60 秒自然女声版 →](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4)** · [下载字幕](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.srt)
 
 三维旋转、平面布局、家装漫游、无家具毛坯漫游、昼夜采光、装修切换，以及材质、房门和楼层设置。最新素材提供预览链接，正式看房入口见上方“开始看房”。画面来自实际网页手机视口录制。
 

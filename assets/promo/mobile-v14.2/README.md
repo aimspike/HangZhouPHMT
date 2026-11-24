@@ -2,7 +2,19 @@
 
 基于 V14.2 实际网页制作。录制环境为 Chromium、390×844 手机视口及微信 UA，使用页面真实操作；外框、章节与中文字幕在剪辑时添加。不是物理手机录屏，也不作为微信真机验证证据。
 
-## 当前版本：60秒自然女声视频
+## 当前版本：60秒自然女声视频，修复画面闪跳
+
+- [最新60秒视频](mobile-feature-tour-60s-v5.mp4) · [同步字幕](mobile-feature-tour-60s-v5.srt) · [媒体规格](media-info-60s-v5.json) · [本地检查](revision-5-validation.json)。
+- 用户指出19–20秒跳变；逐帧确认旧片19.367–19.600秒与35.467–35.567秒发生界面/场景瞬时放大。与录制中Playwright自动截图时点对应，故重录全部7章，期间只读取诊断数据，不调用截图，并让录屏尺寸与390×844页面视口一致。
+- 保留第四版自然神经女声、口语化解说、14条词语边界同步字幕与背景音乐，60秒节奏和22–33秒毛坯漫游保持。输出仍1080×1920/30fps/1800帧，采用新的文件名避免缓存混淆。
+
+新片1800帧全部解码通过；固定上方界面及整张手机画面分别进行15帧时间中位数瞬时差异扫描，未发现同类闪跳候选。另检查重点时段与全部章节的画面，并在桌面/手机视口验证播放和跳转。诊断采样视口390×844、画布780×1688、219张纹理始终一致。近景六宫格保持不变。
+
+[观看或下载最新版本](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4) · [下载字幕](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.srt)
+
+中间录屏、编码与逐帧检查材料在未提交的`work/mobile-promo-r5/`，旧版异常对照在`work/mobile-promo-r4/jump-review/`。实际网页素材重新录制，未修改应用源码、几何、烘焙或六宫格；本次仅推送main。
+
+## 第四版：60秒自然女声视频
 
 - [60秒自然女声版](mobile-feature-tour-60s-soft-voice.mp4)：将第三版桌面语音替换为 Microsoft Xiaoxiao 在线神经普通话女声（`zh-CN-XiaoxiaoNeural`，语音目录标注 Warm）。语速设为 -6%、音高 -1Hz，采用更口语化的解说，整章合成以保留句间语气和自然停顿，没有对语音做变速拉伸。
 - [同步字幕 SRT](mobile-feature-tour-60s-soft-voice.srt)：根据神经语音返回的词语时间边界重新对齐，共14条，无重叠；字幕已烧录在视频中。

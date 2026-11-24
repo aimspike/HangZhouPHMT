@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-11-24T10:48:58.083Z",
+  "scope": "Actual Chromium mobile viewport recording without screenshots during recording; no physical phone test",
+  "output": {
+    "file": "mobile-feature-tour-60s-v5.mp4",
+    "durationSeconds": 60,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 30,
+    "frames": 1800,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audio": "AAC 48kHz stereo, warm Mandarin neural female narration and original music",
+    "fastStart": true,
+    "bytes": 10321887,
+    "sha256": "c022a98d71945c17d85344147d2c38dd9b74e14c36dcfcc9ad549317661d19b4",
+    "decodedWithoutErrors": true
+  },
+  "revision4AudioPreserved": true,
+  "previousArtifacts": [
+    [
+      19.367,
+      19.6
+    ],
+    [
+      35.467,
+      35.567
+    ]
+  ],
+  "audit": {
+    "video": "mobile-feature-tour-60s-v5.mp4",
+    "frames": 1800,
+    "method": "Mean absolute pixel difference from a 15-frame temporal median of fixed upper phone UI; threshold 5/255 flags transient UI-scale flashes for review",
+    "threshold": 5,
+    "events": [],
+    "maxScore": 1.043,
+    "wholePhoneThreshold": 8,
+    "wholePhoneMaxScore": 2.82,
+    "wholePhoneTransientCandidates": []
+  },
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1080,
+      "height": 1920,
+      "playback": {
+        "duration": 60,
+        "width": 1080,
+        "height": 1920,
+        "playing": true,
+        "advanced": true,
+        "audioDecodedBytes": 18603,
+        "seeks": 22,
+        "error": null,
+        "seeking": false
+      }
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "playback": {
+        "duration": 60,
+        "width": 1080,
+        "height": 1920,
+        "playing": true,
+        "advanced": true,
+        "audioDecodedBytes": 22679,
+        "seeks": 22,
+        "error": null,
+        "seeking": false
+      }
+    }
+  ],
+  "errors": [],
+  "result": "passed",
+  "decodedAudioComparison": {
+    "decodedAudioSha256": {
+      "mobile-feature-tour-60s-soft-voice.mp4": "63696dc82ac7f526fcd14ccb5baa0d21f3b0799b2441f755a432afafa40f80d1",
+      "mobile-feature-tour-60s-v5.mp4": "63696dc82ac7f526fcd14ccb5baa0d21f3b0799b2441f755a432afafa40f80d1"
+    },
+    "identical": true
+  },
+  "previousUiFlashAudit": {
+    "video": "mobile-feature-tour-60s-soft-voice.mp4",
+    "frames": 1800,
+    "method": "Mean absolute pixel difference from a 15-frame temporal median of fixed upper phone UI; threshold 5/255 flags transient UI-scale flashes for review",
+    "threshold": 5,
+    "events": [
+      {
+        "startFrame": 581,
+        "endFrame": 587,
+        "startSeconds": 19.367,
+        "endSeconds": 19.6,
+        "maxUiMedianDifference": 42.023
+      },
+      {
+        "startFrame": 1064,
+        "endFrame": 1066,
+        "startSeconds": 35.467,
+        "endSeconds": 35.567,
+        "maxUiMedianDifference": 45.177
+      }
+    ],
+    "maxScore": 45.177
+  }
+}

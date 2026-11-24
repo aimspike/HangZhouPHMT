@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-24T10:38:51.900394+00:00",
+  "deployment": {
+    "branch": "main",
+    "commit": "12ca9ac2f80d62a467604cc525ce848bac247105"
+  },
+  "files": [
+    {
+      "file": "mobile-feature-tour-60s-soft-voice.mp4",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-soft-voice.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 10046147,
+      "sha256": "5e531c6ea7707166f50db74ffb9ff1cfbcc9619538a969e26761a25486302d86",
+      "matchesCommit": true
+    },
+    {
+      "file": "mobile-feature-tour-60s-soft-voice.srt",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-soft-voice.srt",
+      "status": 200,
+      "contentType": "application/x-subrip",
+      "bytes": 1149,
+      "sha256": "48274ea78486176a524c9f01f3e69bab39a14184a22cfbae4114e04086c66267",
+      "matchesCommit": true
+    }
+  ],
+  "release": {
+    "branch": "release",
+    "commit": "102bb16876141e85c874bfb446d5062279172f02"
+  },
+  "result": "passed",
+  "browser": {
+    "checkedAt": "2026-11-24T10:39:12.978Z",
+    "cases": [
+      {
+        "id": "desktop",
+        "width": 1280,
+        "height": 900,
+        "homepage": {
+          "title": "杭州 · 璞荟铭庭",
+          "links": 2,
+          "softVoiceText": true
+        },
+        "playback": {
+          "duration": 60,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "advanced": true,
+          "audioDecodedBytes": 23192,
+          "finalSeek": 58,
+          "error": null
+        }
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844,
+        "homepage": {
+          "title": "杭州 · 璞荟铭庭",
+          "links": 2,
+          "softVoiceText": true
+        },
+        "playback": {
+          "duration": 60,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "advanced": true,
+          "audioDecodedBytes": 24257,
+          "finalSeek": 58,
+          "error": null
+        }
+      }
+    ],
+    "errors": [],
+    "result": "passed"
+  }
+}
