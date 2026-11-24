@@ -238,3 +238,5 @@ V14.1的16位深度缓冲测试未覆盖纹理读取精度。`verify-depth-sampl
 `app-features-six-grid-v3.png`在实际网页中再拉近三维相机，旋转后截图，保留完整户型。像素比较确认只改变第一格手机截图，其余五格、全部文案与第二版一致，阳台关灯同视角昼夜分屏保留。原始录屏与制作/验证脚本在未提交的`work/mobile-promo-r3/`和`work/*promo-r3*`；应用源码、`docs/index.html`、个人设置与烘焙均不变。媒体规格和本地证据为`assets/promo/mobile-v14.2/media-info-60s.json`及`revision-3-validation.json`。
 
 新版仅提交推送`main`，公开测试素材路径为`/preview/main/promo/mobile-feature-tour-60s.mp4`及`/preview/main/promo/app-features-six-grid-v3.png`。正式根目录仍由`release`提供；未获正式发布要求不推进release。仍是Chromium手机视口录制，不代表物理手机或微信真机验证。
+
+素材提交`b6d4729`已推送，测试链接MP4/PNG/SRT均200且与Git提交逐字节一致；390×844手机视口公开测试页219/219贴图，60秒MP4有声解码/播放及54秒跳转通过，PNG1800×2400，无页面错误。见`revision-3-public.json`。音频测量约-17.5 LUFS、真峰值-2.9 dBFS；本地1800帧完整解码、14处跳转、字幕无重叠和海报差异范围检查通过。正式release仍为`102bb16`。

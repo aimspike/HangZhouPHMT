@@ -22,6 +22,8 @@
 
 新素材随 `main` 推送后在[60秒视频测试链接](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4)与[六宫格测试链接](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/app-features-six-grid-v3.png)提供。站点根目录仍来自 `release`，待用户要求正式发布时更新。原始录屏、排版与音频中间文件保留在未提交的 `work/mobile-promo-r3/`；应用源码、个人设置和建筑烘焙均未修改。
 
+素材提交`b6d4729`的公开MP4/PNG/SRT均返回200，内容与Git提交一致；390×844浏览器模拟完成有声播放、进度跳转与图片加载，详见[公网检查](revision-3-public.json)。本地1800帧完整解码、14处跳转、字幕无重叠；音频约-17.5 LUFS，真峰值-2.9 dBFS。六宫格差异仅在第一格手机截图区域。
+
 ## 第二版：30秒视频与窗外昼夜对比图
 
 - [30秒竖屏视频](mobile-feature-tour-30s.mp4)：在原20秒功能演示中，9.5–19.5秒新增独立10秒毛坯、无家具室内漫游。其余六项功能保留；1080×1920、30fps、900帧、H.264/yuv420p、MP4 fast start，无声中文字幕。

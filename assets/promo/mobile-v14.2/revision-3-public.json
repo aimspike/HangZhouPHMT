@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-24T07:57:28.265731+00:00",
+  "deployment": {
+    "branch": "main",
+    "commit": "b6d47290cb86042ea8487ceca87803446e6e7631"
+  },
+  "files": [
+    {
+      "file": "mobile-feature-tour-60s.mp4",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 10041737,
+      "sha256": "389d13aaa70b06f261d1b37bdd76f9f0a7302ab87b903091200e7cf0b538fdb5",
+      "matches": true
+    },
+    {
+      "file": "app-features-six-grid-v3.png",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/app-features-six-grid-v3.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 791387,
+      "sha256": "34e935b5075793ad6894c4ea4ac0ad36b3c3eb4fc5c6d63388326347f7d6bf98",
+      "matches": true
+    },
+    {
+      "file": "mobile-feature-tour-60s.srt",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.srt",
+      "status": 200,
+      "contentType": "application/x-subrip",
+      "bytes": 1098,
+      "sha256": "c6d35869d8bd32e12136a967d061dc7654726371f908a9952f95059cb479e03a",
+      "matches": true
+    }
+  ],
+  "release": {
+    "branch": "release",
+    "commit": "102bb16876141e85c874bfb446d5062279172f02"
+  },
+  "result": "passed",
+  "browser": {
+    "checkedAt": "2026-11-24T07:59:05.983Z",
+    "scope": "Chromium mobile viewport, not a physical phone",
+    "viewer": {
+      "title": "[main 测试] 89-A · 杭州三维户型 V14.2 · 家装预设 A",
+      "baked": [
+        219,
+        219
+      ],
+      "viewport": [
+        390,
+        844
+      ],
+      "mode": "orbit"
+    },
+    "playback": {
+      "duration": 60,
+      "width": 1080,
+      "height": 1920,
+      "playing": true,
+      "advanced": true,
+      "audioDecodedBytes": 19377,
+      "seek": 54,
+      "error": null
+    },
+    "poster": {
+      "width": 1800,
+      "height": 2400
+    },
+    "errors": [],
+    "result": "passed"
+  }
+}
