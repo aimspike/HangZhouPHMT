@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-24T05:05:11.955755+00:00",
+  "files": [
+    {
+      "file": "mobile-feature-tour-30s.mp4",
+      "url": "https://aimspike.github.io/HangZhouPHMT/promo/mobile-feature-tour-30s.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 6005500,
+      "sha256": "171c05d144cd369813f71e8530c94508b90f2fcc7cff459e8b704002779ebb88",
+      "matches": true
+    },
+    {
+      "file": "app-features-six-grid-v2.png",
+      "url": "https://aimspike.github.io/HangZhouPHMT/promo/app-features-six-grid-v2.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 775184,
+      "sha256": "e1519f0a202d4ea146710f763f3a6a297293630daeb76bfbc6d4006c7396fff7",
+      "matches": true
+    }
+  ],
+  "result": "passed"
+}
