@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-24T10:52:28.114876+00:00",
+  "deployment": {
+    "branch": "main",
+    "commit": "d2c4b4799eb5215392221aa2c47d6c305de12bfc"
+  },
+  "files": [
+    {
+      "file": "mobile-feature-tour-60s-v5.mp4",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 10321887,
+      "sha256": "c022a98d71945c17d85344147d2c38dd9b74e14c36dcfcc9ad549317661d19b4",
+      "matchesCommit": true
+    },
+    {
+      "file": "mobile-feature-tour-60s-v5.srt",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.srt",
+      "status": 200,
+      "contentType": "application/x-subrip",
+      "bytes": 1149,
+      "sha256": "48274ea78486176a524c9f01f3e69bab39a14184a22cfbae4114e04086c66267",
+      "matchesCommit": true
+    }
+  ],
+  "release": {
+    "branch": "release",
+    "commit": "102bb16876141e85c874bfb446d5062279172f02"
+  },
+  "result": "passed",
+  "browser": {
+    "checkedAt": "2026-11-24T10:53:27.079Z",
+    "cases": [
+      {
+        "id": "desktop",
+        "width": 1280,
+        "height": 900,
+        "homepage": {
+          "title": "杭州 · 璞荟铭庭",
+          "links": 2,
+          "softVoiceText": true
+        },
+        "playback": {
+          "duration": 60,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "advanced": true,
+          "audioDecodedBytes": 21166,
+          "finalSeek": 58,
+          "error": null
+        }
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844,
+        "homepage": {
+          "title": "杭州 · 璞荟铭庭",
+          "links": 2,
+          "softVoiceText": true
+        },
+        "playback": {
+          "duration": 60,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "advanced": true,
+          "audioDecodedBytes": 12510,
+          "finalSeek": 58,
+          "error": null
+        }
+      }
+    ],
+    "errors": [],
+    "result": "passed"
+  }
+}

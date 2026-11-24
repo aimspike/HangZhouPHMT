@@ -14,6 +14,8 @@
 
 中间录屏、编码与逐帧检查材料在未提交的`work/mobile-promo-r5/`，旧版异常对照在`work/mobile-promo-r4/jump-review/`。实际网页素材重新录制，未修改应用源码、几何、烘焙或六宫格；本次仅推送main。
 
+提交`d2c4b47`已上线：视频/字幕与Git内容逐字节一致；GitHub首页入口指向v5，桌面和手机视口在线播放、音频解码和跳转通过。[公网检查记录](revision-5-public.json)。新旧两版解码音频哈希一致，保留自然女声及音乐。
+
 ## 第四版：60秒自然女声视频
 
 - [60秒自然女声版](mobile-feature-tour-60s-soft-voice.mp4)：将第三版桌面语音替换为 Microsoft Xiaoxiao 在线神经普通话女声（`zh-CN-XiaoxiaoNeural`，语音目录标注 Warm）。语速设为 -6%、音高 -1Hz，采用更口语化的解说，整章合成以保留句间语气和自然停顿，没有对语音做变速拉伸。
