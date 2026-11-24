@@ -1,5 +1,7 @@
 # 项目工作指引
 
+每次开始新功能、修复或其他代码修改前，先使用 `$git-sync-before-feature` Skill 检查工作区，并在工作区干净、分支及 upstream 正确时执行 `git pull --ff-only`；同步成功后再修改文件。同一任务内连续编辑无需重复拉取。若 Skill 尚不可用，也必须遵循此规则；本地有改动、分支分叉或同步失败时保留现场，说明阻碍并先解决同步问题，不自动 stash、rebase、丢弃改动或强推。
+
 先阅读 `context/HANDOFF.md`、`context/REQUIREMENTS.md` 和 `README.md`。
 
 - `src/house.template.html` 为主模板，`src/interior.js` 管理分房间材质、门与整栋透明结构；`src/environment.js` 管理室外环境。
@@ -27,7 +29,7 @@
 
 - V12.1按用户要求移除运行时路径追踪、入口及CPU/GPU脚本，保留实时烘焙照明与V12其他改动。替代方案见`context/LIGHTING_OPTIONS.md`；未获新实施要求时仅作评估。
 
-- 正式项目目录现为`D:/HangZhouPHMT`，GitHub为`aimspike/HangZhouPHMT`，展示地址`https://aimspike.github.io/HangZhouPHMT/`。本会话默认cwd可能仍是C盘旧目录，命令需显式使用新D盘路径。
+- 项目目录以用户当前指定的工作区和 `git rev-parse --show-toplevel` 为准；当前克隆为 `C:/PHMT`，历史记录中的 `D:/HangZhouPHMT` 不应覆盖当前工作区。GitHub为`aimspike/HangZhouPHMT`，展示地址`https://aimspike.github.io/HangZhouPHMT/`。
 
 - 装修方案仅有毛坯（无家具、水泥基底）和A；客厅电视在北侧、沙发在南侧，保留书房推拉门停车空间。主卧床头朝西贴墙，次卧床头贴东墙。阳台东西两侧均为全高实墙，西侧与邻居相连，不能按围栏剖切。衣柜背面与床头应贴墙，卧室门扫掠与床其余三边通行必须验证。
 - 装修方案面板仅保留切换与说明；已移除参考图相册、保存效果图快捷按钮与观景位置选择，不再内嵌参考预览。仓库原图保留，通用相机和原有房间选择保留；`captureView`仅用于自动检查/导出截图。
