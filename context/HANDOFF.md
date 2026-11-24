@@ -230,3 +230,11 @@ V14.1的16位深度缓冲测试未覆盖纹理读取精度。`verify-depth-sampl
 按用户要求在9.5–19.5秒插入10秒毛坯无家具室内漫游，总时长30.00秒，1080×1920/30fps/900帧；原功能片段保留。新文件`mobile-feature-tour-30s.mp4`、`mobile-video-cover-30s.jpg`、`media-info-30s.json`，记录为`revision-2-validation.json`。漫游采样确认bare/0家具/通行无碰撞/219图，包含实际前进与转向。六宫格第四格改为同一阳台朝窗外的正午/夜晚分屏，全部关闭室内灯，文案为“关闭室内灯，面向窗外看昼夜”，输出`app-features-six-grid-v2.png`。旧素材保留，新成品复制至docs/promo。素材源码和原始录屏在work/mobile-promo-r2及work/*promo-revision*；应用与烘焙未变。
 
 素材提交`5081e74`已发布。公开30秒MP4与新版PNG均返回200，类型分别video/mp4和image/png，逐字节与本地一致；见`assets/promo/mobile-v14.2/revision-2-public.json`。MP4约6.0MB，验证900帧完整解码、时长30秒、浏览器播放及多点跳转；海报1800×2400，6格文案无溢出。
+
+### 宣传素材第三版：近景与60秒配音（2026-11-24）
+
+用户反馈六宫格“三维总览”模型太小、视频片段过短，并明确选择约60秒、中文配音、字幕和音乐。本次重新录制7个章节，按1倍速播放：三维8秒、平面6秒、家装漫游8秒、毛坯漫游11秒、四时段9秒、装修对比7秒、设置11秒。输出`mobile-feature-tour-60s.mp4`（1080×1920、30fps、1800帧、H.264/AAC、fast start），`mobile-feature-tour-60s.srt`与封面。Windows Huihui Desktop合成普通话14句，按实际语音长度同步字幕；原创96 BPM振荡器钢琴琶音/低音配乐，无第三方采样，解说时音乐降低。
+
+`app-features-six-grid-v3.png`在实际网页中再拉近三维相机，旋转后截图，保留完整户型。像素比较确认只改变第一格手机截图，其余五格、全部文案与第二版一致，阳台关灯同视角昼夜分屏保留。原始录屏与制作/验证脚本在未提交的`work/mobile-promo-r3/`和`work/*promo-r3*`；应用源码、`docs/index.html`、个人设置与烘焙均不变。媒体规格和本地证据为`assets/promo/mobile-v14.2/media-info-60s.json`及`revision-3-validation.json`。
+
+新版仅提交推送`main`，公开测试素材路径为`/preview/main/promo/mobile-feature-tour-60s.mp4`及`/preview/main/promo/app-features-six-grid-v3.png`。正式根目录仍由`release`提供；未获正式发布要求不推进release。仍是Chromium手机视口录制，不代表物理手机或微信真机验证。

@@ -1,0 +1,284 @@
+{
+  "checkedAt": "2026-11-24T07:54:01.985Z",
+  "scope": "New actual Chromium mobile viewport recordings, not a physical phone recording",
+  "poster": {
+    "cards": 6,
+    "images": true,
+    "overflow": false,
+    "daylightText": "白天　｜　夜晚\n04\n昼夜采光\n关闭室内灯，\n面向窗外看昼夜。\n自然采光 · 窗外景色",
+    "width": 1800,
+    "height": 2400
+  },
+  "playback": {
+    "duration": 60,
+    "width": 1080,
+    "height": 1920,
+    "started": true,
+    "advanced": true,
+    "audioDecodedBytes": 16894,
+    "seeks": 14,
+    "error": null,
+    "seeking": false
+  },
+  "chapters": [
+    {
+      "id": "01-overview",
+      "duration": 8,
+      "sourceDuration": 8.4,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "02-plan",
+      "duration": 6,
+      "sourceDuration": 6.412999999999999,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "03-walk",
+      "duration": 8,
+      "sourceDuration": 8.409999999999998,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "04-bare",
+      "duration": 11,
+      "sourceDuration": 11.407,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "05-daylight",
+      "duration": 9,
+      "sourceDuration": 9.402000000000001,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "06-decor",
+      "duration": 7,
+      "sourceDuration": 7.406999999999999,
+      "playbackSpeed": 1
+    },
+    {
+      "id": "07-settings",
+      "duration": 11,
+      "sourceDuration": 11.401999999999997,
+      "playbackSpeed": 1
+    }
+  ],
+  "narrationCues": [
+    {
+      "start": 0.38,
+      "end": 4.155,
+      "text": "打开网页，旋转、放大三维户型，",
+      "chapter": "01-overview"
+    },
+    {
+      "start": 4.705,
+      "end": 6.868,
+      "text": "看清全屋的空间关系。",
+      "chapter": "01-overview"
+    },
+    {
+      "start": 8.38,
+      "end": 9.764,
+      "text": "切换平面图，",
+      "chapter": "02-plan"
+    },
+    {
+      "start": 9.905,
+      "end": 13.439,
+      "text": "房间布局和门窗位置，一眼看明白。",
+      "chapter": "02-plan"
+    },
+    {
+      "start": 14.38,
+      "end": 18.505,
+      "text": "走进家装方案，拖动转向、按键前进，",
+      "chapter": "03-walk"
+    },
+    {
+      "start": 18.84,
+      "end": 21.245,
+      "text": "看看客厅里的家具和通道。",
+      "chapter": "03-walk"
+    },
+    {
+      "start": 22.38,
+      "end": 24.587,
+      "text": "再换成没有家具的毛坯，",
+      "chapter": "04-bare"
+    },
+    {
+      "start": 25.137,
+      "end": 30.262,
+      "text": "慢慢转身，向前走，感受空间尺度和行走动线。",
+      "chapter": "04-bare"
+    },
+    {
+      "start": 33.38,
+      "end": 36.871,
+      "text": "关闭室内灯，在同一个阳台视角，",
+      "chapter": "05-daylight"
+    },
+    {
+      "start": 37.15,
+      "end": 41.301,
+      "text": "依次看看清晨、正午、黄昏和夜晚。",
+      "chapter": "05-daylight"
+    },
+    {
+      "start": 42.38,
+      "end": 45.435,
+      "text": "毛坯和家装方案，一键切换，",
+      "chapter": "06-decor"
+    },
+    {
+      "start": 45.717,
+      "end": 48.299,
+      "text": "对比装修前后的空间感觉。",
+      "chapter": "06-decor"
+    },
+    {
+      "start": 49.38,
+      "end": 54.729,
+      "text": "地板材质、房门开合、所在楼层，都能自由调整。",
+      "chapter": "07-settings"
+    },
+    {
+      "start": 54.85,
+      "end": 59.459,
+      "text": "设置自动保存，打开网页，就能开始看房。",
+      "chapter": "07-settings"
+    }
+  ],
+  "bareTour": [
+    {
+      "label": "start",
+      "mode": "walk",
+      "camera": [
+        1.9,
+        1.5,
+        -1.75
+      ],
+      "look": [
+        1.7278759594743864,
+        -0.04
+      ],
+      "baked": [
+        219,
+        219
+      ],
+      "preset": "bare",
+      "furniture": 0,
+      "time": "noon",
+      "lights": true,
+      "clear": true
+    },
+    {
+      "label": "walk",
+      "mode": "walk",
+      "camera": [
+        0.8775909280598194,
+        1.5,
+        -1.6440487308796319
+      ],
+      "look": [
+        1.5478759594743878,
+        -0.04400000000000006
+      ],
+      "baked": [
+        219,
+        219
+      ],
+      "preset": "bare",
+      "furniture": 0,
+      "time": "noon",
+      "lights": true,
+      "clear": true
+    }
+  ],
+  "daylight": [
+    {
+      "label": "start",
+      "mode": "walk",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "baked": [
+        219,
+        219
+      ],
+      "preset": "bare",
+      "furniture": 0,
+      "time": "morning",
+      "lights": false,
+      "clear": true
+    },
+    {
+      "label": "noon",
+      "mode": "walk",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "baked": [
+        219,
+        219
+      ],
+      "preset": "bare",
+      "furniture": 0,
+      "time": "noon",
+      "lights": false,
+      "clear": true
+    },
+    {
+      "label": "night",
+      "mode": "walk",
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "look": [
+        3.141592653589793,
+        -0.04
+      ],
+      "baked": [
+        219,
+        219
+      ],
+      "preset": "bare",
+      "furniture": 0,
+      "time": "night",
+      "lights": false,
+      "clear": true
+    }
+  ],
+  "errors": [],
+  "result": "passed",
+  "audioAndPixelChecks": {
+    "posterChangedPixelBounds": [
+      116,
+      364,
+      342,
+      834
+    ],
+    "otherFiveCardsAndAllCopyUnchanged": true,
+    "voiceRmsDbfs": -21.745230267118004,
+    "musicRmsDbfsBeforeDucking": -37.60769503021472,
+    "voiceOverMusicDbBeforeDucking": 15.862464763096716,
+    "audioMeter": "Summary:\n\n  Integrated loudness:\n    I:         -17.5 LUFS\n    Threshold: -28.7 LUFS\n\n  Loudness range:\n    LRA:         5.5 LU\n    Threshold: -38.7 LUFS\n    LRA low:   -22.1 LUFS\n    LRA high:  -16.6 LUFS\n\n  True peak:\n    Peak:       -2.9 dBFS\n[out#0/null @ 0000026c71a02900] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:01:00.00 bitrate=N/A speed= 421x elapsed=0:00:00.14    \n",
+    "result": "passed"
+  },
+  "subtitlesNoOverlap": true
+}

@@ -1,0 +1,938 @@
+{
+  "version": "14.2",
+  "revision": 3,
+  "scope": "New actual Chromium mobile viewport recordings, not a physical phone recording",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "errors": [],
+  "clips": [
+    {
+      "id": "01-overview",
+      "title": "三维总览",
+      "duration": 8,
+      "lines": [
+        "打开网页，旋转、放大三维户型，",
+        "看清全屋的空间关系。"
+      ],
+      "sourceStart": 3.921,
+      "sourceDuration": 8.4,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "orbit",
+          "camera": [
+            10.77141029291783,
+            20.178538035138352,
+            20.714250563303526
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": null
+        },
+        {
+          "label": "poster",
+          "mode": "orbit",
+          "camera": [
+            6.237433536164425,
+            23.021462190026647,
+            19.652645598066815
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": null
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 40,
+          "drawCalls": 468
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 35,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "02-plan",
+      "title": "平面户型",
+      "duration": 6,
+      "lines": [
+        "切换平面图，",
+        "房间布局和门窗位置，一眼看明白。"
+      ],
+      "sourceStart": 2.162,
+      "sourceDuration": 6.412999999999999,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "plan",
+          "camera": [
+            0,
+            24.999999999987498,
+            2.500111123257938e-05
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": null
+        },
+        {
+          "label": "layout",
+          "mode": "plan",
+          "camera": [
+            0,
+            24.999999999987498,
+            2.500111123257938e-05
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": null
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 71,
+          "drawCalls": 328
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 25,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "plan",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "03-walk",
+      "title": "家装室内漫游",
+      "duration": 8,
+      "lines": [
+        "走进家装方案，拖动转向、按键前进，",
+        "看看客厅里的家具和通道。"
+      ],
+      "sourceStart": 9.037,
+      "sourceDuration": 8.409999999999998,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "living",
+          "mode": "walk",
+          "camera": [
+            -0.46315147198604484,
+            1.5,
+            -1.9653716562146415
+          ],
+          "look": [
+            2.9232560937318404,
+            -0.13999999999999985
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 137,
+          "drawCalls": 302
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 3,
+          "revision": 27,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "04-bare",
+      "title": "毛坯室内漫游",
+      "duration": 11,
+      "lines": [
+        "再换成没有家具的毛坯，",
+        "慢慢转身，向前走，感受空间尺度和行走动线。"
+      ],
+      "sourceStart": 2.194,
+      "sourceDuration": 11.407,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "walk",
+          "camera": [
+            1.9,
+            1.5,
+            -1.75
+          ],
+          "look": [
+            1.7278759594743864,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "walk",
+          "mode": "walk",
+          "camera": [
+            0.8775909280598194,
+            1.5,
+            -1.6440487308796319
+          ],
+          "look": [
+            1.5478759594743878,
+            -0.04400000000000006
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 78,
+          "drawCalls": 117
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "dining",
+          "captures": 5,
+          "revision": 31,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "05-daylight",
+      "title": "昼夜采光",
+      "duration": 9,
+      "lines": [
+        "关闭室内灯，在同一个阳台视角，",
+        "依次看看清晨、正午、黄昏和夜晚。"
+      ],
+      "sourceStart": 6.89,
+      "sourceDuration": 9.402000000000001,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "morning",
+          "lights": false,
+          "clear": true
+        },
+        {
+          "label": "noon",
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true
+        },
+        {
+          "label": "night",
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "night",
+          "lights": false,
+          "clear": true
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 80,
+          "drawCalls": 58
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "balcony",
+          "captures": 5,
+          "revision": 38,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining",
+            "balcony"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "06-decor",
+      "title": "装修对比",
+      "duration": 7,
+      "lines": [
+        "毛坯和家装方案，一键切换，",
+        "对比装修前后的空间感觉。"
+      ],
+      "sourceStart": 7.11,
+      "sourceDuration": 7.406999999999999,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "furnished",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 140,
+          "drawCalls": 267
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 3,
+          "revision": 29,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    },
+    {
+      "id": "07-settings",
+      "title": "随心设置",
+      "duration": 11,
+      "lines": [
+        "地板材质、房门开合、所在楼层，都能自由调整。",
+        "设置自动保存，打开网页，就能开始看房。"
+      ],
+      "sourceStart": 5.126,
+      "sourceDuration": 11.401999999999997,
+      "samples": [
+        {
+          "label": "start",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "material",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "doors",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        },
+        {
+          "label": "floor",
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 33,
+          "time": "noon",
+          "lights": true,
+          "clear": true
+        }
+      ],
+      "diagnostics": {
+        "render": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            780,
+            1688
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 134,
+          "drawCalls": 265
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 6,
+          "revision": 33,
+          "reflectionError": null,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            390,
+            844
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "externalRequests": [],
+      "playbackSpeed": 1
+    }
+  ],
+  "output": {
+    "file": "mobile-feature-tour-60s.mp4",
+    "durationSeconds": 60,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 30,
+    "frames": 1800,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audio": "AAC stereo Mandarin narration and original instrumental music",
+    "fastStart": true,
+    "bytes": 10041737,
+    "sha256": "389d13aaa70b06f261d1b37bdd76f9f0a7302ab87b903091200e7cf0b538fdb5",
+    "decodedWithoutErrors": true
+  },
+  "audioProduction": {
+    "voice": "Microsoft Huihui Desktop, synthesized Mandarin, rate 0",
+    "cues": [
+      {
+        "start": 0.38,
+        "end": 4.155,
+        "text": "打开网页，旋转、放大三维户型，",
+        "chapter": "01-overview"
+      },
+      {
+        "start": 4.705,
+        "end": 6.868,
+        "text": "看清全屋的空间关系。",
+        "chapter": "01-overview"
+      },
+      {
+        "start": 8.38,
+        "end": 9.764,
+        "text": "切换平面图，",
+        "chapter": "02-plan"
+      },
+      {
+        "start": 9.905,
+        "end": 13.439,
+        "text": "房间布局和门窗位置，一眼看明白。",
+        "chapter": "02-plan"
+      },
+      {
+        "start": 14.38,
+        "end": 18.505,
+        "text": "走进家装方案，拖动转向、按键前进，",
+        "chapter": "03-walk"
+      },
+      {
+        "start": 18.84,
+        "end": 21.245,
+        "text": "看看客厅里的家具和通道。",
+        "chapter": "03-walk"
+      },
+      {
+        "start": 22.38,
+        "end": 24.587,
+        "text": "再换成没有家具的毛坯，",
+        "chapter": "04-bare"
+      },
+      {
+        "start": 25.137,
+        "end": 30.262,
+        "text": "慢慢转身，向前走，感受空间尺度和行走动线。",
+        "chapter": "04-bare"
+      },
+      {
+        "start": 33.38,
+        "end": 36.871,
+        "text": "关闭室内灯，在同一个阳台视角，",
+        "chapter": "05-daylight"
+      },
+      {
+        "start": 37.15,
+        "end": 41.301,
+        "text": "依次看看清晨、正午、黄昏和夜晚。",
+        "chapter": "05-daylight"
+      },
+      {
+        "start": 42.38,
+        "end": 45.435,
+        "text": "毛坯和家装方案，一键切换，",
+        "chapter": "06-decor"
+      },
+      {
+        "start": 45.717,
+        "end": 48.299,
+        "text": "对比装修前后的空间感觉。",
+        "chapter": "06-decor"
+      },
+      {
+        "start": 49.38,
+        "end": 54.729,
+        "text": "地板材质、房门开合、所在楼层，都能自由调整。",
+        "chapter": "07-settings"
+      },
+      {
+        "start": 54.85,
+        "end": 59.459,
+        "text": "设置自动保存，打开网页，就能开始看房。",
+        "chapter": "07-settings"
+      }
+    ],
+    "music": "Original oscillator-synthesized 96 BPM piano arpeggios; no third-party samples",
+    "musicDuckingGain": 0.38,
+    "durationSeconds": 60
+  },
+  "poster": {
+    "file": "app-features-six-grid-v3.png",
+    "width": 1800,
+    "height": 2400,
+    "overview": "New zoomed-in screenshot captured from the actual webpage",
+    "dayNight": "Retained same balcony view, indoor lights off, noon/night split"
+  }
+}
