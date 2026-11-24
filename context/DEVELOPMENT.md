@@ -1,5 +1,7 @@
 # 开发与维护
 
+开发在 `main` 进行，推送后检查 [main 测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)。[正式版](https://aimspike.github.io/HangZhouPHMT/)始终使用 `release` 的已构建内容；按用户发布要求将测试通过的 main 快进合入 release。详见[分支与发布流程](DEPLOYMENT.md#分支与发布流程)。
+
 V13 增加可选 `src/decor-preset-a.js` 家装层与 9 张内嵌参考图。`references/interior/preset-a/manifest.json`记录原名、分类、尺寸与 SHA256；WebP 仅用于网页预览，JPG 原文件保持不变。[方案与实际截图](../assets/interior/preset-a/README.md)。
 
 家装几何为独立显示层，不在 `bakeMeshes` 中。只有家具和表面材质改变，`houseBakeSource()` 与既有 `src/bake-source.json` 完全一致，不需重烘焙建筑数据。家具在每个房间、可见层内按材质合并；延迟首次启用时构造，室内显示壁画和顶面灯带，俯瞰/平面隐藏高位装饰以便观察。使用房间灯位的近似填光、程序纹理和接触阴影，不声称完整家具 GI 或真实反射。`houseViewer.decorDoorClearance()` 对 7 扇门各 25 个开合位置、全部可选门型检查家具；`walkClearance(x,z)`辅助检查安全观景位置。

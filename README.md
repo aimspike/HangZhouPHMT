@@ -4,6 +4,8 @@
 
 **[点击打开 3D 在线体验 →](https://aimspike.github.io/HangZhouPHMT/)**
 
+正式体验由 `release` 分支发布；[main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)用于验证尚未正式发布的功能，测试版设置与正式版分开保存。[分支与发布流程](context/DEPLOYMENT.md#分支与发布流程)。
+
 电脑、手机、微信均可浏览，支持三维、平面、室内漫游与采光、材质调整。
 
 **[体验家装预设 A →](https://aimspike.github.io/HangZhouPHMT/?decor=a)** · [查看 3D 场景截图](assets/interior/preset-a/README.md) · [9 张装修参考图](references/interior/preset-a/README.md)
@@ -84,7 +86,7 @@
 | [云同步部署](cloud/README.md) | 可选 Supabase 账号同步配置步骤 |
 | [续接上下文](context/HANDOFF.md) | 需求和实现摘要，便于继续维护 |
 
-Pages 从 `main` 分支的 `/docs` 发布。源码在 `src/`，使用 `python src/build_house.py` 生成最终 HTML。第三方库授权见 [licenses/THIRD_PARTY.md](licenses/THIRD_PARTY.md)。
+Pages 通过 GitHub Actions 发布：站点根目录来自 `release:/docs`，`/preview/main/` 来自 `main:/docs`。源码在 `src/`，使用 `python src/build_house.py` 生成最终 HTML。第三方库授权见 [licenses/THIRD_PARTY.md](licenses/THIRD_PARTY.md)。
 
 ### 介绍资料来源
 

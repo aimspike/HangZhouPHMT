@@ -2,13 +2,39 @@
 
 - 仓库：https://github.com/aimspike/HangZhouPHMT
 - 展示：https://aimspike.github.io/HangZhouPHMT/
-- GitHub Pages：main分支 /docs，HTTPS。
+- GitHub Pages：GitHub Actions 合并部署，根目录使用 `release:/docs`，开发测试使用 `main:/docs`，HTTPS。
+- main 测试：https://aimspike.github.io/HangZhouPHMT/preview/main/
 - 最终网页：docs/index.html，自包含单HTML。
-- 本地目录：D:/HangZhouPHMT
+- 本地目录：以当前工作区为准，当前为 C:/PHMT；下方 D 盘记录为历史迁移信息。
 - Codex后端项目：HangZhouPHMT，ID 01a1ee9e-8fab-7002-b448-acab7a96ec2a，root已更新为D盘。桌面侧栏需在“添加项目”选择此目录。
 - 完整本地会话快照与旧工作区归档位于.local/，Git忽略。C盘仅保留位置说明。
 - 最近公网验证记录：validation/public-deployment.json。V10已在桌面与手机模拟中检查，发布后再次检查。
 - V11完成照片、矢量图和网页复核，承重墙标记、吊轨推拉门及窄边全包平开门框；本地验证见validation/v11-*.json。
+
+## 分支与发布流程
+
+2026-11-24 起采用以下规则，覆盖下方历史记录中的 `main:/docs` 直接发布方式：
+
+- `main`：默认开发分支，功能修改、验证后提交推送，自动更新 `/preview/main/`。
+- `release`：正式发布分支，正式分享链接始终为站点根目录。初始化时使用当前已发布的 `main` 版本；后续仅在用户要求正式发布、测试完成后更新。
+- `.github/workflows/pages.yml` 在任一分支 push 或手动运行时，分别检出最新 `release` 与 `main`，由 `scripts/assemble_pages.py` 合成同一个 Pages artifact。正式 HTML 和静态资源逐字节取自 `release/docs`，没有 release 构建时直接失败，不能退回发布 main。
+- 测试 HTML 标题带 `[main 测试]`，添加搜索引擎 noindex 标记，并使用独立设置命名空间，避免同域 localStorage 覆盖正式版个人设置或复用正式版云登录。每个入口下的 `deployment.json` 记录对应分支与提交 SHA。
+- Pages 的发布方式应设置为 **GitHub Actions**；`github-pages` environment 允许 `main` 与 `release` 部署。工作流串行部署，每次重新组合两条分支，防止更新一个入口时删除另一个入口。
+
+开发：在干净的 `main` 上先 `git pull --ff-only`，修改源码并构建、验证、提交，然后 `git push origin main`，检查 Actions 和测试链接。正式网址的 viewer 保持 release 版本。
+
+用户确认发布后，在干净工作区执行：
+
+```sh
+git fetch origin
+git switch release
+git pull --ff-only
+git merge --ff-only origin/main
+git push origin release
+git switch main
+```
+
+首次在其他机器检出 release 可使用 `git switch --track origin/release`。若无法快进，先检查分叉与已有工作，不自动重写历史或强推。正式修复应先进入 main 并测试，再推进 release，避免两条分支产生独立提交。推送后须确认工作流成功、两个 `deployment.json` 与预期 SHA 相符，并检查正式页面实际内容。
 
 ## V10公网验证完成
 

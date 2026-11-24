@@ -1,5 +1,11 @@
 # Codex 续接上下文
 
+## 当前分支规则（2026-11-24）
+
+`main` 为开发分支，`release` 为正式发布分支。正式展示根网址始终取 `release/docs`；main 测试链接为 `https://aimspike.github.io/HangZhouPHMT/preview/main/`。修改完成后验证并推送 main、检查测试部署；只有用户要求正式发布时，才将已验证 main 快进合入 release。此规则覆盖下方历史条目中“推送 main 即发布正式版”的流程。
+
+GitHub Actions 同时检出两条分支，由 `scripts/assemble_pages.py` 合并静态站点；根 HTML 不作修改，main 测试 HTML 增加标题标记、noindex 和独立 localStorage 命名空间，避免污染正式版设置。六项发布隔离单元测试位于 `validation/test_pages_assembly.py`。当前实施说明和发布步骤见 `DEPLOYMENT.md#分支与发布流程`。
+
 更新时间：2026-11-24。当前版本 V14.2。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末。
 
 ## 模型与环境

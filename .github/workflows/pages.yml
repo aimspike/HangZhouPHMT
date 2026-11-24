@@ -1,0 +1,60 @@
+name: Publish release and main preview
+
+on:
+  push:
+    branches: [main, release]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out latest release
+        uses: actions/checkout@v6
+        with:
+          ref: release
+          path: release
+          persist-credentials: false
+      - name: Check out latest main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: main
+          persist-credentials: false
+      - name: Validate site assembly
+        run: python3 -m unittest discover -s main/validation -p test_pages_assembly.py -v
+      - name: Assemble release and preview
+        run: |
+          python3 main/scripts/assemble_pages.py \
+            --release-root release \
+            --main-root main \
+            --output _site \
+            --release-sha "$(git -C release rev-parse HEAD)" \
+            --main-sha "$(git -C main rev-parse HEAD)"
+      - name: Upload Pages site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
