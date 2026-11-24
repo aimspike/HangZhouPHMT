@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-11-24T09:59:46.351Z",
+  "scope": "Actual GitHub repository pages in Chromium desktop/mobile viewports",
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "title": "杭州 · 璞荟铭庭",
+      "headings": [
+        "开始看房",
+        "赞赏支持",
+        "60 秒，看懂主要功能",
+        "六个功能，随手看懂自己的家",
+        "关于这个项目",
+        "项目资料"
+      ],
+      "images": [
+        {
+          "alt": "微信赞赏码，头像已模糊处理",
+          "loaded": true,
+          "width": 240,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/wechat-appreciation.png"
+        },
+        {
+          "alt": "60秒功能演示封面：三维户型近景，点击播放视频",
+          "loaded": true,
+          "width": 300,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg"
+        },
+        {
+          "alt": "六宫格功能介绍：三维总览、平面户型、室内漫游、昼夜采光、装修对比和随心设置",
+          "loaded": true,
+          "width": 800,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/promo/mobile-v14.2/app-features-six-grid-v3.png"
+        }
+      ],
+      "videoLinks": [
+        "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4",
+        "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4"
+      ],
+      "maintenanceLinks": [
+        "https://github.com/aimspike/HangZhouPHMT/blob/main/README.md"
+      ],
+      "sixGridLink": true,
+      "articleWidth": 838,
+      "articleScrollWidth": 838
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "杭州 · 璞荟铭庭",
+      "headings": [
+        "开始看房",
+        "赞赏支持",
+        "60 秒，看懂主要功能",
+        "六个功能，随手看懂自己的家",
+        "关于这个项目",
+        "项目资料"
+      ],
+      "images": [
+        {
+          "alt": "微信赞赏码，头像已模糊处理",
+          "loaded": true,
+          "width": 240,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/wechat-appreciation.png"
+        },
+        {
+          "alt": "60秒功能演示封面：三维户型近景，点击播放视频",
+          "loaded": true,
+          "width": 300,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg"
+        },
+        {
+          "alt": "六宫格功能介绍：三维总览、平面户型、室内漫游、昼夜采光、装修对比和随心设置",
+          "loaded": true,
+          "width": 324,
+          "src": "/aimspike/HangZhouPHMT/raw/main/assets/promo/mobile-v14.2/app-features-six-grid-v3.png"
+        }
+      ],
+      "videoLinks": [
+        "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4",
+        "https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s.mp4"
+      ],
+      "maintenanceLinks": [
+        "https://github.com/aimspike/HangZhouPHMT/blob/main/README.md"
+      ],
+      "sixGridLink": true,
+      "articleWidth": 324,
+      "articleScrollWidth": 324
+    }
+  ],
+  "maintenanceTitle": "HangZhouPHMT · 项目说明与制作规范",
+  "mainDeployment": {
+    "branch": "main",
+    "commit": "f1aaef19cb6462ab159a2e7b031f3b450d35c8bd"
+  },
+  "releaseDeployment": {
+    "branch": "release",
+    "commit": "102bb16876141e85c874bfb446d5062279172f02"
+  },
+  "result": "passed"
+}

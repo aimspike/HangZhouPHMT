@@ -254,3 +254,5 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 根 `README.md` 改为项目说明与制作规范，集中维护源码职责、构建、建筑/家具/渲染/媒体规则、重烘焙顺序、按范围验证、main/release发布及隐私资料边界；保留 TodoList 与各文档入口。`context/DEVELOPMENT.md` 更新首页引用、当前目录和发布说明，明确其他版本内容的历史性质。仅变更 Markdown，不修改应用或媒体成品、不构建或重烘焙、不推进release。
 
 本地验证：GitHub官方Markdown API的GFM输出在1280×900和390×844视口显示，两个README均无页面横向溢出，首页3张图片全部加载，视频/看房链接保留；65个相对链接目标存在。记录为`validation/repository-readme-layout.json`，临时渲染HTML与截图在`work/readme-home/`。本地CSS近似GitHub排版，实际仓库展示在推送后另行核对。
+
+文档提交`f1aaef1`推送后，实际GitHub仓库桌面/移动页均显示宣传首页标题与六个内容分区，3张图片全部加载、正文无横向溢出，视频封面及根README链接正确；根README可单独打开维护标题。main部署元数据为该提交，release仍为`102bb16`。结果见`validation/repository-readme-public.json`；实际页面截图保留在`work/readme-home/github-home-*.png`。
