@@ -210,3 +210,5 @@ V14.1的16位深度缓冲测试未覆盖纹理读取精度。`verify-depth-sampl
 验证：`v142-depth-sampling.json`记录旧版复现与新版消除；`v142-mobile-compatibility.json`含Chromium Android Chrome/微信UA、桌面，及Windows WebKit Safari/微信UA，已存high刷新、横竖屏与三模式、4项检测、localStorage逐字节一致；自动测试不填写人工视觉结论。`v142-render-quality.json`为4时段、画质保存、反射更新、HDR/depth扩展缺失降级。桌面20组平面/凸块AO检查通过；建筑快照一致、屋顶0缺口，219图。手机检测流程详见`MOBILE_VERIFICATION.md`，README提供入口。
 
 实机状态：未发现可用USB调试手机或云真机配置；访问电脑微信窗口时应用授权超时，没有完成电脑微信UI验证。Windows WebKit和手机UA仍不是实际iPhone或手机微信，须实际手机打开检测链接返回报告及目视结论后才可补记真机通过。
+
+功能提交 `18ddb4f` 已发布，公开HTML规范化SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9` 与本地一致。公开检测入口在Chromium及Windows WebKit手机微信UA下四项自动检查通过、几何一致、屋顶0缺口、无额外请求/错误；见`validation/v142-public.json`。人工字段保持未确认，已请用户在微信及系统浏览器分别返回本机报告。

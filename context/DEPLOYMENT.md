@@ -80,3 +80,13 @@ GitHub Pages 已成功构建 `ae4d030`。2026-11-19 公网 `?decor=a` 返回200�
 AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消除平面自遮挡形成的条纹。页面标题和诊断版本同步为V14.1。建筑、门洞和219张烘焙图不变，无需重烘焙。
 
 本地验证含18组平面、2组凸块接触阴影、390竖屏/740横屏毛坯、A方案、三视图、移动、屋顶开关、昼夜与画质保存、缺扩展回退、几何快照相等和屋顶0缺口。证据为 `contact-occlusion.json`、`mobile-shadow.json`、`mobile-shadow-render-quality.json` 及 `mobile-shadow-*.png`；公网和独立单HTML的手机微信UA验证见 `mobile-shadow-public.json`。均为Chromium模拟，未进行真机iPhone/微信核验。
+
+## V14.2 手机兼容阴影与本机检测已发布
+
+2026-11-24，功能提交 `18ddb4f` 已推送至main，含先行的项目指引提交 `01c8e79`。公开HTML返回200，规范化SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9` 与本地完全一致。构建API仍返回403公开速率限制，以实际公开内容比对和浏览器结果确认已发布。
+
+手机/触屏/微信在所有画质档使用兼容烘焙阴影与房间反射，不创建屏幕AO深度附件，不编译深度合成路径。桌面深度sampler显式highp。`?release=14.2&verify=mobile` 为实际浏览器本地检测入口；四项自动渲染检查和人工条纹判断分开记录，不上传、不覆盖个人设置、不连接云账号。
+
+公开检测链接在Chromium和Windows WebKit的390×844 iPhone/微信UA环境中完成四项渲染：219图、无AO深度附件、几何快照一致、屋顶0缺口，无JS/Shader错误或额外请求，见 `validation/v142-public.json`。这些仍为模拟，报告人工字段为`unconfirmed`、总结果`awaiting-visual-check`。本地精度复现和画质/存储/缺扩展测试见 `v142-depth-sampling.json`、`v142-mobile-compatibility.json`、`v142-render-quality.json`。
+
+未连接到可调试手机，电脑微信窗口授权超时。已提供检测链接和 `context/MOBILE_VERIFICATION.md` 的操作步骤，等待实际手机微信与系统浏览器返回目视报告；尚不能记录真机通过。
