@@ -1,0 +1,17 @@
+{
+  "scope": "Chromium simulated 10-bit fractional depth sampling, not a claim about a specific phone GPU",
+  "reference": "c6efa6d",
+  "cases": [
+    {
+      "version": "14.1",
+      "meanDifference": 24.99742063492055,
+      "affectedFraction": 1
+    },
+    {
+      "version": "14.2",
+      "meanDifference": 0,
+      "affectedFraction": 0
+    }
+  ],
+  "result": "passed"
+}

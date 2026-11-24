@@ -1,9 +1,9 @@
 // Run with NODE and PLAYWRIGHT_MODULE configured to the installed runtime.
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright'),fs=require('fs'),assert=require('assert'),path=require('path');
-const root=path.resolve(__dirname,'..'),report={scope:'Desktop/WebGL1 and Android WeChat UA simulation; not a real WeChat device',errors:[],external:[],cases:[]};
+const root=path.resolve(__dirname,'..'),prefix=process.env.VALIDATION_PREFIX||'v142',report={scope:'Desktop/WebGL1 and Android WeChat UA simulation; not a real WeChat device',errors:[],external:[],cases:[]};
 const ua='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.50';
 const settle=async p=>{await p.waitForTimeout(450);const n=await p.evaluate(()=>houseViewer.frames);await p.waitForFunction(n=>houseViewer.frames>n+1,n);};
-const capture=async(p,name)=>{const image=await p.evaluate(()=>houseViewer.captureImage());fs.writeFileSync(path.join(root,'validation',name+'.png'),Buffer.from(image.split(',')[1],'base64'));return p.evaluate(async()=>{const image=new Image();image.src=houseViewer.captureImage();await image.decode();const c=document.createElement('canvas');c.width=160;c.height=100;const cx=c.getContext('2d');cx.drawImage(image,0,0,160,100);const a=cx.getImageData(0,0,160,100).data;let black=0,white=0,mean=0;for(let i=0;i<a.length;i+=4){const v=(a[i]+a[i+1]+a[i+2])/3;if(v<4)black++;if(v>250)white++;mean+=v;}return {mean:mean/16000,black:black/16000,white:white/16000};});};
+const capture=async(p,name)=>{const image=await p.evaluate(()=>houseViewer.captureImage());fs.writeFileSync(path.join(root,'validation',name.replace(/^v14/,prefix)+'.png'),Buffer.from(image.split(',')[1],'base64'));return p.evaluate(async()=>{const image=new Image();image.src=houseViewer.captureImage();await image.decode();const c=document.createElement('canvas');c.width=160;c.height=100;const cx=c.getContext('2d');cx.drawImage(image,0,0,160,100);const a=cx.getImageData(0,0,160,100).data;let black=0,white=0,mean=0;for(let i=0;i<a.length;i+=4){const v=(a[i]+a[i+1]+a[i+2])/3;if(v<4)black++;if(v>250)white++;mean+=v;}return {mean:mean/16000,black:black/16000,white:white/16000};});};
 (async()=>{const b=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  for(const spec of [{id:'desktop',width:1280,height:900},{id:'wechat',width:390,height:844,mobile:true},{id:'fallback',width:740,height:360,mobile:true,fallback:true}]){
   const ctx=await b.newContext({viewport:{width:spec.width,height:spec.height},...(spec.mobile?{isMobile:true,hasTouch:true,userAgent:ua}:{})});
@@ -26,4 +26,4 @@ const capture=async(p,name)=>{const image=await p.evaluate(()=>houseViewer.captu
   item.final=await p.evaluate(()=>houseViewer.renderQuality);report.cases.push(item);await ctx.close();console.log(spec.id,'passed');
  }
  assert.deepEqual(report.errors,[]);assert.deepEqual(report.external,[]);report.result='passed';
-}finally{fs.writeFileSync(path.join(root,'validation/v14-render-quality.json'),JSON.stringify(report,null,2));await b.close();}})().catch(e=>{console.error(e);process.exit(1);});
+}finally{fs.writeFileSync(path.join(root,'validation',prefix+'-render-quality.json'),JSON.stringify(report,null,2));await b.close();}})().catch(e=>{console.error(e);process.exit(1);});

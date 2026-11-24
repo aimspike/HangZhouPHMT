@@ -5,17 +5,20 @@ function createHouseRenderQuality(options){
  const {renderer,scene,rooms,sourceTarget,aaMaterial,mobile}=options;
  const $=id=>document.getElementById(id),gl=renderer.getContext();
  const depthSupported=!!(renderer.capabilities.isWebGL2||renderer.extensions.get('WEBGL_depth_texture'));
+ // Mobile/WebView texture precision differs from a desktop with a mobile UA.
+ // Keep the baked shadows and room reflections, without screen-depth AO there.
+ const screenAOAllowed=depthSupported&&!mobile&&renderer.capabilities.precision==='highp';
  const hdrSupported=!!(renderer.capabilities.isWebGL2||(renderer.extensions.has('OES_texture_half_float')&&renderer.extensions.has('OES_texture_half_float_linear')&&renderer.extensions.has('EXT_color_buffer_half_float')));
  const state={quality:'auto',effective:mobile?'balanced':'high',ao:false,probeRoom:null,captures:0,revision:0,reflectionError:null};
  const cache=new Map(),registered=new Set(),pmrem=new THREE.PMREMGenerator(renderer);
  let dirtyAt=0,capturing=false,aoSize=new THREE.Vector2(1,1),lastMode='orbit';
  const matrixInverse=new THREE.Matrix4(),projection=new THREE.Matrix4();
- if(depthSupported){sourceTarget.depthTexture=new THREE.DepthTexture(1,1,THREE.UnsignedIntType);sourceTarget.depthTexture.format=THREE.DepthFormat;sourceTarget.dispose();}
+ if(screenAOAllowed){sourceTarget.depthTexture=new THREE.DepthTexture(1,1,THREE.UnsignedIntType);sourceTarget.depthTexture.format=THREE.DepthFormat;sourceTarget.dispose();}
  const aoTarget=new THREE.WebGLRenderTarget(1,1,{minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter,depthBuffer:false,stencilBuffer:false});
  const kernel=[];for(let i=0;i<20;i++){const a=i*2.39996323,z=.18+.74*((i*.61803398875)%1),s=.18+.82*((i+1)/20)**1.6;kernel.push(new THREE.Vector3(Math.cos(a)*Math.sqrt(1-z*z)*s,Math.sin(a)*Math.sqrt(1-z*z)*s,z*s));}
  const aoUniforms={depthMap:{value:sourceTarget.depthTexture||null},inverseProjection:{value:matrixInverse},projection:{value:projection},pixel:{value:new THREE.Vector2(1,1)},kernel:{value:kernel},sampleCount:{value:20},radius:{value:.28}};
  const aoMaterial=new THREE.ShaderMaterial({depthTest:false,depthWrite:false,toneMapped:false,uniforms:aoUniforms,vertexShader:THREE.FXAAShader.vertexShader,fragmentShader:`
- varying vec2 vUv;uniform sampler2D depthMap;uniform mat4 inverseProjection,projection;uniform vec2 pixel;uniform vec3 kernel[20];uniform int sampleCount;uniform float radius;
+ varying vec2 vUv;uniform highp sampler2D depthMap;uniform mat4 inverseProjection,projection;uniform vec2 pixel;uniform vec3 kernel[20];uniform int sampleCount;uniform float radius;
  vec3 positionAt(vec2 uv){float d=texture2D(depthMap,uv).r;vec4 p=inverseProjection*vec4(uv*2.0-1.0,d*2.0-1.0,1.0);return p.xyz/p.w;}
  void main(){float d=texture2D(depthMap,vUv).r;if(d>.999999){gl_FragColor=vec4(1.0);return;}vec3 p=positionAt(vUv);
  // A wider baseline stabilizes normals on quantized mobile depth buffers.
@@ -36,9 +39,11 @@ function createHouseRenderQuality(options){
  float houseViewZ(vec2 uv){vec4 p=houseInverseProjection*vec4(uv*2.0-1.0,texture2D(houseDepth,uv).r*2.0-1.0,1.0);return p.z/p.w;}
  float houseContactAO(vec2 uv){float z=houseViewZ(uv),sum=0.0,w=0.0;for(int x=-1;x<=1;x++)for(int y=-1;y<=1;y++){vec2 off=vec2(float(x),float(y))*houseAOPixel*1.3;float weight=exp(-abs(houseViewZ(uv+off)-z)*45.0)*(x==0&&y==0?2.0:1.0);sum+=texture2D(houseAO,uv+off).r*weight;w+=weight;}return sum/max(w,.0001);}
  `;
- aaMaterial.fragmentShader='uniform sampler2D houseAO,houseDepth;uniform vec2 houseAOPixel;uniform float houseAOEnabled;uniform mat4 houseInverseProjection;\n'+aaMaterial.fragmentShader;
+ if(screenAOAllowed){
+ aaMaterial.fragmentShader='uniform sampler2D houseAO;uniform highp sampler2D houseDepth;uniform vec2 houseAOPixel;uniform float houseAOEnabled;uniform mat4 houseInverseProjection;\n'+aaMaterial.fragmentShader;
  aaMaterial.fragmentShader=aaMaterial.fragmentShader.replace('void main() {',compositeGLSL+'\nvoid main() {').replace('gl_FragColor.a = texture2D(tDiffuse, vUv).a;','gl_FragColor.a = texture2D(tDiffuse, vUv).a;\nif(houseAOEnabled>0.5){float a=houseContactAO(vUv);gl_FragColor.rgb=pow(pow(max(gl_FragColor.rgb,vec3(0.0)),vec3(2.2))*a,vec3(1.0/2.2));}');
- function apply(){state.quality=$('renderQuality').value;state.effective=state.quality==='auto'?(mobile?'balanced':'high'):state.quality;aoUniforms.sampleCount.value=state.effective==='high'?20:12;state.ao=depthSupported&&state.effective!=='light';$('renderQualityNote').textContent=state.effective==='light'?'轻量：保留烘焙光照与材质纹理。':depthSupported?'分房间场景反射、接触阴影与精细材质；切换灯光后反射自动更新。':'当前内核保留分房间反射与精细材质。';invalidate();options.resize();}
+ }
+ function apply(){state.quality=$('renderQuality').value;state.effective=state.quality==='auto'?(mobile?'balanced':'high'):state.quality;aoUniforms.sampleCount.value=state.effective==='high'?20:12;state.ao=screenAOAllowed&&state.effective!=='light';$('renderQualityNote').textContent=state.effective==='light'?'轻量：保留烘焙光照与材质纹理。':screenAOAllowed?'分房间场景反射、接触阴影与精细材质；切换灯光后反射自动更新。':'兼容渲染：保留烘焙阴影、房间反射与材质，避免墙顶阴影条纹。';invalidate();options.resize();}
  function invalidate(){state.revision++;dirtyAt=performance.now();}
  for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))invalidate();});
  document.addEventListener('click',e=>{if(e.target.closest('[data-time],[data-door],#openAllDoors,#closeAllDoors,#decorShortcut,#resetFinishes'))invalidate();});
@@ -76,5 +81,5 @@ function createHouseRenderQuality(options){
  function occlusion(){if(!composite.houseAOEnabled.value)return;renderer.setRenderTarget(aoTarget);renderer.render(postScene,postCamera);}
  function resize(width,height){const scale=state.effective==='high'?.7:.5;aoSize.set(Math.max(1,Math.round(width*scale)),Math.max(1,Math.round(height*scale)));aoTarget.setSize(aoSize.x,aoSize.y);aoUniforms.pixel.value.set(1/width,1/height);composite.houseAOPixel.value.set(1/aoSize.x,1/aoSize.y);}
  $('renderQuality').onchange=apply;apply();
- return {prepare,occlusion,resize,invalidate,get diagnostics(){return {...state,hdrSupported,depthSupported,aoSize:aoSize.toArray(),samples:aoUniforms.sampleCount.value,probeResolution:mobile?64:128,cachedRooms:[...cache.keys()],materials:registered.size,mode:lastMode,reflection:'Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes',pathTracing:false};}};
+ return {prepare,occlusion,resize,invalidate,get diagnostics(){return {...state,hdrSupported,depthSupported,screenAOAllowed,aoPolicy:mobile?'mobile-baked-shadows':screenAOAllowed?'highp-screen-depth':'precision-or-extension-fallback',depthTextureAttached:!!sourceTarget.depthTexture,shaderPrecision:renderer.capabilities.precision,aoSize:aoSize.toArray(),samples:aoUniforms.sampleCount.value,probeResolution:mobile?64:128,cachedRooms:[...cache.keys()],materials:registered.size,mode:lastMode,reflection:'Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes',pathTracing:false};}};
 }

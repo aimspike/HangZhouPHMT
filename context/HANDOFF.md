@@ -1,6 +1,6 @@
 # Codex 续接上下文
 
-更新时间：2026-11-23。当前版本 V14.1。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末。
+更新时间：2026-11-24。当前版本 V14.2。先阅读本文件及 REQUIREMENTS.md；完整会话快照位于本地 `.local/`，不在 GitHub 中。历史版本条目保留当时状态；当前变化见文末。
 
 ## 模型与环境
 
@@ -196,3 +196,17 @@ V14功能提交 `b4f9d2d` 已发布，公网HTML规范化SHA256 `8d8962d6c0e6938
 当前执行环境只挂载 `C:/PHMT`，没有 `D:/HangZhouPHMT`，本次在现有干净 Git 仓库修复；origin与main均核对为正式GitHub项目。未迁移目录、未修改建筑或重新烘焙。
 
 功能提交 `c6efa6d` 已发布，公开HTML规范化SHA256 `82b54b659f05575a216c77a4bbc86ee604a895767b55452d2f34867359dce56f` 与本地一致。公网及磁盘单HTML的390×844 iPhone/微信UA模拟：V14.1、219图、night默认、7门平开、面板收起、屋顶0缺口、正午AO与反射均通过，无额外请求或JS/Shader错误；见 `validation/mobile-shadow-public.json`。GitHub构建API遇到公开速率限制，使用实际发布内容与浏览器结果确认部署。
+
+## V14.2 低精度采样与手机内检测（2026-11-24）
+
+用户反馈手机尤其微信仍有条纹。按新指引执行同步Skill，唯一未提交的AGENTS.md在用户明确选择后独立提交 `01c8e79`，再`git pull --ff-only`成功，随后才修改源码。
+
+V14.1的16位深度缓冲测试未覆盖纹理读取精度。`verify-depth-sampling.cjs`将深度采样值量化到10位小数，在V14.1复现整片墙顶条纹；对天花板固定区域比较正常/量化图，平均像素差约25/255，受影响比例100%。V14.2同样限制时该区域差为0。此为可重现的故障模型，未据此断言用户实际GPU内部精度。
+
+`render-quality.js`显式使用highp深度sampler；手机/触屏/微信在所有画质档均使用兼容烘焙阴影，不创建AO深度附件，也不向FXAA注入深度合成shader。保留材质、家具接触贴片、房间反射；用户的quality选择仍保存。桌面仅具备highp和depth扩展时启用AO。diagnostics新增aoPolicy/screenAOAllowed/depthTextureAttached/shaderPrecision。建筑133mesh/roof130、219图、uv2及几何快照保持，未重烘焙。
+
+新增 `mobile-check.js`，仅`?verify=mobile`显示本机检测面板，四项为毛坯/A的正午/夜晚。自动检查帧、贴图、画布输出和反射错误，人工逐项记录有无条纹；未经人工点击保持`awaiting-visual-check`。报告只在页面内存生成、可复制/下载，无自动上报和账号内容。`settings-storage.js`增加preview模式：检测不写localStorage、不配置云账号、不发云请求，退出后恢复原设置；检测时不启动赞赏提示。正常浏览的存储行为不变。
+
+验证：`v142-depth-sampling.json`记录旧版复现与新版消除；`v142-mobile-compatibility.json`含Chromium Android Chrome/微信UA、桌面，及Windows WebKit Safari/微信UA，已存high刷新、横竖屏与三模式、4项检测、localStorage逐字节一致；自动测试不填写人工视觉结论。`v142-render-quality.json`为4时段、画质保存、反射更新、HDR/depth扩展缺失降级。桌面20组平面/凸块AO检查通过；建筑快照一致、屋顶0缺口，219图。手机检测流程详见`MOBILE_VERIFICATION.md`，README提供入口。
+
+实机状态：未发现可用USB调试手机或云真机配置；访问电脑微信窗口时应用授权超时，没有完成电脑微信UI验证。Windows WebKit和手机UA仍不是实际iPhone或手机微信，须实际手机打开检测链接返回报告及目视结论后才可补记真机通过。

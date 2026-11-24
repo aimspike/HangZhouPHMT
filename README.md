@@ -58,6 +58,8 @@
 
 手机、微信可直接打开[在线链接](https://aimspike.github.io/HangZhouPHMT/)。也可以下载 [docs/index.html](docs/index.html)，在支持 WebGL 的浏览器中离线打开；模型、贴图和脚本全部内嵌在一个 HTML 中。
 
+遇到墙顶阴影条纹，可在手机微信和系统浏览器分别打开[本机显示检测](https://aimspike.github.io/HangZhouPHMT/?release=14.2&verify=mobile)，逐项查看四个画面并复制报告。[检测说明与验证范围](context/MOBILE_VERIFICATION.md)包含实际手机操作步骤；检测调整不会覆盖个人设置。
+
 拖动转向，双指缩放；室内使用方向按钮，电脑可用 WASD / 方向键移动。右上角设置可调整 FOV、眼高、灯光、材质、门和楼层。
 
 初始光照为夜晚，入户和房间门均默认平开；书房、厨房、卫生间、储藏间可手动改成吊轨推拉。浏览器已有保存设置时继续恢复个人选择。

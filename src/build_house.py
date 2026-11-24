@@ -19,6 +19,7 @@ html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text
 html = html.replace('/*__WALL_JUNCTIONS__*/', json.dumps(junction_fills(json.loads((SOURCE/'plan-layout.json').read_text(encoding='utf-8'))),separators=(',',':')))
 html = html.replace('/*__CLOUD_CONFIG__*/', (SOURCE/'cloud-config.json').read_text(encoding='utf-8'))
 html = html.replace('/*__BAKED_LIGHTING__*/', (SOURCE/'baked-lighting.json').read_text(encoding='utf-8'))
+html = html.replace('/*__MOBILE_CHECK__*/', (SOURCE/'mobile-check.js').read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 if '/*__' in html:
     raise RuntimeError('Unresolved template marker')
 (OUTPUT/'index.html').write_text(html, encoding='utf-8')

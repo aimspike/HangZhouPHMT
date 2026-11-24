@@ -1,19 +1,19 @@
 // Optional account sync uses Supabase HTTPS REST; the offline HTML has no SDK dependency.
 function createHouseSettingsStorage(options){
- const $=id=>document.getElementById(id),prefix='house89a.settings.v1.',defaults=options.read();
+ const $=id=>document.getElementById(id),prefix='house89a.settings.v1.',defaults=options.read(),preview=!!options.preview;
  let applying=false,record=null,session=null,config=null,account='guest',timer=null,cloudTimer=null,busy=false,conflict=null,ready=false,localAvailable=true,epoch=0;
  const copy=v=>JSON.parse(JSON.stringify(v)),same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
  function readLocal(key){try{return JSON.parse(localStorage.getItem(prefix+key)||'null');}catch{return null;}}
- function writeLocal(key,value){try{localStorage.setItem(prefix+key,JSON.stringify(value));return true;}catch{localAvailable=false;return false;}}
- function removeLocal(key){try{localStorage.removeItem(prefix+key);}catch{}}
+ function writeLocal(key,value){if(preview)return true;try{localStorage.setItem(prefix+key,JSON.stringify(value));return true;}catch{localAvailable=false;return false;}}
+ function removeLocal(key){if(preview)return;try{localStorage.removeItem(prefix+key);}catch{}}
  function keyFor(){return account==='guest'?'guest':config.url+'|'+account;}
  function status(text,error=false){$('cloudStatus').textContent=text;$('cloudStatus').classList.toggle('cloud-warning',error);}
- function localStatus(){$('localSaveStatus').textContent=localAvailable?'设置已自动保存在此浏览器。':'此浏览器无法持久保存，请导出设置备份。';}
+ function localStatus(){$('localSaveStatus').textContent=preview?'检测模式：临时调整不会保存。':localAvailable?'设置已自动保存在此浏览器。':'此浏览器无法持久保存，请导出设置备份。';}
  function persist(){writeLocal(keyFor(),record);localStatus();}
  function restore(payload){applying=true;try{options.restore(copy(payload));}finally{applying=false;}}
  function validPayload(payload){return payload&&payload.schema===1&&payload.finishes&&typeof payload.finishes==='object'&&Array.isArray(payload.doors)&&payload.controls&&typeof payload.controls==='object'&&JSON.stringify(payload).length<64000;}
  function loadRecord(key,fallback){const r=readLocal(key);return r&&validPayload(r.payload)&&Number.isSafeInteger(r.revision)&&r.revision>=0?{...r,pending:!!r.pending}:{payload:copy(fallback),pending:false,revision:0};}
- function save(){if(applying||!ready)return;const payload=options.read();if(same(payload,record.payload))return;record.payload=payload;record.pending=true;record.savedAt=new Date().toISOString();persist();clearTimeout(cloudTimer);if(session)cloudTimer=setTimeout(()=>sync(),900);}
+ function save(){if(preview||applying||!ready)return;const payload=options.read();if(same(payload,record.payload))return;record.payload=payload;record.pending=true;record.savedAt=new Date().toISOString();persist();clearTimeout(cloudTimer);if(session)cloudTimer=setTimeout(()=>sync(),900);}
  function schedule(){if(applying)return;clearTimeout(timer);timer=setTimeout(save,150);}
  function validateConfig(candidate){
   if(!candidate?.url||!candidate?.publishableKey)return null;
@@ -25,6 +25,7 @@ function createHouseSettingsStorage(options){
  }
  function setSession(data){session=data?{access_token:data.access_token,refresh_token:data.refresh_token,expires_at:data.expires_at||Math.floor(Date.now()/1000)+(data.expires_in||3600),user:{id:data.user.id,email:data.user.email||''},project:config.url}:null;if(session)writeLocal('session',session);else removeLocal('session');}
  async function request(path,{method='GET',body,auth=true,retry=true}={}){
+  if(preview)throw Error('检测模式不连接云服务。');
   if(!navigator.onLine)throw Error('当前离线，设置已保存在本机，联网后会重试。');
   if(auth&&session&&session.expires_at<Date.now()/1000+60)await refresh();
   const controller=new AbortController(),abort=setTimeout(()=>controller.abort(),12000);
@@ -64,7 +65,7 @@ function createHouseSettingsStorage(options){
  $('exportSettings').onclick=()=>{save();const blob=new Blob([JSON.stringify(record.payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='89-A-settings.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);};
  $('importSettings').onclick=()=>$('settingsFile').click();
  $('settingsFile').onchange=async e=>{const file=e.target.files[0];try{if(!file)return;if(file.size>64000)throw Error('设置文件过大。');const payload=JSON.parse(await file.text());if(!validPayload(payload))throw Error('设置文件格式无效。');restore(payload);save();$('localSaveStatus').textContent='已导入设置并保存在此浏览器。';}catch(error){$('localSaveStatus').textContent=error.message;}finally{e.target.value='';}};
- $('cloudConnect').onclick=()=>{try{const next=validateConfig({url:$('cloudProjectUrl').value.trim(),publishableKey:$('cloudPublicKey').value.trim()});if(!next)throw Error('请填写项目地址和公开连接密钥。');if(session)signOut();epoch++;config=next;writeLocal('config',config);renderAccount();}catch(error){status(error.message,true);}};
+ $('cloudConnect').onclick=()=>{if(preview){status('检测模式不连接云服务。');return;}try{const next=validateConfig({url:$('cloudProjectUrl').value.trim(),publishableKey:$('cloudPublicKey').value.trim()});if(!next)throw Error('请填写项目地址和公开连接密钥。');if(session)signOut();epoch++;config=next;writeLocal('config',config);renderAccount();}catch(error){status(error.message,true);}};
  $('cloudSendCode').onclick=async()=>{const email=$('cloudEmail').value.trim();if(!$('cloudEmail').checkValidity()||!email){status('请填写有效邮箱。',true);return;}const b=$('cloudSendCode');b.disabled=true;try{await request('/auth/v1/otp',{method:'POST',body:{email,create_user:true},auth:false});status('验证码已发送，请检查邮箱；有效期以邮件说明为准。');}catch(error){status(error.message,true);}finally{b.disabled=false;}};
  $('cloudVerify').onclick=async()=>{const email=$('cloudEmail').value.trim(),token=$('cloudCode').value.trim();if(!email||!/^\d{6,10}$/.test(token)){status('请填写邮箱及邮件中的验证码。',true);return;}const b=$('cloudVerify');b.disabled=true;try{const data=await request('/auth/v1/verify',{method:'POST',body:{email,token,type:'email'},auth:false});$('cloudCode').value='';await activate(data);}catch(error){status(error.message,true);}finally{b.disabled=false;}};
  $('cloudSyncNow').onclick=()=>sync();$('cloudSignOut').onclick=signOut;
@@ -73,9 +74,9 @@ function createHouseSettingsStorage(options){
  window.addEventListener('online',()=>sync());window.addEventListener('pagehide',()=>{clearTimeout(timer);save();});window.addEventListener('focus',()=>sync());
  window.addEventListener('storage',e=>{try{if(e.key===prefix+keyFor()&&e.newValue){const incoming=JSON.parse(e.newValue);if(validPayload(incoming?.payload)&&!record.pending){record=incoming;restore(record.payload);}}}catch{}});
  setInterval(()=>{if(!document.hidden)sync();},60000);
- try{config=validateConfig(window.HOUSE_CLOUD_CONFIG)||validateConfig(readLocal('config'));}catch{status('云服务连接信息无效，请重新填写。',true);}
+ try{if(!preview)config=validateConfig(window.HOUSE_CLOUD_CONFIG)||validateConfig(readLocal('config'));}catch{status('云服务连接信息无效，请重新填写。',true);}
  record=loadRecord('guest',defaults);restore(record.payload);const cached=readLocal('session');
  if(config&&cached?.project===config.url&&cached.user?.id&&cached.refresh_token&&cached.access_token){session=cached;account=session.user.id;record=loadRecord(keyFor(),defaults);restore(record.payload);}
  ready=true;persist();renderAccount();if(session)sync();
- return {get diagnostics(){return {localAvailable,cloudConfigured:!!config,signedIn:!!session,pending:!!record.pending,revision:record.revision,conflict:!!conflict};}};
+ return {get diagnostics(){return {preview,localAvailable,cloudConfigured:!!config,signedIn:!!session,pending:!!record.pending,revision:record.revision,conflict:!!conflict};}};
 }
