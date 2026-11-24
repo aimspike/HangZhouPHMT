@@ -1,0 +1,100 @@
+{
+  "scope": "GitHub GFM rendering with local desktop/mobile layout checks; not a physical phone",
+  "cases": [
+    {
+      "document": "public",
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "title": "杭州 · 璞荟铭庭",
+      "headings": 7,
+      "images": [
+        {
+          "src": "../assets/wechat-appreciation.png",
+          "loaded": true,
+          "width": 240,
+          "naturalWidth": 581
+        },
+        {
+          "src": "../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg",
+          "loaded": true,
+          "width": 300,
+          "naturalWidth": 1080
+        },
+        {
+          "src": "../assets/promo/mobile-v14.2/app-features-six-grid-v3.png",
+          "loaded": true,
+          "width": 800,
+          "naturalWidth": 1800
+        }
+      ],
+      "overflow": false,
+      "videoLink": true,
+      "homeLink": true
+    },
+    {
+      "document": "public",
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "title": "杭州 · 璞荟铭庭",
+      "headings": 7,
+      "images": [
+        {
+          "src": "../assets/wechat-appreciation.png",
+          "loaded": true,
+          "width": 240,
+          "naturalWidth": 581
+        },
+        {
+          "src": "../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg",
+          "loaded": true,
+          "width": 300,
+          "naturalWidth": 1080
+        },
+        {
+          "src": "../assets/promo/mobile-v14.2/app-features-six-grid-v3.png",
+          "loaded": true,
+          "width": 358,
+          "naturalWidth": 1800
+        }
+      ],
+      "overflow": false,
+      "videoLink": true,
+      "homeLink": true
+    },
+    {
+      "document": "maintenance",
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "title": "HangZhouPHMT · 项目说明与制作规范",
+      "headings": 12,
+      "images": [],
+      "overflow": false,
+      "videoLink": false,
+      "homeLink": true
+    },
+    {
+      "document": "maintenance",
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "title": "HangZhouPHMT · 项目说明与制作规范",
+      "headings": 12,
+      "images": [],
+      "overflow": false,
+      "videoLink": false,
+      "homeLink": true
+    }
+  ],
+  "errors": [],
+  "result": "passed",
+  "checkedAt": "2026-11-24T09:58:45.547134+00:00",
+  "renderer": "GitHub REST Markdown API, GFM mode; local approximate GitHub CSS",
+  "relativeLinks": {
+    "checked": 65,
+    "broken": []
+  },
+  "unchangedApplicationAndMedia": true
+}

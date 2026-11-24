@@ -8,9 +8,9 @@ V13 增加可选 `src/decor-preset-a.js` 家装层与 9 张内嵌参考图。`re
 
 `decor` 字段随原 schema1 设置保存，包含当前方案、切换前的材质和 A 的自定义材质。旧 JSON 缺省为原有方案。`?decor=a` 明确打开 A；普通网址遵循已保存设置。参考图 WebP 构建成 data URL，不增加外部请求。截图按钮输出当前 WebGL 画布，移动端提供长按预览。校验脚本保存于 `validation/verify-decor-preset.cjs`；需本地 Playwright 与 Chrome，默认 localhost:8879。
 
-公开首页与小区资料见[项目 README](../README.md)。`src/appreciation.js`管理浏览满一分钟后的单次可关闭赞赏弹窗；构建脚本将`assets/wechat-appreciation.png`处理图内嵌为data URL，仍为自包含单HTML。GitHub外链只在用户点击时访问，不自动发出外部资源请求。
+公开介绍见[仓库展示首页](../.github/README.md)，小区来源见[资料目录](../references/phmt/README.md)。`src/appreciation.js`管理浏览满一分钟后的单次可关闭赞赏弹窗；构建脚本将`assets/wechat-appreciation.png`处理图内嵌为data URL，仍为自包含单HTML。GitHub外链只在用户点击时访问，不自动发出外部资源请求。
 
-本页从原 README 迁入，保留构建方法、版本记录和验证范围。[返回项目首页](../README.md)。
+本页从原 README 迁入，保留构建方法、版本记录和验证范围。下方版本条目按历史实现记录，当前默认值、目录、构建与验证规范以[项目维护 README](../README.md)、[AGENTS.md](../AGENTS.md)及[续接上下文](HANDOFF.md)为准。
 
 杭州 89-A 户型浏览器：根据用户提供的户型照片复原正交平面图，并生成可离线打开的单文件 3D 网页。
 
@@ -57,7 +57,7 @@ python src/build_house.py
 
 ## 发布
 
-GitHub Pages 从 `main` 分支的 `/docs` 目录发布。修改后构建、提交并推送即可更新。运行时没有 CDN、在线字体、远程贴图或打包服务依赖。云同步未配置时不产生云请求；用户启用账号同步后通过 HTTPS 连接自己的 Supabase 项目。第三方库授权见 `licenses/THIRD_PARTY.md`。
+GitHub Pages 通过 Actions 合并部署：正式根网址来自 `release:/docs`，`main:/docs` 发布到 `/preview/main/`；开发修改验证后推送 main，正式发布按用户要求推进 release。运行时没有 CDN、在线字体、远程贴图或打包服务依赖。云同步未配置时不产生云请求；用户启用账号同步后通过 HTTPS 连接自己的 Supabase 项目。第三方库授权见[授权说明](../licenses/THIRD_PARTY.md)。
 
 ## 精度和验证范围
 
@@ -67,7 +67,7 @@ GitHub Pages 从 `main` 分支的 `/docs` 目录发布。修改后构建、提�
 
 V9：两间卧室固定贴墙平开；书房、厨房、卫生间、储藏间默认房外单侧推拉，双扇同向移出洞口并叠合停放，保留门洞净宽。所有门支持透明显示；门框搭接密合，木纹统一为自然浅木色。
 
-本地项目目录：`D:/HangZhouPHMT`。历史工作区与旧版本已归档在 `.local/legacy-workspace/`，不会上传GitHub。
+本地项目目录以当前工作区与 `git rev-parse --show-toplevel` 为准，当前克隆为 `C:/PHMT`。历史工作区与旧版本已归档在 `.local/legacy-workspace/`，不会上传GitHub。
 
 V11：对照原照片重新复核 SVG/PDF/PNG 与网页。修正厨房门洞、储藏间入口位置、卧室入口及阳台玻璃门；图纸和网页共用 `src/plan-layout.json` 的墙线与门洞。三维和平面默认以赭红色标记原图实黑墙段，可关闭，结构性质以正式结构图为准。推拉门采用上悬吊轨、独立薄门套和带端盖的双轨罩壳，无地轨与门槛；平开门采用40 mm窄边全包门框，完整覆盖门洞内衬和两侧墙口。平面模式显示随门型与开关变化的门扇符号。详见 [复核记录](PLAN_AUDIT.md)。
 

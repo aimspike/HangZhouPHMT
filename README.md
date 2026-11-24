@@ -1,104 +1,139 @@
-# 杭州 · 璞荟铭庭
+# HangZhouPHMT · 项目说明与制作规范
 
-## 3D 在线体验
+璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。当前版本 V14.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
 
-**[点击打开 3D 在线体验 →](https://aimspike.github.io/HangZhouPHMT/)**
+**[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 
-正式体验由 `release` 分支发布；[main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)用于验证尚未正式发布的功能，测试版设置与正式版分开保存。[分支与发布流程](context/DEPLOYMENT.md#分支与发布流程)。
+## 文档分工与任务入口
 
-电脑、手机、微信均可浏览，支持三维、平面、室内漫游与采光、材质调整。
-
-**[体验家装预设 A →](https://aimspike.github.io/HangZhouPHMT/?decor=a)** · [查看 3D 场景截图](assets/interior/preset-a/README.md) · [9 张装修参考图](references/interior/preset-a/README.md)
-
-可切换无家具的毛坯方案与暖木、米白、深蓝的家装预设 A。A 包含客餐厅、厨房、卧室和卫浴家具，客厅电视在北侧、沙发在南侧。可继续调整材质、保存设置和导出当前效果图。
-
-[查看矢量平面图](plans/restored-floor-plan.svg) · [下载 PDF](plans/restored-floor-plan.pdf) · [小区资料与来源](references/phmt/README.md)
-
-## 赞赏支持
-
-如果这个项目对你有帮助，欢迎自愿赞赏，支持后续整理与维护。
-
-<p align="center">
-  <a href="assets/wechat-appreciation.png"><img src="assets/wechat-appreciation.png" alt="微信赞赏码，头像已模糊处理" width="280"></a>
-</p>
-<p align="center">使用微信扫码；点击图片可查看大图。</p>
-
-在线展示页在前台浏览满一分钟后，也会显示一次可关闭的赞赏提示，附带 GitHub Star 入口。
-
-## 项目介绍
-
-**HangZhouPHMT** — 璞荟铭庭 89-A 户型的平面图复原与 3D 交互浏览项目。
-
-从一张户型照片出发，把空间、采光、材质和门的开合放进浏览器，方便在电脑、手机和微信里查看与讨论。
-
-## 关于璞荟铭庭
-
-璞荟铭庭位于**杭州市滨江区**，是人才共有产权保障住房项目，由**杭州滨江城建发展有限公司**开发建设。2024 年公开配售房源涉及 1—4 号楼，共 **368 套**，户型面积为 **65、89㎡**，采用毛坯交付。[2] [3]
-
-| 项目 | 公开资料摘要 |
+| 文档 | 用途 |
 | --- | --- |
-| 位置 | 诚业南路西侧、创智街北侧；地名公告记载北至仁荣街。[1] [4] |
-| 房源 | 1—4 号楼，2024 年公开配售共 368 套。[2] [3] |
-| 户型与交付 | 65、89㎡，毛坯交付。[3] [4] |
-| 楼栋规模 | 房产平台记载为 4 幢高层，21—25 层。[5] |
-| 规划指标 | 房产平台记载容积率 2.5、绿化率 35%。[5] |
-| 建设单位 | 杭州滨江城建发展有限公司。[2] [4] |
+| [.github/README.md](.github/README.md) | GitHub 仓库首页：宣传介绍、在线体验、六宫格、视频链接与赞赏支持 |
+| [README.md](README.md) | 项目说明、制作规范、构建与维护入口 |
+| [AGENTS.md](AGENTS.md) | 在本项目中工作的具体约束与操作要求 |
+| [context/HANDOFF.md](context/HANDOFF.md) | 当前实现、历史决策、验证结果与续接上下文 |
+| [context/REQUIREMENTS.md](context/REQUIREMENTS.md) | 用户需求及后续修订 |
+| [context/TODO.md](context/TODO.md) | 五项后续目标的状态、子任务、依赖与验收标准 |
+| [context/DEPLOYMENT.md](context/DEPLOYMENT.md#分支与发布流程) | main / release 发布流程与部署记录 |
+| [context/DEVELOPMENT.md](context/DEVELOPMENT.md) | 开发细节与版本记录 |
 
-以上为公开资料整理，查阅于 **2026-11-19**。不同来源的面积、道路和个别字段存在差异，详见[资料核对说明](references/phmt/README.md#资料差异与采用原则)。本仓库为个人户型可视化项目，楼栋和周边环境包含示意内容。
+GitHub 优先展示 `.github/README.md`；本文件保留在根目录，供项目维护使用。开始任务前先阅读 `AGENTS.md`、`context/HANDOFF.md`、`context/REQUIREMENTS.md` 和本文件。历史记录中的旧目录、默认值及发布规则以当前指引为准。
 
-## 可以体验什么
+## 工程结构
 
-- **三维 / 平面 / 室内漫游**：查看空间关系、门洞和原图实黑墙段标记。
-- **日照与灯光**：清晨、正午、黄昏、夜晚四种环境，包含太阳、天光和室内灯的烘焙光照。
-- **渲染品质**：分房间场景反射、家具接触阴影与精细材质；设置中可切换精细、均衡、轻量，手机自动适配。
-- **材质搭配**：按房间或全屋更换墙壁、天花板、地板的颜色与材质。
-- **装修方案**：无家具的毛坯方案，以及按 9 张参考图适配的家装预设 A；一键切换，并可继续调整各房间材质。
-- **门与楼层**：查看平开门、吊轨推拉门的开合，调整所在楼层和透明楼栋。
-- **设置保存**：浏览器自动保存，支持 JSON 导入、导出；账号云同步已准备接入步骤，需自行配置服务后启用。
-
-### 打开与操作
-
-手机、微信可直接打开[在线链接](https://aimspike.github.io/HangZhouPHMT/)。也可以下载 [docs/index.html](docs/index.html)，在支持 WebGL 的浏览器中离线打开；模型、贴图和脚本全部内嵌在一个 HTML 中。
-
-遇到墙顶阴影条纹，可在手机微信和系统浏览器分别打开[本机显示检测](https://aimspike.github.io/HangZhouPHMT/?release=14.2&verify=mobile)，逐项查看四个画面并复制报告。[检测说明与验证范围](context/MOBILE_VERIFICATION.md)包含实际手机操作步骤；检测调整不会覆盖个人设置。
-
-拖动转向，双指缩放；室内使用方向按钮，电脑可用 WASD / 方向键移动。右上角设置可调整 FOV、眼高、灯光、材质、门和楼层。
-
-初始光照为夜晚，入户和房间门均默认平开；书房、厨房、卫生间、储藏间可手动改成吊轨推拉。浏览器已有保存设置时继续恢复个人选择。
-
-模型按用户提供的**阳台南偏西 10°**设置朝向，日照采用杭州的近似太阳位置。默认所在楼层 18 层、层高 3m；透明楼栋的总层数可调整，默认值仅作演示。
-
-[![89-A 户型复原平面图](plans/restored-floor-plan.png)](plans/restored-floor-plan.svg)
-
-照片复原的尺寸、墙高和未标注几何含估算，图纸不能用于施工；承重标记转录自原图实黑区域，结构性质以正式结构图为准。已做桌面和手机 / 微信 UA 模拟验证，手机微信真机表现仍需实机核验。
-
-## 资料与维护
-
-| 目录 / 文档 | 内容 |
+| 路径 | 职责 |
 | --- | --- |
-| [项目 TodoList](context/TODO.md) | 效果提升、其他户型、小区展示、家具配置与墙体增删的状态、子任务和验收标准 |
-| [小区资料](references/phmt/README.md) | 项目概况、历史节点、来源与差异核对 |
-| [plans/](plans/) | 复原平面图 SVG、PDF、PNG |
-| [家装方案 A 截图](assets/interior/preset-a/README.md) | 网页实际 3D 场景截图及方案说明 |
-| [装修参考图](references/interior/preset-a/README.md) | 9 张原图按房间和视角命名，含分类依据与不确定项 |
-| [references/](references/) | 用户提供的户型 / 整层参考图与小区资料 |
-| [开发说明](context/DEVELOPMENT.md) | 构建、光照重烘焙、版本说明与验证范围 |
-| [发布记录](context/DEPLOYMENT.md) | GitHub Pages 部署与维护 |
-| [云同步部署](cloud/README.md) | 可选 Supabase 账号同步配置步骤 |
-| [续接上下文](context/HANDOFF.md) | 需求和实现摘要，便于继续维护 |
+| [src/house.template.html](src/house.template.html) | 主模板、场景、交互、界面与诊断接口 |
+| [src/interior.js](src/interior.js) | 分房间材质、7 扇房门、碰撞与透明楼栋 |
+| [src/environment.js](src/environment.js) | 天空、城市、小区示意及楼层高度适配 |
+| [src/decor-preset-a.js](src/decor-preset-a.js) | 独立可选家装 A 家具层 |
+| [src/render-quality.js](src/render-quality.js) | 画质档位、分房间反射及接触遮蔽 |
+| [src/settings-storage.js](src/settings-storage.js) | 本地保存、JSON 导入导出与可选云同步 |
+| [src/plan-layout.json](src/plan-layout.json) | 图纸与网页共用的墙线、门洞、门配置及原图实黑标记 |
+| [src/wall_junctions.py](src/wall_junctions.py) | 网页与矢量图共用的 11 处直角补片 |
+| [src/bake-source.json](src/bake-source.json) | 建筑烘焙几何快照，当前 133 mesh、屋顶 id 130 |
+| [src/build_house.py](src/build_house.py) | 将代码、依赖、图片及 219 张烘焙纹理内嵌到单 HTML |
+| [docs/index.html](docs/index.html) | 已构建的自包含网页与 Pages 入口 |
+| [plans/](plans/) | 复原 SVG / PDF / PNG 平面图 |
+| [references/](references/) | 原始图纸、装修参考与可追溯小区资料 |
+| [assets/](assets/) | 处理后的公开图片、实际场景截图与宣传成品 |
+| [validation/](validation/) | 验证脚本、结果与实际画布截图 |
+| [scripts/assemble_pages.py](scripts/assemble_pages.py) | 组合正式站点与 main 独立测试站点 |
+| `work/` | 中间文件、采集脚本与临时工具，Git 忽略 |
+| `.local/` | 完整本地会话备份，Git 忽略，不发布 |
 
-Pages 通过 GitHub Actions 发布：站点根目录来自 `release:/docs`，`/preview/main/` 来自 `main:/docs`。源码在 `src/`，使用 `python src/build_house.py` 生成最终 HTML。第三方库授权见 [licenses/THIRD_PARTY.md](licenses/THIRD_PARTY.md)。
+以当前工作区及 `git rev-parse --show-toplevel` 确认项目目录；当前克隆为 `C:/PHMT`，远程为 `aimspike/HangZhouPHMT`。
 
-### 介绍资料来源
+## 本地构建与预览
 
-1. [杭州市民政局：地名公告（杭地公告〔2024〕21号）](https://mz.hangzhou.gov.cn/art/2024/8/2/art_1229321287_4288303.html)，2024-08-02。名称和位置采用该条目；政区字段的冲突见资料核对说明。
-2. [杭州市国立公证处：璞荟铭庭人才共有产权房公开销售公证摇号公告](https://www.hz-notary.com/lottery/detail_content?lotteryContent.id=5273cf95c5d84933990d8bc3f41161a4)，2024-09-20。
-3. [住在杭州网：璞荟铭庭（人才共有产权房）摇号详情](https://xinpan.zjol.com.cn/m/lottery/4180.html)，2024 年配售信息。
-4. [住在杭州网：璞荟铭庭楼盘详情](https://xinpan.zjol.com.cn/m/more-detail/4179.html)。
-5. [房天下：璞荟铭庭基本信息](https://hz.newhouse.fang.com/loupan/2010201150/housedetail.htm)。
+Python 3.10+ 可直接构建 HTML，无需安装额外 Python 依赖：
 
-[1]: https://mz.hangzhou.gov.cn/art/2024/8/2/art_1229321287_4288303.html
-[2]: https://www.hz-notary.com/lottery/detail_content?lotteryContent.id=5273cf95c5d84933990d8bc3f41161a4
-[3]: https://xinpan.zjol.com.cn/m/lottery/4180.html
-[4]: https://xinpan.zjol.com.cn/m/more-detail/4179.html
-[5]: https://hz.newhouse.fang.com/loupan/2010201150/housedetail.htm
+```sh
+python src/build_house.py
+python -m http.server 8879 --bind 127.0.0.1
+```
+
+从项目根目录提供服务，访问 [本地网页](http://127.0.0.1:8879/docs/)。也可以直接在支持 WebGL 的浏览器中打开 `docs/index.html`。
+
+重新绘图或烘焙时安装所需依赖：
+
+```sh
+python -m pip install -r requirements.txt
+```
+
+平面图默认使用 Windows 微软雅黑；其他系统通过 `HOUSE_FONT` 指定支持中文的 TTF / TTC 文件。浏览器检查使用 Node.js、Playwright 与 Chrome；`PLAYWRIGHT_MODULE` 指向本机 Playwright 包，`CHROME_PATH` 可指定浏览器路径。
+
+修改应用源码后重新构建并同步提交 `docs/index.html`，不要只编辑生成文件。文档或已有宣传素材的整理不需要重新构建应用。
+
+## 制作规范
+
+### 图纸、模型与家具
+
+- 所有墙体保持横平竖直；照片斜线来自纸面褶皱。墙线、门洞、门配置和实黑标记统一维护在 `src/plan-layout.json`，修改门洞须同步重绘与重烘焙。
+- 承重标记仅按原图实黑区域转录，不按墙厚自动推断。楼栋轮廓取自示意图，当前户型位于左端；其他户型、总层数、周边环境及估算尺寸不能描述为测绘结果或施工依据。
+- 阳台东西侧均为全高实墙；西侧与邻居相连，不能按低围栏剖切。家具布置不得通过移动原墙或门洞解决。
+- 装修只保留毛坯与 A。毛坯无家具、采用水泥基底；A 的电视在客厅北侧、沙发在南侧，主卧床头朝西贴墙、次卧朝东贴墙，衣柜背面贴墙，保留书房推拉门停车空间与卧室门扫掠、床三侧通道。
+- 7 扇入户和房间门默认平开。两卧室仅允许贴墙平开；书房、厨房、卫生间、储藏间可选房外单侧吊轨推拉，保留用户已保存的门型与状态。
+
+### 渲染、适配与保存
+
+- 最终应用保持单 HTML、自包含、无 CDN、无外部资源依赖；保留微信与移动布局、默认收起的设置面板、canvas 显式视口尺寸和 WebGL1 兼容。
+- 材质 clone 保留 `onBeforeCompile`、`customProgramCacheKey` 与光照 `uv2`。天光占用灯光贴图 R 通道，G/B 保留夜间灯具；太阳反射和天光采用 sqrt 编码，在 shader 中解码后参与线性照明。
+- 分房间反射相机 far 须覆盖半径 420m 的天空。透明混合不写 RGBE 目标，优先 linear half-float，缺扩展回退 linear RGBA8；环境反射与烘焙漫反射避免重复累加。
+- 当前默认夜晚，已有个人设置优先。画质 auto / high / balanced / light 沿用现有保存；桌面 auto 精细、触屏与微信 auto 均衡，移动设备使用兼容烘焙阴影。运行时路径追踪已移除。
+- `cloud-config.json` 为空时不得发云请求。可选 Supabase 部署见 [cloud/README.md](cloud/README.md)；令牌不得导出，凭据不得写入源码、日志或仓库。
+
+### 图文与视频素材
+
+- 用户原图保留原始内容、分类与来源；装修参考在 [references/interior/preset-a/](references/interior/preset-a/README.md)，实际网页场景图在 [assets/interior/preset-a/](assets/interior/preset-a/README.md)。
+- 宣传成品、规格和验证放在 [assets/promo/mobile-v14.2/](assets/promo/mobile-v14.2/README.md)，网页下载副本在 [docs/promo/](docs/promo/)。最新成品为 60 秒中文配音视频与近景六宫格，旧版保留。
+- 截图和视频须来自实际页面；说明采集视口、浏览器与后期排版范围。手机视口录制或微信 UA 模拟不能称为物理手机录屏、真机微信验证或照片级效果。
+- 原始录屏、排版与音频中间文件写入 `work/`；`.local/` 不提交、不发布。首页链接须适配 `.github/README.md` 所在目录，新素材尚在 main 时使用明确的预览链接。
+
+## 几何变更与重烘焙
+
+修改建筑几何或门洞后，先在浏览器通过 `houseBakeSource()` 导出并更新 `src/bake-source.json`；同步图纸时运行：
+
+```sh
+python src/redraw_plan.py
+```
+
+再按顺序完成全量烘焙与构建：
+
+```sh
+python src/bake_lighting.py
+python src/bake_sun.py
+python src/build_house.py
+```
+
+`bake_sun.py` 依次调用 `solar_bake.py` 和 `sky_bake.py`。改变太阳参考日期或朝向时先更新并运行 `src/make_solar.py`。仅家具、表面材质或纯渲染变化无需重烘焙建筑，但应验证 `houseBakeSource()` 与既有快照一致。
+
+## 验证与交付
+
+按变更范围选择检查，结果和截图放入 `validation/`：
+
+| 变更范围 | 对应验证 |
+| --- | --- |
+| 页面与渲染 | 桌面和移动横竖屏启动、219/219 纹理、屋顶覆盖、控制交互，无脚本 / shader 错误或自动外部请求 |
+| 家具与门 | `node validation/verify-decor-preset.cjs`；家具门扫掠、贴墙、床三侧通行与安全观景点；改门位置额外检查 `houseViewer.doorMotion()` 和 `doorClosure()` |
+| 渲染品质 | `node validation/verify-render-quality.cjs`；昼夜、画质保存、HDR / depth 缺失回退；手机阴影检查见 [本机验证说明](context/MOBILE_VERIFICATION.md) |
+| 发布装配 | `python -m unittest discover -s validation -p test_pages_assembly.py -v` |
+| 文档与宣传 | 相对链接、图片和视频可打开；桌面 / 移动排版、媒体规格、字幕及播放；说明模拟与实机范围 |
+
+运行浏览器脚本前按上文在项目根目录启动 8879 服务，并配置本机 Playwright。测试通过后检查 diff，提交与推送 Git，并检查对应公开测试内容；保存验证证据。后续目标推进时同步更新 [TodoList](context/TODO.md)。
+
+## 分支与发布
+
+开发前按 [git-sync-before-feature 工作要求](AGENTS.md) 检查状态、分支与 upstream；工作区干净且目标正确时先执行 `git pull --ff-only`。遇到本地改动、分叉或同步失败先保留现场并解决，不自动 stash、rebase、丢弃改动或强推。
+
+- `main` 是开发分支，也是仓库展示首页的维护分支。验证后提交并 `git push origin main`，更新 [main 测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)。
+- `release` 是正式发布分支。[正式网址](https://aimspike.github.io/HangZhouPHMT/)始终使用 `release/docs`；仅在用户要求正式发布时，将已验证 main 快进合入 release。
+- GitHub Actions 分别检出两分支，由 `scripts/assemble_pages.py` 组合发布。main 测试页有独立标题、noindex 和设置命名空间；每个入口的 `deployment.json` 记录分支和提交。
+
+完整步骤与发布证据见 [context/DEPLOYMENT.md](context/DEPLOYMENT.md#分支与发布流程)。仅调整仓库 Markdown 不改变正式应用版本。
+
+## 资料与边界
+
+[小区公开资料与来源](references/phmt/README.md) · [图纸复核记录](context/PLAN_AUDIT.md) · [光照方案评估](context/LIGHTING_OPTIONS.md) · [第三方授权](licenses/THIRD_PARTY.md)
+
+照片复原与程序化环境用于浏览、讨论及方案示意；尺寸和结构性质以正式图纸为准。自动化浏览器、WebKit 和微信 UA 检查与真实手机检查分开记录，未经实机验证不得补记真机通过。
