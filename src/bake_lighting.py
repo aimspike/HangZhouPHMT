@@ -3,12 +3,13 @@ from io import BytesIO
 import json, base64, time
 import numpy as np
 from PIL import Image, ImageFilter
+from roof_geometry import roof_bounds, roof_blockers
 
 ROOT=Path(__file__).parent
 source=json.loads((ROOT/'bake-source.json').read_text(encoding='utf-8'))
 meshes=source['meshes']
 rooms=source['rooms']
-lamps=[(r['x']+r['w']/2,2.67,r['z']+r['d']/2) for r in rooms if r['id'] not in ['balcony','equipment1','equipment2']]
+lamps=[(r['x']+r['w']/2,2.67,r['z']+r['d']/2) for r in rooms if not r['id'].startswith('equipment')]
 blockers=[]
 for mesh in meshes:
     if mesh['roof'] or mesh['glass'] or not mesh['box']: continue
@@ -16,7 +17,7 @@ for mesh in meshes:
     if np.sort(size)[1]<.12: continue
     blockers.append((pos-size/2,pos+size/2))
 # Continuous closed roof, including a 160 mm overlap with the wall tops.
-for a,b in [((1.52,2.8,.52),(6.38,3.18,2.9)),((4.12,2.8,-.18),(6.38,3.18,.52)),((-.18,2.8,2.72),(6.38,3.18,11.18)),((-.18,2.8,11),(3.38,3.18,11.98))]:blockers.append((np.array(a),np.array(b)))
+blockers.extend(roof_blockers(source))
 blockers=np.array(blockers,dtype=np.float32)
 
 def visibility(points,directions,distance):
@@ -52,7 +53,7 @@ def calculate(points,normals):
         mask=(owner<0)&(sample[:,0]>=r['x']-1e-5)&(sample[:,0]<=r['x']+r['w']+1e-5)&(sample[:,2]>=r['z']-1e-5)&(sample[:,2]<=r['z']+r['d']+1e-5)
         owner[mask]=ri
     for ri,r in enumerate(rooms):
-        if r['id'] in ['balcony','equipment1','equipment2']:continue
+        if r['id'].startswith('equipment'):continue
         connected=[ri]
         if r['id'] in ['living','dining']:connected=[i for i,v in enumerate(rooms) if v['id'] in ['living','dining']]
         ids=np.flatnonzero(np.isin(owner,connected))
@@ -85,9 +86,10 @@ for mesh in meshes:
     if mesh['glass']:continue
     if not mesh['roof'] and np.sort(mesh['box'])[1]<.12:continue
     if mesh['roof']:
-        width,height=640,1216
-        xx=np.linspace(-.18,6.38,width,dtype=np.float32)
-        zz=np.linspace(-.18,11.98,height,dtype=np.float32)
+        min_x,min_z,max_x,max_z=roof_bounds(source)
+        width,height=640,round((max_z-min_z)*100)
+        xx=np.linspace(min_x,max_x,width,dtype=np.float32)
+        zz=np.linspace(min_z,max_z,height,dtype=np.float32)
         x,z=np.meshgrid(xx,zz)
         points=np.stack([x.ravel(),np.full(x.size,2.8),z.ravel()],axis=1).astype(np.float32)
         normals=np.tile(np.array([0,-1,0],dtype=np.float32),(len(points),1))

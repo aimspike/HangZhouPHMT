@@ -9,6 +9,7 @@ from io import BytesIO
 import base64, json, time
 import numpy as np
 from PIL import Image, ImageFilter
+from roof_geometry import roof_bounds, roof_blockers
 
 ROOT=Path(__file__).parent
 source=json.loads((ROOT/'bake-source.json').read_text(encoding='utf-8'))
@@ -20,7 +21,7 @@ for m in meshes.values():
     if m['roof'] or m['glass'] or not m['box']:continue
     size=np.array(m['box'],dtype=np.float32);p=np.array(m['position'],dtype=np.float32)
     blockers.append((p-size/2,p+size/2))
-for a,b in [((1.52,2.8,.52),(6.38,3.18,2.9)),((4.12,2.8,-.18),(6.38,3.18,.52)),((-.18,2.8,2.72),(6.38,3.18,11.18)),((-.18,2.8,11),(3.38,3.18,11.98))]:blockers.append((a,b))
+blockers.extend(roof_blockers(source))
 blockers=np.array(blockers,dtype=np.float32)
 AXES=np.array([[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]],dtype=np.float32)
 start=time.monotonic()
@@ -52,7 +53,7 @@ def direct(points,normals):
 
 groups=[]
 for room in source['rooms']:
-    if room['id'] in ['dining','balcony','equipment1','equipment2']:continue
+    if room['id'] in ['dining','equipment1','equipment2']:continue
     r=dict(room)
     if r['id']=='living':r.update(w=6.2)
     groups.append(r)

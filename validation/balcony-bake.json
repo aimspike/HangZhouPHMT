@@ -1,0 +1,24 @@
+{
+  "result": "passed",
+  "meshes": 133,
+  "roofId": 130,
+  "maps": 219,
+  "roofBounds": [
+    -0.18,
+    -0.18,
+    6.38,
+    12.68
+  ],
+  "roofAtlas": [
+    640,
+    1286
+  ],
+  "roofArea": 75.3716,
+  "blockerArea": 75.3716,
+  "balconyCovered": true,
+  "equipmentPlatformsOpen": true,
+  "nightGBPreservedThroughSky": true,
+  "balconyRoofBounceMin": 68,
+  "balconyRoofBounceMean": 98.74698622273249,
+  "roofDirectSunMax": 0
+}

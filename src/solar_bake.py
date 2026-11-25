@@ -10,6 +10,7 @@ import base64, json, time, sys
 import numpy as np
 from PIL import Image, ImageFilter
 
+from roof_geometry import roof_bounds
 from daylight_transport import ROOT, source, data, site, meshes, blockers, AXES, start, visible, direct, groups, owners
 
 surfel_p=[];surfel_n=[];surfel_a=[]
@@ -83,7 +84,8 @@ bounce_only='--bounce-only' in sys.argv
 for index,item in enumerate(data['maps']):
     sunlight=np.zeros((item['height'],item['width'],3),dtype=np.float32);indirect=np.zeros_like(sunlight)
     if item['roof']:
-        xx,zz=np.meshgrid(np.linspace(-.18,6.38,item['width'],dtype=np.float32),np.linspace(-.18,11.98,item['height'],dtype=np.float32))
+        min_x,min_z,max_x,max_z=roof_bounds(source)
+        xx,zz=np.meshgrid(np.linspace(min_x,max_x,item['width'],dtype=np.float32),np.linspace(min_z,max_z,item['height'],dtype=np.float32))
         points=np.stack([xx.ravel(),np.full(xx.size,2.8),zz.ravel()],axis=1).astype(np.float32)
         indirect=bounce(points,np.array([0,-1,0],dtype=np.float32)).reshape(indirect.shape)
         item['sunImage']=encode(np.zeros((1,1,3),dtype=np.float32),1)

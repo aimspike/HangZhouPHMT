@@ -31,6 +31,7 @@ GitHub 优先展示 `.github/README.md`；本文件保留在根目录，供项�
 | [src/settings-storage.js](src/settings-storage.js) | 本地保存、JSON 导入导出与可选云同步 |
 | [src/plan-layout.json](src/plan-layout.json) | 图纸与网页共用的墙线、门洞、门配置及原图实黑标记 |
 | [src/wall_junctions.py](src/wall_junctions.py) | 网页与矢量图共用的 11 处直角补片 |
+| [src/roof_geometry.py](src/roof_geometry.py) | 从网页导出的屋顶轮廓生成烘焙遮挡体与贴图范围，含阳台顶板 |
 | [src/bake-source.json](src/bake-source.json) | 建筑烘焙几何快照，当前 133 mesh、屋顶 id 130 |
 | [src/build_house.py](src/build_house.py) | 将代码、依赖、图片及 219 张烘焙纹理内嵌到单 HTML |
 | [docs/index.html](docs/index.html) | 已构建的自包含网页与 Pages 入口 |
