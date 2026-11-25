@@ -1,0 +1,69 @@
+{
+  "mainBefore": "a2a50d66db5a1550f5967cd20b410c17697df714",
+  "featureBefore": "7bdea267af2924d311cd44ffe87645a504e59f8c",
+  "mainPreserved": [
+    {
+      "path": "src/bake-source.json",
+      "sha256": "295a2289dbe49605cea14245a6cacd42ac3d7ae90a67acbcb14f17254d5e3cdb",
+      "matches": true
+    },
+    {
+      "path": "src/baked-lighting.json",
+      "sha256": "cf23091d5a146ea3fcaadd1c91d51b14aae9f21b24b1542271875478d1b2d97c",
+      "matches": true
+    },
+    {
+      "path": "src/roof_geometry.py",
+      "sha256": "847863765c394c176a734de684696f51d78ffbb9411aceb7901410ff4dcc0980",
+      "matches": true
+    },
+    {
+      "path": "src/bake_lighting.py",
+      "sha256": "2744a3bfc978b96fcfd6f4f2fd097792877839859d6a7a6dd5b23c6d6ebffbc0",
+      "matches": true
+    },
+    {
+      "path": "src/daylight_transport.py",
+      "sha256": "ffb9d2c9149b445a49c1e5e4341a16907a9d61c559a8ad3ab8900a8b7d979934",
+      "matches": true
+    },
+    {
+      "path": "src/solar_bake.py",
+      "sha256": "fc3cdb3b98d057bffebaa8a8501a0030d517f3d3251dc9724d84f15300d85367",
+      "matches": true
+    },
+    {
+      "path": "src/sky_bake.py",
+      "sha256": "c585fe3fcf6166b4b88b028d2d1480ffb43ee565da14afbc4e19380cb41f63cf",
+      "matches": true
+    },
+    {
+      "path": "src/plan-layout.json",
+      "sha256": "8c97a924208440397836c70b64fcd0d7003853bd1e02206ad5862d3f6269d8ab",
+      "matches": true
+    }
+  ],
+  "featureAssetsPreserved": [
+    {
+      "path": "assets/rebuild/models.json",
+      "sha256": "3bf3bcd49b6d3d68a86f50dc626b377136062682f076fdafabc130947f614481",
+      "matches": true
+    },
+    {
+      "path": "assets/rebuild/material-assets.json",
+      "sha256": "cef7522d2403613fe1892b4f415f12381ec0ca8c3fb308c9a28082bd946a4243",
+      "matches": true
+    },
+    {
+      "path": "assets/rebuild/reference-a-master.blend",
+      "sha256": "5b32dcb7c5f60d7eced7bcda2c966666c01a2ed873aa5fe9ab921f8247a2227d",
+      "matches": true
+    },
+    {
+      "path": "scripts/rebuild_scene_assets.py",
+      "sha256": "4650f8f3ad9fadd3b20b0a63503acff3e67f13f10c3fec7cf7ac34da7de80d1a",
+      "matches": true
+    }
+  ],
+  "result": "passed"
+}

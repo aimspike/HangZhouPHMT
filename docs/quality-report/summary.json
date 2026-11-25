@@ -1,0 +1,219 @@
+{
+  "models": {
+    "units": "metres",
+    "models": {
+      "sofa": {
+        "high": {
+          "triangles": 47272,
+          "vertices": 29970,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 22816,
+          "vertices": 14996,
+          "drawGroups": 5
+        }
+      },
+      "coffee": {
+        "high": {
+          "triangles": 2368,
+          "vertices": 1669,
+          "drawGroups": 3
+        },
+        "mobile": {
+          "triangles": 1584,
+          "vertices": 1157,
+          "drawGroups": 3
+        }
+      },
+      "console": {
+        "high": {
+          "triangles": 3748,
+          "vertices": 3048,
+          "drawGroups": 4
+        },
+        "mobile": {
+          "triangles": 3068,
+          "vertices": 2540,
+          "drawGroups": 4
+        }
+      },
+      "dining-table": {
+        "high": {
+          "triangles": 2240,
+          "vertices": 1566,
+          "drawGroups": 3
+        },
+        "mobile": {
+          "triangles": 1072,
+          "vertices": 784,
+          "drawGroups": 3
+        }
+      },
+      "chair": {
+        "high": {
+          "triangles": 7064,
+          "vertices": 5228,
+          "drawGroups": 3
+        },
+        "mobile": {
+          "triangles": 4150,
+          "vertices": 3203,
+          "drawGroups": 3
+        }
+      },
+      "pendant": {
+        "high": {
+          "triangles": 3468,
+          "vertices": 2750,
+          "drawGroups": 2
+        },
+        "mobile": {
+          "triangles": 1800,
+          "vertices": 1541,
+          "drawGroups": 2
+        }
+      },
+      "master-bed": {
+        "high": {
+          "triangles": 18188,
+          "vertices": 11942,
+          "drawGroups": 7
+        },
+        "mobile": {
+          "triangles": 9132,
+          "vertices": 6281,
+          "drawGroups": 7
+        }
+      },
+      "second-bed": {
+        "high": {
+          "triangles": 18188,
+          "vertices": 11950,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 9132,
+          "vertices": 6276,
+          "drawGroups": 5
+        }
+      },
+      "master-wardrobe": {
+        "high": {
+          "triangles": 3384,
+          "vertices": 2743,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 3384,
+          "vertices": 2743,
+          "drawGroups": 5
+        }
+      },
+      "second-wardrobe": {
+        "high": {
+          "triangles": 3384,
+          "vertices": 2711,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 3384,
+          "vertices": 2711,
+          "drawGroups": 5
+        }
+      },
+      "sideboard": {
+        "high": {
+          "triangles": 2888,
+          "vertices": 2460,
+          "drawGroups": 6
+        },
+        "mobile": {
+          "triangles": 2888,
+          "vertices": 2460,
+          "drawGroups": 6
+        }
+      },
+      "fridge": {
+        "high": {
+          "triangles": 5164,
+          "vertices": 3942,
+          "drawGroups": 2
+        },
+        "mobile": {
+          "triangles": 4940,
+          "vertices": 3786,
+          "drawGroups": 2
+        }
+      },
+      "kitchen-east": {
+        "high": {
+          "triangles": 3820,
+          "vertices": 3102,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 3820,
+          "vertices": 3102,
+          "drawGroups": 5
+        }
+      },
+      "kitchen-north": {
+        "high": {
+          "triangles": 3112,
+          "vertices": 2554,
+          "drawGroups": 5
+        },
+        "mobile": {
+          "triangles": 2812,
+          "vertices": 2318,
+          "drawGroups": 5
+        }
+      },
+      "study-desk": {
+        "high": {
+          "triangles": 1356,
+          "vertices": 1112,
+          "drawGroups": 4
+        },
+        "mobile": {
+          "triangles": 944,
+          "vertices": 831,
+          "drawGroups": 4
+        }
+      },
+      "vanity": {
+        "high": {
+          "triangles": 2420,
+          "vertices": 1848,
+          "drawGroups": 6
+        },
+        "mobile": {
+          "triangles": 1746,
+          "vertices": 1395,
+          "drawGroups": 6
+        }
+      }
+    },
+    "sourceObjects": 220,
+    "editableMaster": "reference-a-master.blend"
+  },
+  "htmlMB": 10.463252,
+  "webglImages": 24,
+  "webglCloseups": 20,
+  "offlineStudioImages": 4,
+  "topology": {
+    "parts": 440,
+    "triangles": 204736,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "windingErrors": 0,
+    "degenerateTriangles": 0,
+    "invertedNormals": 0
+  },
+  "branch": "main",
+  "version": "16.2",
+  "balconyWebglImages": 4,
+  "physicalPhone": "pending",
+  "industrialVisualAcceptance": "pending"
+}

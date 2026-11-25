@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8884/docs/quality-report/",
+  "cases": [
+    {
+      "width": 1366,
+      "pairs": 12,
+      "mergePairs": 12,
+      "seamPairs": 10,
+      "offlineStudies": 4,
+      "overflow": false,
+      "slider": true
+    },
+    {
+      "width": 390,
+      "pairs": 12,
+      "mergePairs": 12,
+      "seamPairs": 10,
+      "offlineStudies": 4,
+      "overflow": false,
+      "slider": true
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

@@ -1,6 +1,8 @@
 # HangZhouPHMT · 项目说明与制作规范
 
-璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。当前版本 V14.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
+璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。main 当前版本 V16.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
+
+V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板、顶灯和配套烘焙，后续在主干开发。[main 家装 A 测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a) · [PC / 手机效果报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/) · [重建与验收状态](context/ASSET_REBUILD.md)。工业级整体效果和真机微信仍待验收；正式版继续使用 release。
 
 **[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 
@@ -26,6 +28,7 @@ GitHub 优先展示 `.github/README.md`；本文件保留在根目录，供项�
 | [src/house.template.html](src/house.template.html) | 主模板、场景、交互、界面与诊断接口 |
 | [src/interior.js](src/interior.js) | 分房间材质、7 扇房门、碰撞与透明楼栋 |
 | [src/environment.js](src/environment.js) | 天空、城市、小区示意及楼层高度适配 |
+| [src/asset-rebuild.js](src/asset-rebuild.js) | Blender 双 LOD 模型与内嵌 PBR 资源加载 |
 | [src/decor-preset-a.js](src/decor-preset-a.js) | 独立可选家装 A 家具层 |
 | [src/render-quality.js](src/render-quality.js) | 画质档位、分房间反射及接触遮蔽 |
 | [src/settings-storage.js](src/settings-storage.js) | 本地保存、JSON 导入导出与可选云同步 |
@@ -65,6 +68,8 @@ python -m pip install -r requirements.txt
 平面图默认使用 Windows 微软雅黑；其他系统通过 `HOUSE_FONT` 指定支持中文的 TTF / TTC 文件。浏览器检查使用 Node.js、Playwright 与 Chrome；`PLAYWRIGHT_MODULE` 指向本机 Playwright 包，`CHROME_PATH` 可指定浏览器路径。
 
 修改应用源码后重新构建并同步提交 `docs/index.html`，不要只编辑生成文件。文档或已有宣传素材的整理不需要重新构建应用。
+
+V16 的重建资产与可编辑 Blender 主文件在 [assets/rebuild/](assets/rebuild/README.md)。材质生成先运行 `python scripts/prepare_rebuild_materials.py`，模型使用 Blender 5.3 执行 `scripts/rebuild_scene_assets.py`，最后构建。生成文件已提交，日常 HTML 构建无需安装 Blender；构建会校验生成脚本哈希，拒绝过期导出资源。
 
 ## 制作规范
 

@@ -1,0 +1,1837 @@
+{
+  "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
+  "legacy": true,
+  "models": {
+    "sofa": {
+      "high": {
+        "parts": [
+          {
+            "name": "sofa / chrome (legacy material group)",
+            "triangles": 2048,
+            "boundaryEdges": 64,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0034274534336384867,
+            "minTriangleArea": 3.441203144070029e-05
+          },
+          {
+            "name": "sofa / navy (legacy material group)",
+            "triangles": 26928,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.7583832106793744,
+            "minTriangleArea": 6.243977173390859e-06
+          },
+          {
+            "name": "sofa / seam (legacy material group)",
+            "triangles": 13312,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.0293185785223e-05,
+            "minTriangleArea": 5.385206415185934e-07
+          },
+          {
+            "name": "sofa / mustard (legacy material group)",
+            "triangles": 2352,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011897352521422244,
+            "minTriangleArea": 8.36924829447602e-06
+          },
+          {
+            "name": "sofa / linen (legacy material group)",
+            "triangles": 2352,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011897333335307781,
+            "minTriangleArea": 8.374883311503092e-06
+          }
+        ],
+        "maxPositionErrorMm": 0.01742047372220636
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "sofa / chrome (legacy material group)",
+            "triangles": 1116,
+            "boundaryEdges": 64,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0034298966674827075,
+            "minTriangleArea": 8.967177745092172e-05
+          },
+          {
+            "name": "sofa / navy (legacy material group)",
+            "triangles": 12920,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.7580209494343537,
+            "minTriangleArea": 1.8843314772648084e-05
+          },
+          {
+            "name": "sofa / seam (legacy material group)",
+            "triangles": 6380,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 7.696074036968374e-05,
+            "minTriangleArea": 1.1013793754331949e-06
+          },
+          {
+            "name": "sofa / mustard (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011884349992857203,
+            "minTriangleArea": 2.374313331770749e-05
+          },
+          {
+            "name": "sofa / linen (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011884328522783257,
+            "minTriangleArea": 2.373332143371705e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.017420777509117812
+      }
+    },
+    "coffee": {
+      "high": {
+        "parts": [
+          {
+            "name": "coffee / oak (legacy material group)",
+            "triangles": 1340,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.03930786275794766,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "coffee / black (legacy material group)",
+            "triangles": 676,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.031182638516164835,
+            "minTriangleArea": 5.148115117307576e-07
+          },
+          {
+            "name": "coffee / ceramic (legacy material group)",
+            "triangles": 560,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 82,
+            "windingErrors": 0,
+            "degenerateTriangles": 80,
+            "invertedNormals": 0,
+            "signedVolume": 0.00011590998110502336,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.007710895604738578
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "coffee / oak (legacy material group)",
+            "triangles": 740,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.038951636352005596,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "coffee / black (legacy material group)",
+            "triangles": 676,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.031182638516164835,
+            "minTriangleArea": 5.148115117307576e-07
+          },
+          {
+            "name": "coffee / ceramic (legacy material group)",
+            "triangles": 268,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 82,
+            "windingErrors": 0,
+            "degenerateTriangles": 80,
+            "invertedNormals": 12,
+            "signedVolume": 6.45606910139934e-05,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.007710895604738578
+      }
+    },
+    "console": {
+      "high": {
+        "parts": [
+          {
+            "name": "console / oak (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.030325384038558008,
+            "minTriangleArea": 2.2660066117297733e-07
+          },
+          {
+            "name": "console / wood (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.018055540703219294,
+            "minTriangleArea": 5.817879329447423e-08
+          },
+          {
+            "name": "console / black (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0058795817912280605,
+            "minTriangleArea": 1.2327788885286984e-07
+          },
+          {
+            "name": "console / chrome (legacy material group)",
+            "triangles": 1280,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0005513873418274068,
+            "minTriangleArea": 1.5340086614840895e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.011764548542726731
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "console / oak (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.030325384038558008,
+            "minTriangleArea": 2.2660066117297733e-07
+          },
+          {
+            "name": "console / wood (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.018055540703219294,
+            "minTriangleArea": 5.817879329447423e-08
+          },
+          {
+            "name": "console / black (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0058795817912280605,
+            "minTriangleArea": 1.2327788885286984e-07
+          },
+          {
+            "name": "console / chrome (legacy material group)",
+            "triangles": 612,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0005525179302800591,
+            "minTriangleArea": 3.842642822379961e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.011764548542726731
+      }
+    },
+    "dining-table": {
+      "high": {
+        "parts": [
+          {
+            "name": "dining-table / oak (legacy material group)",
+            "triangles": 1120,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 162,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.06719492910822318,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "dining-table / wood (legacy material group)",
+            "triangles": 896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.03567568789174267,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "dining-table / chrome (legacy material group)",
+            "triangles": 640,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.01018823993766887,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.012525939626653994
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "dining-table / oak (legacy material group)",
+            "triangles": 536,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 162,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.06604876185495849,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "dining-table / wood (legacy material group)",
+            "triangles": 430,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.03390310016638724,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "dining-table / chrome (legacy material group)",
+            "triangles": 400,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.009785309333011865,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.01237922931358918
+      }
+    },
+    "chair": {
+      "high": {
+        "parts": [
+          {
+            "name": "chair / linen (legacy material group)",
+            "triangles": 3776,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012769962346201376,
+            "minTriangleArea": 1.494579284226064e-06
+          },
+          {
+            "name": "chair / oak (legacy material group)",
+            "triangles": 796,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.002152394125125451,
+            "minTriangleArea": 4.687065000030517e-06
+          },
+          {
+            "name": "chair / chrome (legacy material group)",
+            "triangles": 2432,
+            "boundaryEdges": 80,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0007128355810150115,
+            "minTriangleArea": 1.1481016320954403e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.004673618286701316
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "chair / linen (legacy material group)",
+            "triangles": 1810,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012751170125649403,
+            "minTriangleArea": 2.3482795291427917e-06
+          },
+          {
+            "name": "chair / oak (legacy material group)",
+            "triangles": 796,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.002152394125125451,
+            "minTriangleArea": 4.687065000030517e-06
+          },
+          {
+            "name": "chair / chrome (legacy material group)",
+            "triangles": 1500,
+            "boundaryEdges": 80,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0007137791754995255,
+            "minTriangleArea": 1.147269219895623e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.004672852484699074
+      }
+    },
+    "pendant": {
+      "high": {
+        "parts": [
+          {
+            "name": "pendant / orange (legacy material group)",
+            "triangles": 2560,
+            "boundaryEdges": 384,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00995914250170799,
+            "minTriangleArea": 4.280953418936781e-05
+          },
+          {
+            "name": "pendant / cream (legacy material group)",
+            "triangles": 576,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 66,
+            "windingErrors": 0,
+            "degenerateTriangles": 64,
+            "invertedNormals": 0,
+            "signedVolume": 9.89337568077869e-05,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.0059690867029492225
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "pendant / orange (legacy material group)",
+            "triangles": 1228,
+            "boundaryEdges": 220,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.009973428652423125,
+            "minTriangleArea": 5.2880882205252225e-05
+          },
+          {
+            "name": "pendant / cream (legacy material group)",
+            "triangles": 454,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 66,
+            "windingErrors": 0,
+            "degenerateTriangles": 64,
+            "invertedNormals": 1,
+            "signedVolume": 5.55020027665613e-05,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.005969088283961595
+      }
+    },
+    "master-bed": {
+      "high": {
+        "parts": [
+          {
+            "name": "master-bed / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.6878574602607668,
+            "minTriangleArea": 1.4807800031049777e-05
+          },
+          {
+            "name": "master-bed / white (legacy material group)",
+            "triangles": 6432,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.686129806148152,
+            "minTriangleArea": 6.705780547542998e-06
+          },
+          {
+            "name": "master-bed / linen (legacy material group)",
+            "triangles": 6144,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 6.110902854614224e-05,
+            "minTriangleArea": 1.5967016383355268e-06
+          },
+          {
+            "name": "master-bed / mustard (legacy material group)",
+            "triangles": 1728,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.1724669163776349,
+            "minTriangleArea": 6.7042946338755354e-06
+          },
+          {
+            "name": "master-bed / seam (legacy material group)",
+            "triangles": 256,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.913876433979586e-06,
+            "minTriangleArea": 4.9171318990793836e-05
+          },
+          {
+            "name": "master-bed / blue (legacy material group)",
+            "triangles": 2640,
+            "boundaryEdges": 108,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.578333180859248,
+            "minTriangleArea": 3.707068666724434e-06
+          },
+          {
+            "name": "master-bed / black (legacy material group)",
+            "triangles": 480,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 168,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.0004170408507053421,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.019498289278514828
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "master-bed / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.6878574602607668,
+            "minTriangleArea": 1.4807800031049777e-05
+          },
+          {
+            "name": "master-bed / white (legacy material group)",
+            "triangles": 3084,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.6857810047911317,
+            "minTriangleArea": 2.244198387267955e-05
+          },
+          {
+            "name": "master-bed / linen (legacy material group)",
+            "triangles": 2946,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 6.103681935211803e-05,
+            "minTriangleArea": 2.527660486994045e-06
+          },
+          {
+            "name": "master-bed / mustard (legacy material group)",
+            "triangles": 828,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.17231240781043183,
+            "minTriangleArea": 2.2390347775678343e-05
+          },
+          {
+            "name": "master-bed / seam (legacy material group)",
+            "triangles": 256,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.913876433979586e-06,
+            "minTriangleArea": 4.9171318990793836e-05
+          },
+          {
+            "name": "master-bed / blue (legacy material group)",
+            "triangles": 1266,
+            "boundaryEdges": 86,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.5782280452460449,
+            "minTriangleArea": 5.757846415235628e-06
+          },
+          {
+            "name": "master-bed / black (legacy material group)",
+            "triangles": 480,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 168,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.0004170408507053421,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.019498289278514828
+      }
+    },
+    "second-bed": {
+      "high": {
+        "parts": [
+          {
+            "name": "second-bed / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.5752880168317365,
+            "minTriangleArea": 1.4795781869814816e-05
+          },
+          {
+            "name": "second-bed / white (legacy material group)",
+            "triangles": 6432,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.5744572598728502,
+            "minTriangleArea": 6.730422956138689e-06
+          },
+          {
+            "name": "second-bed / linen (legacy material group)",
+            "triangles": 10512,
+            "boundaryEdges": 108,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.6320560692116918,
+            "minTriangleArea": 1.5874639313624265e-06
+          },
+          {
+            "name": "second-bed / seam (legacy material group)",
+            "triangles": 256,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.916190394592455e-06,
+            "minTriangleArea": 4.918966340578101e-05
+          },
+          {
+            "name": "second-bed / black (legacy material group)",
+            "triangles": 480,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 168,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.00041710779662959086,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.018110248235974267
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "second-bed / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.5752880168317365,
+            "minTriangleArea": 1.4795781869814816e-05
+          },
+          {
+            "name": "second-bed / white (legacy material group)",
+            "triangles": 3084,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.5741855873632585,
+            "minTriangleArea": 2.2299668044597865e-05
+          },
+          {
+            "name": "second-bed / linen (legacy material group)",
+            "triangles": 5041,
+            "boundaryEdges": 79,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.6318216395375174,
+            "minTriangleArea": 2.518828160957678e-06
+          },
+          {
+            "name": "second-bed / seam (legacy material group)",
+            "triangles": 256,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.916190394592455e-06,
+            "minTriangleArea": 4.918966340578101e-05
+          },
+          {
+            "name": "second-bed / black (legacy material group)",
+            "triangles": 480,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 168,
+            "windingErrors": 0,
+            "degenerateTriangles": 160,
+            "invertedNormals": 0,
+            "signedVolume": 0.00041710779662959086,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.018110248235974267
+      }
+    },
+    "master-wardrobe": {
+      "high": {
+        "parts": [
+          {
+            "name": "master-wardrobe / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.09316121979310474,
+            "minTriangleArea": 2.2995673926654624e-07
+          },
+          {
+            "name": "master-wardrobe / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.017271158687042137,
+            "minTriangleArea": 2.2889561522142783e-07
+          },
+          {
+            "name": "master-wardrobe / cream (legacy material group)",
+            "triangles": 1316,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 110,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.17745574794788257,
+            "minTriangleArea": 5.8471126123031054e-08
+          },
+          {
+            "name": "master-wardrobe / brass (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.499061223636052e-05,
+            "minTriangleArea": 5.185564134192002e-07
+          },
+          {
+            "name": "master-wardrobe / chrome (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002817936863335133,
+            "minTriangleArea": 5.14897565015276e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.012504486419069474
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "master-wardrobe / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.09316121979310474,
+            "minTriangleArea": 2.2995673926654624e-07
+          },
+          {
+            "name": "master-wardrobe / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.017271158687042137,
+            "minTriangleArea": 2.2889561522142783e-07
+          },
+          {
+            "name": "master-wardrobe / cream (legacy material group)",
+            "triangles": 1316,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 110,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.17745574794788257,
+            "minTriangleArea": 5.8471126123031054e-08
+          },
+          {
+            "name": "master-wardrobe / brass (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.499061223636052e-05,
+            "minTriangleArea": 5.185564134192002e-07
+          },
+          {
+            "name": "master-wardrobe / chrome (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002817936863335133,
+            "minTriangleArea": 5.14897565015276e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.012504486419069474
+      }
+    },
+    "second-wardrobe": {
+      "high": {
+        "parts": [
+          {
+            "name": "second-wardrobe / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.07919182463671395,
+            "minTriangleArea": 2.3511508208238171e-07
+          },
+          {
+            "name": "second-wardrobe / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.014841722735790368,
+            "minTriangleArea": 2.3276147921832363e-07
+          },
+          {
+            "name": "second-wardrobe / cream (legacy material group)",
+            "triangles": 1316,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 110,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.16379466559185132,
+            "minTriangleArea": 5.677643204381819e-08
+          },
+          {
+            "name": "second-wardrobe / brass (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.501490335025767e-05,
+            "minTriangleArea": 5.177907951937176e-07
+          },
+          {
+            "name": "second-wardrobe / chrome (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00028181311681936186,
+            "minTriangleArea": 5.152598022098882e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.011660179771864938
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "second-wardrobe / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.07919182463671395,
+            "minTriangleArea": 2.3511508208238171e-07
+          },
+          {
+            "name": "second-wardrobe / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.014841722735790368,
+            "minTriangleArea": 2.3276147921832363e-07
+          },
+          {
+            "name": "second-wardrobe / cream (legacy material group)",
+            "triangles": 1316,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 110,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.16379466559185132,
+            "minTriangleArea": 5.677643204381819e-08
+          },
+          {
+            "name": "second-wardrobe / brass (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.501490335025767e-05,
+            "minTriangleArea": 5.177907951937176e-07
+          },
+          {
+            "name": "second-wardrobe / chrome (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00028181311681936186,
+            "minTriangleArea": 5.152598022098882e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.011660179771864938
+      }
+    },
+    "sideboard": {
+      "high": {
+        "parts": [
+          {
+            "name": "sideboard / wood (legacy material group)",
+            "triangles": 1504,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.03542332741718346,
+            "minTriangleArea": 5.8418985282556546e-08
+          },
+          {
+            "name": "sideboard / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00799182050276169,
+            "minTriangleArea": 9.261558679608434e-07
+          },
+          {
+            "name": "sideboard / cream (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0038467474485458144,
+            "minTriangleArea": 5.232820688491731e-07
+          },
+          {
+            "name": "sideboard / black (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 3.655832622876837e-05,
+            "minTriangleArea": 2.311659574738494e-07
+          },
+          {
+            "name": "sideboard / blue (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0038467477857282184,
+            "minTriangleArea": 5.232820994626043e-07
+          },
+          {
+            "name": "sideboard / chrome (legacy material group)",
+            "triangles": 384,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 136,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.00019321307056700026,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.00989780750895042
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "sideboard / wood (legacy material group)",
+            "triangles": 1504,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.03542332741718346,
+            "minTriangleArea": 5.8418985282556546e-08
+          },
+          {
+            "name": "sideboard / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00799182050276169,
+            "minTriangleArea": 9.261558679608434e-07
+          },
+          {
+            "name": "sideboard / cream (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0038467474485458144,
+            "minTriangleArea": 5.232820688491731e-07
+          },
+          {
+            "name": "sideboard / black (legacy material group)",
+            "triangles": 564,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 3.655832622876837e-05,
+            "minTriangleArea": 2.311659574738494e-07
+          },
+          {
+            "name": "sideboard / blue (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0038467477857282184,
+            "minTriangleArea": 5.232820994626043e-07
+          },
+          {
+            "name": "sideboard / chrome (legacy material group)",
+            "triangles": 384,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 136,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.00019321307056700026,
+            "minTriangleArea": 0
+          }
+        ],
+        "maxPositionErrorMm": 0.00989780750895042
+      }
+    },
+    "fridge": {
+      "high": {
+        "parts": [
+          {
+            "name": "fridge / chrome (legacy material group)",
+            "triangles": 4224,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.8700643536762714,
+            "minTriangleArea": 5.5632632676604334e-08
+          },
+          {
+            "name": "fridge / black (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0010239703672003664,
+            "minTriangleArea": 7.897129182115629e-08
+          }
+        ],
+        "maxPositionErrorMm": 0.01683219531031107
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "fridge / chrome (legacy material group)",
+            "triangles": 4000,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.8674696718918884,
+            "minTriangleArea": 5.554931430602231e-08
+          },
+          {
+            "name": "fridge / black (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0010239703672003664,
+            "minTriangleArea": 7.897129182115629e-08
+          }
+        ],
+        "maxPositionErrorMm": 0.0168244101221286
+      }
+    },
+    "kitchen-east": {
+      "high": {
+        "parts": [
+          {
+            "name": "kitchen-east / black (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.18065514940972716,
+            "minTriangleArea": 5.8888357938959907e-08
+          },
+          {
+            "name": "kitchen-east / wood (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.057136982619984664,
+            "minTriangleArea": 2.2677224462160177e-07
+          },
+          {
+            "name": "kitchen-east / ceramic (legacy material group)",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.09425921748905614,
+            "minTriangleArea": 9.067083180071279e-07
+          },
+          {
+            "name": "kitchen-east / oak (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.014712672536352514,
+            "minTriangleArea": 2.271505056986518e-07
+          },
+          {
+            "name": "kitchen-east / chrome (legacy material group)",
+            "triangles": 640,
+            "boundaryEdges": 80,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 6.109880977487181e-05,
+            "minTriangleArea": 4.7490126905518254e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.020356810680444204
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "kitchen-east / black (legacy material group)",
+            "triangles": 940,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.18065514940972716,
+            "minTriangleArea": 5.8888357938959907e-08
+          },
+          {
+            "name": "kitchen-east / wood (legacy material group)",
+            "triangles": 1128,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.057136982619984664,
+            "minTriangleArea": 2.2677224462160177e-07
+          },
+          {
+            "name": "kitchen-east / ceramic (legacy material group)",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.09425921748905614,
+            "minTriangleArea": 9.067083180071279e-07
+          },
+          {
+            "name": "kitchen-east / oak (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.014712672536352514,
+            "minTriangleArea": 2.271505056986518e-07
+          },
+          {
+            "name": "kitchen-east / chrome (legacy material group)",
+            "triangles": 640,
+            "boundaryEdges": 80,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 6.109880977487181e-05,
+            "minTriangleArea": 4.7490126905518254e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.020356810680444204
+      }
+    },
+    "kitchen-north": {
+      "high": {
+        "parts": [
+          {
+            "name": "kitchen-north / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.07065136122086227,
+            "minTriangleArea": 2.291860922139526e-07
+          },
+          {
+            "name": "kitchen-north / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.38889196874586,
+            "minTriangleArea": 9.293849038461184e-07
+          },
+          {
+            "name": "kitchen-north / ceramic (legacy material group)",
+            "triangles": 752,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.021085075896212148,
+            "minTriangleArea": 9.132563400257584e-07
+          },
+          {
+            "name": "kitchen-north / chrome (legacy material group)",
+            "triangles": 1196,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00519029669339301,
+            "minTriangleArea": 1.1184393242017312e-06
+          },
+          {
+            "name": "kitchen-north / wood (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011364654207153357,
+            "minTriangleArea": 5.169876245055228e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.00876763252171916,
+        "counterCoverage": {
+          "rays": 4386,
+          "gaps": 592,
+          "examples": [
+            [
+              -0.3779999999999999,
+              -0.17999999999999988
+            ],
+            [
+              -0.3779999999999999,
+              -0.16799999999999987
+            ],
+            [
+              -0.3779999999999999,
+              -0.15599999999999986
+            ],
+            [
+              -0.3779999999999999,
+              -0.14399999999999985
+            ],
+            [
+              -0.3779999999999999,
+              -0.13199999999999984
+            ],
+            [
+              -0.3779999999999999,
+              -0.11999999999999984
+            ],
+            [
+              -0.3779999999999999,
+              -0.10799999999999985
+            ],
+            [
+              -0.3779999999999999,
+              -0.09599999999999985
+            ]
+          ],
+          "cavity": {
+            "height": 0.8099999874830246,
+            "material": "oak"
+          },
+          "scope": "Vertical rays through the complete countertop and intended sink cavity, on exported geometry"
+        }
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "kitchen-north / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.07065136122086227,
+            "minTriangleArea": 2.291860922139526e-07
+          },
+          {
+            "name": "kitchen-north / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.38889196874586,
+            "minTriangleArea": 9.293849038461184e-07
+          },
+          {
+            "name": "kitchen-north / ceramic (legacy material group)",
+            "triangles": 752,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.021085075896212148,
+            "minTriangleArea": 9.132563400257584e-07
+          },
+          {
+            "name": "kitchen-north / chrome (legacy material group)",
+            "triangles": 1196,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00519029669339301,
+            "minTriangleArea": 1.1184393242017312e-06
+          },
+          {
+            "name": "kitchen-north / wood (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011364654207153357,
+            "minTriangleArea": 5.169876245055228e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.00876763252171916,
+        "counterCoverage": {
+          "rays": 4386,
+          "gaps": 592,
+          "examples": [
+            [
+              -0.3779999999999999,
+              -0.17999999999999988
+            ],
+            [
+              -0.3779999999999999,
+              -0.16799999999999987
+            ],
+            [
+              -0.3779999999999999,
+              -0.15599999999999986
+            ],
+            [
+              -0.3779999999999999,
+              -0.14399999999999985
+            ],
+            [
+              -0.3779999999999999,
+              -0.13199999999999984
+            ],
+            [
+              -0.3779999999999999,
+              -0.11999999999999984
+            ],
+            [
+              -0.3779999999999999,
+              -0.10799999999999985
+            ],
+            [
+              -0.3779999999999999,
+              -0.09599999999999985
+            ]
+          ],
+          "cavity": {
+            "height": 0.8099999874830246,
+            "material": "oak"
+          },
+          "scope": "Vertical rays through the complete countertop and intended sink cavity, on exported geometry"
+        }
+      }
+    },
+    "study-desk": {
+      "high": {
+        "parts": [
+          {
+            "name": "study-desk / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.05532929184968964,
+            "minTriangleArea": 2.0873519137128588e-06
+          },
+          {
+            "name": "study-desk / chrome (legacy material group)",
+            "triangles": 768,
+            "boundaryEdges": 32,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.002045247439003043,
+            "minTriangleArea": 0.00039230465954388213
+          },
+          {
+            "name": "study-desk / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.047986511169967515,
+            "minTriangleArea": 5.19004055650672e-07
+          },
+          {
+            "name": "study-desk / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.0142012892581397e-05,
+            "minTriangleArea": 2.3153988962777422e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.011918470775436188
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "study-desk / oak (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.05532929184968964,
+            "minTriangleArea": 2.0873519137128588e-06
+          },
+          {
+            "name": "study-desk / chrome (legacy material group)",
+            "triangles": 368,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0019147273107251177,
+            "minTriangleArea": 0.00030059449648654724
+          },
+          {
+            "name": "study-desk / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.047986511169967515,
+            "minTriangleArea": 5.19004055650672e-07
+          },
+          {
+            "name": "study-desk / black (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.0142012892581397e-05,
+            "minTriangleArea": 2.3153988962777422e-07
+          }
+        ],
+        "maxPositionErrorMm": 0.011918470775436188
+      }
+    },
+    "vanity": {
+      "high": {
+        "parts": [
+          {
+            "name": "vanity / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.12094615524263799,
+            "minTriangleArea": 5.226935032774454e-07
+          },
+          {
+            "name": "vanity / oak (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.005264651310811196,
+            "minTriangleArea": 5.176888340127799e-07
+          },
+          {
+            "name": "vanity / black (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.267575002359612e-05,
+            "minTriangleArea": 2.3086558225491432e-07
+          },
+          {
+            "name": "vanity / ceramic (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.017286460735093163,
+            "minTriangleArea": 1.441488738489548e-06
+          },
+          {
+            "name": "vanity / white (legacy material group)",
+            "triangles": 896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.002571735858380099,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "vanity / chrome (legacy material group)",
+            "triangles": 512,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00042974691707754303,
+            "minTriangleArea": 1.021124866342319e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.007034061586894945
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "vanity / wood (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.12094615524263799,
+            "minTriangleArea": 5.226935032774454e-07
+          },
+          {
+            "name": "vanity / oak (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.005264651310811196,
+            "minTriangleArea": 5.176888340127799e-07
+          },
+          {
+            "name": "vanity / black (legacy material group)",
+            "triangles": 376,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 8.267575002359612e-05,
+            "minTriangleArea": 2.3086558225491432e-07
+          },
+          {
+            "name": "vanity / ceramic (legacy material group)",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.017286460735093163,
+            "minTriangleArea": 1.441488738489548e-06
+          },
+          {
+            "name": "vanity / white (legacy material group)",
+            "triangles": 430,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 130,
+            "windingErrors": 0,
+            "degenerateTriangles": 128,
+            "invertedNormals": 0,
+            "signedVolume": 0.0024006085679640935,
+            "minTriangleArea": 0
+          },
+          {
+            "name": "vanity / chrome (legacy material group)",
+            "triangles": 244,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0004302934715631708,
+            "minTriangleArea": 2.836957355526835e-05
+          }
+        ],
+        "maxPositionErrorMm": 0.007034061586894945
+      }
+    }
+  },
+  "totals": {
+    "parts": 140,
+    "triangles": 202929,
+    "boundaryEdges": 1801,
+    "nonmanifoldEdges": 3044,
+    "windingErrors": 0,
+    "degenerateTriangles": 2528,
+    "invertedNormals": 13
+  },
+  "result": "diagnostic-only",
+  "commit": "87bfb5b",
+  "modelSha256": "1d3f91b41e34514cfa5eb50ae39a39ad31823f51707bec1640ddb7d6d11be078",
+  "limitations": "Legacy export has no authored part ranges. Aggregates are per material group; touching manufactured components can create nonmanifold counts and are not classified as defects. The new per-solid counts are not a directly comparable nonmanifold metric."
+}

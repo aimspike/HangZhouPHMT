@@ -1,0 +1,229 @@
+{
+  "scope": "Actual WebGL same-camera V16.1 feature vs merged main, PC/mobile viewport; numeric differences describe the changed balcony lighting and do not replace visual review",
+  "beforeHtmlSha256": "bf68d9fcbaf6082446157d550f2448c1d56119eecf25de2c47b7dcf68543c99a",
+  "afterHtmlSha256": "e3322a063c163cb4a611bbf4d37df9ae6d375f007309e6473ccb8fef445dd8b6",
+  "cases": [
+    {
+      "device": "pc",
+      "scene": "living-day",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 1.078683304398148,
+      "meanLuminance255": 81.01192824074074,
+      "nearBlackFraction": 0.0013515625,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 59.89654233599553,
+      "afterFps": 59.6475372797108,
+      "beforeFile": "merge-before-pc-living-day.png",
+      "afterFile": "rebuild-pc-living-day.png"
+    },
+    {
+      "device": "pc",
+      "scene": "living-night",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 0.7322116608796296,
+      "meanLuminance255": 123.54532682291666,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 59.79073243644208,
+      "afterFps": 59.9591187826482,
+      "beforeFile": "merge-before-pc-living-night.png",
+      "afterFile": "rebuild-pc-living-night.png"
+    },
+    {
+      "device": "pc",
+      "scene": "master-day",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 0.12165494791666667,
+      "meanLuminance255": 120.26503935185184,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 60.04785769108205,
+      "afterFps": 59.893824583682424,
+      "beforeFile": "merge-before-pc-master-day.png",
+      "afterFile": "rebuild-pc-master-day.png"
+    },
+    {
+      "device": "pc",
+      "scene": "bare-day",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 1.6532676504629629,
+      "meanLuminance255": 64.69133246527778,
+      "nearBlackFraction": 0.03786545138888889,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 60.24096385545218,
+      "afterFps": 60.23550724637681,
+      "beforeFile": "merge-before-pc-bare-day.png",
+      "afterFile": "rebuild-pc-bare-day.png"
+    },
+    {
+      "device": "pc",
+      "scene": "dining-day",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 1.4147722800925926,
+      "meanLuminance255": 66.12909418402778,
+      "nearBlackFraction": 0.0012217881944444444,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 59.90741581191689,
+      "afterFps": 59.83409636916835,
+      "beforeFile": "merge-before-pc-dining-day.png",
+      "afterFile": "rebuild-pc-dining-day.png"
+    },
+    {
+      "device": "pc",
+      "scene": "kitchen-day",
+      "cameraIdentical": true,
+      "canvas": [
+        1920,
+        1200
+      ],
+      "meanAbsoluteDifference255": 0.0016886574074074074,
+      "meanLuminance255": 59.45211226851851,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 60.194614166100926,
+      "afterFps": 59.90741581191689,
+      "beforeFile": "merge-before-pc-kitchen-day.png",
+      "afterFile": "rebuild-pc-kitchen-day.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "living-day",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.0010020456110503503,
+      "meanLuminance255": 84.36364128893749,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 29.99727297519423,
+      "afterFps": 29.879125356507252,
+      "beforeFile": "merge-before-mobile-living-day.png",
+      "afterFile": "rebuild-mobile-living-day.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "living-night",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.0009792603394499129,
+      "meanLuminance255": 126.87909501964596,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 29.993183367416496,
+      "afterFps": 29.91162474507138,
+      "beforeFile": "merge-before-mobile-living-night.png",
+      "afterFile": "rebuild-mobile-living-night.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "master-day",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.17527190424109856,
+      "meanLuminance255": 94.7018395309272,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 30.337333031469324,
+      "afterFps": 29.921117055026613,
+      "beforeFile": "merge-before-mobile-master-day.png",
+      "afterFile": "rebuild-mobile-master-day.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "bare-day",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.0010245777129663386,
+      "meanLuminance255": 62.654838325839506,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 29.99454644609563,
+      "afterFps": 29.88047808763932,
+      "beforeFile": "merge-before-mobile-bare-day.png",
+      "afterFile": "rebuild-mobile-bare-day.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "dining-day",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.000635962247336655,
+      "meanLuminance255": 76.64520116863126,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 30.229200505318868,
+      "afterFps": 29.993183367416496,
+      "beforeFile": "merge-before-mobile-dining-day.png",
+      "afterFile": "rebuild-mobile-dining-day.png"
+    },
+    {
+      "device": "mobile",
+      "scene": "kitchen-day",
+      "cameraIdentical": true,
+      "canvas": [
+        780,
+        1688
+      ],
+      "meanAbsoluteDifference255": 0.0005070988779519585,
+      "meanLuminance255": 76.69895440920324,
+      "nearBlackFraction": 0.0,
+      "nearWhiteFraction": 0.0,
+      "beforeFps": 29.84399728690934,
+      "afterFps": 29.957786755032075,
+      "beforeFile": "merge-before-mobile-kitchen-day.png",
+      "afterFile": "rebuild-mobile-kitchen-day.png"
+    }
+  ],
+  "result": "passed",
+  "visualReview": {
+    "reviewer": "Codex actual image inspection",
+    "result": "passed-selected-views",
+    "views": [
+      "PC living daylight",
+      "PC kitchen daylight",
+      "mobile master daylight",
+      "PC balcony ceiling/night"
+    ],
+    "observations": [
+      "Rebuilt furniture and continuous quilt surfaces retained",
+      "Sink flange/counter joins retained",
+      "Balcony ceiling and emitter visible with continuous coverage",
+      "No black canvas, missing texture or obvious merge-induced seam in reviewed views"
+    ],
+    "limitations": "Automated browser capture and selected-view image inspection; not physical phone verification or final industrial visual acceptance"
+  }
+}

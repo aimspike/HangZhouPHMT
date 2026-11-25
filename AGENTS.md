@@ -37,3 +37,5 @@
 - V14的`src/render-quality.js`提供分房间场景反射/PMREM与深度接触遮蔽，仍为WebGL1实时渲染，没有恢复路径追踪。天空半径420m，反射相机far必须覆盖天空；透明混合不能写RGBE目标，优先linear half-float，缺扩展回退linear RGBA8。烘焙漫反射与环境反射避免重复累加。纯渲染变化不改bake快照。
 - A方案：阳台洗烘柜贴东墙，正面西；储物间北/东/南三墙U形六层架，18mm板、24mm柱，高2.46m、深0.23/0.26/0.23m。北架避西门扫掠，中央净宽约0.655m。不得通过移动原墙/门来容纳家具。
 - 画质auto/high/balanced/light纳入现有设置保存；桌面auto精细、触屏/微信auto均衡。运行`validation/verify-render-quality.cjs`验证HDR/depth扩展缺失回退及昼夜切换。截图来自真实WebGL画布，不能称照片级或真机验证。
+
+- V16.2 已将 feature/render-quality 的家具/PBR/接缝修复合入 main，后续在 C:/PHMT 的 main 开发。保留主干阳台屋顶、顶灯与219张新烘焙；效果报告随 main 更新，feature 仅作历史评审快照。模型资产修改后运行 verify-rebuild-topology.cjs；不得把旧 feature 烘焙覆盖主干。
