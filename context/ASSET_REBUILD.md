@@ -15,6 +15,8 @@
 
 本机 RTX5080/Chrome 6场景短时采样为PC约59.6–60.3FPS、手机模拟约29.8–30.0FPS；不是物理手机性能。工业级整体和真机微信仍待最终验收。feature 作为历史快照保留，release独立发布。
 
+合并提交 `50dc9b1` 已部署并完成公网PC/手机Chrome/WebKit、阳台专项与报告检查，记录 `validation/rebuild-public.json` / `merge-balcony-public-validation.json`。效果报告已更新至main，正式release及历史feature入口分别保持其原内容。当前公网main HTML SHA256 `ed37ce230e7b2a95d5fdfe0c8c2b64730ea81262486e20c58b304f44f926e661`。后续证据提交不更改应用。
+
 ## V16.1 接缝与装配修复（历史）
 
 用户认可重建方向，继续要求核查漏边、漏缝。本轮只在 `feature/render-quality` 更新，使用 `C:/PHMT/work/render-seam-fix` 隔离工作区，保留主工作区另行进行的阳台 / 灯光修改。

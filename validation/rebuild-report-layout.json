@@ -1,5 +1,5 @@
 {
-  "url": "http://127.0.0.1:8884/docs/quality-report/",
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/",
   "cases": [
     {
       "width": 1366,
@@ -7,6 +7,7 @@
       "mergePairs": 12,
       "seamPairs": 10,
       "offlineStudies": 4,
+      "balconyImages": 4,
       "overflow": false,
       "slider": true
     },
@@ -16,6 +17,7 @@
       "mergePairs": 12,
       "seamPairs": 10,
       "offlineStudies": 4,
+      "balconyImages": 4,
       "overflow": false,
       "slider": true
     }

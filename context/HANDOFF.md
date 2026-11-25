@@ -5,6 +5,8 @@
 用户要求画质分支合入 main，后续全部在主干开发。当前工作目录为 C:/PHMT，分支 main；feature/render-quality 保留为历史评审快照。合并保留主干阳台连续顶板、顶灯、天花板设置与已验证的219张新烘焙，接入V16.1家具/PBR/接缝修复。冲突按功能组合解决，生成HTML由源码重建；未改变建筑快照或重新烘焙。版本16.2。主干效果报告在 /preview/main/quality-report/，release正式站保持独立发布。
 
 
+主干合并提交 `50dc9b1` 已推送，[Pages工作流45561896113](https://github.com/aimspike/HangZhouPHMT/actions/runs/45561896113) 成功。公开main与Git匹配，PC/手机Chrome/WebKit、设备检测、单HTML离线、阳台专项和效果报告验证通过。证据见 `validation/rebuild-public.json`、`merge-balcony-public-validation.json`。main页面SHA256为 `ed37ce230e7b2a95d5fdfe0c8c2b64730ea81262486e20c58b304f44f926e661`；后续证据提交保持应用不变。
+
 ## 阳台加顶与顶灯（2026-11-25）
 
 在 `main` 为阳台补连续顶板，沿用室内 0.38m 厚度与 2.80m 下表面高度，覆盖阳台至南侧外沿；增加一盏中心暖色吸顶灯，接入现有顶灯开关、亮度及家具局部照明。阳台天花板可单独更换材质，也参与全屋天花板设置。设备平台仍不提供天花板设置。墙线、门洞和家具布置不变。

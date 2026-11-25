@@ -1,5 +1,6 @@
 {
-  "checkedAt": "2026-11-25T05:23:04.496Z",
+  "targetBranch": "main",
+  "checkedAt": "2026-11-25T06:38:25.749Z",
   "scope": "Public content plus PC Chrome, mobile Chrome and Windows WebKit with WeChat UA; not physical phone verification",
   "entries": [
     {
@@ -11,14 +12,14 @@
     },
     {
       "branch": "main",
-      "commit": "a2a50d66db5a1550f5967cd20b410c17697df714",
+      "commit": "50dc9b157fa3a5f69c563590eb120c609864b628",
       "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
-      "htmlSha256": "ae2439f11f2bf2668cf243496fe2e0b5cfdd24c20111cebbf61faffcd22db15f",
+      "htmlSha256": "ed37ce230e7b2a95d5fdfe0c8c2b64730ea81262486e20c58b304f44f926e661",
       "matchesGit": true
     },
     {
       "branch": "feature/render-quality",
-      "commit": "8d3f56521b10563eb38e4d5ac60b28ee09762799",
+      "commit": "7bdea267af2924d311cd44ffe87645a504e59f8c",
       "url": "https://aimspike.github.io/HangZhouPHMT/preview/render-quality/",
       "htmlSha256": "bc53f107648eb4080752f3d937b5d7659c1b8dfba828cce7e5b7a6c76d89d6b9",
       "matchesGit": true
@@ -30,7 +31,7 @@
       "mobile": false,
       "state": {
         "diagnostics": {
-          "version": "16.1",
+          "version": "16.2",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -45,7 +46,7 @@
             800
           ],
           "shaderCount": 120,
-          "drawCalls": 367
+          "drawCalls": 369
         },
         "quality": {
           "quality": "auto",
@@ -319,7 +320,7 @@
         },
         {
           "id": "bare-night",
-          "framesAdvanced": 6
+          "framesAdvanced": 7
         },
         {
           "id": "a-noon",
@@ -327,7 +328,7 @@
         },
         {
           "id": "a-night",
-          "framesAdvanced": 7
+          "framesAdvanced": 6
         }
       ],
       "effectReport": true
@@ -337,7 +338,7 @@
       "mobile": true,
       "state": {
         "diagnostics": {
-          "version": "16.1",
+          "version": "16.2",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -644,7 +645,7 @@
       "mobile": true,
       "state": {
         "diagnostics": {
-          "version": "16.1",
+          "version": "16.2",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0",
@@ -950,12 +951,11 @@
   "errors": [],
   "external": [],
   "offline": {
-    "version": "16.1",
+    "version": "16.2",
     "maps": [
       219,
       219
     ]
   },
-  "result": "historical-passed",
-  "historical": "V16.1 feature evidence; current main public verification pending deployment"
+  "result": "passed"
 }

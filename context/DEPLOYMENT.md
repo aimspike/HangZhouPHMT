@@ -153,4 +153,4 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 
 用户要求 `feature/render-quality` 合入main，后续在主干开发。以main `a2a50d6` 与feature `7bdea26` 建立真实merge提交，不改写历史。保留阳台顶板、顶灯和219张新烘焙，接入V16.1重建资产；主模板、生成HTML和文档冲突已组合解决。main新入口 /preview/main/?decor=a，PC/手机报告 /preview/main/quality-report/；feature历史预览与release独立保留。正式发布仍需用户另行要求。
 
-本地验证见 validation/merge-source-integrity.json、merge-visual.json、merge-balcony-validation.json 与 rebuild-*.json，待推送后核对当前main公网内容。
+本地验证见 validation/merge-source-integrity.json、merge-visual.json、merge-balcony-validation.json 与 rebuild-*.json，主干合并提交 `50dc9b1` 已推送，Pages工作流 [45561896113](https://github.com/aimspike/HangZhouPHMT/actions/runs/45561896113) 成功。公开main HTML SHA256 `ed37ce230e7b2a95d5fdfe0c8c2b64730ea81262486e20c58b304f44f926e661`，与Git装配一致。PC Chrome、手机微信UA、WebKit、219烘焙/13PBR、设备检测、设置隔离与磁盘单HTML通过；公网阳台开关/调光/材质保存/旋转及报告12对合并对比/10对接缝近检/4张阳台图通过。release `7b53b23` 和feature `7bdea26` 内容分别匹配其Git，未修改。后续证据提交不改变已验证应用。
