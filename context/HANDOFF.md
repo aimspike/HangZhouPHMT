@@ -1,14 +1,8 @@
 # Codex 续接上下文
 
-## V15 Feature 画质评审（2026-11-25）
+## 画质回退与重建（2026-11-25，覆盖 V15）
 
-当前工作分支 `feature/render-quality`，首次开发前已按 Skill 在干净 main 执行 `git pull --ff-only`。main 仅先接入 `7b53b23` 的 feature 预览部署支持，画质代码仍独立；release 保持 `102bb16`。测试入口 `/preview/render-quality/`，PC / 手机报告在其下 `quality-report/`，详细实施、预算、证据及边界见 [RENDER_QUALITY_FEATURE.md](RENDER_QUALITY_FEATURE.md)。
-
-V15 首轮包括独立材质颜色 / 凹凸 / 粗糙度数据、基于既有建筑烘焙的 9 房间 72 位置家具低频受光、手机较小光照图、自适应像素比例和反射 LRU 缓存。仍为 WebGL1、自包含 HTML，不是 Cycles 或运行时路径追踪。原始建筑 / 门洞 / 烘焙源保持，衍生文件 `src/quality-assets.json` 由 `prepare_quality_assets.py` 生成，重烘焙后必须重新生成再构建。
-
-PC / 手机视口四组前后截图和 RTX 5080 本机短时数据已采集；Chromium、Windows WebKit、HDR / depth 缺失回退、保存、家具 / 门 / 通行 / 屋顶、合成压力与反射缓存检查通过。报告明确手机模拟不是实际手机帧率；真实微信和持续热稳定性待验收。T01 维持待验证，不宣称专业效果已最终验收。
-
-功能提交 `da9079b` 的独立预览已成功部署，实际三分支 HTML / metadata 与 Git 一致；公开 PC、手机 Chrome / 微信 UA、Windows WebKit / iPhone 微信 UA、四场景检测、设置隔离及磁盘离线通过，见 `validation/v15-public.json`。正式根 HTML 内容未改变；公网验证后的追加提交只记录交付证据与大 HTML 校验脚本缓冲修正。
+用户目视评审认为 V15 不如优化前，要求先回退，再细致重建材质和模型，目标工业级。已撤销 V15 两个功能 / 报告提交，恢复 `7b53b23` 的应用源码、材质、烘焙纹理与原分辨率；保留独立 feature 预览部署。后续质量必须以参考图、近景模型 / UV / PBR 资源、真实网页效果及手机预算验收，不再以短时模拟帧率代替视觉验收。重建沿用原 A 风格，继续 feature 分支，正式 release 不变。
 
 ## 当前分支规则（2026-11-24）
 

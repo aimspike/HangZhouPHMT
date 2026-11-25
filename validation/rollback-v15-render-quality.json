@@ -15,19 +15,6 @@
         "captures": 1,
         "revision": 23,
         "reflectionError": null,
-        "pixelRatio": 1.5,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 6,
-        "adaptiveResolution": false,
-        "pixelRatioBounds": [
-          1,
-          1.5
-        ],
-        "lightmapRGBA8MiB": 81.46503829956055,
-        "diffuseProbeRooms": 9,
         "hdrSupported": true,
         "depthSupported": true,
         "screenAOAllowed": true,
@@ -45,17 +32,17 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 132.30566666667167,
+        "mean": 131.02897916667013,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 88.68395833332988,
-        "black": 0.001875,
+        "mean": 86.7472708333336,
+        "black": 0.0019375,
         "white": 0
       },
       "otherTimes": [
@@ -69,19 +56,6 @@
             "captures": 3,
             "revision": 26,
             "reflectionError": null,
-            "pixelRatio": 1.5,
-            "renderMs": 0,
-            "frameIntervalMs": 0,
-            "resolutionChanges": 0,
-            "evictions": 0,
-            "cacheLimit": 6,
-            "adaptiveResolution": false,
-            "pixelRatioBounds": [
-              1,
-              1.5
-            ],
-            "lightmapRGBA8MiB": 81.46503829956055,
-            "diffuseProbeRooms": 9,
             "hdrSupported": true,
             "depthSupported": true,
             "screenAOAllowed": true,
@@ -99,12 +73,12 @@
             ],
             "materials": 276,
             "mode": "walk",
-            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
             "pathTracing": false
           },
           "image": {
-            "mean": 82.72258333333446,
-            "black": 0.0028125,
+            "mean": 80.31320833333471,
+            "black": 0.002875,
             "white": 0
           }
         },
@@ -118,19 +92,6 @@
             "captures": 4,
             "revision": 27,
             "reflectionError": null,
-            "pixelRatio": 1.5,
-            "renderMs": 0,
-            "frameIntervalMs": 0,
-            "resolutionChanges": 0,
-            "evictions": 0,
-            "cacheLimit": 6,
-            "adaptiveResolution": false,
-            "pixelRatioBounds": [
-              1,
-              1.5
-            ],
-            "lightmapRGBA8MiB": 81.46503829956055,
-            "diffuseProbeRooms": 9,
             "hdrSupported": true,
             "depthSupported": true,
             "screenAOAllowed": true,
@@ -148,30 +109,30 @@
             ],
             "materials": 276,
             "mode": "walk",
-            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
             "pathTracing": false
           },
           "image": {
-            "mean": 77.25270833333322,
-            "black": 0.003875,
+            "mean": 71.99349999999993,
+            "black": 0.0038125,
             "white": 0
           }
         }
       ],
       "light": {
-        "mean": 77.21722916666663,
+        "mean": 71.7229166666659,
         "black": 0,
         "white": 0
       },
       "persistence": "passed",
       "storage": {
-        "mean": 148.41218749999936,
+        "mean": 145.91770833333038,
         "black": 0,
         "white": 0
       },
       "balcony": {
-        "mean": 193.59481249999612,
-        "black": 0.003625,
+        "mean": 190.65216666666393,
+        "black": 0.0035625,
         "white": 0
       },
       "architectureUnchanged": true,
@@ -183,19 +144,6 @@
         "captures": 4,
         "revision": 24,
         "reflectionError": null,
-        "pixelRatio": 1.5,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 6,
-        "adaptiveResolution": false,
-        "pixelRatioBounds": [
-          1,
-          1.5
-        ],
-        "lightmapRGBA8MiB": 81.46503829956055,
-        "diffuseProbeRooms": 9,
         "hdrSupported": true,
         "depthSupported": true,
         "screenAOAllowed": true,
@@ -214,7 +162,7 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       }
     },
@@ -231,19 +179,6 @@
         "captures": 1,
         "revision": 23,
         "reflectionError": null,
-        "pixelRatio": 1,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 2,
-        "adaptiveResolution": true,
-        "pixelRatioBounds": [
-          0.85,
-          1.25
-        ],
-        "lightmapRGBA8MiB": 35.485774993896484,
-        "diffuseProbeRooms": 9,
         "hdrSupported": true,
         "depthSupported": true,
         "screenAOAllowed": false,
@@ -251,8 +186,8 @@
         "depthTextureAttached": false,
         "shaderPrecision": "highp",
         "aoSize": [
-          1,
-          1
+          293,
+          633
         ],
         "samples": 12,
         "probeResolution": 64,
@@ -261,16 +196,16 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 139.1512708333378,
+        "mean": 138.02708333333487,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 92.69829166666132,
+        "mean": 90.30954166666675,
         "black": 0,
         "white": 0
       },
@@ -287,19 +222,6 @@
           "captures": 2,
           "revision": 25,
           "reflectionError": null,
-          "pixelRatio": 1,
-          "renderMs": 0,
-          "frameIntervalMs": 0,
-          "resolutionChanges": 0,
-          "evictions": 0,
-          "cacheLimit": 2,
-          "adaptiveResolution": true,
-          "pixelRatioBounds": [
-            0.85,
-            1.25
-          ],
-          "lightmapRGBA8MiB": 35.485774993896484,
-          "diffuseProbeRooms": 9,
           "hdrSupported": true,
           "depthSupported": true,
           "screenAOAllowed": false,
@@ -307,8 +229,8 @@
           "depthTextureAttached": false,
           "shaderPrecision": "highp",
           "aoSize": [
-            1,
-            1
+            633,
+            293
           ],
           "samples": 12,
           "probeResolution": 64,
@@ -317,7 +239,7 @@
           ],
           "materials": 276,
           "mode": "walk",
-          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
@@ -329,19 +251,6 @@
         "captures": 2,
         "revision": 25,
         "reflectionError": null,
-        "pixelRatio": 1,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 2,
-        "adaptiveResolution": true,
-        "pixelRatioBounds": [
-          0.85,
-          1.25
-        ],
-        "lightmapRGBA8MiB": 35.485774993896484,
-        "diffuseProbeRooms": 9,
         "hdrSupported": true,
         "depthSupported": true,
         "screenAOAllowed": false,
@@ -349,8 +258,8 @@
         "depthTextureAttached": false,
         "shaderPrecision": "highp",
         "aoSize": [
-          1,
-          1
+          633,
+          293
         ],
         "samples": 12,
         "probeResolution": 64,
@@ -359,7 +268,7 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       }
     },
@@ -377,19 +286,6 @@
         "captures": 1,
         "revision": 23,
         "reflectionError": null,
-        "pixelRatio": 1,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 2,
-        "adaptiveResolution": true,
-        "pixelRatioBounds": [
-          0.85,
-          1.25
-        ],
-        "lightmapRGBA8MiB": 35.485774993896484,
-        "diffuseProbeRooms": 9,
         "hdrSupported": false,
         "depthSupported": false,
         "screenAOAllowed": false,
@@ -397,8 +293,8 @@
         "depthTextureAttached": false,
         "shaderPrecision": "highp",
         "aoSize": [
-          1,
-          1
+          555,
+          270
         ],
         "samples": 12,
         "probeResolution": 64,
@@ -407,17 +303,17 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 132.70000000000528,
+        "mean": 131.6736250000033,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 93.39927083332869,
-        "black": 0.000875,
+        "mean": 91.63012499999971,
+        "black": 0.0011875,
         "white": 0
       },
       "rotated": {
@@ -433,19 +329,6 @@
           "captures": 2,
           "revision": 25,
           "reflectionError": null,
-          "pixelRatio": 1,
-          "renderMs": 0,
-          "frameIntervalMs": 0,
-          "resolutionChanges": 0,
-          "evictions": 0,
-          "cacheLimit": 2,
-          "adaptiveResolution": true,
-          "pixelRatioBounds": [
-            0.85,
-            1.25
-          ],
-          "lightmapRGBA8MiB": 35.485774993896484,
-          "diffuseProbeRooms": 9,
           "hdrSupported": false,
           "depthSupported": false,
           "screenAOAllowed": false,
@@ -453,8 +336,8 @@
           "depthTextureAttached": false,
           "shaderPrecision": "highp",
           "aoSize": [
-            1,
-            1
+            270,
+            555
           ],
           "samples": 12,
           "probeResolution": 64,
@@ -463,7 +346,7 @@
           ],
           "materials": 276,
           "mode": "walk",
-          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
@@ -475,19 +358,6 @@
         "captures": 2,
         "revision": 25,
         "reflectionError": null,
-        "pixelRatio": 1,
-        "renderMs": 0,
-        "frameIntervalMs": 0,
-        "resolutionChanges": 0,
-        "evictions": 0,
-        "cacheLimit": 2,
-        "adaptiveResolution": true,
-        "pixelRatioBounds": [
-          0.85,
-          1.25
-        ],
-        "lightmapRGBA8MiB": 35.485774993896484,
-        "diffuseProbeRooms": 9,
         "hdrSupported": false,
         "depthSupported": false,
         "screenAOAllowed": false,
@@ -495,8 +365,8 @@
         "depthTextureAttached": false,
         "shaderPrecision": "highp",
         "aoSize": [
-          1,
-          1
+          270,
+          555
         ],
         "samples": 12,
         "probeResolution": 64,
@@ -505,10 +375,15 @@
         ],
         "materials": 276,
         "mode": "walk",
-        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       }
     }
   ],
-  "result": "passed"
+  "result": "passed",
+  "rollback": {
+    "baseline": "7b53b23",
+    "sourceAndHtmlExact": true,
+    "geometryUnchanged": true
+  }
 }

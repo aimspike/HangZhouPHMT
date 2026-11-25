@@ -3,7 +3,6 @@ from pathlib import Path
 import shutil
 import json
 import base64
-import hashlib
 from wall_junctions import junction_fills
 
 SOURCE = Path(__file__).resolve().parent
@@ -13,18 +12,13 @@ OUTPUT.mkdir(exist_ok=True)
 html = (SOURCE / 'house.template.html').read_text(encoding='utf-8')
 html = html.replace('/*__FALLBACK_PLAN__*/', (ROOT/'plans/restored-floor-plan.svg').read_text(encoding='utf-8'))
 html = html.replace('/*__APPRECIATION_IMAGE__*/', 'data:image/png;base64,' + base64.b64encode((ROOT/'assets/wechat-appreciation.png').read_bytes()).decode('ascii'))
-for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('RENDER_QUALITY','render-quality.js'),('SURFACE_MAPS','surface-maps.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('DECOR_PRESET_A','decor-preset-a.js'),('SETTINGS_STORAGE','settings-storage.js'),('APPRECIATION','appreciation.js')]:
+for marker, filename in [('THREE','three.min.js'),('ORBIT','OrbitControls.js'),('LUCIDE','lucide-lite.js'),('FXAA','FXAAShader.js'),('RENDER_QUALITY','render-quality.js'),('ENVIRONMENT','environment.js'),('INTERIOR','interior.js'),('DECOR_PRESET_A','decor-preset-a.js'),('SETTINGS_STORAGE','settings-storage.js'),('APPRECIATION','appreciation.js')]:
     html = html.replace('/*__'+marker+'__*/', (SOURCE/filename).read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 html = html.replace('/*__SITE__*/', (SOURCE/'solar-presets.json').read_text(encoding='utf-8'))
 html = html.replace('/*__PLAN_LAYOUT__*/', (SOURCE/'plan-layout.json').read_text(encoding='utf-8'))
 html = html.replace('/*__WALL_JUNCTIONS__*/', json.dumps(junction_fills(json.loads((SOURCE/'plan-layout.json').read_text(encoding='utf-8'))),separators=(',',':')))
 html = html.replace('/*__CLOUD_CONFIG__*/', (SOURCE/'cloud-config.json').read_text(encoding='utf-8'))
 html = html.replace('/*__BAKED_LIGHTING__*/', (SOURCE/'baked-lighting.json').read_text(encoding='utf-8'))
-quality = json.loads((SOURCE/'quality-assets.json').read_text(encoding='utf-8'))
-for key, filename in [('bakeSha256','baked-lighting.json'),('geometrySha256','bake-source.json')]:
-    if quality[key] != hashlib.sha256((SOURCE/filename).read_text(encoding='utf-8').encode()).hexdigest():
-        raise RuntimeError('Quality assets are stale; run src/prepare_quality_assets.py after rebaking')
-html = html.replace('/*__QUALITY_ASSETS__*/', json.dumps(quality,separators=(',',':')))
 html = html.replace('/*__MOBILE_CHECK__*/', (SOURCE/'mobile-check.js').read_text(encoding='utf-8').replace('</script', '<' + chr(92) + '/script'))
 if '/*__' in html:
     raise RuntimeError('Unresolved template marker')
