@@ -1,0 +1,37 @@
+{
+  "engine": "Blender 5.3 / Cycles OptiX offline bake",
+  "samples": 256,
+  "bounces": 4,
+  "states": 16,
+  "images": 124,
+  "bytes": 4553445,
+  "layouts": {
+    "bare": {
+      "reflectionRooms": 10,
+      "atlasBases": [
+        "sky",
+        "morning",
+        "noon",
+        "dusk",
+        "lamps",
+        "ao"
+      ],
+      "vertexSamples": 0,
+      "mobileVertexSamples": 0
+    },
+    "a": {
+      "reflectionRooms": 10,
+      "atlasBases": [
+        "sky",
+        "morning",
+        "noon",
+        "dusk",
+        "lamps",
+        "ao"
+      ],
+      "vertexSamples": 134488,
+      "mobileVertexSamples": 93926
+    }
+  },
+  "result": "passed"
+}

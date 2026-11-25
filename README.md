@@ -10,6 +10,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 最新调整：[家具接缝、阳台洗烘洗漱角与窗玻璃反射对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/compact.html)。包含18类双档模型装配检查、贴墙/落地与昼夜实际网页画布。
 
+新增：[Cycles固定光照 / AO / 反射前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/static-lighting.html)。16种固定组合、双档家具照明与房间反射，数据与流程见 [静态烘焙资产](assets/static-bake/README.md)。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |

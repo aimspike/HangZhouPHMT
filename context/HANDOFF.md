@@ -341,3 +341,16 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 验证：compact-after.json、furniture-assembly.json、rebuild-topology.json、compact-decor.json、compact-render-quality.json、compact-mobile-compatibility.json。Chrome/WebGL1、Windows WebKit、手机横竖屏/微信UA、HDR/depth缺失回退、保存设置、219贴图、屋顶、7门闭合/扫掠及家具净空均通过；未代表物理手机微信。模型库18类、驻留PBR仍13张，家装条目40（包含配件分组）。HTML约11.54MB。实际效果与证据页为quality-report/compact.html。仅推送main，release保持独立正式发布。
 
 功能提交`78fc9f1`已上线main。公开HTML规范化SHA256 `62316cff0d579aedcc5f010e295f985341aefdb7889f981eaff7c443c5a2e2b8`与Git装配一致；18模型/13PBR/219烘焙、PC/手机模拟/WebKit、离线带家具、设置隔离及本轮细节、24对报告通过。见compact-public*.json、compact-report-public.json与compact-deployment.json。正式release保持7b53b23，本轮未推进；随后证据提交不改应用内容。
+
+
+## Cycles 固定状态光照、AO、反射烘焙（2026-11-25）
+
+按用户要求实施离线外部工具烘焙。`scripts/export_static_bake_scene.cjs`从真实网页导出完整建筑、默认门与毛坯/high/mobile家装；`scripts/bake_static_cycles.py`用Blender5.3 / Cycles OptiX生成256采样、4次漫反射反弹的照明。4时段×灯开/关×bare/A共16状态，以天光、三向太阳、灯具线性分量因式化保存。建筑1024²图集、家具high/mobile独立顶点照明与AO，2布局各10个房间的5分量256×128反射图，共124张数据PNG。照明sqrt(linear/8)，AO线性；反射合成后转RGBE仅作为输入，再由现有PMREM生成线性目标，没有透明混合写入RGBE。
+
+新增`src/static-lighting.js`，固定状态下替换旧漫反射，不重复叠加；全场景AO轻量用于环境高光/家具填充，静态生效时屏幕AO不再合成。天空、太阳、灯强度控件继续分别缩放，黑夜关灯只有弱夜空。旧219建筑烘焙、墙线/门洞、几何快照和uv2原样保留，作为固定状态之外的回退。没有恢复运行时路径追踪。
+
+参考固定门状态：入户关闭、6房门平开且打开；按毛坯/A原定墙顶地底色烘焙。改变门状态/门型/透明、墙顶地材质或隐藏天花板时禁用固定数据，恢复旧照明/动态反射，个人设置不被覆盖。反射只对应房间固定点及基础材质，不精确覆盖任意视角、外部城市全细节和任意材质变化。首次解析/解码会暂用旧照明，缓存后状态切换约几十毫秒（本机模拟短时观测，非真机承诺）。Float32影像缓存限制48MiB；单HTML约23.93MB，加载体积显著增大，真机持续性能仍待验收。
+
+124张PNG、每布局6个图集基、10×5反射图、134488 high/93926 mobile独立家具采样；实际附着high124mesh/709416顶点、mobile124mesh/466044顶点。`validation/verify-static-bake-data.cjs`核对影像及全部采样下标/脚本哈希；构建另校验烘焙脚本及墙线、原快照、家具源码/模型和太阳输入哈希，拒绝过期资源。`assets/static-bake/`保留导出、可编辑blend、原数据PNG和内嵌包。
+
+`verify-static-lighting.cjs`覆盖Chrome桌面/手机/缺HDR-depth/WebKit的全部16状态、开关灯与昼夜像素变化、48张新实际画布、改门/材质/天花板回退、刷新保存与横竖屏。`static-lighting.json`、`static-bake-data.json`、`static-render-quality.json`、`static-decor.json`保存结果。48对/96张实际网页对比见quality-report/static-lighting.html，包含PC/手机、客厅/主卧/厨房/阳台6组代表状态；前后相同相机/曝光/材质，无AI重绘。仅main开发，release不推进。

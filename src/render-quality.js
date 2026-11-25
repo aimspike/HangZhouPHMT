@@ -9,7 +9,7 @@ function createHouseRenderQuality(options){
  // Keep the baked shadows and room reflections, without screen-depth AO there.
  const screenAOAllowed=depthSupported&&!mobile&&renderer.capabilities.precision==='highp';
  const hdrSupported=!!(renderer.capabilities.isWebGL2||(renderer.extensions.has('OES_texture_half_float')&&renderer.extensions.has('OES_texture_half_float_linear')&&renderer.extensions.has('EXT_color_buffer_half_float')));
- const state={quality:'auto',effective:mobile?'balanced':'high',ao:false,probeRoom:null,captures:0,revision:0,reflectionError:null};
+ const state={quality:'auto',effective:mobile?'balanced':'high',ao:false,probeRoom:null,captures:0,revision:0,reflectionError:null,reflectionSource:'dynamic scene capture',probeReady:false};
  const cache=new Map(),registered=new Set(),pmrem=new THREE.PMREMGenerator(renderer);
  let dirtyAt=0,capturing=false,aoSize=new THREE.Vector2(1,1),lastMode='orbit';
  const matrixInverse=new THREE.Matrix4(),projection=new THREE.Matrix4();
@@ -44,7 +44,7 @@ function createHouseRenderQuality(options){
  aaMaterial.fragmentShader=aaMaterial.fragmentShader.replace('void main() {',compositeGLSL+'\nvoid main() {').replace('gl_FragColor.a = texture2D(tDiffuse, vUv).a;','gl_FragColor.a = texture2D(tDiffuse, vUv).a;\nif(houseAOEnabled>0.5){float a=houseContactAO(vUv);gl_FragColor.rgb=pow(pow(max(gl_FragColor.rgb,vec3(0.0)),vec3(2.2))*a,vec3(1.0/2.2));}');
  }
  function apply(){state.quality=$('renderQuality').value;state.effective=state.quality==='auto'?(mobile?'balanced':'high'):state.quality;aoUniforms.sampleCount.value=state.effective==='high'?20:12;state.ao=screenAOAllowed&&state.effective!=='light';$('renderQualityNote').textContent=state.effective==='light'?'轻量：保留烘焙光照与材质纹理。':screenAOAllowed?'分房间场景反射、接触阴影与精细材质；切换灯光后反射自动更新。':'兼容渲染：保留烘焙阴影、房间反射与材质，避免墙顶阴影条纹。';invalidate();options.resize();}
- function invalidate(){state.revision++;dirtyAt=performance.now();}
+ function invalidate(){state.reflectionSource='awaiting current state';state.probeReady=false;state.revision++;dirtyAt=performance.now();}
  for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))invalidate();});
  document.addEventListener('click',e=>{if(e.target.closest('[data-time],[data-door],#openAllDoors,#closeAllDoors,#decorShortcut,#resetFinishes'))invalidate();});
  function register(){scene.traverse(object=>{for(const m of Array.isArray(object.material)?object.material:[object.material]){if(!m?.isMeshStandardMaterial||!m.userData.houseRoom||registered.has(m))continue;registered.add(m);const base=m.onBeforeCompile,key=m.customProgramCacheKey;
@@ -69,17 +69,26 @@ function createHouseRenderQuality(options){
    for(const m of registered)if(m.userData.houseRoom===room.id){m.envMap=filtered.texture;m.userData.houseProbe.origin.copy(origin);m.envMapIntensity=m.userData.houseReflectionStrength??1;m.needsUpdate=true;}captured=true;
   }finally{for(const [m,strength] of strengths)if(!captured||m.userData.houseRoom!==room.id)m.envMapIntensity=strength;scene.background=saved.background;renderer.setClearColor(saved.clear,saved.alpha);renderer.toneMapping=saved.tone;renderer.toneMappingExposure=saved.exposure;renderer.shadowMap.autoUpdate=saved.shadow;renderer.setRenderTarget(saved.target);rt.dispose();capturing=false;}
  }
+ const pending=new Set();
+ function installStatic(room,texture,revision){
+  if(!texture||state.revision!==revision||!options.staticLighting?.active)return;
+  const filtered=pmrem.fromEquirectangular(texture),old=cache.get(room.id);if(old)old.target.dispose();cache.set(room.id,{target:filtered,revision:state.revision,source:'Blender Cycles static'});
+  for(const m of registered)if(m.userData.houseRoom===room.id){m.envMap=filtered.texture;m.envMapIntensity=m.userData.houseReflectionStrength??1;m.needsUpdate=true;}state.captures++;state.reflectionSource='Blender Cycles static bases + PMREM';
+ }
  function prepare(camera,mode,ready){
-  const enabled=state.effective!=='light'&&mode==='walk';composite.houseAOEnabled.value=enabled&&state.ao?1:0;
+  const enabled=state.effective!=='light'&&mode==='walk';composite.houseAOEnabled.value=enabled&&state.ao&&!options.staticLighting?.active?1:0;
   projection.copy(camera.projectionMatrix);matrixInverse.copy(camera.projectionMatrixInverse);lastMode=mode;
   if(!enabled){for(const m of registered)m.envMapIntensity=0;state.probeRoom=null;return;}
   if(!ready||capturing||performance.now()-dirtyAt<180)return;
   register();const x=camera.position.x+3.1,z=camera.position.z+6.25,room=rooms.find(r=>x>r.x&&x<r.x+r.w&&z>r.z&&z<r.z+r.d);if(!room)return;state.probeRoom=room.id;
   for(const m of registered)if(m.envMap&&cache.has(m.userData.houseRoom))m.envMapIntensity=m.userData.houseReflectionStrength??1;
-  const stored=cache.get(room.id);if((!stored||stored.revision!==state.revision)&&!state.reflectionError){try{capture(room);}catch(error){state.reflectionError=error.message;console.warn('Room reflection fallback:',error.message);}}
+  const stored=cache.get(room.id);state.probeReady=!!stored&&stored.revision===state.revision;if((!stored||stored.revision!==state.revision)&&!state.reflectionError){try{
+   if(options.staticLighting?.active){const revision=state.revision,key=revision+'-'+room.id;if(!pending.has(key)){pending.add(key);options.staticLighting.reflection(room.id).then(texture=>{try{installStatic(room,texture,revision);}catch(error){state.reflectionError=error.message;}finally{pending.delete(key);}}).catch(error=>{pending.delete(key);state.reflectionError=error.message;});}}
+   else{capture(room);state.reflectionSource='dynamic scene capture';}
+  }catch(error){state.reflectionError=error.message;console.warn('Room reflection fallback:',error.message);}}
  }
  function occlusion(){if(!composite.houseAOEnabled.value)return;renderer.setRenderTarget(aoTarget);renderer.render(postScene,postCamera);}
  function resize(width,height){const scale=state.effective==='high'?.7:.5;aoSize.set(Math.max(1,Math.round(width*scale)),Math.max(1,Math.round(height*scale)));aoTarget.setSize(aoSize.x,aoSize.y);aoUniforms.pixel.value.set(1/width,1/height);composite.houseAOPixel.value.set(1/aoSize.x,1/aoSize.y);}
  $('renderQuality').onchange=apply;apply();
- return {prepare,occlusion,resize,invalidate,get diagnostics(){return {...state,hdrSupported,depthSupported,screenAOAllowed,aoPolicy:mobile?'mobile-baked-shadows':screenAOAllowed?'highp-screen-depth':'precision-or-extension-fallback',depthTextureAttached:!!sourceTarget.depthTexture,shaderPrecision:renderer.capabilities.precision,aoSize:aoSize.toArray(),samples:aoUniforms.sampleCount.value,probeResolution:mobile?64:128,cachedRooms:[...cache.keys()],materials:registered.size,mode:lastMode,reflection:'Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes',pathTracing:false};}};
+ return {prepare,occlusion,resize,invalidate,get diagnostics(){return {...state,hdrSupported,depthSupported,screenAOAllowed,aoPolicy:mobile?'mobile-baked-shadows':screenAOAllowed?'highp-screen-depth':'precision-or-extension-fallback',depthTextureAttached:!!sourceTarget.depthTexture,shaderPrecision:renderer.capabilities.precision,aoSize:aoSize.toArray(),samples:aoUniforms.sampleCount.value,probeResolution:mobile?64:128,cachedRooms:[...cache.keys()],materials:registered.size,mode:lastMode,activeAO:options.staticLighting?.active?'Cycles baked AO':state.ao?'screen-depth AO':'compatible shadows',reflection:'Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes',pathTracing:false};}};
 }
