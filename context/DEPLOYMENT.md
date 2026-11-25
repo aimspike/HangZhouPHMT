@@ -1,5 +1,13 @@
 # 发布信息
 
+## Feature 分支独立预览（2026-11-25）
+
+`feature/render-quality` 的画质开发页使用 `/preview/render-quality/`，报告位于其下 `quality-report/`。工作流同时检出 release、main 和存在时的该 feature 分支，组合部署三个入口；正式根页面仍逐字节取自 release，main 预览仍取自 main。
+
+画质功能无需合入 main 即可供评审。main 只先接入分支预览的部署脚本、工作流与隔离测试，后续任一入口更新时都保留 feature 预览。feature 使用 `house89a.preview.render-quality.settings.v1.` 命名空间与 noindex 标记，和 main、正式版设置分别保存。每个入口的 `deployment.json` 可核对分支及完整提交号。
+
+`github-pages` environment 的部署分支规则需要允许精确的 `feature/render-quality`；不扩大为任意分支。若该 feature 分支尚不存在，则只部署原有两个入口。发布验证运行 `python -m unittest discover -s validation -p test_pages_assembly.py -v`，含 feature 隔离、非法路径与提交号拒绝检查。
+
 - 仓库：https://github.com/aimspike/HangZhouPHMT
 - 展示：https://aimspike.github.io/HangZhouPHMT/
 - GitHub Pages：GitHub Actions 合并部署，根目录使用 `release:/docs`，开发测试使用 `main:/docs`，HTTPS。

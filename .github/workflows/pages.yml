@@ -1,8 +1,8 @@
-name: Publish release and main preview
+name: Publish release and isolated previews
 
 on:
   push:
-    branches: [main, release]
+    branches: [main, release, feature/render-quality]
   workflow_dispatch:
 
 permissions:
@@ -28,16 +28,35 @@ jobs:
           ref: main
           path: main
           persist-credentials: false
+      - name: Detect render quality feature
+        id: feature
+        shell: bash
+        run: |
+          refs=$(git ls-remote --heads https://github.com/${{ github.repository }}.git refs/heads/feature/render-quality)
+          if [ -n "$refs" ]; then echo 'exists=true' >> "$GITHUB_OUTPUT"; fi
+      - name: Check out render quality feature
+        if: steps.feature.outputs.exists == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: feature/render-quality
+          path: render-quality
+          persist-credentials: false
       - name: Validate site assembly
         run: python3 -m unittest discover -s main/validation -p test_pages_assembly.py -v
-      - name: Assemble release and preview
+      - name: Assemble release and previews
+        env:
+          HAS_QUALITY_FEATURE: ${{ steps.feature.outputs.exists }}
         run: |
+          extra=()
+          if [ "$HAS_QUALITY_FEATURE" = true ]; then
+            extra=(--feature render-quality render-quality "$(git -C render-quality rev-parse HEAD)")
+          fi
           python3 main/scripts/assemble_pages.py \
             --release-root release \
             --main-root main \
             --output _site \
             --release-sha "$(git -C release rev-parse HEAD)" \
-            --main-sha "$(git -C main rev-parse HEAD)"
+            --main-sha "$(git -C main rev-parse HEAD)" "${extra[@]}"
       - name: Upload Pages site
         uses: actions/upload-pages-artifact@v4
         with:

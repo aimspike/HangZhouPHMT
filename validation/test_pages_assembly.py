@@ -84,6 +84,27 @@ class PagesAssemblyTests(unittest.TestCase):
             self.assemble()
         self.assertFalse(self.output.exists())
 
+    def test_feature_isolated_from_release_and_main(self):
+        feature = self.root / 'feature'
+        (feature / 'docs').mkdir(parents=True)
+        (feature / 'docs/index.html').write_text((self.main / 'docs/index.html').read_text().replace('development', 'quality'), encoding='utf-8')
+        PAGES.assemble_site(self.release, self.main, self.output, 'a'*40, 'b'*40, [('render-quality', feature, 'c'*40)])
+        html = (self.output / 'preview/render-quality/index.html').read_text(encoding='utf-8')
+        self.assertIn('house89a.preview.render-quality.settings.v1.', html)
+        self.assertIn('[render-quality 测试]', html)
+        self.assertEqual(json.loads((self.output/'preview/render-quality/deployment.json').read_text()), {'branch':'feature/render-quality','commit':'c'*40})
+        self.assertEqual((self.output/'index.html').read_bytes(), (self.release/'docs/index.html').read_bytes())
+        self.assertNotIn('render-quality', (self.output/'preview/main/index.html').read_text())
+
+    def test_unsafe_feature_or_invalid_feature_fails_before_writing(self):
+        for slug in ('../release', 'main', 'Feature'):
+            with self.assertRaises(ValueError):
+                PAGES.assemble_site(self.release, self.main, self.output, 'a'*40, 'b'*40, [(slug, self.main, 'c'*40)])
+            self.assertFalse(self.output.exists())
+        with self.assertRaises(ValueError):
+            PAGES.assemble_site(self.release, self.main, self.output, 'a'*40, 'b'*40, [('render-quality', self.main, 'invalid')])
+        self.assertFalse(self.output.exists())
+
 
 if __name__ == '__main__':
     unittest.main()
