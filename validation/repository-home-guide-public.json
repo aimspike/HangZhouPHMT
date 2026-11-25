@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-11-25T10:34:23.512Z",
+  "scope": "Actual public GitHub main branch page, desktop/mobile browser viewports; default release homepage intentionally unchanged",
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "title": "杭州 · 璞荟铭庭",
+      "lead": "先在手机里，逛一遍自己的家。",
+      "headings": [
+        "第一次打开，先这样逛",
+        "看得顺手，欢迎一起支持",
+        "先看一遍，再跟着试",
+        "这张图，留着边看边试",
+        "找到喜欢的样子，存下来一起聊",
+        "遇到显示问题，再来这里"
+      ],
+      "orderedSteps": 3,
+      "tables": 0,
+      "images": [
+        {
+          "alt": "微信赞赏码，头像已模糊处理",
+          "loaded": true,
+          "width": 240
+        },
+        {
+          "alt": "点开一分钟看房演示，跟着转户型、逛房间",
+          "loaded": true,
+          "width": 300
+        },
+        {
+          "alt": "看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配",
+          "loaded": true,
+          "width": 800
+        }
+      ],
+      "articleWidth": 838,
+      "articleScrollWidth": 838,
+      "videoLinks": 2,
+      "maintenanceLink": true,
+      "productionDetailWords": []
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "杭州 · 璞荟铭庭",
+      "lead": "先在手机里，逛一遍自己的家。",
+      "headings": [
+        "第一次打开，先这样逛",
+        "看得顺手，欢迎一起支持",
+        "先看一遍，再跟着试",
+        "这张图，留着边看边试",
+        "找到喜欢的样子，存下来一起聊",
+        "遇到显示问题，再来这里"
+      ],
+      "orderedSteps": 3,
+      "tables": 0,
+      "images": [
+        {
+          "alt": "微信赞赏码，头像已模糊处理",
+          "loaded": true,
+          "width": 240
+        },
+        {
+          "alt": "点开一分钟看房演示，跟着转户型、逛房间",
+          "loaded": true,
+          "width": 300
+        },
+        {
+          "alt": "看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配",
+          "loaded": true,
+          "width": 324
+        }
+      ],
+      "articleWidth": 324,
+      "articleScrollWidth": 324,
+      "videoLinks": 2,
+      "maintenanceLink": true,
+      "productionDetailWords": []
+    }
+  ],
+  "publicSourceMatches": true,
+  "previewDeployment": {
+    "branch": "main",
+    "commit": "fff0376c9c2ee54494fcd17a4c02f12ea1e11983"
+  },
+  "releaseDeployment": {
+    "branch": "release",
+    "commit": "7b53b23568d18550822fbf98fb5f42e5cda60487"
+  },
+  "result": "passed"
+}

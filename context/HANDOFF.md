@@ -8,6 +8,10 @@
 
 检查保留原有17类链接目的地、14处本地相对路径有效；GitHub GFM渲染在1280×900、390×844及320×740三视口无横向溢出，三张图片全部加载。独立浏览器上下文在正式看房页按文案核对三维放大/重置、平面/室内、阳台/四时段/关灯、装修切换、设置分组和相机预览，均与指引一致。证据`validation/repository-home-guide.json`；本地预览与截图在`work/home-guide/`。模拟操作不作为物理手机验证。
 
+实际远程默认分支经`git ls-remote --symref origin HEAD`及GitHub API核对为`release`，所以仓库根首页仍显示release中的旧首页；main文案提交为`fff0376`。用户明确选择“先保留在main，等正式发布时同步”，本轮不得为更新根首页单独推送release或更改默认分支。查看新文案使用`https://github.com/aimspike/HangZhouPHMT/tree/main`；根README同步注明此区别。
+
+main分支实际GitHub页面的桌面/390移动视口已确认新开头、三步指引、无功能表格及制作细节，3图正常、正文无横向溢出，公开Markdown与本地一致，测试部署SHA为`fff0376`，release仍`7b53b23`。记录`validation/repository-home-guide-public.json`，实际页面截图在`work/home-guide/github-guide-*.png`。
+
 ## 入户门框、冰箱、油烟机与窗帘复核（2026-11-25）
 
 主干修正四项用户目视反馈。入户门原始门洞从 z=2.90m 开始，但厨房横墙延续至约 2.98m，门框合页侧被吞入墙中；现在从实际墙体求露明边并留 2mm 装配余量，门套与门扇按可用开口装配，偏置合页避免开门擦墙。原始墙线和门洞未改，`doorClosure()` 仍扫描完整原始开口，入户门将横墙实心返回作为合法封闭面；不是跳过被遮住的采样区。

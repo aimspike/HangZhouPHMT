@@ -25,7 +25,7 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 | [context/DEPLOYMENT.md](context/DEPLOYMENT.md#分支与发布流程) | main / release 发布流程与部署记录 |
 | [context/DEVELOPMENT.md](context/DEVELOPMENT.md) | 开发细节与版本记录 |
 
-GitHub 优先展示 `.github/README.md`；本文件保留在根目录，供项目维护使用。开始任务前先阅读 `AGENTS.md`、`context/HANDOFF.md`、`context/REQUIREMENTS.md` 和本文件。历史记录中的旧目录、默认值及发布规则以当前指引为准。
+GitHub 优先展示所浏览分支的 `.github/README.md`；仓库根首页采用默认分支，当前为 `release`。`main` 中新版看房引导按用户选择保留待发布，正式发布时再同步到根首页。本文件保留在根目录，供项目维护使用。开始任务前先阅读 `AGENTS.md`、`context/HANDOFF.md`、`context/REQUIREMENTS.md` 和本文件。历史记录中的旧目录、默认值及发布规则以当前指引为准。
 
 ## 工程结构
 
