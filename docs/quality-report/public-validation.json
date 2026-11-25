@@ -1,0 +1,372 @@
+{
+  "checkedAt": "2026-11-25T02:41:26.296Z",
+  "scope": "Public content plus PC Chrome, mobile Chrome and Windows WebKit with WeChat UA; not physical phone verification",
+  "entries": [
+    {
+      "branch": "release",
+      "commit": "102bb16876141e85c874bfb446d5062279172f02",
+      "url": "https://aimspike.github.io/HangZhouPHMT/",
+      "htmlSha256": "5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9",
+      "matchesGit": true
+    },
+    {
+      "branch": "main",
+      "commit": "7b53b23568d18550822fbf98fb5f42e5cda60487",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+      "htmlSha256": "6f1acb0db0cbf99a192f5b35946b126edc6291b4f55a1f31b4bf64ee7898260c",
+      "matchesGit": true
+    },
+    {
+      "branch": "feature/render-quality",
+      "commit": "da9079bf6b8bbdbe88fbaf22cfbb500b1c42889b",
+      "url": "https://aimspike.github.io/HangZhouPHMT/preview/render-quality/",
+      "htmlSha256": "65c6252a8437a0b89f6f4facab19e4d4bc2e70c72558689a7efdfe39fd01573f",
+      "matchesGit": true
+    }
+  ],
+  "cases": [
+    {
+      "engine": "chromium",
+      "mobile": false,
+      "state": {
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            1920,
+            1200
+          ],
+          "viewport": [
+            1280,
+            800
+          ],
+          "shaderCount": 140,
+          "drawCalls": 361
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "high",
+          "ao": true,
+          "probeRoom": "living",
+          "captures": 1,
+          "revision": 23,
+          "reflectionError": null,
+          "pixelRatio": 1.5,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 6,
+          "adaptiveResolution": false,
+          "pixelRatioBounds": [
+            1,
+            1.5
+          ],
+          "lightmapRGBA8MiB": 81.46503829956055,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": true,
+          "aoPolicy": "highp-screen-depth",
+          "depthTextureAttached": true,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1344,
+            840
+          ],
+          "samples": 20,
+          "probeResolution": 128,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "closed": true
+      },
+      "storageIsolation": true,
+      "localCheck": "awaiting-visual-check",
+      "shortSamples": [
+        {
+          "id": "bare-noon",
+          "sampleMs": 2008.8000000000466,
+          "renderedFrames": 121,
+          "observedFps": 60.23496614894325,
+          "pixelRatio": 1.5,
+          "renderSubmissionMs": 1.6933333333529945
+        },
+        {
+          "id": "bare-night",
+          "sampleMs": 2003,
+          "renderedFrames": 90,
+          "observedFps": 44.93260109835247,
+          "pixelRatio": 1.5,
+          "renderSubmissionMs": 1.4822222222470576
+        },
+        {
+          "id": "a-noon",
+          "sampleMs": 2006.6000000000931,
+          "renderedFrames": 109,
+          "observedFps": 54.32074155287299,
+          "pixelRatio": 1.5,
+          "renderSubmissionMs": 1.6866666666697712
+        },
+        {
+          "id": "a-night",
+          "sampleMs": 2016.3999999999069,
+          "renderedFrames": 121,
+          "observedFps": 60.0079349335477,
+          "pixelRatio": 1.5,
+          "renderSubmissionMs": 1.7066666666625274
+        }
+      ],
+      "effectReport": true
+    },
+    {
+      "engine": "chromium",
+      "mobile": true,
+      "state": {
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 129,
+          "drawCalls": 268
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 1,
+          "revision": 23,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "closed": true
+      },
+      "storageIsolation": true,
+      "localCheck": "awaiting-visual-check",
+      "shortSamples": [
+        {
+          "id": "bare-noon",
+          "sampleMs": 2003.8999999999069,
+          "renderedFrames": 60,
+          "observedFps": 29.941613852988066,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 1.202222222219118
+        },
+        {
+          "id": "bare-night",
+          "sampleMs": 2011.6999999999534,
+          "renderedFrames": 60,
+          "observedFps": 29.82552070388298,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 1.0644444444527228
+        },
+        {
+          "id": "a-noon",
+          "sampleMs": 2001.0999999998603,
+          "renderedFrames": 55,
+          "observedFps": 27.484883314179122,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 4.000000000005174
+        },
+        {
+          "id": "a-night",
+          "sampleMs": 2010.0999999998603,
+          "renderedFrames": 60,
+          "observedFps": 29.849261230786613,
+          "pixelRatio": 1.1,
+          "renderSubmissionMs": 1.4177777777839866
+        }
+      ],
+      "effectReport": true
+    },
+    {
+      "engine": "webkit",
+      "mobile": true,
+      "state": {
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 129,
+          "drawCalls": 268
+        },
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 1,
+          "revision": 23,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "closed": true
+      },
+      "storageIsolation": true,
+      "localCheck": "awaiting-visual-check",
+      "shortSamples": [
+        {
+          "id": "bare-noon",
+          "sampleMs": 2014,
+          "renderedFrames": 62,
+          "observedFps": 30.784508440913605,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 1.7555555555555555
+        },
+        {
+          "id": "bare-night",
+          "sampleMs": 2006,
+          "renderedFrames": 45,
+          "observedFps": 22.43270189431705,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 1.6
+        },
+        {
+          "id": "a-noon",
+          "sampleMs": 2008,
+          "renderedFrames": 62,
+          "observedFps": 30.87649402390438,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 38.28888888888889
+        },
+        {
+          "id": "a-night",
+          "sampleMs": 2002,
+          "renderedFrames": 50,
+          "observedFps": 24.975024975024976,
+          "pixelRatio": 1,
+          "renderSubmissionMs": 2.2666666666666666
+        }
+      ],
+      "effectReport": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "offline": {
+    "version": "15.0",
+    "maps": [
+      219,
+      219
+    ]
+  },
+  "result": "passed"
+}

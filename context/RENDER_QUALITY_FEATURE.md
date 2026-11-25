@@ -48,3 +48,9 @@
 实际 iPhone 与 Android 微信的画面、帧率、10 分钟发热与稳定性仍待测试。`?verify=mobile` 在设备当前浏览器采样约 2 秒的短时帧率，四场景的人工条纹结论、复制 / 下载报告功能保留；不自动上传、不覆盖保存设置、不连接云账号。
 
 用户效果评审后，再确定离线高质量光照样板与模型细化范围。T01 因真机和视觉验收尚未完成，状态为待验证。画质功能不合入 main 或 release；main 的 `7b53b23` 仅包含独立预览基础设施。
+
+## 公网交付验证
+
+功能提交 `da9079b` 已推送，GitHub Actions [45534344531](https://github.com/aimspike/HangZhouPHMT/actions/runs/45534344531) 部署成功。实际 root / main / feature 的 `deployment.json` 与对应分支一致，HTML 逐字节匹配 Git 内容与各自的测试标记 / 设置前缀。正式 HTML SHA256 仍为 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`。
+
+公开 PC Chrome、手机微信 UA、Windows WebKit iPhone 微信 UA 均通过启动、219 图、房间反射、设置隔离、本机四场景短时采样与效果报告加载；人工目视状态保持 `awaiting-visual-check`。磁盘单 HTML 离线启动也通过。公网记录为 `validation/v15-public.json`，在线报告提供 [同份记录](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/public-validation.json)。记录中的功能提交之后仅追加验证文档与脚本缓冲修正，不改变应用 HTML。

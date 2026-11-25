@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert'),crypto=require('crypto'),cp=require('child_process');
 const pw=require(process.env.PLAYWRIGHT_MODULE||'playwright'),root=path.resolve(__dirname,'..');
 const base='https://aimspike.github.io/HangZhouPHMT/',feature=base+'preview/render-quality/';
-const git=(...args)=>cp.execFileSync('git',args,{cwd:root}),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const git=(...args)=>cp.execFileSync('git',args,{cwd:root,maxBuffer:16*1024*1024}),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const report={checkedAt:new Date().toISOString(),scope:'Public content plus PC Chrome, mobile Chrome and Windows WebKit with WeChat UA; not physical phone verification',entries:[],cases:[],errors:[],external:[]};
 (async()=>{const client=await pw.request.newContext();try{
  for(const [branch,prefix,ref] of [['release','','origin/release'],['main','preview/main/','origin/main'],['feature/render-quality','preview/render-quality/','HEAD']]){

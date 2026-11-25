@@ -8,6 +8,8 @@ V15 首轮包括独立材质颜色 / 凹凸 / 粗糙度数据、基于既有建�
 
 PC / 手机视口四组前后截图和 RTX 5080 本机短时数据已采集；Chromium、Windows WebKit、HDR / depth 缺失回退、保存、家具 / 门 / 通行 / 屋顶、合成压力与反射缓存检查通过。报告明确手机模拟不是实际手机帧率；真实微信和持续热稳定性待验收。T01 维持待验证，不宣称专业效果已最终验收。
 
+功能提交 `da9079b` 的独立预览已成功部署，实际三分支 HTML / metadata 与 Git 一致；公开 PC、手机 Chrome / 微信 UA、Windows WebKit / iPhone 微信 UA、四场景检测、设置隔离及磁盘离线通过，见 `validation/v15-public.json`。正式根 HTML 内容未改变；公网验证后的追加提交只记录交付证据与大 HTML 校验脚本缓冲修正。
+
 ## 当前分支规则（2026-11-24）
 
 `main` 为开发分支，`release` 为正式发布分支。正式展示根网址始终取 `release/docs`；main 测试链接为 `https://aimspike.github.io/HangZhouPHMT/preview/main/`。修改完成后验证并推送 main、检查测试部署；只有用户要求正式发布时，才将已验证 main 快进合入 release。此规则覆盖下方历史条目中“推送 main 即发布正式版”的流程。
