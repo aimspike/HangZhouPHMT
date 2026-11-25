@@ -1,0 +1,487 @@
+{
+  "scope": "Embedded asset WebGL1 close-ups in fixed neutral inspection lighting; PC high and touch/WeChat mobile LOD. Not room lighting or physical phone verification",
+  "cases": [
+    {
+      "version": "16.0",
+      "htmlSha256": "24fe8b38eee22b00c7effb7134c7aba5efeb72d90fd7e7d073194eebb77b3e7e",
+      "authoringScriptSha256": "d3131e711da55c65f4b0a281d4686ce35b4a3aee1c6fe1e049bfd129b5c8c484",
+      "stage": "before",
+      "device": "pc",
+      "url": "http://127.0.0.1:8883/work/seams/before.html",
+      "shots": [
+        {
+          "id": "sofa",
+          "model": "sofa",
+          "position": [
+            2.3,
+            1.4,
+            -1.95
+          ],
+          "target": [
+            0.8,
+            0.55,
+            0.02
+          ],
+          "fov": 38,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 46992,
+          "file": "before-pc-sofa.png"
+        },
+        {
+          "id": "sink",
+          "model": "kitchen-north",
+          "position": [
+            0.88,
+            1.6,
+            1.03
+          ],
+          "target": [
+            0,
+            0.84,
+            0
+          ],
+          "fov": 44,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 2700,
+          "file": "before-pc-sink.png"
+        },
+        {
+          "id": "quilt",
+          "model": "master-bed",
+          "position": [
+            1.55,
+            0.86,
+            1.6
+          ],
+          "target": [
+            0.43,
+            0.53,
+            0.53
+          ],
+          "fov": 34,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 17868,
+          "file": "before-pc-quilt.png"
+        },
+        {
+          "id": "shade",
+          "model": "pendant",
+          "position": [
+            0.48,
+            1.97,
+            0.43
+          ],
+          "target": [
+            0,
+            2.29,
+            0
+          ],
+          "fov": 48,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 3136,
+          "file": "before-pc-shade.png"
+        },
+        {
+          "id": "tube",
+          "model": "chair",
+          "position": [
+            0.58,
+            0.37,
+            -0.65
+          ],
+          "target": [
+            0.17,
+            0.45,
+            -0.06
+          ],
+          "fov": 38,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 7004,
+          "file": "before-pc-tube.png"
+        }
+      ]
+    },
+    {
+      "version": "16.1",
+      "htmlSha256": "bf68d9fcbaf6082446157d550f2448c1d56119eecf25de2c47b7dcf68543c99a",
+      "authoringScriptSha256": "4650f8f3ad9fadd3b20b0a63503acff3e67f13f10c3fec7cf7ac34da7de80d1a",
+      "stage": "after",
+      "device": "pc",
+      "url": "http://127.0.0.1:8883/docs/",
+      "shots": [
+        {
+          "id": "sofa",
+          "model": "sofa",
+          "position": [
+            2.3,
+            1.4,
+            -1.95
+          ],
+          "target": [
+            0.8,
+            0.55,
+            0.02
+          ],
+          "fov": 38,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 47272,
+          "file": "after-pc-sofa.png"
+        },
+        {
+          "id": "sink",
+          "model": "kitchen-north",
+          "position": [
+            0.88,
+            1.6,
+            1.03
+          ],
+          "target": [
+            0,
+            0.84,
+            0
+          ],
+          "fov": 44,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 3112,
+          "file": "after-pc-sink.png"
+        },
+        {
+          "id": "quilt",
+          "model": "master-bed",
+          "position": [
+            1.55,
+            0.86,
+            1.6
+          ],
+          "target": [
+            0.43,
+            0.53,
+            0.53
+          ],
+          "fov": 34,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 18188,
+          "file": "after-pc-quilt.png"
+        },
+        {
+          "id": "shade",
+          "model": "pendant",
+          "position": [
+            0.48,
+            1.97,
+            0.43
+          ],
+          "target": [
+            0,
+            2.29,
+            0
+          ],
+          "fov": 48,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 3468,
+          "file": "after-pc-shade.png"
+        },
+        {
+          "id": "tube",
+          "model": "chair",
+          "position": [
+            0.58,
+            0.37,
+            -0.65
+          ],
+          "target": [
+            0.17,
+            0.45,
+            -0.06
+          ],
+          "fov": 38,
+          "lod": "high",
+          "canvas": [
+            1100,
+            800
+          ],
+          "triangles": 7064,
+          "file": "after-pc-tube.png"
+        }
+      ]
+    },
+    {
+      "version": "16.0",
+      "htmlSha256": "24fe8b38eee22b00c7effb7134c7aba5efeb72d90fd7e7d073194eebb77b3e7e",
+      "authoringScriptSha256": "d3131e711da55c65f4b0a281d4686ce35b4a3aee1c6fe1e049bfd129b5c8c484",
+      "stage": "before",
+      "device": "mobile",
+      "url": "http://127.0.0.1:8883/work/seams/before.html",
+      "shots": [
+        {
+          "id": "sofa",
+          "model": "sofa",
+          "position": [
+            2.3,
+            1.4,
+            -1.95
+          ],
+          "target": [
+            0.8,
+            0.55,
+            0.02
+          ],
+          "fov": 38,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 21544,
+          "file": "before-mobile-sofa.png"
+        },
+        {
+          "id": "sink",
+          "model": "kitchen-north",
+          "position": [
+            0.88,
+            1.6,
+            1.03
+          ],
+          "target": [
+            0,
+            0.84,
+            0
+          ],
+          "fov": 44,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 2700,
+          "file": "before-mobile-sink.png"
+        },
+        {
+          "id": "quilt",
+          "model": "master-bed",
+          "position": [
+            1.55,
+            0.86,
+            1.6
+          ],
+          "target": [
+            0.43,
+            0.53,
+            0.53
+          ],
+          "fov": 34,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 9048,
+          "file": "before-mobile-quilt.png"
+        },
+        {
+          "id": "shade",
+          "model": "pendant",
+          "position": [
+            0.48,
+            1.97,
+            0.43
+          ],
+          "target": [
+            0,
+            2.29,
+            0
+          ],
+          "fov": 48,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 1682,
+          "file": "before-mobile-shade.png"
+        },
+        {
+          "id": "tube",
+          "model": "chair",
+          "position": [
+            0.58,
+            0.37,
+            -0.65
+          ],
+          "target": [
+            0.17,
+            0.45,
+            -0.06
+          ],
+          "fov": 38,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 4106,
+          "file": "before-mobile-tube.png"
+        }
+      ]
+    },
+    {
+      "version": "16.1",
+      "htmlSha256": "bf68d9fcbaf6082446157d550f2448c1d56119eecf25de2c47b7dcf68543c99a",
+      "authoringScriptSha256": "4650f8f3ad9fadd3b20b0a63503acff3e67f13f10c3fec7cf7ac34da7de80d1a",
+      "stage": "after",
+      "device": "mobile",
+      "url": "http://127.0.0.1:8883/docs/",
+      "shots": [
+        {
+          "id": "sofa",
+          "model": "sofa",
+          "position": [
+            2.3,
+            1.4,
+            -1.95
+          ],
+          "target": [
+            0.8,
+            0.55,
+            0.02
+          ],
+          "fov": 38,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 21688,
+          "file": "after-mobile-sofa.png"
+        },
+        {
+          "id": "sink",
+          "model": "kitchen-north",
+          "position": [
+            0.88,
+            1.6,
+            1.03
+          ],
+          "target": [
+            0,
+            0.84,
+            0
+          ],
+          "fov": 44,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 2812,
+          "file": "after-mobile-sink.png"
+        },
+        {
+          "id": "quilt",
+          "model": "master-bed",
+          "position": [
+            1.55,
+            0.86,
+            1.6
+          ],
+          "target": [
+            0.43,
+            0.53,
+            0.53
+          ],
+          "fov": 34,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 9132,
+          "file": "after-mobile-quilt.png"
+        },
+        {
+          "id": "shade",
+          "model": "pendant",
+          "position": [
+            0.48,
+            1.97,
+            0.43
+          ],
+          "target": [
+            0,
+            2.29,
+            0
+          ],
+          "fov": 48,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 1800,
+          "file": "after-mobile-shade.png"
+        },
+        {
+          "id": "tube",
+          "model": "chair",
+          "position": [
+            0.58,
+            0.37,
+            -0.65
+          ],
+          "target": [
+            0.17,
+            0.45,
+            -0.06
+          ],
+          "fov": 38,
+          "lod": "mobile",
+          "canvas": [
+            585,
+            1266
+          ],
+          "triangles": 4150,
+          "file": "after-mobile-tube.png"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

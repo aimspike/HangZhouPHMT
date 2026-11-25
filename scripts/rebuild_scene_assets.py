@@ -62,46 +62,76 @@ def cube(name,p,size,mat='oak',bevel=.003,segments=3,soft=False):
     return finish(o,name,mat)
 
 def lathe(name,profile,mat='oak',segments=64):
-    # profile: radius,y-up; model centred at origin. Quads retain ring flow.
-    vertices=[];faces=[]
+    # Closed cross-section: one vertex at the axis, fans at pole transitions.
+    # Duplicating a zero-radius ring creates zero-area triangles after export.
+    vertices=[];faces=[];rings=[]
     for r,y in profile:
+        ring=[]
+        for j in range(segments if r>0 else 1):
+            a=j*2*math.pi/segments;ring.append(len(vertices));vertices.append(xyz((r*math.cos(a),y,r*math.sin(a))))
+        rings.append(ring)
+    for i,first in enumerate(rings):
+        second=rings[(i+1)%len(rings)]
+        if len(first)==len(second)==1:continue
         for j in range(segments):
-            a=j*2*math.pi/segments;vertices.append(xyz((r*math.cos(a),y,r*math.sin(a))))
-    for i in range(len(profile)-1):
-        for j in range(segments):
-            a=i*segments+j;b=i*segments+(j+1)%segments;faces.append((a,b,b+segments,a+segments))
+            k=(j+1)%segments
+            if len(first)==1:faces.append((first[0],second[k],second[j]))
+            elif len(second)==1:faces.append((first[j],first[k],second[0]))
+            else:faces.append((first[j],first[k],second[k],second[j]))
     mesh=bpy.data.meshes.new(name);mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new(name,mesh);scene.collection.objects.link(o);return finish(o,name,mat)
 
-def tube(name,points,radius=.012,mat='chrome',closed=False):
-    c=bpy.data.curves.new(name,'CURVE');c.dimensions='3D';c.resolution_u=8;c.bevel_depth=radius;c.bevel_resolution=2;c.resolution_u=8
-    spline=c.splines.new('BEZIER');spline.bezier_points.add(len(points)-1)
-    for b,p in zip(spline.bezier_points,points):b.co=xyz(p);b.handle_left_type=b.handle_right_type='AUTO'
-    spline.use_cyclic_u=closed;o=bpy.data.objects.new(name,c);scene.collection.objects.link(o);bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH');o.select_set(False);return finish(o,name,mat)
+def tube(name,points,radius=.012,mat='chrome',closed=False,surface=None):
+    c=bpy.data.curves.new(name,'CURVE');c.dimensions='3D';c.resolution_u=8;c.bevel_depth=radius;c.bevel_resolution=2;c.use_fill_caps=True
+    if surface is not None:
+        # Stitch onto the evaluated cushion, including its bevel/subdivision.
+        # Fixed segment budget replaces the old interpolated floating outline.
+        bpy.context.view_layer.update();dg=bpy.context.evaluated_depsgraph_get();bvh=BVHTree.FromObject(surface,dg)
+        inverse=surface.matrix_world.inverted();normal_matrix=surface.matrix_world.to_3x3().inverted().transposed()
+        path=[Vector(xyz(p)) for p in points];segments=list(zip(path,path[1:]+path[:1])) if closed else list(zip(path,path[1:]))
+        lengths=[(b-a).length for a,b in segments];total=sum(lengths);steps=len(segments)*8;projected=[]
+        for j in range(steps if closed else steps+1):
+            distance=total*j/steps;k=0
+            while k<len(lengths)-1 and distance>lengths[k]:distance-=lengths[k];k+=1
+            candidate=segments[k][0].lerp(segments[k][1],distance/lengths[k]);hit,normal,_,_=bvh.find_nearest(inverse@candidate)
+            if hit is None:raise RuntimeError(f'Cannot attach {name} to {surface.name}')
+            projected.append(surface.matrix_world@hit+(normal_matrix@normal).normalized()*radius*.2)
+        spline=c.splines.new('POLY');spline.points.add(len(projected)-1)
+        for b,p in zip(spline.points,projected):b.co=(*p,1)
+    else:
+        spline=c.splines.new('BEZIER');spline.bezier_points.add(len(points)-1)
+        for b,p in zip(spline.bezier_points,points):b.co=xyz(p);b.handle_left_type=b.handle_right_type='AUTO'
+    spline.use_cyclic_u=closed;o=bpy.data.objects.new(name,c);scene.collection.objects.link(o);bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH');o.select_set(False)
+    # Blender converts curve caps with duplicate ring vertices. Weld the actual
+    # joint so caps remain attached through decimation and quantization.
+    bm=bmesh.new();bm.from_mesh(o.data);bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-7);bm.to_mesh(o.data);bm.free()
+    result=finish(o,name,mat)
+    if surface is not None:result['sewn_surface']=surface.name;result['sewn_radius']=radius
+    return result
 
 def move(o,p):o.location+=Vector(xyz(p));return o
 
-def seam(name,cx,y,cz,w,d,mat='seam'):
+def seam(name,cx,y,cz,w,d,mat='seam',surface=None):
     r=min(.055,w*.12,d*.12);points=[]
     for x,z,start in [(cx+w/2-r,cz+d/2-r,0),(cx-w/2+r,cz+d/2-r,90),(cx-w/2+r,cz-d/2+r,180),(cx+w/2-r,cz-d/2+r,270)]:
         for j in range(4):
             a=math.radians(start+j*30);points.append((x+r*math.cos(a),y,z+r*math.sin(a)))
-    return tube(name,points,.0014,mat,True)
+    return tube(name,points,.0014,mat,True,surface)
 
 current='sofa'
 # Bent tubular base, visible side frames and separate upholstered cushions.
 for x in [-1.02,1.02]:
-    tube('continuous chromed sled frame',[(x,.055,-.31),(x,.055,.29),(x,.1,.34),(x,.48,.34),(x,.525,.25),(x,.525,-.29),(x,.47,-.35),(x,.12,-.35)],.014,'chrome')
+    tube('continuous chromed sled frame',[(x,.055,-.31),(x,.055,.29),(x,.1,.34),(x,.48,.34),(x,.525,.25),(x,.525,-.29),(x,.47,-.35),(x,.12,-.35)],.014,'chrome',True)
 for z in [-.29,.28]:tube('cross member',[(-1.02,.15,z),(1.02,.15,z)],.012,'chrome')
 cube('upholstered seat support',(0,.29,0),(2.18,.18,.73),'navy',.065,6,True)
 for x in [-1.04,1.04]:
-    cube('rounded arm bolster',(x,.585,.015),(.18,.34,.79),'navy',.075,7,True)
-    seam('arm seam',x,.747,.015,.155,.72)
+    o=cube('rounded arm bolster',(x,.585,.015),(.18,.34,.79),'navy',.075,7,True)
+    seam('arm seam',x,.747,.015,.155,.72,surface=o)
 for x in [-.67,0,.67]:
-    cube('seat cushion',(x,.46,-.045),(.646,.19,.65),'navy',.068,7,True)
-    seam('seat top welt',x,.546,-.045,.62,.62)
+    o=cube('seat cushion',(x,.46,-.045),(.646,.19,.65),'navy',.068,7,True)
+    seam('seat top welt',x,.546,-.045,.62,.62,surface=o)
     o=cube('compressed back cushion',(x,.745,.32),(.646,.49,.22),'navy',.085,7,True);o.rotation_euler.x=math.radians(-7)
     # Seams run around the actual cushion, keeping padding visible at the edge.
-    tube('back perimeter welt',[(x-.265,.57,.211),(x+.265,.57,.211),(x+.284,.59,.214),(x+.284,.88,.25),(x+.265,.9,.253),(x-.265,.9,.253),(x-.284,.88,.25),(x-.284,.59,.214)],.0012,'seam',True)
+    tube('back perimeter welt',[(x-.265,.57,.211),(x+.265,.57,.211),(x+.284,.59,.214),(x+.284,.88,.25),(x+.265,.9,.253),(x-.265,.9,.253),(x-.284,.88,.25),(x-.284,.59,.214)],.0012,'seam',True,o)
 for x,mat,tilt in [(-.79,'mustard',-.16),(.79,'linen',.18)]:
     o=cube('loose scatter pillow',(x,.73,.13),(.34,.33,.13),mat,.064,6,True);o.rotation_euler.y=tilt
 
@@ -132,8 +162,8 @@ lathe('turned pedestal',[(0,.035),(.19,.035),(.2,.06),(.19,.1),(.11,.25),(.09,.5
 lathe('chromed flared foot',[(0,.02),(.29,.02),(.31,.029),(.31,.045),(.29,.055),(0,.055)],'chrome',64)
 
 current='chair'
-cube('seat cushion',(0,.45,0),(.43,.075,.43),'linen',.032,5,True)
-seam('seat piping',0,.487,0,.4,.4,'linen')
+o=cube('seat cushion',(0,.45,0),(.43,.075,.43),'linen',.032,5,True)
+seam('seat piping',0,.487,0,.4,.4,'linen',o)
 # A bowed plywood back is a genuinely curved panel, not a scaled box.
 verts=[];faces=[];steps=24
 for thickness in [-.008,.008]:
@@ -166,11 +196,12 @@ def make_bed(id,w,l,cover,head):
     global current
     current=id
     cube('veneered bed frame',(0,.24,0),(w,.22,l),'oak',.016,3)
-    cube('mattress',(0,.415,0),(w-.02,.2,l-.035),'white',.045,5,True)
-    seam('mattress top piping',0,.506,0,w-.035,l-.05,'linen')
-    cube('upholstered headboard',(0,.67,-l/2+.055),(w+.03,1.04,.11),head,.045,5,True)
-    for x in [-w/6,w/6]:tube('headboard seam',[(x,.28,-l/2+.112),(x,1.08,-l/2+.112)],.0014,'seam')
-    # Duvet has a closed, folded edge and a gridded hanging top surface.
+    o=cube('mattress',(0,.415,0),(w-.02,.2,l-.035),'white',.045,5,True)
+    seam('mattress top piping',0,.506,0,w-.035,l-.05,'linen',o)
+    o=cube('upholstered headboard',(0,.67,-l/2+.055),(w+.03,1.04,.11),head,.045,5,True)
+    for x in [-w/6,w/6]:tube('headboard seam',[(x,.28,-l/2+.112),(x,1.08,-l/2+.112)],.0014,'seam',surface=o)
+    # Continuous quilt shell. The rim uses the very same perimeter vertices as
+    # the top and underside, rather than overlapping an unrelated rounded box.
     width=w-.035;length=l*.68;nx,nz=24,30;v=[];f=[]
     for j in range(nz+1):
         z=-length/2+length*j/nz+.18
@@ -180,11 +211,15 @@ def make_bed(id,w,l,cover,head):
             v.append(xyz((x,y,z)))
     for j in range(nz):
         for i in range(nx):a=j*(nx+1)+i;f.append((a+nx+1,a+nx+2,a+1,a))
-    mesh=bpy.data.meshes.new('quilt');mesh.from_pydata(v,[],f);mesh.update();o=bpy.data.objects.new('duvet',mesh);scene.collection.objects.link(o);finish(o,'folded quilt surface',cover)
-    cube('duvet underside',(0,.568,.18),(width,.06,length),cover,.025,4,True)
+    count=len(v)
+    v.extend((x,z,.509) for x,z,y in list(v))
+    f.extend(tuple(index+count for index in reversed(face)) for face in list(f))
+    perimeter=list(range(nx+1))+[j*(nx+1)+nx for j in range(1,nz+1)]+[nz*(nx+1)+i for i in range(nx-1,-1,-1)]+[j*(nx+1) for j in range(nz-1,0,-1)]
+    for a,b in zip(perimeter,perimeter[1:]+perimeter[:1]):f.append((a,b,b+count,a+count))
+    mesh=bpy.data.meshes.new('quilt');mesh.from_pydata(v,[],f);mesh.update();o=bpy.data.objects.new('duvet',mesh);scene.collection.objects.link(o);finish(o,'closed quilt shell',cover)
     for x in [-w*.245,w*.245]:
-        cube('pillow with crown',(x,.645,-l/2+.36),(w*.43,.18,.44),'white',.075,6,True)
-        seam('pillow flange',x,.653,-l/2+.36,w*.42,.43,'linen')
+        o=cube('pillow with crown',(x,.645,-l/2+.36),(w*.43,.18,.44),'white',.075,6,True)
+        seam('pillow flange',x,.653,-l/2+.36,w*.42,.43,'linen',o)
     for x in [-w/2+.1,w/2-.1]:
         for z in [-l/2+.15,l/2-.15]:
             o=lathe('recessed bed foot',[(0,0),(.014,0),(.017,.14),(0,.14)],'black',20);move(o,(x,0,z))
@@ -237,25 +272,48 @@ current='kitchen-east'
 cube('toe kick',(0,.07,-.012),(2.53,.14,.51),'black',.002)
 cube('carcass bottom',(0,.17,0),(2.53,.018,.62),'wood',.002)
 cube('stone worktop',(0,.91,.02),(2.56,.055,.67),'ceramic',.005,4)
-for x in [-1.256,1.256]:cube('side return',(x,.5,0),(.018,.66,.62),'oak',.002)
+for x in [-1.256,1.256]:cube('side return',(x,.528,0),(.018,.714,.62),'oak',.002)
+cube('carcass backing',(0,.528,-.301),(2.53,.714,.018),'wood',.002)
+cube('counter front support',(0,.866,.287),(2.51,.038,.026),'wood',.002)
 for j in range(5):
     x=-1.012+j*.506
-    cube('veneered base front',(x,.49,.317),(.495,.65,.018),'wood',.003)
+    cube('veneered base front',(x,.522,.317),(.495,.714,.018),'wood',.003)
     tube('brushed handle',[(x-.09,.72,.337),(x+.09,.72,.337)],.006,'chrome')
     if j in [0,1]:
         for yy in [.38,.6]:cube('drawer shadow joint',(x,yy,.328),(.478,.004,.003),'black',.001)
 
 current='kitchen-north'
 cube('toe kick',(0,.07,0),(1.03,.14,.49),'black',.002)
-cube('base cabinet',(0,.49,0),(1.03,.64,.59),'oak',.004)
+cube('carcass bottom',(0,.179,0),(1.03,.018,.59),'oak',.002)
+for x in [-.506,.506]:cube('cabinet end',(x,.532,0),(.018,.706,.59),'oak',.002)
+cube('cabinet back',(0,.532,-.286),(.994,.706,.018),'oak',.002)
+cube('counter front support',(0,.866,.275),(.994,.038,.026),'oak',.002)
 # Four counter strips leave a real sink opening.
 for x in [-.46,.46]:cube('counter end',(x,.91,0),(.14,.055,.63),'ceramic',.004)
 for z in [-.25,.25]:cube('counter rail',(0,.91,z),(.8,.055,.13),'ceramic',.004)
-cube('sink bottom',(0,.79,0),(.56,.015,.32),'chrome',.015)
-for x in [-.28,.28]:cube('sink side',(x,.85,0),(.012,.12,.34),'chrome',.005)
-for z in [-.17,.17]:cube('sink side',(0,.85,z),(.56,.12,.012),'chrome',.005)
+# One watertight vessel with a continuous inset lip. Its flange covers the
+# .78 x .37 m counter opening by >=18 mm, including the rounded corners.
+def sink_vessel():
+    vertices=[];rings=[];faces=[];segments=8
+    for halfx,halfz,radius,y in [(.412,.208,.025,.936),(.412,.208,.025,.942),(.36,.157,.035,.942),(.348,.145,.035,.925),(.30,.12,.035,.802),(.29,.11,.035,.795),(.29,.11,.035,.787),(.307,.127,.035,.787),(.356,.153,.035,.923)]:
+        ring=[]
+        for cx,cz,start in [(halfx-radius,halfz-radius,0),(-halfx+radius,halfz-radius,90),(-halfx+radius,-halfz+radius,180),(halfx-radius,-halfz+radius,270)]:
+            for j in range(segments):
+                a=math.radians(start+j*90/segments);ring.append(len(vertices));vertices.append(xyz((cx+radius*math.cos(a),y,cz+radius*math.sin(a))))
+        rings.append(ring)
+    n=len(rings[0])
+    # The interior and exterior bottoms are disks, joined around their edges.
+    for i in range(len(rings)-1):
+        if i==5:continue
+        for j in range(n):k=(j+1)%n;faces.append((rings[i][j],rings[i][k],rings[i+1][k],rings[i+1][j]))
+    for j in range(n):k=(j+1)%n;faces.append((rings[-1][j],rings[-1][k],rings[0][k],rings[0][j]))
+    for index in [5,6]:
+        centre=len(vertices);vertices.append(xyz((0,[.795,.787][index-5],0)))
+        for j in range(n):faces.append((centre,rings[index][j],rings[index][(j+1)%n]))
+    mesh=bpy.data.meshes.new('continuous sink vessel');mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new('sink',mesh);scene.collection.objects.link(o);finish(o,'flanged sink vessel','chrome')
+sink_vessel()
 for x in [-.26,.26]:
-    cube('cabinet door',(x,.5,.305),(.502,.63,.018),'wood',.003)
+    cube('cabinet door',(x,.53,.305),(.502,.69,.018),'wood',.003)
     tube('cabinet pull',[(x-.07,.72,.327),(x+.07,.72,.327)],.005,'chrome')
 
 current='study-desk'
@@ -309,12 +367,19 @@ for model,objects in models.items():
 
 scene['asset_pipeline']='Reference-A measured metre-scale authoring; packaged PBR, offline AO and separate high/mobile LOD'
 scene['architecture']='No walls or door openings modified'
+bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'reference-a-master.blend'),compress=True)
 
 def encode(objects,light):
-    buckets=defaultdict(list);dg=bpy.context.evaluated_depsgraph_get()
+    buckets=defaultdict(list);parts=defaultdict(list);dg=bpy.context.evaluated_depsgraph_get()
     for obj in objects:
         ev=obj.evaluated_get(dg);mesh=ev.to_mesh();mesh.calc_loop_triangles();uv=mesh.uv_layers.active.data
+        bm=bmesh.new();bm.from_mesh(mesh)
+        boundary=sum(e.is_boundary for e in bm.edges);nonmanifold=sum(not e.is_manifold for e in bm.edges)
+        degenerate=sum(p.calc_area()<1e-13 for p in bm.faces)
+        if boundary or nonmanifold or degenerate:
+            raise RuntimeError(f'{obj.name}: {boundary} boundary / {nonmanifold} nonmanifold edges / {degenerate} degenerate faces in {"mobile" if light else "high"}')
+        bm.free()
         # Retain authored normals and UV seams in the indexed vertex key.
         material=obj.data.materials[0].name
         rows=[]
@@ -323,11 +388,17 @@ def encode(objects,light):
                 co=obj.matrix_world@mesh.vertices[mesh.loops[loop].vertex_index].co
                 normal=obj.matrix_world.to_3x3().inverted().transposed()@mesh.corner_normals[loop].vector;normal.normalize()
                 rows.append((co.x,co.z,-co.y,normal.x,normal.z,-normal.y,*uv[loop].uv))
+        part={'name':obj.name,'start':len(buckets[material]),'count':len(rows)}
+        if obj.get('sewn_surface'):part.update(surface=obj['sewn_surface'],radius=obj['sewn_radius'])
+        parts[material].append(part)
         ev.to_mesh_clear();buckets[material].extend(rows)
     result=[]
     # Offline local AO is part of the asset, independent of camera/depth precision.
     # Keep it restrained so it does not double-darken the architectural bake.
     all_rows=np.concatenate([np.array(rows,dtype=np.float32) for rows in buckets.values()])
+    # Every material uses one model-wide grid. Equal authored positions must
+    # decode identically on both sides of a material/UV boundary.
+    lo=np.round(all_rows[:,:3],6).min(axis=0);hi=np.round(all_rows[:,:3],6).max(axis=0);span=np.maximum(hi-lo,1e-6)
     bvh=BVHTree.FromPolygons([Vector((p[0],p[1],p[2])) for p in all_rows],[(i,i+1,i+2) for i in range(0,len(all_rows),3)],all_triangles=True)
     for material,rows in buckets.items():
         data=np.array(rows,dtype=np.float32)
@@ -335,7 +406,6 @@ def encode(objects,light):
         # decimator below; export itself never drops triangles arbitrarily.
         unique,indices=np.unique(np.round(data,6),axis=0,return_inverse=True)
         if len(unique)>65535:raise RuntimeError('WebGL1 16-bit mesh budget exceeded')
-        lo=unique[:,:3].min(axis=0);hi=unique[:,:3].max(axis=0);span=np.maximum(hi-lo,1e-6)
         pos=np.round((unique[:,:3]-lo)/span*65535).astype('<u2')
         normals=np.round(unique[:,3:6]*127).astype('i1')
         uvlo=unique[:,6:8].min(axis=0);uvsize=np.maximum(unique[:,6:8].max(axis=0)-uvlo,1e-6)
@@ -351,7 +421,7 @@ def encode(objects,light):
                 if hit is not None:blocked+=1-distance/.22
             ao[vertex]=int(255*(1-.32*blocked/samples))
         b64=lambda a:base64.b64encode(a.tobytes()).decode()
-        result.append({'material':material,'min':lo.tolist(),'size':span.tolist(),'position':b64(pos),'normal':b64(normals),'uvMin':uvlo.tolist(),'uvSize':uvsize.tolist(),'uv':b64(uvs),'ao':b64(ao),'index':b64(idx),'vertices':len(unique),'triangles':len(indices)//3})
+        result.append({'material':material,'min':lo.tolist(),'size':span.tolist(),'position':b64(pos),'normal':b64(normals),'uvMin':uvlo.tolist(),'uvSize':uvsize.tolist(),'uv':b64(uvs),'ao':b64(ao),'index':b64(idx),'vertices':len(unique),'triangles':len(indices)//3,'parts':parts[material]})
     return result
 
 output={'version':1,'authoringScriptSha256':hashlib.sha256(Path(__file__).read_text(encoding='utf-8').encode()).hexdigest(),'units':'metres','coordinateSystem':'x,y-up,z-plan','source':'scripts/rebuild_scene_assets.py / reference-a-master.blend','models':{},'quality':{}}

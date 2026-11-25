@@ -2,7 +2,7 @@
 
 璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。当前版本 V14.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
 
-`feature/render-quality` 当前为 V16 家装 A 资产重建评审。V15 已按用户反馈回退；[独立重建测试页](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?decor=a) · [PC / 手机报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/) · [重建与验收状态](context/ASSET_REBUILD.md)。主要家具重建与 PBR 流程已接入，工业级整体效果和真机微信仍待验收；正式与 main 应用保留 V14.2。
+`feature/render-quality` 当前为 V16.1 家装 A 模型接缝修复评审。V15 已按用户反馈回退；[独立重建测试页](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?decor=a) · [PC / 手机报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/) · [重建与验收状态](context/ASSET_REBUILD.md)。主要家具重建与 PBR 流程已接入，工业级整体效果和真机微信仍待验收；正式与 main 应用保留 V14.2。
 
 **[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 

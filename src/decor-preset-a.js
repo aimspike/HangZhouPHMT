@@ -1,3 +1,21 @@
+/* Close procedural trim/plant tubes with attached, outward-facing end disks. */
+function closeHouseTubeGeometry(g){
+ const {path,radialSegments:r,tubularSegments:s}=g.parameters,p=g.attributes.position,n=g.attributes.normal;
+ // The UV seam may duplicate vertices, but their positions must be identical.
+ for(let row=0;row<=s;row++){const a=row*(r+1),b=a+r;p.setXYZ(b,p.getX(a),p.getY(a),p.getZ(a));}
+ const positions=Array.from(p.array),normals=Array.from(n.array),uv=Array.from(g.attributes.uv.array),indices=Array.from(g.index.array);
+ for(const end of [0,1]){
+  const point=path.getPointAt(end),normal=path.getTangentAt(end).multiplyScalar(end?1:-1),base=positions.length/3;
+  positions.push(point.x,point.y,point.z);normals.push(normal.x,normal.y,normal.z);uv.push(.5,.5);
+  for(let j=0;j<r;j++){const i=end*s*(r+1)+j;positions.push(p.getX(i),p.getY(i),p.getZ(i));normals.push(normal.x,normal.y,normal.z);uv.push(.5+.5*Math.cos(j/r*Math.PI*2),.5+.5*Math.sin(j/r*Math.PI*2));}
+  for(let j=0;j<r;j++){
+   const a=base+1+j,b=base+1+(j+1)%r,va=new THREE.Vector3().fromArray(positions,a*3).sub(point),vb=new THREE.Vector3().fromArray(positions,b*3).sub(point);
+   indices.push(base,...(va.cross(vb).dot(normal)>0?[a,b]:[b,a]));
+  }
+ }
+ g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);return g;
+}
+
 /* Optional furnishings. Architecture, door openings and the structural bake remain unchanged. */
 function createHouseDecor(options) {
  'use strict';
@@ -71,7 +89,7 @@ function createHouseDecor(options) {
  const round=(r,x,y,z,w,h,d,m,k='furniture',angle=0)=>mesh(r,k,'round',x,y,z,[w,h,d],m,angle);
  const cylinder=(r,x,y,z,rt,rb,h,m,k='furniture')=>mesh(r,k,'cylinder',x,y,z,[rt,rb,h],m);
  function tube(room,points,radius,name,kind='furniture',parent=null){
-  const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)),false,'catmullrom',.1),g=new THREE.TubeGeometry(curve,Math.max(8,points.length*3),radius,4,false),m=new THREE.Mesh(g,material(name,room));(parent||layer(room,kind)).add(m);m.castShadow=false;m.receiveShadow=true;parts++;if(currentItem)currentItem.meshes.push(m);return m;
+  const vertices=points.map(p=>new THREE.Vector3(...p)),curve=vertices.length===2?new THREE.LineCurve3(...vertices):new THREE.CatmullRomCurve3(vertices,false,'catmullrom',.1),g=closeHouseTubeGeometry(new THREE.TubeGeometry(curve,Math.max(8,points.length*3),radius,4,false)),m=new THREE.Mesh(g,material(name,room));(parent||layer(room,kind)).add(m);m.castShadow=false;m.receiveShadow=true;parts++;if(currentItem)currentItem.meshes.push(m);return m;
  }
  function piping(room,x,y,z,w,d,name,parent=null){const r=.035,pts=[[-w/2+r,-d/2],[w/2-r,-d/2],[w/2,-d/2+r],[w/2,d/2-r],[w/2-r,d/2],[-w/2+r,d/2],[-w/2,d/2-r],[-w/2,-d/2+r],[-w/2+r,-d/2]];return tube(room,pts.map(([a,b])=>[x+a,y,z+b]),.0022,name,'furniture',parent);}
  function book(room,x,y,z,w,h,d,color,angle=0){box(room,x,y,z,w,h,d,'white','furniture',angle);for(const side of [-1,1])box(room,x,y+side*(h/2+.002),z,w+.012,.005,d+.008,color,'furniture',angle);}
@@ -222,8 +240,8 @@ function createHouseDecor(options) {
   // hidden lengths; it never changes structural geometry or collision walls.
   const trimRoom=(x,z)=>rooms.find(r=>!['balcony','equipment1','equipment2'].includes(r.id)&&x>r.x+.001&&x<r.x+r.w-.001&&z>r.z+.001&&z<r.z+r.d-.001);
   for(const wall of options.planLayout.walls){if(wall.guard)continue;const along=wall.a[1]===wall.b[1],length=along?wall.b[0]-wall.a[0]:wall.b[1]-wall.a[1];
-   for(const side of [-1,1]){let start=null,lastRoom=null;const n=Math.ceil(length/.04);for(let i=0;i<=n;i++){const distance=i*length/n,x=wall.a[0]+(along?distance:side*(wall.t/2+.009)),z=wall.a[1]+(along?side*(wall.t/2+.009):distance),r=trimRoom(x,z),opening=(wall.openings||[]).some(o=>o.kind!=='window'&&distance>o.a-.025&&distance<o.b+.025),behind=blockers.some(b=>x>b.minX-.018&&x<b.maxX+.018&&z>b.minZ-.018&&z<b.maxZ+.018),valid=i<n&&r&&!opening&&!behind;
-    if(start!==null&&(!valid||r!==lastRoom)){const mid=(start+distance)/2,span=distance-start;if(span>.06){const cx=wall.a[0]+(along?mid:side*(wall.t/2+.009)),cz=wall.a[1]+(along?side*(wall.t/2+.009):mid);box(lastRoom.id,cx,.039,cz,along?span:.014,.072,along?.014:span,'oak','wall');}start=null;}
+    for(const side of [-1,1]){let start=null,lastRoom=null;const n=Math.ceil(length/.04);for(let i=0;i<=n;i++){const distance=i*length/n,x=wall.a[0]+(along?distance:side*(wall.t/2+.006)),z=wall.a[1]+(along?side*(wall.t/2+.006):distance),r=trimRoom(x,z),opening=(wall.openings||[]).some(o=>o.kind!=='window'&&distance>o.a-.025&&distance<o.b+.025),behind=blockers.some(b=>x>b.minX-.018&&x<b.maxX+.018&&z>b.minZ-.018&&z<b.maxZ+.018),valid=i<n&&r&&!opening&&!behind;
+      if(start!==null&&(!valid||r!==lastRoom)){const mid=(start+distance)/2,span=distance-start;if(span>.06){const cx=wall.a[0]+(along?mid:side*(wall.t/2+.006)),cz=wall.a[1]+(along?side*(wall.t/2+.006):mid);box(lastRoom.id,cx,.036,cz,along?span:.014,.072,along?.014:span,'oak','wall');}start=null;}
     if(valid&&start===null){start=distance;lastRoom=r;}
    }}
   }
@@ -262,7 +280,8 @@ function createHouseDecor(options) {
   },false);
   book('study',2.24,.798,1.34,.26,.025,.2,'green');book('study',2.24,.829,1.34,.23,.025,.17,'blue');plant('study',2.2,.78,2.09,.08);
   // Pleated fabric panels sit beside the glazing rather than covering a doorway.
-  function curtain(room,cx,cz,w,h,angle){const g=new THREE.PlaneGeometry(w,h,16,20),p=g.attributes.position;for(let i=0;i<p.count;i++)p.setZ(i,.016*Math.sin(p.getX(i)/w*Math.PI*12));g.computeVertexNormals();const m=material('linen',room),mesh=new THREE.Mesh(g,m);m.side=THREE.DoubleSide;mesh.position.set(cx,.13+h/2,cz);mesh.rotation.y=angle;mesh.receiveShadow=true;layer(room,'wall').add(mesh);parts++;}
+  const curtainMaterials={};
+  function curtain(room,cx,cz,w,h,angle){const g=new THREE.PlaneGeometry(w,h,16,20),p=g.attributes.position;for(let i=0;i<p.count;i++)p.setZ(i,.016*Math.sin(p.getX(i)/w*Math.PI*12));g.computeVertexNormals();let m=curtainMaterials[room];if(!m){const base=material('linen',room);m=base.clone();m.onBeforeCompile=base.onBeforeCompile;m.customProgramCacheKey=base.customProgramCacheKey;m.side=THREE.DoubleSide;curtainMaterials[room]=m;materials[room+'-curtain']=m;}const mesh=new THREE.Mesh(g,m);mesh.position.set(cx,.13+h/2,cz);mesh.rotation.y=angle;mesh.receiveShadow=true;layer(room,'wall').add(mesh);parts++;}
   for(const z of [3.58,5.76])curtain('living',.17,z,.24,2.5,Math.PI/2);
   for(const x of [.69,2.42])curtain('master',x,11.64,.2,2.5,0);
   for(const x of [3.64,5.64])curtain('second',x,10.89,.2,2.5,0);
@@ -293,5 +312,5 @@ function createHouseDecor(options) {
  }
  finishes.restore(presetPalette('bare'));
  $('decorPreset').addEventListener('change',e=>apply(e.target.value));
- return {apply,update,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials'};}};
+ return {apply,update,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,doubleSidedMaterials:Object.keys(materials).filter(k=>materials[k].side===THREE.DoubleSide),mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials'};}};
 }

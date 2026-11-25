@@ -33,7 +33,7 @@
           "pathTracing": false
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -116,8 +116,8 @@
       },
       "check": {
         "schema": 1,
-        "version": "16.0",
-        "startedAt": "2026-11-25T03:36:57.891Z",
+        "version": "16.1",
+        "startedAt": "2026-11-25T05:05:39.095Z",
         "userAgent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
         "browser": "Browser",
         "mobile": true,
@@ -141,7 +141,7 @@
             "time": "noon",
             "name": "毛坯 · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:01.217Z",
+            "capturedAt": "2026-11-25T05:05:43.385Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -176,7 +176,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -202,7 +202,7 @@
             "time": "night",
             "name": "毛坯 · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:03.311Z",
+            "capturedAt": "2026-11-25T05:05:46.205Z",
             "framesAdvanced": 3,
             "bakedMaps": [
               219,
@@ -237,7 +237,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -263,7 +263,7 @@
             "time": "noon",
             "name": "家装 A · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:09.952Z",
+            "capturedAt": "2026-11-25T05:05:54.329Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -293,13 +293,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -314,7 +314,7 @@
                 360
               ],
               "shaderCount": 116,
-              "drawCalls": 369
+              "drawCalls": 371
             },
             "canvasExported": true,
             "automatic": "passed"
@@ -325,8 +325,8 @@
             "time": "night",
             "name": "家装 A · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:12.232Z",
-            "framesAdvanced": 3,
+            "capturedAt": "2026-11-25T05:05:57.173Z",
+            "framesAdvanced": 2,
             "bakedMaps": [
               219,
               219
@@ -355,13 +355,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -376,14 +376,14 @@
                 360
               ],
               "shaderCount": 119,
-              "drawCalls": 369
+              "drawCalls": 371
             },
             "canvasExported": true,
             "automatic": "passed"
           }
         ],
         "errors": [],
-        "updatedAt": "2026-11-25T03:37:12.239Z",
+        "updatedAt": "2026-11-25T05:05:57.186Z",
         "result": "awaiting-visual-check"
       }
     },
@@ -420,7 +420,7 @@
           "pathTracing": false
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -503,8 +503,8 @@
       },
       "check": {
         "schema": 1,
-        "version": "16.0",
-        "startedAt": "2026-11-25T03:37:29.562Z",
+        "version": "16.1",
+        "startedAt": "2026-11-25T05:06:21.411Z",
         "userAgent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.50",
         "browser": "WeChat",
         "mobile": true,
@@ -528,7 +528,7 @@
             "time": "noon",
             "name": "毛坯 · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:33.139Z",
+            "capturedAt": "2026-11-25T05:06:25.947Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -563,7 +563,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -589,7 +589,7 @@
             "time": "night",
             "name": "毛坯 · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:35.419Z",
+            "capturedAt": "2026-11-25T05:06:28.047Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -624,7 +624,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -650,7 +650,7 @@
             "time": "noon",
             "name": "家装 A · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:42.830Z",
+            "capturedAt": "2026-11-25T05:06:36.373Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -680,13 +680,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -701,7 +701,7 @@
                 360
               ],
               "shaderCount": 116,
-              "drawCalls": 369
+              "drawCalls": 371
             },
             "canvasExported": true,
             "automatic": "passed"
@@ -712,8 +712,8 @@
             "time": "night",
             "name": "家装 A · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:37:44.996Z",
-            "framesAdvanced": 3,
+            "capturedAt": "2026-11-25T05:06:39.201Z",
+            "framesAdvanced": 2,
             "bakedMaps": [
               219,
               219
@@ -742,13 +742,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -763,14 +763,14 @@
                 360
               ],
               "shaderCount": 119,
-              "drawCalls": 369
+              "drawCalls": 371
             },
             "canvasExported": true,
             "automatic": "passed"
           }
         ],
         "errors": [],
-        "updatedAt": "2026-11-25T03:37:45.002Z",
+        "updatedAt": "2026-11-25T05:06:39.207Z",
         "result": "awaiting-visual-check"
       }
     },
@@ -806,7 +806,7 @@
           "pathTracing": false
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -920,7 +920,7 @@
           "pathTracing": false
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0",
@@ -1003,8 +1003,8 @@
       },
       "check": {
         "schema": 1,
-        "version": "16.0",
-        "startedAt": "2026-11-25T03:38:30.456Z",
+        "version": "16.1",
+        "startedAt": "2026-11-25T05:07:35.749Z",
         "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1",
         "browser": "Safari/WebKit",
         "mobile": true,
@@ -1028,7 +1028,7 @@
             "time": "noon",
             "name": "毛坯 · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:38:33.517Z",
+            "capturedAt": "2026-11-25T05:07:43.360Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -1063,7 +1063,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1089,8 +1089,8 @@
             "time": "night",
             "name": "毛坯 · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:38:33.927Z",
-            "framesAdvanced": 3,
+            "capturedAt": "2026-11-25T05:07:44.508Z",
+            "framesAdvanced": 2,
             "bakedMaps": [
               219,
               219
@@ -1124,7 +1124,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1150,7 +1150,7 @@
             "time": "noon",
             "name": "家装 A · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:38:43.818Z",
+            "capturedAt": "2026-11-25T05:07:58.430Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -1180,13 +1180,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1212,8 +1212,8 @@
             "time": "night",
             "name": "家装 A · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:38:44.215Z",
-            "framesAdvanced": 2,
+            "capturedAt": "2026-11-25T05:07:58.838Z",
+            "framesAdvanced": 3,
             "bakedMaps": [
               219,
               219
@@ -1242,13 +1242,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1270,7 +1270,7 @@
           }
         ],
         "errors": [],
-        "updatedAt": "2026-11-25T03:38:44.929Z",
+        "updatedAt": "2026-11-25T05:08:01.000Z",
         "result": "awaiting-visual-check"
       }
     },
@@ -1306,7 +1306,7 @@
           "pathTracing": false
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0",
@@ -1389,8 +1389,8 @@
       },
       "check": {
         "schema": 1,
-        "version": "16.0",
-        "startedAt": "2026-11-25T03:38:58.428Z",
+        "version": "16.1",
+        "startedAt": "2026-11-25T05:08:15.905Z",
         "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.50",
         "browser": "WeChat",
         "mobile": true,
@@ -1414,7 +1414,7 @@
             "time": "noon",
             "name": "毛坯 · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:39:01.432Z",
+            "capturedAt": "2026-11-25T05:08:18.972Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -1449,7 +1449,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1475,7 +1475,7 @@
             "time": "night",
             "name": "毛坯 · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:39:01.835Z",
+            "capturedAt": "2026-11-25T05:08:19.377Z",
             "framesAdvanced": 3,
             "bakedMaps": [
               219,
@@ -1510,7 +1510,7 @@
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1536,7 +1536,7 @@
             "time": "noon",
             "name": "家装 A · 正午",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:39:10.232Z",
+            "capturedAt": "2026-11-25T05:08:28.349Z",
             "framesAdvanced": 2,
             "bakedMaps": [
               219,
@@ -1566,13 +1566,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1598,8 +1598,8 @@
             "time": "night",
             "name": "家装 A · 夜晚",
             "visual": "unconfirmed",
-            "capturedAt": "2026-11-25T03:39:10.607Z",
-            "framesAdvanced": 2,
+            "capturedAt": "2026-11-25T05:08:28.692Z",
+            "framesAdvanced": 3,
             "bakedMaps": [
               219,
               219
@@ -1628,13 +1628,13 @@
                 "dining",
                 "living"
               ],
-              "materials": 280,
+              "materials": 283,
               "mode": "walk",
               "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
               "pathTracing": false
             },
             "diagnostics": {
-              "version": "16.0",
+              "version": "16.1",
               "antialias": true,
               "fxaa": true,
               "context": "WebGL 1.0",
@@ -1656,7 +1656,7 @@
           }
         ],
         "errors": [],
-        "updatedAt": "2026-11-25T03:39:11.067Z",
+        "updatedAt": "2026-11-25T05:08:29.225Z",
         "result": "awaiting-visual-check"
       }
     }

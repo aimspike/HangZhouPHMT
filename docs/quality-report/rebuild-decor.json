@@ -2,6 +2,188 @@
   "scope": "Chromium WebGL1; WeChat UA simulation, not a real WeChat device",
   "errors": [],
   "externalRequests": [],
+  "screenshots": [
+    {
+      "file": "01-living-day.png",
+      "room": "living",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "02-dining-day.png",
+      "room": "dining",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "03-kitchen-day.png",
+      "room": "kitchen",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "04-master-day.png",
+      "room": "master",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "05-second-day.png",
+      "room": "second",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "06-bath-day.png",
+      "room": "bath",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "07-living-night.png",
+      "room": "living",
+      "time": "night",
+      "fov": 85,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "08-overview.png",
+      "room": "overview",
+      "time": "noon",
+      "fov": 43,
+      "camera": [
+        8.669630012369762,
+        14.511824061060151,
+        14.749288485326463
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "file": "09-living-tv-day.png",
+      "room": "livingTV",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.1499999999999999,
+        1.5,
+        -1.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        0.3140878691271031,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    }
+  ],
   "viewports": [
     {
       "width": 320,
@@ -58,7 +240,7 @@
           "bare",
           "a"
         ],
-        "sectionText": "\u88c5\u4fee\u65b9\u6848\n\u5207\u6362\u65b9\u6848\n\u6bdb\u576f\u65b9\u6848 \u00b7 \u65e0\u5bb6\u5177\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728\u4e0e\u6df1\u84dd\n\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728 / \u7c73\u767d / \u6df1\u84dd\u3002\u5e8a\u5934\u4e0e\u8863\u67dc\u9760\u5899\uff0c\u7535\u89c6\u5728\u5317\u4fa7\uff0c\u6c99\u53d1\u5728\u5357\u4fa7\u3002\n\n\u53c2\u8003\u56fe\u7528\u4e8e\u914d\u8272\u4e0e\u5bb6\u5177\u793a\u610f\uff0c\u5367\u5ba4\u5bf9\u5e94\u5173\u7cfb\u5f85\u6838\u5b9e\uff1b\u672a\u6539\u53d8\u539f\u5899\u7ebf\u548c\u95e8\u6d1e\u3002\u5bb6\u5177\u4e3a\u5e03\u7f6e\u793a\u610f\uff0c\u6548\u679c\u4ee5\u5b9e\u9645\u88c5\u4fee\u4e3a\u51c6\u3002"
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -117,7 +299,7 @@
           "bare",
           "a"
         ],
-        "sectionText": "\u88c5\u4fee\u65b9\u6848\n\u5207\u6362\u65b9\u6848\n\u6bdb\u576f\u65b9\u6848 \u00b7 \u65e0\u5bb6\u5177\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728\u4e0e\u6df1\u84dd\n\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728 / \u7c73\u767d / \u6df1\u84dd\u3002\u5e8a\u5934\u4e0e\u8863\u67dc\u9760\u5899\uff0c\u7535\u89c6\u5728\u5317\u4fa7\uff0c\u6c99\u53d1\u5728\u5357\u4fa7\u3002\n\n\u53c2\u8003\u56fe\u7528\u4e8e\u914d\u8272\u4e0e\u5bb6\u5177\u793a\u610f\uff0c\u5367\u5ba4\u5bf9\u5e94\u5173\u7cfb\u5f85\u6838\u5b9e\uff1b\u672a\u6539\u53d8\u539f\u5899\u7ebf\u548c\u95e8\u6d1e\u3002\u5bb6\u5177\u4e3a\u5e03\u7f6e\u793a\u610f\uff0c\u6548\u679c\u4ee5\u5b9e\u9645\u88c5\u4fee\u4e3a\u51c6\u3002"
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -176,7 +358,7 @@
           "bare",
           "a"
         ],
-        "sectionText": "\u88c5\u4fee\u65b9\u6848\n\u5207\u6362\u65b9\u6848\n\u6bdb\u576f\u65b9\u6848 \u00b7 \u65e0\u5bb6\u5177\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728\u4e0e\u6df1\u84dd\n\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728 / \u7c73\u767d / \u6df1\u84dd\u3002\u5e8a\u5934\u4e0e\u8863\u67dc\u9760\u5899\uff0c\u7535\u89c6\u5728\u5317\u4fa7\uff0c\u6c99\u53d1\u5728\u5357\u4fa7\u3002\n\n\u53c2\u8003\u56fe\u7528\u4e8e\u914d\u8272\u4e0e\u5bb6\u5177\u793a\u610f\uff0c\u5367\u5ba4\u5bf9\u5e94\u5173\u7cfb\u5f85\u6838\u5b9e\uff1b\u672a\u6539\u53d8\u539f\u5899\u7ebf\u548c\u95e8\u6d1e\u3002\u5bb6\u5177\u4e3a\u5e03\u7f6e\u793a\u610f\uff0c\u6548\u679c\u4ee5\u5b9e\u9645\u88c5\u4fee\u4e3a\u51c6\u3002"
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     },
@@ -235,7 +417,7 @@
           "bare",
           "a"
         ],
-        "sectionText": "\u88c5\u4fee\u65b9\u6848\n\u5207\u6362\u65b9\u6848\n\u6bdb\u576f\u65b9\u6848 \u00b7 \u65e0\u5bb6\u5177\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728\u4e0e\u6df1\u84dd\n\n\u5bb6\u88c5\u9884\u8bbe A \u00b7 \u6696\u6728 / \u7c73\u767d / \u6df1\u84dd\u3002\u5e8a\u5934\u4e0e\u8863\u67dc\u9760\u5899\uff0c\u7535\u89c6\u5728\u5317\u4fa7\uff0c\u6c99\u53d1\u5728\u5357\u4fa7\u3002\n\n\u53c2\u8003\u56fe\u7528\u4e8e\u914d\u8272\u4e0e\u5bb6\u5177\u793a\u610f\uff0c\u5367\u5ba4\u5bf9\u5e94\u5173\u7cfb\u5f85\u6838\u5b9e\uff1b\u672a\u6539\u53d8\u539f\u5899\u7ebf\u548c\u95e8\u6d1e\u3002\u5bb6\u5177\u4e3a\u5e03\u7f6e\u793a\u610f\uff0c\u6548\u679c\u4ee5\u5b9e\u9645\u88c5\u4fee\u4e3a\u51c6\u3002"
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
       },
       "capture": "long-press preview passed"
     }
@@ -446,20 +628,25 @@
     "preset": "a",
     "built": true,
     "visible": true,
-    "parts": 711,
-    "mergedMeshes": 120,
+    "parts": 753,
+    "doubleSidedMaterials": [
+      "living-curtain",
+      "master-curtain",
+      "second-curtain"
+    ],
+    "mergedMeshes": 123,
     "items": [
       {
         "id": "living-sofa",
         "room": "living",
         "min": [
           0.6701570034027102,
-          0.02032800018787384,
-          5.511827999353409
+          -0.0038900000508874655,
+          5.501420998573304
         ],
         "max": [
           2.92984299659729,
-          0.9916280508041382,
+          0.9916279911994934,
           6.348154985904694
         ]
       },
@@ -488,7 +675,7 @@
         "max": [
           3.165000023841858,
           0.527999997138977,
-          3.607499979734421
+          3.607499994635582
         ]
       },
       {
@@ -523,7 +710,7 @@
         "id": "chair-3.65-4.86",
         "room": "dining",
         "min": [
-          3.3380000233650207,
+          3.3379999935626983,
           0.010525000281631947,
           4.642000005245209
         ],
@@ -542,7 +729,7 @@
           4.642000005245209
         ],
         "max": [
-          5.6319999766349795,
+          5.632000006437302,
           0.8600000143051147,
           5.077999994754792
         ]
@@ -558,14 +745,14 @@
         "max": [
           4.697999994754792,
           0.8600000143051147,
-          6.031999976634979
+          6.032000006437301
         ]
       },
       {
         "id": "dining-sideboard",
         "room": "dining",
         "min": [
-          5.792999994754791,
+          5.793000009655953,
           0,
           4.070000028610229
         ],
@@ -613,8 +800,8 @@
         ],
         "max": [
           5.469999971389771,
-          0.9375,
-          0.732000017166138
+          0.9419999718666077,
+          0.7319999575614933
         ]
       },
       {
@@ -712,7 +899,7 @@
         "max": [
           0.9200000047683718,
           1.1546800136566162,
-          8.104999992847443
+          8.104999977946282
         ]
       },
       {
@@ -918,7 +1105,7 @@
         "headWall": "west",
         "wallFace": 0.09,
         "headDirection": "west",
-        "headGap": 9.536743256211011e-09,
+        "headGap": 9.536743256211011e-9,
         "layout": {
           "head": 0.09000000953674325,
           "north": 9.410183978080749,
@@ -931,14 +1118,14 @@
         "backWall": "bath-south",
         "wallFace": 8.2425,
         "back": 8.242499988079071,
-        "gap": -1.192092824453539e-08
+        "gap": -1.192092824453539e-8
       },
       {
         "id": "second-bed",
         "headWall": "east",
         "wallFace": 6.11,
         "headDirection": "east",
-        "headGap": -2.8610228852699038e-08,
+        "headGap": -2.8610228852699038e-8,
         "layout": {
           "head": 6.110000028610229,
           "north": 8.960184001922608,
@@ -951,7 +1138,7 @@
         "backWall": "storage-south",
         "wallFace": 7.6425,
         "back": 7.642499994039536,
-        "gap": -5.960464122267695e-09
+        "gap": -5.960464122267695e-9
       },
       {
         "id": "storage-rack-north",
@@ -1021,7 +1208,7 @@
         "backWall": "balcony-east",
         "wallFace": 6.11,
         "back": 6.110000003576279,
-        "gap": -3.5762788286319847e-09,
+        "gap": -3.5762788286319847e-9,
         "facing": "west",
         "frontNormal": [
           -1,
@@ -1043,7 +1230,7 @@
       "headWall": "west",
       "wallFace": 0.09,
       "headDirection": "west",
-      "headGap": 9.536743256211011e-09,
+      "headGap": 9.536743256211011e-9,
       "layout": {
         "head": 0.09000000953674325,
         "north": 9.410183978080749,
@@ -1056,14 +1243,14 @@
       "backWall": "bath-south",
       "wallFace": 8.2425,
       "back": 8.242499988079071,
-      "gap": -1.192092824453539e-08
+      "gap": -1.192092824453539e-8
     },
     {
       "id": "second-bed",
       "headWall": "east",
       "wallFace": 6.11,
       "headDirection": "east",
-      "headGap": -2.8610228852699038e-08,
+      "headGap": -2.8610228852699038e-8,
       "layout": {
         "head": 6.110000028610229,
         "north": 8.960184001922608,
@@ -1076,7 +1263,7 @@
       "backWall": "storage-south",
       "wallFace": 7.6425,
       "back": 7.642499994039536,
-      "gap": -5.960464122267695e-09
+      "gap": -5.960464122267695e-9
     },
     {
       "id": "storage-rack-north",
@@ -1146,7 +1333,7 @@
       "backWall": "balcony-east",
       "wallFace": 6.11,
       "back": 6.110000003576279,
-      "gap": -3.5762788286319847e-09,
+      "gap": -3.5762788286319847e-9,
       "facing": "west",
       "frontNormal": [
         -1,
@@ -1227,7 +1414,7 @@
     "backWall": "balcony-east",
     "wallFace": 6.11,
     "back": 6.110000003576279,
-    "gap": -3.5762788286319847e-09,
+    "gap": -3.5762788286319847e-9,
     "facing": "west",
     "frontNormal": [
       -1,
@@ -1500,180 +1687,5 @@
   "rotation": [
     844,
     390
-  ],
-  "result": "passed",
-  "cameraSamples": [
-    {
-      "room": "living",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        -0.3999999999999999,
-        1.5,
-        -2.25
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        2.7032560937318353,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "dining",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        0.020000000000000018,
-        1.5,
-        -2.45
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        -2.183028881381311,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "kitchen",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        1.6199999999999997,
-        1.5,
-        -3.75
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        -0.5305578870294475,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "master",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        -0.5500000000000003,
-        1.5,
-        2.8499999999999996
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        2.1319597390832485,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "second",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        0.5499999999999998,
-        1.5,
-        4.199999999999999
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        -1.0943289073211906,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "bath",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        -1.75,
-        1.5,
-        1.4500000000000002
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        1.6951513213416576,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "living",
-      "time": "night",
-      "fov": 85,
-      "camera": [
-        -0.3999999999999999,
-        1.5,
-        -2.25
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        2.7032560937318353,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "overview",
-      "time": "noon",
-      "fov": 43,
-      "camera": [
-        8.669630012369762,
-        14.511824061060151,
-        14.749288485326463
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        2.7032560937318353,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    },
-    {
-      "room": "livingTV",
-      "time": "noon",
-      "fov": 85,
-      "camera": [
-        -0.1499999999999999,
-        1.5,
-        -1.25
-      ],
-      "eyeHeight": 1.5,
-      "angles": [
-        0.3140878691271031,
-        -0.12
-      ],
-      "canvas": [
-        1920,
-        1275
-      ]
-    }
-  ],
-  "visualEvidence": "Current WebGL evidence in docs/quality-report/*.webp; legacy test-export image paths restored to preserve V14 history."
+  ]
 }

@@ -30,18 +30,18 @@
         "cachedRooms": [
           "living"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 131.10477083333734,
+        "mean": 130.86914583333737,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 87.25360416666675,
+        "mean": 86.30620833333354,
         "black": 0.0019375,
         "white": 0
       },
@@ -71,13 +71,13 @@
             "cachedRooms": [
               "living"
             ],
-            "materials": 280,
+            "materials": 283,
             "mode": "walk",
             "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
             "pathTracing": false
           },
           "image": {
-            "mean": 80.8357708333347,
+            "mean": 79.92883333333505,
             "black": 0.002875,
             "white": 0
           }
@@ -107,31 +107,31 @@
             "cachedRooms": [
               "living"
             ],
-            "materials": 280,
+            "materials": 283,
             "mode": "walk",
             "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
             "pathTracing": false
           },
           "image": {
-            "mean": 72.52922916666661,
+            "mean": 71.78566666666634,
             "black": 0.0038125,
             "white": 0
           }
         }
       ],
       "light": {
-        "mean": 71.961874999999,
+        "mean": 71.17829166666606,
         "black": 0.000125,
         "white": 0
       },
       "persistence": "passed",
       "storage": {
-        "mean": 146.30495833333114,
+        "mean": 146.30606249999775,
         "black": 0,
         "white": 0
       },
       "balcony": {
-        "mean": 191.17122916666443,
+        "mean": 191.23266666666441,
         "black": 0.0035625,
         "white": 0
       },
@@ -160,7 +160,7 @@
           "storage",
           "balcony"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
@@ -194,18 +194,18 @@
         "cachedRooms": [
           "living"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 138.87504166666832,
+        "mean": 138.83447916666847,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 90.43299999999888,
+        "mean": 90.43454166666572,
         "black": 0,
         "white": 0
       },
@@ -237,7 +237,7 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 280,
+          "materials": 283,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
@@ -266,7 +266,7 @@
         "cachedRooms": [
           "living"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
@@ -301,18 +301,18 @@
         "cachedRooms": [
           "living"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false
       },
       "night": {
-        "mean": 130.99270833333662,
+        "mean": 130.99652083333675,
         "black": 0,
         "white": 0
       },
       "day": {
-        "mean": 90.80129166666629,
+        "mean": 90.79283333333308,
         "black": 0.0011875,
         "white": 0
       },
@@ -344,7 +344,7 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 280,
+          "materials": 283,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
@@ -373,7 +373,7 @@
         "cachedRooms": [
           "living"
         ],
-        "materials": 280,
+        "materials": 283,
         "mode": "walk",
         "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
         "pathTracing": false

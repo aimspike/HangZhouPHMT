@@ -3,6 +3,7 @@
     {
       "width": 1366,
       "pairs": 12,
+      "seamPairs": 10,
       "offlineStudies": 4,
       "overflow": false,
       "slider": true
@@ -10,6 +11,7 @@
     {
       "width": 390,
       "pairs": 12,
+      "seamPairs": 10,
       "offlineStudies": 4,
       "overflow": false,
       "slider": true

@@ -37,97 +37,97 @@
           "modelBudgets": {
             "sofa": {
               "high": {
-                "triangles": 46992,
-                "vertices": 29750,
+                "triangles": 47272,
+                "vertices": 29970,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 22672,
-                "vertices": 15076,
+                "triangles": 22816,
+                "vertices": 14996,
                 "drawGroups": 5
               }
             },
             "coffee": {
               "high": {
-                "triangles": 2576,
-                "vertices": 1679,
+                "triangles": 2368,
+                "vertices": 1669,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 1684,
-                "vertices": 1176,
+                "triangles": 1584,
+                "vertices": 1157,
                 "drawGroups": 3
               }
             },
             "console": {
               "high": {
-                "triangles": 3724,
-                "vertices": 3016,
+                "triangles": 3748,
+                "vertices": 3048,
                 "drawGroups": 4
               },
               "mobile": {
-                "triangles": 3056,
-                "vertices": 2514,
+                "triangles": 3068,
+                "vertices": 2540,
                 "drawGroups": 4
               }
             },
             "dining-table": {
               "high": {
-                "triangles": 2656,
-                "vertices": 1574,
+                "triangles": 2240,
+                "vertices": 1566,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 1366,
-                "vertices": 663,
+                "triangles": 1072,
+                "vertices": 784,
                 "drawGroups": 3
               }
             },
             "chair": {
               "high": {
-                "triangles": 7004,
-                "vertices": 5128,
+                "triangles": 7064,
+                "vertices": 5228,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 4106,
-                "vertices": 3121,
+                "triangles": 4150,
+                "vertices": 3203,
                 "drawGroups": 3
               }
             },
             "pendant": {
               "high": {
-                "triangles": 3136,
-                "vertices": 2344,
+                "triangles": 3468,
+                "vertices": 2750,
                 "drawGroups": 2
               },
               "mobile": {
-                "triangles": 1682,
-                "vertices": 1364,
+                "triangles": 1800,
+                "vertices": 1541,
                 "drawGroups": 2
               }
             },
             "master-bed": {
               "high": {
-                "triangles": 17868,
-                "vertices": 11645,
+                "triangles": 18188,
+                "vertices": 11942,
                 "drawGroups": 7
               },
               "mobile": {
-                "triangles": 9048,
-                "vertices": 6175,
+                "triangles": 9132,
+                "vertices": 6281,
                 "drawGroups": 7
               }
             },
             "second-bed": {
               "high": {
-                "triangles": 17868,
-                "vertices": 11653,
+                "triangles": 18188,
+                "vertices": 11950,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 9049,
-                "vertices": 6169,
+                "triangles": 9132,
+                "vertices": 6276,
                 "drawGroups": 5
               }
             },
@@ -157,13 +157,13 @@
             },
             "sideboard": {
               "high": {
-                "triangles": 3016,
-                "vertices": 2468,
+                "triangles": 2888,
+                "vertices": 2460,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 3016,
-                "vertices": 2468,
+                "triangles": 2888,
+                "vertices": 2460,
                 "drawGroups": 6
               }
             },
@@ -181,56 +181,56 @@
             },
             "kitchen-east": {
               "high": {
-                "triangles": 3384,
-                "vertices": 2702,
+                "triangles": 3820,
+                "vertices": 3102,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 3384,
-                "vertices": 2702,
+                "triangles": 3820,
+                "vertices": 3102,
                 "drawGroups": 5
               }
             },
             "kitchen-north": {
               "high": {
-                "triangles": 2700,
-                "vertices": 2184,
+                "triangles": 3112,
+                "vertices": 2554,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 2700,
-                "vertices": 2184,
+                "triangles": 2812,
+                "vertices": 2318,
                 "drawGroups": 5
               }
             },
             "study-desk": {
               "high": {
-                "triangles": 1332,
-                "vertices": 1080,
+                "triangles": 1356,
+                "vertices": 1112,
                 "drawGroups": 4
               },
               "mobile": {
-                "triangles": 932,
-                "vertices": 814,
+                "triangles": 944,
+                "vertices": 831,
                 "drawGroups": 4
               }
             },
             "vanity": {
               "high": {
-                "triangles": 2536,
-                "vertices": 1842,
+                "triangles": 2420,
+                "vertices": 1848,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 1802,
-                "vertices": 1291,
+                "triangles": 1746,
+                "vertices": 1395,
                 "drawGroups": 6
               }
             }
           }
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -244,7 +244,7 @@
             1280,
             850
           ],
-          "shaderCount": 123,
+          "shaderCount": 120,
           "drawCalls": 366
         },
         "quality": {
@@ -270,16 +270,16 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 280,
+          "materials": 283,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6005.899999999441,
-        "frames": 360,
-        "fps": 59.94105795967857
+        "elapsedMs": 6002.700000001118,
+        "frames": 361,
+        "fps": 60.13960384492525
       },
       "geometry": {
         "same": true,
@@ -482,97 +482,97 @@
           "modelBudgets": {
             "sofa": {
               "high": {
-                "triangles": 46992,
-                "vertices": 29750,
+                "triangles": 47272,
+                "vertices": 29970,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 22672,
-                "vertices": 15076,
+                "triangles": 22816,
+                "vertices": 14996,
                 "drawGroups": 5
               }
             },
             "coffee": {
               "high": {
-                "triangles": 2576,
-                "vertices": 1679,
+                "triangles": 2368,
+                "vertices": 1669,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 1684,
-                "vertices": 1176,
+                "triangles": 1584,
+                "vertices": 1157,
                 "drawGroups": 3
               }
             },
             "console": {
               "high": {
-                "triangles": 3724,
-                "vertices": 3016,
+                "triangles": 3748,
+                "vertices": 3048,
                 "drawGroups": 4
               },
               "mobile": {
-                "triangles": 3056,
-                "vertices": 2514,
+                "triangles": 3068,
+                "vertices": 2540,
                 "drawGroups": 4
               }
             },
             "dining-table": {
               "high": {
-                "triangles": 2656,
-                "vertices": 1574,
+                "triangles": 2240,
+                "vertices": 1566,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 1366,
-                "vertices": 663,
+                "triangles": 1072,
+                "vertices": 784,
                 "drawGroups": 3
               }
             },
             "chair": {
               "high": {
-                "triangles": 7004,
-                "vertices": 5128,
+                "triangles": 7064,
+                "vertices": 5228,
                 "drawGroups": 3
               },
               "mobile": {
-                "triangles": 4106,
-                "vertices": 3121,
+                "triangles": 4150,
+                "vertices": 3203,
                 "drawGroups": 3
               }
             },
             "pendant": {
               "high": {
-                "triangles": 3136,
-                "vertices": 2344,
+                "triangles": 3468,
+                "vertices": 2750,
                 "drawGroups": 2
               },
               "mobile": {
-                "triangles": 1682,
-                "vertices": 1364,
+                "triangles": 1800,
+                "vertices": 1541,
                 "drawGroups": 2
               }
             },
             "master-bed": {
               "high": {
-                "triangles": 17868,
-                "vertices": 11645,
+                "triangles": 18188,
+                "vertices": 11942,
                 "drawGroups": 7
               },
               "mobile": {
-                "triangles": 9048,
-                "vertices": 6175,
+                "triangles": 9132,
+                "vertices": 6281,
                 "drawGroups": 7
               }
             },
             "second-bed": {
               "high": {
-                "triangles": 17868,
-                "vertices": 11653,
+                "triangles": 18188,
+                "vertices": 11950,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 9049,
-                "vertices": 6169,
+                "triangles": 9132,
+                "vertices": 6276,
                 "drawGroups": 5
               }
             },
@@ -602,13 +602,13 @@
             },
             "sideboard": {
               "high": {
-                "triangles": 3016,
-                "vertices": 2468,
+                "triangles": 2888,
+                "vertices": 2460,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 3016,
-                "vertices": 2468,
+                "triangles": 2888,
+                "vertices": 2460,
                 "drawGroups": 6
               }
             },
@@ -626,56 +626,56 @@
             },
             "kitchen-east": {
               "high": {
-                "triangles": 3384,
-                "vertices": 2702,
+                "triangles": 3820,
+                "vertices": 3102,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 3384,
-                "vertices": 2702,
+                "triangles": 3820,
+                "vertices": 3102,
                 "drawGroups": 5
               }
             },
             "kitchen-north": {
               "high": {
-                "triangles": 2700,
-                "vertices": 2184,
+                "triangles": 3112,
+                "vertices": 2554,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 2700,
-                "vertices": 2184,
+                "triangles": 2812,
+                "vertices": 2318,
                 "drawGroups": 5
               }
             },
             "study-desk": {
               "high": {
-                "triangles": 1332,
-                "vertices": 1080,
+                "triangles": 1356,
+                "vertices": 1112,
                 "drawGroups": 4
               },
               "mobile": {
-                "triangles": 932,
-                "vertices": 814,
+                "triangles": 944,
+                "vertices": 831,
                 "drawGroups": 4
               }
             },
             "vanity": {
               "high": {
-                "triangles": 2536,
-                "vertices": 1842,
+                "triangles": 2420,
+                "vertices": 1848,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 1802,
-                "vertices": 1291,
+                "triangles": 1746,
+                "vertices": 1395,
                 "drawGroups": 6
               }
             }
           }
         },
         "diagnostics": {
-          "version": "16.0",
+          "version": "16.1",
           "antialias": true,
           "fxaa": true,
           "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
@@ -689,7 +689,7 @@
             390,
             844
           ],
-          "shaderCount": 118,
+          "shaderCount": 115,
           "drawCalls": 273
         },
         "quality": {
@@ -715,16 +715,16 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 280,
+          "materials": 283,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6010.200000000186,
-        "frames": 181,
-        "fps": 30.115470367041763
+        "elapsedMs": 6001.700000001118,
+        "frames": 180,
+        "fps": 29.99150240764558
       },
       "geometry": {
         "same": true,
