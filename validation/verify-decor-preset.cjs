@@ -20,7 +20,7 @@ try{
  report.doorMotion=await page.evaluate(()=>houseViewer.doorMotion());assert(report.doorMotion.every(v=>v.collisions.length===0&&v.sweepEnvelopeCollisions.length===0));
  report.decor=await page.evaluate(()=>houseViewer.decor);
  report.placements=report.decor.placements;for(const p of report.placements){const gap=p.headGap??p.gap;assert(Number.isFinite(gap)&&Math.abs(gap)<.001,JSON.stringify(p));}
- assert.equal(report.decor.furnitureCount,35);
+ assert.equal(report.decor.furnitureCount,40);
  for(const id of ['kitchen-upper-cabinets','kitchen-hood'])assert(report.decor.items.some(item=>item.id===id));
  report.storageRacks=report.placements.filter(p=>p.id.startsWith('storage-rack-'));assert.equal(report.storageRacks.length,3);assert.deepEqual(report.storageRacks.map(r=>r.backWall),['storage-north','east','storage-south']);for(const r of report.storageRacks){assert.equal(r.levels.length,6);assert.equal(r.boardThickness,.018);assert.equal(r.postWidth,.024);assert.equal(r.height,2.46);assert(r.parts>=110);}
  report.laundry=report.placements.find(p=>p.id==='balcony-laundry');assert.equal(report.laundry.facing,'west');assert(Math.abs(report.laundry.frontNormal[0]+1)<1e-8);assert(Math.abs(report.laundry.frontNormal[2])<1e-8);assert.equal(report.laundry.backWall,'balcony-east');

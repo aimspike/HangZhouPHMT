@@ -32,6 +32,7 @@ models = defaultdict(list)
 current = ''
 
 COLORS = {'navy':(.025,.04,.065,1),'linen':(.64,.58,.47,1),'mustard':(.5,.35,.09,1),'oak':(.48,.28,.13,1),'wood':(.3,.15,.065,1),'cream':(.84,.8,.7,1),'white':(.9,.9,.85,1),'chrome':(.62,.65,.64,1),'black':(.025,.028,.027,1),'orange':(.55,.12,.035,1),'ceramic':(.67,.65,.58,1),'seam':(.065,.085,.1,1),'blue':(.08,.12,.2,1),'brass':(.36,.25,.1,1),'rug':(.63,.6,.54,1),'applianceIvory':(.86,.84,.77,1)}
+COLORS.update(applianceWhite=(.91,.90,.86,1),graphite=(.025,.028,.03,1),smokeGlass=(.015,.024,.03,1),mirror=(.45,.53,.54,1),glow=(1,.9,.7,1))
 for name, color in COLORS.items():
     m=bpy.data.materials.new(name);m.diffuse_color=color;m.use_nodes=True
     p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color
@@ -100,6 +101,7 @@ def tube(name,points,radius=.012,mat='chrome',closed=False,surface=None):
     else:
         spline=c.splines.new('BEZIER');spline.bezier_points.add(len(points)-1)
         for b,p in zip(spline.bezier_points,points):b.co=xyz(p);b.handle_left_type=b.handle_right_type='AUTO'
+
     spline.use_cyclic_u=closed;o=bpy.data.objects.new(name,c);scene.collection.objects.link(o);bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH');o.select_set(False)
     # Blender converts curve caps with duplicate ring vertices. Weld the actual
     # joint so caps remain attached through decimation and quantization.
@@ -121,7 +123,7 @@ current='sofa'
 # Bent tubular base, visible side frames and separate upholstered cushions.
 for x in [-1.02,1.02]:
     tube('continuous chromed sled frame',[(x,.055,-.31),(x,.055,.29),(x,.1,.34),(x,.48,.34),(x,.525,.25),(x,.525,-.29),(x,.47,-.35),(x,.12,-.35)],.014,'chrome',True)
-for z in [-.29,.28]:tube('cross member',[(-1.02,.15,z),(1.02,.15,z)],.012,'chrome')
+for z in [-.35,.34]:tube('welded cross member',[(-1.026,.2,z),(1.026,.2,z)],.012,'chrome')
 cube('upholstered seat support',(0,.29,0),(2.18,.18,.73),'navy',.065,6,True)
 for x in [-1.04,1.04]:
     o=cube('rounded arm bolster',(x,.585,.015),(.18,.34,.79),'navy',.075,7,True)
@@ -139,7 +141,7 @@ current='coffee'
 lathe('turned maple pedestal',[(0,.02),(.19,.02),(.205,.035),(.185,.06),(.16,.18),(.145,.22),(.16,.255),(.21,.335),(.2,.36),(0,.36)],'oak')
 cube('rounded square tray',(0,.39,0),(.73,.065,.66),'black',.018,4)
 cube('inset wood table top',(0,.427,0),(.686,.014,.616),'oak',.009,3)
-for side in [-1,1]:cube('tray edge rail',(0,.434,side*.327),(.71,.022,.01),'black',.003,3)
+for side in [-1,1]:cube('attached tray edge rail',(0,.420,side*.320),(.71,.022,.014),'black',.003,3)
 lathe('porcelain cup',[(0,.432),(.035,.432),(.038,.438),(.041,.489),(.038,.493),(.034,.487),(.032,.442),(0,.442)],'ceramic',40)
 
 current='console'
@@ -151,19 +153,20 @@ for x in [-.235,.235]:cube('internal partition',(x,.323,0),(.018,.34,.31),'oak',
 for x in [-.475,.475]:
     cube('inset sliding door',(x,.325,.163),(.452,.318,.018),'wood',.003)
     cube('recessed dark pull',(x+.15,.33,.175),(.065,.023,.005),'black',.003)
-cube('centre shelf',(0,.28,.004),(.45,.018,.3),'oak',.002)
-cube('media receiver',(0,.207,.02),(.32,.08,.23),'black',.006)
+cube('centre shelf',(0,.28,.004),(.454,.018,.3),'oak',.002)
+cube('media receiver',(0,.191,.02),(.32,.08,.23),'black',.006)
 for x in [-.61,.61]:
     tube('bent console legs',[(x,.015,.135),(x,.46,.135),(x,.49,.1),(x,.49,-.1),(x,.46,-.135),(x,.015,-.135)],.009,'chrome')
 
 current='dining-table'
 lathe('edge-profiled round tabletop',[(0,.714),(.545,.714),(.572,.721),(.58,.733),(.58,.757),(.57,.773),(.55,.779),(0,.779)],'oak',80)
-lathe('turned pedestal',[(0,.035),(.19,.035),(.2,.06),(.19,.1),(.11,.25),(.09,.55),(.16,.702),(0,.702)],'wood',64)
+lathe('turned pedestal',[(0,.035),(.19,.035),(.2,.06),(.19,.1),(.11,.25),(.09,.55),(.16,.720),(0,.720)],'wood',64)
 lathe('chromed flared foot',[(0,.02),(.29,.02),(.31,.029),(.31,.045),(.29,.055),(0,.055)],'chrome',64)
 
 current='chair'
 o=cube('seat cushion',(0,.45,0),(.43,.075,.43),'linen',.032,5,True)
 seam('seat piping',0,.487,0,.4,.4,'linen',o)
+cube('seat mounting pan',(0,.441,0),(.38,.045,.38),'black',.004)
 # A bowed plywood back is a genuinely curved panel, not a scaled box.
 verts=[];faces=[];steps=24
 for thickness in [-.008,.008]:
@@ -183,14 +186,19 @@ for x in [-.195,.195]:
     tube('continuous cantilever leg',[(x,.038,.19),(x,.038,-.2),(x,.075,-.22),(x,.435,-.22),(x,.47,-.185),(x,.47,.18),(x,.62,.235),(x,.83,.27)],.009,'chrome')
     cube('armrest',(x,.65,-.035),(.034,.026,.28),'oak',.012,4)
     tube('arm support',[(x,.47,-.15),(x,.64,-.15),(x,.65,-.1)],.007,'chrome')
-tube('front frame tie',[(-.195,.08,-.2),(.195,.08,-.2)],.007,'chrome')
+    tube('rear arm attachment',[(x,.65,.095),(x,.65,.24)],.008,'chrome')
+    for yy in [.65,.80]:
+        zz=.184+.12*(1-(x/.23)**2)
+        tube('back fixing boss',[(x,yy,zz-.003),(x,yy,.235+(yy-.62)/.21*.035)],.012,'black')
+tube('welded front frame tie',[(-.202,.038,-.195),(.202,.038,-.195)],.008,'chrome')
 
 current='pendant'
 lathe('spun shade lower',[(.025,2.19),(.07,2.19),(.15,2.22),(.18,2.24),(.18,2.246),(.14,2.236),(.06,2.212),(.025,2.212)],'orange',64)
 lathe('spun shade upper',[(.02,2.24),(.12,2.27),(.23,2.3),(.24,2.31),(.24,2.318),(.21,2.318),(.1,2.29),(.02,2.265)],'orange',64)
 lathe('top shade',[(.018,2.29),(.09,2.32),(.27,2.35),(.27,2.36),(.24,2.36),(.08,2.34),(.018,2.31)],'orange',64)
 lathe('socket',[(0,2.34),(.025,2.34),(.025,2.43),(.018,2.43),(.018,2.35),(0,2.35)],'cream',32)
-tube('fabric flex',[(0,2.43,0),(.005,2.61,.008),(0,2.79,0)],.0025,'cream')
+lathe('continuous shade hub',[(0,2.185),(.031,2.185),(.031,2.365),(0,2.365)],'cream',32)
+tube('fabric flex',[(0,2.345,0),(.005,2.61,.008),(0,2.79,0)],.0025,'cream')
 
 def make_bed(id,w,l,cover,head):
     global current
@@ -230,16 +238,18 @@ make_bed('second-bed',1.35,1.94,'linen','linen')
 def cabinetry(id,width,height,depth,doors=3):
     global current
     current=id
-    cube('recessed plinth',(0,.055,.015),(width-.06,.11,depth-.05),'black',.002)
+    cube('recessed plinth',(0,.057,.015),(width-.06,.114,depth-.05),'black',.002)
     cube('base panel',(0,.12,0),(width,.018,depth),'wood',.002)
     cube('top panel',(0,height-.009,0),(width,.018,depth),'cream',.002)
     for x in [-width/2+.009,width/2-.009]:cube('laminated end panel',(x,height/2,0),(.018,height,depth),'cream',.002)
     cube('backing panel',(0,height/2,-depth/2+.006),(width-.036,height-.04,.012),'cream',.001)
+    for i in range(1,doors):cube('internal hinge partition',(-width/2+width*i/doors,height/2,0),(.018,height-.04,depth-.036),'cream',.001)
     for i in range(doors):
         x=-width/2+width*(i+.5)/doors
-        cube('panel door',(x,(height+.12)/2,depth/2+.009),(width/doors-.008,height-.14,.018),'cream',.0025)
+        cube('panel door',(x,(height+.12)/2,depth/2+.009),(width/doors-.003,height-.14,.018),'cream',.0025)
         cube('brushed vertical handle',(x+width/doors/2-.045,1.15,depth/2+.027),(.007,.32,.014),'brass',.003)
-        for y in [.45,height-.4]:cube('concealed hinge body',(x-width/doors/2+.04,y,depth/2-.02),(.04,.06,.02),'chrome',.003)
+        for y in [1.02,1.28]:cube('handle mounting foot',(x+width/doors/2-.045,y,depth/2+.019),(.009,.022,.018),'brass',.002)
+        for y in [.45,height-.4]:cube('concealed hinge body',(x-width/doors/2+.022,y,depth/2-.01),(.04,.06,.044),'chrome',.003)
 
 cabinetry('master-wardrobe',1.6,2.4,.6)
 cabinetry('second-wardrobe',1.5,2.4,.55)
@@ -251,7 +261,8 @@ for x in [-.521,.521]:cube('side panel',(x,.47,0),(.018,.68,.28),'wood',.002)
 cube('back board',(0,.46,-.13),(1.024,.66,.015),'wood',.001)
 for x in [-.35,0,.35]:cube('partition',(x,.47,0),(.018,.66,.26),'wood',.002)
 for x,col in [(-.355,'cream'),(0,'blue'),(.355,'wood')]:
-    cube('inset cabinet door',(x,.475,.142),(.34,.63,.018),col,.003)
+    cube('inset cabinet door',(x,.475,.142),(.352,.63,.018),col,.003)
+    cube('door mounting block',(x,.45,.13),(.04,.12,.018),'wood',.001)
     cube('shadow gap pull',(x,.775,.153),(.18,.009,.008),'black',.002)
 for x in [-.44,.44]:
     for z in [-.09,.09]:move(lathe('slender leg',[(0,0),(.01,0),(.012,.13),(0,.13)],'chrome',16),(x,0,z))
@@ -261,15 +272,15 @@ cube('ivory coated cabinet',(0,1,0),(.62,1.98,.68),'applianceIvory',.022,5)
 cube('upper flat door',(0,1.45,-.347),(.6,1.04,.032),'applianceIvory',.012,4)
 cube('freezer flat door',(0,.465,-.347),(.6,.89,.032),'applianceIvory',.012,4)
 cube('door gasket',(0,.986,-.365),(.59,.012,.004),'black',.002)
-cube('recessed upper grip',(0,.922,-.35),(.49,.014,.016),'black',.003)
+cube('recessed upper grip',(0,.925,-.35),(.49,.014,.016),'black',.003)
 cube('recessed freezer grip',(0,.908,-.35),(.49,.01,.016),'black',.003)
-cube('subtle control strip',(.19,1.7,-.365),(.032,.12,.002),'black',.003)
+cube('subtle control strip',(.19,1.7,-.3635),(.032,.12,.002),'black',.0005)
 cube('toe ventilation',(0,.06,-.351),(.54,.05,.01),'black',.003)
 for j in range(16):cube('vent fin',(-.25+j*.033,.06,-.358),(.004,.044,.004),'applianceIvory',.001)
 
 current='kitchen-east'
 # Local X is cabinet run, local +Z faces the room. Rotation maps it west.
-cube('toe kick',(0,.07,-.012),(2.53,.14,.51),'black',.002)
+cube('toe kick',(0,.085,-.012),(2.53,.17,.51),'black',.002)
 cube('carcass bottom',(0,.17,0),(2.53,.018,.62),'wood',.002)
 cube('stone worktop',(0,.91,.02),(2.56,.055,.67),'ceramic',.005,4)
 for x in [-1.256,1.256]:cube('side return',(x,.528,0),(.018,.714,.62),'oak',.002)
@@ -277,13 +288,14 @@ cube('carcass backing',(0,.528,-.301),(2.53,.714,.018),'wood',.002)
 cube('counter front support',(0,.866,.287),(2.51,.038,.026),'wood',.002)
 for j in range(5):
     x=-1.012+j*.506
-    cube('veneered base front',(x,.522,.317),(.495,.714,.018),'wood',.003)
-    tube('brushed handle',[(x-.09,.72,.337),(x+.09,.72,.337)],.006,'chrome')
+    cube('veneered base front',(x,.522,.317),(.503,.714,.018),'wood',.003)
+    cube('brushed handle bar',(x,.72,.34),(.192,.012,.012),'chrome',.004)
+    for dx in [-.09,.09]:cube('handle mounting foot',(x+dx,.72,.33),(.012,.012,.024),'chrome',.003)
     if j in [0,1]:
         for yy in [.38,.6]:cube('drawer shadow joint',(x,yy,.328),(.478,.004,.003),'black',.001)
 
 current='kitchen-north'
-cube('toe kick',(0,.07,0),(1.03,.14,.49),'black',.002)
+cube('toe kick',(0,.089,0),(1.03,.178,.49),'black',.002)
 cube('carcass bottom',(0,.179,0),(1.03,.018,.59),'oak',.002)
 for x in [-.506,.506]:cube('cabinet end',(x,.532,0),(.018,.706,.59),'oak',.002)
 cube('cabinet back',(0,.532,-.286),(.994,.706,.018),'oak',.002)
@@ -313,24 +325,101 @@ def sink_vessel():
     mesh=bpy.data.meshes.new('continuous sink vessel');mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new('sink',mesh);scene.collection.objects.link(o);finish(o,'flanged sink vessel','chrome')
 sink_vessel()
 for x in [-.26,.26]:
-    cube('cabinet door',(x,.53,.305),(.502,.69,.018),'wood',.003)
-    tube('cabinet pull',[(x-.07,.72,.327),(x+.07,.72,.327)],.005,'chrome')
+    cube('cabinet door',(x,.53,.303),(.517,.69,.018),'wood',.003)
+    tube('mounted cabinet pull',[(x-.07,.72,.310),(x-.07,.72,.327),(x+.07,.72,.327),(x+.07,.72,.310)],.005,'chrome')
 
 current='study-desk'
 cube('veneered writing top',(0,.75,0),(.73,.055,1.38),'oak',.006)
 for z in [-.58,.58]:
-    tube('desk end frame',[(-.3,.015,z),(-.3,.72,z),(.3,.72,z),(.3,.015,z)],.013,'chrome')
-cube('slim drawer',(0,.665,0),(.6,.1,.8),'wood',.003)
-cube('recessed drawer pull',(.305,.665,0),(.006,.012,.15),'black',.002)
+    for x in [-.3,.3]:cube('desk welded upright',(x,.368,z),(.026,.706,.026),'chrome',.005)
+    cube('desk welded top rail',(0,.71,z),(.626,.026,.026),'chrome',.005)
+cube('slim drawer',(0,.674,0),(.6,.1,.8),'wood',.003)
+cube('recessed drawer pull',(.301,.674,0),(.006,.012,.15),'black',.002)
 
 current='vanity'
 cube('floating carcass',(0,.56,0),(.7,.48,.36),'wood',.003)
 for yy in [.45,.68]:
-    cube('drawer front',(0,yy,-.19),(.676,.217,.018),'oak',.003)
+    cube('drawer front',(0,yy,-.188),(.676,.217,.018),'oak',.003)
     cube('handle shadow',(0,yy+.096,-.201),(.45,.012,.008),'black',.002)
 cube('stone slab',(0,.82,0),(.74,.06,.39),'ceramic',.005)
-lathe('porcelain vessel',[(0,.852),(.12,.852),(.165,.88),(.18,.91),(.175,.918),(.16,.907),(.11,.875),(0,.875)],'white',64)
+lathe('porcelain vessel',[(0,.849),(.12,.849),(.165,.877),(.18,.907),(.175,.915),(.16,.904),(.11,.872),(0,.872)],'white',64)
 tube('curved tap',[(.23,.85,.1),(.23,1.1,.1),(.19,1.13,.1),(.08,1.13,.1),(.06,1.1,.1)],.012,'chrome')
+
+def front_lathe(name,profile,p,mat='graphite',segments=64):
+    obj=lathe(name,profile,mat,segments)
+    obj.rotation_euler.x=-math.pi/2
+    obj.location=Vector(xyz(p))
+    return obj
+
+current='laundry-stack'
+# East-wall cabinet, local front -Z. Two independent 840 mm appliance bodies.
+for x in [-.331,.331]:cube('full height cabinet side',(x,1.12,0),(.018,2.24,.68),'applianceWhite',.002)
+cube('wall backing',(0,1.12,.331),(.644,2.24,.018),'applianceWhite',.001)
+for y in [.009,.909,1.8,2.231]:cube('structural shelf',(0,y,0),(.644,.018,.68),'oak',.002)
+for base,dryer in [(.048,False),(.936,True)]:
+    label='dryer' if dryer else 'washer'
+    cube(label+' enamel shell',(0,base+.42,.011),(.596,.84,.60),'applianceWhite',.014,5)
+    cube(label+' flush front',(0,base+.42,-.294),(.585,.818,.026),'applianceWhite',.009,4)
+    for x in [-.245,.245]:
+        for z in [-.23,.23]:cube(label+' adjustable foot',(x,base-.015,z),(.038,.03,.038),'graphite',.003)
+    centre=base+.402
+    front_lathe(label+' dark door gasket',[(0,0),(.231,0),(.231,.012),(0,.012)],(0,centre,-.307))
+    front_lathe(label+' rounded charcoal door ring',[(.183,.008),(.222,.008),(.229,.023),(.226,.041),(.212,.049),(.185,.042)],(0,centre,-.307))
+    front_lathe(label+' curved smoked lens',[(0,.014),(.180,.014),(.187,.026),(.180,.039),(.13,.046),(0,.049)],(0,centre,-.307),'smokeGlass')
+    cube(label+' recessed side grip',(.212,centre,-.343),(.024,.105,.018),'graphite',.007)
+    if dryer:
+        cube('dryer black full width control panel',(0,base+.746,-.309),(.572,.102,.015),'graphite',.005)
+        cube('dryer compact display',(.126,base+.750,-.317),(.126,.027,.002),'smokeGlass',.001)
+        for x in [.08,.115,.15]:cube('dryer display indicator',(x,base+.75,-.318),(.018,.004,.001),'cream',.0003)
+    else:
+        cube('washer slim touch capsule',(.13,base+.751,-.310),(.238,.049,.011),'graphite',.012,5)
+        cube('washer detergent drawer',(-.178,base+.751,-.309),(.165,.062,.008),'applianceWhite',.004)
+        cube('washer drawer recessed grip',(-.18,base+.727,-.314),(.102,.005,.004),'graphite',.001)
+        front_lathe('washer service access',[(0,0),(.055,0),(.057,.002),(.055,.004),(0,.004)],(.211,base+.104,-.306),'applianceWhite',40)
+        for x in [.08,.115,.15]:cube('washer display indicator',(x,base+.753,-.316),(.018,.003,.001),'cream',.0003)
+# Narrow face returns bridge the installation slots without faking appliance size.
+for x in [-.311,.311]:cube('front installation return',(x,.909,-.313),(.024,1.782,.026),'applianceWhite',.002)
+for x in [-.16,.16]:
+    cube('upper storage front',(x,2.014,-.324),(.317,.410,.028),'applianceWhite',.003)
+    cube('upper storage grip',(x,1.821,-.338),(.25,.012,.006),'oak',.002)
+cube('upper storage divider',(0,2.015,0),(.018,.414,.644),'oak',.001)
+
+current='balcony-vanity'
+cube('recessed plinth',(0,.05,.024),(.456,.10,.49),'graphite',.002)
+cube('cabinet floor',(0,.109,0),(.464,.018,.56),'oak',.002)
+for x in [-.241,.241]:cube('basin cabinet side',(x,.4365,0),(.018,.657,.56),'applianceWhite',.002)
+cube('basin cabinet backing',(0,.436,.271),(.464,.654,.018),'applianceWhite',.001)
+for x in [-.12,.12]:
+    cube('basin cabinet front',(x,.436,-.273),(.237,.650,.018),'applianceWhite',.003)
+    cube('inset cabinet grip',(x,.749,-.284),(.19,.009,.005),'oak',.001)
+# One watertight ceramic shell: rim, sloped bowl, inner/outer bottom.
+verts=[];rings=[];faces=[]
+profiles=[(.25,.28,.018,.764),(.25,.28,.018,.88),(.193,.192,.035,.88),(.184,.183,.035,.858),(.14,.13,.032,.778),(.13,.12,.03,.770),(.13,.12,.03,.760),(.147,.137,.032,.760),(.195,.195,.035,.852)]
+for hx,hz,r,y in profiles:
+    ring=[]
+    for cx,cz,start in [(hx-r,hz-r,0),(-hx+r,hz-r,90),(-hx+r,-hz+r,180),(hx-r,-hz+r,270)]:
+        for j in range(8):
+            a=math.radians(start+j*90/8);ring.append(len(verts));verts.append(xyz((cx+r*math.cos(a),y,cz+r*math.sin(a))))
+    rings.append(ring)
+n=len(rings[0])
+for i in range(len(rings)):
+    if i==5:continue
+    for j in range(n):k=(j+1)%n;faces.append((rings[i][j],rings[i][k],rings[(i+1)%len(rings)][k],rings[(i+1)%len(rings)][j]))
+for idx,y in [(5,.770),(6,.760)]:
+    centre=len(verts);verts.append(xyz((0,y,0)))
+    for j in range(n):faces.append((centre,rings[idx][j],rings[idx][(j+1)%n]))
+me=bpy.data.meshes.new('continuous ceramic basin');me.from_pydata(verts,[],faces);me.update();ob=bpy.data.objects.new('basin',me);scene.collection.objects.link(ob);finish(ob,'integrated ceramic basin','applianceWhite')
+move(lathe('drain fitting',[(0,.769),(.018,.769),(.018,.773),(0,.773)],'chrome',32),(0,0,0))
+tube('basin mixer tap',[(.12,.876,.235),(.12,1.075,.235),(.10,1.10,.235),(.015,1.10,.235),(.015,1.075,.17)],.01,'chrome')
+cube('mixer lever',(.153,.93,.235),(.059,.008,.015),'chrome',.003)
+cube('mirror backing',(0,1.42,.269),(.46,.78,.022),'oak',.005)
+cube('mirror glass',(0,1.42,.255),(.43,.75,.008),'mirror',.004)
+for x in [-.241,.241]:cube('wall storage side',(x,2.025,.15),(.018,.43,.26),'applianceWhite',.001)
+for y in [1.819,2.231]:cube('wall storage shelf',(0,y,.15),(.464,.018,.26),'oak',.001)
+cube('wall storage backing',(0,2.025,.271),(.464,.394,.018),'applianceWhite',.001)
+cube('wall storage front',(0,2.025,.011),(.462,.394,.018),'applianceWhite',.003)
+for y in [1.90,2.15]:cube('wall storage concealed hinge',(-.218,y,.025),(.04,.05,.035),'chrome',.002)
+cube('under cabinet task strip',(0,1.807,.04),(.40,.006,.025),'glow',.001)
 
 # Wire every master material to the same packaged PBR sources used by the web.
 for name,material in materials.items():

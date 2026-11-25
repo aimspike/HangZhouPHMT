@@ -99,3 +99,16 @@ T01 保持进行中。该状态是对最终质量标准的明确记录，不以�
 重建提交 `328b8ac` 已推送，工作流 [45542958275](https://github.com/aimspike/HangZhouPHMT/actions/runs/45542958275) 成功。三入口的 HTML 和 deployment.json 均与对应 Git 内容一致；feature HTML SHA256 为 `a5664f4f1133a52a86512771b7babe544b99cf3d8c80bb260385ac599c65d947`。PC Chrome、手机微信 UA、Windows WebKit iPhone 微信 UA 的启动、16 模型 / 13 张 PBR 图、219 烘焙、四项本机检测和设置隔离通过。磁盘单 HTML 离线也通过。
 
 `validation/rebuild-public.json` 与报告里的 `public-validation.json` 保存记录，人工目视字段保持未确认；没有真机通过结论。公网检查时 release 已由其他操作推进到 `7b53b23`，正式应用 HTML 仍为原 V14.2，哈希 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；本任务未推送 main / release。后续追加提交只保存验证文档，不改变已验证应用。
+
+
+## 家具装配、阳台洗漱角与轻微玻璃反射（2026-11-25）
+
+修复茶几边条、餐桌支柱、餐椅座盘/横撑/扶手/曲背固定件、沙发横撑，以及电视柜、衣柜、餐边柜、厨柜、书桌、浴室柜与吊灯的连接。按实际导出包围盒落地及贴墙，配件随主件移动；茶几支承在地毯表面。电视柜北侧保留书房房外推拉门停车区，未强行贴墙。床头/柜背及其他可贴墙家具间距均小于1mm；床三侧和所有门型检查继续通过。
+
+阳台洗烘改为独立 Blender 模型，按小米官方照片方向制作白色箱体、深色门圈/玻璃和简洁控制区；烘干机官方参考为银色，场景颜色统一为米白。旁侧新增连续闭合陶瓷台盆、地柜、龙头、镜面、上柜和工作灯饰条；两柜沿东墙接齐、正面朝西。参考与配色说明见 references/interior/laundry-corner.md。台盆与镜柜共用墙面支承，不移动建筑墙/门。
+
+8块建筑窗玻璃在不可变烘焙快照捕获后分配独立材质，opacity .21、roughness .12、metalness 0、房间反射强度 .30；保留深度写入关闭与通透感。沿用分房间 PMREM、线性 HDR/降级和现有轻量档策略，无额外外部资源。建筑133 mesh/roof130、219烘焙、墙线、门洞、uv2及快照保持，无建筑重烘焙。
+
+18类资产、330实体部件的high/mobile导出（合计660份）逐件闭合，开放边/非流形边/退化/绕序/反向法线均0。新增 verify-furniture-assembly.py 对实际导出两档做BVH交叠、实体包含与采样最近距离检查，18类各自一个装配连通组、未见脱离部件；0.7mm容差，有限采样不代表任意自交和施工验收。verify-compact-scene.cjs检查46项贴墙/支承记录、柜间接缝、阳台通行、玻璃参数与反射实际像素贡献，并采集PC/手机视口昼夜24对网页对比。
+
+验证：compact-after.json、furniture-assembly.json、rebuild-topology.json、compact-decor.json、compact-render-quality.json、compact-mobile-compatibility.json。Chrome/WebGL1、Windows WebKit、手机横竖屏/微信UA、HDR/depth缺失回退、保存设置、219贴图、屋顶、7门闭合/扫掠及家具净空均通过；未代表物理手机微信。模型库18类、驻留PBR仍13张，家装条目40（包含配件分组）。HTML约11.54MB。实际效果与证据页为quality-report/compact.html。仅推送main，release保持独立正式发布。

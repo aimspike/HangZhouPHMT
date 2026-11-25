@@ -1,0 +1,356 @@
+{
+  "scope": "Actual Chrome WebGL1 canvas; PC and mobile/WeChat UA simulation; no physical phone",
+  "cases": [
+    {
+      "mobile": false,
+      "captures": [
+        {
+          "id": "laundry",
+          "time": "noon",
+          "name": "before-pc-laundry-noon.webp",
+          "camera": [
+            3.9,
+            1.25,
+            11.72,
+            5.8,
+            1.15,
+            11.72,
+            75
+          ]
+        },
+        {
+          "id": "laundry",
+          "time": "night",
+          "name": "before-pc-laundry-night.webp",
+          "camera": [
+            3.9,
+            1.25,
+            11.72,
+            5.8,
+            1.15,
+            11.72,
+            75
+          ]
+        },
+        {
+          "id": "basin",
+          "time": "noon",
+          "name": "before-pc-basin-noon.webp",
+          "camera": [
+            4.95,
+            1.25,
+            11.25,
+            5.85,
+            0.81,
+            11.35,
+            65
+          ]
+        },
+        {
+          "id": "basin",
+          "time": "night",
+          "name": "before-pc-basin-night.webp",
+          "camera": [
+            4.95,
+            1.25,
+            11.25,
+            5.85,
+            0.81,
+            11.35,
+            65
+          ]
+        },
+        {
+          "id": "coffee",
+          "time": "noon",
+          "name": "before-pc-coffee-noon.webp",
+          "camera": [
+            2.5,
+            0.55,
+            4,
+            1.75,
+            0.36,
+            4.68,
+            55
+          ]
+        },
+        {
+          "id": "coffee",
+          "time": "night",
+          "name": "before-pc-coffee-night.webp",
+          "camera": [
+            2.5,
+            0.55,
+            4,
+            1.75,
+            0.36,
+            4.68,
+            55
+          ]
+        },
+        {
+          "id": "chair",
+          "time": "noon",
+          "name": "before-pc-chair-noon.webp",
+          "camera": [
+            3.18,
+            0.65,
+            4.11,
+            3.65,
+            0.55,
+            4.86,
+            60
+          ]
+        },
+        {
+          "id": "chair",
+          "time": "night",
+          "name": "before-pc-chair-night.webp",
+          "camera": [
+            3.18,
+            0.65,
+            4.11,
+            3.65,
+            0.55,
+            4.86,
+            60
+          ]
+        },
+        {
+          "id": "glassFront",
+          "time": "noon",
+          "name": "before-pc-glassFront-noon.webp",
+          "camera": [
+            1.75,
+            1.5,
+            4.6,
+            0,
+            1.5,
+            4.6,
+            65
+          ]
+        },
+        {
+          "id": "glassFront",
+          "time": "night",
+          "name": "before-pc-glassFront-night.webp",
+          "camera": [
+            1.75,
+            1.5,
+            4.6,
+            0,
+            1.5,
+            4.6,
+            65
+          ]
+        },
+        {
+          "id": "glassAngle",
+          "time": "noon",
+          "name": "before-pc-glassAngle-noon.webp",
+          "camera": [
+            1.6,
+            1.5,
+            4.3,
+            0,
+            1.5,
+            5.3,
+            65
+          ]
+        },
+        {
+          "id": "glassAngle",
+          "time": "night",
+          "name": "before-pc-glassAngle-night.webp",
+          "camera": [
+            1.6,
+            1.5,
+            4.3,
+            0,
+            1.5,
+            5.3,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "mobile": true,
+      "captures": [
+        {
+          "id": "laundry",
+          "time": "noon",
+          "name": "before-mobile-laundry-noon.webp",
+          "camera": [
+            3.9,
+            1.25,
+            11.72,
+            5.8,
+            1.15,
+            11.72,
+            75
+          ]
+        },
+        {
+          "id": "laundry",
+          "time": "night",
+          "name": "before-mobile-laundry-night.webp",
+          "camera": [
+            3.9,
+            1.25,
+            11.72,
+            5.8,
+            1.15,
+            11.72,
+            75
+          ]
+        },
+        {
+          "id": "basin",
+          "time": "noon",
+          "name": "before-mobile-basin-noon.webp",
+          "camera": [
+            4.95,
+            1.25,
+            11.25,
+            5.85,
+            0.81,
+            11.35,
+            65
+          ]
+        },
+        {
+          "id": "basin",
+          "time": "night",
+          "name": "before-mobile-basin-night.webp",
+          "camera": [
+            4.95,
+            1.25,
+            11.25,
+            5.85,
+            0.81,
+            11.35,
+            65
+          ]
+        },
+        {
+          "id": "coffee",
+          "time": "noon",
+          "name": "before-mobile-coffee-noon.webp",
+          "camera": [
+            2.5,
+            0.55,
+            4,
+            1.75,
+            0.36,
+            4.68,
+            55
+          ]
+        },
+        {
+          "id": "coffee",
+          "time": "night",
+          "name": "before-mobile-coffee-night.webp",
+          "camera": [
+            2.5,
+            0.55,
+            4,
+            1.75,
+            0.36,
+            4.68,
+            55
+          ]
+        },
+        {
+          "id": "chair",
+          "time": "noon",
+          "name": "before-mobile-chair-noon.webp",
+          "camera": [
+            3.18,
+            0.65,
+            4.11,
+            3.65,
+            0.55,
+            4.86,
+            60
+          ]
+        },
+        {
+          "id": "chair",
+          "time": "night",
+          "name": "before-mobile-chair-night.webp",
+          "camera": [
+            3.18,
+            0.65,
+            4.11,
+            3.65,
+            0.55,
+            4.86,
+            60
+          ]
+        },
+        {
+          "id": "glassFront",
+          "time": "noon",
+          "name": "before-mobile-glassFront-noon.webp",
+          "camera": [
+            1.75,
+            1.5,
+            4.6,
+            0,
+            1.5,
+            4.6,
+            65
+          ]
+        },
+        {
+          "id": "glassFront",
+          "time": "night",
+          "name": "before-mobile-glassFront-night.webp",
+          "camera": [
+            1.75,
+            1.5,
+            4.6,
+            0,
+            1.5,
+            4.6,
+            65
+          ]
+        },
+        {
+          "id": "glassAngle",
+          "time": "noon",
+          "name": "before-mobile-glassAngle-noon.webp",
+          "camera": [
+            1.6,
+            1.5,
+            4.3,
+            0,
+            1.5,
+            5.3,
+            65
+          ]
+        },
+        {
+          "id": "glassAngle",
+          "time": "night",
+          "name": "before-mobile-glassAngle-night.webp",
+          "camera": [
+            1.6,
+            1.5,
+            4.3,
+            0,
+            1.5,
+            5.3,
+            65
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "stage": "before",
+  "htmlSHA256": "038d2a097c2e2dab9ef70287509cb8c3369e7c77b0b006a33cf2693a8a2754b4",
+  "result": "passed"
+}

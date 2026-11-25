@@ -1,0 +1,5904 @@
+{
+  "scope": "Check assembled shipped LODs. Run with Blender --background --python this_file.\nBVH surface intersections and inside-solid tests prove contact; sampled nearest\nsurface distances are upper bounds, with 0.7 mm export/assembly tolerance.\nSeparate wall-mounted mirror and upper cabinet may use the architectural wall.\n",
+  "modelSHA": "1593015815252beccbb12ddd1047093f24586694e608a0dc8d0336869d04e255",
+  "toleranceMm": 0.7,
+  "models": {
+    "sofa": {
+      "high": {
+        "parts": 23,
+        "components": [
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / continuous chromed sled frame.001",
+            "sofa / welded cross member",
+            "sofa / welded cross member.001",
+            "sofa / upholstered seat support",
+            "sofa / rounded arm bolster",
+            "sofa / rounded arm bolster.001",
+            "sofa / seat cushion",
+            "sofa / compressed back cushion",
+            "sofa / seat cushion.001",
+            "sofa / compressed back cushion.001",
+            "sofa / seat cushion.002",
+            "sofa / compressed back cushion.002",
+            "sofa / arm seam",
+            "sofa / arm seam.001",
+            "sofa / seat top welt",
+            "sofa / back perimeter welt",
+            "sofa / seat top welt.001",
+            "sofa / back perimeter welt.001",
+            "sofa / seat top welt.002",
+            "sofa / back perimeter welt.002",
+            "sofa / loose scatter pillow",
+            "sofa / loose scatter pillow.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / welded cross member",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / rounded arm bolster",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame.001",
+            "sofa / welded cross member",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame.001",
+            "sofa / rounded arm bolster.001",
+            0
+          ],
+          [
+            "sofa / welded cross member.001",
+            "sofa / upholstered seat support",
+            0
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion",
+            0
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion.001",
+            0
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / seat cushion",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / compressed back cushion",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / arm seam",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / back perimeter welt",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / loose scatter pillow",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / seat cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / compressed back cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / arm seam.001",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / back perimeter welt.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / loose scatter pillow.001",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / compressed back cushion",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / loose scatter pillow",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / arm seam",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / back perimeter welt",
+            0
+          ],
+          [
+            "sofa / seat cushion.001",
+            "sofa / compressed back cushion.001",
+            0
+          ],
+          [
+            "sofa / seat cushion.001",
+            "sofa / seat top welt.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.001",
+            "sofa / seat top welt.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.001",
+            "sofa / back perimeter welt.001",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / compressed back cushion.002",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / loose scatter pillow.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / arm seam.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / back perimeter welt.002",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 23,
+        "components": [
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / continuous chromed sled frame.001",
+            "sofa / welded cross member",
+            "sofa / welded cross member.001",
+            "sofa / upholstered seat support",
+            "sofa / rounded arm bolster",
+            "sofa / rounded arm bolster.001",
+            "sofa / seat cushion",
+            "sofa / compressed back cushion",
+            "sofa / seat cushion.001",
+            "sofa / compressed back cushion.001",
+            "sofa / seat cushion.002",
+            "sofa / compressed back cushion.002",
+            "sofa / arm seam",
+            "sofa / arm seam.001",
+            "sofa / seat top welt",
+            "sofa / back perimeter welt",
+            "sofa / seat top welt.001",
+            "sofa / back perimeter welt.001",
+            "sofa / seat top welt.002",
+            "sofa / back perimeter welt.002",
+            "sofa / loose scatter pillow",
+            "sofa / loose scatter pillow.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / welded cross member",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame",
+            "sofa / rounded arm bolster",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame.001",
+            "sofa / welded cross member",
+            0
+          ],
+          [
+            "sofa / continuous chromed sled frame.001",
+            "sofa / rounded arm bolster.001",
+            0
+          ],
+          [
+            "sofa / welded cross member.001",
+            "sofa / upholstered seat support",
+            0.0444
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion",
+            0
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion.001",
+            0
+          ],
+          [
+            "sofa / upholstered seat support",
+            "sofa / seat cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / seat cushion",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / compressed back cushion",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / arm seam",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / back perimeter welt",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster",
+            "sofa / loose scatter pillow",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / seat cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / compressed back cushion.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / arm seam.001",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / back perimeter welt.002",
+            0
+          ],
+          [
+            "sofa / rounded arm bolster.001",
+            "sofa / loose scatter pillow.001",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / compressed back cushion",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / seat cushion",
+            "sofa / loose scatter pillow",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / arm seam",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / seat top welt",
+            0
+          ],
+          [
+            "sofa / compressed back cushion",
+            "sofa / back perimeter welt",
+            0
+          ],
+          [
+            "sofa / seat cushion.001",
+            "sofa / compressed back cushion.001",
+            0
+          ],
+          [
+            "sofa / seat cushion.001",
+            "sofa / seat top welt.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.001",
+            "sofa / seat top welt.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.001",
+            "sofa / back perimeter welt.001",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / compressed back cushion.002",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / seat cushion.002",
+            "sofa / loose scatter pillow.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / arm seam.001",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / seat top welt.002",
+            0
+          ],
+          [
+            "sofa / compressed back cushion.002",
+            "sofa / back perimeter welt.002",
+            0
+          ]
+        ]
+      }
+    },
+    "coffee": {
+      "high": {
+        "parts": 6,
+        "components": [
+          [
+            "coffee / turned maple pedestal",
+            "coffee / inset wood table top",
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail",
+            "coffee / attached tray edge rail.001",
+            "coffee / porcelain cup"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "coffee / turned maple pedestal",
+            "coffee / rounded square tray",
+            0
+          ],
+          [
+            "coffee / inset wood table top",
+            "coffee / rounded square tray",
+            0
+          ],
+          [
+            "coffee / inset wood table top",
+            "coffee / porcelain cup",
+            0
+          ],
+          [
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail",
+            0
+          ],
+          [
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 6,
+        "components": [
+          [
+            "coffee / turned maple pedestal",
+            "coffee / inset wood table top",
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail",
+            "coffee / attached tray edge rail.001",
+            "coffee / porcelain cup"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "coffee / turned maple pedestal",
+            "coffee / rounded square tray",
+            0
+          ],
+          [
+            "coffee / inset wood table top",
+            "coffee / rounded square tray",
+            0
+          ],
+          [
+            "coffee / inset wood table top",
+            "coffee / porcelain cup",
+            0
+          ],
+          [
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail",
+            0
+          ],
+          [
+            "coffee / rounded square tray",
+            "coffee / attached tray edge rail.001",
+            0
+          ]
+        ]
+      }
+    },
+    "console": {
+      "high": {
+        "parts": 15,
+        "components": [
+          [
+            "console / lower shelf",
+            "console / cabinet top",
+            "console / internal partition",
+            "console / internal partition.001",
+            "console / centre shelf",
+            "console / cabinet end",
+            "console / cabinet end.001",
+            "console / back panel",
+            "console / inset sliding door",
+            "console / inset sliding door.001",
+            "console / recessed dark pull",
+            "console / recessed dark pull.001",
+            "console / media receiver",
+            "console / bent console legs",
+            "console / bent console legs.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "console / lower shelf",
+            "console / cabinet end",
+            0.501
+          ],
+          [
+            "console / lower shelf",
+            "console / cabinet end.001",
+            0.501
+          ],
+          [
+            "console / lower shelf",
+            "console / media receiver",
+            0
+          ],
+          [
+            "console / lower shelf",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / lower shelf",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / cabinet end",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / cabinet end.001",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / internal partition",
+            "console / centre shelf",
+            0
+          ],
+          [
+            "console / internal partition",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / internal partition.001",
+            "console / centre shelf",
+            0
+          ],
+          [
+            "console / internal partition.001",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end",
+            "console / inset sliding door",
+            0
+          ],
+          [
+            "console / cabinet end.001",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end.001",
+            "console / inset sliding door.001",
+            0
+          ],
+          [
+            "console / back panel",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / back panel",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / inset sliding door",
+            "console / recessed dark pull",
+            0.4984
+          ],
+          [
+            "console / inset sliding door",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / inset sliding door.001",
+            "console / recessed dark pull.001",
+            0.4984
+          ],
+          [
+            "console / inset sliding door.001",
+            "console / bent console legs.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 15,
+        "components": [
+          [
+            "console / lower shelf",
+            "console / cabinet top",
+            "console / internal partition",
+            "console / internal partition.001",
+            "console / centre shelf",
+            "console / cabinet end",
+            "console / cabinet end.001",
+            "console / back panel",
+            "console / inset sliding door",
+            "console / inset sliding door.001",
+            "console / recessed dark pull",
+            "console / recessed dark pull.001",
+            "console / media receiver",
+            "console / bent console legs",
+            "console / bent console legs.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "console / lower shelf",
+            "console / cabinet end",
+            0.501
+          ],
+          [
+            "console / lower shelf",
+            "console / cabinet end.001",
+            0.501
+          ],
+          [
+            "console / lower shelf",
+            "console / media receiver",
+            0
+          ],
+          [
+            "console / lower shelf",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / lower shelf",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / cabinet end",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / cabinet end.001",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / cabinet top",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / internal partition",
+            "console / centre shelf",
+            0
+          ],
+          [
+            "console / internal partition",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / internal partition.001",
+            "console / centre shelf",
+            0
+          ],
+          [
+            "console / internal partition.001",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end",
+            "console / inset sliding door",
+            0
+          ],
+          [
+            "console / cabinet end.001",
+            "console / back panel",
+            0
+          ],
+          [
+            "console / cabinet end.001",
+            "console / inset sliding door.001",
+            0
+          ],
+          [
+            "console / back panel",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / back panel",
+            "console / bent console legs.001",
+            0
+          ],
+          [
+            "console / inset sliding door",
+            "console / recessed dark pull",
+            0.4984
+          ],
+          [
+            "console / inset sliding door",
+            "console / bent console legs",
+            0
+          ],
+          [
+            "console / inset sliding door.001",
+            "console / recessed dark pull.001",
+            0.4984
+          ],
+          [
+            "console / inset sliding door.001",
+            "console / bent console legs.001",
+            0
+          ]
+        ]
+      }
+    },
+    "dining-table": {
+      "high": {
+        "parts": 3,
+        "components": [
+          [
+            "dining-table / edge-profiled round tabletop",
+            "dining-table / turned pedestal",
+            "dining-table / chromed flared foot"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "dining-table / edge-profiled round tabletop",
+            "dining-table / turned pedestal",
+            0
+          ],
+          [
+            "dining-table / turned pedestal",
+            "dining-table / chromed flared foot",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 3,
+        "components": [
+          [
+            "dining-table / edge-profiled round tabletop",
+            "dining-table / turned pedestal",
+            "dining-table / chromed flared foot"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "dining-table / edge-profiled round tabletop",
+            "dining-table / turned pedestal",
+            0
+          ],
+          [
+            "dining-table / turned pedestal",
+            "dining-table / chromed flared foot",
+            0
+          ]
+        ]
+      }
+    },
+    "chair": {
+      "high": {
+        "parts": 17,
+        "components": [
+          [
+            "chair / seat cushion",
+            "chair / seat piping",
+            "chair / seat mounting pan",
+            "chair / back fixing boss",
+            "chair / back fixing boss.001",
+            "chair / back fixing boss.002",
+            "chair / back fixing boss.003",
+            "chair / bowed plywood back",
+            "chair / armrest",
+            "chair / armrest.001",
+            "chair / continuous cantilever leg",
+            "chair / arm support",
+            "chair / rear arm attachment",
+            "chair / continuous cantilever leg.001",
+            "chair / arm support.001",
+            "chair / rear arm attachment.001",
+            "chair / welded front frame tie"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "chair / seat cushion",
+            "chair / seat piping",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / seat mounting pan",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / seat mounting pan",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat mounting pan",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / back fixing boss.001",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.001",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / back fixing boss.003",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.003",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / armrest",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / armrest",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / armrest.001",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / armrest.001",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / welded front frame tie",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / welded front frame tie",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 17,
+        "components": [
+          [
+            "chair / seat cushion",
+            "chair / seat piping",
+            "chair / seat mounting pan",
+            "chair / back fixing boss",
+            "chair / back fixing boss.001",
+            "chair / back fixing boss.002",
+            "chair / back fixing boss.003",
+            "chair / bowed plywood back",
+            "chair / armrest",
+            "chair / armrest.001",
+            "chair / continuous cantilever leg",
+            "chair / arm support",
+            "chair / rear arm attachment",
+            "chair / continuous cantilever leg.001",
+            "chair / arm support.001",
+            "chair / rear arm attachment.001",
+            "chair / welded front frame tie"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "chair / seat cushion",
+            "chair / seat piping",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / seat mounting pan",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / seat cushion",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / seat piping",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / seat mounting pan",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / seat mounting pan",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / back fixing boss",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / back fixing boss.001",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.001",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / back fixing boss.002",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / back fixing boss.003",
+            "chair / bowed plywood back",
+            0
+          ],
+          [
+            "chair / back fixing boss.003",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / continuous cantilever leg",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / continuous cantilever leg.001",
+            0
+          ],
+          [
+            "chair / bowed plywood back",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / armrest",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / armrest",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / armrest.001",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / armrest.001",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / arm support",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / rear arm attachment",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg",
+            "chair / welded front frame tie",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / arm support.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / rear arm attachment.001",
+            0
+          ],
+          [
+            "chair / continuous cantilever leg.001",
+            "chair / welded front frame tie",
+            0
+          ]
+        ]
+      }
+    },
+    "pendant": {
+      "high": {
+        "parts": 6,
+        "components": [
+          [
+            "pendant / spun shade lower",
+            "pendant / spun shade upper",
+            "pendant / top shade",
+            "pendant / socket",
+            "pendant / continuous shade hub",
+            "pendant / fabric flex"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "pendant / spun shade lower",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / spun shade upper",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / top shade",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / socket",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / socket",
+            "pendant / fabric flex",
+            0
+          ],
+          [
+            "pendant / continuous shade hub",
+            "pendant / fabric flex",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 6,
+        "components": [
+          [
+            "pendant / spun shade lower",
+            "pendant / spun shade upper",
+            "pendant / top shade",
+            "pendant / socket",
+            "pendant / continuous shade hub",
+            "pendant / fabric flex"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "pendant / spun shade lower",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / spun shade upper",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / top shade",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / socket",
+            "pendant / continuous shade hub",
+            0
+          ],
+          [
+            "pendant / socket",
+            "pendant / fabric flex",
+            0
+          ],
+          [
+            "pendant / continuous shade hub",
+            "pendant / fabric flex",
+            0
+          ]
+        ]
+      }
+    },
+    "master-bed": {
+      "high": {
+        "parts": 15,
+        "components": [
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / mattress",
+            "master-bed / pillow with crown",
+            "master-bed / pillow with crown.001",
+            "master-bed / mattress top piping",
+            "master-bed / pillow flange",
+            "master-bed / pillow flange.001",
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam",
+            "master-bed / headboard seam.001",
+            "master-bed / closed quilt shell",
+            "master-bed / recessed bed foot",
+            "master-bed / recessed bed foot.001",
+            "master-bed / recessed bed foot.002",
+            "master-bed / recessed bed foot.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / mattress",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / headboard seam.001",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.001",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.002",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.003",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / mattress top piping",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / headboard seam.001",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / pillow with crown",
+            "master-bed / pillow flange",
+            0
+          ],
+          [
+            "master-bed / pillow with crown",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / pillow with crown.001",
+            "master-bed / pillow flange.001",
+            0
+          ],
+          [
+            "master-bed / pillow with crown.001",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / mattress top piping",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 15,
+        "components": [
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / mattress",
+            "master-bed / pillow with crown",
+            "master-bed / pillow with crown.001",
+            "master-bed / mattress top piping",
+            "master-bed / pillow flange",
+            "master-bed / pillow flange.001",
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam",
+            "master-bed / headboard seam.001",
+            "master-bed / closed quilt shell",
+            "master-bed / recessed bed foot",
+            "master-bed / recessed bed foot.001",
+            "master-bed / recessed bed foot.002",
+            "master-bed / recessed bed foot.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / mattress",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / headboard seam.001",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.001",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.002",
+            0
+          ],
+          [
+            "master-bed / veneered bed frame",
+            "master-bed / recessed bed foot.003",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / mattress top piping",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / headboard seam.001",
+            0
+          ],
+          [
+            "master-bed / mattress",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / pillow with crown",
+            "master-bed / pillow flange",
+            0
+          ],
+          [
+            "master-bed / pillow with crown",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / pillow with crown.001",
+            "master-bed / pillow flange.001",
+            0
+          ],
+          [
+            "master-bed / pillow with crown.001",
+            "master-bed / closed quilt shell",
+            0
+          ],
+          [
+            "master-bed / mattress top piping",
+            "master-bed / upholstered headboard",
+            0
+          ],
+          [
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam",
+            0
+          ],
+          [
+            "master-bed / upholstered headboard",
+            "master-bed / headboard seam.001",
+            0
+          ]
+        ]
+      }
+    },
+    "second-bed": {
+      "high": {
+        "parts": 15,
+        "components": [
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / mattress",
+            "second-bed / pillow with crown",
+            "second-bed / pillow with crown.001",
+            "second-bed / mattress top piping",
+            "second-bed / upholstered headboard",
+            "second-bed / closed quilt shell",
+            "second-bed / pillow flange",
+            "second-bed / pillow flange.001",
+            "second-bed / headboard seam",
+            "second-bed / headboard seam.001",
+            "second-bed / recessed bed foot",
+            "second-bed / recessed bed foot.001",
+            "second-bed / recessed bed foot.002",
+            "second-bed / recessed bed foot.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / mattress",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / headboard seam.001",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.001",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.002",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.003",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / mattress top piping",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / headboard seam.001",
+            0
+          ],
+          [
+            "second-bed / pillow with crown",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / pillow with crown",
+            "second-bed / pillow flange",
+            0
+          ],
+          [
+            "second-bed / pillow with crown.001",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / pillow with crown.001",
+            "second-bed / pillow flange.001",
+            0
+          ],
+          [
+            "second-bed / mattress top piping",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / upholstered headboard",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / upholstered headboard",
+            "second-bed / headboard seam.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 15,
+        "components": [
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / mattress",
+            "second-bed / pillow with crown",
+            "second-bed / pillow with crown.001",
+            "second-bed / mattress top piping",
+            "second-bed / upholstered headboard",
+            "second-bed / closed quilt shell",
+            "second-bed / pillow flange",
+            "second-bed / pillow flange.001",
+            "second-bed / headboard seam",
+            "second-bed / headboard seam.001",
+            "second-bed / recessed bed foot",
+            "second-bed / recessed bed foot.001",
+            "second-bed / recessed bed foot.002",
+            "second-bed / recessed bed foot.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / mattress",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / headboard seam.001",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.001",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.002",
+            0
+          ],
+          [
+            "second-bed / veneered bed frame",
+            "second-bed / recessed bed foot.003",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / mattress top piping",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / mattress",
+            "second-bed / headboard seam.001",
+            0
+          ],
+          [
+            "second-bed / pillow with crown",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / pillow with crown",
+            "second-bed / pillow flange",
+            0
+          ],
+          [
+            "second-bed / pillow with crown.001",
+            "second-bed / closed quilt shell",
+            0
+          ],
+          [
+            "second-bed / pillow with crown.001",
+            "second-bed / pillow flange.001",
+            0
+          ],
+          [
+            "second-bed / mattress top piping",
+            "second-bed / upholstered headboard",
+            0
+          ],
+          [
+            "second-bed / upholstered headboard",
+            "second-bed / headboard seam",
+            0
+          ],
+          [
+            "second-bed / upholstered headboard",
+            "second-bed / headboard seam.001",
+            0
+          ]
+        ]
+      }
+    },
+    "master-wardrobe": {
+      "high": {
+        "parts": 26,
+        "components": [
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / base panel",
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / backing panel",
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / panel door",
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot",
+            "master-wardrobe / handle mounting foot.001",
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.002",
+            "master-wardrobe / handle mounting foot.003",
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.004",
+            "master-wardrobe / handle mounting foot.005",
+            "master-wardrobe / concealed hinge body",
+            "master-wardrobe / concealed hinge body.001",
+            "master-wardrobe / concealed hinge body.002",
+            "master-wardrobe / concealed hinge body.003",
+            "master-wardrobe / concealed hinge body.004",
+            "master-wardrobe / concealed hinge body.005"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / base panel",
+            0
+          ],
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / panel door",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / handle mounting foot.005",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.005",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 26,
+        "components": [
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / base panel",
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / backing panel",
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / panel door",
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot",
+            "master-wardrobe / handle mounting foot.001",
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.002",
+            "master-wardrobe / handle mounting foot.003",
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.004",
+            "master-wardrobe / handle mounting foot.005",
+            "master-wardrobe / concealed hinge body",
+            "master-wardrobe / concealed hinge body.001",
+            "master-wardrobe / concealed hinge body.002",
+            "master-wardrobe / concealed hinge body.003",
+            "master-wardrobe / concealed hinge body.004",
+            "master-wardrobe / concealed hinge body.005"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / base panel",
+            0
+          ],
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "master-wardrobe / recessed plinth",
+            "master-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "master-wardrobe / base panel",
+            "master-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door.001",
+            0
+          ],
+          [
+            "master-wardrobe / top panel",
+            "master-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / panel door",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel",
+            "master-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / backing panel",
+            0
+          ],
+          [
+            "master-wardrobe / laminated end panel.001",
+            "master-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition",
+            "master-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "master-wardrobe / internal hinge partition.001",
+            "master-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "master-wardrobe / panel door",
+            "master-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.001",
+            "master-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / handle mounting foot.005",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "master-wardrobe / panel door.002",
+            "master-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle",
+            "master-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.001",
+            "master-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "master-wardrobe / brushed vertical handle.002",
+            "master-wardrobe / handle mounting foot.005",
+            0
+          ]
+        ]
+      }
+    },
+    "second-wardrobe": {
+      "high": {
+        "parts": 26,
+        "components": [
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / base panel",
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / backing panel",
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / panel door",
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot",
+            "second-wardrobe / handle mounting foot.001",
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.002",
+            "second-wardrobe / handle mounting foot.003",
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.004",
+            "second-wardrobe / handle mounting foot.005",
+            "second-wardrobe / concealed hinge body",
+            "second-wardrobe / concealed hinge body.001",
+            "second-wardrobe / concealed hinge body.002",
+            "second-wardrobe / concealed hinge body.003",
+            "second-wardrobe / concealed hinge body.004",
+            "second-wardrobe / concealed hinge body.005"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / base panel",
+            0
+          ],
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / panel door",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / handle mounting foot.005",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.005",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 26,
+        "components": [
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / base panel",
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / backing panel",
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / panel door",
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot",
+            "second-wardrobe / handle mounting foot.001",
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.002",
+            "second-wardrobe / handle mounting foot.003",
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.004",
+            "second-wardrobe / handle mounting foot.005",
+            "second-wardrobe / concealed hinge body",
+            "second-wardrobe / concealed hinge body.001",
+            "second-wardrobe / concealed hinge body.002",
+            "second-wardrobe / concealed hinge body.003",
+            "second-wardrobe / concealed hinge body.004",
+            "second-wardrobe / concealed hinge body.005"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / base panel",
+            0
+          ],
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "second-wardrobe / recessed plinth",
+            "second-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / internal hinge partition",
+            0
+          ],
+          [
+            "second-wardrobe / base panel",
+            "second-wardrobe / internal hinge partition.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / laminated end panel.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door.001",
+            0
+          ],
+          [
+            "second-wardrobe / top panel",
+            "second-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / panel door",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel",
+            "second-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / backing panel",
+            0
+          ],
+          [
+            "second-wardrobe / laminated end panel.001",
+            "second-wardrobe / panel door.002",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition",
+            "second-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "second-wardrobe / internal hinge partition.001",
+            "second-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / concealed hinge body",
+            0
+          ],
+          [
+            "second-wardrobe / panel door",
+            "second-wardrobe / concealed hinge body.001",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / concealed hinge body.002",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.001",
+            "second-wardrobe / concealed hinge body.003",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / handle mounting foot.005",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / concealed hinge body.004",
+            0
+          ],
+          [
+            "second-wardrobe / panel door.002",
+            "second-wardrobe / concealed hinge body.005",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle",
+            "second-wardrobe / handle mounting foot.001",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.002",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.001",
+            "second-wardrobe / handle mounting foot.003",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.004",
+            0
+          ],
+          [
+            "second-wardrobe / brushed vertical handle.002",
+            "second-wardrobe / handle mounting foot.005",
+            0
+          ]
+        ]
+      }
+    },
+    "sideboard": {
+      "high": {
+        "parts": 21,
+        "components": [
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel",
+            "sideboard / side panel.001",
+            "sideboard / back board",
+            "sideboard / partition",
+            "sideboard / partition.001",
+            "sideboard / partition.002",
+            "sideboard / door mounting block",
+            "sideboard / door mounting block.001",
+            "sideboard / inset cabinet door.002",
+            "sideboard / door mounting block.002",
+            "sideboard / oak counter",
+            "sideboard / inset cabinet door",
+            "sideboard / shadow gap pull",
+            "sideboard / shadow gap pull.001",
+            "sideboard / shadow gap pull.002",
+            "sideboard / inset cabinet door.001",
+            "sideboard / slender leg",
+            "sideboard / slender leg.001",
+            "sideboard / slender leg.002",
+            "sideboard / slender leg.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel.001",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.001",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.002",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.003",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / oak counter",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / inset cabinet door",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / inset cabinet door.002",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / oak counter",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition.001",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition.002",
+            0
+          ],
+          [
+            "sideboard / partition",
+            "sideboard / door mounting block",
+            0
+          ],
+          [
+            "sideboard / partition.001",
+            "sideboard / door mounting block.001",
+            0
+          ],
+          [
+            "sideboard / partition.002",
+            "sideboard / door mounting block.002",
+            0
+          ],
+          [
+            "sideboard / door mounting block",
+            "sideboard / inset cabinet door",
+            0
+          ],
+          [
+            "sideboard / door mounting block.001",
+            "sideboard / inset cabinet door.001",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door.002",
+            "sideboard / door mounting block.002",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door.002",
+            "sideboard / shadow gap pull.002",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door",
+            "sideboard / shadow gap pull",
+            0
+          ],
+          [
+            "sideboard / shadow gap pull.001",
+            "sideboard / inset cabinet door.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 21,
+        "components": [
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel",
+            "sideboard / side panel.001",
+            "sideboard / back board",
+            "sideboard / partition",
+            "sideboard / partition.001",
+            "sideboard / partition.002",
+            "sideboard / door mounting block",
+            "sideboard / door mounting block.001",
+            "sideboard / inset cabinet door.002",
+            "sideboard / door mounting block.002",
+            "sideboard / oak counter",
+            "sideboard / inset cabinet door",
+            "sideboard / shadow gap pull",
+            "sideboard / shadow gap pull.001",
+            "sideboard / shadow gap pull.002",
+            "sideboard / inset cabinet door.001",
+            "sideboard / slender leg",
+            "sideboard / slender leg.001",
+            "sideboard / slender leg.002",
+            "sideboard / slender leg.003"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / side panel.001",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.001",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.002",
+            0
+          ],
+          [
+            "sideboard / cabinet bottom",
+            "sideboard / slender leg.003",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / oak counter",
+            0
+          ],
+          [
+            "sideboard / side panel",
+            "sideboard / inset cabinet door",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / back board",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / inset cabinet door.002",
+            0
+          ],
+          [
+            "sideboard / side panel.001",
+            "sideboard / oak counter",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition.001",
+            0
+          ],
+          [
+            "sideboard / back board",
+            "sideboard / partition.002",
+            0
+          ],
+          [
+            "sideboard / partition",
+            "sideboard / door mounting block",
+            0
+          ],
+          [
+            "sideboard / partition.001",
+            "sideboard / door mounting block.001",
+            0
+          ],
+          [
+            "sideboard / partition.002",
+            "sideboard / door mounting block.002",
+            0
+          ],
+          [
+            "sideboard / door mounting block",
+            "sideboard / inset cabinet door",
+            0
+          ],
+          [
+            "sideboard / door mounting block.001",
+            "sideboard / inset cabinet door.001",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door.002",
+            "sideboard / door mounting block.002",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door.002",
+            "sideboard / shadow gap pull.002",
+            0
+          ],
+          [
+            "sideboard / inset cabinet door",
+            "sideboard / shadow gap pull",
+            0
+          ],
+          [
+            "sideboard / shadow gap pull.001",
+            "sideboard / inset cabinet door.001",
+            0
+          ]
+        ]
+      }
+    },
+    "fridge": {
+      "high": {
+        "parts": 24,
+        "components": [
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / upper flat door",
+            "fridge / freezer flat door",
+            "fridge / vent fin",
+            "fridge / vent fin.001",
+            "fridge / vent fin.002",
+            "fridge / vent fin.003",
+            "fridge / vent fin.004",
+            "fridge / vent fin.005",
+            "fridge / vent fin.006",
+            "fridge / vent fin.007",
+            "fridge / vent fin.008",
+            "fridge / vent fin.009",
+            "fridge / vent fin.010",
+            "fridge / vent fin.011",
+            "fridge / vent fin.012",
+            "fridge / vent fin.013",
+            "fridge / vent fin.014",
+            "fridge / vent fin.015",
+            "fridge / door gasket",
+            "fridge / recessed upper grip",
+            "fridge / recessed freezer grip",
+            "fridge / subtle control strip",
+            "fridge / toe ventilation"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / upper flat door",
+            0
+          ],
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / freezer flat door",
+            0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / door gasket",
+            0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / recessed upper grip",
+            0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / subtle control strip",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.001",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.002",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.003",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.004",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.005",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.006",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.007",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.008",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.009",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.010",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.011",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.012",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.013",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.014",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.015",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / recessed freezer grip",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.001",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.002",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.003",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.004",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.005",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.006",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.007",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.008",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.009",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.010",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.011",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.012",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.013",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.014",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.015",
+            "fridge / toe ventilation",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 24,
+        "components": [
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / upper flat door",
+            "fridge / freezer flat door",
+            "fridge / vent fin",
+            "fridge / vent fin.001",
+            "fridge / vent fin.002",
+            "fridge / vent fin.003",
+            "fridge / vent fin.004",
+            "fridge / vent fin.005",
+            "fridge / vent fin.006",
+            "fridge / vent fin.007",
+            "fridge / vent fin.008",
+            "fridge / vent fin.009",
+            "fridge / vent fin.010",
+            "fridge / vent fin.011",
+            "fridge / vent fin.012",
+            "fridge / vent fin.013",
+            "fridge / vent fin.014",
+            "fridge / vent fin.015",
+            "fridge / door gasket",
+            "fridge / recessed upper grip",
+            "fridge / recessed freezer grip",
+            "fridge / subtle control strip",
+            "fridge / toe ventilation"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / upper flat door",
+            0
+          ],
+          [
+            "fridge / ivory coated cabinet",
+            "fridge / freezer flat door",
+            0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / door gasket",
+            0.0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / recessed upper grip",
+            0
+          ],
+          [
+            "fridge / upper flat door",
+            "fridge / subtle control strip",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.001",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.002",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.003",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.004",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.005",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.006",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.007",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.008",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.009",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.010",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.011",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.012",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.013",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.014",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / vent fin.015",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / recessed freezer grip",
+            0
+          ],
+          [
+            "fridge / freezer flat door",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.001",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.002",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.003",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.004",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.005",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.006",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.007",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.008",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.009",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.010",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.011",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.012",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.013",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.014",
+            "fridge / toe ventilation",
+            0
+          ],
+          [
+            "fridge / vent fin.015",
+            "fridge / toe ventilation",
+            0
+          ]
+        ]
+      }
+    },
+    "kitchen-east": {
+      "high": {
+        "parts": 31,
+        "components": [
+          [
+            "kitchen-east / toe kick",
+            "kitchen-east / drawer shadow joint",
+            "kitchen-east / drawer shadow joint.001",
+            "kitchen-east / drawer shadow joint.002",
+            "kitchen-east / drawer shadow joint.003",
+            "kitchen-east / carcass bottom",
+            "kitchen-east / carcass backing",
+            "kitchen-east / counter front support",
+            "kitchen-east / veneered base front",
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return",
+            "kitchen-east / side return.001",
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot",
+            "kitchen-east / handle mounting foot.001",
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.002",
+            "kitchen-east / handle mounting foot.003",
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.004",
+            "kitchen-east / handle mounting foot.005",
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.006",
+            "kitchen-east / handle mounting foot.007",
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.008",
+            "kitchen-east / handle mounting foot.009"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "kitchen-east / toe kick",
+            "kitchen-east / carcass bottom",
+            0
+          ],
+          [
+            "kitchen-east / drawer shadow joint",
+            "kitchen-east / veneered base front",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.001",
+            "kitchen-east / veneered base front",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.002",
+            "kitchen-east / veneered base front.001",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.003",
+            "kitchen-east / veneered base front.001",
+            0.5009
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / carcass backing",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.001",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.002",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.003",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.004",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / stone worktop",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / stone worktop",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / handle mounting foot",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / handle mounting foot.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / handle mounting foot.002",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / handle mounting foot.003",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / handle mounting foot.004",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / handle mounting foot.005",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / handle mounting foot.006",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / handle mounting foot.007",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / handle mounting foot.008",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / handle mounting foot.009",
+            0
+          ],
+          [
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot.001",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.002",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.003",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.004",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.005",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.006",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.007",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.008",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.009",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 31,
+        "components": [
+          [
+            "kitchen-east / toe kick",
+            "kitchen-east / drawer shadow joint",
+            "kitchen-east / drawer shadow joint.001",
+            "kitchen-east / drawer shadow joint.002",
+            "kitchen-east / drawer shadow joint.003",
+            "kitchen-east / carcass bottom",
+            "kitchen-east / carcass backing",
+            "kitchen-east / counter front support",
+            "kitchen-east / veneered base front",
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return",
+            "kitchen-east / side return.001",
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot",
+            "kitchen-east / handle mounting foot.001",
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.002",
+            "kitchen-east / handle mounting foot.003",
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.004",
+            "kitchen-east / handle mounting foot.005",
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.006",
+            "kitchen-east / handle mounting foot.007",
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.008",
+            "kitchen-east / handle mounting foot.009"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "kitchen-east / toe kick",
+            "kitchen-east / carcass bottom",
+            0
+          ],
+          [
+            "kitchen-east / drawer shadow joint",
+            "kitchen-east / veneered base front",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.001",
+            "kitchen-east / veneered base front",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.002",
+            "kitchen-east / veneered base front.001",
+            0.5009
+          ],
+          [
+            "kitchen-east / drawer shadow joint.003",
+            "kitchen-east / veneered base front.001",
+            0.5009
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / carcass backing",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.001",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.002",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.003",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / veneered base front.004",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / carcass bottom",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / stone worktop",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / carcass backing",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / stone worktop",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / counter front support",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / handle mounting foot",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front",
+            "kitchen-east / handle mounting foot.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / handle mounting foot.002",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.001",
+            "kitchen-east / handle mounting foot.003",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / handle mounting foot.004",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.002",
+            "kitchen-east / handle mounting foot.005",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / handle mounting foot.006",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.003",
+            "kitchen-east / handle mounting foot.007",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / handle mounting foot.008",
+            0
+          ],
+          [
+            "kitchen-east / veneered base front.004",
+            "kitchen-east / handle mounting foot.009",
+            0
+          ],
+          [
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return",
+            0
+          ],
+          [
+            "kitchen-east / stone worktop",
+            "kitchen-east / side return.001",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar",
+            "kitchen-east / handle mounting foot.001",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.002",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.001",
+            "kitchen-east / handle mounting foot.003",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.004",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.002",
+            "kitchen-east / handle mounting foot.005",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.006",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.003",
+            "kitchen-east / handle mounting foot.007",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.008",
+            0
+          ],
+          [
+            "kitchen-east / brushed handle bar.004",
+            "kitchen-east / handle mounting foot.009",
+            0
+          ]
+        ]
+      }
+    },
+    "kitchen-north": {
+      "high": {
+        "parts": 15,
+        "components": [
+          [
+            "kitchen-north / toe kick",
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end",
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail",
+            "kitchen-north / counter rail.001",
+            "kitchen-north / flanged sink vessel",
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / cabinet door",
+            "kitchen-north / cabinet door.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "kitchen-north / toe kick",
+            "kitchen-north / carcass bottom",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end.001",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet door.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / counter front support",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / counter front support",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet door.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter rail",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter rail.001",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / cabinet door.001",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 15,
+        "components": [
+          [
+            "kitchen-north / toe kick",
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end",
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail",
+            "kitchen-north / counter rail.001",
+            "kitchen-north / flanged sink vessel",
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / cabinet door",
+            "kitchen-north / cabinet door.001"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "kitchen-north / toe kick",
+            "kitchen-north / carcass bottom",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet end.001",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / carcass bottom",
+            "kitchen-north / cabinet door.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / counter front support",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet back",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / counter front support",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet end.001",
+            "kitchen-north / cabinet door.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / cabinet back",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter end.001",
+            0
+          ],
+          [
+            "kitchen-north / counter front support",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / counter rail.001",
+            0
+          ],
+          [
+            "kitchen-north / counter end.001",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter rail",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / counter rail.001",
+            "kitchen-north / flanged sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / cabinet door",
+            0
+          ],
+          [
+            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / cabinet door.001",
+            0
+          ]
+        ]
+      }
+    },
+    "study-desk": {
+      "high": {
+        "parts": 9,
+        "components": [
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded upright",
+            "study-desk / desk welded upright.001",
+            "study-desk / desk welded top rail",
+            "study-desk / desk welded upright.002",
+            "study-desk / desk welded upright.003",
+            "study-desk / desk welded top rail.001",
+            "study-desk / slim drawer",
+            "study-desk / recessed drawer pull"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / veneered writing top",
+            "study-desk / slim drawer",
+            0
+          ],
+          [
+            "study-desk / desk welded upright",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.001",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.002",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.003",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / slim drawer",
+            "study-desk / recessed drawer pull",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 9,
+        "components": [
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded upright",
+            "study-desk / desk welded upright.001",
+            "study-desk / desk welded top rail",
+            "study-desk / desk welded upright.002",
+            "study-desk / desk welded upright.003",
+            "study-desk / desk welded top rail.001",
+            "study-desk / slim drawer",
+            "study-desk / recessed drawer pull"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / veneered writing top",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / veneered writing top",
+            "study-desk / slim drawer",
+            0
+          ],
+          [
+            "study-desk / desk welded upright",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.001",
+            "study-desk / desk welded top rail",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.002",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / desk welded upright.003",
+            "study-desk / desk welded top rail.001",
+            0
+          ],
+          [
+            "study-desk / slim drawer",
+            "study-desk / recessed drawer pull",
+            0
+          ]
+        ]
+      }
+    },
+    "vanity": {
+      "high": {
+        "parts": 8,
+        "components": [
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front",
+            "vanity / drawer front.001",
+            "vanity / handle shadow",
+            "vanity / handle shadow.001",
+            "vanity / stone slab",
+            "vanity / porcelain vessel",
+            "vanity / curved tap"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front",
+            0
+          ],
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front.001",
+            0
+          ],
+          [
+            "vanity / floating carcass",
+            "vanity / stone slab",
+            0
+          ],
+          [
+            "vanity / drawer front",
+            "vanity / handle shadow",
+            0
+          ],
+          [
+            "vanity / drawer front.001",
+            "vanity / handle shadow.001",
+            0
+          ],
+          [
+            "vanity / stone slab",
+            "vanity / porcelain vessel",
+            0
+          ],
+          [
+            "vanity / stone slab",
+            "vanity / curved tap",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 8,
+        "components": [
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front",
+            "vanity / drawer front.001",
+            "vanity / handle shadow",
+            "vanity / handle shadow.001",
+            "vanity / stone slab",
+            "vanity / porcelain vessel",
+            "vanity / curved tap"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front",
+            0
+          ],
+          [
+            "vanity / floating carcass",
+            "vanity / drawer front.001",
+            0
+          ],
+          [
+            "vanity / floating carcass",
+            "vanity / stone slab",
+            0
+          ],
+          [
+            "vanity / drawer front",
+            "vanity / handle shadow",
+            0
+          ],
+          [
+            "vanity / drawer front.001",
+            "vanity / handle shadow.001",
+            0
+          ],
+          [
+            "vanity / stone slab",
+            "vanity / porcelain vessel",
+            0
+          ],
+          [
+            "vanity / stone slab",
+            "vanity / curved tap",
+            0
+          ]
+        ]
+      }
+    },
+    "laundry-stack": {
+      "high": {
+        "parts": 46,
+        "components": [
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / wall backing",
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer detergent drawer",
+            "laundry-stack / washer service access",
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer flush front",
+            "laundry-stack / front installation return",
+            "laundry-stack / front installation return.001",
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / structural shelf",
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / structural shelf.002",
+            "laundry-stack / structural shelf.003",
+            "laundry-stack / upper storage grip",
+            "laundry-stack / upper storage grip.001",
+            "laundry-stack / upper storage divider",
+            "laundry-stack / washer adjustable foot",
+            "laundry-stack / washer adjustable foot.001",
+            "laundry-stack / washer adjustable foot.002",
+            "laundry-stack / washer adjustable foot.003",
+            "laundry-stack / washer dark door gasket",
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer recessed side grip",
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer drawer recessed grip",
+            "laundry-stack / dryer adjustable foot",
+            "laundry-stack / dryer adjustable foot.001",
+            "laundry-stack / dryer adjustable foot.002",
+            "laundry-stack / dryer adjustable foot.003",
+            "laundry-stack / dryer dark door gasket",
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer recessed side grip",
+            "laundry-stack / dryer black full width control panel",
+            "laundry-stack / washer curved smoked lens",
+            "laundry-stack / dryer curved smoked lens",
+            "laundry-stack / dryer compact display",
+            "laundry-stack / washer display indicator",
+            "laundry-stack / washer display indicator.001",
+            "laundry-stack / washer display indicator.002",
+            "laundry-stack / dryer display indicator",
+            "laundry-stack / dryer display indicator.001",
+            "laundry-stack / dryer display indicator.002"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / wall backing",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / front installation return",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.003",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / wall backing",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / front installation return.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.003",
+            0.0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.003",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer flush front",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer detergent drawer",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer service access",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer dark door gasket",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer slim touch capsule",
+            0
+          ],
+          [
+            "laundry-stack / washer detergent drawer",
+            "laundry-stack / washer drawer recessed grip",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer flush front",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / dryer flush front",
+            "laundry-stack / dryer dark door gasket",
+            0
+          ],
+          [
+            "laundry-stack / dryer flush front",
+            "laundry-stack / dryer black full width control panel",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage grip",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / upper storage grip.001",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.002",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.003",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / washer dark door gasket",
+            "laundry-stack / washer rounded charcoal door ring",
+            0
+          ],
+          [
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer recessed side grip",
+            0
+          ],
+          [
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer curved smoked lens",
+            0
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator",
+            0
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator.001",
+            0
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator.002",
+            0
+          ],
+          [
+            "laundry-stack / dryer dark door gasket",
+            "laundry-stack / dryer rounded charcoal door ring",
+            0
+          ],
+          [
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer recessed side grip",
+            0
+          ],
+          [
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer curved smoked lens",
+            0
+          ],
+          [
+            "laundry-stack / dryer black full width control panel",
+            "laundry-stack / dryer compact display",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator.001",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator.002",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 46,
+        "components": [
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / wall backing",
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer detergent drawer",
+            "laundry-stack / washer service access",
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer flush front",
+            "laundry-stack / front installation return",
+            "laundry-stack / front installation return.001",
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / structural shelf",
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / structural shelf.002",
+            "laundry-stack / structural shelf.003",
+            "laundry-stack / upper storage grip",
+            "laundry-stack / upper storage grip.001",
+            "laundry-stack / upper storage divider",
+            "laundry-stack / washer adjustable foot",
+            "laundry-stack / washer adjustable foot.001",
+            "laundry-stack / washer adjustable foot.002",
+            "laundry-stack / washer adjustable foot.003",
+            "laundry-stack / washer dark door gasket",
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer recessed side grip",
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer drawer recessed grip",
+            "laundry-stack / dryer adjustable foot",
+            "laundry-stack / dryer adjustable foot.001",
+            "laundry-stack / dryer adjustable foot.002",
+            "laundry-stack / dryer adjustable foot.003",
+            "laundry-stack / dryer dark door gasket",
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer recessed side grip",
+            "laundry-stack / dryer black full width control panel",
+            "laundry-stack / washer curved smoked lens",
+            "laundry-stack / dryer curved smoked lens",
+            "laundry-stack / dryer compact display",
+            "laundry-stack / washer display indicator",
+            "laundry-stack / washer display indicator.001",
+            "laundry-stack / washer display indicator.002",
+            "laundry-stack / dryer display indicator",
+            "laundry-stack / dryer display indicator.001",
+            "laundry-stack / dryer display indicator.002"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / wall backing",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / front installation return",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side",
+            "laundry-stack / structural shelf.003",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / wall backing",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / front installation return.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / full height cabinet side.001",
+            "laundry-stack / structural shelf.003",
+            0.0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / structural shelf.003",
+            0
+          ],
+          [
+            "laundry-stack / wall backing",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer flush front",
+            0
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot",
+            0.3546
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.001",
+            0.2748
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.002",
+            0.2739
+          ],
+          [
+            "laundry-stack / washer enamel shell",
+            "laundry-stack / washer adjustable foot.003",
+            0.3507
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer detergent drawer",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer service access",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer dark door gasket",
+            0
+          ],
+          [
+            "laundry-stack / washer flush front",
+            "laundry-stack / washer slim touch capsule",
+            0
+          ],
+          [
+            "laundry-stack / washer detergent drawer",
+            "laundry-stack / washer drawer recessed grip",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer flush front",
+            0
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot",
+            0.3546
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.001",
+            0.2747
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.002",
+            0.2738
+          ],
+          [
+            "laundry-stack / dryer enamel shell",
+            "laundry-stack / dryer adjustable foot.003",
+            0.3507
+          ],
+          [
+            "laundry-stack / dryer flush front",
+            "laundry-stack / dryer dark door gasket",
+            0
+          ],
+          [
+            "laundry-stack / dryer flush front",
+            "laundry-stack / dryer black full width control panel",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / front installation return",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf.001",
+            0
+          ],
+          [
+            "laundry-stack / front installation return.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage grip",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / structural shelf.002",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / upper storage grip.001",
+            0
+          ],
+          [
+            "laundry-stack / upper storage front.001",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf",
+            "laundry-stack / washer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.001",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.002",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.001",
+            "laundry-stack / dryer adjustable foot.003",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.002",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / structural shelf.003",
+            "laundry-stack / upper storage divider",
+            0
+          ],
+          [
+            "laundry-stack / washer dark door gasket",
+            "laundry-stack / washer rounded charcoal door ring",
+            0
+          ],
+          [
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer recessed side grip",
+            0
+          ],
+          [
+            "laundry-stack / washer rounded charcoal door ring",
+            "laundry-stack / washer curved smoked lens",
+            0
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator",
+            0.0901
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator.001",
+            0.0853
+          ],
+          [
+            "laundry-stack / washer slim touch capsule",
+            "laundry-stack / washer display indicator.002",
+            0.0887
+          ],
+          [
+            "laundry-stack / dryer dark door gasket",
+            "laundry-stack / dryer rounded charcoal door ring",
+            0
+          ],
+          [
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer recessed side grip",
+            0
+          ],
+          [
+            "laundry-stack / dryer rounded charcoal door ring",
+            "laundry-stack / dryer curved smoked lens",
+            0
+          ],
+          [
+            "laundry-stack / dryer black full width control panel",
+            "laundry-stack / dryer compact display",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator.001",
+            0
+          ],
+          [
+            "laundry-stack / dryer compact display",
+            "laundry-stack / dryer display indicator.002",
+            0
+          ]
+        ]
+      }
+    },
+    "balcony-vanity": {
+      "high": {
+        "parts": 24,
+        "components": [
+          [
+            "balcony-vanity / recessed plinth",
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / inset cabinet grip",
+            "balcony-vanity / inset cabinet grip.001",
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet backing",
+            "balcony-vanity / basin cabinet front",
+            "balcony-vanity / basin cabinet front.001",
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage side.001",
+            "balcony-vanity / wall storage backing",
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / drain fitting",
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mixer lever",
+            "balcony-vanity / wall storage concealed hinge",
+            "balcony-vanity / wall storage concealed hinge.001",
+            "balcony-vanity / mirror glass",
+            "balcony-vanity / under cabinet task strip"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "balcony-vanity / recessed plinth",
+            "balcony-vanity / cabinet floor",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet side",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet side.001",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / inset cabinet grip",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / inset cabinet grip.001",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / wall storage shelf",
+            0
+          ],
+          [
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / mirror glass",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage side",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage side.001",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / under cabinet task strip",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage side",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage side.001",
+            0.0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / integrated ceramic basin",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / integrated ceramic basin",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / drain fitting",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / basin mixer tap",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage concealed hinge",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side.001",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / wall storage concealed hinge",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mixer lever",
+            0
+          ],
+          [
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mirror glass",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 24,
+        "components": [
+          [
+            "balcony-vanity / recessed plinth",
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / inset cabinet grip",
+            "balcony-vanity / inset cabinet grip.001",
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet backing",
+            "balcony-vanity / basin cabinet front",
+            "balcony-vanity / basin cabinet front.001",
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage side.001",
+            "balcony-vanity / wall storage backing",
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / drain fitting",
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mixer lever",
+            "balcony-vanity / wall storage concealed hinge",
+            "balcony-vanity / wall storage concealed hinge.001",
+            "balcony-vanity / mirror glass",
+            "balcony-vanity / under cabinet task strip"
+          ]
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "balcony-vanity / recessed plinth",
+            "balcony-vanity / cabinet floor",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet side",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet side.001",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / cabinet floor",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / inset cabinet grip",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / inset cabinet grip.001",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / wall storage shelf",
+            0
+          ],
+          [
+            "balcony-vanity / mirror backing",
+            "balcony-vanity / mirror glass",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage side",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage side.001",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf",
+            "balcony-vanity / under cabinet task strip",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage side",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage side.001",
+            0.0
+          ],
+          [
+            "balcony-vanity / wall storage shelf.001",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / basin cabinet front",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side",
+            "balcony-vanity / integrated ceramic basin",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet backing",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / basin cabinet front.001",
+            0
+          ],
+          [
+            "balcony-vanity / basin cabinet side.001",
+            "balcony-vanity / integrated ceramic basin",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / drain fitting",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / basin mixer tap",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage concealed hinge",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side",
+            "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage side.001",
+            "balcony-vanity / wall storage backing",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / wall storage concealed hinge",
+            0
+          ],
+          [
+            "balcony-vanity / wall storage front",
+            "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mixer lever",
+            0
+          ],
+          [
+            "balcony-vanity / basin mixer tap",
+            "balcony-vanity / mirror glass",
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "result": "passed"
+}
