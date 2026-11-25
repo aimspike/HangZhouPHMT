@@ -43,3 +43,9 @@ T01 保持进行中。该状态是对最终质量标准的明确记录，不以�
 - [PC 报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/#pc)
 - [手机视口报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/#mobile)
 - [实际设备显示检测](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?verify=mobile)
+
+## 公网交付
+
+重建提交 `328b8ac` 已推送，工作流 [45542958275](https://github.com/aimspike/HangZhouPHMT/actions/runs/45542958275) 成功。三入口的 HTML 和 deployment.json 均与对应 Git 内容一致；feature HTML SHA256 为 `a5664f4f1133a52a86512771b7babe544b99cf3d8c80bb260385ac599c65d947`。PC Chrome、手机微信 UA、Windows WebKit iPhone 微信 UA 的启动、16 模型 / 13 张 PBR 图、219 烘焙、四项本机检测和设置隔离通过。磁盘单 HTML 离线也通过。
+
+`validation/rebuild-public.json` 与报告里的 `public-validation.json` 保存记录，人工目视字段保持未确认；没有真机通过结论。公网检查时 release 已由其他操作推进到 `7b53b23`，正式应用 HTML 仍为原 V14.2，哈希 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；本任务未推送 main / release。后续追加提交只保存验证文档，不改变已验证应用。
