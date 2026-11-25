@@ -1,5 +1,13 @@
 # 发布信息
 
+## 阳台顶板与顶灯 main 测试（2026-11-25）
+
+功能提交 [`79b8016`](https://github.com/aimspike/HangZhouPHMT/commit/79b8016b9f8aa0514884ddde1ed79a870a75d659) 已推送，公开 [main 预览](https://aimspike.github.io/HangZhouPHMT/preview/main/) 的提交号及 HTML 与本次构建一致，规范化 SHA256 为 `ae2439f11f2bf2668cf243496fe2e0b5cfdd24c20111cebbf61faffcd22db15f`。阳台连续顶板、吸顶灯、烘焙及天花板材质设置已更新。
+
+公开 Windows Chrome 1280×900、微信 UA / 触屏模拟 390×844 和 740×360：219/219 贴图、屋顶无缺口、夜间开关 / 调光、天花板显示 / 材质保存、毛坯与 A 方案、门及家具净空、旋转通过；无脚本 / shader 错误或额外资源请求。独立 file 单 HTML 启动也通过。证据见 `validation/balcony-public-validation.json`、`balcony-deployment.json` 和 `balcony-offline.json`，手机结果均为模拟。
+
+正式根入口仍使用 release `7b53b23`，HTML SHA256 保持 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；独立家装重建 feature 预览仍保留。本次不推进 release。后续验证文档提交不改变已测应用 HTML。
+
 ## Feature 分支独立预览（2026-11-25）
 
 `feature/render-quality` 的画质开发页使用 `/preview/render-quality/`，报告位于其下 `quality-report/`。工作流同时检出 release、main 和存在时的该 feature 分支，组合部署三个入口；正式根页面仍逐字节取自 release，main 预览仍取自 main。

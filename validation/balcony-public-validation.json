@@ -1,0 +1,380 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+  "date": "2026-11-25T04:47:04.856Z",
+  "scope": "Windows Chrome WebGL1; mobile viewport/touch/WeChat UA simulation, not physical phone verification",
+  "errors": [],
+  "external": [],
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "boot": {
+        "diagnostics": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            1920,
+            1350
+          ],
+          "viewport": [
+            1280,
+            900
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "daylight": "night"
+      },
+      "snapshotMatches": true,
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bareOn": 86.80246527777592,
+      "bareOff": 18.860138888890074,
+      "bareDim": 47.67361111111031,
+      "decorOn": 108.84881944444571,
+      "decorOff": 18.889704861112662,
+      "roofImage": 115.12067708333304,
+      "noon": 149.2073437500082,
+      "doors": [
+        {
+          "id": "entry",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "study",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "kitchen",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "bath",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "storage",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "master",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        },
+        {
+          "id": "second",
+          "type": "hinged",
+          "rays": 1426,
+          "gaps": 0,
+          "examples": []
+        }
+      ],
+      "motion": [
+        {
+          "id": "study",
+          "pathSteps": 25,
+          "otherDoorStates": 5625,
+          "outsideRoom": true,
+          "stackSide": "left",
+          "collisions": [],
+          "sweepEnvelopeCollisions": []
+        },
+        {
+          "id": "kitchen",
+          "pathSteps": 25,
+          "otherDoorStates": 5625,
+          "outsideRoom": true,
+          "stackSide": "right",
+          "collisions": [],
+          "sweepEnvelopeCollisions": []
+        },
+        {
+          "id": "bath",
+          "pathSteps": 25,
+          "otherDoorStates": 5625,
+          "outsideRoom": true,
+          "stackSide": "left",
+          "collisions": [],
+          "sweepEnvelopeCollisions": []
+        },
+        {
+          "id": "storage",
+          "pathSteps": 25,
+          "otherDoorStates": 5625,
+          "outsideRoom": true,
+          "stackSide": "right",
+          "collisions": [],
+          "sweepEnvelopeCollisions": []
+        }
+      ],
+      "furniture": [
+        {
+          "door": "entry",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "study",
+          "type": "sliding",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "study",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "kitchen",
+          "type": "sliding",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "kitchen",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "bath",
+          "type": "sliding",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "bath",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "storage",
+          "type": "sliding",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "storage",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "master",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        },
+        {
+          "door": "second",
+          "type": "hinged",
+          "steps": 25,
+          "collisions": []
+        }
+      ],
+      "persistence": "passed",
+      "quality": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": null,
+        "captures": 0,
+        "revision": 22,
+        "reflectionError": null,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [],
+        "materials": 0,
+        "mode": "orbit",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "wechat-portrait",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "boot": {
+        "diagnostics": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            585,
+            1266
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "daylight": "night"
+      },
+      "snapshotMatches": true,
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bareOn": 106.5304513888813,
+      "bareOff": 8.262638888888922,
+      "bareDim": 49.784513888887574,
+      "decorOn": 149.00024305554632,
+      "decorOff": 7.293611111111089,
+      "roofImage": 157.47855902778568,
+      "noon": 151.38427083334543,
+      "rotation": "passed",
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "balcony",
+        "captures": 9,
+        "revision": 44,
+        "reflectionError": null,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          633,
+          293
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "balcony"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "wechat-landscape",
+      "width": 740,
+      "height": 360,
+      "mobile": true,
+      "boot": {
+        "diagnostics": {
+          "version": "14.2",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            1110,
+            540
+          ],
+          "viewport": [
+            740,
+            360
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "maps": [
+          219,
+          219
+        ],
+        "daylight": "night"
+      },
+      "snapshotMatches": true,
+      "roof": {
+        "gaps": 0,
+        "examples": []
+      },
+      "bareOn": 82.911458333334,
+      "bareOff": 21.664131944446964,
+      "bareDim": 47.388107638887234,
+      "decorOn": 102.64006944444398,
+      "decorOff": 25.25083333333572,
+      "roofImage": 105.16440972221876,
+      "noon": 149.89083333333778,
+      "rotation": "passed",
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "balcony",
+        "captures": 9,
+        "revision": 44,
+        "reflectionError": null,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          270,
+          555
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "balcony"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    }
+  ],
+  "result": "passed"
+}

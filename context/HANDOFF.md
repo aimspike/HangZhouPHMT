@@ -8,6 +8,8 @@
 
 本地 Chrome 1280×900、微信 UA / 触屏模拟 390×844 与 740×360：219/219 贴图、包含阳台的屋顶 0 缺口、灯光开关与调光、天花板显示与材质保存、旋转及门 / 家具净空通过。`verify-render-quality.cjs` 的昼夜、画质保存、HDR / depth 缺扩展回退通过，8 项发布隔离测试通过。灯光图 G/B 在天光重算前后逐像素一致。实际画布截图以 WebP 保存，未进行真机微信验证。
 
+功能提交 `79b8016` 已推送 main 并在公开预览完成同组桌面 / 手机模拟回归。公开 HTML 与构建一致，独立 file 单 HTML 启动通过；release 正式 HTML 和 feature 预览保持。公网记录见 `validation/balcony-public-validation.json` 与 `balcony-deployment.json`。
+
 ## 当前分支规则（2026-11-24）
 
 `main` 为开发分支，`release` 为正式发布分支。正式展示根网址始终取 `release/docs`；main 测试链接为 `https://aimspike.github.io/HangZhouPHMT/preview/main/`。修改完成后验证并推送 main、检查测试部署；只有用户要求正式发布时，才将已验证 main 快进合入 release。此规则覆盖下方历史条目中“推送 main 即发布正式版”的流程。

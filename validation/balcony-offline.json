@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "scope": "Local file single HTML in Windows Chrome at 390x844; not a phone device",
+  "state": {
+    "maps": [
+      219,
+      219
+    ],
+    "roof": {
+      "gaps": 0,
+      "examples": []
+    },
+    "ceiling": true,
+    "version": "14.2",
+    "night": true
+  },
+  "errors": [],
+  "externalRequests": []
+}
