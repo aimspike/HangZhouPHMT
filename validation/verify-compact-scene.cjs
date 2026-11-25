@@ -3,7 +3,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert'),crypto=require('crypto');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE),root=path.resolve(__dirname,'..');
 const base=process.env.HOUSE_URL||'http://127.0.0.1:8879/docs/',before=process.env.CAPTURE_STAGE==='before';
-const out=path.join(root,'docs/quality-report/compact');fs.mkdirSync(out,{recursive:true});
+const out=path.join(root,process.env.COMPACT_CAPTURE_DIR||'docs/quality-report/compact');fs.mkdirSync(out,{recursive:true});
 const report={scope:'Actual Chrome WebGL1 canvas; PC and mobile/WeChat UA simulation; no physical phone',cases:[],errors:[],external:[],stage:before?'before':'after'};
 const views={laundry:[3.9,1.25,11.72,5.8,1.15,11.72,75],basin:[4.95,1.25,11.25,5.85,.81,11.35,65],coffee:[2.5,.55,4.0,1.75,.36,4.68,55],chair:[3.18,.65,4.11,3.65,.55,4.86,60],glassFront:[1.75,1.5,4.6,0,1.5,4.6,65],glassAngle:[1.6,1.5,4.3,0,1.5,5.3,65]};
 const settle=async p=>{const n=await p.evaluate(()=>houseViewer.frames);await p.waitForFunction(n=>houseViewer.frames>n+3,n);};
@@ -38,4 +38,4 @@ for(const mobile of [false,true]){
  report.cases.push(c);await ctx.close();console.log(mobile?'mobile compact passed':'desktop compact passed');
 }
 assert.deepEqual(report.errors,[]);assert.deepEqual(report.external,[]);report.result='passed';
-}finally{fs.writeFileSync(path.join(root,'validation/compact-'+report.stage+'.json'),JSON.stringify(report,null,2));await b.close();}})().catch(e=>{console.error(e);process.exit(1)});
+}finally{fs.writeFileSync(path.join(root,process.env.COMPACT_RESULT||'validation/compact-'+report.stage+'.json'),JSON.stringify(report,null,2));await b.close();}})().catch(e=>{console.error(e);process.exit(1)});

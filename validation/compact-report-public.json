@@ -1,0 +1,21 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/compact.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 24,
+      "slider": "passed",
+      "localLinks": 9,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 24,
+      "slider": "passed",
+      "localLinks": 9,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

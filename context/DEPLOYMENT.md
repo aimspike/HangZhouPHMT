@@ -1,5 +1,16 @@
 # 发布信息
 
+## 家具装配与阳台洗漱角 main 验证（2026-11-25）
+
+功能提交 [`78fc9f1`](https://github.com/aimspike/HangZhouPHMT/commit/78fc9f17eb4debe322d17092012ccf392af8b99e) 已部署至 [main 家装 A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。修复全库装配连接、按实际尺寸贴墙落地，重建小米造型参考的洗烘高柜并增加旁侧台盆/镜柜收纳；8块窗玻璃增加低强度环境反射。
+
+公开HTML与Git装配结果一致，规范化SHA256 `62316cff0d579aedcc5f010e295f985341aefdb7889f981eaff7c443c5a2e2b8`。PC Chrome、Android微信UA与Windows WebKit iPhone微信UA的18模型 / 13PBR / 219烘焙、屋顶覆盖、设置隔离、四项本机检测和离线带家具单HTML通过；专项确认46项贴墙/支承、8组配件支承、两柜接缝/阳台通行、玻璃反射贡献及建筑快照一致。无脚本 / shader错误或外部依赖请求。
+
+[家具 / 阳台 / 玻璃前后对比页](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/compact.html) 的24对实际昼夜截图、48张图片、桌面/手机布局、滑块和9个内部链接均通过公开检查。证据：`validation/compact-public.json`、`compact-public-details.json`、`compact-report-public.json`、`compact-deployment.json`。手机均为模拟，未追加真机结论。
+
+正式release仍为 `7b53b23`，HTML SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；feature预览也保留。本轮只推送main；随后证据提交不改变已验证应用、模型和报告画面。
+
+
 ## 入户门与家装细节 main 验证（2026-11-25）
 
 功能提交 [`2b88ec7`](https://github.com/aimspike/HangZhouPHMT/commit/2b88ec7606fe6eee0beea8d38c86a95273c7d717) 已部署至 [main 测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。修正入户门框装配、米白哑光冰箱、吊柜嵌入式油烟机和双层厚壳窗帘。公开 HTML 与 Git 装配结果逐字节一致，SHA256 `167f3aadca6ef0af3e63ded8ac27c28f38d2e3ac7bcce7498a1573cbdab237e7`。

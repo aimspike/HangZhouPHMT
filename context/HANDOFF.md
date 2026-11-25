@@ -339,3 +339,5 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 18类资产、330实体部件的high/mobile导出（合计660份）逐件闭合，开放边/非流形边/退化/绕序/反向法线均0。新增 verify-furniture-assembly.py 对实际导出两档做BVH交叠、实体包含与采样最近距离检查，18类各自一个装配连通组、未见脱离部件；0.7mm容差，有限采样不代表任意自交和施工验收。verify-compact-scene.cjs检查46项贴墙/支承记录、柜间接缝、阳台通行、玻璃参数与反射实际像素贡献，并采集PC/手机视口昼夜24对网页对比。
 
 验证：compact-after.json、furniture-assembly.json、rebuild-topology.json、compact-decor.json、compact-render-quality.json、compact-mobile-compatibility.json。Chrome/WebGL1、Windows WebKit、手机横竖屏/微信UA、HDR/depth缺失回退、保存设置、219贴图、屋顶、7门闭合/扫掠及家具净空均通过；未代表物理手机微信。模型库18类、驻留PBR仍13张，家装条目40（包含配件分组）。HTML约11.54MB。实际效果与证据页为quality-report/compact.html。仅推送main，release保持独立正式发布。
+
+功能提交`78fc9f1`已上线main。公开HTML规范化SHA256 `62316cff0d579aedcc5f010e295f985341aefdb7889f981eaff7c443c5a2e2b8`与Git装配一致；18模型/13PBR/219烘焙、PC/手机模拟/WebKit、离线带家具、设置隔离及本轮细节、24对报告通过。见compact-public*.json、compact-report-public.json与compact-deployment.json。正式release保持7b53b23，本轮未推进；随后证据提交不改应用内容。
