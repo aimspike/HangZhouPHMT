@@ -24,6 +24,12 @@
 
 可复现步骤：构建 Blender 资产 → `node validation/verify-rebuild-topology.cjs` → 构建 HTML → 浏览器回归与截图 → 生成报告。浏览器脚本支持 `HOUSE_URL` 选择隔离端口；测试输出可定向到 `work/`，避免覆盖历史截图。
 
+### V16.1 公网交付
+
+修复提交 `8d3f565` 已推送，[Pages 工作流 45552682482](https://github.com/aimspike/HangZhouPHMT/actions/runs/45552682482) 成功。feature 的实际发布 HTML SHA256 为 `bc53f107648eb4080752f3d937b5d7659c1b8dfba828cce7e5b7a6c76d89d6b9`，与 Git 的部署装配结果一致；PC Chrome、Android 微信 UA、Windows WebKit iPhone 微信 UA、四项本机检测、设置隔离和磁盘单 HTML 检查通过。10 对接缝近检、12 对房间画面、4 张离线棚拍的公网加载和滑块检查通过。
+
+公网记录为 `validation/rebuild-public.json` 和报告的 `public-validation.json`。main 在另一任务中已推进至 `a2a50d6`（阳台与灯光），release 为 `7b53b23`；三个入口分别匹配其 Git 内容。本任务只推送 feature，未合入 main / release。后续证据提交不更改已验证应用 HTML；真机微信与最终工业级目视验收仍待完成。
+
 ## 回退
 
 通过新增提交 `2377c58` 撤销 V15 两个功能与报告提交，恢复 `7b53b23` 的 V14.2 源码和构建页面。PC、手机微信 UA、缺 HDR / depth 回退检查通过，公开测试页已确认 V14.2 且不含 V15 资源。保留 feature 预览部署，main / release 应用不变；不重写历史、不强推。

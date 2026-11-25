@@ -130,3 +130,12 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 公开检测链接在Chromium和Windows WebKit的390×844 iPhone/微信UA环境中完成四项渲染：219图、无AO深度附件、几何快照一致、屋顶0缺口，无JS/Shader错误或额外请求，见 `validation/v142-public.json`。这些仍为模拟，报告人工字段为`unconfirmed`、总结果`awaiting-visual-check`。本地精度复现和画质/存储/缺扩展测试见 `v142-depth-sampling.json`、`v142-mobile-compatibility.json`、`v142-render-quality.json`。
 
 未连接到可调试手机，电脑微信窗口授权超时。已提供检测链接和 `context/MOBILE_VERIFICATION.md` 的操作步骤，等待实际手机微信与系统浏览器返回目视报告；尚不能记录真机通过。
+
+
+## 2026-11-25 · V16.1 接缝修复 feature 预览
+
+`8d3f565` 推送 `feature/render-quality`，Pages 工作流 [45552682482](https://github.com/aimspike/HangZhouPHMT/actions/runs/45552682482) 成功。独立测试入口 [V16.1 家装 A](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?decor=a)，[PC报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/#pc) / [手机报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/#mobile)。
+
+发布 HTML SHA256 `bc53f107648eb4080752f3d937b5d7659c1b8dfba828cce7e5b7a6c76d89d6b9`，与 Git 装配一致。PC/手机Chrome、Windows WebKit微信UA、13张PBR、219烘焙、设备检测、设置隔离及单HTML离线通过，报告10对接缝近检/12对房间画面/4张离线棚拍正常。证据见 `validation/rebuild-public.json`；后续仅证据提交保持同一应用内容。
+
+本任务未推进 main/release。验收时独立 main 为 `a2a50d6`，release 为 `7b53b23`，各入口与对应Git一致；手机为自动化模拟，未声明真机微信通过。
