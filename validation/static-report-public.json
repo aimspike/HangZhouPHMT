@@ -1,0 +1,21 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/static-lighting.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 48,
+      "slider": "passed",
+      "localLinks": 8,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 48,
+      "slider": "passed",
+      "localLinks": 8,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

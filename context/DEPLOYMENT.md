@@ -1,5 +1,16 @@
 # 发布信息
 
+## Cycles固定光照烘焙 main 验证（2026-11-25）
+
+功能提交[`83f8ad1`](https://github.com/aimspike/HangZhouPHMT/commit/83f8ad1ae67e14466b419bc04abdecfc4e9a4d83)已部署至[main测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。实际公开HTML与本地/Git装配一致，规范化SHA256 `b3483ec26903532a57c9ae453dd51fc3027138777a9aaafd56238a8ae5dcc76c`。
+
+公开Chrome桌面、手机微信UA、缺HDR/depth扩展、Windows WebKit四类环境各16种固定状态全部通过；新照明/反射实际启用、亮度响应、原219烘焙完整、快照和屋顶保持、改门/材质/天花板回退、设置保存、横竖屏通过，无脚本/shader错误或外部依赖请求。磁盘单HTML的带家具静态光照/反射也已通过。
+
+[48对实际网页前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/static-lighting.html)的96张图、桌面/手机布局、48种画面切换、滑块与8个内部链接在公开页通过。证据：`validation/static-public.json`、`static-report-public.json`、`static-deployment.json`；手机均为模拟，非物理手机微信验收。
+
+正式release仍为7b53b23，原HTML SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；历史feature保留。本次只推main，后续证据提交不改变已验证的应用、资产或画面。
+
+
 ## 家具装配与阳台洗漱角 main 验证（2026-11-25）
 
 功能提交 [`78fc9f1`](https://github.com/aimspike/HangZhouPHMT/commit/78fc9f17eb4debe322d17092012ccf392af8b99e) 已部署至 [main 家装 A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。修复全库装配连接、按实际尺寸贴墙落地，重建小米造型参考的洗烘高柜并增加旁侧台盆/镜柜收纳；8块窗玻璃增加低强度环境反射。

@@ -354,3 +354,5 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 124张PNG、每布局6个图集基、10×5反射图、134488 high/93926 mobile独立家具采样；实际附着high124mesh/709416顶点、mobile124mesh/466044顶点。`validation/verify-static-bake-data.cjs`核对影像及全部采样下标/脚本哈希；构建另校验烘焙脚本及墙线、原快照、家具源码/模型和太阳输入哈希，拒绝过期资源。`assets/static-bake/`保留导出、可编辑blend、原数据PNG和内嵌包。
 
 `verify-static-lighting.cjs`覆盖Chrome桌面/手机/缺HDR-depth/WebKit的全部16状态、开关灯与昼夜像素变化、48张新实际画布、改门/材质/天花板回退、刷新保存与横竖屏。`static-lighting.json`、`static-bake-data.json`、`static-render-quality.json`、`static-decor.json`保存结果。48对/96张实际网页对比见quality-report/static-lighting.html，包含PC/手机、客厅/主卧/厨房/阳台6组代表状态；前后相同相机/曝光/材质，无AI重绘。仅main开发，release不推进。
+
+静态光照功能`83f8ad1`已上线main。公开HTML规范化SHA256 `b3483ec26903532a57c9ae453dd51fc3027138777a9aaafd56238a8ae5dcc76c`与Git装配一致；4类引擎/扩展环境各16状态、新光照/反射、回退、设置与横竖屏及96图报告均通过。见static-public.json、static-report-public.json和static-deployment.json；正式release仍7b53b23，后续证据提交不改已测应用。
