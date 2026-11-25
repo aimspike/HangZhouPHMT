@@ -1,0 +1,21 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/room-refinements.html",
+  "cases": [
+    {
+      "width": 1280,
+      "pairs": 24,
+      "imagesLoaded": 48,
+      "slider": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "pairs": 24,
+      "imagesLoaded": 48,
+      "slider": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

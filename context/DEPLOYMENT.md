@@ -1,5 +1,15 @@
 # 发布信息
 
+## 入户门与家装细节 main 验证（2026-11-25）
+
+功能提交 [`2b88ec7`](https://github.com/aimspike/HangZhouPHMT/commit/2b88ec7606fe6eee0beea8d38c86a95273c7d717) 已部署至 [main 测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。修正入户门框装配、米白哑光冰箱、吊柜嵌入式油烟机和双层厚壳窗帘。公开 HTML 与 Git 装配结果逐字节一致，SHA256 `167f3aadca6ef0af3e63ded8ac27c28f38d2e3ac7bcce7498a1573cbdab237e7`。
+
+公网 PC Chrome、Android 微信 UA 模拟、Windows WebKit iPhone 微信 UA：16模型 / 13PBR / 219烘焙、屋顶覆盖、设置隔离、本机检测和离线单 HTML 通过；专项复核门套 / 门扇25步无墙相交、完整原门洞闭合、全部门型 / 家具净空、米白材质反射限值、窗帘闭合网格 / 离地及门设置保存通过。零脚本 / shader 错误或外部依赖请求。证据：`validation/room-refinements-public.json`、`room-refinements-public-details.json`。
+
+[四项修正前后对比报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/room-refinements.html) 的24对真实网页昼夜截图、48张图片、桌面 / 手机排版和滑块在公网通过，见 `room-refinements-report-public.json`。手机均为模拟，没有追加真机结果。
+
+正式 release `7b53b23` 的 HTML SHA256 仍为 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；历史 feature 预览也与原提交匹配。本次只更新 main，后续证据提交不改变已测应用和报告内容。
+
 ## 阳台顶板与顶灯 main 测试（2026-11-25）
 
 功能提交 [`79b8016`](https://github.com/aimspike/HangZhouPHMT/commit/79b8016b9f8aa0514884ddde1ed79a870a75d659) 已推送，公开 [main 预览](https://aimspike.github.io/HangZhouPHMT/preview/main/) 的提交号及 HTML 与本次构建一致，规范化 SHA256 为 `ae2439f11f2bf2668cf243496fe2e0b5cfdd24c20111cebbf61faffcd22db15f`。阳台连续顶板、吸顶灯、烘焙及天花板材质设置已更新。

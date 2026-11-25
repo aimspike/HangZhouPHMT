@@ -1,0 +1,1423 @@
+{
+  "scope": "Windows Chrome WebGL1 actual canvas. Mobile viewport/WeChat UA is simulation, not physical phone validation.",
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+  "stage": "after",
+  "errors": [],
+  "external": [],
+  "cases": [
+    {
+      "mobile": false,
+      "diagnostics": {
+        "version": "16.2",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          1920,
+          1350
+        ],
+        "viewport": [
+          1280,
+          900
+        ],
+        "shaderCount": 38,
+        "drawCalls": 503
+      },
+      "assets": {
+        "source": "Blender 5.3 authored master + metric UV + high/mobile geometry LOD",
+        "lod": "high",
+        "models": [
+          "sofa",
+          "coffee",
+          "console",
+          "dining-table",
+          "chair",
+          "sideboard",
+          "fridge",
+          "pendant",
+          "kitchen-east",
+          "kitchen-north",
+          "master-bed",
+          "master-wardrobe",
+          "second-bed",
+          "second-wardrobe",
+          "vanity",
+          "study-desk"
+        ],
+        "texturesReady": 13,
+        "texturesExpected": 13,
+        "textureSets": [
+          "wood",
+          "parquet",
+          "fabric",
+          "fabric_plain",
+          "stone"
+        ],
+        "modelBudgets": {
+          "sofa": {
+            "high": {
+              "triangles": 47272,
+              "vertices": 29970,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 22816,
+              "vertices": 14996,
+              "drawGroups": 5
+            }
+          },
+          "coffee": {
+            "high": {
+              "triangles": 2368,
+              "vertices": 1669,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 1584,
+              "vertices": 1157,
+              "drawGroups": 3
+            }
+          },
+          "console": {
+            "high": {
+              "triangles": 3748,
+              "vertices": 3048,
+              "drawGroups": 4
+            },
+            "mobile": {
+              "triangles": 3068,
+              "vertices": 2540,
+              "drawGroups": 4
+            }
+          },
+          "dining-table": {
+            "high": {
+              "triangles": 2240,
+              "vertices": 1566,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 1072,
+              "vertices": 784,
+              "drawGroups": 3
+            }
+          },
+          "chair": {
+            "high": {
+              "triangles": 7064,
+              "vertices": 5228,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 4150,
+              "vertices": 3203,
+              "drawGroups": 3
+            }
+          },
+          "pendant": {
+            "high": {
+              "triangles": 3468,
+              "vertices": 2750,
+              "drawGroups": 2
+            },
+            "mobile": {
+              "triangles": 1800,
+              "vertices": 1541,
+              "drawGroups": 2
+            }
+          },
+          "master-bed": {
+            "high": {
+              "triangles": 18188,
+              "vertices": 11942,
+              "drawGroups": 7
+            },
+            "mobile": {
+              "triangles": 9132,
+              "vertices": 6281,
+              "drawGroups": 7
+            }
+          },
+          "second-bed": {
+            "high": {
+              "triangles": 18188,
+              "vertices": 11950,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 9132,
+              "vertices": 6276,
+              "drawGroups": 5
+            }
+          },
+          "master-wardrobe": {
+            "high": {
+              "triangles": 3384,
+              "vertices": 2743,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3384,
+              "vertices": 2743,
+              "drawGroups": 5
+            }
+          },
+          "second-wardrobe": {
+            "high": {
+              "triangles": 3384,
+              "vertices": 2711,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3384,
+              "vertices": 2711,
+              "drawGroups": 5
+            }
+          },
+          "sideboard": {
+            "high": {
+              "triangles": 2888,
+              "vertices": 2460,
+              "drawGroups": 6
+            },
+            "mobile": {
+              "triangles": 2888,
+              "vertices": 2460,
+              "drawGroups": 6
+            }
+          },
+          "fridge": {
+            "high": {
+              "triangles": 4976,
+              "vertices": 3793,
+              "drawGroups": 2
+            },
+            "mobile": {
+              "triangles": 4752,
+              "vertices": 3637,
+              "drawGroups": 2
+            }
+          },
+          "kitchen-east": {
+            "high": {
+              "triangles": 3820,
+              "vertices": 3102,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3820,
+              "vertices": 3102,
+              "drawGroups": 5
+            }
+          },
+          "kitchen-north": {
+            "high": {
+              "triangles": 3112,
+              "vertices": 2554,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 2812,
+              "vertices": 2318,
+              "drawGroups": 5
+            }
+          },
+          "study-desk": {
+            "high": {
+              "triangles": 1356,
+              "vertices": 1112,
+              "drawGroups": 4
+            },
+            "mobile": {
+              "triangles": 944,
+              "vertices": 831,
+              "drawGroups": 4
+            }
+          },
+          "vanity": {
+            "high": {
+              "triangles": 2420,
+              "vertices": 1848,
+              "drawGroups": 6
+            },
+            "mobile": {
+              "triangles": 1746,
+              "vertices": 1395,
+              "drawGroups": 6
+            }
+          }
+        }
+      },
+      "captures": [
+        {
+          "name": "after-pc-entry-noon",
+          "camera": [
+            4.65,
+            1.5,
+            3.85,
+            6.2,
+            1.2,
+            3.44
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-entry-night",
+          "camera": [
+            4.65,
+            1.5,
+            3.85,
+            6.2,
+            1.2,
+            3.44
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-fridge-noon",
+          "camera": [
+            4.18,
+            1.5,
+            5.6,
+            5.75,
+            1.08,
+            5.9
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-fridge-night",
+          "camera": [
+            4.18,
+            1.5,
+            5.6,
+            5.75,
+            1.08,
+            5.9
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-kitchen-noon",
+          "camera": [
+            4.82,
+            1.6,
+            2.5,
+            5.95,
+            1.68,
+            1.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-kitchen-night",
+          "camera": [
+            4.82,
+            1.6,
+            2.5,
+            5.95,
+            1.68,
+            1.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-livingCurtain-noon",
+          "camera": [
+            1.9,
+            1.5,
+            4.8,
+            0.16,
+            1.43,
+            4.6
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-livingCurtain-night",
+          "camera": [
+            1.9,
+            1.5,
+            4.8,
+            0.16,
+            1.43,
+            4.6
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-masterCurtain-noon",
+          "camera": [
+            2.7,
+            1.5,
+            10.85,
+            1.75,
+            1.42,
+            11.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-masterCurtain-night",
+          "camera": [
+            2.7,
+            1.5,
+            10.85,
+            1.75,
+            1.42,
+            11.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-secondCurtain-noon",
+          "camera": [
+            3.8,
+            1.5,
+            9.6,
+            4.7,
+            1.42,
+            10.85
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-pc-secondCurtain-night",
+          "camera": [
+            3.8,
+            1.5,
+            9.6,
+            4.7,
+            1.42,
+            10.85
+          ],
+          "fov": 65
+        }
+      ],
+      "geometry": {
+        "snapshotMatches": true,
+        "entry": {
+          "returnInset": 0.08199999821186066,
+          "frameWallCollisions": [],
+          "leafSweepCollisions": []
+        },
+        "fridge": [
+          {
+            "roughness": 0.78,
+            "metalness": 0,
+            "reflection": 0.16
+          }
+        ],
+        "curtains": [
+          {
+            "room": "living",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              -2.8945802211761475,
+              0.02500004880130291,
+              -2.940000057220459
+            ],
+            "max": [
+              -2.795039838552475,
+              2.7209999561309814,
+              -0.19000005722045898
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "living",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              -2.9392428159713746,
+              0.02500004880130291,
+              -2.765000104904175
+            ],
+            "max": [
+              -2.8911712229251862,
+              2.7209999561309814,
+              -0.36499977111816406
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "master",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              -2.650000011920929,
+              0.02500004880130291,
+              5.270420074462891
+            ],
+            "max": [
+              -0.44999990463256845,
+              2.7209999561309814,
+              5.369959831237793
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "master",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              -2.475,
+              0.02500004880130291,
+              5.365756988525391
+            ],
+            "max": [
+              -0.6250000953674317,
+              2.7209999561309814,
+              5.4138288497924805
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "second",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              0.35000004768371573,
+              0.02500004880130291,
+              4.490419387817383
+            ],
+            "max": [
+              2.7499999046325683,
+              2.7209999561309814,
+              4.589960098266602
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "second",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              0.5249999999999999,
+              0.02500004880130291,
+              4.585757255554199
+            ],
+            "max": [
+              2.575000190734863,
+              2.7209999561309814,
+              4.633829116821289
+            ],
+            "triangles": 9872,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          }
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "closure": [
+          {
+            "id": "entry",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "study",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "kitchen",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "bath",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "storage",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "master",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "second",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          }
+        ],
+        "motion": [
+          {
+            "id": "study",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "left",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "kitchen",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "right",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "bath",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "left",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "storage",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "right",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          }
+        ],
+        "clearance": [
+          {
+            "door": "entry",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "study",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "study",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "kitchen",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "kitchen",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "bath",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "bath",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "storage",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "storage",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "master",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "second",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          }
+        ]
+      },
+      "entryOpen": true,
+      "savedDoor": "passed",
+      "quality": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": null,
+        "captures": 0,
+        "revision": 22,
+        "reflectionError": null,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [],
+        "materials": 0,
+        "mode": "orbit",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    },
+    {
+      "mobile": true,
+      "diagnostics": {
+        "version": "16.2",
+        "antialias": true,
+        "fxaa": true,
+        "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "maxTextureUnits": 16,
+        "contextLost": false,
+        "canvas": [
+          585,
+          1266
+        ],
+        "viewport": [
+          390,
+          844
+        ],
+        "shaderCount": 38,
+        "drawCalls": 503
+      },
+      "assets": {
+        "source": "Blender 5.3 authored master + metric UV + high/mobile geometry LOD",
+        "lod": "mobile",
+        "models": [
+          "sofa",
+          "coffee",
+          "console",
+          "dining-table",
+          "chair",
+          "sideboard",
+          "fridge",
+          "pendant",
+          "kitchen-east",
+          "kitchen-north",
+          "master-bed",
+          "master-wardrobe",
+          "second-bed",
+          "second-wardrobe",
+          "vanity",
+          "study-desk"
+        ],
+        "texturesReady": 13,
+        "texturesExpected": 13,
+        "textureSets": [
+          "wood",
+          "parquet",
+          "fabric",
+          "fabric_plain",
+          "stone"
+        ],
+        "modelBudgets": {
+          "sofa": {
+            "high": {
+              "triangles": 47272,
+              "vertices": 29970,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 22816,
+              "vertices": 14996,
+              "drawGroups": 5
+            }
+          },
+          "coffee": {
+            "high": {
+              "triangles": 2368,
+              "vertices": 1669,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 1584,
+              "vertices": 1157,
+              "drawGroups": 3
+            }
+          },
+          "console": {
+            "high": {
+              "triangles": 3748,
+              "vertices": 3048,
+              "drawGroups": 4
+            },
+            "mobile": {
+              "triangles": 3068,
+              "vertices": 2540,
+              "drawGroups": 4
+            }
+          },
+          "dining-table": {
+            "high": {
+              "triangles": 2240,
+              "vertices": 1566,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 1072,
+              "vertices": 784,
+              "drawGroups": 3
+            }
+          },
+          "chair": {
+            "high": {
+              "triangles": 7064,
+              "vertices": 5228,
+              "drawGroups": 3
+            },
+            "mobile": {
+              "triangles": 4150,
+              "vertices": 3203,
+              "drawGroups": 3
+            }
+          },
+          "pendant": {
+            "high": {
+              "triangles": 3468,
+              "vertices": 2750,
+              "drawGroups": 2
+            },
+            "mobile": {
+              "triangles": 1800,
+              "vertices": 1541,
+              "drawGroups": 2
+            }
+          },
+          "master-bed": {
+            "high": {
+              "triangles": 18188,
+              "vertices": 11942,
+              "drawGroups": 7
+            },
+            "mobile": {
+              "triangles": 9132,
+              "vertices": 6281,
+              "drawGroups": 7
+            }
+          },
+          "second-bed": {
+            "high": {
+              "triangles": 18188,
+              "vertices": 11950,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 9132,
+              "vertices": 6276,
+              "drawGroups": 5
+            }
+          },
+          "master-wardrobe": {
+            "high": {
+              "triangles": 3384,
+              "vertices": 2743,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3384,
+              "vertices": 2743,
+              "drawGroups": 5
+            }
+          },
+          "second-wardrobe": {
+            "high": {
+              "triangles": 3384,
+              "vertices": 2711,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3384,
+              "vertices": 2711,
+              "drawGroups": 5
+            }
+          },
+          "sideboard": {
+            "high": {
+              "triangles": 2888,
+              "vertices": 2460,
+              "drawGroups": 6
+            },
+            "mobile": {
+              "triangles": 2888,
+              "vertices": 2460,
+              "drawGroups": 6
+            }
+          },
+          "fridge": {
+            "high": {
+              "triangles": 4976,
+              "vertices": 3793,
+              "drawGroups": 2
+            },
+            "mobile": {
+              "triangles": 4752,
+              "vertices": 3637,
+              "drawGroups": 2
+            }
+          },
+          "kitchen-east": {
+            "high": {
+              "triangles": 3820,
+              "vertices": 3102,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 3820,
+              "vertices": 3102,
+              "drawGroups": 5
+            }
+          },
+          "kitchen-north": {
+            "high": {
+              "triangles": 3112,
+              "vertices": 2554,
+              "drawGroups": 5
+            },
+            "mobile": {
+              "triangles": 2812,
+              "vertices": 2318,
+              "drawGroups": 5
+            }
+          },
+          "study-desk": {
+            "high": {
+              "triangles": 1356,
+              "vertices": 1112,
+              "drawGroups": 4
+            },
+            "mobile": {
+              "triangles": 944,
+              "vertices": 831,
+              "drawGroups": 4
+            }
+          },
+          "vanity": {
+            "high": {
+              "triangles": 2420,
+              "vertices": 1848,
+              "drawGroups": 6
+            },
+            "mobile": {
+              "triangles": 1746,
+              "vertices": 1395,
+              "drawGroups": 6
+            }
+          }
+        }
+      },
+      "captures": [
+        {
+          "name": "after-mobile-entry-noon",
+          "camera": [
+            4.65,
+            1.5,
+            3.85,
+            6.2,
+            1.2,
+            3.44
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-entry-night",
+          "camera": [
+            4.65,
+            1.5,
+            3.85,
+            6.2,
+            1.2,
+            3.44
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-fridge-noon",
+          "camera": [
+            4.18,
+            1.5,
+            5.6,
+            5.75,
+            1.08,
+            5.9
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-fridge-night",
+          "camera": [
+            4.18,
+            1.5,
+            5.6,
+            5.75,
+            1.08,
+            5.9
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-kitchen-noon",
+          "camera": [
+            4.82,
+            1.6,
+            2.5,
+            5.95,
+            1.68,
+            1.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-kitchen-night",
+          "camera": [
+            4.82,
+            1.6,
+            2.5,
+            5.95,
+            1.68,
+            1.65
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-livingCurtain-noon",
+          "camera": [
+            1.9,
+            1.5,
+            4.8,
+            0.23,
+            1.43,
+            5.68
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-livingCurtain-night",
+          "camera": [
+            1.9,
+            1.5,
+            4.8,
+            0.23,
+            1.43,
+            5.68
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-masterCurtain-noon",
+          "camera": [
+            2.7,
+            1.5,
+            10.45,
+            2.42,
+            1.42,
+            11.57
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-masterCurtain-night",
+          "camera": [
+            2.7,
+            1.5,
+            10.45,
+            2.42,
+            1.42,
+            11.57
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-secondCurtain-noon",
+          "camera": [
+            3.8,
+            1.5,
+            9.6,
+            3.64,
+            1.42,
+            10.79
+          ],
+          "fov": 65
+        },
+        {
+          "name": "after-mobile-secondCurtain-night",
+          "camera": [
+            3.8,
+            1.5,
+            9.6,
+            3.64,
+            1.42,
+            10.79
+          ],
+          "fov": 65
+        }
+      ],
+      "geometry": {
+        "snapshotMatches": true,
+        "entry": {
+          "returnInset": 0.08199999821186066,
+          "frameWallCollisions": [],
+          "leafSweepCollisions": []
+        },
+        "fridge": [
+          {
+            "roughness": 0.78,
+            "metalness": 0,
+            "reflection": 0.16
+          }
+        ],
+        "curtains": [
+          {
+            "room": "living",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              -2.8945802211761475,
+              0.02500004880130291,
+              -2.940000057220459
+            ],
+            "max": [
+              -2.795039838552475,
+              2.7209999561309814,
+              -0.19000005722045898
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "living",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              -2.9376543521881104,
+              0.02500004880130291,
+              -2.765000104904175
+            ],
+            "max": [
+              -2.8911712229251862,
+              2.7209999561309814,
+              -0.36499977111816406
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "master",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              -2.650000011920929,
+              0.02500004880130291,
+              5.270420074462891
+            ],
+            "max": [
+              -0.44999990463256845,
+              2.7209999561309814,
+              5.369959831237793
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "master",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              -2.475,
+              0.02500004880130291,
+              5.367345809936523
+            ],
+            "max": [
+              -0.6250000953674317,
+              2.7209999561309814,
+              5.4138288497924805
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "second",
+            "sheer": false,
+            "roughness": 0.96,
+            "min": [
+              0.35000004768371573,
+              0.02500004880130291,
+              4.490419387817383
+            ],
+            "max": [
+              2.7499999046325683,
+              2.7209999561309814,
+              4.589960098266602
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          },
+          {
+            "room": "second",
+            "sheer": true,
+            "roughness": 0.96,
+            "min": [
+              0.5249999999999999,
+              0.02500004880130291,
+              4.587346076965332
+            ],
+            "max": [
+              2.575000190734863,
+              2.7209999561309814,
+              4.633829116821289
+            ],
+            "triangles": 2896,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0
+          }
+        ],
+        "roof": {
+          "gaps": 0,
+          "examples": []
+        },
+        "closure": [
+          {
+            "id": "entry",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "study",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "kitchen",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "bath",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "storage",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "master",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          },
+          {
+            "id": "second",
+            "type": "hinged",
+            "rays": 1426,
+            "gaps": 0,
+            "examples": []
+          }
+        ],
+        "motion": [
+          {
+            "id": "study",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "left",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "kitchen",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "right",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "bath",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "left",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          },
+          {
+            "id": "storage",
+            "pathSteps": 25,
+            "otherDoorStates": 5625,
+            "outsideRoom": true,
+            "stackSide": "right",
+            "collisions": [],
+            "sweepEnvelopeCollisions": []
+          }
+        ],
+        "clearance": [
+          {
+            "door": "entry",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "study",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "study",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "kitchen",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "kitchen",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "bath",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "bath",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "storage",
+            "type": "sliding",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "storage",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "master",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          },
+          {
+            "door": "second",
+            "type": "hinged",
+            "steps": 25,
+            "collisions": []
+          }
+        ]
+      },
+      "entryOpen": true,
+      "savedDoor": "passed",
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": null,
+        "captures": 0,
+        "revision": 22,
+        "reflectionError": null,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          633,
+          293
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [],
+        "materials": 0,
+        "mode": "orbit",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    }
+  ],
+  "sourceHTMLSHA256": "167f3aadca6ef0af3e63ded8ac27c28f38d2e3ac7bcce7498a1573cbdab237e7",
+  "result": "passed"
+}

@@ -10,6 +10,8 @@
 
 专项脚本为 `validation/verify-room-refinements.cjs`，检查实际门框/门扇25步与墙的相交、完整门洞覆盖、所有可选门型/家具净空、窗帘闭合网格/离地、材质和保存。前后同机位/同FOV/同时段真实画布对比位于 `docs/quality-report/room-refinements.html`（PC/手机×6处×昼夜共24对）；生成脚本 `scripts/build_room_refinement_report.py`，不依赖离线棚拍。手机均为浏览器模拟，最终目视验收仍待用户确认。
 
+`2b88ec7` 已部署 main。公开应用、PC/手机Chrome、WebKit、设置隔离、单HTML、专项几何/材质/保存和24对报告通过，记录 `validation/room-refinements-public*.json` / `room-refinements-report-public.json`。公开main SHA256 `167f3aad…`；release 和历史feature内容匹配各自Git。后续证据提交不改应用。
+
 ## V16.2 合入 main（当前工作方式）
 
 用户要求画质分支合入 main，后续全部在主干开发。当前工作目录为 C:/PHMT，分支 main；feature/render-quality 保留为历史评审快照。合并保留主干阳台连续顶板、顶灯、天花板设置与已验证的219张新烘焙，接入V16.1家具/PBR/接缝修复。冲突按功能组合解决，生成HTML由源码重建；未改变建筑快照或重新烘焙。版本16.2。主干效果报告在 /preview/main/quality-report/，release正式站保持独立发布。
