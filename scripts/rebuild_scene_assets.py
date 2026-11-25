@@ -31,7 +31,7 @@ materials = {}
 models = defaultdict(list)
 current = ''
 
-COLORS = {'navy':(.025,.04,.065,1),'linen':(.64,.58,.47,1),'mustard':(.5,.35,.09,1),'oak':(.48,.28,.13,1),'wood':(.3,.15,.065,1),'cream':(.84,.8,.7,1),'white':(.9,.9,.85,1),'chrome':(.62,.65,.64,1),'black':(.025,.028,.027,1),'orange':(.55,.12,.035,1),'ceramic':(.67,.65,.58,1),'seam':(.065,.085,.1,1),'blue':(.08,.12,.2,1),'brass':(.36,.25,.1,1),'rug':(.63,.6,.54,1)}
+COLORS = {'navy':(.025,.04,.065,1),'linen':(.64,.58,.47,1),'mustard':(.5,.35,.09,1),'oak':(.48,.28,.13,1),'wood':(.3,.15,.065,1),'cream':(.84,.8,.7,1),'white':(.9,.9,.85,1),'chrome':(.62,.65,.64,1),'black':(.025,.028,.027,1),'orange':(.55,.12,.035,1),'ceramic':(.67,.65,.58,1),'seam':(.065,.085,.1,1),'blue':(.08,.12,.2,1),'brass':(.36,.25,.1,1),'rug':(.63,.6,.54,1),'applianceIvory':(.86,.84,.77,1)}
 for name, color in COLORS.items():
     m=bpy.data.materials.new(name);m.diffuse_color=color;m.use_nodes=True
     p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color
@@ -257,15 +257,15 @@ for x in [-.44,.44]:
     for z in [-.09,.09]:move(lathe('slender leg',[(0,0),(.01,0),(.012,.13),(0,.13)],'chrome',16),(x,0,z))
 
 current='fridge'
-cube('powder coated cabinet',(0,1,0),(.62,1.98,.68),'chrome',.022,5)
-cube('upper door',(0,1.45,-.347),(.6,1.04,.032),'chrome',.012,4)
-cube('freezer door',(0,.465,-.347),(.6,.89,.032),'chrome',.012,4)
+cube('ivory coated cabinet',(0,1,0),(.62,1.98,.68),'applianceIvory',.022,5)
+cube('upper flat door',(0,1.45,-.347),(.6,1.04,.032),'applianceIvory',.012,4)
+cube('freezer flat door',(0,.465,-.347),(.6,.89,.032),'applianceIvory',.012,4)
 cube('door gasket',(0,.986,-.365),(.59,.012,.004),'black',.002)
-cube('recessed dispenser',(0,1.48,-.367),(.19,.32,.01),'black',.01)
-cube('dispenser tray',(0,1.326,-.39),(.17,.014,.04),'chrome',.003)
-for yy in [1.18,.73]:cube('recessed pull',(.25,yy,-.374),(.025,.26,.012),'black',.006)
+cube('recessed upper grip',(0,.922,-.35),(.49,.014,.016),'black',.003)
+cube('recessed freezer grip',(0,.908,-.35),(.49,.01,.016),'black',.003)
+cube('subtle control strip',(.19,1.7,-.365),(.032,.12,.002),'black',.003)
 cube('toe ventilation',(0,.06,-.351),(.54,.05,.01),'black',.003)
-for j in range(16):cube('vent fin',(-.25+j*.033,.06,-.358),(.004,.044,.004),'chrome',.001)
+for j in range(16):cube('vent fin',(-.25+j*.033,.06,-.358),(.004,.044,.004),'applianceIvory',.001)
 
 current='kitchen-east'
 # Local X is cabinet run, local +Z faces the room. Rotation maps it west.

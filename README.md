@@ -6,6 +6,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 **[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 
+主干最新细节修正：[入户门框、米白冰箱、厨房油烟机与窗帘前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/room-refinements.html)。包含桌面/手机视口的昼夜实际网页截图，建筑墙线、原始门洞与阳台烘焙保持。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |

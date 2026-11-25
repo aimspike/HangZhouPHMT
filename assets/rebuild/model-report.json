@@ -135,13 +135,13 @@
     },
     "fridge": {
       "high": {
-        "triangles": 5164,
-        "vertices": 3942,
+        "triangles": 4976,
+        "vertices": 3793,
         "drawGroups": 2
       },
       "mobile": {
-        "triangles": 4940,
-        "vertices": 3786,
+        "triangles": 4752,
+        "vertices": 3637,
         "drawGroups": 2
       }
     },
@@ -194,6 +194,6 @@
       }
     }
   },
-  "sourceObjects": 220,
+  "sourceObjects": 219,
   "editableMaster": "reference-a-master.blend"
 }

@@ -59,11 +59,12 @@ function createHouseDecor(options) {
  }
  function material(name,room) {
   const key=room+'-'+name;if(materials[key])return materials[key];
-  const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],chrome:['#b9bdbb'],seam:['#596975'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32']};
+  const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],chrome:['#b9bdbb'],seam:['#596975'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32'],applianceIvory:['#eeeade']};
   const [color,texture]=definitions[name],fabric=['fabric','stripe'].includes(texture),metal=['steel','brass','chrome'].includes(name);const m=new THREE.MeshStandardMaterial({color,roughness:name==='chrome'?.16:metal?.25:name==='mirror'?.13:fabric?.93:texture==='wood'?.46:name==='stone'?.36:name==='ceramic'?.3:.65,metalness:metal?.82:name==='mirror'?.8:0});m.color.convertSRGBToLinear();
   if(texture){const tx=options.assets.maps(texture==='wood'?'wood':fabric?(name==='navy'?'fabric':'fabric_plain'):texture==='stone'?'stone':'none');if(tx){m.map=tx.color;m.normalMap=tx.normal;m.normalScale.set(fabric?(name==='navy'?.12:.035):.15,fabric?(name==='navy'?.12:.035):.15);m.roughnessMap=tx.roughness;}else{const old=surfaceTexture(texture);m.map=old.map;m.bumpMap=old.bump;m.roughnessMap=old.bump;m.bumpScale=.0006;}}
   m.envMap=reflections();m.userData.envStrength=metal?.75:name==='mirror'?.95:fabric?.015:.12;m.envMapIntensity=m.userData.envStrength;
   if(name==='glow'){m.emissive.set('#ffcd80');m.emissiveIntensity=.65;glowing.push(m);}
+  if(name==='applianceIvory'){m.roughness=.78;m.metalness=0;m.userData.envStrength=.06;m.userData.houseReflectionStrength=.16;}
   options.shade(m,room);materials[key]=m;return m;
  }
  function layer(room,kind='furniture') {
@@ -211,7 +212,27 @@ function createHouseDecor(options) {
   item('kitchen-east-cabinets','kitchen',()=>{box('kitchen',5.79,.46,1.43,.62,.82,2.53,'oak');box('kitchen',5.77,.91,1.43,.67,.055,2.56,'stone');for(let i=0;i<5;i++){box('kitchen',5.47,.48,.45+i*.48,.02,.68,.45,'wood');box('kitchen',5.45,.71,.45+i*.48,.018,.018,.17,'steel');}box('kitchen',6.09,1.28,1.45,.018,.68,2.5,'tile','wall');box('kitchen',5.94,2.13,1.5,.31,.7,2.4,'cream','wall');for(let i=0;i<5;i++)box('kitchen',5.798,2.1,.48+i*.49,.016,.59,.007,'white','wall');});
   item('kitchen-north-cabinets','kitchen',()=>{box('kitchen',4.94,.46,.39,1.03,.82,.59,'oak');box('kitchen',4.93,.91,.4,1.06,.055,.63,'stone');box('kitchen',4.88,.945,.39,.58,.018,.4,'steel');box('kitchen',4.88,.951,.39,.45,.02,.29,'black');cylinder('kitchen',5.19,1.07,.26,.016,.016,.26,'steel');box('kitchen',5.08,1.19,.26,.23,.026,.025,'steel');});
   box('kitchen',5.75,.948,2.07,.48,.015,.53,'black');for(const z of [1.92,2.23]){cylinder('kitchen',5.74,.96,z,.1,.1,.018,'steel');cylinder('kitchen',5.74,1.02,z,.085,.085,.11,'black');}
-  box('kitchen',5.91,1.79,2.08,.36,.09,.6,'black','wall');box('kitchen',5.94,1.72,1.5,.32,.016,2.4,'glow','wall');
+  // Rebuilt base cabinets do not contain wall cabinetry. Author the wall run
+  // separately, with a real recess for the reference's under-cabinet hood.
+  item('kitchen-upper-cabinets','kitchen',()=>{
+   const back=wallFace('east',0,-1)-.008,front=back-.30;
+   box('kitchen',back-.008,1.325,1.49,.016,.75,2.42,'tile','wall');
+   for(const z of [.29,2.69])box('kitchen',(front+back)/2,2.2,z,.30,.76,.018,'cream','wall');
+   for(const y of [1.829,2.571])box('kitchen',(front+back)/2,y,1.49,.30,.018,2.42,'cream','wall');
+   box('kitchen',back-.009,2.2,1.49,.018,.742,2.4,'cream','wall');
+   for(let i=0;i<5;i++){const z=.532+i*.48;box('kitchen',front-.009,2.2,z,.018,.732,.474,'cream','wall');const knob=cylinder('kitchen',front-.024,1.91,z+(i%2?-.18:.18),.012,.012,.018,'brass','wall');knob.rotation.z=Math.PI/2;}
+   for(const [a,b] of [[.29,1.67],[2.47,2.69]])box('kitchen',front+.04,1.808,(a+b)/2,.025,.008,b-a,'glow','wall');
+  },false);
+  item('kitchen-hood','kitchen',()=>{
+   const back=wallFace('east',0,-1)-.012,center=back-.205;
+   round('kitchen',center,1.776,2.07,.41,.104,.78,'black','wall');
+   box('kitchen',back-.026,1.91,2.07,.042,.21,.70,'black','wall');
+   // Inset twin grease filters, perimeter lip, front touch strip and task lamps.
+   for(const z of [1.89,2.25]){box('kitchen',center,1.719,z,.30,.01,.326,'steel','wall');for(let i=0;i<12;i++)box('kitchen',center-.139+i*.025,1.712,z,.004,.003,.30,'black','wall');}
+   box('kitchen',back-.417,1.78,2.07,.006,.046,.74,'black','wall');
+   for(const z of [1.98,2.04,2.10,2.16])box('kitchen',back-.422,1.78,z,.003,.007,.012,'steel','wall');
+   for(const z of [1.78,2.36])box('kitchen',back-.34,1.715,z,.036,.006,.035,'glow','wall');
+  },false);
   // Bedrooms are mapped by balcony adjacency, not by an assumed photograph compass.
   bed('master',1.1,10.2,1.55,2.02,Math.PI/2,'mustard');box('master',1.25,.014,10.2,2.3,.022,2.1,'rug');
   wardrobe('master','master-wardrobe',.95,8.5425,1.6,.6,'bath-south');
@@ -280,11 +301,37 @@ function createHouseDecor(options) {
   },false);
   book('study',2.24,.798,1.34,.26,.025,.2,'green');book('study',2.24,.829,1.34,.23,.025,.17,'blue');plant('study',2.2,.78,2.09,.08);
   // Pleated fabric panels sit beside the glazing rather than covering a doorway.
-  const curtainMaterials={};
-  function curtain(room,cx,cz,w,h,angle){const g=new THREE.PlaneGeometry(w,h,16,20),p=g.attributes.position;for(let i=0;i<p.count;i++)p.setZ(i,.016*Math.sin(p.getX(i)/w*Math.PI*12));g.computeVertexNormals();let m=curtainMaterials[room];if(!m){const base=material('linen',room);m=base.clone();m.onBeforeCompile=base.onBeforeCompile;m.customProgramCacheKey=base.customProgramCacheKey;m.side=THREE.DoubleSide;curtainMaterials[room]=m;materials[room+'-curtain']=m;}const mesh=new THREE.Mesh(g,m);mesh.position.set(cx,.13+h/2,cz);mesh.rotation.y=angle;mesh.receiveShadow=true;layer(room,'wall').add(mesh);parts++;}
-  for(const z of [3.58,5.76])curtain('living',.17,z,.24,2.5,Math.PI/2);
-  for(const x of [.69,2.42])curtain('master',x,11.64,.2,2.5,0);
-  for(const x of [3.64,5.64])curtain('second',x,10.89,.2,2.5,0);
+  const curtainMaterials={},curtainMobile=options.assets.diagnostics.lod==='mobile';
+  function curtainMaterial(room,sheer){
+   const key=room+(sheer?'-curtain-sheer':'-curtain');if(curtainMaterials[key])return curtainMaterials[key];
+   const base=material('linen',room),m=base.clone();m.onBeforeCompile=base.onBeforeCompile;m.customProgramCacheKey=base.customProgramCacheKey;m.side=THREE.DoubleSide;
+   m.color.set(sheer?'#f2efe7':room==='living'?'#d5d0c4':'#b4aa99').convertSRGBToLinear();m.roughness=.96;m.metalness=0;m.normalScale.set(.018,.018);m.userData={...base.userData,envStrength:.018,houseReflectionStrength:.12};
+   // Fine weave carries no large baked creases; drape comes from the shell.
+   const weave=surfaceTexture('fabric');m.map=weave.map;m.normalMap=null;m.roughnessMap=null;m.bumpMap=weave.bump;m.bumpScale=.00012;
+   if(sheer){m.transparent=true;m.opacity=.38;m.depthWrite=false;}
+   curtainMaterials[key]=m;materials[key]=m;return m;
+  }
+  function curtain(room,cx,cz,w,angle,sheer=false){
+   const h=2.69,nx=curtainMobile?32:64,ny=curtainMobile?10:18,folds=sheer?7:4,amplitude=sheer?.018:.043,thickness=sheer?.0008:.0024,positions=[],uv=[],indices=[];
+   // Closed woven shell: smooth full-height wave pleats, softer near the hem.
+   for(let side=0;side<2;side++)for(let j=0;j<=ny;j++)for(let i=0;i<=nx;i++){
+    const u=i/nx,v=j/ny,phase=u*Math.PI*2*folds+.12*Math.sin(v*2.2+u*3),z=amplitude*(.9+.1*(1-v))*Math.cos(phase)+.006*(1-v)*Math.sin(u*7);
+    positions.push((u-.5)*w,(v-.5)*h-.006*(1-v)*Math.sin(u*Math.PI*folds)**2,z+(side?-.5:.5)*thickness);uv.push(u*w,v*h);
+   }
+   const stride=nx+1,face=(nx+1)*(ny+1);
+   for(let j=0;j<ny;j++)for(let i=0;i<nx;i++){const a=j*stride+i,b=a+1,c=a+stride,d=c+1;indices.push(a,b,c,b,d,c,a+face,c+face,b+face,b+face,c+face,d+face);}
+   const edge=[];for(let i=0;i<nx;i++)edge.push(i);for(let j=0;j<ny;j++)edge.push(j*stride+nx);for(let i=nx;i>0;i--)edge.push(ny*stride+i);for(let j=ny;j>0;j--)edge.push(j*stride);
+   for(let k=0;k<edge.length;k++){const a=edge[k],b=edge[(k+1)%edge.length];indices.push(a,b+face,b,a,a+face,b+face);}
+   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);g.computeVertexNormals();
+   const m=new THREE.Mesh(g,curtainMaterial(room,sheer));m.position.set(cx,.031+h/2,cz);m.rotation.y=angle;m.castShadow=!sheer;m.receiveShadow=true;layer(room,'wall').add(m);parts++;
+  }
+  const curtainRuns=[{room:'living',axis:'z',fixed:.255,start:3.5,end:5.87,angle:Math.PI/2},{room:'master',axis:'x',fixed:11.57,start:.64,end:2.46,angle:0},{room:'second',axis:'x',fixed:10.79,start:3.64,end:5.66,angle:0}];
+  for(const r of curtainRuns){
+   const along=r.axis==='x',width=.38,mid=(r.start+r.end)/2,span=r.end-r.start+width;
+   for(const s of [r.start,r.end]){curtain(r.room,along?s:r.fixed,along?r.fixed:s,width,r.angle);const inset=along?(s<mid?.12:-.12):(s<mid?.12:-.12);curtain(r.room,along?s+inset:r.fixed-.07,along?r.fixed+.07:s+inset,.27,r.angle,true);}
+   box(r.room,along?mid:r.fixed,2.751,along?r.fixed:mid,along?span:.115,.058,along?.115:span,'cream','wall');
+   box(r.room,along?mid:r.fixed,2.718,along?r.fixed:mid,along?span-.018:.025,.008,along?.025:span-.018,'black','wall');
+  }
  }
  function merge() {
   // Merge by material within each visibility layer to keep mobile draw calls bounded.

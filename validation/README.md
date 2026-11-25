@@ -1,5 +1,7 @@
 # V7 验证
 
+2026-11-25 门框与家装细节：`room-refinements.json` 为入户门套/门扇与墙体25步碰撞、完整门洞闭合、哑光米白冰箱材质、窗帘闭合厚壳/离地、保存与横屏检查。`room-refinements-topology.json` 核对 Blender 双 LOD 全部实体；`room-refinements-decor.json` 为家具/门/四种手机尺寸与保存回归；`room-refinements-render-quality.json` 为昼夜及缺 HDR/depth 扩展回退。`rebuild-assets.json` 更新为本轮16模型/13PBR/219烘焙加载及短时帧采样。`room-refinements-before.json` 与 `room-refinements.json` 的同机位图由 `scripts/build_room_refinement_report.py` 打包到公开报告，`room-refinements-report.json` 检查24对图片与对比滑块、桌面/手机排版。手机均为模拟。
+
 2026-11-25 阳台加顶与顶灯：`balcony-bake.json` 记录顶板覆盖、遮挡面积与贴图范围一致、屋顶无直射漏光及灯光 G/B 保留；`balcony-validation.json` 记录桌面 1280×900、微信 UA / 触屏模拟 390×844 与 740×360 的启停 / 调光、屋顶、材质保存及门与家具净空；`balcony-render-quality.json` 记录昼夜与缺扩展回退。均通过，零脚本 / shader 错误和额外资源请求。通过 `node validation/verify-balcony.cjs` 重跑，`HOUSE_URL` 可切换至公开 main 预览。截图来自真实 WebGL 画布，仅转换为 WebP 压缩保存；`balcony-ceiling-light.webp` 是顶板与灯具同框截图。手机结果均为模拟，尚未真机微信测试。
 
 公开 main 的同组回归已通过，见 `balcony-public-validation.json`；`balcony-deployment.json` 核对功能提交、预览 HTML、正式版隔离及 feature 预览保留。`balcony-offline.json` 核对本地 file 单 HTML 无额外请求启动。

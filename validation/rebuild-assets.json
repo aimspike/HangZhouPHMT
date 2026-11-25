@@ -169,13 +169,13 @@
             },
             "fridge": {
               "high": {
-                "triangles": 5164,
-                "vertices": 3942,
+                "triangles": 4976,
+                "vertices": 3793,
                 "drawGroups": 2
               },
               "mobile": {
-                "triangles": 4940,
-                "vertices": 3786,
+                "triangles": 4752,
+                "vertices": 3637,
                 "drawGroups": 2
               }
             },
@@ -244,8 +244,8 @@
             1280,
             850
           ],
-          "shaderCount": 120,
-          "drawCalls": 368
+          "shaderCount": 121,
+          "drawCalls": 375
         },
         "quality": {
           "quality": "auto",
@@ -270,16 +270,16 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 283,
+          "materials": 290,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6010.300000000745,
+        "elapsedMs": 6007.300000000745,
         "frames": 361,
-        "fps": 60.063557559515374
+        "fps": 60.093552844032295
       },
       "geometry": {
         "same": true,
@@ -614,13 +614,13 @@
             },
             "fridge": {
               "high": {
-                "triangles": 5164,
-                "vertices": 3942,
+                "triangles": 4976,
+                "vertices": 3793,
                 "drawGroups": 2
               },
               "mobile": {
-                "triangles": 4940,
-                "vertices": 3786,
+                "triangles": 4752,
+                "vertices": 3637,
                 "drawGroups": 2
               }
             },
@@ -689,8 +689,8 @@
             390,
             844
           ],
-          "shaderCount": 115,
-          "drawCalls": 273
+          "shaderCount": 116,
+          "drawCalls": 277
         },
         "quality": {
           "quality": "auto",
@@ -715,16 +715,16 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 283,
+          "materials": 290,
           "mode": "walk",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6002.10000000149,
-        "frames": 179,
-        "fps": 29.82289531996394
+        "elapsedMs": 6002.39999999851,
+        "frames": 180,
+        "fps": 29.988004798088213
       },
       "geometry": {
         "same": true,

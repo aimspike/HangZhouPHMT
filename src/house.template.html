@@ -293,7 +293,7 @@ installBakedLighting();
 for(const mesh of bakeMeshes){if(mesh.userData.surface&&!mesh.geometry.attributes.uv2){mesh.geometry.setAttribute('uv2',mesh.geometry.attributes.uv.clone());mesh.material=mesh.material.clone();shadeInteriorMaterial(mesh.material);}}
 const finishes=createRoomFinishes({rooms,renderer,roof,meshes:bakeMeshes,assets:rebuildAssets});
 function shadeDecorMaterial(material,roomId){
- material.userData.houseRoom=roomId;material.userData.houseReflectionStrength=1;
+ material.userData.houseRoom=roomId;material.userData.houseReflectionStrength??=1;
  const lamp=lamps.find(l=>l.room.id===roomId)||lamps[0];
  material.onBeforeCompile=shader=>{shader.uniforms.houseBakedEnabled=bakedUniforms.enabled;shader.uniforms.houseLampPower=bakedUniforms.lampPower;shader.uniforms.houseSkyPower=bakedUniforms.skyPower;shader.uniforms.houseFixture={value:new THREE.Vector3(lamp.x-3.1,2.67,lamp.z-6.25)};
  shader.fragmentShader='uniform float houseBakedEnabled,houseLampPower,houseSkyPower; uniform vec3 houseFixture;\n'+shader.fragmentShader;
