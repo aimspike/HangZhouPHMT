@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "width": 1366,
+      "pairs": 12,
+      "offlineStudies": 4,
+      "overflow": false,
+      "slider": true
+    },
+    {
+      "width": 390,
+      "pairs": 12,
+      "offlineStudies": 4,
+      "overflow": false,
+      "slider": true
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

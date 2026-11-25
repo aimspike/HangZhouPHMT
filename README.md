@@ -2,6 +2,8 @@
 
 璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。当前版本 V14.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
 
+`feature/render-quality` 当前为 V16 家装 A 资产重建评审。V15 已按用户反馈回退；[独立重建测试页](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?decor=a) · [PC / 手机报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/) · [重建与验收状态](context/ASSET_REBUILD.md)。主要家具重建与 PBR 流程已接入，工业级整体效果和真机微信仍待验收；正式与 main 应用保留 V14.2。
+
 **[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 
 ## 文档分工与任务入口
@@ -64,6 +66,8 @@ python -m pip install -r requirements.txt
 平面图默认使用 Windows 微软雅黑；其他系统通过 `HOUSE_FONT` 指定支持中文的 TTF / TTC 文件。浏览器检查使用 Node.js、Playwright 与 Chrome；`PLAYWRIGHT_MODULE` 指向本机 Playwright 包，`CHROME_PATH` 可指定浏览器路径。
 
 修改应用源码后重新构建并同步提交 `docs/index.html`，不要只编辑生成文件。文档或已有宣传素材的整理不需要重新构建应用。
+
+V16 的重建资产与可编辑 Blender 主文件在 [assets/rebuild/](assets/rebuild/README.md)。材质生成先运行 `python scripts/prepare_rebuild_materials.py`，模型使用 Blender 5.3 执行 `scripts/rebuild_scene_assets.py`，最后构建。生成文件已提交，日常 HTML 构建无需安装 Blender；构建会校验生成脚本哈希，拒绝过期导出资源。
 
 ## 制作规范
 

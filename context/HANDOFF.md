@@ -1,5 +1,13 @@
 # Codex 续接上下文
 
+## V16 A 材质 / 模型重建（2026-11-25）
+
+用户确认继续原家装 A 风格。V15 已用 `2377c58` 完整回退并确认公网；随后在同一 feature 分支建立 Blender 5.3 可编辑米制资产、PBR 图与 high/mobile LOD，完成 16 类主要家具及踢脚 / 窗框收口层。`assets/rebuild/reference-a-master.blend` 为源文件，`scripts/rebuild_scene_assets.py` 与 `prepare_rebuild_materials.py` 生成数据，`build_house.py` 校验源脚本哈希后内嵌，当前 HTML 约 10.24MB。
+
+13 张去重 PBR 图全部加载；原始建筑快照 / 门洞 / 219 图不变，画布清晰度与光照恢复原方案，未恢复运行时路径追踪。PC / 手机 LOD、家具 / 门 / 通行 / 保存、HDR / depth 回退、Chromium / Windows WebKit 及报告检查通过，见 `validation/rebuild-*.json`。报告有 PC / 手机各 6 组真实网页前后对比；另有 4 张明确标注的离线 Cycles 独立模型棚拍，不可用后者冒充网页效果。
+
+详细内容和质量边界见 [ASSET_REBUILD.md](ASSET_REBUILD.md)。T01 保持进行中：本轮完成主要资产重建，不宣称整体达到工业级；全屋照明、参考图目视验收和物理手机微信持续性能仍待完成。正式 release 与 main 应用保持原版，feature 仅供评审。
+
 ## 画质回退与重建（2026-11-25，覆盖 V15）
 
 用户目视评审认为 V15 不如优化前，要求先回退，再细致重建材质和模型，目标工业级。已撤销 V15 两个功能 / 报告提交，恢复 `7b53b23` 的应用源码、材质、烘焙纹理与原分辨率；保留独立 feature 预览部署。后续质量必须以参考图、近景模型 / UV / PBR 资源、真实网页效果及手机预算验收，不再以短时模拟帧率代替视觉验收。重建沿用原 A 风格，继续 feature 分支，正式 release 不变。
