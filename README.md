@@ -2,6 +2,8 @@
 
 璞荟铭庭 89-A 户型的平面图复原与单文件 3D 浏览项目。当前版本 V14.2，运行时使用 WebGL1、实时烘焙照明与分房间场景反射。
 
+画质提升在独立分支 `feature/render-quality` 开发，当前为 V15 首轮测试：[画质测试页](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/) · [PC / 手机效果报告](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/quality-report/) · [实际浏览器检测](https://aimspike.github.io/HangZhouPHMT/preview/render-quality/?verify=mobile)。正式版与 main 应用仍保留原有版本，feature 设置独立保存；报告中的手机视口数据不代表物理手机性能。
+
 **[仓库展示首页](.github/README.md)** · [正式在线体验](https://aimspike.github.io/HangZhouPHMT/) · [main 开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
 
 ## 文档分工与任务入口
@@ -60,6 +62,8 @@ python -m http.server 8879 --bind 127.0.0.1
 ```sh
 python -m pip install -r requirements.txt
 ```
+
+V15 分支在重烘焙后、构建前额外运行 `python src/prepare_quality_assets.py`，生成手机光照贴图与家具低频受光数据 `src/quality-assets.json`。它使用既有建筑烘焙作为输入，不是 Cycles 全局光照；构建会核对源数据哈希并拒绝过期衍生资源。普通构建只读取已生成 JSON，无新增 Python 依赖。
 
 平面图默认使用 Windows 微软雅黑；其他系统通过 `HOUSE_FONT` 指定支持中文的 TTF / TTC 文件。浏览器检查使用 Node.js、Playwright 与 Chrome；`PLAYWRIGHT_MODULE` 指向本机 Playwright 包，`CHROME_PATH` 可指定浏览器路径。
 

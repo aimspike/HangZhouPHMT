@@ -1,0 +1,2182 @@
+{
+  "scope": "Chromium and Windows WebKit; mobile UA/touch and reduced sampling precision simulations, no physical phone",
+  "cases": [
+    {
+      "engine": "chromium",
+      "id": "android-chrome",
+      "ua": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "initial": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 22,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "closed": true
+      },
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "dining",
+        "captures": 1,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "dining"
+        ],
+        "materials": 189,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "dining",
+          "captures": 3,
+          "revision": 45,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 189,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "baked": [
+          219,
+          219
+        ]
+      },
+      "check": {
+        "schema": 2,
+        "version": "15.0",
+        "startedAt": "2026-11-25T02:14:01.977Z",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+        "browser": "Browser",
+        "mobile": true,
+        "scope": "Results from this browser; short frame samples are not sustained phone benchmarks; visual verdicts supplied by the person inspecting the screen",
+        "precision": {
+          "high": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          },
+          "medium": {
+            "precision": 10,
+            "rangeMin": 15,
+            "rangeMax": 15
+          }
+        },
+        "cases": [
+          {
+            "id": "bare-noon",
+            "preset": "bare",
+            "time": "noon",
+            "name": "毛坯 · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:06.900Z",
+            "framesAdvanced": 3,
+            "performance": {
+              "sampleMs": 2050.2999999970198,
+              "renderedFrames": 1,
+              "observedFps": 0.4877335024149898,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 1,
+              "revision": 23,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 37,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "bare-night",
+            "preset": "bare",
+            "time": "night",
+            "name": "毛坯 · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:09.567Z",
+            "framesAdvanced": 15,
+            "performance": {
+              "sampleMs": 2004.3999999985099,
+              "renderedFrames": 13,
+              "observedFps": 6.485731390944753,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 2,
+              "revision": 25,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 41,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-noon",
+            "preset": "a",
+            "time": "noon",
+            "name": "家装 A · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:20.916Z",
+            "framesAdvanced": 3,
+            "performance": {
+              "sampleMs": 2014.3999999985099,
+              "renderedFrames": 1,
+              "observedFps": 0.4964257347104546,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 3,
+              "revision": 27,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 109,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-night",
+            "preset": "a",
+            "time": "night",
+            "name": "家装 A · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:23.623Z",
+            "framesAdvanced": 10,
+            "performance": {
+              "sampleMs": 2007.2000000029802,
+              "renderedFrames": 8,
+              "observedFps": 3.985651654039519,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 29,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 112,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          }
+        ],
+        "errors": [],
+        "updatedAt": "2026-11-25T02:14:23.637Z",
+        "result": "awaiting-visual-check"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "android-wechat",
+      "ua": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.50",
+      "quantized": true,
+      "initial": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 22,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "closed": true
+      },
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "dining",
+        "captures": 2,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "dining"
+        ],
+        "materials": 189,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "dining",
+          "captures": 3,
+          "revision": 45,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 189,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "baked": [
+          219,
+          219
+        ]
+      },
+      "check": {
+        "schema": 2,
+        "version": "15.0",
+        "startedAt": "2026-11-25T02:14:41.980Z",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.50",
+        "browser": "WeChat",
+        "mobile": true,
+        "scope": "Results from this browser; short frame samples are not sustained phone benchmarks; visual verdicts supplied by the person inspecting the screen",
+        "precision": {
+          "high": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          },
+          "medium": {
+            "precision": 10,
+            "rangeMin": 15,
+            "rangeMax": 15
+          }
+        },
+        "cases": [
+          {
+            "id": "bare-noon",
+            "preset": "bare",
+            "time": "noon",
+            "name": "毛坯 · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:47.626Z",
+            "framesAdvanced": 4,
+            "performance": {
+              "sampleMs": 2003.2000000029802,
+              "renderedFrames": 2,
+              "observedFps": 0.9984025559090578,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 1,
+              "revision": 23,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 37,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "bare-night",
+            "preset": "bare",
+            "time": "night",
+            "name": "毛坯 · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:50.568Z",
+            "framesAdvanced": 10,
+            "performance": {
+              "sampleMs": 2014.1000000014901,
+              "renderedFrames": 8,
+              "observedFps": 3.9719974181987396,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 2,
+              "revision": 25,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 41,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-noon",
+            "preset": "a",
+            "time": "noon",
+            "name": "家装 A · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:14:59.959Z",
+            "framesAdvanced": 3,
+            "performance": {
+              "sampleMs": 2004.5,
+              "renderedFrames": 1,
+              "observedFps": 0.49887752556747317,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 3,
+              "revision": 27,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 109,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-night",
+            "preset": "a",
+            "time": "night",
+            "name": "家装 A · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:15:03.228Z",
+            "framesAdvanced": 11,
+            "performance": {
+              "sampleMs": 2000.8000000044703,
+              "renderedFrames": 9,
+              "observedFps": 4.498200719702065,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 0
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 29,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 0,
+              "frameIntervalMs": 0,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+              "maxTextureUnits": 32,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 112,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          }
+        ],
+        "errors": [],
+        "updatedAt": "2026-11-25T02:15:03.248Z",
+        "result": "awaiting-visual-check"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "desktop",
+      "desktop": true,
+      "initial": {
+        "quality": {
+          "quality": "auto",
+          "effective": "high",
+          "ao": true,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 22,
+          "reflectionError": null,
+          "pixelRatio": 1.5,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 6,
+          "adaptiveResolution": false,
+          "pixelRatioBounds": [
+            1,
+            1.5
+          ],
+          "lightmapRGBA8MiB": 81.46503829956055,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": true,
+          "aoPolicy": "highp-screen-depth",
+          "depthTextureAttached": true,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1344,
+            893
+          ],
+          "samples": 20,
+          "probeResolution": 128,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "maxTextureUnits": 32,
+          "contextLost": false,
+          "canvas": [
+            1920,
+            1275
+          ],
+          "viewport": [
+            1280,
+            850
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "closed": true
+      },
+      "quality": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": "dining",
+        "captures": 1,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1.5,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 6,
+        "adaptiveResolution": false,
+        "pixelRatioBounds": [
+          1,
+          1.5
+        ],
+        "lightmapRGBA8MiB": 81.46503829956055,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          893
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [
+          "dining"
+        ],
+        "materials": 189,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "quality": {
+          "quality": "auto",
+          "effective": "high",
+          "ao": true,
+          "probeRoom": "dining",
+          "captures": 8,
+          "revision": 45,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 1,
+          "evictions": 0,
+          "cacheLimit": 6,
+          "adaptiveResolution": false,
+          "pixelRatioBounds": [
+            1,
+            1.5
+          ],
+          "lightmapRGBA8MiB": 81.46503829956055,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": true,
+          "aoPolicy": "highp-screen-depth",
+          "depthTextureAttached": true,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            896,
+            595
+          ],
+          "samples": 20,
+          "probeResolution": 128,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 189,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "baked": [
+          219,
+          219
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "safari",
+      "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1",
+      "initial": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 22,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "closed": true
+      },
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "dining",
+        "captures": 2,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "dining"
+        ],
+        "materials": 189,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "dining",
+          "captures": 3,
+          "revision": 45,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 189,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "baked": [
+          219,
+          219
+        ]
+      },
+      "check": {
+        "schema": 2,
+        "version": "15.0",
+        "startedAt": "2026-11-25T02:16:02.028Z",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1",
+        "browser": "Safari/WebKit",
+        "mobile": true,
+        "scope": "Results from this browser; short frame samples are not sustained phone benchmarks; visual verdicts supplied by the person inspecting the screen",
+        "precision": {
+          "high": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          },
+          "medium": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          }
+        },
+        "cases": [
+          {
+            "id": "bare-noon",
+            "preset": "bare",
+            "time": "noon",
+            "name": "毛坯 · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:16:11.737Z",
+            "framesAdvanced": 49,
+            "performance": {
+              "sampleMs": 2007,
+              "renderedFrames": 47,
+              "observedFps": 23.41803687095167,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 6.933333333333334
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 1,
+              "revision": 23,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 6.933333333333334,
+              "frameIntervalMs": 43.06666666666667,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 37,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "bare-night",
+            "preset": "bare",
+            "time": "night",
+            "name": "毛坯 · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:16:14.527Z",
+            "framesAdvanced": 7,
+            "performance": {
+              "sampleMs": 2389,
+              "renderedFrames": 4,
+              "observedFps": 1.6743407283382168,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 6.933333333333334
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 2,
+              "revision": 25,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 6.933333333333334,
+              "frameIntervalMs": 43.06666666666667,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 41,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-noon",
+            "preset": "a",
+            "time": "noon",
+            "name": "家装 A · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:16:39.782Z",
+            "framesAdvanced": 54,
+            "performance": {
+              "sampleMs": 2032,
+              "renderedFrames": 52,
+              "observedFps": 25.590551181102363,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 5.777777777777778
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 3,
+              "revision": 27,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 5.777777777777778,
+              "frameIntervalMs": 39.37777777777778,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 109,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-night",
+            "preset": "a",
+            "time": "night",
+            "name": "家装 A · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:16:43.185Z",
+            "framesAdvanced": 6,
+            "performance": {
+              "sampleMs": 2803,
+              "renderedFrames": 4,
+              "observedFps": 1.4270424545130218,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 5.777777777777778
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 29,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 5.777777777777778,
+              "frameIntervalMs": 39.37777777777778,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 112,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          }
+        ],
+        "errors": [],
+        "updatedAt": "2026-11-25T02:16:43.218Z",
+        "result": "awaiting-visual-check"
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "iphone-wechat",
+      "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.50",
+      "initial": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": null,
+          "captures": 0,
+          "revision": 22,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [],
+          "materials": 0,
+          "mode": "orbit",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "diagnostics": {
+          "version": "15.0",
+          "antialias": true,
+          "fxaa": true,
+          "context": "WebGL 1.0",
+          "maxTextureUnits": 16,
+          "contextLost": false,
+          "canvas": [
+            390,
+            844
+          ],
+          "viewport": [
+            390,
+            844
+          ],
+          "shaderCount": 17,
+          "drawCalls": 415
+        },
+        "closed": true
+      },
+      "quality": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "dining",
+        "captures": 2,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "dining"
+        ],
+        "materials": 189,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "quality": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "dining",
+          "captures": 3,
+          "revision": 45,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "dining"
+          ],
+          "materials": 189,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        },
+        "baked": [
+          219,
+          219
+        ]
+      },
+      "check": {
+        "schema": 2,
+        "version": "15.0",
+        "startedAt": "2026-11-25T02:17:14.114Z",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.50",
+        "browser": "WeChat",
+        "mobile": true,
+        "scope": "Results from this browser; short frame samples are not sustained phone benchmarks; visual verdicts supplied by the person inspecting the screen",
+        "precision": {
+          "high": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          },
+          "medium": {
+            "precision": 23,
+            "rangeMin": 127,
+            "rangeMax": 127
+          }
+        },
+        "cases": [
+          {
+            "id": "bare-noon",
+            "preset": "bare",
+            "time": "noon",
+            "name": "毛坯 · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:17:23.827Z",
+            "framesAdvanced": 63,
+            "performance": {
+              "sampleMs": 2007,
+              "renderedFrames": 61,
+              "observedFps": 30.393622321873444,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 4.333333333333333
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 1,
+              "revision": 23,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 4.333333333333333,
+              "frameIntervalMs": 33,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 37,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "bare-night",
+            "preset": "bare",
+            "time": "night",
+            "name": "毛坯 · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:17:26.219Z",
+            "framesAdvanced": 26,
+            "performance": {
+              "sampleMs": 2007,
+              "renderedFrames": 23,
+              "observedFps": 11.4598903836572,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 4.333333333333333
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "dining",
+              "captures": 2,
+              "revision": 25,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 4.333333333333333,
+              "frameIntervalMs": 33,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining"
+              ],
+              "materials": 189,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 41,
+              "drawCalls": 368
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-noon",
+            "preset": "a",
+            "time": "noon",
+            "name": "家装 A · 正午",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:17:41.401Z",
+            "framesAdvanced": 64,
+            "performance": {
+              "sampleMs": 2006,
+              "renderedFrames": 62,
+              "observedFps": 30.907278165503488,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 4.4222222222222225
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 3,
+              "revision": 27,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 4.4222222222222225,
+              "frameIntervalMs": 32.48888888888889,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 109,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          },
+          {
+            "id": "a-night",
+            "preset": "a",
+            "time": "night",
+            "name": "家装 A · 夜晚",
+            "visual": "unconfirmed",
+            "capturedAt": "2026-11-25T02:17:43.764Z",
+            "framesAdvanced": 26,
+            "performance": {
+              "sampleMs": 2023,
+              "renderedFrames": 24,
+              "observedFps": 11.863568956994563,
+              "pixelRatio": 1,
+              "renderSubmissionMs": 4.4222222222222225
+            },
+            "bakedMaps": [
+              219,
+              219
+            ],
+            "quality": {
+              "quality": "high",
+              "effective": "high",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 29,
+              "reflectionError": null,
+              "pixelRatio": 1,
+              "renderMs": 4.4222222222222225,
+              "frameIntervalMs": 32.48888888888889,
+              "resolutionChanges": 0,
+              "evictions": 0,
+              "cacheLimit": 2,
+              "adaptiveResolution": true,
+              "pixelRatioBounds": [
+                1,
+                1.75
+              ],
+              "lightmapRGBA8MiB": 35.485774993896484,
+              "diffuseProbeRooms": 9,
+              "hdrSupported": true,
+              "depthSupported": false,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1,
+                1
+              ],
+              "samples": 20,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "dining",
+                "living"
+              ],
+              "materials": 276,
+              "mode": "walk",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+              "pathTracing": false
+            },
+            "diagnostics": {
+              "version": "15.0",
+              "antialias": true,
+              "fxaa": true,
+              "context": "WebGL 1.0",
+              "maxTextureUnits": 16,
+              "contextLost": false,
+              "canvas": [
+                740,
+                360
+              ],
+              "viewport": [
+                740,
+                360
+              ],
+              "shaderCount": 112,
+              "drawCalls": 365
+            },
+            "canvasExported": true,
+            "automatic": "passed"
+          }
+        ],
+        "errors": [],
+        "updatedAt": "2026-11-25T02:17:43.790Z",
+        "result": "awaiting-visual-check"
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "result": "passed"
+}

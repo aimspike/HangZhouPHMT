@@ -1,0 +1,1679 @@
+{
+  "scope": "Chromium WebGL1; WeChat UA simulation, not a real WeChat device; V15 feature regression, prior V14 assets kept separately",
+  "errors": [],
+  "externalRequests": [],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 740,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            320,
+            740
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            390,
+            844
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 740,
+      "height": 360,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            740,
+            360
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
+      },
+      "capture": "long-press preview passed"
+    },
+    {
+      "width": 568,
+      "height": 320,
+      "modes": [
+        {
+          "mode": "orbit",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "plan",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": false
+        },
+        {
+          "mode": "walk",
+          "canvas": [
+            568,
+            320
+          ],
+          "maps": [
+            219,
+            219
+          ],
+          "overflow": false,
+          "shortcutVisible": true,
+          "shortcutClickable": true,
+          "clear": true
+        }
+      ],
+      "schemePanel": {
+        "options": [
+          "bare",
+          "a"
+        ],
+        "sectionText": "装修方案\n切换方案\n毛坯方案 · 无家具\n家装预设 A · 暖木与深蓝\n\n家装预设 A · 暖木 / 米白 / 深蓝。床头与衣柜靠墙，电视在北侧，沙发在南侧。\n\n参考图用于配色与家具示意，卧室对应关系待核实；未改变原墙线和门洞。家具为布置示意，效果以实际装修为准。"
+      },
+      "capture": "long-press preview passed"
+    }
+  ],
+  "defaultScheme": {
+    "preset": "bare",
+    "count": 0,
+    "visible": false,
+    "disabled": true
+  },
+  "defaults": {
+    "daylight": "night",
+    "nightPressed": "true",
+    "doors": [
+      {
+        "id": "entry",
+        "type": "hinged"
+      },
+      {
+        "id": "study",
+        "type": "hinged"
+      },
+      {
+        "id": "kitchen",
+        "type": "hinged"
+      },
+      {
+        "id": "bath",
+        "type": "hinged"
+      },
+      {
+        "id": "storage",
+        "type": "hinged"
+      },
+      {
+        "id": "master",
+        "type": "hinged"
+      },
+      {
+        "id": "second",
+        "type": "hinged"
+      }
+    ]
+  },
+  "architectureUnchanged": true,
+  "roof": {
+    "gaps": 0,
+    "examples": []
+  },
+  "doorClearance": [
+    {
+      "door": "entry",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "study",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "study",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "kitchen",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "kitchen",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "bath",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "bath",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "storage",
+      "type": "sliding",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "storage",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "master",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    },
+    {
+      "door": "second",
+      "type": "hinged",
+      "steps": 25,
+      "collisions": []
+    }
+  ],
+  "doorClosure": [
+    {
+      "id": "entry",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "study",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "kitchen",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "bath",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "storage",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "master",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    },
+    {
+      "id": "second",
+      "type": "hinged",
+      "rays": 1426,
+      "gaps": 0,
+      "examples": []
+    }
+  ],
+  "doorMotion": [
+    {
+      "id": "study",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "kitchen",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "bath",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "left",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    },
+    {
+      "id": "storage",
+      "pathSteps": 25,
+      "otherDoorStates": 5625,
+      "outsideRoom": true,
+      "stackSide": "right",
+      "collisions": [],
+      "sweepEnvelopeCollisions": []
+    }
+  ],
+  "decor": {
+    "preset": "a",
+    "built": true,
+    "visible": true,
+    "parts": 766,
+    "mergedMeshes": 109,
+    "items": [
+      {
+        "id": "living-sofa",
+        "room": "living",
+        "min": [
+          0.6599999964237213,
+          -3.5762786898541066e-9,
+          5.50500000834465
+        ],
+        "max": [
+          2.9400000035762788,
+          0.9649999964237214,
+          6.350000005662441
+        ]
+      },
+      {
+        "id": "coffee-table",
+        "room": "living",
+        "min": [
+          1.3400000035762787,
+          0.027499999925494192,
+          4.270000003576278
+        ],
+        "max": [
+          2.1599999964237213,
+          0.47999999932944776,
+          5.089999996423721
+        ]
+      },
+      {
+        "id": "tv-console",
+        "room": "living",
+        "min": [
+          1.714999976158142,
+          -2.980232241545089e-9,
+          3.259999998211861
+        ],
+        "max": [
+          3.165000023841858,
+          0.5100000029802323,
+          3.630000000052154
+        ]
+      },
+      {
+        "id": "television",
+        "room": "living",
+        "min": [
+          1.7900000238418579,
+          0.5375000011920928,
+          3.3600000017881393
+        ],
+        "max": [
+          3.089999976158142,
+          1.3799999952316284,
+          3.5199999982118606
+        ]
+      },
+      {
+        "id": "dining-table",
+        "room": "dining",
+        "min": [
+          3.900000016689301,
+          0.014999999627470971,
+          4.290000016689301
+        ],
+        "max": [
+          5.0599999833107,
+          0.7824999988079071,
+          5.4499999833107
+        ]
+      },
+      {
+        "id": "chair-3.65-4.86",
+        "room": "dining",
+        "min": [
+          3.4349999964237212,
+          0.0505564883351326,
+          4.644999996423722
+        ],
+        "max": [
+          3.879874387383461,
+          0.855,
+          5.075000003576279
+        ]
+      },
+      {
+        "id": "chair-5.32-4.86",
+        "room": "dining",
+        "min": [
+          5.090125612616539,
+          0.0505564883351326,
+          4.644999996423722
+        ],
+        "max": [
+          5.535000003576279,
+          0.855,
+          5.075000003576279
+        ]
+      },
+      {
+        "id": "chair-4.48-5.72",
+        "room": "dining",
+        "min": [
+          4.264999996423722,
+          0.0505564883351326,
+          5.490125612616539
+        ],
+        "max": [
+          4.695000003576279,
+          0.855,
+          5.935000003576278
+        ]
+      },
+      {
+        "id": "dining-sideboard",
+        "room": "dining",
+        "min": [
+          5.79100000038743,
+          0.08499999046325685,
+          4.070000028610229
+        ],
+        "max": [
+          6.090000000596047,
+          0.8150000095367431,
+          5.12999997138977
+        ]
+      },
+      {
+        "id": "fridge",
+        "room": "dining",
+        "min": [
+          5.421999999783933,
+          0.009999990463256836,
+          5.559999996423722
+        ],
+        "max": [
+          6.070000002384186,
+          1.9900000095367432,
+          6.239999973773957
+        ]
+      },
+      {
+        "id": "kitchen-east-cabinets",
+        "room": "kitchen",
+        "min": [
+          5.434999991655349,
+          0.050000003576278707,
+          0.1500000286102292
+        ],
+        "max": [
+          6.10500000834465,
+          2.4799999940395354,
+          2.7099999713897702
+        ]
+      },
+      {
+        "id": "kitchen-north-cabinets",
+        "room": "kitchen",
+        "min": [
+          4.400000028610229,
+          0.050000003576278707,
+          0.08500000238418615
+        ],
+        "max": [
+          5.45999997138977,
+          1.2030000002682208,
+          0.7149999976158146
+        ]
+      },
+      {
+        "id": "master-bed",
+        "room": "master",
+        "min": [
+          0.09000000029802324,
+          -2.98023217215615e-10,
+          9.409999978542327
+        ],
+        "max": [
+          2.1099999904632574,
+          1.1899999809265136,
+          10.990000021457671
+        ]
+      },
+      {
+        "id": "master-wardrobe",
+        "room": "master",
+        "min": [
+          0.1470000267028806,
+          -4.768371586472142e-8,
+          8.242499988079071
+        ],
+        "max": [
+          1.7529999732971189,
+          2.4089999996125697,
+          8.876500000216067
+        ]
+      },
+      {
+        "id": "master-nightstand",
+        "room": "master",
+        "min": [
+          0.20500000596046464,
+          0.030000009536743144,
+          11.124999997615815
+        ],
+        "max": [
+          0.6549999940395357,
+          0.7850000008940696,
+          11.495000002384186
+        ]
+      },
+      {
+        "id": "second-bed",
+        "room": "second",
+        "min": [
+          4.170000030994415,
+          -2.98023217215615e-10,
+          8.960000002384186
+        ],
+        "max": [
+          6.110000028610229,
+          1.1899999809265136,
+          10.339999997615815
+        ]
+      },
+      {
+        "id": "second-wardrobe",
+        "room": "second",
+        "min": [
+          4.496999979019165,
+          -4.768371586472142e-8,
+          7.642499994039536
+        ],
+        "max": [
+          6.003000020980835,
+          2.4089999996125697,
+          8.226500000216067
+        ]
+      },
+      {
+        "id": "second-nightstand",
+        "room": "second",
+        "min": [
+          5.7099999982118606,
+          0.07000000536441803,
+          8.49999999981001
+        ],
+        "max": [
+          6.050000001788139,
+          0.8349999976158142,
+          8.809999991059303
+        ]
+      },
+      {
+        "id": "bath-vanity",
+        "room": "bath",
+        "min": [
+          0.17999999523162868,
+          0.3200000053644181,
+          7.7150000071525575
+        ],
+        "max": [
+          0.9200000047683718,
+          1.8699999856948852,
+          8.147500000186264
+        ]
+      },
+      {
+        "id": "toilet",
+        "room": "bath",
+        "min": [
+          0.26000000000000023,
+          0.03999999284744263,
+          6.644999999105931
+        ],
+        "max": [
+          0.6800000000000002,
+          0.8344999998062849,
+          7.2700000000000005
+        ]
+      },
+      {
+        "id": "study-desk",
+        "room": "study",
+        "min": [
+          1.8849999904632568,
+          0.00999998569488525,
+          0.9400000023841857
+        ],
+        "max": [
+          2.615000009536743,
+          0.7774999998509884,
+          2.319999997615814
+        ]
+      },
+      {
+        "id": "study-chair",
+        "room": "study",
+        "min": [
+          2.7450000059604647,
+          0.010000001192092905,
+          1.389999995827675
+        ],
+        "max": [
+          3.1949999940395357,
+          0.9150000035762786,
+          1.8500000041723252
+        ]
+      },
+      {
+        "id": "storage-rack-north",
+        "room": "storage",
+        "min": [
+          5.370000000447035,
+          0.012999999895691873,
+          6.442499999810011
+        ],
+        "max": [
+          6.109999999552965,
+          2.4600000381469727,
+          6.67049999922514
+        ]
+      },
+      {
+        "id": "storage-rack-east",
+        "room": "storage",
+        "min": [
+          5.852000000774861,
+          0.012999999895691873,
+          6.672500000447036
+        ],
+        "max": [
+          6.11000000018999,
+          2.4600000381469727,
+          7.327499999552964
+        ]
+      },
+      {
+        "id": "storage-rack-south",
+        "room": "storage",
+        "min": [
+          4.650000000447036,
+          0.012999999895691873,
+          7.329500000774859
+        ],
+        "max": [
+          6.109999999552966,
+          2.4600000381469727,
+          7.557500000189989
+        ]
+      },
+      {
+        "id": "balcony-laundry",
+        "room": "balcony",
+        "min": [
+          5.368636265344918,
+          0.02999999523162833,
+          11.61000000038743
+        ],
+        "max": [
+          6.110000003576279,
+          2.2700000047683715,
+          12.289999999612569
+        ]
+      },
+      {
+        "id": "tv-console-accessories",
+        "room": "living",
+        "min": [
+          1.800151885142912,
+          0.5150000007152558,
+          3.3459999999403953
+        ],
+        "max": [
+          3.0860000008344652,
+          0.7887227657727773,
+          3.5740000000596046
+        ]
+      },
+      {
+        "id": "dining-accessories",
+        "room": "dining",
+        "min": [
+          4.202999999523163,
+          0.7899999986588955,
+          4.340000000596047
+        ],
+        "max": [
+          6.049999997317791,
+          1.1149999958276748,
+          4.953333064977169
+        ]
+      },
+      {
+        "id": "kitchen-cookware",
+        "room": "kitchen",
+        "min": [
+          5.582500000149012,
+          1.0140000000596046,
+          1.8409999963641166
+        ],
+        "max": [
+          5.8974999998509885,
+          1.1040000004321338,
+          2.3090000036358838
+        ]
+      },
+      {
+        "id": "kitchen-sink-accessories",
+        "room": "kitchen",
+        "min": [
+          5.01151180267334,
+          0.9699996709823608,
+          0.24799999594688416
+        ],
+        "max": [
+          5.247500000074506,
+          1.2227362394332886,
+          0.2720000147819519
+        ]
+      },
+      {
+        "id": "kitchen-counter-accessories",
+        "room": "kitchen",
+        "min": [
+          5.641999999582768,
+          0.9499999940395356,
+          0.8425000001676377
+        ],
+        "max": [
+          5.994999996721744,
+          1.2500000059604646,
+          0.9980000004172327
+        ]
+      },
+      {
+        "id": "bath-vanity-detail",
+        "room": "bath",
+        "min": [
+          0.2550000131130221,
+          0.47699999997392295,
+          7.700499999865889
+        ],
+        "max": [
+          0.8449999868869784,
+          1.0284999998323618,
+          8.052999997138977
+        ]
+      },
+      {
+        "id": "bath-shower-detail",
+        "room": "bath",
+        "min": [
+          1.5665333271026611,
+          0.9599999189376831,
+          6.654999999850989
+        ],
+        "max": [
+          1.7149999997019767,
+          2.140439510345459,
+          6.725000000149012
+        ]
+      }
+    ],
+    "placements": [
+      {
+        "id": "master-bed",
+        "headWall": "west",
+        "wallFace": 0.09,
+        "headDirection": "west",
+        "headGap": 2.980232449711906e-10,
+        "layout": {
+          "head": 0.09000000029802324,
+          "north": 9.409999978542327,
+          "south": 10.990000021457671,
+          "foot": 2.1099999904632574
+        }
+      },
+      {
+        "id": "master-wardrobe",
+        "backWall": "bath-south",
+        "wallFace": 8.2425,
+        "back": 8.242499988079071,
+        "gap": -1.192092824453539e-8
+      },
+      {
+        "id": "second-bed",
+        "headWall": "east",
+        "wallFace": 6.11,
+        "headDirection": "east",
+        "headGap": -2.8610228852699038e-8,
+        "layout": {
+          "head": 6.110000028610229,
+          "north": 8.960000002384186,
+          "south": 10.339999997615815,
+          "foot": 4.170000030994415
+        }
+      },
+      {
+        "id": "second-wardrobe",
+        "backWall": "storage-south",
+        "wallFace": 7.6425,
+        "back": 7.642499994039536,
+        "gap": -5.960464122267695e-9
+      },
+      {
+        "id": "storage-rack-north",
+        "backWall": "storage-north",
+        "wallFace": 6.442500000000001,
+        "back": 6.442499999810011,
+        "gap": -1.899893575796341e-10,
+        "width": 0.7400000000000002,
+        "depth": 0.23,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "storage-rack-east",
+        "backWall": "east",
+        "wallFace": 6.11,
+        "back": 6.11000000018999,
+        "gap": -1.899893575796341e-10,
+        "width": 0.6549999999999985,
+        "depth": 0.26,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "storage-rack-south",
+        "backWall": "storage-south",
+        "wallFace": 7.557499999999999,
+        "back": 7.557500000189989,
+        "gap": -1.899893575796341e-10,
+        "width": 1.46,
+        "depth": 0.23,
+        "height": 2.46,
+        "boardThickness": 0.018,
+        "postWidth": 0.024,
+        "levels": [
+          0.22,
+          0.66,
+          1.1,
+          1.54,
+          1.98,
+          2.42
+        ],
+        "parts": 116
+      },
+      {
+        "id": "balcony-laundry",
+        "backWall": "balcony-east",
+        "wallFace": 6.11,
+        "back": 6.110000003576279,
+        "gap": -3.5762788286319847e-9,
+        "facing": "west",
+        "frontNormal": [
+          -1,
+          0,
+          -2.220446049250313e-16
+        ],
+        "cabinetWidth": 0.68,
+        "cabinetDepth": 0.68
+      }
+    ],
+    "blockingObjects": 25,
+    "furnitureCount": 33,
+    "architectureUnchanged": true,
+    "lighting": "Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials"
+  },
+  "placements": [
+    {
+      "id": "master-bed",
+      "headWall": "west",
+      "wallFace": 0.09,
+      "headDirection": "west",
+      "headGap": 2.980232449711906e-10,
+      "layout": {
+        "head": 0.09000000029802324,
+        "north": 9.409999978542327,
+        "south": 10.990000021457671,
+        "foot": 2.1099999904632574
+      }
+    },
+    {
+      "id": "master-wardrobe",
+      "backWall": "bath-south",
+      "wallFace": 8.2425,
+      "back": 8.242499988079071,
+      "gap": -1.192092824453539e-8
+    },
+    {
+      "id": "second-bed",
+      "headWall": "east",
+      "wallFace": 6.11,
+      "headDirection": "east",
+      "headGap": -2.8610228852699038e-8,
+      "layout": {
+        "head": 6.110000028610229,
+        "north": 8.960000002384186,
+        "south": 10.339999997615815,
+        "foot": 4.170000030994415
+      }
+    },
+    {
+      "id": "second-wardrobe",
+      "backWall": "storage-south",
+      "wallFace": 7.6425,
+      "back": 7.642499994039536,
+      "gap": -5.960464122267695e-9
+    },
+    {
+      "id": "storage-rack-north",
+      "backWall": "storage-north",
+      "wallFace": 6.442500000000001,
+      "back": 6.442499999810011,
+      "gap": -1.899893575796341e-10,
+      "width": 0.7400000000000002,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-east",
+      "backWall": "east",
+      "wallFace": 6.11,
+      "back": 6.11000000018999,
+      "gap": -1.899893575796341e-10,
+      "width": 0.6549999999999985,
+      "depth": 0.26,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-south",
+      "backWall": "storage-south",
+      "wallFace": 7.557499999999999,
+      "back": 7.557500000189989,
+      "gap": -1.899893575796341e-10,
+      "width": 1.46,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "balcony-laundry",
+      "backWall": "balcony-east",
+      "wallFace": 6.11,
+      "back": 6.110000003576279,
+      "gap": -3.5762788286319847e-9,
+      "facing": "west",
+      "frontNormal": [
+        -1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "cabinetWidth": 0.68,
+      "cabinetDepth": 0.68
+    }
+  ],
+  "storageRacks": [
+    {
+      "id": "storage-rack-north",
+      "backWall": "storage-north",
+      "wallFace": 6.442500000000001,
+      "back": 6.442499999810011,
+      "gap": -1.899893575796341e-10,
+      "width": 0.7400000000000002,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-east",
+      "backWall": "east",
+      "wallFace": 6.11,
+      "back": 6.11000000018999,
+      "gap": -1.899893575796341e-10,
+      "width": 0.6549999999999985,
+      "depth": 0.26,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    },
+    {
+      "id": "storage-rack-south",
+      "backWall": "storage-south",
+      "wallFace": 7.557499999999999,
+      "back": 7.557500000189989,
+      "gap": -1.899893575796341e-10,
+      "width": 1.46,
+      "depth": 0.23,
+      "height": 2.46,
+      "boardThickness": 0.018,
+      "postWidth": 0.024,
+      "levels": [
+        0.22,
+        0.66,
+        1.1,
+        1.54,
+        1.98,
+        2.42
+      ],
+      "parts": 116
+    }
+  ],
+  "laundry": {
+    "id": "balcony-laundry",
+    "backWall": "balcony-east",
+    "wallFace": 6.11,
+    "back": 6.110000003576279,
+    "gap": -3.5762788286319847e-9,
+    "facing": "west",
+    "frontNormal": [
+      -1,
+      0,
+      -2.220446049250313e-16
+    ],
+    "cabinetWidth": 0.68,
+    "cabinetDepth": 0.68
+  },
+  "storageAisle": {
+    "intersections": [],
+    "points": [
+      {
+        "x": 4.7,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 4.9,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.15,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.4,
+        "z": 6.95,
+        "clear": true
+      },
+      {
+        "x": 5.65,
+        "z": 6.95,
+        "clear": true
+      }
+    ],
+    "width": 0.6590000015497184
+  },
+  "bedClearances": [
+    {
+      "room": "master",
+      "foot": 1.0050000095367428,
+      "north": 0.53349997832626,
+      "south": 0.7174999785423299
+    },
+    {
+      "room": "second",
+      "foot": 0.8850000309944148,
+      "north": 0.7335000021681193,
+      "south": 0.5750000023841846
+    }
+  ],
+  "partyWall": [
+    {
+      "mode": "orbit",
+      "walls": [
+        {
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.17000000178813934
+        }
+      ]
+    },
+    {
+      "mode": "plan",
+      "walls": [
+        {
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.17000000178813934
+        }
+      ]
+    },
+    {
+      "mode": "walk",
+      "walls": [
+        {
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.17000000178813934
+        }
+      ]
+    }
+  ],
+  "balconyWalls": [
+    {
+      "mode": "orbit",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 1.1,
+          "thickness": 0.17
+        }
+      ]
+    },
+    {
+      "mode": "plan",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 0.18,
+          "thickness": 0.17
+        }
+      ]
+    },
+    {
+      "mode": "walk",
+      "walls": [
+        {
+          "id": "balcony-east-post",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.18
+        },
+        {
+          "id": "balcony-east",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.18
+        },
+        {
+          "id": "platform-divider",
+          "height": 2.96,
+          "guard": false,
+          "visibleHeight": 2.96,
+          "thickness": 0.17
+        }
+      ]
+    }
+  ],
+  "wallClearance": [],
+  "views": [
+    {
+      "id": "living",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "clear": true
+    },
+    {
+      "id": "livingTV",
+      "camera": [
+        -0.1499999999999999,
+        1.5,
+        -1.25
+      ],
+      "clear": true
+    },
+    {
+      "id": "dining",
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "clear": true
+    },
+    {
+      "id": "kitchen",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "clear": true
+    },
+    {
+      "id": "master",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "clear": true
+    },
+    {
+      "id": "second",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "clear": true
+    },
+    {
+      "id": "bath",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "clear": true
+    },
+    {
+      "id": "study",
+      "camera": [
+        0.7999999999999998,
+        1.5,
+        -3.9
+      ],
+      "clear": true
+    },
+    {
+      "id": "storage",
+      "camera": [
+        1.6999999999999997,
+        1.5,
+        0.6500000000000004
+      ],
+      "clear": true
+    },
+    {
+      "id": "balcony",
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "clear": true
+    }
+  ],
+  "furnitureToggle": "passed",
+  "switchAndRefresh": "passed",
+  "schemeControls": "Only scheme selector and notes remain; gallery, preset export and view picker removed",
+  "desktopCapture": "PNG download passed",
+  "settingsExport": "preset, both finish palettes and no credentials",
+  "settingsImport": "A/bare palette round-trip; old original/missing schema1 migrates to unfurnished concrete bare",
+  "savedDefaultOverrides": "explicit dusk and sliding choices survive reload",
+  "rotation": [
+    844,
+    390
+  ],
+  "result": "passed",
+  "cameraSamples": [
+    {
+      "room": "living",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "dining",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "kitchen",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "master",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "second",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "bath",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "living",
+      "time": "night",
+      "fov": 85,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "overview",
+      "time": "noon",
+      "fov": 43,
+      "camera": [
+        8.669630012369762,
+        14.511824061060151,
+        14.749288485326463
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    },
+    {
+      "room": "livingTV",
+      "time": "noon",
+      "fov": 85,
+      "camera": [
+        -0.1499999999999999,
+        1.5,
+        -1.25
+      ],
+      "eyeHeight": 1.5,
+      "angles": [
+        0.3140878691271031,
+        -0.12
+      ],
+      "canvas": [
+        1920,
+        1275
+      ]
+    }
+  ],
+  "visualEvidence": "See docs/quality-report/ before/after WebP pairs. Legacy test-export paths were restored to preserve V14 historical assets."
+}

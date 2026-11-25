@@ -1,0 +1,514 @@
+{
+  "scope": "Desktop/WebGL1 and Android WeChat UA simulation; not a real WeChat device",
+  "errors": [],
+  "external": [],
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "initial": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 23,
+        "reflectionError": null,
+        "pixelRatio": 1.5,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 6,
+        "adaptiveResolution": false,
+        "pixelRatioBounds": [
+          1,
+          1.5
+        ],
+        "lightmapRGBA8MiB": 81.46503829956055,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 132.30566666667167,
+        "black": 0,
+        "white": 0
+      },
+      "day": {
+        "mean": 88.68395833332988,
+        "black": 0.001875,
+        "white": 0
+      },
+      "otherTimes": [
+        {
+          "time": "morning",
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 3,
+            "revision": 26,
+            "reflectionError": null,
+            "pixelRatio": 1.5,
+            "renderMs": 0,
+            "frameIntervalMs": 0,
+            "resolutionChanges": 0,
+            "evictions": 0,
+            "cacheLimit": 6,
+            "adaptiveResolution": false,
+            "pixelRatioBounds": [
+              1,
+              1.5
+            ],
+            "lightmapRGBA8MiB": 81.46503829956055,
+            "diffuseProbeRooms": 9,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 276,
+            "mode": "walk",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+            "pathTracing": false
+          },
+          "image": {
+            "mean": 82.72258333333446,
+            "black": 0.0028125,
+            "white": 0
+          }
+        },
+        {
+          "time": "dusk",
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 4,
+            "revision": 27,
+            "reflectionError": null,
+            "pixelRatio": 1.5,
+            "renderMs": 0,
+            "frameIntervalMs": 0,
+            "resolutionChanges": 0,
+            "evictions": 0,
+            "cacheLimit": 6,
+            "adaptiveResolution": false,
+            "pixelRatioBounds": [
+              1,
+              1.5
+            ],
+            "lightmapRGBA8MiB": 81.46503829956055,
+            "diffuseProbeRooms": 9,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 276,
+            "mode": "walk",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+            "pathTracing": false
+          },
+          "image": {
+            "mean": 77.25270833333322,
+            "black": 0.003875,
+            "white": 0
+          }
+        }
+      ],
+      "light": {
+        "mean": 77.21722916666663,
+        "black": 0,
+        "white": 0
+      },
+      "persistence": "passed",
+      "storage": {
+        "mean": 148.41218749999936,
+        "black": 0,
+        "white": 0
+      },
+      "balcony": {
+        "mean": 193.59481249999612,
+        "black": 0.003625,
+        "white": 0
+      },
+      "architectureUnchanged": true,
+      "final": {
+        "quality": "high",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": "balcony",
+        "captures": 4,
+        "revision": 24,
+        "reflectionError": null,
+        "pixelRatio": 1.5,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 6,
+        "adaptiveResolution": false,
+        "pixelRatioBounds": [
+          1,
+          1.5
+        ],
+        "lightmapRGBA8MiB": 81.46503829956055,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [
+          "storage",
+          "balcony"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "wechat",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "initial": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 23,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 139.1512708333378,
+        "black": 0,
+        "white": 0
+      },
+      "day": {
+        "mean": 92.69829166666132,
+        "black": 0,
+        "white": 0
+      },
+      "rotated": {
+        "v": [
+          844,
+          390
+        ],
+        "q": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 2,
+          "revision": 25,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        }
+      },
+      "final": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 2,
+        "revision": 25,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "fallback",
+      "width": 740,
+      "height": 360,
+      "mobile": true,
+      "fallback": true,
+      "initial": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 23,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": false,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 132.70000000000528,
+        "black": 0,
+        "white": 0
+      },
+      "day": {
+        "mean": 93.39927083332869,
+        "black": 0.000875,
+        "white": 0
+      },
+      "rotated": {
+        "v": [
+          360,
+          740
+        ],
+        "q": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 2,
+          "revision": 25,
+          "reflectionError": null,
+          "pixelRatio": 1,
+          "renderMs": 0,
+          "frameIntervalMs": 0,
+          "resolutionChanges": 0,
+          "evictions": 0,
+          "cacheLimit": 2,
+          "adaptiveResolution": true,
+          "pixelRatioBounds": [
+            0.85,
+            1.25
+          ],
+          "lightmapRGBA8MiB": 35.485774993896484,
+          "diffuseProbeRooms": 9,
+          "hdrSupported": false,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            1,
+            1
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 276,
+          "mode": "walk",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+          "pathTracing": false
+        }
+      },
+      "final": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 2,
+        "revision": 25,
+        "reflectionError": null,
+        "pixelRatio": 1,
+        "renderMs": 0,
+        "frameIntervalMs": 0,
+        "resolutionChanges": 0,
+        "evictions": 0,
+        "cacheLimit": 2,
+        "adaptiveResolution": true,
+        "pixelRatioBounds": [
+          0.85,
+          1.25
+        ],
+        "lightmapRGBA8MiB": 35.485774993896484,
+        "diffuseProbeRooms": 9,
+        "hdrSupported": false,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1,
+          1
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 276,
+        "mode": "walk",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; bounded LRU cache, refresh after camera settles",
+        "pathTracing": false
+      }
+    }
+  ],
+  "result": "passed"
+}

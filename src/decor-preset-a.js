@@ -11,29 +11,7 @@ function createHouseDecor(options) {
  const placements=[];
  const wallFace=(id,axis,side)=>{const wall=options.planLayout.walls.find(w=>w.id===id);return wall.a[axis]+side*wall.t/2;};
 
- function surfaceTexture(kind) {
-  if(geometries['texture-'+kind])return geometries['texture-'+kind];
-  const c=document.createElement('canvas');c.width=c.height=512;const ctx=c.getContext('2d');
-  ctx.fillStyle='#eeeeee';ctx.fillRect(0,0,512,512);let seed=81;
-  const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
-  if(kind==='fabric'||kind==='stripe'){
-   for(let y=0;y<512;y++){ctx.fillStyle='rgba(45,45,45,'+(.025+rand()*.075)+')';ctx.fillRect(0,y,512,.65);}
-   for(let x=0;x<512;x+=2){ctx.fillStyle='rgba(255,255,255,'+(.08+rand()*.08)+')';ctx.fillRect(x,0,.6,512);}
-   if(kind==='stripe')for(let x=0;x<512;x+=24){ctx.fillStyle='rgba(255,255,255,.24)';ctx.fillRect(x,0,1.7,512);ctx.fillStyle='rgba(60,60,60,.09)';ctx.fillRect(x+3,0,1,512);}
-  } else if(kind==='wood') {
-   for(let y=0;y<512;y++){const v=235+4*Math.sin(y*.07)+2*Math.sin(y*.43);ctx.fillStyle='rgb('+v+','+v+','+v+')';ctx.fillRect(0,y,512,1);}
-   for(let i=0;i<420;i++){const y=rand()*512;ctx.strokeStyle='rgba(50,50,50,'+(.018+rand()*.05)+')';ctx.lineWidth=.35+rand()*.45;ctx.beginPath();ctx.moveTo(0,y);ctx.bezierCurveTo(130,y-4,370,y+4,512,y);ctx.stroke();}
-  } else if(kind==='stone') {
-   for(let i=0;i<5500;i++){const v=180+rand()*50;ctx.fillStyle='rgba('+v+','+v+','+v+',.22)';ctx.fillRect(rand()*512,rand()*512,1+rand()*2,1);}
-   for(let i=0;i<7;i++){const y=rand()*512;ctx.strokeStyle='rgba(80,80,80,.055)';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(0,y);ctx.bezierCurveTo(160,y+55,340,y-35,512,y+8);ctx.stroke();}
-  } else if(kind==='tiles') {
-   for(let x=0;x<512;x+=40){ctx.fillStyle='#b9b9b9';ctx.fillRect(x,0,1.5,512);ctx.fillStyle='#fafafa';ctx.fillRect(x+2,0,.7,512);}
-   for(let y=0;y<512;y+=256){ctx.fillStyle='#b9b9b9';ctx.fillRect(0,y,512,1.5);}
-  }
-  const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.wrapS=tx.wrapT=THREE.RepeatWrapping;tx.anisotropy=Math.min(renderer.capabilities.getMaxAnisotropy(),4);
-  const relief=tx.clone();relief.encoding=THREE.LinearEncoding;relief.needsUpdate=true;
-  geometries['texture-'+kind]={map:tx,bump:relief};return geometries['texture-'+kind];
- }
+ const surfaceTexture=createHouseSurfaceMaps(renderer);
  function reflections(){
   if(geometries.reflections)return geometries.reflections;
   const faces=[];for(let i=0;i<6;i++){const c=document.createElement('canvas');c.width=c.height=64;const ctx=c.getContext('2d'),g=ctx.createLinearGradient(0,0,0,64);g.addColorStop(0,'#a4afb4');g.addColorStop(.45,'#9ca6a8');g.addColorStop(1,'#665d50');ctx.fillStyle=g;ctx.fillRect(0,0,64,64);const glow=ctx.createRadialGradient(i%2?38:22,20,1,32,28,40);glow.addColorStop(0,'#eee8d8');glow.addColorStop(.3,'#c6c8bd');glow.addColorStop(1,'#7c888b00');ctx.fillStyle=glow;ctx.fillRect(0,0,64,64);faces.push(c);}
@@ -43,7 +21,7 @@ function createHouseDecor(options) {
   const key=room+'-'+name;if(materials[key])return materials[key];
   const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],seam:['#7c8a91'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32']};
   const [color,texture]=definitions[name],fabric=['fabric','stripe'].includes(texture),metal=['steel','brass'].includes(name);const m=new THREE.MeshStandardMaterial({color,roughness:metal?.25:name==='mirror'?.13:fabric?.93:texture==='wood'?.46:name==='stone'?.36:name==='ceramic'?.3:.65,metalness:metal?.82:name==='mirror'?.8:0});m.color.convertSRGBToLinear();
-  if(texture){const tx=surfaceTexture(texture);m.map=tx.map;m.bumpMap=tx.bump;m.roughnessMap=tx.bump;m.bumpScale=fabric?.0009:texture==='wood'?.0014:.0006;}
+  if(texture){const tx=surfaceTexture(texture);m.map=tx.map;m.bumpMap=tx.bump;m.roughnessMap=tx.roughness;m.bumpScale=fabric?.0007:texture==='wood'?.001:.0005;}
   m.envMap=reflections();m.userData.envStrength=metal?.75:name==='mirror'?.95:fabric?.015:.12;m.envMapIntensity=m.userData.envStrength;
   if(name==='glow'){m.emissive.set('#ffcd80');m.emissiveIntensity=.65;glowing.push(m);}
   options.shade(m,room);materials[key]=m;return m;
@@ -282,7 +260,7 @@ function createHouseDecor(options) {
   for(const parent of Object.values(layers)){
    const buckets=new Map();parent.updateMatrixWorld(true);const inverse=parent.matrixWorld.clone().invert();const meshes=[];parent.traverse(m=>{if(m.isMesh)meshes.push(m);});
    for(const m of meshes){const key=m.material.uuid;if(!buckets.has(key))buckets.set(key,{material:m.material,positions:[],normals:[],uvs:[]});const b=buckets.get(key),g=m.geometry.index?m.geometry.toNonIndexed():m.geometry.clone();g.applyMatrix4(inverse.clone().multiply(m.matrixWorld));for(const [name,attribute] of [['positions','position'],['normals','normal'],['uvs','uv']])for(const value of g.attributes[attribute].array)b[name].push(value);g.dispose();}
-   parent.clear();for(const b of buckets.values()){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(b.normals,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(b.uvs,2));g.computeBoundingSphere();const m=new THREE.Mesh(g,b.material);m.castShadow=!b.material.transparent&&b.material.emissiveIntensity<1;m.receiveShadow=true;parent.add(m);}
+   parent.clear();for(const b of buckets.values()){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(b.normals,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(b.uvs,2));g.computeBoundingSphere();applyHouseFurnishingIrradiance(g,b.material.userData.houseRoom);const m=new THREE.Mesh(g,b.material);m.castShadow=!b.material.transparent&&b.material.emissiveIntensity<1;m.receiveShadow=true;parent.add(m);}
   }
  }
  function update(nextMode=mode) {

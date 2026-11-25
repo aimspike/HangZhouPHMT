@@ -1,5 +1,13 @@
 # Codex 续接上下文
 
+## V15 Feature 画质评审（2026-11-25）
+
+当前工作分支 `feature/render-quality`，首次开发前已按 Skill 在干净 main 执行 `git pull --ff-only`。main 仅先接入 `7b53b23` 的 feature 预览部署支持，画质代码仍独立；release 保持 `102bb16`。测试入口 `/preview/render-quality/`，PC / 手机报告在其下 `quality-report/`，详细实施、预算、证据及边界见 [RENDER_QUALITY_FEATURE.md](RENDER_QUALITY_FEATURE.md)。
+
+V15 首轮包括独立材质颜色 / 凹凸 / 粗糙度数据、基于既有建筑烘焙的 9 房间 72 位置家具低频受光、手机较小光照图、自适应像素比例和反射 LRU 缓存。仍为 WebGL1、自包含 HTML，不是 Cycles 或运行时路径追踪。原始建筑 / 门洞 / 烘焙源保持，衍生文件 `src/quality-assets.json` 由 `prepare_quality_assets.py` 生成，重烘焙后必须重新生成再构建。
+
+PC / 手机视口四组前后截图和 RTX 5080 本机短时数据已采集；Chromium、Windows WebKit、HDR / depth 缺失回退、保存、家具 / 门 / 通行 / 屋顶、合成压力与反射缓存检查通过。报告明确手机模拟不是实际手机帧率；真实微信和持续热稳定性待验收。T01 维持待验证，不宣称专业效果已最终验收。
+
 ## 当前分支规则（2026-11-24）
 
 `main` 为开发分支，`release` 为正式发布分支。正式展示根网址始终取 `release/docs`；main 测试链接为 `https://aimspike.github.io/HangZhouPHMT/preview/main/`。修改完成后验证并推送 main、检查测试部署；只有用户要求正式发布时，才将已验证 main 快进合入 release。此规则覆盖下方历史条目中“推送 main 即发布正式版”的流程。
