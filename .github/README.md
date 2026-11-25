@@ -1,65 +1,66 @@
 # 杭州 · 璞荟铭庭
 
-**把户型，装进口袋。**
+**先在手机里，逛一遍自己的家。**
 
-从一张户型照片出发，把 89-A 的空间、采光、装修和门窗放进浏览器，方便在电脑、手机和微信里查看与讨论。
+从客厅到卧室怎么走，站在阳台能看到什么，毛坯装上家具是什么样子——打开 89-A 户型，转一转、走一走，再慢慢试出自己喜欢的搭配。
 
-## 开始看房
+**[打开 89-A，开始看房 →](https://aimspike.github.io/HangZhouPHMT/)**
 
-**[打开 3D 在线体验 →](https://aimspike.github.io/HangZhouPHMT/)**
+不用安装，手机、电脑都能打开。想直接看摆好家具的样子，可以[从家装 A 开始逛](https://aimspike.github.io/HangZhouPHMT/?decor=a)。
 
-[体验家装方案 A](https://aimspike.github.io/HangZhouPHMT/?decor=a) · [查看平面图](../plans/restored-floor-plan.svg) · [下载图纸 PDF](../plans/restored-floor-plan.pdf)
+## 第一次打开，先这样逛
 
-无需安装。支持三维总览、平面户型和室内漫游，也可以切换昼夜、搭配材质、开关房门。拖动转向、双指缩放；室内使用方向按钮，电脑可用 WASD 或方向键移动。
+1. **先转一圈，认认房间。** 在“三维”里拖动户型换个方向看，手机双指缩放，或点右下角“＋”拉近。看迷糊了，点旁边的重置按钮回到全屋。
+2. **再摊开看，理清布局。** 点“平面”，把客厅、卧室、厨房和阳台的位置连起来看。想和家人一起讨论，可以[打开平面图](../plans/restored-floor-plan.svg)或[下载 PDF](../plans/restored-floor-plan.pdf)。
+3. **走进去，感受一下。** 点“室内”，拖动画面转头，用左下角方向按钮往前走。电脑也可以用 WASD 或方向键移动，沿着客厅和过道慢慢逛。
 
-## 赞赏支持
+逛过一遍，再试试下面几件事：
 
-如果这个项目对你有帮助，欢迎自愿赞赏，支持投入更多时间完善看房功能。也欢迎点个 **Star**，让更多邻居发现它。
+- **到阳台看一天的光。** 点“阳台看景”，依次切换“清晨、正午、黄昏、夜晚”。想只看自然采光，打开右上角设置，关掉“室内灯”再比较。
+- **把家具放进来看看。** 点画面左侧的装修切换按钮，在毛坯和家装 A 之间来回切换；看清空房间的大小，再感受摆好家具后的通道和布局。
+- **试一试自己的搭配。** 在设置的“颜色与材质”里选房间，换个地板或墙面颜色；也可以展开“入户门与房间门”开关房门，或调整“所在楼层”再看窗外。改好的设置会自动留在这个浏览器里。
+
+## 看得顺手，欢迎一起支持
+
+如果它帮你看懂了户型、想清了装修，欢迎自愿赞赏，支持继续完善。也可以点右上角 **Star** 收藏，或把[看房链接](https://aimspike.github.io/HangZhouPHMT/)发给家人和邻居，一起边看边聊。
 
 <p align="center">
   <a href="../assets/wechat-appreciation.png"><img src="../assets/wechat-appreciation.png" alt="微信赞赏码，头像已模糊处理" width="240"></a>
 </p>
 <p align="center">使用微信扫码；点击图片可查看大图。</p>
 
-## 60 秒，看懂主要功能
+## 先看一遍，再跟着试
 
-点击封面观看新版竖屏演示，包含柔和自然的普通话女声、同步字幕和背景音乐。
-
-<p align="center">
-  <a href="https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4"><img src="../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg" alt="60秒功能演示封面：三维户型近景，点击播放自然女声版视频" width="300"></a>
-</p>
-
-**[观看或下载 60 秒自然女声版 →](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4)** · [下载字幕](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.srt)
-
-三维旋转、平面布局、家装漫游、无家具毛坯漫游、昼夜采光、装修切换，以及材质、房门和楼层设置。最新素材提供预览链接，正式看房入口见上方“开始看房”。画面来自实际网页手机视口录制。
-
-## 六个功能，随手看懂自己的家
+点下面的封面，用一分钟跟着转户型、走进房间、切换昼夜和装修。看完后[打开看房页面](https://aimspike.github.io/HangZhouPHMT/)，按自己的节奏试一遍。
 
 <p align="center">
-  <a href="../assets/promo/mobile-v14.2/app-features-six-grid-v3.png"><img src="../assets/promo/mobile-v14.2/app-features-six-grid-v3.png" alt="六宫格功能介绍：三维总览、平面户型、室内漫游、昼夜采光、装修对比和随心设置" width="800"></a>
+  <a href="https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4"><img src="../assets/promo/mobile-v14.2/mobile-video-cover-60s.jpg" alt="点开一分钟看房演示，跟着转户型、逛房间" width="300"></a>
 </p>
 
-[打开或下载六宫格原图](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/app-features-six-grid-v3.png)
+**[播放或下载一分钟演示 →](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.mp4)** · [下载字幕](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/mobile-feature-tour-60s-v5.srt)
 
-| 功能 | 可以体验什么 |
-| --- | --- |
-| 三维总览 | 旋转、缩放，查看全屋结构与家具布局 |
-| 平面户型 | 查看房间、门窗、门洞关系及原图实黑墙段标记 |
-| 室内漫游 | 走进房间，转身与前进，观察家具和通道 |
-| 昼夜采光 | 切换清晨、正午、黄昏与夜晚，分别调整日照、天光和室内灯 |
-| 装修对比 | 切换无家具的毛坯与暖木、米白、深蓝的家装方案 A |
-| 随心设置 | 调整墙顶地材质、颜色、房门、楼层与画质，自动保存个人设置 |
+## 这张图，留着边看边试
 
-## 关于这个项目
+<p align="center">
+  <a href="../assets/promo/mobile-v14.2/app-features-six-grid-v3.png"><img src="../assets/promo/mobile-v14.2/app-features-six-grid-v3.png" alt="看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配" width="800"></a>
+</p>
 
-HangZhouPHMT 是璞荟铭庭 89-A 户型的平面图复原与 3D 交互浏览项目。家装 A 参考了 9 张效果图，适配现有户型；可以继续调整各房间材质，并通过通用相机功能导出当前画面。
+[打开或保存这张操作图](https://aimspike.github.io/HangZhouPHMT/preview/main/promo/app-features-six-grid-v3.png)
 
-[查看实际场景截图](../assets/interior/preset-a/README.md) · [查看装修参考图](../references/interior/preset-a/README.md) · [小区概况与资料来源](../references/phmt/README.md)
+## 找到喜欢的样子，存下来一起聊
 
-照片复原尺寸、墙高和家具含估算，图纸不能用于施工；承重标记根据原图实黑区域转录，结构性质以正式结构图为准。楼栋与周边环境包含示意内容。已进行桌面和手机视口、微信 UA 模拟检查，实际手机微信仍需实机核验。
+逛到喜欢的角度，点右上角相机保存画面，发给家人讨论。手机里出现图片预览后，可以长按保存。
 
-遇到墙顶阴影条纹，可在实际手机中打开[本机显示检测](https://aimspike.github.io/HangZhouPHMT/?release=14.2&verify=mobile)，按[检测说明](../context/MOBILE_VERIFICATION.md)查看画面并导出报告。
+[先翻翻房间截图](../assets/interior/preset-a/README.md) · [看看装修灵感](../references/interior/preset-a/README.md) · [了解小区与资料来源](../references/phmt/README.md)
 
-## 项目资料
+想体验最近的调整，可以[打开新版预览](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。预览与上方看房入口分别保存设置，画面可能有所不同。
 
-[项目说明与制作规范](../README.md) · [后续 TodoList](../context/TODO.md) · [宣传素材说明](../assets/promo/mobile-v14.2/README.md) · [开发测试版](https://aimspike.github.io/HangZhouPHMT/preview/main/)
+## 遇到显示问题，再来这里
+
+如果墙面或天花板出现奇怪条纹，在出现问题的手机浏览器或微信里打开[本机显示检测](https://aimspike.github.io/HangZhouPHMT/?verify=mobile)，按[这份说明](../context/MOBILE_VERIFICATION.md)查看画面并导出报告。
+
+看房画面和家具用于帮助理解空间与讨论搭配，尺寸、承重墙与实际景观请以正式图纸和现场为准。
+
+**[现在打开，按自己的想法逛一逛 →](https://aimspike.github.io/HangZhouPHMT/)**
+
+[后续计划与进展](../context/TODO.md) · [项目维护说明](../README.md) · [演示素材](../assets/promo/mobile-v14.2/README.md)

@@ -1,0 +1,159 @@
+{
+  "content": {
+    "checkedAt": "2026-11-25T10:26:34.275597+00:00",
+    "source": ".github/README.md",
+    "renderer": "GitHub REST Markdown API, GFM mode; local approximate GitHub CSS",
+    "oldUniqueDestinations": 17,
+    "newUniqueDestinations": 17,
+    "existingDestinationsRetained": true,
+    "localLinksChecked": 14,
+    "localLinksBroken": [],
+    "headings": [
+      "杭州 · 璞荟铭庭",
+      "第一次打开，先这样逛",
+      "看得顺手，欢迎一起支持",
+      "先看一遍，再跟着试",
+      "这张图，留着边看边试",
+      "找到喜欢的样子，存下来一起聊",
+      "遇到显示问题，再来这里"
+    ],
+    "productionDetailsRemoved": true,
+    "result": "passed"
+  },
+  "layout": {
+    "scope": "GitHub GFM render, local desktop/mobile viewport layout; approximate GitHub CSS",
+    "cases": [
+      {
+        "id": "desktop",
+        "width": 1280,
+        "height": 900,
+        "title": "杭州 · 璞荟铭庭",
+        "lead": "先在手机里，逛一遍自己的家。",
+        "headings": [
+          "第一次打开，先这样逛",
+          "看得顺手，欢迎一起支持",
+          "先看一遍，再跟着试",
+          "这张图，留着边看边试",
+          "找到喜欢的样子，存下来一起聊",
+          "遇到显示问题，再来这里"
+        ],
+        "steps": 3,
+        "tables": 0,
+        "images": [
+          {
+            "alt": "微信赞赏码，头像已模糊处理",
+            "loaded": true,
+            "width": 240
+          },
+          {
+            "alt": "点开一分钟看房演示，跟着转户型、逛房间",
+            "loaded": true,
+            "width": 300
+          },
+          {
+            "alt": "看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配",
+            "loaded": true,
+            "width": 800
+          }
+        ],
+        "overflow": false,
+        "videoLinks": 2,
+        "mainAction": "打开 89-A，开始看房 →"
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844,
+        "title": "杭州 · 璞荟铭庭",
+        "lead": "先在手机里，逛一遍自己的家。",
+        "headings": [
+          "第一次打开，先这样逛",
+          "看得顺手，欢迎一起支持",
+          "先看一遍，再跟着试",
+          "这张图，留着边看边试",
+          "找到喜欢的样子，存下来一起聊",
+          "遇到显示问题，再来这里"
+        ],
+        "steps": 3,
+        "tables": 0,
+        "images": [
+          {
+            "alt": "微信赞赏码，头像已模糊处理",
+            "loaded": true,
+            "width": 240
+          },
+          {
+            "alt": "点开一分钟看房演示，跟着转户型、逛房间",
+            "loaded": true,
+            "width": 300
+          },
+          {
+            "alt": "看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配",
+            "loaded": true,
+            "width": 358
+          }
+        ],
+        "overflow": false,
+        "videoLinks": 2,
+        "mainAction": "打开 89-A，开始看房 →"
+      },
+      {
+        "id": "narrow",
+        "width": 320,
+        "height": 740,
+        "title": "杭州 · 璞荟铭庭",
+        "lead": "先在手机里，逛一遍自己的家。",
+        "headings": [
+          "第一次打开，先这样逛",
+          "看得顺手，欢迎一起支持",
+          "先看一遍，再跟着试",
+          "这张图，留着边看边试",
+          "找到喜欢的样子，存下来一起聊",
+          "遇到显示问题，再来这里"
+        ],
+        "steps": 3,
+        "tables": 0,
+        "images": [
+          {
+            "alt": "微信赞赏码，头像已模糊处理",
+            "loaded": true,
+            "width": 240
+          },
+          {
+            "alt": "点开一分钟看房演示，跟着转户型、逛房间",
+            "loaded": true,
+            "width": 288
+          },
+          {
+            "alt": "看房操作速览：转户型、看平面、逛房间、看昼夜、比装修、调搭配",
+            "loaded": true,
+            "width": 288
+          }
+        ],
+        "overflow": false,
+        "videoLinks": 2,
+        "mainAction": "打开 89-A，开始看房 →"
+      }
+    ],
+    "errors": [],
+    "result": "passed"
+  },
+  "actionCopyCheck": {
+    "checkedAt": "2026-11-25T10:28:12.676Z",
+    "scope": "Public release viewer in an isolated Chromium mobile context; UI-label/action check for homepage copy, not physical phone validation",
+    "actions": [
+      "三维放大与重置",
+      "平面",
+      "室内与方向按钮",
+      "阳台看景与四时段",
+      "室内灯开关",
+      "毛坯与家装切换",
+      "材质、房门与楼层控件",
+      "相机与手机保存预览"
+    ],
+    "errors": [],
+    "result": "passed"
+  },
+  "applicationAndMediaUnchanged": true,
+  "result": "passed"
+}
