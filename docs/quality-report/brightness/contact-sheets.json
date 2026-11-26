@@ -1,0 +1,341 @@
+{
+  "scope": "Exact actual WebGL screenshots resized uniformly and placed with labels, no image tone/brightness changes",
+  "images": [
+    {
+      "file": "night-strong.jpg",
+      "size": [
+        2448,
+        2048
+      ],
+      "sources": [
+        {
+          "file": "pc-night-on-living-baseline.webp",
+          "sha256": "9f1ca0f2c1c9abf0b9dc2c092a15703e2e9944413464107d57e386b87ab711bf",
+          "placement": [
+            12,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-living-lamp50.webp",
+          "sha256": "5ac04d57d62d521140d09dfaf8b562b5feff21bfb9cb0f9b3f3d550ac759a077",
+          "placement": [
+            824,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-living-exposure65.webp",
+          "sha256": "cbed55337b6b8d26d1a8a3d575ccea51c6a252b8009e958dd39499c6bad3b7d0",
+          "placement": [
+            1636,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-baseline.webp",
+          "sha256": "f03d951d818a11a7246873dcee39e69cf0a6b41ed9d1c89a77d384fe48bf31b7",
+          "placement": [
+            12,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-lamp50.webp",
+          "sha256": "d7647753658d73d5328044a31f751e8c7a615dcf0f352af520eea2447c577967",
+          "placement": [
+            824,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-exposure65.webp",
+          "sha256": "492b52c182e05b87e8ca88934b6b54b04fc7efab89f5fa565990a52aad298987",
+          "placement": [
+            1636,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-baseline.webp",
+          "sha256": "bb854554424b464767c3b9467552651222caa8af03aac12d77135d422b7f56b4",
+          "placement": [
+            12,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-lamp50.webp",
+          "sha256": "8182063936b6f0b1a548961930761b2f0be0dbc9057ced64a1db3d9f30c3da34",
+          "placement": [
+            824,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-exposure65.webp",
+          "sha256": "5c3a28e290cdb2af3ea01f7b4df1229c80cd51df09b50828face517c961dc8ef",
+          "placement": [
+            1636,
+            1422,
+            800,
+            562
+          ]
+        }
+      ]
+    },
+    {
+      "file": "night-mild.jpg",
+      "size": [
+        2448,
+        2048
+      ],
+      "sources": [
+        {
+          "file": "pc-night-on-living-baseline.webp",
+          "sha256": "9f1ca0f2c1c9abf0b9dc2c092a15703e2e9944413464107d57e386b87ab711bf",
+          "placement": [
+            12,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-living-lamp70.webp",
+          "sha256": "46ac23bc3a34d63e4fbe45aba65f38e94271654757d69a64274d60df1a48e7d0",
+          "placement": [
+            824,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-living-exposure80.webp",
+          "sha256": "65daef176f61e8ec4df594aca0049ceb87354b0e5e953f7d0bc9a9378070da05",
+          "placement": [
+            1636,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-baseline.webp",
+          "sha256": "f03d951d818a11a7246873dcee39e69cf0a6b41ed9d1c89a77d384fe48bf31b7",
+          "placement": [
+            12,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-lamp70.webp",
+          "sha256": "f05b46fde50c0ed48ddbd0976e9cd05766fa7501f8bcb5dfcd8477438093af72",
+          "placement": [
+            824,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-master-exposure80.webp",
+          "sha256": "10b1d10ed5b4a3ca20350dd800bd9eb09759ccf60fcad5bc50121744c5abe786",
+          "placement": [
+            1636,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-baseline.webp",
+          "sha256": "bb854554424b464767c3b9467552651222caa8af03aac12d77135d422b7f56b4",
+          "placement": [
+            12,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-lamp70.webp",
+          "sha256": "617f12362fc97976461a75fc74409fb094df6e0ddc2596a10e742efe5e2a87b7",
+          "placement": [
+            824,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-night-on-kitchen-exposure80.webp",
+          "sha256": "165a3a7a9304a6485ac0b5fefe379b2a1b64a0d1762e8ff1c60578db497ddb57",
+          "placement": [
+            1636,
+            1422,
+            800,
+            562
+          ]
+        }
+      ]
+    },
+    {
+      "file": "noon-strong.jpg",
+      "size": [
+        2448,
+        2048
+      ],
+      "sources": [
+        {
+          "file": "pc-noon-on-living-baseline.webp",
+          "sha256": "87864a2e3f42678ccfa17b5b466d94ff1382386b8c43c9de4b0085fbddf1acc8",
+          "placement": [
+            12,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-living-lamp50.webp",
+          "sha256": "b353b2c967be8a37a574ad398c91726eab19824c185bbb06f095c8213a2bf953",
+          "placement": [
+            824,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-living-exposure65.webp",
+          "sha256": "bf6e4a68ef1f00971b520e6566511e0c260cd473468bea414bbe1dcacef6e6c2",
+          "placement": [
+            1636,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-master-baseline.webp",
+          "sha256": "a9deadbf77c8d80271c06f8b20a329c5fd74dd1fb3fa0acf4940d1f690117b30",
+          "placement": [
+            12,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-master-lamp50.webp",
+          "sha256": "1f0e3a8fc13ff0f9f06e1e06539d4211ca4364a3603e92a9f9be49ca48c5e72f",
+          "placement": [
+            824,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-master-exposure65.webp",
+          "sha256": "e20c21ee23557708628b2d0fc1f5a9c9f0e4d67cdae4671fdcff4b497a58d84c",
+          "placement": [
+            1636,
+            796,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-kitchen-baseline.webp",
+          "sha256": "46483ead22d9bbf7c84a04a11fc2f0829533d76be3c499b6eff1e0d96750d6b4",
+          "placement": [
+            12,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-kitchen-lamp50.webp",
+          "sha256": "33ce3489289d79e43196261935d6eea647a35db568afeba18b36d5caf44c2405",
+          "placement": [
+            824,
+            1422,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-on-kitchen-exposure65.webp",
+          "sha256": "8dc726ad046b3d5d35d84b8139e7d9e2c6bb4acde0081ec06698bae6212da4e6",
+          "placement": [
+            1636,
+            1422,
+            800,
+            562
+          ]
+        }
+      ]
+    },
+    {
+      "file": "noon-off-control.jpg",
+      "size": [
+        2448,
+        796
+      ],
+      "sources": [
+        {
+          "file": "pc-noon-off-living-baseline.webp",
+          "sha256": "b21c998afe2dd9a3e8187b41fd487e30aa239c03c1e4393259451e11af9581ef",
+          "placement": [
+            12,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-off-living-lamp50.webp",
+          "sha256": "0c36836a206c7a376d6b914043b65897147ae31c465d77c1fd4a2c70a42c5152",
+          "placement": [
+            824,
+            170,
+            800,
+            562
+          ]
+        },
+        {
+          "file": "pc-noon-off-living-exposure65.webp",
+          "sha256": "da038a05c00986c3e274e4e79434e28baf2412a79df483a7213330d9af538dbc",
+          "placement": [
+            1636,
+            170,
+            800,
+            562
+          ]
+        }
+      ]
+    }
+  ]
+}

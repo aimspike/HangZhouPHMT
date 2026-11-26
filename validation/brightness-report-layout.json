@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8879/docs/quality-report/brightness-comparison.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 56,
+      "renderedImages": 70,
+      "sheets": 4,
+      "slider": "passed",
+      "localLinks": 14,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 56,
+      "renderedImages": 70,
+      "sheets": 4,
+      "slider": "passed",
+      "localLinks": 14,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

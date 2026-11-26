@@ -376,3 +376,14 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 `verify-static-lighting.cjs`覆盖Chrome桌面/手机/缺HDR-depth/WebKit的全部16状态、开关灯与昼夜像素变化、48张新实际画布、改门/材质/天花板回退、刷新保存与横竖屏。`static-lighting.json`、`static-bake-data.json`、`static-render-quality.json`、`static-decor.json`保存结果。48对/96张实际网页对比见quality-report/static-lighting.html，包含PC/手机、客厅/主卧/厨房/阳台6组代表状态；前后相同相机/曝光/材质，无AI重绘。仅main开发，release不推进。
 
 静态光照功能`83f8ad1`已上线main。公开HTML规范化SHA256 `b3483ec26903532a57c9ae453dd51fc3027138777a9aaafd56238a8ae5dcc76c`与Git装配一致；4类引擎/扩展环境各16状态、新光照/反射、回退、设置与横竖屏及96图报告均通过。见static-public.json、static-report-public.json和static-deployment.json；正式release仍7b53b23，后续证据提交不改已测应用。
+
+
+## 室内过亮：灯光与曝光对比（2026-11-26）
+
+用户要求两种方式都测试并给效果对比图。本轮保持应用默认参数及个人保存设置，独立测试灯光70%/50%与相对曝光80%/65%，保留100%基线。曝光通过采集脚本路由注入的临时诊断钩子调整renderer，灯光使用原有lightPower控件；未增加运行时入口、未改应用HTML、烘焙、材质、模型或墙线。报告/截图变化无需重构应用或重烘焙。
+
+`validation/capture-brightness-comparison.cjs`用同机位/时间/家装A/材质，在Cycles光照重组和对应房间PMREM更新后采集。PC1280×900、手机390×844/微信UA模拟；客厅/主卧/厨房正午与夜晚开灯，加客厅正午关灯对照，每组5档，合计70张真实WebGL画布。`scripts/compose_brightness_comparisons.py`仅统一缩放和排版，生成4张2448px宽并排JPG，未后期改亮度或补光。影像、相机、实际灯光/曝光和像素均值见brightness-comparison.json；原图和合成图在docs/quality-report/brightness/。
+
+观察建议优先灯光50%、曝光不变：压低室内墙顶/白柜而保留自然光与窗外；70%为更温和方案。曝光65%也能压暗，但室内/窗外/暗部一起降低，正午关灯时继续影响自然光。夜晚客厅画面加权像素均值约180.4→149.8（灯50%）/161.3（曝光65%），只是显示像素统计，不是照度。正午关灯时降低灯光滑块的画面均值不变。该建议用于用户挑选，未擅自改默认。
+
+`quality-report/brightness-comparison.html`提供桌面/手机、昼夜/关灯、三房间、四调整方案对比滑块、5档原图及4张下载总览；`verify-brightness-report.cjs`在1280/390宽各56种对比，70图/4总览、交互及链接/无溢出检查通过。219原烘焙/13PBR、固定照明与反射均有效、快照一致/屋顶0缺口、零JS/Shader错误和外部依赖请求。手机均为模拟。仅推main报告，不推进release。

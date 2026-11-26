@@ -12,6 +12,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 新增：[Cycles固定光照 / AO / 反射前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/static-lighting.html)。16种固定组合、双档家具照明与房间反射，数据与流程见 [静态烘焙资产](assets/static-bake/README.md)。
 
+室内亮度测试：[降低灯光与降低曝光效果对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)。含70张同机位实际画布和4张并排总览，当前应用默认参数保持。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |
