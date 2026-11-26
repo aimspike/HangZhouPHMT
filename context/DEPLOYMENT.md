@@ -1,5 +1,15 @@
 # 发布信息
 
+## 主次卧枕头稳定黑斑 main 修复（2026-11-26）
+
+功能提交[`4b9896c`](https://github.com/aimspike/HangZhouPHMT/commit/4b9896cd69800c140aa656923f2b164661de73f1)已部署[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。四个枕头改为连续闭合布面/细缝边，取消部分埋入枕面的独立细管，手机保留同一表面；完整重新导出并烘焙124张固定照明/AO/反射。曝光、光源能量、太阳方向/时刻、建筑/门和219张回退纹理保持；其余18类模型逐项一致。VIS-05原前沿/角部成串黑点和锯齿暗线在同机位实际网页复核消除。
+
+公开应用规范化SHA256 `6c173020dc023f3d9f151185e03c909ebac77961e8a918225e5b55cce210680c`与本地Pages装配一致。公开PC、390宽手机均衡、Windows WebKit在正午关灯/夜晚开灯，两卧室原机位/近景、2秒重复帧共48张采集通过；独立深度遮罩对真实PBR枕面测量与本地一致。手机极暗像素占比主卧1.116%→0.019%、次卧1.005%→0；阈值为枕面中位亮度35%，含真实接触阴影，不是精确缺陷数或照度。桌面剩余接触暗部没有声称全部为0。
+
+[枕头实际网页前后报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/pillow-fix.html)99资源逐字节匹配，1280/390宽各48组切换、图片和链接通过。证据`validation/pillow-fix-public.json`、`pillow-surface-public.json`、`pillow-report-public.json`、`pillow-deployment.json`；本地64光照状态、850实体拓扑、家具门/通道、HDR/depth兼容、保存暂停与离线见对应pillow验证。手机/WebKit/微信UA为模拟，真机仍待验收。
+
+本轮只推main。公开校验时release已由其他操作推进至`329dd4936346f0562dd56e68ef5e3d26cafbe48d`，正式HTML SHA256 `3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421`，本轮保留它，未将枕头修复合入release。历史feature预览保持。后续证据提交不改已验应用和画面。
+
 ## v1.1 新视频、六宫格与release发布（2026-11-26）
 
 用户在第三轮审计后明确要求重新录制视频、拍六宫格并正式发布。候选版本来自main的d1c85ee及本轮素材/文档，应用V16.2保持，正式标签v1.1。60秒新片、字幕、封面、1800×2400新六宫格与新版仓库首页随release发布；当前保存暂停和VIS-04/05明确保留。发布范围、已知问题与验证见[发布说明](RELEASE_V1_1.md)，素材入口为`/promo/`，main预览仍为`/preview/main/`。

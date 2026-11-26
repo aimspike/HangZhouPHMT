@@ -14,6 +14,8 @@
 
 本地`pillow-static-lighting.json`64种固定状态、`pillow-decor.json`门/家具净空/安全观景点/四移动视口、`pillow-render-quality.json`画质与HDR/depth缺失回退、`pillow-storage.json`既有设置只读恢复与无写入/云请求、`surface-offline.json`单HTML离线、Pages8项装配全部通过。`pillow-report.json`验证99资源逐字节hash，1280/390宽各48组图片切换/链接与无横向溢出。正式release保持，仅main开发测试。
 
+功能提交`4b9896c`已部署main；公开HTML规范化SHA256 `6c173020dc023f3d9f151185e03c909ebac77961e8a918225e5b55cce210680c`与Pages装配后本地一致。公开PC/手机均衡/Windows WebKit的48张昼夜/原机位/近景/2秒重复帧通过，独立枕面像素测量逐项与本地一致；99报告资源逐字节、1280/390宽各48组切换和链接通过。证据`pillow-fix-public.json`、`pillow-surface-public.json`、`pillow-report-public.json`与`pillow-deployment.json`，实际公开截图在`work/pillow-fix/public`。本轮未推release；公开校验时release已由其他操作推进至`329dd49`（其HTML hash为此前灯控版`3e0c591f…`），本轮保留该版本，枕头修复仅在main。后续证据提交不改变已验应用/模型/烘焙/截图。
+
 ## 第三轮效果审计：仍暂不发布（2026-11-26）
 
 按用户要求再次审计，先同步干净main到`a2cca0e`。完整渲染检查绑定该不可变HTML快照（规范化SHA256 `26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41`）；审计期间另一任务提交灯控`84a30f4`，另对其做桌面/手机×5房间×昼夜20对同机位/方向/FOV/灯状态补查，平均RGB绝对差异最大0.0138/255。1440/390/320/740横屏四视口新灯控无重叠或横向溢出。混入不同开发中版本的初次后半段证据留在`work/main-audit3-mixed-20261126/`，不用于报告验收。
