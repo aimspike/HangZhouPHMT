@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Actual WebGL1 calibration, saved multiplier and legacy fallback; isolated storage",
+  "errors": [],
+  "cases": [
+    {
+      "time": "night",
+      "fixtureGain": 0.5,
+      "exposureGain": 0.8,
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 0.9504000000000001
+    },
+    {
+      "time": "noon",
+      "fixtureGain": 0.5,
+      "exposureGain": 0.8,
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 1.04512
+    }
+  ],
+  "savedMultiplierRestored": false,
+  "persistenceSuspended": true,
+  "legacyFallback": {
+    "fixtureGain": 0.5,
+    "exposureGain": 0.8,
+    "userLampMultiplier": 1.8,
+    "effectiveLampPower": 0.9,
+    "exposure": 1.04512
+  },
+  "offHasZeroLampEnergy": true,
+  "outsideExposureRetained": true,
+  "result": "passed",
+  "HTMLSHA256": "4685302864d7ed6efe6caeb604d50f5f3f976107326b754b9cd023dbc0dc24ff"
+}

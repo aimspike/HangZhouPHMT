@@ -58,7 +58,7 @@ const capture=async(p,name)=>{
     await p.locator('#decorShortcut').click();await change(p,'finishRoom','balcony');
     assert.equal(await p.evaluate(()=>houseViewer.finishes.rooms.balcony.ceiling.color),'#dad4c9');
     await change(p,'lightPower','0.6');await p.waitForTimeout(350);await p.reload();await p.waitForFunction(()=>houseBoot.ready&&houseViewer.bakedMaps[0]===219);
-    assert.equal(await p.locator('#lightPower').inputValue(),'0.6');assert.equal(await p.evaluate(()=>houseViewer.finishes.rooms.balcony.ceiling.color),'#dad4c9');item.persistence='passed';
+    const suspended=await p.evaluate(()=>!!houseViewer.storage.suspended);assert.equal(await p.locator('#lightPower').inputValue(),suspended?'1':'0.6');if(suspended)assert.notEqual(await p.evaluate(()=>houseViewer.finishes.rooms.balcony.ceiling.color),'#dad4c9');else assert.equal(await p.evaluate(()=>houseViewer.finishes.rooms.balcony.ceiling.color),'#dad4c9');item.persistence=suspended?'suspended; temporary edits not persisted':'passed';
    }else{
     await p.setViewportSize({width:spec.height,height:spec.width});await p.waitForFunction(w=>houseViewer.diagnostics.viewport[0]===w,spec.height);await settle(p);
     assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));item.rotation='passed';

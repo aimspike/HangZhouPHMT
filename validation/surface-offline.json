@@ -27,7 +27,7 @@
       "updates": 1,
       "reflectionBakes": 1,
       "error": null,
-      "composeMs": 6993.300000000745,
+      "composeMs": 5447.300000000745,
       "irradianceBits": 16,
       "atlasTextureSize": [
         1024,
@@ -350,6 +350,6 @@
     "night": true,
     "settingsClosed": true
   },
-  "HTMLSHA256": "4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba",
+  "HTMLSHA256": "4685302864d7ed6efe6caeb604d50f5f3f976107326b754b9cd023dbc0dc24ff",
   "result": "passed"
 }

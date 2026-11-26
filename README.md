@@ -22,6 +22,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 新增卫浴与水槽调整：[窄边玻璃淋浴房、洗手台、马桶及厨房水槽嵌平对齐](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/bathroom-rebuild.html)。补齐淋浴围合与五金，台盆改为悬浮木柜和一体内凹盆；厨房盆口与右侧台面齐平，龙头出水口对准盆中心。
 
+当前功能调整：main暂时关闭“保存与账号同步”，进入[T06易用性重做](context/TODO.md#t06)。已有设置只读恢复、数据保留；新调整仅本次浏览生效，暂停自动保存、设置导入导出和账号/云同步。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |
@@ -47,7 +49,7 @@ GitHub 优先展示所浏览分支的 `.github/README.md`；仓库根首页采�
 | [src/asset-rebuild.js](src/asset-rebuild.js) | Blender 双 LOD 模型与内嵌 PBR 资源加载 |
 | [src/decor-preset-a.js](src/decor-preset-a.js) | 独立可选家装 A 家具层 |
 | [src/render-quality.js](src/render-quality.js) | 画质档位、分房间反射及接触遮蔽 |
-| [src/settings-storage.js](src/settings-storage.js) | 本地保存、JSON 导入导出与可选云同步 |
+| [src/settings-storage.js](src/settings-storage.js) | 保存/同步原型及暂停期的既有设置只读恢复 |
 | [src/plan-layout.json](src/plan-layout.json) | 图纸与网页共用的墙线、门洞、门配置及原图实黑标记 |
 | [src/wall_junctions.py](src/wall_junctions.py) | 网页与矢量图共用的 11 处直角补片 |
 | [src/roof_geometry.py](src/roof_geometry.py) | 从网页导出的屋顶轮廓生成烘焙遮挡体与贴图范围，含阳台顶板 |
@@ -102,8 +104,8 @@ V16 的重建资产与可编辑 Blender 主文件在 [assets/rebuild/](assets/re
 - 最终应用保持单 HTML、自包含、无 CDN、无外部资源依赖；保留微信与移动布局、默认收起的设置面板、canvas 显式视口尺寸和 WebGL1 兼容。
 - 材质 clone 保留 `onBeforeCompile`、`customProgramCacheKey` 与光照 `uv2`。天光占用灯光贴图 R 通道，G/B 保留夜间灯具；太阳反射和天光采用 sqrt 编码，在 shader 中解码后参与线性照明。
 - 分房间反射相机 far 须覆盖半径 420m 的天空。透明混合不写 RGBE 目标，优先 linear half-float，缺扩展回退 linear RGBA8；环境反射与烘焙漫反射避免重复累加。
-- 当前默认夜晚，已有个人设置优先。画质 auto / high / balanced / light 沿用现有保存；桌面 auto 精细、触屏与微信 auto 均衡，移动设备使用兼容烘焙阴影。运行时路径追踪已移除。
-- `cloud-config.json` 为空时不得发云请求。可选 Supabase 部署见 [cloud/README.md](cloud/README.md)；令牌不得导出，凭据不得写入源码、日志或仓库。
+- 当前默认夜晚，已有个人设置优先。画质 auto / high / balanced / light 可切换，既有保存值只读恢复，新修改暂不保存；桌面 auto 精细、触屏与微信 auto 均衡，移动设备使用兼容烘焙阴影。运行时路径追踪已移除。
+- 保存与同步暂停期间不发云请求；已有本地记录保持。`cloud-config.json` 为空时也不得发云请求。可选 Supabase 部署见 [cloud/README.md](cloud/README.md)；令牌不得导出，凭据不得写入源码、日志或仓库。
 
 ### 图文与视频素材
 

@@ -3,7 +3,7 @@ function createHouseSettingsStorage(options){
  const $=id=>document.getElementById(id),prefix='house89a.settings.v1.',defaults=options.read(),preview=!!options.preview;
  let applying=false,record=null,session=null,config=null,account='guest',timer=null,cloudTimer=null,busy=false,conflict=null,ready=false,localAvailable=true,epoch=0;
  const copy=v=>JSON.parse(JSON.stringify(v)),same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
- function readLocal(key){try{return JSON.parse(localStorage.getItem(prefix+key)||'null');}catch{return null;}}
+ function readLocal(key){let text;try{text=localStorage.getItem(prefix+key);}catch{localAvailable=false;return null;}try{return JSON.parse(text||'null');}catch{return null;}}
  function writeLocal(key,value){if(preview)return true;try{localStorage.setItem(prefix+key,JSON.stringify(value));return true;}catch{localAvailable=false;return false;}}
  function removeLocal(key){if(preview)return;try{localStorage.removeItem(prefix+key);}catch{}}
  function keyFor(){return account==='guest'?'guest':config.url+'|'+account;}
@@ -13,6 +13,22 @@ function createHouseSettingsStorage(options){
  function restore(payload){applying=true;try{options.restore(copy(payload));}finally{applying=false;}}
  function validPayload(payload){return payload&&payload.schema===1&&payload.finishes&&typeof payload.finishes==='object'&&Array.isArray(payload.doors)&&payload.controls&&typeof payload.controls==='object'&&JSON.stringify(payload).length<64000;}
  function loadRecord(key,fallback){const r=readLocal(key);return r&&validPayload(r.payload)&&Number.isSafeInteger(r.revision)&&r.revision>=0?{...r,pending:!!r.pending}:{payload:copy(fallback),pending:false,revision:0};}
+ // T06: suspend the feature before binding UI, persistence or network events.
+ // Read existing settings once; never refresh a session or alter stored data.
+ if(options.enabled===false){
+  let source='defaults',cachedRecord=readLocal('guest');
+  const usable=r=>r&&validPayload(r.payload)&&Number.isSafeInteger(r.revision)&&r.revision>=0;
+  if(usable(cachedRecord))source='guest';else cachedRecord=null;
+  try{
+   const savedConfig=validateConfig(window.HOUSE_CLOUD_CONFIG)||validateConfig(readLocal('config')),cachedSession=readLocal('session');
+   if(savedConfig&&cachedSession?.project===savedConfig.url&&typeof cachedSession.user?.id==='string'){
+    const accountRecord=readLocal(savedConfig.url+'|'+cachedSession.user.id);
+    if(usable(accountRecord)){cachedRecord=accountRecord;source='account';}
+   }
+  }catch{}
+  restore(cachedRecord?.payload||defaults);
+  return {get diagnostics(){return {enabled:false,suspended:true,preview,restoredExisting:!!cachedRecord,restoredFrom:source,localAvailable,cloudConfigured:false,signedIn:false,pending:false,revision:0,conflict:false};}};
+ }
  function save(){if(preview||applying||!ready)return;const payload=options.read();if(same(payload,record.payload))return;record.payload=payload;record.pending=true;record.savedAt=new Date().toISOString();persist();clearTimeout(cloudTimer);if(session)cloudTimer=setTimeout(()=>sync(),900);}
  function schedule(){if(applying)return;clearTimeout(timer);timer=setTimeout(save,150);}
  function validateConfig(candidate){

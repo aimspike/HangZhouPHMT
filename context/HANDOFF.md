@@ -467,3 +467,16 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 公开PC/手机共24实际机位检查通过：盆沿/北台面/右台面高度差均0，盆/出口中心误差小于0.1mm，淋浴底盘169个顶面位置与实际中心照明、玻璃透明/深度设置和门净空正常；电视柜贴墙、次卧衣柜两墙接触及主卧床头柜east朝向保留。报告1280/390宽各24组切换、图片和链接正常，50张图片逐字节一致，HTML/JSON按Git LF规范一致，共52资源。证据`validation/bathroom-public.json`、`bathroom-report-public.json`、`bathroom-rebuild-public-assets.json`与`bathroom-deployment.json`。后续证据提交不改变已验证应用和图像。
 
 release仍`7b53b23568d18550822fbf98fb5f42e5cda60487`，正式HTML哈希仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9，feature历史预览保持。没有正式发布；手机为浏览器/微信UA模拟，未真机验收。单HTML约42MB的首次加载成本仍存在，VIS-05枕头黑斑不在本次修复范围。
+
+
+## 暂停保存与账号同步，转待办T06（2026-11-26）
+
+用户指出易用性不足，明确暂时关闭“保存与账号同步”并转待办。main移除该面板全部DOM和专用CSS，不显示登录/连接/冲突/导入导出控件；新增简短说明“当前调整仅在本次浏览中生效”。通用相机保存图片继续使用，家具/卫浴/嵌平水槽与渲染参数保持。
+
+settings-storage.js通过显式enabled:false在绑定任何保存事件、定时器或云认证/同步前返回，只读恢复有效guest记录；若原公开/本地配置和缓存账号所属项目一致，优先只读恢复该账号的本地payload，不刷新令牌、不使用账号访问网络、不修改session/config/记录。无有效缓存时使用默认值，损坏JSON/存储被浏览器禁止也可正常启动。已有记录和pending/revision原字节保持；不注册storage/focus/online/pagehide监听，新调整刷新后不保存。诊断storage.enabled=false/suspended=true/restoredFrom为defaults/guest/account，不暴露账号、令牌或设置内容。
+
+T06新增为待开始，子任务为简化本机/账号/恢复流程、明确保存状态、重做冲突/迁移与桌面手机真机易用性验收。AGENTS、需求70、README、GitHub访客引导和cloud部署资料同步标明暂停；恢复必须另获用户实施要求。此需求覆盖早期“所有调整自动保存”的描述，旧选择仍保留。
+
+validation/verify-storage-suspended.cjs包含5种纯函数边界（空/游客/账号/损坏/存储禁用）验证无DOM访问、写入、网络或事件/定时器；实际Chrome桌面、手机微信UA与Windows WebKit检查旧记录只读恢复、改灯强/画质/时段后刷新不写入、在线/聚焦/离开事件无同步、正式/预览键隔离、三模式/画布/屋顶/建筑快照与通用截图。browser测试使用专用模拟记录，不读取用户真实会话。核心结果storage-suspended.json，家具门/通道/4移动视口/方案材质即时切换为storage-suspended-decor.json，HDR/depth缺扩展与画质切换为storage-suspended-render-quality.json，独立单HTML为surface-offline.json。Pages8项装配检查通过。
+
+保存相关回归按storage.suspended分支检查刷新回默认/不持久化，启用状态仍保留旧断言；覆盖decor、render-quality、static-lighting、furniture-placement、balcony、exposure-calibration、room-refinements、mobile-compatibility。实际核心新测试仍专门验证旧记录恢复和无写入，不能以跳过保存测试代替暂停验收。模型和124/219烘焙均保持，无需重烘焙；重新从模板构建单HTML42,104,622字节。仅推main，release保持。

@@ -53,7 +53,7 @@
 
 [先翻翻房间截图](../assets/interior/preset-a/README.md) · [看看装修灵感](../references/interior/preset-a/README.md) · [了解小区与资料来源](../references/phmt/README.md)
 
-想体验最近的调整，可以[打开新版预览](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。预览与上方看房入口分别保存设置，画面可能有所不同。
+想体验最近的调整，可以[打开新版预览](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。预览与正式入口的既有设置相互隔离。预览目前暂停保存与账号同步，新调整仅本次浏览生效。
 
 ## 遇到显示问题，再来这里
 
