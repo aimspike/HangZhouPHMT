@@ -1,0 +1,7232 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Real WebGL1, fixed per-time exposure; lamps and natural light held constant across candidates",
+  "cases": [
+    {
+      "time": "morning",
+      "on": false,
+      "room": "living",
+      "file": "morning-off-living-0.86.webp",
+      "exposure": 0.86,
+      "mean": 81.98626329050954,
+      "p10": 14.5484,
+      "p90": 169.8568,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.08369184438571692,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "living",
+      "file": "morning-off-living-1.webp",
+      "exposure": 1,
+      "mean": 89.40598545877477,
+      "p10": 17.6166,
+      "p90": 179.3662,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.07124638928154385,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "living",
+      "file": "morning-off-living-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 94.82115697251751,
+      "p10": 19.8292,
+      "p90": 183.7874,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06265748878372565,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "dining",
+      "file": "morning-off-dining-0.86.webp",
+      "exposure": 0.86,
+      "mean": 46.40962890418433,
+      "p10": 8.4934,
+      "p90": 98.2728,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.13895888390387806,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "dining",
+      "file": "morning-off-dining-1.webp",
+      "exposure": 1,
+      "mean": 52.434487987833656,
+      "p10": 11.2086,
+      "p90": 108.34499999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.12649806404031713,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "dining",
+      "file": "morning-off-dining-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 56.90094362669703,
+      "p10": 12.4212,
+      "p90": 116.2006,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06112101284493885,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "master",
+      "file": "morning-off-master-0.86.webp",
+      "exposure": 0.86,
+      "mean": 60.665364479751574,
+      "p10": 12.3702,
+      "p90": 115.99199999999999,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09243439247741381,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "master",
+      "file": "morning-off-master-1.webp",
+      "exposure": 1,
+      "mean": 67.23362125253209,
+      "p10": 15.2298,
+      "p90": 126.63900000000001,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06411714092557311,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "master",
+      "file": "morning-off-master-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 72.16599020035649,
+      "p10": 17.302,
+      "p90": 134.5026,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.04634011431380985,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "second",
+      "file": "morning-off-second-0.86.webp",
+      "exposure": 0.86,
+      "mean": 75.82908992071857,
+      "p10": 18.6166,
+      "p90": 142.3502,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.04246819494806711,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "second",
+      "file": "morning-off-second-1.webp",
+      "exposure": 1,
+      "mean": 83.53958266855375,
+      "p10": 21.9696,
+      "p90": 153.29000000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.031805051932886734,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "second",
+      "file": "morning-off-second-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 89.25313908179724,
+      "p10": 24.8292,
+      "p90": 161.0236,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.02381537705119538,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "kitchen",
+      "file": "morning-off-kitchen-0.86.webp",
+      "exposure": 0.86,
+      "mean": 69.4544157488643,
+      "p10": 5.059,
+      "p90": 127.639,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.1550150574642001,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "kitchen",
+      "file": "morning-off-kitchen-1.webp",
+      "exposure": 1,
+      "mean": 76.88707462972046,
+      "p10": 6.787399999999999,
+      "p90": 138.639,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.14879232991211358,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "kitchen",
+      "file": "morning-off-kitchen-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 82.4074510786036,
+      "p10": 7.986799999999999,
+      "p90": 146.635,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.14017269989551964,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "bath",
+      "file": "morning-off-bath-0.86.webp",
+      "exposure": 0.86,
+      "mean": 57.721679020969006,
+      "p10": 12.1364,
+      "p90": 104.07739999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09791961157888268,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "bath",
+      "file": "morning-off-bath-1.webp",
+      "exposure": 1,
+      "mean": 64.13474826992118,
+      "p10": 14.9238,
+      "p90": 114.93299999999999,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.07613238276688587,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "bath",
+      "file": "morning-off-bath-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 68.9413953106702,
+      "p10": 17.0052,
+      "p90": 122.16,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06092127097289656,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "balcony",
+      "file": "morning-off-balcony-0.86.webp",
+      "exposure": 0.86,
+      "mean": 138.08365458482268,
+      "p10": 61.583999999999996,
+      "p90": 214.996,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.005254747710650851,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "balcony",
+      "file": "morning-off-balcony-1.webp",
+      "exposure": 1,
+      "mean": 145.84394712985892,
+      "p10": 68.70599999999999,
+      "p90": 219.28539999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.003395611824718825,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": false,
+      "room": "balcony",
+      "file": "morning-off-balcony-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 151.2712977106504,
+      "p10": 74.28999999999999,
+      "p90": 221.99599999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.002320078667568066,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.11328
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "living",
+      "file": "morning-on-living-0.86.webp",
+      "exposure": 0.86,
+      "mean": 163.89457219593226,
+      "p10": 100.878,
+      "p90": 204.3238,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.006069079958207855,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "living",
+      "file": "morning-on-living-1.webp",
+      "exposure": 1,
+      "mean": 172.27895879480624,
+      "p10": 110.58039999999998,
+      "p90": 211.24759999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0037643660500276564,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "living",
+      "file": "morning-on-living-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 177.92060204660737,
+      "p10": 117.4568,
+      "p90": 215.62980000000002,
+      "bright": 0.00013828283449081186,
+      "clipped": 0,
+      "dark": 0.003472435621658165,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "dining",
+      "file": "morning-on-dining-0.86.webp",
+      "exposure": 0.86,
+      "mean": 150.62474004057884,
+      "p10": 47.119200000000006,
+      "p90": 206.46419999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004916723004117755,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "dining",
+      "file": "morning-on-dining-1.webp",
+      "exposure": 1,
+      "mean": 159.224745430526,
+      "p10": 53.6858,
+      "p90": 213.18339999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0047323458914633396,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "dining",
+      "file": "morning-on-dining-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 165.0306163450144,
+      "p10": 58.6006,
+      "p90": 217.32379999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004609427816360396,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "master",
+      "file": "morning-on-master-0.86.webp",
+      "exposure": 0.86,
+      "mean": 158.8222505869189,
+      "p10": 96.8098,
+      "p90": 206.1794,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.001106262675926495,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "master",
+      "file": "morning-on-master-1.webp",
+      "exposure": 1,
+      "mean": 167.81278677095116,
+      "p10": 106.89,
+      "p90": 213.039,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0008143322475570033,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "master",
+      "file": "morning-on-master-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 173.9742373363618,
+      "p10": 114.6132,
+      "p90": 216.9708,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "second",
+      "file": "morning-on-second-0.86.webp",
+      "exposure": 0.86,
+      "mean": 173.79294870016696,
+      "p10": 118.87519999999999,
+      "p90": 216.03900000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "second",
+      "file": "morning-on-second-1.webp",
+      "exposure": 1,
+      "mean": 182.00973728415576,
+      "p10": 129.87519999999998,
+      "p90": 221.8986,
+      "bright": 0.000015364759387867984,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "second",
+      "file": "morning-on-second-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 187.5418473296126,
+      "p10": 137.50719999999998,
+      "p90": 225.6178,
+      "bright": 0.000015364759387867984,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "kitchen",
+      "file": "morning-on-kitchen-0.86.webp",
+      "exposure": 0.86,
+      "mean": 175.15653465985022,
+      "p10": 74.691,
+      "p90": 236.20059999999998,
+      "bright": 0.0016286644951140066,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "kitchen",
+      "file": "morning-on-kitchen-1.webp",
+      "exposure": 1,
+      "mean": 182.22536081373855,
+      "p10": 83.5466,
+      "p90": 239.2728,
+      "bright": 0.016670763935836764,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "kitchen",
+      "file": "morning-on-kitchen-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 187.04095445886864,
+      "p10": 90.1926,
+      "p90": 241.1324,
+      "bright": 0.03470899145719378,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "bath",
+      "file": "morning-on-bath-0.86.webp",
+      "exposure": 0.86,
+      "mean": 166.80683595972113,
+      "p10": 118.1662,
+      "p90": 228.337,
+      "bright": 0.0002304713908180198,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "bath",
+      "file": "morning-on-bath-1.webp",
+      "exposure": 1,
+      "mean": 174.82415555901437,
+      "p10": 129.094,
+      "p90": 232.2688,
+      "bright": 0.001136992194702231,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "bath",
+      "file": "morning-on-bath-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 180.32807525663364,
+      "p10": 137.02179999999998,
+      "p90": 235.0562,
+      "bright": 0.0018898654047077622,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "balcony",
+      "file": "morning-on-balcony-0.86.webp",
+      "exposure": 0.86,
+      "mean": 170.61455413617108,
+      "p10": 72.6522,
+      "p90": 232.2808,
+      "bright": 0.017500460942781636,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "balcony",
+      "file": "morning-on-balcony-1.webp",
+      "exposure": 1,
+      "mean": 177.08049048921083,
+      "p10": 80.878,
+      "p90": 234.2046,
+      "bright": 0.02774875545448958,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "morning",
+      "on": true,
+      "room": "balcony",
+      "file": "morning-on-balcony-1.11328.webp",
+      "exposure": 1.11328,
+      "mean": 181.46433035768956,
+      "p10": 87.16,
+      "p90": 236.20459999999997,
+      "bright": 0.03569233605801733,
+      "clipped": 0.0001075533157150759,
+      "dark": 0,
+      "natural": {
+        "time": "morning",
+        "applied": true,
+        "gains": {
+          "sun": 1.18,
+          "sky": 1.3
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.2126,
+        "effectiveSky": 3.0575999999999994,
+        "directSun": 2.4779999999999998,
+        "hemisphere": 0.546
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.11328
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "living",
+      "file": "noon-off-living-0.82.webp",
+      "exposure": 0.82,
+      "mean": 105.63883304345308,
+      "p10": 25.8768,
+      "p90": 184.5708,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.04421977751828406,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "living",
+      "file": "noon-off-living-0.92.webp",
+      "exposure": 0.92,
+      "mean": 111.96975389343368,
+      "p10": 29.0212,
+      "p90": 190.4762,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.038043144244361136,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "living",
+      "file": "noon-off-living-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 119.01605630570404,
+      "p10": 32.5616,
+      "p90": 196.8556,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.03188187572982607,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "dining",
+      "file": "noon-off-dining-0.82.webp",
+      "exposure": 0.82,
+      "mean": 68.31805330034484,
+      "p10": 17.633799999999997,
+      "p90": 134.27280000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.041530944625407164,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "dining",
+      "file": "noon-off-dining-0.92.webp",
+      "exposure": 0.92,
+      "mean": 74.08045554975179,
+      "p10": 20.349,
+      "p90": 143.2006,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.03619937311781698,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "dining",
+      "file": "noon-off-dining-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 80.69490780529635,
+      "p10": 23.489400000000003,
+      "p90": 152.27280000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0314823919857415,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "master",
+      "file": "noon-off-master-0.82.webp",
+      "exposure": 0.82,
+      "mean": 89.5252722881316,
+      "p10": 25.093399999999995,
+      "p90": 158.63899999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.016809046770327577,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "master",
+      "file": "noon-off-master-0.92.webp",
+      "exposure": 0.92,
+      "mean": 95.75998868846814,
+      "p10": 28.272799999999997,
+      "p90": 166.639,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.013167598795402864,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "master",
+      "file": "noon-off-master-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 102.86917109887999,
+      "p10": 31.978800000000003,
+      "p90": 174.77939999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.010263659271095814,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "second",
+      "file": "noon-off-second-0.82.webp",
+      "exposure": 0.82,
+      "mean": 106.68939184746006,
+      "p10": 35.276799999999994,
+      "p90": 185.7112,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.008496711941490997,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "second",
+      "file": "noon-off-second-0.92.webp",
+      "exposure": 0.92,
+      "mean": 113.2817663788373,
+      "p10": 39.318599999999996,
+      "p90": 192.56679999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.006914141724540594,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "second",
+      "file": "noon-off-second-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 120.72812865835664,
+      "p10": 43.9106,
+      "p90": 199.5668,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.005316206748202323,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "kitchen",
+      "file": "noon-off-kitchen-0.82.webp",
+      "exposure": 0.82,
+      "mean": 95.84764951446736,
+      "p10": 11.2676,
+      "p90": 164.7794,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.11031897240489213,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "kitchen",
+      "file": "noon-off-kitchen-0.92.webp",
+      "exposure": 0.92,
+      "mean": 102.29440801427747,
+      "p10": 13.0458,
+      "p90": 172.7112,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.08693380861655707,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "kitchen",
+      "file": "noon-off-kitchen-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 109.55511483930205,
+      "p10": 15.548399999999997,
+      "p90": 180.87800000000001,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.05439124823305267,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "bath",
+      "file": "noon-off-bath-0.82.webp",
+      "exposure": 0.82,
+      "mean": 80.45643640527362,
+      "p10": 21.2768,
+      "p90": 140.0052,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.04927478335689263,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "bath",
+      "file": "noon-off-bath-0.92.webp",
+      "exposure": 0.92,
+      "mean": 86.30819988937333,
+      "p10": 24.0052,
+      "p90": 148.07739999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.046862516132997356,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "bath",
+      "file": "noon-off-bath-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 92.97072648883272,
+      "p10": 27.5078,
+      "p90": 157.07739999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.043267162436236246,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "balcony",
+      "file": "noon-off-balcony-0.82.webp",
+      "exposure": 0.82,
+      "mean": 166.5414418536066,
+      "p10": 93.86359999999999,
+      "p90": 230.07739999999998,
+      "bright": 0.003103681396349333,
+      "clipped": 0,
+      "dark": 0.0005531313379632474,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.82
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "balcony",
+      "file": "noon-off-balcony-0.92.webp",
+      "exposure": 0.92,
+      "mean": 171.7709817866058,
+      "p10": 99.2666,
+      "p90": 232.9278,
+      "bright": 0.007098518837195009,
+      "clipped": 0,
+      "dark": 0.0003380247065330957,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": false,
+      "room": "balcony",
+      "file": "noon-off-balcony-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 177.35197861223367,
+      "p10": 105.01839999999999,
+      "p90": 235.2086,
+      "bright": 0.008512076700878864,
+      "clipped": 0,
+      "dark": 0.00018437711265441583,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04512
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "living",
+      "file": "noon-on-living-0.82.webp",
+      "exposure": 0.82,
+      "mean": 170.26412941738303,
+      "p10": 109.0962,
+      "p90": 213.1874,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.003918013643906337,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "living",
+      "file": "noon-on-living-0.92.webp",
+      "exposure": 0.92,
+      "mean": 176.4250772509543,
+      "p10": 116.67500000000001,
+      "p90": 217.6258,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0035799889373732408,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "living",
+      "file": "noon-on-living-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 182.9003563548823,
+      "p10": 123.2534,
+      "p90": 222.1152,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.003272693749615881,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "dining",
+      "file": "noon-on-dining-0.82.webp",
+      "exposure": 0.82,
+      "mean": 155.67293221680202,
+      "p10": 56.6258,
+      "p90": 209.84759999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004778440169626944,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "dining",
+      "file": "noon-on-dining-0.92.webp",
+      "exposure": 0.92,
+      "mean": 162.18240960297226,
+      "p10": 62.47839999999999,
+      "p90": 215.04299999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004640157335136132,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "dining",
+      "file": "noon-on-dining-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 169.1320579282562,
+      "p10": 68.8344,
+      "p90": 219.9748,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004455780222481716,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "master",
+      "file": "noon-on-master-0.82.webp",
+      "exposure": 0.82,
+      "mean": 165.76895713845377,
+      "p10": 102.74959999999999,
+      "p90": 211.043,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0005838608567389834,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "master",
+      "file": "noon-on-master-0.92.webp",
+      "exposure": 0.92,
+      "mean": 172.43851229178588,
+      "p10": 110.6814,
+      "p90": 215.7582,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "master",
+      "file": "noon-on-master-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 179.52345432668653,
+      "p10": 119.6318,
+      "p90": 220.5496,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "second",
+      "file": "noon-on-second-0.82.webp",
+      "exposure": 0.82,
+      "mean": 183.01899035708908,
+      "p10": 133.4138,
+      "p90": 220.04299999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.00026120090959375574,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "second",
+      "file": "noon-on-second-0.92.webp",
+      "exposure": 0.92,
+      "mean": 189.01303216767292,
+      "p10": 141.7198,
+      "p90": 223.8344,
+      "bright": 0.0002919304283694917,
+      "clipped": 0,
+      "dark": 0.0002304713908180198,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "second",
+      "file": "noon-on-second-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 195.2729152664235,
+      "p10": 150.788,
+      "p90": 227.7834,
+      "bright": 0.001966689201647102,
+      "clipped": 0,
+      "dark": 0.0002304713908180198,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "kitchen",
+      "file": "noon-on-kitchen-0.82.webp",
+      "exposure": 0.82,
+      "mean": 179.28785514720374,
+      "p10": 75.9036,
+      "p90": 236.4854,
+      "bright": 0.00009218855632720791,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "kitchen",
+      "file": "noon-on-kitchen-0.92.webp",
+      "exposure": 0.92,
+      "mean": 184.57521416325764,
+      "p10": 82.6188,
+      "p90": 239.0602,
+      "bright": 0.013690000614590376,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "kitchen",
+      "file": "noon-on-kitchen-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 190.1774116495817,
+      "p10": 90.6148,
+      "p90": 241.13639999999998,
+      "bright": 0.034125130600454794,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "bath",
+      "file": "noon-on-bath-0.82.webp",
+      "exposure": 0.82,
+      "mean": 175.01400773160847,
+      "p10": 141.95359999999997,
+      "p90": 227.34099999999995,
+      "bright": 0.00012291807510294387,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "bath",
+      "file": "noon-on-bath-0.92.webp",
+      "exposure": 0.92,
+      "mean": 181.1067306804253,
+      "p10": 149.9536,
+      "p90": 230.48139999999998,
+      "bright": 0.0007682379693933993,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "bath",
+      "file": "noon-on-bath-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 187.5645826870675,
+      "p10": 159.74099999999999,
+      "p90": 234.2006,
+      "bright": 0.0016440292545018744,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "balcony",
+      "file": "noon-on-balcony-0.82.webp",
+      "exposure": 0.82,
+      "mean": 187.82699370352015,
+      "p10": 103.75999999999999,
+      "p90": 238.13639999999998,
+      "bright": 0.0357077008174052,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.82
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "balcony",
+      "file": "noon-on-balcony-0.92.webp",
+      "exposure": 0.92,
+      "mean": 192.16710511649268,
+      "p10": 109.6156,
+      "p90": 240.13639999999998,
+      "bright": 0.05889312273369799,
+      "clipped": 0.00007682379693933992,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.92
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "noon",
+      "on": true,
+      "room": "balcony",
+      "file": "noon-on-balcony-1.04512.webp",
+      "exposure": 1.04512,
+      "mean": 196.7106552455462,
+      "p10": 116.17199999999998,
+      "p90": 241.99599999999998,
+      "bright": 0.0691567820047938,
+      "clipped": 0.0025812795771618215,
+      "dark": 0,
+      "natural": {
+        "time": "noon",
+        "applied": true,
+        "gains": {
+          "sun": 1.35,
+          "sky": 1.65
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 4.24575,
+        "effectiveSky": 5.359199999999999,
+        "directSun": 2.4975000000000005,
+        "hemisphere": 0.9569999999999999
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04512
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "living",
+      "file": "dusk-off-living-0.9.webp",
+      "exposure": 0.9,
+      "mean": 63.73425176387571,
+      "p10": 9.8596,
+      "p90": 121.41919999999999,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.12256468563702293,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "living",
+      "file": "dusk-off-living-1.04.webp",
+      "exposure": 1.04,
+      "mean": 70.20642434700811,
+      "p10": 12.510599999999998,
+      "p90": 131.5616,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09828836580419151,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "living",
+      "file": "dusk-off-living-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 76.21960913282405,
+      "p10": 14.723199999999999,
+      "p90": 140.9106,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.08462909470837687,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "dining",
+      "file": "dusk-off-dining-0.9.webp",
+      "exposure": 0.9,
+      "mean": 35.72878854710067,
+      "p10": 4.353,
+      "p90": 74.1324,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.19086104111609611,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "dining",
+      "file": "dusk-off-dining-1.04.webp",
+      "exposure": 1.04,
+      "mean": 40.49010514412262,
+      "p10": 6.0682,
+      "p90": 82.345,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.15850285784524615,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "dining",
+      "file": "dusk-off-dining-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 45.07447508450927,
+      "p10": 7.280799999999999,
+      "p90": 90.34499999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.1413404216089976,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "master",
+      "file": "dusk-off-master-0.9.webp",
+      "exposure": 0.9,
+      "mean": 51.33209604818263,
+      "p10": 10.5524,
+      "p90": 97.26360000000001,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.12128941060782988,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "master",
+      "file": "dusk-off-master-1.04.webp",
+      "exposure": 1.04,
+      "mean": 57.09805177923562,
+      "p10": 12.7954,
+      "p90": 107.1232,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09002212525351853,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "master",
+      "file": "dusk-off-master-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 62.55771030360936,
+      "p10": 15.195399999999998,
+      "p90": 116.05099999999999,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06362546862516133,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "second",
+      "file": "dusk-off-second-0.9.webp",
+      "exposure": 0.9,
+      "mean": 59.92645079588981,
+      "p10": 12.5616,
+      "p90": 119.3542,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09457009403232745,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "second",
+      "file": "dusk-off-second-1.04.webp",
+      "exposure": 1.04,
+      "mean": 66.25689448712814,
+      "p10": 15.335799999999999,
+      "p90": 129.635,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06628357199926249,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "second",
+      "file": "dusk-off-second-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 72.16635591235472,
+      "p10": 17.701999999999998,
+      "p90": 138.7622,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.04804560260586319,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "kitchen",
+      "file": "dusk-off-kitchen-0.9.webp",
+      "exposure": 0.9,
+      "mean": 52.354450175157154,
+      "p10": 2.706,
+      "p90": 100.1324,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.16878188187572982,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "kitchen",
+      "file": "dusk-off-kitchen-1.04.webp",
+      "exposure": 1.04,
+      "mean": 58.353306007607834,
+      "p10": 3.706,
+      "p90": 110.4264,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.16275889619568557,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "kitchen",
+      "file": "dusk-off-kitchen-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 64.00194897668426,
+      "p10": 4.6338,
+      "p90": 119.5668,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.15897916538627005,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "bath",
+      "file": "dusk-off-bath-0.9.webp",
+      "exposure": 0.9,
+      "mean": 47.493284813484955,
+      "p10": 10.348999999999998,
+      "p90": 89.71119999999999,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.12628295740888698,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "bath",
+      "file": "dusk-off-bath-1.04.webp",
+      "exposure": 1.04,
+      "mean": 52.905344865108376,
+      "p10": 12.4986,
+      "p90": 98.588,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.09410915125069141,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "bath",
+      "file": "dusk-off-bath-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 58.00294449633316,
+      "p10": 14.5748,
+      "p90": 106.80299999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.07169196730379203,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "balcony",
+      "file": "dusk-off-balcony-0.9.webp",
+      "exposure": 0.9,
+      "mean": 128.58575416690903,
+      "p10": 55.937,
+      "p90": 211.73579999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.013720730133366112,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "balcony",
+      "file": "dusk-off-balcony-1.04.webp",
+      "exposure": 1.04,
+      "mean": 135.58464329480134,
+      "p10": 62.0906,
+      "p90": 217.45499999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.009034478520066376,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.04
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": false,
+      "room": "balcony",
+      "file": "dusk-off-balcony-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 141.68656951321293,
+      "p10": 67.7244,
+      "p90": 222.10199999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.006437834183516686,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 1.18144
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "living",
+      "file": "dusk-on-living-0.9.webp",
+      "exposure": 0.9,
+      "mean": 155.53813121503725,
+      "p10": 74.95020000000001,
+      "p90": 203.09,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.006222727552086534,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "living",
+      "file": "dusk-on-living-1.04.webp",
+      "exposure": 1.04,
+      "mean": 163.71088615020426,
+      "p10": 82.6092,
+      "p90": 210.027,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0038719193657427327,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "living",
+      "file": "dusk-on-living-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 170.5804072183869,
+      "p10": 89.66539999999999,
+      "p90": 215.25159999999997,
+      "bright": 0.0003994837440845676,
+      "clipped": 0,
+      "dark": 0.003457070862270297,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "dining",
+      "file": "dusk-on-dining-0.9.webp",
+      "exposure": 0.9,
+      "mean": 149.29755642859112,
+      "p10": 46.1914,
+      "p90": 206.5324,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004962817282281359,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "dining",
+      "file": "dusk-on-dining-1.04.webp",
+      "exposure": 1.04,
+      "mean": 157.43986666462686,
+      "p10": 52.269800000000004,
+      "p90": 212.678,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.004747710650851208,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "dining",
+      "file": "dusk-on-dining-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 164.3354511370207,
+      "p10": 58.1792,
+      "p90": 218.1834,
+      "bright": 0.0006145903755147194,
+      "clipped": 0,
+      "dark": 0.004609427816360396,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "master",
+      "file": "dusk-on-master-0.9.webp",
+      "exposure": 0.9,
+      "mean": 157.17715250444212,
+      "p10": 95.1134,
+      "p90": 206.392,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.001075533157150759,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "master",
+      "file": "dusk-on-master-1.04.webp",
+      "exposure": 1.04,
+      "mean": 165.82439496036693,
+      "p10": 104.93639999999999,
+      "p90": 213.039,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0005992256161268515,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "master",
+      "file": "dusk-on-master-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 173.1546748448313,
+      "p10": 113.874,
+      "p90": 217.9668,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "second",
+      "file": "dusk-on-second-0.9.webp",
+      "exposure": 0.9,
+      "mean": 170.15014287692105,
+      "p10": 94.6642,
+      "p90": 216.392,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "second",
+      "file": "dusk-on-second-1.04.webp",
+      "exposure": 1.04,
+      "mean": 178.00184872783143,
+      "p10": 104.4516,
+      "p90": 221.8986,
+      "bright": 0.000015364759387867984,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "second",
+      "file": "dusk-on-second-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 184.57437973081963,
+      "p10": 113.255,
+      "p90": 225.90259999999998,
+      "bright": 0.000015364759387867984,
+      "clipped": 0,
+      "dark": 0.00024583615020588775,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "kitchen",
+      "file": "dusk-on-kitchen-0.9.webp",
+      "exposure": 0.9,
+      "mean": 173.7254478182306,
+      "p10": 75.1122,
+      "p90": 236.4132,
+      "bright": 0.004240673591051564,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "kitchen",
+      "file": "dusk-on-kitchen-1.04.webp",
+      "exposure": 1.04,
+      "mean": 180.51988687237127,
+      "p10": 83.6728,
+      "p90": 239.2728,
+      "bright": 0.017608014258496712,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "kitchen",
+      "file": "dusk-on-kitchen-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 186.26037699589676,
+      "p10": 91.6056,
+      "p90": 241.345,
+      "bright": 0.04030176387437773,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "bath",
+      "file": "dusk-on-bath-0.9.webp",
+      "exposure": 0.9,
+      "mean": 162.6270764427876,
+      "p10": 104.16619999999999,
+      "p90": 229.33700000000002,
+      "bright": 0.0004148485034724356,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "bath",
+      "file": "dusk-on-bath-1.04.webp",
+      "exposure": 1.04,
+      "mean": 170.11183231827795,
+      "p10": 114.30659999999999,
+      "p90": 233.2688,
+      "bright": 0.0013828283449081188,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "bath",
+      "file": "dusk-on-bath-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 176.5250329175495,
+      "p10": 123.447,
+      "p90": 236.1284,
+      "bright": 0.002273984389404462,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "balcony",
+      "file": "dusk-on-balcony-0.9.webp",
+      "exposure": 0.9,
+      "mean": 165.26724492347307,
+      "p10": 76.7438,
+      "p90": 232.41320000000002,
+      "bright": 0.023093233359965583,
+      "clipped": 0,
+      "dark": 0.00007682379693933992,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "balcony",
+      "file": "dusk-on-balcony-1.04.webp",
+      "exposure": 1.04,
+      "mean": 171.29666146209365,
+      "p10": 85.3146,
+      "p90": 235.69799999999998,
+      "bright": 0.030483682625530084,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.04
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "dusk",
+      "on": true,
+      "room": "balcony",
+      "file": "dusk-on-balcony-1.18144.webp",
+      "exposure": 1.18144,
+      "mean": 176.37756986970146,
+      "p10": 93.1772,
+      "p90": 238.55759999999998,
+      "bright": 0.039256960236002704,
+      "clipped": 0.00024583615020588775,
+      "dark": 0,
+      "natural": {
+        "time": "dusk",
+        "applied": true,
+        "gains": {
+          "sun": 1.1,
+          "sky": 1.2
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 3.2725,
+        "effectiveSky": 1.9487999999999999,
+        "directSun": 1.9250000000000003,
+        "hemisphere": 0.348
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 1.18144
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "living",
+      "file": "night-off-living-0.76.webp",
+      "exposure": 0.76,
+      "mean": 4.852658539734013,
+      "p10": 0,
+      "p90": 13.578799999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.8873455841681519,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "living",
+      "file": "night-off-living-0.86.webp",
+      "exposure": 0.86,
+      "mean": 5.284378458608449,
+      "p10": 0,
+      "p90": 16.229799999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.8785723065576793,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "living",
+      "file": "night-off-living-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 5.663082032451302,
+      "p10": 0,
+      "p90": 18.0894,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.8781728228135948,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "dining",
+      "file": "night-off-dining-0.76.webp",
+      "exposure": 0.76,
+      "mean": 0.7734167906090246,
+      "p10": 0,
+      "p90": 0.9278,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.981024522155983,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "dining",
+      "file": "night-off-dining-0.86.webp",
+      "exposure": 0.86,
+      "mean": 0.9899531897239265,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9757390449265565,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "dining",
+      "file": "night-off-dining-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 1.1310396072766415,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9756007620920656,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "master",
+      "file": "night-off-master-0.76.webp",
+      "exposure": 0.76,
+      "mean": 3.608811542007377,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9274629709298753,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "master",
+      "file": "night-off-master-0.86.webp",
+      "exposure": 0.86,
+      "mean": 3.8957142462050744,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9257421178784341,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "master",
+      "file": "night-off-master-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 4.226492348351939,
+      "p10": 0,
+      "p90": 1.9278,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.925511646487616,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "second",
+      "file": "night-off-second-0.76.webp",
+      "exposure": 0.76,
+      "mean": 4.721615586010913,
+      "p10": 0,
+      "p90": 12.3662,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.8761293098150083,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "second",
+      "file": "night-off-second-0.86.webp",
+      "exposure": 0.86,
+      "mean": 5.3983520865341985,
+      "p10": 0,
+      "p90": 14.5788,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.7597566222112961,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "second",
+      "file": "night-off-second-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 5.9003991580120365,
+      "p10": 0,
+      "p90": 15.3662,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.759541515579866,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "kitchen",
+      "file": "night-off-kitchen-0.76.webp",
+      "exposure": 0.76,
+      "mean": 1.0511691106877343,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9725278102144921,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "kitchen",
+      "file": "night-off-kitchen-0.86.webp",
+      "exposure": 0.86,
+      "mean": 1.2851934208103273,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.972189785507959,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "kitchen",
+      "file": "night-off-kitchen-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 1.4711408579683711,
+      "p10": 0,
+      "p90": 1.2126000000000001,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.972189785507959,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "bath",
+      "file": "night-off-bath-0.76.webp",
+      "exposure": 0.76,
+      "mean": 1.9886452522894544,
+      "p10": 0,
+      "p90": 0.9278,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9277088070800811,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "bath",
+      "file": "night-off-bath-0.86.webp",
+      "exposure": 0.86,
+      "mean": 2.2163616341959393,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9272478642984451,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "bath",
+      "file": "night-off-bath-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 2.393501945178628,
+      "p10": 0,
+      "p90": 1,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.9270481224264028,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "balcony",
+      "file": "night-off-balcony-0.76.webp",
+      "exposure": 0.76,
+      "mean": 14.984309845732962,
+      "p10": 0,
+      "p90": 42.118599999999994,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.7276442750906521,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.76
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "balcony",
+      "file": "night-off-balcony-0.86.webp",
+      "exposure": 0.86,
+      "mean": 16.11808836888196,
+      "p10": 0,
+      "p90": 42.467600000000004,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.4957439616495606,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": false,
+      "room": "balcony",
+      "file": "night-off-balcony-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 17.07071142830306,
+      "p10": 0,
+      "p90": 42.5398,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.48979779976645565,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.9504
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "living",
+      "file": "night-on-living-0.76.webp",
+      "exposure": 0.76,
+      "mean": 124.10521149283777,
+      "p10": 24.434399999999997,
+      "p90": 185.16219999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.017961403724417676,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "living",
+      "file": "night-on-living-0.86.webp",
+      "exposure": 0.86,
+      "mean": 131.19747663019356,
+      "p10": 27.8046,
+      "p90": 192.65159999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.01487308708745621,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "living",
+      "file": "night-on-living-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 136.84243328927363,
+      "p10": 30.647,
+      "p90": 197.95359999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.01136992194702231,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "dining",
+      "file": "night-on-dining-0.76.webp",
+      "exposure": 0.76,
+      "mean": 129.4751723895487,
+      "p10": 29.228,
+      "p90": 192.73399999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06468563702292422,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "dining",
+      "file": "night-on-dining-0.86.webp",
+      "exposure": 0.86,
+      "mean": 136.56771380062256,
+      "p10": 32.9278,
+      "p90": 199.4562,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06336426771556758,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "dining",
+      "file": "night-on-dining-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 142.15358921698888,
+      "p10": 36.1404,
+      "p90": 204.6648,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.06251920594923484,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        0.020000000000000018,
+        1.5,
+        -2.45
+      ],
+      "angles": [
+        -2.183028881381311,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "master",
+      "file": "night-on-master-0.76.webp",
+      "exposure": 0.76,
+      "mean": 132.7201074181162,
+      "p10": 63.451,
+      "p90": 190.8774,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.003349517546555221,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "master",
+      "file": "night-on-master-0.86.webp",
+      "exposure": 0.86,
+      "mean": 140.38324106999758,
+      "p10": 69.87219999999999,
+      "p90": 197.73699999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0016747587732776105,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "master",
+      "file": "night-on-master-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 146.50083058814693,
+      "p10": 75.22120000000001,
+      "p90": 203.03499999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0011830864728658349,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "second",
+      "file": "night-on-second-0.76.webp",
+      "exposure": 0.76,
+      "mean": 143.16815937559025,
+      "p10": 33.294,
+      "p90": 206.2436,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0026888328928768974,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "second",
+      "file": "night-on-second-0.86.webp",
+      "exposure": 0.86,
+      "mean": 149.85257321308833,
+      "p10": 37.294,
+      "p90": 211.96280000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.002227890111240858,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "second",
+      "file": "night-on-second-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 155.05264783357646,
+      "p10": 40.8688,
+      "p90": 215.9668,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.00198205396103497,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "kitchen",
+      "file": "night-on-kitchen-0.76.webp",
+      "exposure": 0.76,
+      "mean": 156.14407829880918,
+      "p10": 54.495599999999996,
+      "p90": 230.62179999999998,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0006453198942904554,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "kitchen",
+      "file": "night-on-kitchen-0.86.webp",
+      "exposure": 0.86,
+      "mean": 162.20310917583257,
+      "p10": 60.2424,
+      "p90": 233.55359999999996,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.00015364759387867985,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "kitchen",
+      "file": "night-on-kitchen-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 166.97686990965826,
+      "p10": 65.12440000000001,
+      "p90": 236.341,
+      "bright": 0.005393030545141663,
+      "clipped": 0,
+      "dark": 0,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "bath",
+      "file": "night-on-bath-0.76.webp",
+      "exposure": 0.76,
+      "mean": 133.85069720053397,
+      "p10": 44.933,
+      "p90": 223.33700000000002,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.0006299551349025874,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "bath",
+      "file": "night-on-bath-0.86.webp",
+      "exposure": 0.86,
+      "mean": 139.72058714887726,
+      "p10": 49.24699999999999,
+      "p90": 227.26479999999998,
+      "bright": 0.000046094278163603956,
+      "clipped": 0,
+      "dark": 0.0005531313379632474,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "bath",
+      "file": "night-on-bath-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 144.3823965797689,
+      "p10": 52.319199999999995,
+      "p90": 230.337,
+      "bright": 0.0006145903755147194,
+      "clipped": 0,
+      "dark": 0.0004455780222481716,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "balcony",
+      "file": "night-on-balcony-0.76.webp",
+      "exposure": 0.76,
+      "mean": 104.87425047938932,
+      "p10": 17.1576,
+      "p90": 208.41959999999997,
+      "bright": 0,
+      "clipped": 0,
+      "dark": 0.07129248355970745,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.76
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "balcony",
+      "file": "night-on-balcony-0.86.webp",
+      "exposure": 0.86,
+      "mean": 109.50393377174387,
+      "p10": 19.945,
+      "p90": 213.82639999999998,
+      "bright": 0.0013520988261323827,
+      "clipped": 0,
+      "dark": 0.05915432364329175,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    },
+    {
+      "time": "night",
+      "on": true,
+      "room": "balcony",
+      "file": "night-on-balcony-0.9504.webp",
+      "exposure": 0.9504,
+      "mean": 113.22217254624557,
+      "p10": 22.1536,
+      "p90": 217.8986,
+      "bright": 0.004793804929014812,
+      "clipped": 0,
+      "dark": 0.053423268391616985,
+      "natural": {
+        "time": "night",
+        "applied": true,
+        "gains": {
+          "sun": 1,
+          "sky": 1
+        },
+        "userSunGain": 1.7,
+        "userSkyGain": 1.4,
+        "effectiveSun": 0,
+        "effectiveSky": 0.018,
+        "directSun": 0,
+        "hemisphere": 0.1
+      },
+      "lighting": {
+        "fixtureGain": 0.5,
+        "exposureGain": 0.8,
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.9504
+      },
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ]
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

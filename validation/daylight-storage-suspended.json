@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Storage pause, read-only existing settings; Chrome/WebKit and mobile/WeChat UA simulation",
+  "unit": [
+    {
+      "kind": "empty",
+      "diagnostics": {
+        "enabled": false,
+        "suspended": true,
+        "preview": false,
+        "restoredExisting": false,
+        "restoredFrom": "defaults",
+        "localAvailable": true,
+        "cloudConfigured": false,
+        "signedIn": false,
+        "pending": false,
+        "revision": 0,
+        "conflict": false
+      },
+      "noWritesEventsOrNetwork": true
+    },
+    {
+      "kind": "guest",
+      "diagnostics": {
+        "enabled": false,
+        "suspended": true,
+        "preview": false,
+        "restoredExisting": true,
+        "restoredFrom": "guest",
+        "localAvailable": true,
+        "cloudConfigured": false,
+        "signedIn": false,
+        "pending": false,
+        "revision": 0,
+        "conflict": false
+      },
+      "noWritesEventsOrNetwork": true
+    },
+    {
+      "kind": "account",
+      "diagnostics": {
+        "enabled": false,
+        "suspended": true,
+        "preview": false,
+        "restoredExisting": true,
+        "restoredFrom": "account",
+        "localAvailable": true,
+        "cloudConfigured": false,
+        "signedIn": false,
+        "pending": false,
+        "revision": 0,
+        "conflict": false
+      },
+      "noWritesEventsOrNetwork": true
+    },
+    {
+      "kind": "invalid",
+      "diagnostics": {
+        "enabled": false,
+        "suspended": true,
+        "preview": false,
+        "restoredExisting": false,
+        "restoredFrom": "defaults",
+        "localAvailable": true,
+        "cloudConfigured": false,
+        "signedIn": false,
+        "pending": false,
+        "revision": 0,
+        "conflict": false
+      },
+      "noWritesEventsOrNetwork": true
+    },
+    {
+      "kind": "blocked",
+      "diagnostics": {
+        "enabled": false,
+        "suspended": true,
+        "preview": false,
+        "restoredExisting": false,
+        "restoredFrom": "defaults",
+        "localAvailable": false,
+        "cloudConfigured": false,
+        "signedIn": false,
+        "pending": false,
+        "revision": 0,
+        "conflict": false
+      },
+      "noWritesEventsOrNetwork": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "desktop",
+      "mobile": false,
+      "initial": {
+        "storage": {
+          "enabled": false,
+          "suspended": true,
+          "preview": false,
+          "restoredExisting": false,
+          "restoredFrom": "defaults",
+          "localAvailable": true,
+          "cloudConfigured": false,
+          "signedIn": false,
+          "pending": false,
+          "revision": 0,
+          "conflict": false
+        },
+        "time": "night",
+        "preset": "bare",
+        "lamp": "1",
+        "quality": "auto"
+      },
+      "readOnlyRestore": true,
+      "snapshot": true,
+      "noStorageChanges": true,
+      "pictureCapture": true
+    },
+    {
+      "id": "mobile-guest",
+      "mobile": true,
+      "seed": "guest",
+      "initial": {
+        "storage": {
+          "enabled": false,
+          "suspended": true,
+          "preview": false,
+          "restoredExisting": true,
+          "restoredFrom": "guest",
+          "localAvailable": true,
+          "cloudConfigured": false,
+          "signedIn": false,
+          "pending": false,
+          "revision": 0,
+          "conflict": false
+        },
+        "time": "dusk",
+        "preset": "a",
+        "lamp": "1.3",
+        "quality": "light"
+      },
+      "readOnlyRestore": true,
+      "snapshot": true,
+      "noStorageChanges": true,
+      "pictureCapture": true
+    },
+    {
+      "id": "account",
+      "mobile": false,
+      "seed": "account",
+      "initial": {
+        "storage": {
+          "enabled": false,
+          "suspended": true,
+          "preview": false,
+          "restoredExisting": true,
+          "restoredFrom": "account",
+          "localAvailable": true,
+          "cloudConfigured": false,
+          "signedIn": false,
+          "pending": false,
+          "revision": 0,
+          "conflict": false
+        },
+        "time": "morning",
+        "preset": "a",
+        "lamp": "1.3",
+        "quality": "light"
+      },
+      "readOnlyRestore": true,
+      "snapshot": true,
+      "noStorageChanges": true,
+      "pictureCapture": true
+    },
+    {
+      "id": "webkit",
+      "mobile": true,
+      "webkit": true,
+      "initial": {
+        "storage": {
+          "enabled": false,
+          "suspended": true,
+          "preview": false,
+          "restoredExisting": false,
+          "restoredFrom": "defaults",
+          "localAvailable": true,
+          "cloudConfigured": false,
+          "signedIn": false,
+          "pending": false,
+          "revision": 0,
+          "conflict": false
+        },
+        "time": "night",
+        "preset": "bare",
+        "lamp": "1",
+        "quality": "auto"
+      },
+      "readOnlyRestore": true,
+      "snapshot": true,
+      "noStorageChanges": true,
+      "pictureCapture": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "result": "passed",
+  "htmlSHA256": "d4a81450946f8a3bee7aa8649a673ce9ea4c202c68f749f56f1181817261cb86"
+}

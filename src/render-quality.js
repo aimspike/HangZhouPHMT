@@ -44,11 +44,11 @@ function createHouseRenderQuality(options){
  aaMaterial.fragmentShader=aaMaterial.fragmentShader.replace('void main() {',compositeGLSL+'\nvoid main() {').replace('gl_FragColor.a = texture2D(tDiffuse, vUv).a;','gl_FragColor.a = texture2D(tDiffuse, vUv).a;\nif(houseAOEnabled>0.5){float a=houseContactAO(vUv);gl_FragColor.rgb=pow(pow(max(gl_FragColor.rgb,vec3(0.0)),vec3(2.2))*a,vec3(1.0/2.2));}');
  }
  function apply(){state.quality=$('renderQuality').value;state.effective=state.quality==='auto'?(mobile?'balanced':'high'):state.quality;aoUniforms.sampleCount.value=state.effective==='high'?20:12;state.ao=screenAOAllowed&&state.effective!=='light';$('renderQualityNote').textContent=state.effective==='light'?'轻量：保留烘焙光照与材质纹理。':screenAOAllowed?'分房间场景反射、接触阴影与精细材质；切换灯光后反射自动更新。':'兼容渲染：保留烘焙阴影、房间反射与材质，避免墙顶阴影条纹。';invalidate();options.resize();}
- function invalidate(){state.reflectionSource='awaiting current state';state.probeReady=false;state.revision++;dirtyAt=performance.now();}
+ function invalidate(){state.reflectionSource='awaiting current state';state.probeReady=false;state.revision++;dirtyAt=performance.now();for(const m of registered)m.envMapIntensity=0;}
  for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))invalidate();});
  document.addEventListener('click',e=>{if(e.target.closest('[data-time],[data-door],#openAllDoors,#closeAllDoors,#decorShortcut,#resetFinishes'))invalidate();});
  function register(){scene.traverse(object=>{for(const m of Array.isArray(object.material)?object.material:[object.material]){if(!m?.isMeshStandardMaterial||!m.userData.houseRoom||registered.has(m))continue;registered.add(m);const base=m.onBeforeCompile,key=m.customProgramCacheKey;
-   const room=rooms.find(r=>r.id===m.userData.houseRoom);if(!room)continue;
+   const room=rooms.find(r=>r.id===m.userData.houseRoom);if(!room)continue;m.envMapIntensity=0;
    const bounds={min:new THREE.Vector3(room.x-3.1,.02,room.z-6.25),max:new THREE.Vector3(room.x+room.w-3.1,2.8,room.z+room.d-6.25)},origin=new THREE.Vector3(room.x+room.w/2-3.1,1.45,room.z+room.d/2-6.25);
    m.userData.houseProbe={bounds,origin};m.onBeforeCompile=shader=>{base.call(m,shader);shader.uniforms.houseProbeMin={value:bounds.min};shader.uniforms.houseProbeMax={value:bounds.max};shader.uniforms.houseProbeOrigin={value:origin};shader.vertexShader='varying vec3 houseReflectionPosition;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <project_vertex>','#include <project_vertex>\nhouseReflectionPosition=(modelMatrix*vec4(transformed,1.0)).xyz;');shader.fragmentShader='varying vec3 houseReflectionPosition;uniform vec3 houseProbeMin,houseProbeMax,houseProbeOrigin;\n'+shader.fragmentShader;
     let chunk=THREE.ShaderChunk.envmap_physical_pars_fragment;chunk=chunk.replace('reflectVec = inverseTransformDirection( reflectVec, viewMatrix );',`reflectVec = inverseTransformDirection( reflectVec, viewMatrix );
@@ -81,7 +81,7 @@ function createHouseRenderQuality(options){
   if(!enabled){for(const m of registered)m.envMapIntensity=0;state.probeRoom=null;return;}
   if(!ready||capturing||performance.now()-dirtyAt<180)return;
   register();const x=camera.position.x+3.1,z=camera.position.z+6.25,room=rooms.find(r=>x>r.x&&x<r.x+r.w&&z>r.z&&z<r.z+r.d);if(!room)return;state.probeRoom=room.id;
-  for(const m of registered)if(m.envMap&&cache.has(m.userData.houseRoom))m.envMapIntensity=m.userData.houseReflectionStrength??1;
+  for(const m of registered){const current=cache.get(m.userData.houseRoom);m.envMapIntensity=m.envMap&&current?.revision===state.revision?(m.userData.houseReflectionStrength??1):0;}
   const stored=cache.get(room.id);state.probeReady=!!stored&&stored.revision===state.revision;if((!stored||stored.revision!==state.revision)&&!state.reflectionError){try{
    if(options.staticLighting?.active){const revision=state.revision,key=revision+'-'+room.id;if(!pending.has(key)){pending.add(key);options.staticLighting.reflection(room.id).then(texture=>{try{installStatic(room,texture,revision);}catch(error){state.reflectionError=error.message;}finally{pending.delete(key);}}).catch(error=>{pending.delete(key);state.reflectionError=error.message;});}}
    else{capture(room);state.reflectionSource='dynamic scene capture';}

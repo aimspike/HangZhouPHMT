@@ -1,0 +1,5241 @@
+{
+  "stage": "after",
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Actual settled WebGL1, fixed camera/exposure, desktop and simulated mobile/WeChat UA",
+  "cases": [
+    {
+      "mobile": false,
+      "captures": [
+        {
+          "time": "morning",
+          "on": false,
+          "room": "living",
+          "file": "after-pc-morning-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.1132799999999998,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "morning",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 11,
+            "decodeCacheBytes": 46374912,
+            "updates": 1,
+            "reflectionBakes": 1,
+            "error": null,
+            "composeMs": 9523.60000000149,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 2,
+            "revision": 26,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 95.86035333312793,
+              "p10": 20.757,
+              "p90": 185.14039999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.06046875
+            },
+            "center": {
+              "mean": 92.22130584540284,
+              "p10": 17.6888,
+              "p90": 175.81099999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.069281276106934
+            },
+            "upper": {
+              "mean": 124.53510068306636,
+              "p10": 47.9106,
+              "p90": 184.4344,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.007684426229508197
+            },
+            "lower": {
+              "mean": 58.476048157945804,
+              "p10": 12.298,
+              "p90": 103.8476,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0989391850490196
+            }
+          }
+        },
+        {
+          "time": "morning",
+          "on": false,
+          "room": "dining",
+          "file": "after-pc-morning-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.1132799999999998,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "morning",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 11,
+            "decodeCacheBytes": 46374912,
+            "updates": 1,
+            "reflectionBakes": 1,
+            "error": null,
+            "composeMs": 9523.60000000149,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 2,
+            "revision": 26,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 57.248745063920595,
+              "p10": 12.4212,
+              "p90": 116.55760000000001,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.06758333333333333
+            },
+            "center": {
+              "mean": 52.87315983970499,
+              "p10": 12.4212,
+              "p90": 95.27279999999999,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.049165883458646614
+            },
+            "upper": {
+              "mean": 70.08089783555427,
+              "p10": 44.698,
+              "p90": 82.6258,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.01020321038251366
+            },
+            "lower": {
+              "mean": 33.471939422491836,
+              "p10": 14.761,
+              "p90": 49.233200000000004,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.04543887867647059
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "living",
+          "file": "after-pc-noon-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 15,
+            "decodeCacheBytes": 48629760,
+            "updates": 2,
+            "reflectionBakes": 2,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 3,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 120.33388008728531,
+              "p10": 33.6682,
+              "p90": 197.92899999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.032072916666666666
+            },
+            "center": {
+              "mean": 117.0777626005042,
+              "p10": 30.2338,
+              "p90": 194.996,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.030747441520467836
+            },
+            "upper": {
+              "mean": 155.74729512466885,
+              "p10": 72.0562,
+              "p90": 210.7152,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.005507172131147541
+            },
+            "lower": {
+              "mean": 82.63294303768114,
+              "p10": 22.1616,
+              "p90": 139.0676,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.04392616421568627
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "dining",
+          "file": "after-pc-noon-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 15,
+            "decodeCacheBytes": 48629760,
+            "updates": 2,
+            "reflectionBakes": 2,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 3,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 81.18198940811322,
+              "p10": 23.489400000000003,
+              "p90": 153.2006,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.03282291666666667
+            },
+            "center": {
+              "mean": 75.68205228699837,
+              "p10": 23.489400000000003,
+              "p90": 129.62579999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.01964546783625731
+            },
+            "upper": {
+              "mean": 98.50550110570948,
+              "p10": 67.047,
+              "p90": 114.97879999999999,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.006489071038251366
+            },
+            "lower": {
+              "mean": 51.505403362440596,
+              "p10": 25.4344,
+              "p90": 73.3564,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.011106004901960785
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "master",
+          "file": "after-pc-noon-off-master.webp",
+          "camera": [
+            -0.5500000000000003,
+            1.5,
+            2.8499999999999996
+          ],
+          "angles": [
+            2.1319597390832485,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 18,
+            "decodeCacheBytes": 49809408,
+            "updates": 2,
+            "reflectionBakes": 3,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "master",
+            "captures": 4,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 102.16484966869649,
+              "p10": 32.7662,
+              "p90": 173.9238,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.010822916666666666
+            },
+            "center": {
+              "mean": 114.80410538846152,
+              "p10": 34.2298,
+              "p90": 185.9238,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.01180033416875522
+            },
+            "upper": {
+              "mean": 141.8369250213606,
+              "p10": 100.47739999999999,
+              "p90": 180.92380000000003,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0053364071038251365
+            },
+            "lower": {
+              "mean": 76.09391755131637,
+              "p10": 23.2126,
+              "p90": 128.8338,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.029967064950980393
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "second",
+          "file": "after-pc-noon-off-second.webp",
+          "camera": [
+            0.5499999999999998,
+            1.5,
+            4.199999999999999
+          ],
+          "angles": [
+            -1.0943289073211906,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 21,
+            "decodeCacheBytes": 38406144,
+            "updates": 2,
+            "reflectionBakes": 4,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "second",
+            "captures": 5,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 121.48368486242825,
+              "p10": 43.812,
+              "p90": 201.49859999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.00578125
+            },
+            "center": {
+              "mean": 113.53336576203269,
+              "p10": 51.1788,
+              "p90": 190.70719999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.007074979114452798
+            },
+            "upper": {
+              "mean": 110.27440960553945,
+              "p10": 68.043,
+              "p90": 141.4092,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.008879781420765027
+            },
+            "lower": {
+              "mean": 116.80673528645295,
+              "p10": 34.8086,
+              "p90": 208.43040000000002,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.010129442401960785
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "kitchen",
+          "file": "after-pc-noon-off-kitchen.webp",
+          "camera": [
+            1.6199999999999997,
+            1.5,
+            -3.75
+          ],
+          "angles": [
+            -0.5305578870294475,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 24,
+            "decodeCacheBytes": 39585792,
+            "updates": 2,
+            "reflectionBakes": 5,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "kitchen",
+            "captures": 6,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 109.68291291190042,
+              "p10": 15.973599999999998,
+              "p90": 180.4264,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.051118055555555555
+            },
+            "center": {
+              "mean": 107.24518183478715,
+              "p10": 13.408000000000001,
+              "p90": 189.49859999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0757623224728488
+            },
+            "upper": {
+              "mean": 144.26700560538399,
+              "p10": 106.1966,
+              "p90": 189.7112,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.016756318306010928
+            },
+            "lower": {
+              "mean": 57.59854881663736,
+              "p10": 10.765,
+              "p90": 138.57479999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.15508195465686275
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "bath",
+          "file": "after-pc-noon-off-bath.webp",
+          "camera": [
+            -1.75,
+            1.5,
+            1.4500000000000002
+          ],
+          "angles": [
+            1.6951513213416576,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 27,
+            "decodeCacheBytes": 40765440,
+            "updates": 2,
+            "reflectionBakes": 6,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "bath",
+            "captures": 7,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 93.34981500214074,
+              "p10": 27.068199999999997,
+              "p90": 155.7926,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.04690972222222222
+            },
+            "center": {
+              "mean": 85.93942815765503,
+              "p10": 26.579999999999995,
+              "p90": 177.11700000000002,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.03514645989974937
+            },
+            "upper": {
+              "mean": 79.86178493852466,
+              "p10": 31.9422,
+              "p90": 174.0878,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.03415300546448088
+            },
+            "lower": {
+              "mean": 71.03248933823103,
+              "p10": 26.204599999999996,
+              "p90": 136.6046,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.024509803921568627
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "balcony",
+          "file": "after-pc-noon-off-balcony.webp",
+          "camera": [
+            1.3000000000000003,
+            1.5,
+            5.449999999999999
+          ],
+          "angles": [
+            -1.797595174848783,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 30,
+            "decodeCacheBytes": 41945088,
+            "updates": 2,
+            "reflectionBakes": 7,
+            "error": null,
+            "composeMs": 145,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "balcony",
+            "captures": 8,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 177.57274310626963,
+              "p10": 108.17599999999999,
+              "p90": 235.8046,
+              "bright": 0.009159722222222222,
+              "clipped": 0,
+              "dark": 0.0002916666666666667
+            },
+            "center": {
+              "mean": 181.90973799204315,
+              "p10": 94.10379999999999,
+              "p90": 236.29,
+              "bright": 0.007081505847953216,
+              "clipped": 0,
+              "dark": 0.00008484753550543024
+            },
+            "upper": {
+              "mean": 215.56791407531904,
+              "p10": 162.8866,
+              "p90": 243.7232,
+              "bright": 0.029585040983606557,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 177.6412667585969,
+              "p10": 112.71059999999999,
+              "p90": 221.5708,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0014361213235294119
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "living",
+          "file": "after-pc-noon-on-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 8,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 9,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 183.87163375023837,
+              "p10": 129.8796,
+              "p90": 222.48539999999997,
+              "bright": 0.000006944444444444445,
+              "clipped": 0,
+              "dark": 0.003309027777777778
+            },
+            "center": {
+              "mean": 180.78893044612923,
+              "p10": 73.13579999999999,
+              "p90": 222.69399999999996,
+              "bright": 0.000013053467000835421,
+              "clipped": 0,
+              "dark": 0.00034591687552213866
+            },
+            "upper": {
+              "mean": 204.39264258880962,
+              "p10": 183.39999999999998,
+              "p90": 223.27679999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 165.10365187270676,
+              "p10": 54.298,
+              "p90": 205.141,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.00011488970588235294
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "dining",
+          "file": "after-pc-noon-on-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 8,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 9,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 169.37755314674004,
+              "p10": 68.3878,
+              "p90": 219.7072,
+              "bright": 0.0000034722222222222224,
+              "clipped": 0,
+              "dark": 0.005395833333333333
+            },
+            "center": {
+              "mean": 165.78918502771643,
+              "p10": 32.7112,
+              "p90": 222.5668,
+              "bright": 0.000006526733500417711,
+              "clipped": 0,
+              "dark": 0.0017556913116123641
+            },
+            "upper": {
+              "mean": 193.2582647839629,
+              "p10": 175.6556,
+              "p90": 212.1438,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 153.67724481462454,
+              "p10": 100.3128,
+              "p90": 190.0436,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0008233762254901961
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "master",
+          "file": "after-pc-noon-on-master.webp",
+          "camera": [
+            -0.5500000000000003,
+            1.5,
+            2.8499999999999996
+          ],
+          "angles": [
+            2.1319597390832485,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 9,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "master",
+            "captures": 10,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 179.9419003724628,
+              "p10": 121.39659999999999,
+              "p90": 219.76219999999998,
+              "bright": 0.000006944444444444445,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 183.95764587129452,
+              "p10": 122.60919999999999,
+              "p90": 223.694,
+              "bright": 0.000013053467000835421,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 200.8480986167973,
+              "p10": 174.5284,
+              "p90": 221.54959999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 164.33955914139202,
+              "p10": 107.60919999999999,
+              "p90": 216.3238,
+              "bright": 0.00003829656862745098,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "second",
+          "file": "after-pc-noon-on-second.webp",
+          "camera": [
+            0.5499999999999998,
+            1.5,
+            4.199999999999999
+          ],
+          "angles": [
+            -1.0943289073211906,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 10,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "second",
+            "captures": 11,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 195.15020107560824,
+              "p10": 148.58339999999998,
+              "p90": 227.8344,
+              "bright": 0.0030243055555555557,
+              "clipped": 0,
+              "dark": 0.0003125
+            },
+            "center": {
+              "mean": 197.34669847016303,
+              "p10": 151.5054,
+              "p90": 228.71120000000002,
+              "bright": 0.00046992481203007516,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 201.02488657362983,
+              "p10": 167.8052,
+              "p90": 219.8344,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 189.1351578967572,
+              "p10": 107.82579999999999,
+              "p90": 235.2728,
+              "bright": 0.0038488051470588237,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "kitchen",
+          "file": "after-pc-noon-on-kitchen.webp",
+          "camera": [
+            1.6199999999999997,
+            1.5,
+            -3.75
+          ],
+          "angles": [
+            -0.5305578870294475,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 11,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "kitchen",
+            "captures": 12,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 190.08007087856205,
+              "p10": 92.18039999999999,
+              "p90": 241.1324,
+              "bright": 0.03309027777777778,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 187.38092575571972,
+              "p10": 83.82639999999999,
+              "p90": 241.20459999999997,
+              "bright": 0.0444405284043442,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 226.7751290556694,
+              "p10": 208.8986,
+              "p90": 245.2768,
+              "bright": 0.11582137978142076,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 147.59610762867845,
+              "p10": 71.3288,
+              "p90": 222.62179999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "bath",
+          "file": "after-pc-noon-on-bath.webp",
+          "camera": [
+            -1.75,
+            1.5,
+            1.4500000000000002
+          ],
+          "angles": [
+            1.6951513213416576,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 12,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "bath",
+            "captures": 13,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 186.54886448358786,
+              "p10": 159.6688,
+              "p90": 233.341,
+              "bright": 0.0016493055555555556,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 191.05096454799295,
+              "p10": 159.8132,
+              "p90": 235.2728,
+              "bright": 0.002232142857142857,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 207.1039366205721,
+              "p10": 163.6006,
+              "p90": 237.1284,
+              "bright": 0.009071892076502733,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 196.29025571769728,
+              "p10": 160.74099999999999,
+              "p90": 239.2768,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "balcony",
+          "file": "after-pc-noon-on-balcony.webp",
+          "camera": [
+            1.3000000000000003,
+            1.5,
+            5.449999999999999
+          ],
+          "angles": [
+            -1.797595174848783,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 37,
+            "decodeCacheBytes": 39690240,
+            "updates": 3,
+            "reflectionBakes": 13,
+            "error": null,
+            "composeMs": 139,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "balcony",
+            "captures": 14,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 197.432990416681,
+              "p10": 120.9318,
+              "p90": 242.0682,
+              "bright": 0.07089930555555556,
+              "clipped": 0.0025208333333333333,
+              "dark": 0
+            },
+            "center": {
+              "mean": 198.7864701699939,
+              "p10": 111.2332,
+              "p90": 244.28079999999997,
+              "bright": 0.08294172932330827,
+              "clipped": 0.004738408521303258,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 223.1880376536854,
+              "p10": 164.81439999999998,
+              "p90": 248.92779999999996,
+              "bright": 0.2377476092896175,
+              "clipped": 0.015432889344262296,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 207.58945194545961,
+              "p10": 146.9594,
+              "p90": 238.13639999999998,
+              "bright": 0.022863051470588234,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "dusk",
+          "on": false,
+          "room": "living",
+          "file": "after-pc-dusk-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.18144,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "dusk",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 41,
+            "decodeCacheBytes": 46374912,
+            "updates": 4,
+            "reflectionBakes": 14,
+            "error": null,
+            "composeMs": 152.90000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 15,
+            "revision": 35,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 77.09796722060557,
+              "p10": 14.973600000000001,
+              "p90": 141.69799999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.07997222222222222
+            },
+            "center": {
+              "mean": 75.73372559264735,
+              "p10": 12.719199999999999,
+              "p90": 141.4894,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.09619099832915623
+            },
+            "upper": {
+              "mean": 105.93409602543227,
+              "p10": 39.2636,
+              "p90": 161.8738,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.009178620218579235
+            },
+            "lower": {
+              "mean": 46.91525369944824,
+              "p10": 8.7914,
+              "p90": 83.69800000000001,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.12967218137254902
+            }
+          }
+        },
+        {
+          "time": "dusk",
+          "on": false,
+          "room": "dining",
+          "file": "after-pc-dusk-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.18144,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "dusk",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 41,
+            "decodeCacheBytes": 46374912,
+            "updates": 4,
+            "reflectionBakes": 14,
+            "error": null,
+            "composeMs": 152.90000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 15,
+            "revision": 35,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 45.40302239365617,
+              "p10": 7.280799999999999,
+              "p90": 90.34499999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.1420625
+            },
+            "center": {
+              "mean": 41.823902486660636,
+              "p10": 7.280799999999999,
+              "p90": 76.1232,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.17566050543024228
+            },
+            "upper": {
+              "mean": 56.453063725231516,
+              "p10": 35.6298,
+              "p90": 67.1232,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0156036543715847
+            },
+            "lower": {
+              "mean": 25.45526369868234,
+              "p10": 10.0682,
+              "p90": 38.812000000000005,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.12601485906862744
+            }
+          }
+        },
+        {
+          "time": "night",
+          "on": false,
+          "room": "living",
+          "file": "after-pc-night-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 0.9504000000000001,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "night",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 42,
+            "decodeCacheBytes": 46374912,
+            "updates": 5,
+            "reflectionBakes": 15,
+            "error": null,
+            "composeMs": 81.19999999925494,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 16,
+            "revision": 38,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 5.499101345136143,
+              "p10": 0,
+              "p90": 17.2298,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.8815659722222222
+            },
+            "center": {
+              "mean": 6.158724485689655,
+              "p10": 0,
+              "p90": 16.872799999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.8818204365079365
+            },
+            "upper": {
+              "mean": 1.6660948685106436,
+              "p10": 0,
+              "p90": 2.9278,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9908640710382514
+            },
+            "lower": {
+              "mean": 0.19619705116422392,
+              "p10": 0,
+              "p90": 0,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9980660232843137
+            }
+          }
+        },
+        {
+          "time": "night",
+          "on": false,
+          "room": "dining",
+          "file": "after-pc-night-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 0.9504000000000001,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "night",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 813708,
+            "decodedImages": 42,
+            "decodeCacheBytes": 46374912,
+            "updates": 5,
+            "reflectionBakes": 15,
+            "error": null,
+            "composeMs": 81.19999999925494,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 16,
+            "revision": 38,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 1.0499971576394826,
+              "p10": 0,
+              "p90": 1,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.97846875
+            },
+            "center": {
+              "mean": 1.3497166653617476,
+              "p10": 0,
+              "p90": 1,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9671509502923976
+            },
+            "upper": {
+              "mean": 1.993179516735354,
+              "p10": 0,
+              "p90": 1,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.965270662568306
+            },
+            "lower": {
+              "mean": 0.20754981234681374,
+              "p10": 0,
+              "p90": 0,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9967830882352942
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mobile": true,
+      "captures": [
+        {
+          "time": "morning",
+          "on": false,
+          "room": "living",
+          "file": "after-mobile-morning-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.1132799999999998,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "morning",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 11,
+            "decodeCacheBytes": 44384256,
+            "updates": 1,
+            "reflectionBakes": 1,
+            "error": null,
+            "composeMs": 4092.699999999255,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 2,
+            "revision": 26,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 93.26243423012411,
+              "p10": 13.370199999999997,
+              "p90": 156.99599999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.08901446105237575
+            },
+            "center": {
+              "mean": 92.59288199210752,
+              "p10": 10.7232,
+              "p90": 156.7112,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.11341070861857913
+            },
+            "upper": {
+              "mean": 139.18810312894297,
+              "p10": 123.20060000000001,
+              "p90": 158.9198,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0065403195837978444
+            },
+            "lower": {
+              "mean": 46.61407048926169,
+              "p10": 7.8636,
+              "p90": 71.6544,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.1574130156807322
+            }
+          }
+        },
+        {
+          "time": "morning",
+          "on": false,
+          "room": "dining",
+          "file": "after-mobile-morning-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.1132799999999998,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "morning",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 11,
+            "decodeCacheBytes": 44384256,
+            "updates": 1,
+            "reflectionBakes": 1,
+            "error": null,
+            "composeMs": 4092.699999999255,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 2,
+            "revision": 26,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 60.79880035726886,
+              "p10": 23.747799999999998,
+              "p90": 94.48539999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.03787823550856726
+            },
+            "center": {
+              "mean": 59.006830076605375,
+              "p10": 18.6166,
+              "p90": 95.27279999999999,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.05338441311148388
+            },
+            "upper": {
+              "mean": 73.55328542548972,
+              "p10": 29.759600000000002,
+              "p90": 146.4826,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.012337421033073207
+            },
+            "lower": {
+              "mean": 33.92721440204513,
+              "p10": 15.6114,
+              "p90": 50.191399999999994,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.05572380375529982
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "living",
+          "file": "after-mobile-noon-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 15,
+            "decodeCacheBytes": 46141440,
+            "updates": 2,
+            "reflectionBakes": 2,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 3,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 120.71703927330874,
+              "p10": 24.0894,
+              "p90": 189.78339999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.038267104143881396
+            },
+            "center": {
+              "mean": 118.73078821690108,
+              "p10": 20.302,
+              "p90": 188.8516,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.040848710160039894
+            },
+            "upper": {
+              "mean": 173.29242477888982,
+              "p10": 159.2046,
+              "p90": 191.0682,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.002601263470828688
+            },
+            "lower": {
+              "mean": 68.76075524597707,
+              "p10": 16.4424,
+              "p90": 102.2842,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.058213877111514906
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "dining",
+          "file": "after-mobile-noon-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 15,
+            "decodeCacheBytes": 46141440,
+            "updates": 2,
+            "reflectionBakes": 2,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 3,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 86.30742022845907,
+              "p10": 37.8816,
+              "p90": 129.4132,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.01619880908980435
+            },
+            "center": {
+              "mean": 83.54008251802452,
+              "p10": 30.61,
+              "p90": 129.62579999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.021829804597180032
+            },
+            "upper": {
+              "mean": 100.83374243032975,
+              "p10": 46.2936,
+              "p90": 180.69920000000002,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.004905239687848384
+            },
+            "lower": {
+              "mean": 52.24836268927751,
+              "p10": 26.5748,
+              "p90": 74.56899999999999,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.011710074702200686
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "master",
+          "file": "after-mobile-noon-off-master.webp",
+          "camera": [
+            -0.5500000000000003,
+            1.5,
+            2.8499999999999996
+          ],
+          "angles": [
+            2.1319597390832485,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 18,
+            "decodeCacheBytes": 47321088,
+            "updates": 2,
+            "reflectionBakes": 3,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "master",
+            "captures": 4,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 109.65214016770229,
+              "p10": 31.8126,
+              "p90": 175.9238,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.009539433710049824
+            },
+            "center": {
+              "mean": 100.02278731014948,
+              "p10": 28.829199999999997,
+              "p90": 162.9198,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.006460534070816521
+            },
+            "upper": {
+              "mean": 148.01327970271558,
+              "p10": 118.19659999999999,
+              "p90": 173.8516,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.003195837978446674
+            },
+            "lower": {
+              "mean": 55.30735606703068,
+              "p10": 20.229799999999997,
+              "p90": 119.7794,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.025910222760616462
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "second",
+          "file": "after-mobile-noon-off-second.webp",
+          "camera": [
+            0.5499999999999998,
+            1.5,
+            4.199999999999999
+          ],
+          "angles": [
+            -1.0943289073211906,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 21,
+            "decodeCacheBytes": 48500736,
+            "updates": 2,
+            "reflectionBakes": 4,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "second",
+            "captures": 5,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 120.62882977279152,
+              "p10": 67.6172,
+              "p90": 198.4774,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.006550006076072427
+            },
+            "center": {
+              "mean": 122.30211022352347,
+              "p10": 78.69,
+              "p90": 182.9238,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.005871152015233259
+            },
+            "upper": {
+              "mean": 118.67174738015143,
+              "p10": 95.7542,
+              "p90": 128.8304,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.010182088442958008
+            },
+            "lower": {
+              "mean": 158.30383950467981,
+              "p10": 110.61779999999999,
+              "p90": 223.20059999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "kitchen",
+          "file": "after-mobile-noon-off-kitchen.webp",
+          "camera": [
+            1.6199999999999997,
+            1.5,
+            -3.75
+          ],
+          "angles": [
+            -0.5305578870294475,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 24,
+            "decodeCacheBytes": 49680384,
+            "updates": 2,
+            "reflectionBakes": 5,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "kitchen",
+            "captures": 6,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 112.99911708834021,
+              "p10": 12.6206,
+              "p90": 196.92379999999997,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.08988941548183255
+            },
+            "center": {
+              "mean": 117.65985236885821,
+              "p10": 12.6206,
+              "p90": 204.4946,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0868205104955343
+            },
+            "upper": {
+              "mean": 164.83101074693283,
+              "p10": 122.8436,
+              "p90": 194.49859999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0008175399479747306
+            },
+            "lower": {
+              "mean": 56.27986550911858,
+              "p10": 9.3398,
+              "p90": 133.7152,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.18211185140318997
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "bath",
+          "file": "after-mobile-noon-off-bath.webp",
+          "camera": [
+            -1.75,
+            1.5,
+            1.4500000000000002
+          ],
+          "angles": [
+            1.6951513213416576,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 27,
+            "decodeCacheBytes": 38277120,
+            "updates": 2,
+            "reflectionBakes": 6,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "bath",
+            "captures": 7,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 57.56590585004406,
+              "p10": 25.2046,
+              "p90": 95.5668,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.022335642240855512
+            },
+            "center": {
+              "mean": 51.46479246951704,
+              "p10": 26.285999999999998,
+              "p90": 77.4224,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.013759804143809222
+            },
+            "upper": {
+              "mean": 50.505485157934565,
+              "p10": 34.1324,
+              "p90": 61.631,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 65.55415888014079,
+              "p10": 25.991999999999997,
+              "p90": 113.0012,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.03647620970455616
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": false,
+          "room": "balcony",
+          "file": "after-mobile-noon-off-balcony.webp",
+          "camera": [
+            1.3000000000000003,
+            1.5,
+            5.449999999999999
+          ],
+          "angles": [
+            -1.797595174848783,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 30,
+            "decodeCacheBytes": 39456768,
+            "updates": 2,
+            "reflectionBakes": 7,
+            "error": null,
+            "composeMs": 125.29999999888241,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "balcony",
+            "captures": 8,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 182.2644942617431,
+              "p10": 76.17200000000001,
+              "p90": 240,
+              "bright": 0.023514400291651475,
+              "clipped": 0,
+              "dark": 0.0008506501397496658
+            },
+            "center": {
+              "mean": 174.8053492496933,
+              "p10": 48.22579999999999,
+              "p90": 238.99999999999997,
+              "bright": 0.012785056898036905,
+              "clipped": 0,
+              "dark": 0.00009067416239742486
+            },
+            "upper": {
+              "mean": 234.5340580007469,
+              "p10": 221.0642,
+              "p90": 243.7874,
+              "bright": 0.04451876625789669,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 146.36031337236983,
+              "p10": 36.294000000000004,
+              "p90": 212.7112,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0023554747964196782
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "living",
+          "file": "after-mobile-noon-on-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 8,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 9,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 175.34026052993545,
+              "p10": 56.08539999999999,
+              "p90": 220.9788,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.0002916514764855997
+            },
+            "center": {
+              "mean": 166.77516704448345,
+              "p10": 49.5106,
+              "p90": 223.694,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.00045337081198712427
+            },
+            "upper": {
+              "mean": 207.54004331474974,
+              "p10": 197.1874,
+              "p90": 216.69799999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 145.6181321892467,
+              "p10": 45.060199999999995,
+              "p90": 193.6006,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.00026919711959082036
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "dining",
+          "file": "after-mobile-noon-on-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 8,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 9,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 181.96011784667687,
+              "p10": 124.29560000000001,
+              "p90": 223.9748,
+              "bright": 0.00003645643456069996,
+              "clipped": 0,
+              "dark": 0.000704824401506866
+            },
+            "center": {
+              "mean": 177.79312656752924,
+              "p10": 99.0136,
+              "p90": 225.9748,
+              "bright": 0.00004533708119871243,
+              "clipped": 0,
+              "dark": 0.0005667135149839053
+            },
+            "upper": {
+              "mean": 188.93431830546712,
+              "p10": 98.6986,
+              "p90": 216.569,
+              "bright": 0.0002229654403567447,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 144.4090874352307,
+              "p10": 91.4612,
+              "p90": 185.46880000000002,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "master",
+          "file": "after-mobile-noon-on-master.webp",
+          "camera": [
+            -0.5500000000000003,
+            1.5,
+            2.8499999999999996
+          ],
+          "angles": [
+            2.1319597390832485,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 9,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "master",
+            "captures": 10,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 181.17251513184465,
+              "p10": 119.6318,
+              "p90": 225.5536,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 171.3986901663975,
+              "p10": 114.243,
+              "p90": 220.62179999999998,
+              "bright": 0.000022668540599356215,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 202.88002630991983,
+              "p10": 181.52839999999998,
+              "p90": 212.69400000000002,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 145.05362696009053,
+              "p10": 97.01719999999999,
+              "p90": 233.55759999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "second",
+          "file": "after-mobile-noon-on-second.webp",
+          "camera": [
+            0.5499999999999998,
+            1.5,
+            4.199999999999999
+          ],
+          "angles": [
+            -1.0943289073211906,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 10,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "second",
+            "captures": 11,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 203.7257017352509,
+              "p10": 163.8734,
+              "p90": 234.41320000000002,
+              "bright": 0.013756227974237452,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 210.34471975337678,
+              "p10": 181.8012,
+              "p90": 231.345,
+              "bright": 0.0025388765471278957,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 208.58496194722255,
+              "p10": 191.8012,
+              "p90": 215.89460000000003,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 224.19097435897706,
+              "p10": 207.97079999999997,
+              "p90": 243.1364,
+              "bright": 0.03021737667406959,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "kitchen",
+          "file": "after-mobile-noon-on-kitchen.webp",
+          "camera": [
+            1.6199999999999997,
+            1.5,
+            -3.75
+          ],
+          "angles": [
+            -0.5305578870294475,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 11,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "kitchen",
+            "captures": 12,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 189.19136751733527,
+              "p10": 93.0492,
+              "p90": 242.20459999999997,
+              "bright": 0.07293717341110706,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 187.67762753774437,
+              "p10": 93.742,
+              "p90": 245.0642,
+              "bright": 0.1045246407036315,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 229.61561899665938,
+              "p10": 210.035,
+              "p90": 246.99599999999998,
+              "bright": 0.21055369751021924,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 153.76411128608558,
+              "p10": 79.9718,
+              "p90": 221.62179999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "bath",
+          "file": "after-mobile-noon-on-bath.webp",
+          "camera": [
+            -1.75,
+            1.5,
+            1.4500000000000002
+          ],
+          "angles": [
+            1.6951513213416576,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 12,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "bath",
+            "captures": 13,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 209.5642705019613,
+              "p10": 177.05859999999998,
+              "p90": 238.27279999999996,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "center": {
+              "mean": 215.0508975473029,
+              "p10": 188.0952,
+              "p90": 238.27279999999996,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 222.20809270903794,
+              "p10": 202.77259999999995,
+              "p90": 236.1284,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 214.10119483142387,
+              "p10": 184.4522,
+              "p90": 242.0642,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "noon",
+          "on": true,
+          "room": "balcony",
+          "file": "after-mobile-noon-on-balcony.webp",
+          "camera": [
+            1.3000000000000003,
+            1.5,
+            5.449999999999999
+          ],
+          "angles": [
+            -1.797595174848783,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.04512,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "noon",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 37,
+            "decodeCacheBytes": 50282496,
+            "updates": 3,
+            "reflectionBakes": 13,
+            "error": null,
+            "composeMs": 121.40000000037253,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "balcony",
+            "captures": 14,
+            "revision": 32,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 204.9976941159458,
+              "p10": 100.588,
+              "p90": 247.14039999999997,
+              "bright": 0.1389962328350954,
+              "clipped": 0.008105480617328959,
+              "dark": 0
+            },
+            "center": {
+              "mean": 196.07175446794452,
+              "p10": 78.5262,
+              "p90": 248.92779999999996,
+              "bright": 0.19712562905200162,
+              "clipped": 0.01514258512036995,
+              "dark": 0
+            },
+            "upper": {
+              "mean": 242.9504805202375,
+              "p10": 232.1754,
+              "p90": 250.1404,
+              "bright": 0.6142697881828316,
+              "clipped": 0.04957264957264957,
+              "dark": 0
+            },
+            "lower": {
+              "mean": 182.53526244027907,
+              "p10": 67.8436,
+              "p90": 228.27679999999998,
+              "bright": 0.0018843798371357427,
+              "clipped": 0,
+              "dark": 0
+            }
+          }
+        },
+        {
+          "time": "dusk",
+          "on": false,
+          "room": "living",
+          "file": "after-mobile-dusk-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.18144,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "dusk",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 41,
+            "decodeCacheBytes": 44384256,
+            "updates": 4,
+            "reflectionBakes": 14,
+            "error": null,
+            "composeMs": 144.7999999988824,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 15,
+            "revision": 35,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 78.80276312555362,
+              "p10": 9.6246,
+              "p90": 134.8424,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.12271235873131607
+            },
+            "center": {
+              "mean": 78.57103649181569,
+              "p10": 7.578799999999999,
+              "p90": 134.7702,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.1705807680101555
+            },
+            "upper": {
+              "mean": 117.94344691192453,
+              "p10": 102.97879999999999,
+              "p90": 136.41719999999998,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.008621330360460795
+            },
+            "lower": {
+              "mean": 37.674818695738175,
+              "p10": 5.719200000000001,
+              "p90": 57.910599999999995,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.22518339053772124
+            }
+          }
+        },
+        {
+          "time": "dusk",
+          "on": false,
+          "room": "dining",
+          "file": "after-mobile-dusk-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 1.18144,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "dusk",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 41,
+            "decodeCacheBytes": 44384256,
+            "updates": 4,
+            "reflectionBakes": 14,
+            "error": null,
+            "composeMs": 144.7999999988824,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 15,
+            "revision": 35,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 48.544456368925296,
+              "p10": 17.2544,
+              "p90": 76.1232,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.06114959290314741
+            },
+            "center": {
+              "mean": 46.994287151471646,
+              "p10": 13.548399999999999,
+              "p90": 77.051,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.08743256109171692
+            },
+            "upper": {
+              "mean": 59.84591971757315,
+              "p10": 22.772799999999997,
+              "p90": 117.5548,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.027499070977331848
+            },
+            "lower": {
+              "mean": 25.810926643785944,
+              "p10": 10.6928,
+              "p90": 39.522000000000006,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.12699374116696951
+            }
+          }
+        },
+        {
+          "time": "night",
+          "on": false,
+          "room": "living",
+          "file": "after-mobile-night-off-living.webp",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "angles": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 0.9504000000000001,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "night",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 42,
+            "decodeCacheBytes": 44384256,
+            "updates": 5,
+            "reflectionBakes": 15,
+            "error": null,
+            "composeMs": 84.89999999850988,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 16,
+            "revision": 38,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 3.3577935326290955,
+              "p10": 0,
+              "p90": 2,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9825130635557175
+            },
+            "center": {
+              "mean": 5.628259790542783,
+              "p10": 0,
+              "p90": 1.9278,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9688534252164845
+            },
+            "upper": {
+              "mean": 1.3961351616499205,
+              "p10": 0,
+              "p90": 2,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 1
+            },
+            "lower": {
+              "mean": 0.000755219059156067,
+              "p10": 0,
+              "p90": 0,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 1
+            }
+          }
+        },
+        {
+          "time": "night",
+          "on": false,
+          "room": "dining",
+          "file": "after-mobile-night-off-dining.webp",
+          "camera": [
+            0.020000000000000018,
+            1.5,
+            -2.45
+          ],
+          "angles": [
+            -2.183028881381311,
+            -0.12
+          ],
+          "fov": 105,
+          "exposure": 0.9504000000000001,
+          "lamp": "1",
+          "sunControl": "1.7",
+          "skyControl": "1.4",
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "static": {
+            "enabled": true,
+            "ready": true,
+            "layout": "a",
+            "time": "night",
+            "reason": "matched fixed state",
+            "atlasSize": 1024,
+            "states": 16,
+            "architectureMeshes": 73,
+            "furnitureMeshes": 136,
+            "matchedVertices": 564258,
+            "decodedImages": 42,
+            "decodeCacheBytes": 44384256,
+            "updates": 5,
+            "reflectionBakes": 15,
+            "error": null,
+            "composeMs": 84.89999999850988,
+            "irradianceBits": 16,
+            "atlasTextureSize": [
+              1024,
+              2048
+            ],
+            "engine": "Blender 5.3 / Cycles OptiX offline bake",
+            "samples": 2048,
+            "bounces": 4,
+            "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+            "runtimePathTracing": false
+          },
+          "quality": {
+            "quality": "auto",
+            "effective": "balanced",
+            "ao": false,
+            "probeRoom": "living",
+            "captures": 16,
+            "revision": 38,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": false,
+            "aoPolicy": "mobile-baked-shadows",
+            "depthTextureAttached": false,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              293,
+              633
+            ],
+            "samples": 12,
+            "probeResolution": 64,
+            "cachedRooms": [
+              "living",
+              "master",
+              "second",
+              "kitchen",
+              "bath",
+              "balcony"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "metrics": {
+            "whole": {
+              "mean": 1.090485816016826,
+              "p10": 0,
+              "p90": 1,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9822457163689391
+            },
+            "center": {
+              "mean": 1.4229361336535074,
+              "p10": 0,
+              "p90": 1,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.9728204198213719
+            },
+            "upper": {
+              "mean": 4.548002586399141,
+              "p10": 0,
+              "p90": 17.7324,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 0.893422519509476
+            },
+            "lower": {
+              "mean": 0,
+              "p10": 0,
+              "p90": 0,
+              "bright": 0,
+              "clipped": 0,
+              "dark": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "htmlSHA256": "57d2c1c23b69d086b9a0197ae72ded772138512cd4c821f85751df22c4616721",
+  "result": "passed"
+}

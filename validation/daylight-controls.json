@@ -1,0 +1,575 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Real WebGL1 independent natural-light controls, fixed exposure, camera height and retained solar geometry",
+  "cases": [
+    {
+      "mobile": false,
+      "states": [
+        {
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 117.21300817013189,
+            "altitude": 7.421703449521983,
+            "direction": [
+              0.947208732149661,
+              0.12917122904572356,
+              0.2934457553386126
+            ],
+            "time": "07:09",
+            "weights": [
+              1,
+              0,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "morning",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0.5,
+            "exposure": 1
+          },
+          "components": {
+            "source": true,
+            "sky": 3.0575999999999994,
+            "sun": 4.2126
+          }
+        },
+        {
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 180,
+            "altitude": 40.6690456234598,
+            "direction": [
+              0.13170980293402837,
+              0.651688722220666,
+              0.7469634108451865
+            ],
+            "time": "11:45",
+            "weights": [
+              0,
+              1,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "noon",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 0.92
+          },
+          "components": {
+            "source": true,
+            "sky": 5.359199999999999,
+            "sun": 4.24575
+          }
+        },
+        {
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 245.22579341638124,
+            "altitude": 3.9284921048688974,
+            "direction": [
+              -0.8194760188924046,
+              0.06851141171165812,
+              0.5690037266358903
+            ],
+            "time": "16:38",
+            "weights": [
+              0,
+              0,
+              1
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "dusk",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 1.04
+          },
+          "components": {
+            "source": true,
+            "sky": 1.9487999999999999,
+            "sun": 3.2725
+          }
+        },
+        {
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 277.00340879875,
+            "altitude": -51.141632831734846,
+            "direction": [
+              -0.6265395232080424,
+              -0.7786992398238725,
+              0.03279816696039767
+            ],
+            "time": "21:00",
+            "weights": [
+              0,
+              0,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "night",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 0.86
+          },
+          "components": {
+            "source": true,
+            "sky": 0.018,
+            "sun": 0
+          }
+        }
+      ],
+      "heights": [
+        {
+          "key": "Home",
+          "height": 1,
+          "camera": [
+            -0.3999999999999999,
+            1,
+            -2.25
+          ]
+        },
+        {
+          "key": "End",
+          "height": 1.8,
+          "camera": [
+            -0.3999999999999999,
+            1.8,
+            -2.25
+          ]
+        }
+      ],
+      "independentControls": {
+        "original": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 1.7,
+          "userSkyGain": 1.4,
+          "effectiveSun": 4.24575,
+          "effectiveSky": 5.359199999999999,
+          "directSun": 2.4975000000000005,
+          "hemisphere": 0.9569999999999999
+        },
+        "sun": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 2.2,
+          "userSkyGain": 1.4,
+          "effectiveSun": 5.494500000000001,
+          "effectiveSky": 5.359199999999999,
+          "directSun": 3.2320588235294125,
+          "hemisphere": 0.9569999999999999
+        },
+        "sky": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 2.2,
+          "userSkyGain": 2,
+          "effectiveSun": 5.494500000000001,
+          "effectiveSky": 7.655999999999999,
+          "directSun": 3.2320588235294125,
+          "hemisphere": 1.367142857142857
+        }
+      },
+      "fallbackGainsRetained": true,
+      "heightRetainedAcrossRoomsAndModes": true
+    },
+    {
+      "mobile": true,
+      "states": [
+        {
+          "natural": {
+            "time": "morning",
+            "applied": true,
+            "gains": {
+              "sun": 1.18,
+              "sky": 1.3
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.2126,
+            "effectiveSky": 3.0575999999999994,
+            "directSun": 2.4779999999999998,
+            "hemisphere": 0.546
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 117.21300817013189,
+            "altitude": 7.421703449521983,
+            "direction": [
+              0.947208732149661,
+              0.12917122904572356,
+              0.2934457553386126
+            ],
+            "time": "07:09",
+            "weights": [
+              1,
+              0,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "morning",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0.5,
+            "exposure": 1
+          },
+          "components": {
+            "source": true,
+            "sky": 3.0575999999999994,
+            "sun": 4.2126
+          }
+        },
+        {
+          "natural": {
+            "time": "noon",
+            "applied": true,
+            "gains": {
+              "sun": 1.35,
+              "sky": 1.65
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 4.24575,
+            "effectiveSky": 5.359199999999999,
+            "directSun": 2.4975000000000005,
+            "hemisphere": 0.9569999999999999
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 180,
+            "altitude": 40.6690456234598,
+            "direction": [
+              0.13170980293402837,
+              0.651688722220666,
+              0.7469634108451865
+            ],
+            "time": "11:45",
+            "weights": [
+              0,
+              1,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "noon",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 0.92
+          },
+          "components": {
+            "source": true,
+            "sky": 5.359199999999999,
+            "sun": 4.24575
+          }
+        },
+        {
+          "natural": {
+            "time": "dusk",
+            "applied": true,
+            "gains": {
+              "sun": 1.1,
+              "sky": 1.2
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 3.2725,
+            "effectiveSky": 1.9487999999999999,
+            "directSun": 1.9250000000000003,
+            "hemisphere": 0.348
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 245.22579341638124,
+            "altitude": 3.9284921048688974,
+            "direction": [
+              -0.8194760188924046,
+              0.06851141171165812,
+              0.5690037266358903
+            ],
+            "time": "16:38",
+            "weights": [
+              0,
+              0,
+              1
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "dusk",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 1.04
+          },
+          "components": {
+            "source": true,
+            "sky": 1.9487999999999999,
+            "sun": 3.2725
+          }
+        },
+        {
+          "natural": {
+            "time": "night",
+            "applied": true,
+            "gains": {
+              "sun": 1,
+              "sky": 1
+            },
+            "userSunGain": 1.7,
+            "userSkyGain": 1.4,
+            "effectiveSun": 0,
+            "effectiveSky": 0.018,
+            "directSun": 0,
+            "hemisphere": 0.1
+          },
+          "solar": {
+            "city": "杭州",
+            "date": "2026-11-18",
+            "balconyAzimuth": 190,
+            "azimuth": 277.00340879875,
+            "altitude": -51.141632831734846,
+            "direction": [
+              -0.6265395232080424,
+              -0.7786992398238725,
+              0.03279816696039767
+            ],
+            "time": "21:00",
+            "weights": [
+              0,
+              0,
+              0
+            ]
+          },
+          "lighting": {
+            "fixtureGain": 0.5,
+            "exposurePresets": {
+              "morning": 1,
+              "noon": 0.92,
+              "dusk": 1.04,
+              "night": 0.86
+            },
+            "exposurePolicy": "fixed per time; shared by lights on and off",
+            "time": "night",
+            "userLampMultiplier": 1,
+            "effectiveLampPower": 0,
+            "exposure": 0.86
+          },
+          "components": {
+            "source": true,
+            "sky": 0.018,
+            "sun": 0
+          }
+        }
+      ],
+      "heights": [
+        {
+          "key": "Home",
+          "height": 1,
+          "camera": [
+            -0.3999999999999999,
+            1,
+            -2.25
+          ]
+        },
+        {
+          "key": "End",
+          "height": 1.8,
+          "camera": [
+            -0.3999999999999999,
+            1.8,
+            -2.25
+          ]
+        }
+      ],
+      "independentControls": {
+        "original": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 1.7,
+          "userSkyGain": 1.4,
+          "effectiveSun": 4.24575,
+          "effectiveSky": 5.359199999999999,
+          "directSun": 2.4975000000000005,
+          "hemisphere": 0.9569999999999999
+        },
+        "sun": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 2.2,
+          "userSkyGain": 1.4,
+          "effectiveSun": 5.494500000000001,
+          "effectiveSky": 5.359199999999999,
+          "directSun": 3.2320588235294125,
+          "hemisphere": 0.9569999999999999
+        },
+        "sky": {
+          "time": "noon",
+          "applied": true,
+          "gains": {
+            "sun": 1.35,
+            "sky": 1.65
+          },
+          "userSunGain": 2.2,
+          "userSkyGain": 2,
+          "effectiveSun": 5.494500000000001,
+          "effectiveSky": 7.655999999999999,
+          "directSun": 3.2320588235294125,
+          "hemisphere": 1.367142857142857
+        }
+      },
+      "fallbackGainsRetained": true,
+      "heightRetainedAcrossRoomsAndModes": true
+    }
+  ],
+  "errors": [],
+  "solarAndBakeFilesRetained": true,
+  "result": "passed"
+}
