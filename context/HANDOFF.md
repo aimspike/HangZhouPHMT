@@ -458,3 +458,12 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 最终画布曾暴露新淋浴底盘仅四角采样、全被挡水边遮挡导致插值发黑；底盘改12×12闭合格网，两档保留169个顶面位置。重新全量烘焙后桌面/手机中心照明和实际昼夜画布复核，底盘恢复正常，未增加曝光/移除挡水边来掩盖。新Cycles124图，high154802/mobile113227独立采样；原建筑133mesh/roof130/219图及墙线/门洞保持。单HTML42,106,390字节，规范化SHA256 4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba。fixtureGain .5、室内exposureGain .8和所有个人保存设置保持。
 
 报告quality-report/bathroom-rebuild.html包含24组前后同机位（PC/手机×昼夜×整体/洗手台/马桶/淋浴/水槽/盆沿）48张真实WebP和2张并排图，仅编码/缩放排版。等待static enabled和probe ready再等3帧；前后相机/角度/FOV/亮度校正一致。验证入口capture-bathroom-rebuild.cjs；其数据含玻璃、实际盆腔、盆/出口中心、台面高度、169样本与中心照明。辅助结果bathroom-topology/assembly/overlap/static/render-quality/report/decor.json、rebuild-assets.json、surface-offline.json和static-bake-data.json。Chrome桌面/手机/缺扩展/Windows WebKit64固定状态与回退、13PBR/219图、屋顶0缺口、门与通道/保存/移动适配、单HTML离线及Pages装配回归。手机为模拟，整体真机验收和VIS-05枕头黑斑仍待完成；不推进release。
+
+
+## 2026-11-26 · 卫浴重做与厨房水槽齐平公开验证
+
+功能提交 `db310ade97490b4c81dde927ca49dac5fe14ff97` 已部署main。公开HTML SHA256 `f9b540870066846bf9fb7e77c2b9dcf90a7a15c0718dc5ab80f45bda0555b89d` 与本地Pages装配内容一致；原始构建为42,106,390字节、SHA256 `4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba`。
+
+公开PC/手机共24实际机位检查通过：盆沿/北台面/右台面高度差均0，盆/出口中心误差小于0.1mm，淋浴底盘169个顶面位置与实际中心照明、玻璃透明/深度设置和门净空正常；电视柜贴墙、次卧衣柜两墙接触及主卧床头柜east朝向保留。报告1280/390宽各24组切换、图片和链接正常，50张图片逐字节一致，HTML/JSON按Git LF规范一致，共52资源。证据`validation/bathroom-public.json`、`bathroom-report-public.json`、`bathroom-rebuild-public-assets.json`与`bathroom-deployment.json`。后续证据提交不改变已验证应用和图像。
+
+release仍`7b53b23568d18550822fbf98fb5f42e5cda60487`，正式HTML哈希仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9，feature历史预览保持。没有正式发布；手机为浏览器/微信UA模拟，未真机验收。单HTML约42MB的首次加载成本仍存在，VIS-05枕头黑斑不在本次修复范围。

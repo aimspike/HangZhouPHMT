@@ -1,0 +1,15 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/bathroom-rebuild.html",
+  "cases": [
+    {
+      "width": 1280,
+      "pairs": 24
+    },
+    {
+      "width": 390,
+      "pairs": 24
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

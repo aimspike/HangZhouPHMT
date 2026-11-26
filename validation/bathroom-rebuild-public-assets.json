@@ -1,0 +1,266 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/",
+  "files": [
+    {
+      "file": "bathroom-rebuild.html",
+      "sha256": "9860f748599a91f6f1a7c6977935c9fb449c2a222ae1cf7a6949a9082b6bdc9e",
+      "bytes": 8873
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-kitchenSink.webp",
+      "sha256": "2fe267e2ef1a8795ec3c0d23655be5277254daf46e1235be9d9b8719db70c4f1",
+      "bytes": 60570
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-overview.webp",
+      "sha256": "5d0b02f062ccdf12c584e103872eec56b5d363769e09f5f1f916e7d015ac0aee",
+      "bytes": 58156
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-shower.webp",
+      "sha256": "3d9467af61d67aed1995adbadd19b7d9a240db93210e60040c0ddcc6e015716a",
+      "bytes": 47364
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-sinkRim.webp",
+      "sha256": "7412f3597b325874490b5d8922146d7b8b5eddaeacf5d6cde8c0289d0337e8e2",
+      "bytes": 53072
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-toilet.webp",
+      "sha256": "3f098e27a31d41b932bc50899839f6ccc1d59247b37b0cd55220c6eccc8bacd8",
+      "bytes": 32802
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-night-vanity.webp",
+      "sha256": "bc1976e5d3df00a686211a473d88d8bb91dc48f3bfed20def8dc9ea3212ec3c8",
+      "bytes": 39154
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-kitchenSink.webp",
+      "sha256": "8c30c3c3611dbab5f70cdb58f01b8e726a4e358589269d1ff980259b8728c146",
+      "bytes": 71742
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-overview.webp",
+      "sha256": "1a3389eb8f56f3cae4854850bedc274cfe502009455070e2797954ed4d8ab6df",
+      "bytes": 58512
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-shower.webp",
+      "sha256": "c7da5e59b3573265dbef69c1874ab83c91680d0373b561e56037d454c65c46e8",
+      "bytes": 45484
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-sinkRim.webp",
+      "sha256": "3c4e0c1c54d86bb56f23122d66b756e50bcd880b501c56f42bdabc4904eb003e",
+      "bytes": 66952
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-toilet.webp",
+      "sha256": "5cf13376bbe5176e8dda4e8c7d9281c5a7fb4128e881c144f25e19074c0728df",
+      "bytes": 31936
+    },
+    {
+      "file": "bathroom-rebuild/after-mobile-noon-vanity.webp",
+      "sha256": "f10118cc31b724dc28dd489766cd346a0cd9d7f57a71933a2ff87e0e1140bbdd",
+      "bytes": 38758
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-kitchenSink.webp",
+      "sha256": "503938e9aaf861c939b83efff37aecaaf4953d7f4c02c6a1f92d0dd25cc5b8ef",
+      "bytes": 183258
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-overview.webp",
+      "sha256": "fefbeaef175f3938674d915906efb93663e4795f7f9be2227d493f301da19312",
+      "bytes": 133550
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-shower.webp",
+      "sha256": "7b3baffacc57b3b812b27eb0a75af270762bdffcd42363ba07e3a2d0eddbac90",
+      "bytes": 181626
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-sinkRim.webp",
+      "sha256": "dcf30ee02abc8baec8b86a4d5be5777d8a8a4e84c5bba47f8532ac8ae3e0d118",
+      "bytes": 172558
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-toilet.webp",
+      "sha256": "dc64c572366a0c0f867adf780b4c740ed84a525ad0eb1f81abde823da25d7d79",
+      "bytes": 133918
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-night-vanity.webp",
+      "sha256": "58c707ab0806502d188672d889bf268942ff3908083f75b4d29cb9907575f8ff",
+      "bytes": 80880
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-kitchenSink.webp",
+      "sha256": "e981b48f51b3b6507904e86038459c57d1708bce9560297e59ae2811fe5c92c8",
+      "bytes": 223684
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-overview.webp",
+      "sha256": "d604cc631594f5f3d463a451418053654e415ed50ad2afa03b56421cc2b655c4",
+      "bytes": 134902
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-shower.webp",
+      "sha256": "115bd2c99ae98191ea6973ca4104391802bc687bb027d5709b4028cb656a431d",
+      "bytes": 173150
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-sinkRim.webp",
+      "sha256": "a22c0b89de084ace537e5cac2d7a4214e88439488d81a673b804dee345ffad6f",
+      "bytes": 189946
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-toilet.webp",
+      "sha256": "0e3e9df7521e4abce9a90e49deab0d19c3cd6f500507301340ba486bb86534ff",
+      "bytes": 144190
+    },
+    {
+      "file": "bathroom-rebuild/after-pc-noon-vanity.webp",
+      "sha256": "556c4531d537e8be21afb5a2f110cd087044d2d7a7c2f026eb7448ac45560314",
+      "bytes": 82460
+    },
+    {
+      "file": "bathroom-rebuild/bathroom-comparison.jpg",
+      "sha256": "fd5426dc3e3cdc987d058c8a3503d1c6e566348fd8bd24f2df1a93d5c7beee82",
+      "bytes": 507208
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-kitchenSink.webp",
+      "sha256": "86b5e9bdaac6056a8e26d04d0a73cefd23401a4d7095b986d50e862c67be5831",
+      "bytes": 64316
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-overview.webp",
+      "sha256": "055b9d0f24e77cefe2e72c02d908fbf18654e24532d8f6dba46f88ea0b642329",
+      "bytes": 43970
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-shower.webp",
+      "sha256": "aff496ff7c66563b18ed80a3a3d6035a8f62d97fd76302c86e361b047bd21457",
+      "bytes": 29024
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-sinkRim.webp",
+      "sha256": "2f70d8b9eea15b0ba2f493d6e972942bf6d26f246f4a14b3ceae8a2d6914f63d",
+      "bytes": 58732
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-toilet.webp",
+      "sha256": "1c52e747349e6acf9ef81252a3e9ef357dadd4af88b46789ff6cca4cb41dde6c",
+      "bytes": 29458
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-night-vanity.webp",
+      "sha256": "440df59f843f1f9af0f5fb6ba3fa659892c3fb307c29dcbdb2933b4dc201e0e5",
+      "bytes": 29562
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-kitchenSink.webp",
+      "sha256": "64f5a5ff267f5367fcef096ba771bf605bcf71be0e3a00ccbfab7a9e48d3d3ff",
+      "bytes": 74640
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-overview.webp",
+      "sha256": "517e6a1ec8c632be786f0d2683691e9ec78d2e06d98a5d83ba2fff72ccf6bc84",
+      "bytes": 44464
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-shower.webp",
+      "sha256": "16fac431e3b539af35c1bd1e8ad1ab292c39f1b44baaee2062a028a69368e606",
+      "bytes": 28240
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-sinkRim.webp",
+      "sha256": "ef245b4d5c4b259d68d18432c46202d2c6d100d60713e33c338a262756836a5d",
+      "bytes": 72768
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-toilet.webp",
+      "sha256": "3f8f301f59a0c6dbcd840e895e72e3628e23fd69ed93b24bbd238cb74d6ebc98",
+      "bytes": 29754
+    },
+    {
+      "file": "bathroom-rebuild/before-mobile-noon-vanity.webp",
+      "sha256": "6c93a3d386cd5db241a550bc202b62a057d93a7c27fce1f6a51919ec71cd6bcc",
+      "bytes": 28066
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-kitchenSink.webp",
+      "sha256": "b63dfdf938941331c09f1b7410d7b29fbfb5d2e69f2bcb72f40304973cdd7641",
+      "bytes": 189302
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-overview.webp",
+      "sha256": "81249e20b1911d30fa5dfa2e4e88af5e5a69b356cdc4f8e2ecb6b1680fc3b9c9",
+      "bytes": 99988
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-shower.webp",
+      "sha256": "1132adc8f2c007c08757aeb8aa665cb25779516b9de2126d3639892bfe92bdac",
+      "bytes": 154974
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-sinkRim.webp",
+      "sha256": "7ece2fda082de5cd878011fe33a41da2d184d4d8a7d85558739f301c88676fe7",
+      "bytes": 194010
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-toilet.webp",
+      "sha256": "27a63832d9ff5a7e26e748183aea1ad4a996e56c6c9c3e190aab9bbbdf031691",
+      "bytes": 102272
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-night-vanity.webp",
+      "sha256": "ab6308a049e2eb9867195a35e4fedd4d5bb4039514c96abf8a461b8e528d5541",
+      "bytes": 70340
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-kitchenSink.webp",
+      "sha256": "d43401efc6a6b4ee53670440fe6f8f5ba49161f860e48373199312278079ab19",
+      "bytes": 227548
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-overview.webp",
+      "sha256": "9efd024a371979f26b4f5af26accc32897c03b46e160b00e77d1fbe7582e635b",
+      "bytes": 102894
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-shower.webp",
+      "sha256": "01f3e2b289674a6ac2bb1518167ea4846c5c52dffccdb631079f21a22d060c64",
+      "bytes": 145542
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-sinkRim.webp",
+      "sha256": "b9e9f6db9347e2f09fbdcb178874a47979d20ba7dc58cb762b19a7489ad8e8c4",
+      "bytes": 205736
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-toilet.webp",
+      "sha256": "9ed6ec0d51b94613815dc10a8ab12de3449450bcf1c95e1b34c00af83094fb0e",
+      "bytes": 115272
+    },
+    {
+      "file": "bathroom-rebuild/before-pc-noon-vanity.webp",
+      "sha256": "b8a6fe3d2524af50f169d2dcf52f3322ae31377897d89ff0d19678cfbadfb306",
+      "bytes": 70150
+    },
+    {
+      "file": "bathroom-rebuild/captures.json",
+      "sha256": "8c26c74b0987562788be270acb9a0df1f1373ea1afc0702195c411c0269e8c77",
+      "bytes": 216052
+    },
+    {
+      "file": "bathroom-rebuild/sink-comparison.jpg",
+      "sha256": "63b2c99c736e97ea66f151f0e81aed1adec49facf0ef83aec1a278812185a0fc",
+      "bytes": 452587
+    }
+  ],
+  "result": "passed"
+}

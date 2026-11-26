@@ -207,3 +207,12 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 ## 2026-11-26 · 家具贴墙与床头柜朝向
 
 `40d146239431050a44bd3f3d3dfbed2f6b9231ce` 已推送并部署main。公开HTML SHA256 `0b40090f7d73567514799310289fb0f1a0d196b18ce07b7681226306d89a301f` 与Pages装配后的本地内容一致。公开桌面/手机三处昼夜画布、次卧两面实际柜板射线、书房平开/推拉的实际家具避让与刷新保存检查通过，报告全部资源按二进制或LF规范与本地一致。证据为validation/furniture-placement-public.json、furniture-placement-public-assets.json和furniture-placement-deployment.json。release仍7b53b23，内容哈希5057ce9c…，未正式发布。
+
+
+## 2026-11-26 · 卫浴重做与厨房水槽齐平公开验证
+
+功能提交 `db310ade97490b4c81dde927ca49dac5fe14ff97` 已部署main。公开HTML SHA256 `f9b540870066846bf9fb7e77c2b9dcf90a7a15c0718dc5ab80f45bda0555b89d` 与本地Pages装配内容一致；原始构建为42,106,390字节、SHA256 `4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba`。
+
+公开PC/手机共24实际机位检查通过：盆沿/北台面/右台面高度差均0，盆/出口中心误差小于0.1mm，淋浴底盘169个顶面位置与实际中心照明、玻璃透明/深度设置和门净空正常；电视柜贴墙、次卧衣柜两墙接触及主卧床头柜east朝向保留。报告1280/390宽各24组切换、图片和链接正常，50张图片逐字节一致，HTML/JSON按Git LF规范一致，共52资源。证据`validation/bathroom-public.json`、`bathroom-report-public.json`、`bathroom-rebuild-public-assets.json`与`bathroom-deployment.json`。后续证据提交不改变已验证应用和图像。
+
+release仍`7b53b23568d18550822fbf98fb5f42e5cda60487`，正式HTML哈希仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9，feature历史预览保持。没有正式发布；手机为浏览器/微信UA模拟，未真机验收。单HTML约42MB的首次加载成本仍存在，VIS-05枕头黑斑不在本次修复范围。
