@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "date": "2026-11-26T08:26:19.239Z",
+  "preview": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+  "main": {
+    "branch": "main",
+    "commit": "87c823b2662db4c92fb1a88907945a2c97a9065c"
+  },
+  "previewHTMLSHA256": "17e328adf3044d722fb5a2233a5e4a36febb1e4e2abaca49f2679d2e466fd59b",
+  "release": {
+    "branch": "release",
+    "commit": "7b53b23568d18550822fbf98fb5f42e5cda60487"
+  },
+  "releaseHTMLSHA256": "5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9",
+  "releaseUnchanged": true,
+  "featurePreviewRetained": {
+    "branch": "feature/render-quality",
+    "commit": "7bdea267af2924d311cd44ffe87645a504e59f8c"
+  }
+}

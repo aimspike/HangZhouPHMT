@@ -40,6 +40,8 @@
 
 2026-11-26进展：完成白天日光/天光增强、四时段固定曝光与关灯旧反射缓存瞬态修复；新增实际网页光照/曝光对比，镜头高度扩为1.0–1.8米。自动化覆盖桌面、手机/微信UA模拟、缺扩展与Windows WebKit，真机验收仍待完成。太阳方向/时刻/烘焙按用户复核保持，T06继续暂停。专项证据见`validation/daylight-*.json`和`lighting-transitions.json`，效果入口为main的`quality-report/daylight-strength.html`。
 
+该轮main功能提交`5f3c374`，报告hash修正`87c823b`；公网控件/曝光/高度、1152帧瞬态与184个报告资源均通过，见`validation/daylight-controls-public.json`、`lighting-transitions-public.json`和`daylight-report-public.json`。正式release不推进，T01整体仍待目视和真机验收。
+
 **验收标准**：按确认后的视觉参考逐场景验收；昼夜切换无明显条纹、漏光、异常反射或材质失真；记录设备、首屏耗时、帧率和 HTML 体积，并按确定后的预算检查。截图来自实际页面，模拟检查与真机结果分别记录。沿用现有实时渲染基础，路径追踪继续保持移除状态。
 
 <a id="t02"></a>

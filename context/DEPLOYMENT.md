@@ -1,5 +1,15 @@
 # 发布信息
 
+## 白天天光、四时段曝光和漫游高度 main 验证（2026-11-26）
+
+功能提交[`5f3c374`](https://github.com/aimspike/HangZhouPHMT/commit/5f3c374)和报告hash修正[`87c823b`](https://github.com/aimspike/HangZhouPHMT/commit/87c823b)已部署至[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。仅室内增强自然光：清晨日光/天光1.18/1.30、正午1.35/1.65、黄昏1.10/1.20；四时段固定曝光分别1.00/0.92/1.04/0.86，灯具能量基准50%。太阳方向/参考时刻/光斑位置按用户复核保持。镜头高度可调1.0–1.8米，默认1.5米；保存与账号同步继续暂停。
+
+公开HTML规范化SHA256 `17e328adf3044d722fb5a2233a5e4a36febb1e4e2abaca49f2679d2e466fd59b`，与Pages装配后的本地应用一致。公开PC/手机光源独立控制、四时段固定曝光、旧烘焙回退及镜头高度端点/房间和模式保持通过；Chrome桌面、手机模拟、缺HDR/depth扩展与Windows WebKit的1152帧关灯/转向/跨房间检查无旧状态反射、灯能量或曝光跳变。证据`validation/daylight-controls-public.json`、`lighting-transitions-public.json`与`daylight-deployment.json`。
+
+[实际网页对比报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/daylight-strength.html)184个资源逐字节匹配；1280/390宽各80种前后组合、24种曝光对比和内部链接通过，无横向溢出，证据`validation/daylight-report-public.json`。报告含本轮前后、单独曝光校准及关灯逐帧曲线，图片没有后期调亮。手机/微信UA与Windows WebKit均为模拟。
+
+release仍`7b53b23568d18550822fbf98fb5f42e5cda60487`，正式HTML SHA256 `5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`；feature历史预览保持。本次只推main，后续证据提交不改变已验应用、烘焙和画面。
+
 ## 室内灯光与曝光对比 main 验证（2026-11-26）
 
 对比报告提交[`c3415f5`](https://github.com/aimspike/HangZhouPHMT/commit/c3415f50d757846cb59db4957a410135551c4ec1)已部署。[亮度对比页](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)的70张实际WebGL原图与4张并排总览全部逐字节匹配本地；1280/390宽各56组比较、滑块、5档原图、总览/证据链接与无横向溢出检查通过。见brightness-public-assets.json、brightness-report-public.json。

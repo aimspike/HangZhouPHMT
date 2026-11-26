@@ -18,6 +18,8 @@
 
 最终构建42,105,946字节，规范化HTML SHA256 `d4a81450946f8a3bee7aa8649a673ce9ea4c202c68f749f56f1181817261cb86`，与最终截图及验证一致。64种固定照明状态、四档画质/HDR/depth回退、旧设置只读恢复和无云请求、单HTML离线、8项Pages装配通过。报告184个资源hash及1280/390宽两套界面，各80种主对比和24种曝光对比通过，无横向溢出。证据`daylight-static-lighting.json`、`daylight-render-quality.json`、`daylight-storage-suspended.json`、`daylight-report.json`与`surface-offline.json`。
 
+功能提交`5f3c374`及报告换行hash修正`87c823b`已部署main；公开HTML规范化SHA256 `17e328adf3044d722fb5a2233a5e4a36febb1e4e2abaca49f2679d2e466fd59b`与Pages标题/设置键转换后的本地内容一致。公开PC/手机独立光源控制、四时段开关灯固定曝光、1.0/1.8米键盘端点和换房间/模式高度保持通过，公网1152帧关灯/转向/跨房间检查也全部通过。报告184个资源逐字节匹配，1280/390宽各80个主对比与24个曝光对比及链接通过。证据`daylight-controls-public.json`、`lighting-transitions-public.json`、`daylight-report-public.json`、`daylight-deployment.json`。正式release仍`7b53b23`、HTML hash `5057ce9c…`，历史feature保留；后续证据提交不改已验应用与画面。
+
 ## 修复后独立复审（2026-11-26，第二轮）
 
 用户表示除VIS-04外均已修复，要求再次审计。本轮同步后检查 `1ac446d`：VIS-02墙顶云团暗块、VIS-03陶瓷三角折痕/放射纹在原机位复核通过；VIS-01默认100%灯强的过亮仍可复现，记录显示此前只提供降低灯强/曝光对比，尚未选择/修改默认。手机卫生间夜晚接近白像素49.2%（原49.6%），厨房正午三通道≥250像素10.7%（原10.8%），统计仅为同图像区域比较，不是照度。VIS-04保留为已知未修复。
