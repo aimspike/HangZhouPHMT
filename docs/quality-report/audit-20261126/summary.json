@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-26",
+  "reviewedCommit": "10fd147f4bfef92d42fead7d5f3cf5cf7cb517a2",
+  "htmlSHA256": "c869c9a85ec3f0b6c5513eda81d2cf7dd5c89067e519e642de9f0ed06792d7d8",
+  "result": "issues-found-release-held",
+  "userDecision": "Record only. No application changes, no reshoot, no release promotion.",
+  "issues": [
+    {
+      "id": "VIS-01",
+      "priority": "P1",
+      "title": "室内开灯过亮，浅色材质层次被压缩",
+      "status": "已复现；用户也已反馈",
+      "reproduce": "家装 A → 室内 → 夜晚或正午 → 顶灯开启，亮度保持默认 100%；查看卫生间、厨房和主卧。",
+      "observed": "卫生间墙砖、台盆与马桶趋于同一浅白色，砖缝和陶瓷轮廓变淡；厨房吊柜、台面和地面出现大片高亮。桌面、手机 Chrome 和 Windows WebKit 均可复现。",
+      "evidence": "固定中央区域（横向15–85%、纵向10–80%）中，手机卫生间夜晚开灯 RGB 三通道均≥235 的像素占49.6%，亮度中位数约242/255；厨房正午开灯约10.8%的像素三通道均≥250。该统计包含浅色材料和灯具，不是照度测量或独立的曝光合格标准。",
+      "hypothesis": "需共同核对烘焙灯能量、运行时灯强/间接光缩放、曝光与色调映射。仅凭当前截图不能断言是重复加光。",
+      "images": [
+        [
+          "mobile-bright-bath-night-default.webp",
+          "手机尺寸 · 卫生间夜晚 · 默认灯强"
+        ],
+        [
+          "webkit-bright-kitchen-noon-default.webp",
+          "Windows WebKit 手机尺寸 · 厨房正午开灯"
+        ],
+        [
+          "desktop-bright-master-night-default.webp",
+          "主卧夜晚 · 默认灯强100%"
+        ],
+        [
+          "desktop-bright-master-night-power-0.5.webp",
+          "同机位诊断对比 · 临时灯强50%，未修改默认值"
+        ]
+      ]
+    },
+    {
+      "id": "VIS-02",
+      "priority": "P2",
+      "title": "白天关灯时，墙面与天花板出现斑驳暗块",
+      "status": "桌面和手机均已复现",
+      "reproduce": "家装 A → 室内 → 正午 → 关闭顶灯；查看客餐厅、主次卧与卫生间。",
+      "observed": "墙顶出现云团状明暗与脏污感，部分房间边角有明显黑边；床面和沙发也有尺度偏大的暗块。光照诊断为 matched fixed state，表明截图已等待静态照明完成，不是未加载贴图的占位画面。",
+      "evidence": "与开灯状态相比，暗块在自然光下更突出。可见图案不足以单独区分材质纹理、烘焙噪声、图集采样或间接光因素。",
+      "hypothesis": "后续需分离检查静态灯图、表面PBR、AO和纹理采样；本轮只记录现象。",
+      "images": [
+        [
+          "desktop-living-noon.webp",
+          "客厅 · 正午关灯 · 墙顶暗块"
+        ],
+        [
+          "mobile-dining-noon.webp",
+          "手机尺寸 · 餐厅正午关灯"
+        ],
+        [
+          "desktop-master-noon.webp",
+          "主卧 · 正午关灯 · 墙顶和床面"
+        ],
+        [
+          "desktop-bath-noon.webp",
+          "卫生间 · 正午关灯 · 墙面及陶瓷阴影"
+        ]
+      ]
+    },
+    {
+      "id": "VIS-03",
+      "priority": "P2",
+      "title": "陶瓷与硬质模型近景有不自然的折面和放射状阴影",
+      "status": "已复现；网格闭合测试仍通过",
+      "reproduce": "家装 A → 阳台洗漱柜与卫生间 → 正午关灯 → 近距离查看台盆、马桶圈。",
+      "observed": "阳台一体台盆的盆沿和四角呈明显三角收缩折痕；卫生间盆体与马桶圈出现放射状皱褶/明暗条纹。硬质陶瓷看起来像软质折叠材料。",
+      "evidence": "high/mobile两档660份实体部件的开放边、非流形边、退化面、绕序和反向法线计数均为0；这些检查不证明高光法线或曲面造型正确。",
+      "hypothesis": "模型生成的 finish() 对所有面启用平滑法线，且部分盆体缺少针对硬面/曲面的法线分离；这是排查方向，尚未通过消融实验确认根因。",
+      "images": [
+        [
+          "desktop-basin-noon.webp",
+          "阳台陶瓷台盆 · 默认实际画布"
+        ],
+        [
+          "mobile-basin-noon.webp",
+          "同一问题 · 手机 LOD"
+        ],
+        [
+          "desktop-bath-noon.webp",
+          "卫生间盆体与马桶圈"
+        ],
+        [
+          "desktop-coffee-noon.webp",
+          "附加近检：桌沿/底座及布艺明暗，待后续材质精修"
+        ]
+      ]
+    },
+    {
+      "id": "VIS-04",
+      "priority": "P2",
+      "title": "改动一扇门会让其他房间整体切换光照外观",
+      "status": "已复现；属于现有回退策略的视觉不连续",
+      "reproduce": "家装 A → 主卧 → 夜晚开灯100%，记录画面；在设置中切换书房门开关，再看主卧。",
+      "observed": "主卧墙面、窗帘、床品和反射整体变暗/变平。静态照明从 matched fixed state 切为 door configuration changed，恢复旧光照。",
+      "evidence": "同机位中央区域平均亮度：桌面189.8→143.1/255，手机196.8→141.2/255。改变书房门也影响主卧；这是稳态前后比较，不是只持续一帧的闪烁。",
+      "hypothesis": "现有策略为避免使用过期门遮挡而全局禁用静态照明；属于可解释的实现限制，但用户体验上存在明显跳变。后续需评估局部回退或两条路径的视觉匹配。",
+      "images": [
+        [
+          "desktop-bright-master-night-default.webp",
+          "主卧 · 默认门状态 · 静态照明"
+        ],
+        [
+          "desktop-master-night-door-fallback.webp",
+          "同机位 · 仅切换书房门后 · 旧照明回退"
+        ],
+        [
+          "mobile-bright-master-night-default.webp",
+          "手机尺寸 · 切换前"
+        ],
+        [
+          "mobile-master-night-door-fallback.webp",
+          "手机尺寸 · 切换后"
+        ]
+      ]
+    }
+  ],
+  "coverage": {
+    "newRoomAndDetailCaptures": 74,
+    "lightingMatrixEnvironments": 4,
+    "statesPerEnvironment": 16,
+    "matrixResult": "passed",
+    "geometryMatches": true,
+    "roofGaps": [
+      0,
+      0
+    ],
+    "doorGaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "furnitureCollisions": 0,
+    "topology": {
+      "parts": 660,
+      "triangles": 250304,
+      "boundaryEdges": 0,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0,
+      "degenerateTriangles": 0,
+      "invertedNormals": 0
+    },
+    "pageErrors": []
+  },
+  "limits": [
+    "Mobile viewport and WeChat UA are simulations, not physical phone verification.",
+    "Pixel values compare rendered images, not measured room illuminance.",
+    "Observed defects are confirmed; proposed causes are investigative leads.",
+    "This is a main preview inspection report, not a new product release."
+  ]
+}
