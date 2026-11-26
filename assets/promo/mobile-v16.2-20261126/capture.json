@@ -1,0 +1,870 @@
+{
+  "version": "16.2",
+  "revision": 6,
+  "sourceCommit": "d1c85ee9726b7dbdafe5d523036553ac90561e6b",
+  "scope": "Actual Chromium mobile viewport recording without screenshots during recording; no physical phone test",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "recordingSize": {
+    "width": 390,
+    "height": 844
+  },
+  "screenshotsDuringRecording": 0,
+  "errors": [],
+  "clips": [
+    {
+      "id": "01-overview",
+      "title": "三维总览",
+      "start": 0,
+      "duration": 8,
+      "text": "打开网页，把户型放大、转一转。家里的空间关系，就更清楚了。",
+      "sourceStart": 4.06,
+      "sourceDuration": 8.611,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.002,
+          "mode": "orbit",
+          "camera": [
+            10.77141029291783,
+            20.178538035138352,
+            20.714250563303526
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "rotated",
+          "at": 5.407,
+          "mode": "orbit",
+          "camera": [
+            6.1995635252017856,
+            23.045113430246015,
+            19.63750462284888
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 8.611,
+          "mode": "orbit",
+          "camera": [
+            6.077522411521763,
+            23.121355948976646,
+            19.587911876084025
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02-plan",
+      "title": "平面户型",
+      "start": 8,
+      "duration": 6,
+      "text": "切到平面图，房间布局和门窗位置，一眼就明白。",
+      "sourceStart": 2.996,
+      "sourceDuration": 6.612,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.02,
+          "mode": "plan",
+          "camera": [
+            0,
+            24.999999999987498,
+            2.500111123257938e-05
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "layout",
+          "at": 3.012,
+          "mode": "plan",
+          "camera": [
+            0,
+            24.999999999987498,
+            2.500111123257938e-05
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 6.612,
+          "mode": "plan",
+          "camera": [
+            0,
+            24.999999999987498,
+            2.500111123257938e-05
+          ],
+          "look": [
+            0,
+            -0.08
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": null,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03-walk",
+      "title": "家装室内漫游",
+      "start": 14,
+      "duration": 8,
+      "text": "走进家装方案，转头看看，再往前走。看看客厅里的家具和通道。",
+      "sourceStart": 11.507,
+      "sourceDuration": 8.607000000000001,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.002,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "living",
+          "at": 5.012,
+          "mode": "walk",
+          "camera": [
+            -0.5263787560633091,
+            1.5,
+            -1.6804016217404674
+          ],
+          "look": [
+            2.9232560937318404,
+            -0.13999999999999985
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "steady",
+          "at": 6.008,
+          "mode": "walk",
+          "camera": [
+            -0.5263787560633091,
+            1.5,
+            -1.6804016217404674
+          ],
+          "look": [
+            2.9232560937318404,
+            -0.13999999999999985
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 8.607,
+          "mode": "walk",
+          "camera": [
+            -0.5263787560633091,
+            1.5,
+            -1.6804016217404674
+          ],
+          "look": [
+            2.9232560937318404,
+            -0.13999999999999985
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04-bare",
+      "title": "毛坯室内漫游",
+      "start": 22,
+      "duration": 11,
+      "text": "也可以换成没有家具的毛坯。慢慢转个身，再往前走，感受房间的大小和走动的路线。",
+      "sourceStart": 3.986,
+      "sourceDuration": 11.610999999999999,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.003,
+          "mode": "walk",
+          "camera": [
+            1.9,
+            1.5,
+            -1.75
+          ],
+          "look": [
+            1.7278759594743864,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "walk",
+          "at": 9.469,
+          "mode": "walk",
+          "camera": [
+            0.026304208294152254,
+            1.5,
+            -1.2746964554548925
+          ],
+          "look": [
+            1.5478759594743878,
+            -0.04400000000000006
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 11.611,
+          "mode": "walk",
+          "camera": [
+            0.026304208294152254,
+            1.5,
+            -1.2746964554548925
+          ],
+          "look": [
+            1.5478759594743878,
+            -0.04400000000000006
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05-daylight",
+      "title": "昼夜采光",
+      "start": 33,
+      "duration": 9,
+      "text": "把室内灯关掉，来到同一个阳台。从清晨到夜晚，看看窗外的天空和楼景。",
+      "sourceStart": 3.494,
+      "sourceDuration": 9.603,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.002,
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "morning",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "noon",
+          "at": 3.307,
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "night",
+          "at": 8.007,
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "night",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 9.603,
+          "mode": "walk",
+          "camera": [
+            1.6,
+            1.5,
+            5.5
+          ],
+          "look": [
+            3.141592653589793,
+            -0.04
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "night",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06-decor",
+      "title": "装修对比",
+      "start": 42,
+      "duration": 7,
+      "text": "毛坯和家装方案，点一下就能切换。对比一下，找找喜欢的感觉。",
+      "sourceStart": 7.034,
+      "sourceDuration": 7.617999999999999,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.002,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "bare",
+          "furniture": 0,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "furnished",
+          "at": 4.195,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 7.618,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07-settings",
+      "title": "随心设置",
+      "start": 49,
+      "duration": 11,
+      "text": "地板材质、房门开关、所在楼层，都可以自己调。这次调整，本次浏览有效。打开网页，一起看房吧。",
+      "sourceStart": 6.871,
+      "sourceDuration": 11.607999999999999,
+      "samples": [
+        {
+          "label": "start",
+          "at": 0.001,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "material",
+          "at": 2.715,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "doors",
+          "at": 5.504,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "floor",
+          "at": 8.109,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        },
+        {
+          "label": "end",
+          "at": 11.608,
+          "mode": "walk",
+          "camera": [
+            -0.3999999999999999,
+            1.5,
+            -2.25
+          ],
+          "look": [
+            2.7032560937318353,
+            -0.12
+          ],
+          "baked": [
+            219,
+            219
+          ],
+          "preset": "a",
+          "furniture": 40,
+          "time": "noon",
+          "lights": false,
+          "clear": true,
+          "viewport": [
+            390,
+            844
+          ],
+          "canvas": [
+            780,
+            1688
+          ]
+        }
+      ]
+    }
+  ]
+}

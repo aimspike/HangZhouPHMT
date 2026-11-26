@@ -43,7 +43,7 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 | [context/DEPLOYMENT.md](context/DEPLOYMENT.md#分支与发布流程) | main / release 发布流程与部署记录 |
 | [context/DEVELOPMENT.md](context/DEVELOPMENT.md) | 开发细节与版本记录 |
 
-GitHub 优先展示所浏览分支的 `.github/README.md`；仓库根首页采用默认分支，当前为 `release`。`main` 中新版看房引导按用户选择保留待发布，正式发布时再同步到根首页。本文件保留在根目录，供项目维护使用。开始任务前先阅读 `AGENTS.md`、`context/HANDOFF.md`、`context/REQUIREMENTS.md` 和本文件。历史记录中的旧目录、默认值及发布规则以当前指引为准。
+GitHub 优先展示所浏览分支的 `.github/README.md`；仓库根首页采用默认分支，当前为 `release`。`main` 中新版看房引导按用户选择保留待发布，本轮用户已要求正式发布，随release同步到根首页。本文件保留在根目录，供项目维护使用。开始任务前先阅读 `AGENTS.md`、`context/HANDOFF.md`、`context/REQUIREMENTS.md` 和本文件。历史记录中的旧目录、默认值及发布规则以当前指引为准。
 
 ## 工程结构
 
@@ -116,7 +116,7 @@ V16 的重建资产与可编辑 Blender 主文件在 [assets/rebuild/](assets/re
 ### 图文与视频素材
 
 - 用户原图保留原始内容、分类与来源；装修参考在 [references/interior/preset-a/](references/interior/preset-a/README.md)，实际网页场景图在 [assets/interior/preset-a/](assets/interior/preset-a/README.md)。
-- 宣传成品、规格和验证放在 [assets/promo/mobile-v14.2/](assets/promo/mobile-v14.2/README.md)，网页下载副本在 [docs/promo/](docs/promo/)。最新成品为 60 秒中文配音视频与近景六宫格，旧版保留。
+- 宣传成品、规格和验证放在 [assets/promo/mobile-v16.2-20261126/](assets/promo/mobile-v16.2-20261126/README.md)，网页下载副本在 [docs/promo/](docs/promo/)。最新成品为 60 秒中文配音视频与近景六宫格，旧版保留。
 - 截图和视频须来自实际页面；说明采集视口、浏览器与后期排版范围。手机视口录制或微信 UA 模拟不能称为物理手机录屏、真机微信验证或照片级效果。
 - 原始录屏、排版与音频中间文件写入 `work/`；`.local/` 不提交、不发布。首页链接须适配 `.github/README.md` 所在目录，新素材尚在 main 时使用明确的预览链接。
 
@@ -167,3 +167,7 @@ python src/build_house.py
 [小区公开资料与来源](references/phmt/README.md) · [图纸复核记录](context/PLAN_AUDIT.md) · [光照方案评估](context/LIGHTING_OPTIONS.md) · [第三方授权](licenses/THIRD_PARTY.md)
 
 照片复原与程序化环境用于浏览、讨论及方案示意；尺寸和结构性质以正式图纸为准。自动化浏览器、WebKit 和微信 UA 检查与真实手机检查分开记录，未经实机验证不得补记真机通过。
+
+## v1.1 展示素材重录与正式发布（2026-11-26）
+
+用户明确要求重录视频、重拍六宫格并发布到release。应用保持V16.2，新片60秒/1080×1920/30fps，六宫格1800×2400，配音末章已纠正为本次浏览生效。[正式视频与图片](https://aimspike.github.io/HangZhouPHMT/promo/) · [素材与验证](assets/promo/mobile-v16.2-20261126/README.md) · [发布说明](context/RELEASE_V1_1.md)。VIS-04/05作为已知问题保留，本轮不自动修复。

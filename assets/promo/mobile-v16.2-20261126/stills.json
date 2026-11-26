@@ -1,0 +1,320 @@
+{
+  "sourceCommit": "d1c85ee",
+  "appSHA256": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+  "scope": "Actual Chrome WebGL1 mobile/WeChat UA simulation, separate capture session from video",
+  "shots": [
+    {
+      "file": "01-overview.png",
+      "mode": "orbit",
+      "preset": "a",
+      "time": "noon",
+      "lights": false,
+      "camera": [
+        10.77141029291783,
+        20.178538035138352,
+        20.714250563303526
+      ],
+      "angles": [
+        0,
+        -0.08
+      ],
+      "fov": 43,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "02-plan.png",
+      "mode": "plan",
+      "preset": "a",
+      "time": "noon",
+      "lights": false,
+      "camera": [
+        0,
+        24.999999999987498,
+        0.00002500111123257938
+      ],
+      "angles": [
+        0,
+        -0.08
+      ],
+      "fov": 43,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "03-walk.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "04-bare.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "noon",
+      "lights": false,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "window-noon.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "noon",
+      "lights": false,
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ],
+      "fov": 85,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "window-night.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "night",
+      "lights": false,
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ],
+      "fov": 85,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "05-bare.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "05-a.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "06-settings.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "room-master.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "room-kitchen.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "room-balcony.png",
+      "mode": "walk",
+      "preset": "a",
+      "time": "night",
+      "lights": true,
+      "camera": [
+        1.3000000000000003,
+        1.5,
+        5.449999999999999
+      ],
+      "angles": [
+        -1.797595174848783,
+        -0.12
+      ],
+      "fov": 105,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    }
+  ],
+  "errors": []
+}

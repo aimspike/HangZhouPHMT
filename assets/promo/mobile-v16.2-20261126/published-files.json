@@ -1,0 +1,30 @@
+{
+  "mobile-feature-tour-60s-v6.mp4": {
+    "bytes": 10739754,
+    "sha256": "7a16c1eeb11eb07f3e7b9c98719f22eb47edcc5ad7600fbe0c0a2c07edec426a"
+  },
+  "mobile-feature-tour-60s-v6.srt": {
+    "bytes": 1134,
+    "sha256": "a33c089117287ce6c638a2c5f70c2b1fab499b4aa7cec43cc88bf6a9ddca72db"
+  },
+  "mobile-video-cover-60s-v6.jpg": {
+    "bytes": 82041,
+    "sha256": "6cb924f2d513899d7457123f97bec6b7d45bc4facfc08c391433091d002c50aa"
+  },
+  "app-features-six-grid-v4.png": {
+    "bytes": 855437,
+    "sha256": "c7c9e91b803d3e91312a84d8580e6209d31ce26bd61140911fcf6b6b07910ad9"
+  },
+  "media-info-60s-v6.json": {
+    "bytes": 25990,
+    "sha256": "bc3f5d9f2e123c3b79fdb2b2595e940a0ff1bae90949dd8e2bf73beab9ed4110"
+  },
+  "index.html": {
+    "bytes": 2812,
+    "sha256": "b334f21ec5332bc68a0f6c52284f08c28557950927a296e01c5329df5a8ff3e8"
+  },
+  "mobile-feature-tour-60s-v6.vtt": {
+    "bytes": 1139,
+    "sha256": "589fa1d69e439fe3ebfca7752d9d4169ee299e96c9b9dd12cc221edba19002a7"
+  }
+}

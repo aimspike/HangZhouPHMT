@@ -1,0 +1,60 @@
+{
+  "sourceCommit": "d1c85ee",
+  "appSHA256": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+  "scope": "Actual Chrome WebGL1 mobile/WeChat UA simulation, separate capture session from video",
+  "shots": [
+    {
+      "file": "window-noon.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "noon",
+      "lights": false,
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "angles": [
+        3.141592653589793,
+        -0.04
+      ],
+      "fov": 85,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    },
+    {
+      "file": "window-night.png",
+      "mode": "walk",
+      "preset": "bare",
+      "time": "night",
+      "lights": false,
+      "camera": [
+        1.6,
+        1.5,
+        5.5
+      ],
+      "angles": [
+        3.141592653589793,
+        -0.04
+      ],
+      "fov": 85,
+      "quality": "balanced",
+      "viewport": [
+        390,
+        844
+      ],
+      "maps": [
+        219,
+        219
+      ]
+    }
+  ],
+  "errors": []
+}

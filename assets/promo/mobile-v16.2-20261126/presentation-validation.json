@@ -1,0 +1,67 @@
+{
+  "url": "http://127.0.0.1:8891/docs/promo/",
+  "resources": [
+    "mobile-feature-tour-60s-v6.mp4",
+    "mobile-feature-tour-60s-v6.srt",
+    "mobile-video-cover-60s-v6.jpg",
+    "app-features-six-grid-v4.png",
+    "media-info-60s-v6.json",
+    "index.html",
+    "mobile-feature-tour-60s-v6.vtt"
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "videoDuration": 60,
+      "images": 1,
+      "links": [
+        "http://127.0.0.1:8891/docs/?decor=a",
+        "http://127.0.0.1:8891/docs/",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.mp4",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.srt",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/?decor=a"
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "videoDuration": 60,
+      "images": 1,
+      "links": [
+        "http://127.0.0.1:8891/docs/?decor=a",
+        "http://127.0.0.1:8891/docs/",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.mp4",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.srt",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/?decor=a"
+      ]
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "videoDuration": 60,
+      "images": 1,
+      "links": [
+        "http://127.0.0.1:8891/docs/?decor=a",
+        "http://127.0.0.1:8891/docs/",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.mp4",
+        "http://127.0.0.1:8891/docs/promo/mobile-feature-tour-60s-v6.srt",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/promo/app-features-six-grid-v4.png",
+        "http://127.0.0.1:8891/docs/quality-report/audit3-20261126/",
+        "http://127.0.0.1:8891/docs/?decor=a"
+      ]
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

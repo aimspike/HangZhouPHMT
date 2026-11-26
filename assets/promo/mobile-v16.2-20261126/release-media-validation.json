@@ -1,0 +1,48 @@
+{
+  "url": "http://127.0.0.1:8891/assets/promo/mobile-v16.2-20261126/",
+  "cases": [
+    {
+      "width": 1280,
+      "duration": 60,
+      "size": [
+        1080,
+        1920
+      ],
+      "playing": true,
+      "advanced": true,
+      "audioDecodedBytes": 27304,
+      "seeks": 20,
+      "error": null
+    },
+    {
+      "width": 390,
+      "duration": 60,
+      "size": [
+        1080,
+        1920
+      ],
+      "playing": true,
+      "advanced": true,
+      "audioDecodedBytes": 27304,
+      "seeks": 20,
+      "error": null
+    }
+  ],
+  "errors": [],
+  "poster": [
+    1800,
+    2400
+  ],
+  "audit": {
+    "video": "mobile-feature-tour-60s-v6.mp4",
+    "frames": 1800,
+    "method": "Mean absolute pixel difference from a 15-frame temporal median of fixed upper phone UI; threshold 5/255 flags transient UI-scale flashes for review",
+    "threshold": 5,
+    "events": [],
+    "maxScore": 3.191,
+    "wholePhoneThreshold": 8,
+    "wholePhoneMaxScore": 4.254,
+    "wholePhoneTransientCandidates": []
+  },
+  "result": "passed"
+}

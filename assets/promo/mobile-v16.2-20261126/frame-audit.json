@@ -1,0 +1,11 @@
+{
+  "video": "mobile-feature-tour-60s-v6.mp4",
+  "frames": 1800,
+  "method": "Mean absolute pixel difference from a 15-frame temporal median of fixed upper phone UI; threshold 5/255 flags transient UI-scale flashes for review",
+  "threshold": 5,
+  "events": [],
+  "maxScore": 3.191,
+  "wholePhoneThreshold": 8,
+  "wholePhoneMaxScore": 4.254,
+  "wholePhoneTransientCandidates": []
+}
