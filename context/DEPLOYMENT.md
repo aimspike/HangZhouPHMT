@@ -1,5 +1,15 @@
 # 发布信息
 
+## 主界面灯开关与时段默认灯状态 main 验证（2026-11-26）
+
+提交[`84a30f4`](https://github.com/aimspike/HangZhouPHMT/commit/84a30f47f6ade2322c705d6a47b3dd8b2c22b33e)已部署[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。室内灯开关由设置移至室内主画面右侧，显示已开/已关；设置保留亮度。选择清晨、正午、黄昏时默认关灯，选择夜晚时强制开灯；之后仍可手动开关，换房间/模式保留本次选择。既有明确灯状态只读恢复，后续选择时段按新规则；保存与账号同步继续暂停。
+
+公开应用规范化SHA256 `9a15da7d5b1f4c090d5a1dacf928f9543af99fec34d6a6f465a48f60449e938e`与本地Pages装配一致。公开PC、390/320竖屏、740×360横屏、Windows WebKit与缺HDR/depth扩展均通过实际控件、四时段默认、手动覆盖/再次选择重置、键盘、跨房间/模式保持、无遮挡/无溢出检查；旧清晨开灯/夜晚关灯记录只读恢复，后续选择夜晚强制开灯，无外部请求或脚本/Shader错误。219图、建筑快照与屋顶保持。
+
+证据`validation/main-light-control-public.json`、`main-light-deployment.json`；本地64种固定照明、画质兼容、曝光、实际鼠标松手、保存暂停和离线回归见`main-light-*.json`与`surface-offline.json`。手机和微信UA为模拟。未改变光源能量、四时段曝光、太阳方向/时刻或烘焙，未重烘焙。
+
+正式release保持`7b53b23568d18550822fbf98fb5f42e5cda60487`，HTML SHA256仍`5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`，历史feature保留。后续证据提交不改应用。
+
 ## 电脑鼠标松开闪光 main 修复（2026-11-26）
 
 提交[`10e1b1d`](https://github.com/aimspike/HangZhouPHMT/commit/10e1b1d99e1fbfde0a1a9923433cf2b66295efb2)已部署至[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。将全局click事件的时段匹配限定为真正按钮，避免canvas拖动结束的click匹配body[data-time]，使静态光照回退、反射重载。四时段曝光、光源能量、太阳方向、模型与烘焙保持；保存/账号同步仍暂停。
