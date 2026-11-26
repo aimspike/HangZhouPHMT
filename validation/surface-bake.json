@@ -1,0 +1,54 @@
+{
+  "scope": "Linear irradiance residual on unchanged roof UV interior; not a visual quality score",
+  "layouts": {
+    "bare": {
+      "before": {
+        "pixels": 35465,
+        "meanIrradiance": 0.059898157502819634,
+        "residualRMS": 0.0036317427438216946,
+        "medianAbsoluteResidual": 0.001085881056364535
+      },
+      "after": {
+        "pixels": 35465,
+        "meanIrradiance": 0.05992569768464649,
+        "residualRMS": 0.0033530577045787053,
+        "medianAbsoluteResidual": 0.00022130760404340255
+      },
+      "residualRatio": 0.9232641024155449,
+      "meanRatio": 1.0004597834553686,
+      "medianResidualRatio": 0.20380464577246354
+    },
+    "a": {
+      "before": {
+        "pixels": 35465,
+        "meanIrradiance": 0.061139227233489475,
+        "residualRMS": 0.004065036452867891,
+        "medianAbsoluteResidual": 0.0010376067297834246
+      },
+      "after": {
+        "pixels": 35465,
+        "meanIrradiance": 0.061228824477702816,
+        "residualRMS": 0.0038516615513211295,
+        "medianAbsoluteResidual": 0.00028455647850089694
+      },
+      "residualRatio": 0.9475097200183223,
+      "meanRatio": 1.0014654624905737,
+      "medianResidualRatio": 0.27424309262170193
+    }
+  },
+  "precision": {
+    "high": {
+      "bits": 16,
+      "nonzeroLowByteFraction": 0.9959538485854276
+    },
+    "mobile": {
+      "bits": 16,
+      "nonzeroLowByteFraction": 0.9958554631136217
+    },
+    "darkRadianceRoundtripRMS": {
+      "8": 0.001296850720050783,
+      "16": 5.026901153468023e-06
+    }
+  },
+  "result": "passed"
+}

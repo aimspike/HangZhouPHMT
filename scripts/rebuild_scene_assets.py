@@ -32,7 +32,7 @@ models = defaultdict(list)
 current = ''
 
 COLORS = {'navy':(.025,.04,.065,1),'linen':(.64,.58,.47,1),'mustard':(.5,.35,.09,1),'oak':(.48,.28,.13,1),'wood':(.3,.15,.065,1),'cream':(.84,.8,.7,1),'white':(.9,.9,.85,1),'chrome':(.62,.65,.64,1),'black':(.025,.028,.027,1),'orange':(.55,.12,.035,1),'ceramic':(.67,.65,.58,1),'seam':(.065,.085,.1,1),'blue':(.08,.12,.2,1),'brass':(.36,.25,.1,1),'rug':(.63,.6,.54,1),'applianceIvory':(.86,.84,.77,1)}
-COLORS.update(applianceWhite=(.91,.90,.86,1),graphite=(.025,.028,.03,1),smokeGlass=(.015,.024,.03,1),mirror=(.45,.53,.54,1),glow=(1,.9,.7,1))
+COLORS.update(porcelain=(.91,.90,.87,1),applianceWhite=(.91,.90,.86,1),graphite=(.025,.028,.03,1),smokeGlass=(.015,.024,.03,1),mirror=(.45,.53,.54,1),glow=(1,.9,.7,1))
 for name, color in COLORS.items():
     m=bpy.data.materials.new(name);m.diffuse_color=color;m.use_nodes=True
     p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color
@@ -342,7 +342,8 @@ for yy in [.45,.68]:
     cube('drawer front',(0,yy,-.188),(.676,.217,.018),'oak',.003)
     cube('handle shadow',(0,yy+.096,-.201),(.45,.012,.008),'black',.002)
 cube('stone slab',(0,.82,0),(.74,.06,.39),'ceramic',.005)
-lathe('porcelain vessel',[(0,.849),(.12,.849),(.165,.877),(.18,.907),(.175,.915),(.16,.904),(.11,.872),(0,.872)],'white',64)
+vessel=lathe('porcelain vessel',[(0,.849),(.04,.849),(.08,.849),(.115,.849),(.125,.852),(.138,.859),(.151,.869),(.163,.882),(.173,.897),(.179,.908),(.179,.912),(.176,.915),(.172,.914),(.168,.908),(.162,.899),(.154,.889),(.144,.880),(.131,.874),(.114,.872),(.08,.872),(.04,.872),(0,.872)],'porcelain',128)
+vessel['preserve_surface']=True
 tube('curved tap',[(.23,.85,.1),(.23,1.1,.1),(.19,1.13,.1),(.08,1.13,.1),(.06,1.1,.1)],.012,'chrome')
 
 def front_lathe(name,profile,p,mat='graphite',segments=64):
@@ -392,23 +393,49 @@ cube('basin cabinet backing',(0,.436,.271),(.464,.654,.018),'applianceWhite',.00
 for x in [-.12,.12]:
     cube('basin cabinet front',(x,.436,-.273),(.237,.650,.018),'applianceWhite',.003)
     cube('inset cabinet grip',(x,.749,-.284),(.19,.009,.005),'oak',.001)
-# One watertight ceramic shell: rim, sloped bowl, inner/outer bottom.
+# Closed manufactured basin with dense, regular rings. Straight rim regions
+# retain planar normals; small bevel rings carry the curved transition.
 verts=[];rings=[];faces=[]
-profiles=[(.25,.28,.018,.764),(.25,.28,.018,.88),(.193,.192,.035,.88),(.184,.183,.035,.858),(.14,.13,.032,.778),(.13,.12,.03,.770),(.13,.12,.03,.760),(.147,.137,.032,.760),(.195,.195,.035,.852)]
+profiles=[(.25,.28,.018,.764),(.25,.28,.018,.86),(.249,.279,.019,.872),(.246,.276,.022,.878),(.241,.271,.026,.88),(.210,.21,.035,.88),(.200,.200,.036,.880),(.195,.195,.037,.879),(.191,.191,.038,.876),(.188,.188,.039,.871),(.185,.185,.040,.863),(.181,.181,.041,.851),(.173,.172,.043,.833),(.164,.16,.044,.813),(.153,.145,.044,.793),(.143,.133,.043,.78),(.136,.126,.041,.774),(.128,.118,.038,.770),(.10,.09,.032,.770),(.07,.06,.024,.770),(.035,.03,.012,.770),(.002,.002,.001,.770),(.002,.002,.001,.760),(.035,.03,.012,.760),(.07,.06,.024,.760),(.10,.09,.032,.760),(.137,.127,.035,.760),(.147,.137,.035,.767),(.162,.154,.038,.79),(.179,.177,.038,.83),(.195,.195,.035,.852)]
+# Keep equal segment counts on arc and straight runs for every ring.
 for hx,hz,r,y in profiles:
     ring=[]
-    for cx,cz,start in [(hx-r,hz-r,0),(-hx+r,hz-r,90),(-hx+r,-hz+r,180),(hx-r,-hz+r,270)]:
+    corners=[(hx-r,hz-r,0),(-hx+r,hz-r,90),(-hx+r,-hz+r,180),(hx-r,-hz+r,270)]
+    for ci,(cx,cz,start) in enumerate(corners):
         for j in range(8):
             a=math.radians(start+j*90/8);ring.append(len(verts));verts.append(xyz((cx+r*math.cos(a),y,cz+r*math.sin(a))))
+        end=math.radians(start+90);first=(cx+r*math.cos(end),cz+r*math.sin(end));ncx,ncz,nstart=corners[(ci+1)%4];nexta=math.radians(nstart);last=(ncx+r*math.cos(nexta),ncz+r*math.sin(nexta))
+        for j in range(16):
+            t=j/16;ring.append(len(verts));verts.append(xyz((first[0]*(1-t)+last[0]*t,y,first[1]*(1-t)+last[1]*t)))
     rings.append(ring)
 n=len(rings[0])
 for i in range(len(rings)):
-    if i==5:continue
+    if i==21:continue
     for j in range(n):k=(j+1)%n;faces.append((rings[i][j],rings[i][k],rings[(i+1)%len(rings)][k],rings[(i+1)%len(rings)][j]))
-for idx,y in [(5,.770),(6,.760)]:
+for idx,y in [(21,.770),(22,.760)]:
     centre=len(verts);verts.append(xyz((0,y,0)))
     for j in range(n):faces.append((centre,rings[idx][j],rings[idx][(j+1)%n]))
-me=bpy.data.meshes.new('continuous ceramic basin');me.from_pydata(verts,[],faces);me.update();ob=bpy.data.objects.new('basin',me);scene.collection.objects.link(ob);finish(ob,'integrated ceramic basin','applianceWhite')
+me=bpy.data.meshes.new('continuous ceramic basin');me.from_pydata(verts,[],faces);me.update();ob=bpy.data.objects.new('basin',me);scene.collection.objects.link(ob);finish(ob,'integrated ceramic basin','porcelain');ob['preserve_surface']=True
+# Split normals at the lip follow local surface derivatives rather than
+# averaging one giant side polygon into the whole flat deck.
+loop_normals=[]
+for poly in ob.data.polygons:
+    for li in poly.loop_indices:
+        vi=ob.data.loops[li].vertex_index
+        if vi>=len(rings)*n:normal=Vector((0,0,1 if vi==len(rings)*n else -1))
+        else:
+            ring_index=vi//n;j=vi%n
+            tangent=Vector(verts[rings[ring_index][(j+1)%n]])-Vector(verts[rings[ring_index][(j-1)%n]])
+            before=max(0,ring_index-1);after=min(len(rings)-1,ring_index+1)
+            if 4<ring_index<7:normal=Vector((0,0,1))
+            elif 18<=ring_index<=21:normal=Vector((0,0,1))
+            elif 22<=ring_index<=25:normal=Vector((0,0,-1))
+            else:
+                profile=Vector(verts[rings[after][j]])-Vector(verts[rings[before][j]])
+                normal=tangent.cross(profile).normalized()
+                if normal.dot(poly.normal)<0:normal=-normal
+        loop_normals.append(normal)
+ob.data.normals_split_custom_set(loop_normals)
 move(lathe('drain fitting',[(0,.769),(.018,.769),(.018,.773),(0,.773)],'chrome',32),(0,0,0))
 tube('basin mixer tap',[(.12,.876,.235),(.12,1.075,.235),(.10,1.10,.235),(.015,1.10,.235),(.015,1.075,.17)],.01,'chrome')
 cube('mixer lever',(.153,.93,.235),(.059,.008,.015),'chrome',.003)
@@ -518,7 +545,7 @@ for model,objects in models.items():
     output['models'][model]={'high':encode(objects,False)}
     # Evaluate a lower geometric LOD offline, maintaining all UV and material seams.
     for obj in objects:
-        if len(obj.data.polygons)>150:
+        if len(obj.data.polygons)>150 and not obj.get('preserve_surface'):
             mod=obj.modifiers.new('Mobile geometric LOD','DECIMATE');mod.ratio=.48;mod.use_collapse_triangulate=True
     output['models'][model]['mobile']=encode(objects,True)
     output['quality'][model]={lod:{'triangles':sum(m['triangles'] for m in meshes),'vertices':sum(m['vertices'] for m in meshes),'drawGroups':len(meshes)} for lod,meshes in output['models'][model].items()}

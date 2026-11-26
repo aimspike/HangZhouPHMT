@@ -1,6 +1,6 @@
 {
   "scope": "Check assembled shipped LODs. Run with Blender --background --python this_file.\nBVH surface intersections and inside-solid tests prove contact; sampled nearest\nsurface distances are upper bounds, with 0.7 mm export/assembly tolerance.\nSeparate wall-mounted mirror and upper cabinet may use the architectural wall.\n",
-  "modelSHA": "1593015815252beccbb12ddd1047093f24586694e608a0dc8d0336869d04e255",
+  "modelSHA": "ec3e1536fbf9d62f1ed6cee7087b07bb6647e644cacba9a30103041e0d895a6e",
   "toleranceMm": 0.7,
   "models": {
     "sofa": {
@@ -5516,11 +5516,11 @@
             "balcony-vanity / basin cabinet backing",
             "balcony-vanity / basin cabinet front",
             "balcony-vanity / basin cabinet front.001",
-            "balcony-vanity / integrated ceramic basin",
             "balcony-vanity / wall storage side",
             "balcony-vanity / wall storage side.001",
             "balcony-vanity / wall storage backing",
             "balcony-vanity / wall storage front",
+            "balcony-vanity / integrated ceramic basin",
             "balcony-vanity / drain fitting",
             "balcony-vanity / basin mixer tap",
             "balcony-vanity / mixer lever",
@@ -5648,16 +5648,6 @@
             0
           ],
           [
-            "balcony-vanity / integrated ceramic basin",
-            "balcony-vanity / drain fitting",
-            0
-          ],
-          [
-            "balcony-vanity / integrated ceramic basin",
-            "balcony-vanity / basin mixer tap",
-            0
-          ],
-          [
             "balcony-vanity / wall storage side",
             "balcony-vanity / wall storage backing",
             0
@@ -5685,6 +5675,16 @@
           [
             "balcony-vanity / wall storage front",
             "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / drain fitting",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / basin mixer tap",
             0
           ],
           [
@@ -5715,11 +5715,11 @@
             "balcony-vanity / basin cabinet backing",
             "balcony-vanity / basin cabinet front",
             "balcony-vanity / basin cabinet front.001",
-            "balcony-vanity / integrated ceramic basin",
             "balcony-vanity / wall storage side",
             "balcony-vanity / wall storage side.001",
             "balcony-vanity / wall storage backing",
             "balcony-vanity / wall storage front",
+            "balcony-vanity / integrated ceramic basin",
             "balcony-vanity / drain fitting",
             "balcony-vanity / basin mixer tap",
             "balcony-vanity / mixer lever",
@@ -5847,16 +5847,6 @@
             0
           ],
           [
-            "balcony-vanity / integrated ceramic basin",
-            "balcony-vanity / drain fitting",
-            0
-          ],
-          [
-            "balcony-vanity / integrated ceramic basin",
-            "balcony-vanity / basin mixer tap",
-            0
-          ],
-          [
             "balcony-vanity / wall storage side",
             "balcony-vanity / wall storage backing",
             0
@@ -5884,6 +5874,16 @@
           [
             "balcony-vanity / wall storage front",
             "balcony-vanity / wall storage concealed hinge.001",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / drain fitting",
+            0
+          ],
+          [
+            "balcony-vanity / integrated ceramic basin",
+            "balcony-vanity / basin mixer tap",
             0
           ],
           [

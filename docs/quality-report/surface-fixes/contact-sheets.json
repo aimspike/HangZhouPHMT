@@ -1,0 +1,180 @@
+{
+  "scope": "Actual WebGL screenshots, identical crops/resizing and labels, no tone or shadow retouching",
+  "sheets": [
+    {
+      "file": "ceramic-noon.jpg",
+      "sources": [
+        {
+          "file": "before-pc-balconyBasin.webp",
+          "sha256": "25b65c451a29388759b07b90a2c183c4b0ad6302478acfb5a28da639bbc077eb",
+          "crop": [
+            410,
+            460,
+            1490,
+            1040
+          ]
+        },
+        {
+          "file": "after-pc-balconyBasin.webp",
+          "sha256": "d722a16f2c469646a28f5ba50ea3972e83d53cbfaa8bb8789645af6226666d28",
+          "crop": [
+            410,
+            460,
+            1490,
+            1040
+          ]
+        },
+        {
+          "file": "before-pc-bathBasin.webp",
+          "sha256": "6b7a414e21b4e1176cfda214eca221b17a1c17e5648482fbf7f79ccac3ff47c2",
+          "crop": [
+            545,
+            440,
+            1465,
+            935
+          ]
+        },
+        {
+          "file": "after-pc-bathBasin.webp",
+          "sha256": "2de5b1684043064ba3f0b2265d3759d0892f1c6ca9370cbac3739d324bb7c0a5",
+          "crop": [
+            545,
+            440,
+            1465,
+            935
+          ]
+        },
+        {
+          "file": "before-pc-toilet.webp",
+          "sha256": "9f6aec158f1bb678d8a4bc0db5987c47a480589f454d428681987ee7e79f06cf",
+          "crop": [
+            300,
+            360,
+            1750,
+            1140
+          ]
+        },
+        {
+          "file": "after-pc-toilet.webp",
+          "sha256": "4803d899093a99561ee42d1e888b83c816a8a181980a3d6008ca7b079681e2c3",
+          "crop": [
+            300,
+            360,
+            1750,
+            1140
+          ]
+        }
+      ]
+    },
+    {
+      "file": "ceramic-night.jpg",
+      "sources": [
+        {
+          "file": "before-pc-night-balconyBasin.webp",
+          "sha256": "ddf4d5585e77e3601bcd48272d0051803b743da88322d0e0b816b7fe5b39a971",
+          "crop": [
+            410,
+            460,
+            1490,
+            1040
+          ]
+        },
+        {
+          "file": "after-pc-night-balconyBasin.webp",
+          "sha256": "fa3784527961e9776a9c2429e167d3713732225120e4068413f2add733e1afc6",
+          "crop": [
+            410,
+            460,
+            1490,
+            1040
+          ]
+        },
+        {
+          "file": "before-pc-night-bathBasin.webp",
+          "sha256": "6e403787b2f28b57334394fa7077c5bf1e421325bdf0a2f0ac9171f2fd83f8ed",
+          "crop": [
+            545,
+            440,
+            1465,
+            935
+          ]
+        },
+        {
+          "file": "after-pc-night-bathBasin.webp",
+          "sha256": "182ab008ff44019154162657d00e881902b7bd3e490dadf30d56fe9ecbb51bcb",
+          "crop": [
+            545,
+            440,
+            1465,
+            935
+          ]
+        },
+        {
+          "file": "before-pc-night-toilet.webp",
+          "sha256": "2a7a311db2e3334a558a8e92388b497affe21d2b3c954fc1e2eb1d694d622bc2",
+          "crop": [
+            300,
+            360,
+            1750,
+            1140
+          ]
+        },
+        {
+          "file": "after-pc-night-toilet.webp",
+          "sha256": "ea3005e92bb98e8b9438b3b5281e24d779b0067b32dcaa8db766020c849c882d",
+          "crop": [
+            300,
+            360,
+            1750,
+            1140
+          ]
+        }
+      ]
+    },
+    {
+      "file": "walls-noon.jpg",
+      "sources": [
+        {
+          "file": "before-pc-living.webp",
+          "sha256": "959e7baea68235a31fa222891597f59d54c35483dffd059dd41b7dd9a6359043",
+          "crop": null
+        },
+        {
+          "file": "after-pc-living.webp",
+          "sha256": "eae8abf9a24d87ca50614500b6f813b6784c55310b8d25c51c2fa9c08935992f",
+          "crop": null
+        },
+        {
+          "file": "before-pc-dining.webp",
+          "sha256": "ec40796cdffa42bfa6555ec46f3d49c750facfeb1b3dae5845da6df6400a009e",
+          "crop": null
+        },
+        {
+          "file": "after-pc-dining.webp",
+          "sha256": "70fa53d3a32f2e4721f7a5c7b0d3977f98f702b55db9046860d61b4b10f2939e",
+          "crop": null
+        },
+        {
+          "file": "before-pc-master.webp",
+          "sha256": "b1644289071964f44dcaa3612b28ee7bf7a7fc100ef0772f3a91211f775f4283",
+          "crop": null
+        },
+        {
+          "file": "after-pc-master.webp",
+          "sha256": "5ce6431f4b33512e4a45c9792416fb9bd9180f135bd5f02e869559c4357cb017",
+          "crop": null
+        },
+        {
+          "file": "before-pc-bath.webp",
+          "sha256": "81bf136852b212a4709902942b957b324dd3623f33d79b533cc619d99c2ff5ba",
+          "crop": null
+        },
+        {
+          "file": "after-pc-bath.webp",
+          "sha256": "59b5a5a38ee35fc49086bd30523d6f878fa5b8c16eb6cf850a6078a412fe264d",
+          "crop": null
+        }
+      ]
+    }
+  ]
+}

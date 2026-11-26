@@ -1,0 +1,50 @@
+{
+  "scope": "Decoded shipped geometry; planar normals and controlled manufactured surface continuity",
+  "cases": [
+    {
+      "lod": "high",
+      "model": "balcony-vanity",
+      "part": "integrated ceramic basin",
+      "triangles": 5952,
+      "vertices": 3656,
+      "planarDeckSamples": 64,
+      "maxPlanarNormalTiltDegrees": 0,
+      "width": 0.5,
+      "preservedMobile": false
+    },
+    {
+      "lod": "high",
+      "model": "vanity",
+      "part": "porcelain vessel",
+      "triangles": 5120,
+      "vertices": 3112,
+      "planarDeckSamples": null,
+      "maxPlanarNormalTiltDegrees": null,
+      "width": 0.3580025986474775,
+      "preservedMobile": false
+    },
+    {
+      "lod": "mobile",
+      "model": "balcony-vanity",
+      "part": "integrated ceramic basin",
+      "triangles": 5952,
+      "vertices": 3656,
+      "planarDeckSamples": 64,
+      "maxPlanarNormalTiltDegrees": 0,
+      "width": 0.5,
+      "preservedMobile": true
+    },
+    {
+      "lod": "mobile",
+      "model": "vanity",
+      "part": "porcelain vessel",
+      "triangles": 5120,
+      "vertices": 3112,
+      "planarDeckSamples": null,
+      "maxPlanarNormalTiltDegrees": null,
+      "width": 0.3580025986474775,
+      "preservedMobile": true
+    }
+  ],
+  "result": "passed"
+}

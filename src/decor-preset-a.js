@@ -89,16 +89,17 @@ function createHouseDecor(options) {
  function material(name,room) {
   const key=room+'-'+name;if(materials[key])return materials[key];
   const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],chrome:['#b9bdbb'],seam:['#596975'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32'],applianceIvory:['#eeeade']};
-  Object.assign(definitions,{applianceWhite:['#f1f0e9'],graphite:['#24282b'],smokeGlass:['#19282d']});
+  Object.assign(definitions,{porcelain:['#f2f0e9'],applianceWhite:['#f1f0e9'],graphite:['#24282b'],smokeGlass:['#19282d']});
   const [color,texture]=definitions[name],fabric=['fabric','stripe'].includes(texture),metal=['steel','brass','chrome'].includes(name);const m=new THREE.MeshStandardMaterial({color,roughness:name==='chrome'?.16:metal?.25:name==='mirror'?.13:fabric?.93:texture==='wood'?.46:name==='stone'?.36:name==='ceramic'?.3:.65,metalness:metal?.82:name==='mirror'?.8:0});m.color.convertSRGBToLinear();
   if(texture){const tx=options.assets.maps(texture==='wood'?'wood':fabric?(name==='navy'?'fabric':'fabric_plain'):texture==='stone'?'stone':'none');if(tx){m.map=tx.color;m.normalMap=tx.normal;m.normalScale.set(fabric?(name==='navy'?.12:.035):.15,fabric?(name==='navy'?.12:.035):.15);m.roughnessMap=tx.roughness;}else{const old=surfaceTexture(texture);m.map=old.map;m.bumpMap=old.bump;m.roughnessMap=old.bump;m.bumpScale=.0006;}}
   m.envMap=reflections();m.userData.envStrength=metal?.75:name==='mirror'?.95:fabric?.015:.12;m.envMapIntensity=m.userData.envStrength;
   if(name==='glow'){m.emissive.set('#ffcd80');m.emissiveIntensity=.65;glowing.push(m);}
   if(name==='applianceIvory'){m.roughness=.78;m.metalness=0;m.userData.envStrength=.06;m.userData.houseReflectionStrength=.16;}
+  if(name==='porcelain'){m.roughness=.24;m.metalness=0;m.userData.houseReflectionStrength=.3;}
   if(name==='applianceWhite'){m.roughness=.48;m.userData.houseReflectionStrength=.22;}
   if(name==='graphite'){m.roughness=.32;m.userData.houseReflectionStrength=.24;}
   if(name==='smokeGlass'){m.roughness=.12;m.userData.houseReflectionStrength=.6;}
-  options.shade(m,room);materials[key]=m;return m;
+  m.userData.houseMaterial=name;options.shade(m,room);materials[key]=m;return m;
  }
  function layer(room,kind='furniture') {
   const key=room+'-'+kind;if(!layers[key]){const g=new THREE.Group();g.name=key;g.userData.layer=kind;group.add(g);layers[key]=g;}return layers[key];
@@ -106,7 +107,7 @@ function createHouseDecor(options) {
  function shape(type,dimensions) {
   const key=type+dimensions.join(',');if(geometries[key])return geometries[key];let g;
   if(type==='cylinder')g=new THREE.CylinderGeometry(dimensions[0],dimensions[1],dimensions[2],40);
-  else if(type==='sphere')g=new THREE.SphereGeometry(dimensions[0],20,12);
+  else if(type==='sphere'||type==='porcelainSphere')g=new THREE.SphereGeometry(dimensions[0],type==='porcelainSphere'?64:20,type==='porcelainSphere'?32:12);
   else if(type==='round'){
    const [w,h,d]=dimensions,r=Math.min(.035,w/5,h/5,d/5),s=new THREE.Shape(),x=-w/2+r,y=-h/2+r,ww=w-2*r,hh=h-2*r,q=Math.min(r,ww/4,hh/4);
    s.moveTo(x+q,y);s.lineTo(x+ww-q,y);s.quadraticCurveTo(x+ww,y,x+ww,y+q);s.lineTo(x+ww,y+hh-q);s.quadraticCurveTo(x+ww,y+hh,x+ww-q,y+hh);s.lineTo(x+q,y+hh);s.quadraticCurveTo(x,y+hh,x,y+hh-q);s.lineTo(x,y+q);s.quadraticCurveTo(x,y,x+q,y);s.closePath();
@@ -116,7 +117,7 @@ function createHouseDecor(options) {
   geometries[key]=g;return g;
  }
  function mesh(room,kind,type,x,y,z,dimensions,name,rotation=0) {
-  const m=new THREE.Mesh(shape(type,dimensions),material(name,room));m.position.set(x,y,z);m.rotation.y=rotation;m.castShadow=name!=='glow'&&name!=='mirror';m.receiveShadow=true;layer(room,kind).add(m);parts++;
+  const m=new THREE.Mesh(shape(type==='sphere'&&name==='porcelain'?'porcelainSphere':type,dimensions),material(name,room));m.position.set(x,y,z);m.rotation.y=rotation;m.castShadow=name!=='glow'&&name!=='mirror';m.receiveShadow=true;layer(room,kind).add(m);parts++;
   if(currentItem)currentItem.meshes.push(m);return m;
  }
  const box=(r,x,y,z,w,h,d,m,k='furniture',angle=0)=>mesh(r,k,'box',x,y,z,[w,h,d],m,angle);
@@ -261,7 +262,7 @@ function createHouseDecor(options) {
   item('second-nightstand','second',()=>{round('second',5.88,.31,8.66,.34,.48,.30,'wood');box('second',5.88,.39,8.504,.25,.006,.008,'brass');cylinder('second',5.88,.615,8.66,.045,.045,.13,'steel');cylinder('second',5.88,.745,8.66,.1,.12,.13,'linen');});art('second',6.095,1.7,9.5,.58,.72,-Math.PI/2,2);
   // Keep bathroom fixtures inside its original boundary; the reference dry-area relocation is unconfirmed.
   item('bath-vanity','bath',()=>{box('bath',.55,.56,7.91,.7,.48,.36,'wood');box('bath',.55,.82,7.91,.74,.06,.39,'stone');cylinder('bath',.55,.85,7.9,.18,.18,.025,'cream');round('bath',.55,1.48,8.135,.64,.78,.025,'glow','wall',Math.PI);round('bath',.55,1.48,8.115,.59,.73,.018,'mirror','wall',Math.PI);box('bath',.55,1.02,8.07,.08,.05,.07,'steel');});
-  item('toilet','bath',()=>{cylinder('bath',.47,.22,6.96,.16,.13,.36,'white');const bowl=mesh('bath','furniture','sphere',.47,.36,6.98,[1],'white');bowl.scale.set(.21,.14,.29);const lid=mesh('bath','furniture','sphere',.47,.46,6.99,[1],'white');lid.scale.set(.206,.025,.28);round('bath',.47,.61,6.73,.37,.43,.17,'white');box('bath',.47,.83,6.73,.09,.009,.045,'steel');});
+  item('toilet','bath',()=>{cylinder('bath',.47,.22,6.96,.16,.13,.36,'porcelain');const bowl=mesh('bath','furniture','sphere',.47,.36,6.98,[1],'porcelain');bowl.scale.set(.21,.14,.29);const lid=mesh('bath','furniture','sphere',.47,.46,6.99,[1],'porcelain');lid.scale.set(.206,.025,.28);round('bath',.47,.61,6.73,.37,.43,.17,'porcelain');box('bath',.47,.83,6.73,.09,.009,.045,'steel');});
   box('bath',1.35,.025,6.86,.69,.04,.72,'stone');cylinder('bath',1.65,2.04,6.76,.055,.055,.025,'steel','wall');
   // Secondary spaces keep generous circulation and unobstructed doors.
   item('study-desk','study',()=>{box('study',2.25,.75,1.63,.73,.055,1.38,'oak');for(const z of [1.05,2.21])box('study',2.25,.37,z,.58,.72,.035,'steel');});

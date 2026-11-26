@@ -1,0 +1,329 @@
+{
+  "scope": "Offline single HTML in Chrome, touch/WeChat UA simulation; not a phone",
+  "errors": [],
+  "external": [],
+  "state": {
+    "maps": [
+      219,
+      219
+    ],
+    "roof": {
+      "gaps": 0,
+      "examples": []
+    },
+    "static": {
+      "enabled": true,
+      "ready": true,
+      "layout": "a",
+      "time": "night",
+      "reason": "matched fixed state",
+      "atlasSize": 1024,
+      "states": 16,
+      "architectureMeshes": 73,
+      "furnitureMeshes": 125,
+      "matchedVertices": 518496,
+      "decodedImages": 8,
+      "decodeCacheBytes": 42240000,
+      "updates": 1,
+      "reflectionBakes": 1,
+      "error": null,
+      "composeMs": 6883.4000000059605,
+      "irradianceBits": 16,
+      "atlasTextureSize": [
+        1024,
+        2048
+      ],
+      "engine": "Blender 5.3 / Cycles OptiX offline bake",
+      "samples": 2048,
+      "bounces": 4,
+      "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+      "runtimePathTracing": false
+    },
+    "quality": {
+      "quality": "auto",
+      "effective": "balanced",
+      "ao": false,
+      "probeRoom": "balcony",
+      "captures": 2,
+      "revision": 24,
+      "reflectionError": null,
+      "reflectionSource": "Blender Cycles static bases + PMREM",
+      "probeReady": true,
+      "hdrSupported": true,
+      "depthSupported": true,
+      "screenAOAllowed": false,
+      "aoPolicy": "mobile-baked-shadows",
+      "depthTextureAttached": false,
+      "shaderPrecision": "highp",
+      "aoSize": [
+        293,
+        633
+      ],
+      "samples": 12,
+      "probeResolution": 64,
+      "cachedRooms": [
+        "balcony"
+      ],
+      "materials": 302,
+      "mode": "walk",
+      "activeAO": "Cycles baked AO",
+      "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+      "pathTracing": false
+    },
+    "assets": {
+      "source": "Blender 5.3 authored master + metric UV + high/mobile geometry LOD",
+      "lod": "mobile",
+      "models": [
+        "sofa",
+        "coffee",
+        "console",
+        "dining-table",
+        "chair",
+        "sideboard",
+        "fridge",
+        "pendant",
+        "kitchen-east",
+        "kitchen-north",
+        "master-bed",
+        "master-wardrobe",
+        "second-bed",
+        "second-wardrobe",
+        "vanity",
+        "study-desk",
+        "laundry-stack",
+        "balcony-vanity"
+      ],
+      "texturesReady": 13,
+      "texturesExpected": 13,
+      "textureSets": [
+        "wood",
+        "parquet",
+        "fabric",
+        "fabric_plain",
+        "stone"
+      ],
+      "modelBudgets": {
+        "sofa": {
+          "high": {
+            "triangles": 47272,
+            "vertices": 29970,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 22816,
+            "vertices": 14996,
+            "drawGroups": 5
+          }
+        },
+        "coffee": {
+          "high": {
+            "triangles": 2368,
+            "vertices": 1661,
+            "drawGroups": 3
+          },
+          "mobile": {
+            "triangles": 1584,
+            "vertices": 1149,
+            "drawGroups": 3
+          }
+        },
+        "console": {
+          "high": {
+            "triangles": 3748,
+            "vertices": 3048,
+            "drawGroups": 4
+          },
+          "mobile": {
+            "triangles": 3068,
+            "vertices": 2540,
+            "drawGroups": 4
+          }
+        },
+        "dining-table": {
+          "high": {
+            "triangles": 2240,
+            "vertices": 1566,
+            "drawGroups": 3
+          },
+          "mobile": {
+            "triangles": 1072,
+            "vertices": 784,
+            "drawGroups": 3
+          }
+        },
+        "chair": {
+          "high": {
+            "triangles": 8092,
+            "vertices": 6128,
+            "drawGroups": 4
+          },
+          "mobile": {
+            "triangles": 5178,
+            "vertices": 4103,
+            "drawGroups": 4
+          }
+        },
+        "pendant": {
+          "high": {
+            "triangles": 3596,
+            "vertices": 2884,
+            "drawGroups": 2
+          },
+          "mobile": {
+            "triangles": 1928,
+            "vertices": 1675,
+            "drawGroups": 2
+          }
+        },
+        "master-bed": {
+          "high": {
+            "triangles": 18188,
+            "vertices": 11942,
+            "drawGroups": 7
+          },
+          "mobile": {
+            "triangles": 9132,
+            "vertices": 6281,
+            "drawGroups": 7
+          }
+        },
+        "second-bed": {
+          "high": {
+            "triangles": 18188,
+            "vertices": 11950,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 9132,
+            "vertices": 6276,
+            "drawGroups": 5
+          }
+        },
+        "master-wardrobe": {
+          "high": {
+            "triangles": 4888,
+            "vertices": 3929,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 4888,
+            "vertices": 3929,
+            "drawGroups": 5
+          }
+        },
+        "second-wardrobe": {
+          "high": {
+            "triangles": 4888,
+            "vertices": 3897,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 4888,
+            "vertices": 3897,
+            "drawGroups": 5
+          }
+        },
+        "sideboard": {
+          "high": {
+            "triangles": 3452,
+            "vertices": 2940,
+            "drawGroups": 6
+          },
+          "mobile": {
+            "triangles": 3452,
+            "vertices": 2940,
+            "drawGroups": 6
+          }
+        },
+        "fridge": {
+          "high": {
+            "triangles": 4976,
+            "vertices": 3801,
+            "drawGroups": 2
+          },
+          "mobile": {
+            "triangles": 4752,
+            "vertices": 3645,
+            "drawGroups": 2
+          }
+        },
+        "kitchen-east": {
+          "high": {
+            "triangles": 5940,
+            "vertices": 4742,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 5940,
+            "vertices": 4742,
+            "drawGroups": 5
+          }
+        },
+        "kitchen-north": {
+          "high": {
+            "triangles": 3624,
+            "vertices": 2946,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 2912,
+            "vertices": 2408,
+            "drawGroups": 5
+          }
+        },
+        "study-desk": {
+          "high": {
+            "triangles": 1692,
+            "vertices": 1336,
+            "drawGroups": 4
+          },
+          "mobile": {
+            "triangles": 1692,
+            "vertices": 1336,
+            "drawGroups": 4
+          }
+        },
+        "vanity": {
+          "high": {
+            "triangles": 6772,
+            "vertices": 4440,
+            "drawGroups": 6
+          },
+          "mobile": {
+            "triangles": 6498,
+            "vertices": 4237,
+            "drawGroups": 6
+          }
+        },
+        "laundry-stack": {
+          "high": {
+            "triangles": 11588,
+            "vertices": 9334,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 9186,
+            "vertices": 7491,
+            "drawGroups": 5
+          }
+        },
+        "balcony-vanity": {
+          "high": {
+            "triangles": 10552,
+            "vertices": 7326,
+            "drawGroups": 7
+          },
+          "mobile": {
+            "triangles": 10278,
+            "vertices": 7123,
+            "drawGroups": 7
+          }
+        }
+      }
+    },
+    "night": true,
+    "settingsClosed": true
+  },
+  "HTMLSHA256": "d73e873ce48d82723de78bc707d6d2891a9f8d77f0aa64a72199900bf79b97fe",
+  "result": "passed"
+}

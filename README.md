@@ -14,6 +14,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 室内亮度测试：[降低灯光与降低曝光效果对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)。含70张同机位实际画布和4张并排总览，当前应用默认参数保持。
 
+稳定画面修复：[墙顶斑驳与陶瓷折面前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/surface-fixes.html)。提高离线采样、分 UV 区域降噪，16位照明数据消除暗部量化色带；两处台盆的曲面、平面法线和马桶陶瓷材质同步修正，保留默认灯光与曝光。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |

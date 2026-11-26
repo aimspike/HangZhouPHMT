@@ -389,3 +389,18 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 `quality-report/brightness-comparison.html`提供桌面/手机、昼夜/关灯、三房间、四调整方案对比滑块、5档原图及4张下载总览；`verify-brightness-report.cjs`在1280/390宽各56种对比，70图/4总览、交互及链接/无溢出检查通过。219原烘焙/13PBR、固定照明与反射均有效、快照一致/屋顶0缺口、零JS/Shader错误和外部依赖请求。手机均为模拟。仅推main报告，不推进release。
 
 亮度对比报告`c3415f5`已上线main。70原图/4总览逐字节匹配本地，公开PC/手机宽度各56组对比、滑块/原图/链接和无溢出通过；见brightness-public-assets.json、brightness-report-public.json和brightness-deployment.json。应用默认/HTML及烘焙保持，release未推进。
+
+
+## 稳定墙顶斑驳与陶瓷曲面修复（2026-11-26）
+
+用户报告静态照明已加载后的正午关灯云团暗块，以及陶瓷盆沿/四角/马桶的三角折痕和放射纹。本轮诊断关闭反射/凹凸后仍可复现；原256采样天光噪声、稀疏曲面/法线与低能8位顶点照明量化共同造成异常。先提高面数和采样后，暗处仍出现多边形色带，最终将建筑和家具数据以及运行时建筑组合全程保持16位，真实网页中平顺过渡恢复。
+
+建筑2048采样，关闭自适应提前终止；独立UV区域内对天光/灯光线性HDR数据进行OIDN RT HDR降噪，太阳独立保留。家具1024、AO256采样；陶瓷照明按35mm邻域和法线点积>.86有限平滑，不改几何/反射法线。16位sqrt线性辐射以相邻像素高/低字节PNG保存，Canvas先解码再组合；建筑GPU图集为1024×2048双字节平面RGBA8，highp采样重组，无浮点纹理扩展依赖。解码缓存仍48MiB，未恢复运行时路径追踪。
+
+阳台台盆盆沿/四角/盆底规则细分并控制平面法线；浴室盆体128径向段及更多轮廓环，两件手机档保留曲面。陶瓷独立porcelain材质，无织物/石材凹凸；马桶采用该材质并提高球面细分。新模型18类/330部件，每档逐件闭合和装配检查保持通过，实际平面盆沿采样法线倾角0°。不改变建筑墙线、门洞、家具位置和原bake-source快照；旧219建筑图保留，重新导出新的Cycles完整场景并生成124张照明/AO/反射图。
+
+实际效果 `quality-report/surface-fixes.html`：20组/40张WebGL前后画布、3张并排图，PC1280×900和手机390×844，同机位/曝光/灯强度；正午关灯覆盖客餐厅/主卧/卫生间与3件陶瓷，夜晚原灯强度检查3件陶瓷高光。先等static enabled及probe ready，再等3帧截图，无后期阴影或亮度处理。灯光/曝光对比页保持，用户尚未选择新默认，本轮默认值不变。
+
+本地验证：surface-before/after、surface-bake、ceramic-surfaces、surface-static-lighting、surface-render-quality、surface-decor、surface-offline、surface-report-layout及rebuild-assets/topology/furniture-assembly。Chrome桌面/手机/缺HDR-depth/Windows WebKit共64固定状态、改门/材质/顶面回退、保存与横竖屏、219图/13PBR、屋顶0缺口、门扫掠/闭合/家具通道和单HTML离线均通过。未变屋顶内部典型高频残差中位数降低约73–80%，平均天光能量变化<0.2%；全区RMS受真实阴影边界影响仅降低约5–8%，该指标不等于视觉评分。真机微信仍待实际检查。
+
+自包含HTML约40.0MB（39,950,766字节），比前版约24MB增加；高精度数据带来首次加载和解析成本，模拟通过不代表物理手机持续性能。应用规范化SHA256为 `d73e873ce48d82723de78bc707d6d2891a9f8d77f0aa64a72199900bf79b97fe`。仅推送main并检查公开测试页，release保持7b53b23568d18550822fbf98fb5f42e5cda60487。

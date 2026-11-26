@@ -16,3 +16,11 @@
 重新生成：启动本地8879服务，运行导出脚本，再执行 `blender --background --factory-startup --python scripts/bake_static_cycles.py`，最后运行 `python src/build_house.py`。导出、烘焙和资源检查中间文件在 `work/static-bake/`。`STATIC_REUSE_REFLECTIONS=1` 仅供同一导出场景、反射配置未改时复用已有反射PNG；正式默认运行全量重生成。
 
 验证范围与实际对比见 `validation/verify-static-bake-data.cjs`、`verify-static-lighting.cjs` 和 `docs/quality-report/static-lighting.html`。手机视口/微信UA与Windows WebKit均为模拟，没有真机微信结论。烘焙单位为网页视觉标定，不能作为实际灯具照度或施工方案。
+
+## 稳定画面噪声与陶瓷修正（2026-11-26）
+
+建筑漫反射2048采样，关闭自适应提前终止；家具漫反射1024、AO256采样。天光/灯具图集在各独立UV区域内调用Blender自带Open Image Denoise的RT HDR滤镜，再做有限小核滤波；太阳分量保持分离。滤波对象为线性HDR照明数据，不处理最终截图，也不跨墙混合。
+
+照明PNG的逻辑数值改为16位sqrt(linear/8)，每一RGB样本用相邻两个像素的高/低字节保存，`precision:16`标记；PNG本身仍是浏览器可读的8位RGB，文件宽度为逻辑宽度两倍。AO保持8位线性。网页先还原16位样本再转线性；建筑运行时图集把高/低字节放在同一1024×2048 RGBA8纹理的上下两个平面，分别线性采样后重组，避免重新降回8位以及依赖浮点纹理扩展。影像Float32解码缓存仍限制48MiB。
+
+陶瓷使用35mm位置半径、法线点积>.86的两次照明双边平滑，保留几何/高光法线。两处台盆在手机档保留规则曲面，不用随机折叠减面。新增验证 `validation/verify-surface-bake.py` 检查未变屋顶内部的典型高频残差、平均能量及16位有效低字节；数值指标不替代实际画面复核。实际前后图在 [稳定画面修复报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/surface-fixes.html)。

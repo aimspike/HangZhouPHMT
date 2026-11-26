@@ -219,13 +219,13 @@
             },
             "vanity": {
               "high": {
-                "triangles": 2420,
-                "vertices": 1848,
+                "triangles": 6772,
+                "vertices": 4440,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 1746,
-                "vertices": 1397,
+                "triangles": 6498,
+                "vertices": 4237,
                 "drawGroups": 6
               }
             },
@@ -243,14 +243,14 @@
             },
             "balcony-vanity": {
               "high": {
-                "triangles": 5176,
-                "vertices": 4156,
-                "drawGroups": 6
+                "triangles": 10552,
+                "vertices": 7326,
+                "drawGroups": 7
               },
               "mobile": {
-                "triangles": 4602,
-                "vertices": 3731,
-                "drawGroups": 6
+                "triangles": 10278,
+                "vertices": 7123,
+                "drawGroups": 7
               }
             }
           }
@@ -270,8 +270,8 @@
             1280,
             850
           ],
-          "shaderCount": 128,
-          "drawCalls": 378
+          "shaderCount": 134,
+          "drawCalls": 379
         },
         "quality": {
           "quality": "auto",
@@ -281,6 +281,8 @@
           "captures": 1,
           "revision": 23,
           "reflectionError": null,
+          "reflectionSource": "dynamic scene capture",
+          "probeReady": true,
           "hdrSupported": true,
           "depthSupported": true,
           "screenAOAllowed": true,
@@ -296,16 +298,17 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 301,
+          "materials": 302,
           "mode": "walk",
+          "activeAO": "screen-depth AO",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6009,
+        "elapsedMs": 6001.4000000059605,
         "frames": 360,
-        "fps": 59.910134797803295
+        "fps": 59.98600326584504
       },
       "geometry": {
         "same": true,
@@ -690,13 +693,13 @@
             },
             "vanity": {
               "high": {
-                "triangles": 2420,
-                "vertices": 1848,
+                "triangles": 6772,
+                "vertices": 4440,
                 "drawGroups": 6
               },
               "mobile": {
-                "triangles": 1746,
-                "vertices": 1397,
+                "triangles": 6498,
+                "vertices": 4237,
                 "drawGroups": 6
               }
             },
@@ -714,14 +717,14 @@
             },
             "balcony-vanity": {
               "high": {
-                "triangles": 5176,
-                "vertices": 4156,
-                "drawGroups": 6
+                "triangles": 10552,
+                "vertices": 7326,
+                "drawGroups": 7
               },
               "mobile": {
-                "triangles": 4602,
-                "vertices": 3731,
-                "drawGroups": 6
+                "triangles": 10278,
+                "vertices": 7123,
+                "drawGroups": 7
               }
             }
           }
@@ -741,7 +744,7 @@
             390,
             844
           ],
-          "shaderCount": 122,
+          "shaderCount": 128,
           "drawCalls": 276
         },
         "quality": {
@@ -750,8 +753,10 @@
           "ao": false,
           "probeRoom": "living",
           "captures": 1,
-          "revision": 23,
+          "revision": 24,
           "reflectionError": null,
+          "reflectionSource": "awaiting current state",
+          "probeReady": false,
           "hdrSupported": true,
           "depthSupported": true,
           "screenAOAllowed": false,
@@ -767,16 +772,17 @@
           "cachedRooms": [
             "living"
           ],
-          "materials": 301,
+          "materials": 302,
           "mode": "walk",
+          "activeAO": "Cycles baked AO",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6003.5,
+        "elapsedMs": 6003.600000008941,
         "frames": 180,
-        "fps": 29.982510202381945
+        "fps": 29.982010793479237
       },
       "geometry": {
         "same": true,

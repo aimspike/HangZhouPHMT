@@ -1,5 +1,5 @@
 {
-  "authoringScriptSha256": "1593015815252beccbb12ddd1047093f24586694e608a0dc8d0336869d04e255",
+  "authoringScriptSha256": "ec3e1536fbf9d62f1ed6cee7087b07bb6647e644cacba9a30103041e0d895a6e",
   "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
   "legacy": false,
   "models": {
@@ -6170,14 +6170,14 @@
           },
           {
             "name": "vanity / porcelain vessel",
-            "triangles": 768,
+            "triangles": 5120,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0025718816591588254,
-            "minTriangleArea": 0.00008092027156044137
+            "signedVolume": 0.0020062807823846666,
+            "minTriangleArea": 0.00001734556098286308
           },
           {
             "name": "vanity / curved tap",
@@ -6264,14 +6264,14 @@
           },
           {
             "name": "vanity / porcelain vessel",
-            "triangles": 368,
+            "triangles": 5120,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0025705403400118282,
-            "minTriangleArea": 0.0001172172113248477
+            "signedVolume": 0.002006268734047289,
+            "minTriangleArea": 0.000017345378721240384
           },
           {
             "name": "vanity / curved tap",
@@ -7451,17 +7451,6 @@
             "minTriangleArea": 5.092628160760123e-7
           },
           {
-            "name": "balcony-vanity / integrated ceramic basin",
-            "triangles": 576,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.0124944370531951,
-            "minTriangleArea": 0.00003935273834524836
-          },
-          {
             "name": "balcony-vanity / wall storage side",
             "triangles": 188,
             "boundaryEdges": 0,
@@ -7504,6 +7493,17 @@
             "invertedNormals": 0,
             "signedVolume": 0.003268206501282845,
             "minTriangleArea": 5.092690019950681e-7
+          },
+          {
+            "name": "balcony-vanity / integrated ceramic basin",
+            "triangles": 5952,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011705507579117758,
+            "minTriangleArea": 1.2095462097448717e-7
           },
           {
             "name": "balcony-vanity / drain fitting",
@@ -7721,17 +7721,6 @@
             "minTriangleArea": 5.092628160760123e-7
           },
           {
-            "name": "balcony-vanity / integrated ceramic basin",
-            "triangles": 276,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.012477737434102007,
-            "minTriangleArea": 0.00003059647708186786
-          },
-          {
             "name": "balcony-vanity / wall storage side",
             "triangles": 188,
             "boundaryEdges": 0,
@@ -7774,6 +7763,17 @@
             "invertedNormals": 0,
             "signedVolume": 0.003268206501282845,
             "minTriangleArea": 5.092690019950681e-7
+          },
+          {
+            "name": "balcony-vanity / integrated ceramic basin",
+            "triangles": 5952,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011705507579117758,
+            "minTriangleArea": 1.2095462097448717e-7
           },
           {
             "name": "balcony-vanity / drain fitting",
@@ -7860,7 +7860,7 @@
   },
   "totals": {
     "parts": 660,
-    "triangles": 250304,
+    "triangles": 270460,
     "boundaryEdges": 0,
     "nonmanifoldEdges": 0,
     "windingErrors": 0,
