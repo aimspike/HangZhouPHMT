@@ -1,0 +1,54 @@
+{
+  "url": "http://127.0.0.1:8879/docs/quality-report/mouse-release.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 4,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 4,
+      "overflow": false
+    }
+  ],
+  "assets": [
+    "after-chrome-a-night-off-held.webp",
+    "after-chrome-a-night-off-release-first.webp",
+    "after-chrome-a-night-off-release-peak.webp",
+    "after-chrome-a-night-off-settled.webp",
+    "after-chrome-a-night-on-held.webp",
+    "after-chrome-a-night-on-release-first.webp",
+    "after-chrome-a-night-on-release-peak.webp",
+    "after-chrome-a-night-on-settled.webp",
+    "after-chrome-a-noon-off-held.webp",
+    "after-chrome-a-noon-off-release-first.webp",
+    "after-chrome-a-noon-off-release-peak.webp",
+    "after-chrome-a-noon-off-settled.webp",
+    "after-chrome-a-noon-on-held.webp",
+    "after-chrome-a-noon-on-release-first.webp",
+    "after-chrome-a-noon-on-release-peak.webp",
+    "after-chrome-a-noon-on-settled.webp",
+    "before-chrome-a-night-off-held.webp",
+    "before-chrome-a-night-off-release-first.webp",
+    "before-chrome-a-night-off-release-peak.webp",
+    "before-chrome-a-night-off-settled.webp",
+    "before-chrome-a-night-on-held.webp",
+    "before-chrome-a-night-on-release-first.webp",
+    "before-chrome-a-night-on-release-peak.webp",
+    "before-chrome-a-night-on-settled.webp",
+    "before-chrome-a-noon-off-held.webp",
+    "before-chrome-a-noon-off-release-first.webp",
+    "before-chrome-a-noon-off-release-peak.webp",
+    "before-chrome-a-noon-off-settled.webp",
+    "before-chrome-a-noon-on-held.webp",
+    "before-chrome-a-noon-on-release-first.webp",
+    "before-chrome-a-noon-on-release-peak.webp",
+    "before-chrome-a-noon-on-settled.webp",
+    "frames.json",
+    "release-comparison.jpg"
+  ],
+  "errors": [],
+  "HTMLSHA256": "283cefb6e5ecad90de833c6026bef4f64cdde9b792eccacccfbc5365e85db13c",
+  "result": "passed"
+}

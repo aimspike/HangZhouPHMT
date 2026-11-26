@@ -46,7 +46,8 @@ function createHouseRenderQuality(options){
  function apply(){state.quality=$('renderQuality').value;state.effective=state.quality==='auto'?(mobile?'balanced':'high'):state.quality;aoUniforms.sampleCount.value=state.effective==='high'?20:12;state.ao=screenAOAllowed&&state.effective!=='light';$('renderQualityNote').textContent=state.effective==='light'?'轻量：保留烘焙光照与材质纹理。':screenAOAllowed?'分房间场景反射、接触阴影与精细材质；切换灯光后反射自动更新。':'兼容渲染：保留烘焙阴影、房间反射与材质，避免墙顶阴影条纹。';invalidate();options.resize();}
  function invalidate(){state.reflectionSource='awaiting current state';state.probeReady=false;state.revision++;dirtyAt=performance.now();for(const m of registered)m.envMapIntensity=0;}
  for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))invalidate();});
- document.addEventListener('click',e=>{if(e.target.closest('[data-time],[data-door],#openAllDoors,#closeAllDoors,#decorShortcut,#resetFinishes'))invalidate();});
+ // body[data-time] labels the scene; only time buttons change its lighting.
+ document.addEventListener('click',e=>{if(e.target.closest('button[data-time],[data-door],#openAllDoors,#closeAllDoors,#decorShortcut,#resetFinishes'))invalidate();});
  function register(){scene.traverse(object=>{for(const m of Array.isArray(object.material)?object.material:[object.material]){if(!m?.isMeshStandardMaterial||!m.userData.houseRoom||registered.has(m))continue;registered.add(m);const base=m.onBeforeCompile,key=m.customProgramCacheKey;
    const room=rooms.find(r=>r.id===m.userData.houseRoom);if(!room)continue;m.envMapIntensity=0;
    const bounds={min:new THREE.Vector3(room.x-3.1,.02,room.z-6.25),max:new THREE.Vector3(room.x+room.w-3.1,2.8,room.z+room.d-6.25)},origin=new THREE.Vector3(room.x+room.w/2-3.1,1.45,room.z+room.d/2-6.25);

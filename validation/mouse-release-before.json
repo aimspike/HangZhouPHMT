@@ -1,0 +1,4229 @@
+{
+  "url": "http://127.0.0.1:8879/work/mouse-release/before.html",
+  "stage": "before",
+  "scope": "Actual browser mouse drag/release/click, final WebGL frames; desktop and touch simulation, not physical device verification",
+  "cases": [
+    {
+      "id": "chrome",
+      "states": [
+        {
+          "layout": "a",
+          "time": "noon",
+          "on": false,
+          "id": "chrome-a-noon-off",
+          "action": "mouse-drag",
+          "stableMean": 108.96379415850711,
+          "staticDrop": true,
+          "updatesChanged": true,
+          "reflectionRevisionChanged": true,
+          "capturesChanged": true,
+          "exposureChanged": false,
+          "cameraChanged": false,
+          "maxBrightnessDelta": 13.07547610489064,
+          "regression": true,
+          "frames": [
+            {
+              "phase": "before",
+              "mean": 113.1079413752942,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.01303724681712677,
+                0.9743222032320407,
+                0.058529584557693484,
+                0.2170266394155223
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 113.2015824650384,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.011926299726685846,
+                0.9768623192603041,
+                0.05658158589855565,
+                0.20590361026804066
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 113.19123556527087,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.010861597949466704,
+                0.9792709415069832,
+                0.054615912030596354,
+                0.1947499703801694
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 113.05759956293926,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 113.05757872377842,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 113.05753930070149,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.9423467016341,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.008871921189912554,
+                0.9836922063346251,
+                0.05063455102867373,
+                0.17235740324407856
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.98355094988455,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007947426705758103,
+                0.9857041758623415,
+                0.048620499870899274,
+                0.16112157859393808
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.90526010489592,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007070145816819929,
+                0.9875832617719699,
+                0.04659204375964709,
+                0.149861588021297
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.48298488927769,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.006240270189135864,
+                0.9893291728485347,
+                0.04454988801298443,
+                0.13857905417786423
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.47513180069922,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.005458007371611728,
+                0.9909416294256759,
+                0.042494921507874435,
+                0.12727560203258767
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.46520728438144,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004723551649927162,
+                0.9924203656353292,
+                0.04042803599951405,
+                0.11595292077939238
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 112.05427877039602,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004037054845154907,
+                0.9937651654817983,
+                0.03834994507880311,
+                0.10461252207821078
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 111.28847824009159,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0033986916946752307,
+                0.994975800945043,
+                0.03626160603045701,
+                0.09325610090833958
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 110.4974051748237,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0028085957259842316,
+                0.9960520816311121,
+                0.034163736048769086,
+                0.0818852954294392
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 109.67088547785357,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0022669120818234506,
+                0.9969938245209591,
+                0.032057297072214205,
+                0.07050180622585552
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 108.96385996503389,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96385996503389,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96383293123436,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96382237762131,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96378914918309,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.9637891491831,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96382237762133,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96379125291271,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 108.96377886363533,
+              "static": true,
+              "updates": 1,
+              "revision": 27,
+              "captures": 2,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 95.88834099650693,
+              "static": false,
+              "updates": 1,
+              "revision": 28,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 95.88831805361647,
+              "static": false,
+              "updates": 1,
+              "revision": 28,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44094449300711,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44094449300712,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44096533216796,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44091535547798,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.4409091608393,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44092380536144,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.4408988752915,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44086973776236,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44085734848497,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44085734848497,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44084495920758,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 105.44088874125887,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 2,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96371481351878,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96371481351878,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96370651515048,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96370242424138,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96370242424138,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96370242424138,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96370242424138,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96364426573324,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96366510489406,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 108.96364426573324,
+              "static": true,
+              "updates": 2,
+              "revision": 29,
+              "captures": 3,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "lostpointercapture",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": ""
+            }
+          ]
+        },
+        {
+          "layout": "a",
+          "time": "noon",
+          "on": true,
+          "id": "chrome-a-noon-on",
+          "action": "mouse-drag",
+          "stableMean": 175.995368890444,
+          "staticDrop": true,
+          "updatesChanged": true,
+          "reflectionRevisionChanged": true,
+          "capturesChanged": true,
+          "exposureChanged": false,
+          "cameraChanged": false,
+          "maxBrightnessDelta": 39.1089872587452,
+          "regression": true,
+          "frames": [
+            {
+              "phase": "before",
+              "mean": 177.292121789048,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.01303724681712677,
+                0.9743222032320407,
+                0.058529584557693484,
+                0.2170266394155223
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.2742103321716,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.011926299726685846,
+                0.9768623192603041,
+                0.05658158589855565,
+                0.20590361026804066
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.3178390442928,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.010861597949466704,
+                0.9792709415069832,
+                0.054615912030596354,
+                0.1947499703801694
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.22929177156618,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.29202645105346,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.008871921189912554,
+                0.9836922063346251,
+                0.05063455102867373,
+                0.17235740324407856
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.29202025641476,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.008871921189912554,
+                0.9836922063346251,
+                0.05063455102867373,
+                0.17235740324407856
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.4416485372987,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007947426705758103,
+                0.9857041758623415,
+                0.048620499870899274,
+                0.16112157859393808
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.42500083916522,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007070145816819929,
+                0.9875832617719699,
+                0.04659204375964709,
+                0.149861588021297
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.27809975524886,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.006240270189135864,
+                0.9893291728485347,
+                0.04454988801298443,
+                0.13857905417786423
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.53085002914116,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.005458007371611728,
+                0.9909416294256759,
+                0.042494921507874435,
+                0.12727560203258767
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.77730109557461,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004723551649927162,
+                0.9924203656353292,
+                0.04042803599951405,
+                0.11595292077939238
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.77727406177505,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004723551649927162,
+                0.9924203656353292,
+                0.04042803599951405,
+                0.11595292077939238
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.7330053787922,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004037054845154907,
+                0.9937651654817983,
+                0.03834994507880311,
+                0.10461252207821078
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 177.2679926806568,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0033986916946752307,
+                0.994975800945043,
+                0.03626160603045701,
+                0.09325610090833958
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 176.7857808333348,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0028085957259842316,
+                0.9960520816311121,
+                0.034163736048769086,
+                0.0818852954294392
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 176.35245706876822,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0022669120818234506,
+                0.9969938245209591,
+                0.032057297072214205,
+                0.07050180622585552
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 175.99538547785667,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.9954042132879,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99538956876572,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99540210955826,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99537717948832,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.9953813869475,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99537519230884,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99535224941837,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 175.99535844405708,
+              "static": true,
+              "updates": 3,
+              "revision": 33,
+              "captures": 4,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.8863816316988,
+              "static": false,
+              "updates": 3,
+              "revision": 34,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.88641065267782,
+              "static": false,
+              "updates": 3,
+              "revision": 34,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.1608291724961,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16084592074785,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16084171328865,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16082511655205,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16083131119075,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.1608418648038,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.1608649592094,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.1608587645707,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16082553613245,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16083398601592,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16083398601592,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16084018065462,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 173.16082568764764,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 4,
+              "probeReady": false,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99531890443004,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99532945804313,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99533974359093,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99533763986133,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99533974359096,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99535438811307,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99531060606182,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.9953085023322,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 175.99528555944175,
+              "static": true,
+              "updates": 4,
+              "revision": 35,
+              "captures": 5,
+              "probeReady": true,
+              "exposure": 0.92,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "lostpointercapture",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": ""
+            }
+          ]
+        },
+        {
+          "layout": "a",
+          "time": "night",
+          "on": false,
+          "id": "chrome-a-night-off",
+          "action": "mouse-drag",
+          "stableMean": 3.9490149778557138,
+          "staticDrop": true,
+          "updatesChanged": true,
+          "reflectionRevisionChanged": true,
+          "capturesChanged": true,
+          "exposureChanged": false,
+          "cameraChanged": false,
+          "maxBrightnessDelta": 0.42781896386964036,
+          "regression": true,
+          "frames": [
+            {
+              "phase": "before",
+              "mean": 5.044784772727491,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.01303724681712677,
+                0.9743222032320407,
+                0.058529584557693484,
+                0.2170266394155223
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 5.179932435897664,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.011926299726685846,
+                0.9768623192603041,
+                0.05658158589855565,
+                0.20590361026804066
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.945259207459453,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.010861597949466704,
+                0.9792709415069832,
+                0.054615912030596354,
+                0.1947499703801694
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.963966538461813,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.748690396270694,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.008871921189912554,
+                0.9836922063346251,
+                0.05063455102867373,
+                0.17235740324407856
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.761791829837149,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007947426705758103,
+                0.9857041758623415,
+                0.048620499870899274,
+                0.16112157859393808
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.756620530303348,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007070145816819929,
+                0.9875832617719699,
+                0.04659204375964709,
+                0.149861588021297
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.637185099067936,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.006240270189135864,
+                0.9893291728485347,
+                0.04454988801298443,
+                0.13857905417786423
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.658551602564423,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.005458007371611728,
+                0.9909416294256759,
+                0.042494921507874435,
+                0.12727560203258767
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.6797829079257385,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004723551649927162,
+                0.9924203656353292,
+                0.04042803599951405,
+                0.11595292077939238
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.631215477855786,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004037054845154907,
+                0.9937651654817983,
+                0.03834994507880311,
+                0.10461252207821078
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.573400227273047,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0033986916946752307,
+                0.994975800945043,
+                0.03626160603045701,
+                0.09325610090833958
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.373346818182122,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0028085957259842316,
+                0.9960520816311121,
+                0.034163736048769086,
+                0.0818852954294392
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 4.1444383275061085,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0022669120818234506,
+                0.9969938245209591,
+                0.032057297072214205,
+                0.07050180622585552
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 3.948991567599304,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.948995658508395,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.948991567599304,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.948987476690213,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.9490104195806555,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.9490104195806555,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.9490166142193504,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.9490187179489546,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 3.9490187179489546,
+              "static": true,
+              "updates": 5,
+              "revision": 39,
+              "captures": 6,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.5211960139860734,
+              "static": false,
+              "updates": 5,
+              "revision": 40,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.521206416083975,
+              "static": false,
+              "updates": 5,
+              "revision": 40,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408649533801974,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408649533801974,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408711480188923,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408773426575867,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408543997671437,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408482051284492,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.940862849650594,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.940862849650594,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.940879597902342,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408734032636477,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.940879597902342,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.94085887529162,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9408608624711063,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 6,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490459848487207,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490397902100263,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490397902100263,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.949085559440796,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.949085559440796,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490792482519845,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490751573428935,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.9490522144524505,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 3.949058409091145,
+              "static": true,
+              "updates": 6,
+              "revision": 41,
+              "captures": 7,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "lostpointercapture",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": ""
+            }
+          ]
+        },
+        {
+          "layout": "a",
+          "time": "night",
+          "on": true,
+          "id": "chrome-a-night-on",
+          "action": "mouse-drag",
+          "stableMean": 136.46880743240135,
+          "staticDrop": true,
+          "updatesChanged": true,
+          "reflectionRevisionChanged": true,
+          "capturesChanged": true,
+          "exposureChanged": false,
+          "cameraChanged": false,
+          "maxBrightnessDelta": 56.60939176806738,
+          "regression": true,
+          "frames": [
+            {
+              "phase": "before",
+              "mean": 131.7885230536135,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.01303724681712677,
+                0.9743222032320407,
+                0.058529584557693484,
+                0.2170266394155223
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 132.3943674067622,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.011926299726685846,
+                0.9768623192603041,
+                0.05658158589855565,
+                0.20590361026804066
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 132.72896178904534,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.010861597949466704,
+                0.9792709415069832,
+                0.054615912030596354,
+                0.1947499703801694
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 133.17619285547923,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 133.1761720163184,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.009843378954546636,
+                0.9815476989581968,
+                0.05263325562158403,
+                0.18356732542394108
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 133.61844060023458,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.008871921189912554,
+                0.9836922063346251,
+                0.05063455102867373,
+                0.17235740324407856
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 134.06011087995373,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007947426705758103,
+                0.9857041758623415,
+                0.048620499870899274,
+                0.16112157859393808
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 134.44790590909153,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.007070145816819929,
+                0.9875832617719699,
+                0.04659204375964709,
+                0.149861588021297
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 134.879631282052,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.006240270189135864,
+                0.9893291728485347,
+                0.04454988801298443,
+                0.13857905417786423
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 135.3624681351984,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.005458007371611728,
+                0.9909416294256759,
+                0.042494921507874435,
+                0.12727560203258767
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 135.61992519230824,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004723551649927162,
+                0.9924203656353292,
+                0.04042803599951405,
+                0.11595292077939238
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 135.7412429254079,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.004037054845154907,
+                0.9937651654817983,
+                0.03834994507880311,
+                0.10461252207821078
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 135.67111012237814,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0033986916946752307,
+                0.994975800945043,
+                0.03626160603045701,
+                0.09325610090833958
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 135.79981675408072,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0028085957259842316,
+                0.9960520816311121,
+                0.034163736048769086,
+                0.0818852954294392
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 136.1363502738929,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0022669120818234506,
+                0.9969938245209591,
+                0.032057297072214205,
+                0.07050180622585552
+              ]
+            },
+            {
+              "phase": "drag",
+              "mean": 136.46884043123586,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46884043123586,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46883832750626,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46884043123583,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.4688236829841,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46878819930112,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46880284382328,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46879664918458,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "held",
+              "mean": 136.46882578671372,
+              "static": true,
+              "updates": 7,
+              "revision": 45,
+              "captures": 8,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 79.85941566433397,
+              "static": false,
+              "updates": 7,
+              "revision": 46,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.7814341083935,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78139243007183,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78139243007183,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78141116550304,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78140286713474,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78142370629558,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78142779720466,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78143200466388,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78142160256598,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78142160256598,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78144454545642,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78144244172685,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 134.78144863636552,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 8,
+              "probeReady": false,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.4688463927743,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.4688463927743,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46884428904474,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46884218531514,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46887541375335,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46887541375335,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46888160839205,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46888371212165,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.46888371212165,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            },
+            {
+              "phase": "released",
+              "mean": 136.4688607692312,
+              "static": true,
+              "updates": 8,
+              "revision": 47,
+              "captures": 9,
+              "probeReady": true,
+              "exposure": 0.86,
+              "camera": [
+                -0.3999999999999999,
+                1.5,
+                -2.25
+              ],
+              "rotation": [
+                -0.0017737467823704344,
+                0.9978008890998151,
+                0.02994301011504932,
+                0.05910715421351821
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "lostpointercapture",
+              "target": "CANVAS",
+              "id": ""
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "htmlSHA256": "d4a81450946f8a3bee7aa8649a673ce9ea4c202c68f749f56f1181817261cb86",
+  "result": "regression-reproduced"
+}

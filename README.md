@@ -26,6 +26,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 最新光照调整：[白天天光增强、四时段固定曝光与关灯瞬态修复](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/daylight-strength.html)。正午室内日光增强35%、天光增强65%；清晨/正午/黄昏/夜晚的固定曝光为1.00/0.92/1.04/0.86，开关灯、转头与跨房间使用同一时段值，替代此前统一80%的室内曝光校准。太阳方向与光斑位置保持。室内设置中的镜头高度范围扩为1.0–1.8米，默认1.5米。
 
+电脑交互修复：[鼠标松开瞬间闪光的逐帧对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/mouse-release.html)。修正普通画布click误匹配页面时段属性的事件判断，拖动结束保持当前静态光照和反射缓存。用实际浏览器鼠标按下/拖动/松开检查，四时段曝光和光源强度保持。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |

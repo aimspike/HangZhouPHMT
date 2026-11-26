@@ -1,5 +1,17 @@
 # Codex 续接上下文
 
+## 电脑鼠标松开瞬间闪光（2026-11-26）
+
+用户进一步定位到电脑拖动转动视角、鼠标松开一瞬间闪光。同步干净main到`c57fff0`后，用Playwright真实鼠标按下/移动/按住/松开复现：pointerup之后的普通canvas click使静态照明disabled、合成updates增加、反射revision变化，出现短暂旧照明回退后恢复；正午/夜晚、开/关灯均可见。此前直接改相机参数的转向检查没有产生浏览器click，未覆盖此问题。
+
+根因为`body.dataset.time`用于场景状态与CSS，而`render-quality.js`和`static-lighting.js`的全局click事件用`closest('[data-time],…')`匹配祖先，任意普通点击都能匹配body。现在限定为`button[data-time]`；`settings-storage.js`启用分支同类事件也同步限定，暂停分支仍enabled:false、只读恢复、不写入/不联网。没有屏蔽canvas click、阻止正常事件传播或改变鼠标转向逻辑。
+
+四时段曝光1.00/.92/1.04/.86、自然光增益、灯具能量、太阳方向/时刻、建筑/模型与所有烘焙保持。无需重烘焙，只重建单HTML（42,106,041字节，规范化SHA256 `26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41`）。
+
+`validation/verify-mouse-release.cjs`用真实鼠标拖动和松开，记录每个最终WebGL帧，按住停止后再松手，逐项检查static/updates/reflection revision/captures/exposure/camera。旧版4种客厅状态均复现，夜晚开灯最大均值跳变56.6094（0–255，非照度）；修复后Chrome桌面精细/轻量、缺HDR/depth扩展、Windows WebKit桌面、触屏微信UA共80组（四时段×开关灯×毛坯/A）3342帧通过。触屏原生touchend会阻止合成click，按pointerup验收；触屏与桌面分批验证，合并时检查每项断言、引擎和源码hash相同。测试只在采集页抑制一次性赞赏弹窗，应用弹窗未改动。
+
+真正的时段按钮、灯开关、门状态回退/恢复均通过；`verify-storage-suspended.cjs`验证PC、390宽手机与WebKit、旧设置只读恢复、无写入/云请求；单HTML离线与8项Pages装配通过。80组每环境219贴图/屋顶/保存暂停保持。证据`mouse-release-before.json`、`mouse-release-after.json`、`mouse-release-storage.json`及`surface-offline.json`；报告`quality-report/mouse-release.html`含同机位/曝光的真实小画布，仅放大排版，不做亮度修补。报告34资源hash和1280/390宽4种状态切换通过。正式release不推进，真机验收仍待完成。
+
 ## 白天天光、四时段固定曝光与关灯瞬态（2026-11-26）
 
 用户要求提高白天特别正午的日光和天光，修复关灯后移动视角短暂高亮，并为各时段按画面分别校准固定曝光；漫游镜头高度扩为1.0–1.8米。用户已撤回太阳位置问题，明确现有早中晚位置正确，不修改太阳方向、时刻、光斑位置或烘焙。保存/账号同步仍暂停（T06）。

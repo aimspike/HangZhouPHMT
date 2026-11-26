@@ -42,6 +42,8 @@
 
 该轮main功能提交`5f3c374`，报告hash修正`87c823b`；公网控件/曝光/高度、1152帧瞬态与184个报告资源均通过，见`validation/daylight-controls-public.json`、`lighting-transitions-public.json`和`daylight-report-public.json`。正式release不推进，T01整体仍待目视和真机验收。
 
+2026-11-26补充：电脑鼠标松开闪光已用实际pointerup/click复现；修正body[data-time]被误当成时段按钮的事件委托。Chrome精细/轻量、缺扩展、WebKit桌面和触屏UA共80组四时段/灯/装修状态保持静态光照、反射、曝光与机位，3342帧记录见`validation/mouse-release-after.json`。时段、灯与门仍正常更新，实际前后证据为`quality-report/mouse-release.html`；此前相机参数直接旋转的检查没有覆盖这一路鼠标事件。
+
 **验收标准**：按确认后的视觉参考逐场景验收；昼夜切换无明显条纹、漏光、异常反射或材质失真；记录设备、首屏耗时、帧率和 HTML 体积，并按确定后的预算检查。截图来自实际页面，模拟检查与真机结果分别记录。沿用现有实时渲染基础，路径追踪继续保持移除状态。
 
 <a id="t02"></a>
