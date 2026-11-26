@@ -430,3 +430,8 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 `quality-report/exposure-overlap.html`含48组正常前后对比（96张，PC/手机×昼夜×8房间+4近景）及4处×3横移机位×PC/手机前后诊断48张。诊断仅把各实体换固定颜色，几何和深度不变，用于观察衣柜条纹/台面交叠；不进入家装页。相机、角度、FOV、灯光滑块100%一致，曝光变化确为.8。正常图等待static enabled和probe ready再等3帧，无亮度修图；3并排图仅裁切缩放排版。夜晚桌面高亮像素占比（>=245）厨房18.62%→0.54%、卫生间14.11%→0、阳台台盆7.86%→0，显示像素统计不是照度。
 
 本地验证：exposure-overlap-before/after、overlap-motion-before/after、exposed-overlap、exposure-calibration、exposure-static-lighting、exposure-render-quality、exposure-decor、exposure-report-layout、surface-offline及模型相关结果。Chrome/触控微信UA模拟/缺HDR-depth/Windows WebKit共64固定状态、昼夜开关/自定义表面与门型回退/保存/横竖屏、219图/13PBR、屋顶、门扫掠闭合、床三侧与家具通道和离线通过。报告1280/390宽各48正常比较、24诊断机位及滑块/链接正常。旧亮度与曲面页保留原图，增加历史基线提示并链接当前校正。仅main，release7b53b23保持；手机均为模拟，真机持续性能仍待验收。
+
+
+功能提交 `32a37de28fff38e2186aba28621386e8b461d613` 已部署main；公开HTML SHA256 `7dc5e1967b803f86318e2b15700e7bdf842117dc7fd9847e0595a11a4bb2fec1` 与本地Pages转换内容一致。公开桌面/手机48实际机位、灯光基准/曝光校正、180%保存刷新、关灯/顶面回退及报告两宽度各48正常比较/24诊断机位均通过，无脚本/Shader错误或外部依赖。147张图片逐字节一致，4份JSON按Git LF规则一致。首次公共CDN一文件503和大HTML30秒下载超时，降低并发/延长下载时限后检查完成；单HTML约40MB的加载成本仍存在。见`validation/exposure-overlap-public.json`、`exposure-calibration-public.json`、`exposure-report-public.json`、`exposure-public-assets.json`、`exposure-deployment.json`。release与feature保持，后续证据提交不改应用。
+
+任务期间已有复审提交420dba8进入同一main历史，已完整保留。其VIS-01对应的默认过亮已在32a37de实际校正；VIS-04原自定义门状态回退按既有约定保持。VIS-05枕头前沿/角部黑斑在新版本正午关灯近景仍可复现：关闭反射后保留，暂时统一家具顶点照明后消失，说明应继续检查烘焙顶点照明/AO与近接缝采样，不能将其标为本轮Z-fighting修复完成。诊断原图在work/exposure-overlap/pillow-*.png，未处理最终截图。本轮未修改床品几何/材质，T01与真机整体验收继续保持进行中。

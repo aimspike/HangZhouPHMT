@@ -27,3 +27,8 @@
 [本地图文报告](../docs/quality-report/reaudit-20261126/index.html) · [在线图文报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/reaudit-20261126/)
 
 74张新房间画面、64光照状态、219图、几何快照、屋顶、房门、家具净空和660实体拓扑复核通过；未见页面/Shader错误及外部依赖请求。手机/微信为模拟，未做物理手机验收。默认过亮待继续处理，枕头接缝黑斑根因未确证，VIS-04按用户说明保留。应用默认灯光仍100%，本轮未实施参数调整。
+
+
+## 后续修复对应（32a37de）
+
+本页保留1ac446d的原始复审结论。后续32a37de实际采用原灯光基准50%/室内曝光80%，VIS-01已有新的正常画面和公开验证，见[过曝与模型穿插修复](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/exposure-overlap.html)。VIS-04既有回退约定保持。VIS-05在新版本正午关灯近景仍可见；关闭反射后保留、统一顶点照明后消失，应继续检查烘焙照明/AO及接缝采样，本轮未标为已修复。

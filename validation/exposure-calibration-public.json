@@ -1,0 +1,35 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/",
+  "scope": "Actual WebGL1 calibration, saved multiplier and legacy fallback; isolated storage",
+  "errors": [],
+  "cases": [
+    {
+      "time": "night",
+      "fixtureGain": 0.5,
+      "exposureGain": 0.8,
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 0.9504000000000001
+    },
+    {
+      "time": "noon",
+      "fixtureGain": 0.5,
+      "exposureGain": 0.8,
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 1.04512
+    }
+  ],
+  "savedMultiplierRestored": true,
+  "legacyFallback": {
+    "fixtureGain": 0.5,
+    "exposureGain": 0.8,
+    "userLampMultiplier": 1.8,
+    "effectiveLampPower": 0.9,
+    "exposure": 1.04512
+  },
+  "offHasZeroLampEnergy": true,
+  "outsideExposureRetained": true,
+  "result": "passed",
+  "HTMLSHA256": "7dc5e1967b803f86318e2b15700e7bdf842117dc7fd9847e0595a11a4bb2fec1"
+}

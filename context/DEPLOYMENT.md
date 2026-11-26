@@ -197,3 +197,9 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 
 ## 2026-11-26 · 稳定墙顶与陶瓷曲面修复
 修复提交 `ca184640cfedf10ebca26a2f8e0625a508aa0651` 已推送并部署。公开main HTML SHA256 `db9bd657259dc26d67523c768b1d98f10fcaad429005296b0dcf1289db8585cd` 与本地按Pages标题/设置命名空间转换后的内容一致。公开Chrome桌面/手机微信UA20机位、static 16位/反射加载及报告两宽度各20比较通过，43张图片逐字节一致，2份JSON按Git LF换行规范一致；无脚本/Shader错误或外部依赖请求。见 `validation/surface-public.json`、`surface-report-public.json`、`surface-public-assets.json`、`surface-deployment.json`。正式release仍7b53b23，HTML hash仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9。后续证据提交不改变已验证应用与图片。
+
+
+## 2026-11-26 · 过曝校正与共面接头修复
+功能提交 `32a37de28fff38e2186aba28621386e8b461d613` 已部署main；公开HTML SHA256 `7dc5e1967b803f86318e2b15700e7bdf842117dc7fd9847e0595a11a4bb2fec1` 与本地Pages转换内容一致。公开桌面/手机48实际机位、灯光基准/曝光校正、180%保存刷新、关灯/顶面回退及报告两宽度各48正常比较/24诊断机位均通过，无脚本/Shader错误或外部依赖。147张图片逐字节一致，4份JSON按Git LF规则一致。首次公共CDN一文件503和大HTML30秒下载超时，降低并发/延长下载时限后检查完成；单HTML约40MB的加载成本仍存在。见`validation/exposure-overlap-public.json`、`exposure-calibration-public.json`、`exposure-report-public.json`、`exposure-public-assets.json`、`exposure-deployment.json`。release与feature保持，后续证据提交不改应用。
+
+任务期间已有复审提交420dba8进入同一main历史，已完整保留。其VIS-01对应的默认过亮已在32a37de实际校正；VIS-04原自定义门状态回退按既有约定保持。VIS-05枕头前沿/角部黑斑在新版本正午关灯近景仍可复现：关闭反射后保留，暂时统一家具顶点照明后消失，说明应继续检查烘焙顶点照明/AO与近接缝采样，不能将其标为本轮Z-fighting修复完成。诊断原图在work/exposure-overlap/pillow-*.png，未处理最终截图。本轮未修改床品几何/材质，T01与真机整体验收继续保持进行中。
