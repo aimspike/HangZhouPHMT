@@ -1,0 +1,1504 @@
+{
+  "baseCommit": "a2cca0e",
+  "currentCommit": "84a30f47f6ade2322c705d6a47b3dd8b2c22b33e",
+  "cases": [
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "living",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-living-noon.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "master",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-master-noon.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "second",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-second-noon.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "kitchen",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-kitchen-noon.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "bath",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-bath-noon.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "living",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-living-night.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "master",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-master-night.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "second",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-second-night.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "kitchen",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-kitchen-night.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "baseline",
+      "room": "bath",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "desktop-baseline-bath-night.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "living",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-living-noon.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "master",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-master-noon.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "second",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-second-noon.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "kitchen",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-kitchen-noon.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "bath",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-bath-noon.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "living",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-living-night.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "master",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-master-night.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "second",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-second-night.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "kitchen",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-kitchen-night.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": false,
+      "version": "current",
+      "room": "bath",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "desktop-current-bath-night.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "living",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-living-noon.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "master",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-master-noon.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "second",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-second-noon.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "kitchen",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-kitchen-noon.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "bath",
+      "time": "noon",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-bath-noon.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "living",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-living-night.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "master",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-master-night.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "second",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-second-night.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "kitchen",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-kitchen-night.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "baseline",
+      "room": "bath",
+      "time": "night",
+      "hash": "26dd729cad15724c0f9a1a546898e7e6d4213144fcbd4e54470abb31c1397f41",
+      "file": "mobile-baseline-bath-night.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "living",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-living-noon.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "master",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-master-noon.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "second",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-second-noon.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "kitchen",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-kitchen-noon.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "bath",
+      "time": "noon",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-bath-noon.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "noon",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0,
+        "exposure": 0.92
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "living",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-living-night.png",
+      "camera": [
+        -0.3999999999999999,
+        1.5,
+        -2.25
+      ],
+      "angles": [
+        2.7032560937318353,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "master",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-master-night.png",
+      "camera": [
+        -0.5500000000000003,
+        1.5,
+        2.8499999999999996
+      ],
+      "angles": [
+        2.1319597390832485,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "second",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-second-night.png",
+      "camera": [
+        0.5499999999999998,
+        1.5,
+        4.199999999999999
+      ],
+      "angles": [
+        -1.0943289073211906,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "kitchen",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-kitchen-night.png",
+      "camera": [
+        1.6199999999999997,
+        1.5,
+        -3.75
+      ],
+      "angles": [
+        -0.5305578870294475,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    },
+    {
+      "mobile": true,
+      "version": "current",
+      "room": "bath",
+      "time": "night",
+      "hash": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+      "file": "mobile-current-bath-night.png",
+      "camera": [
+        -1.75,
+        1.5,
+        1.4500000000000002
+      ],
+      "angles": [
+        1.6951513213416576,
+        -0.12
+      ],
+      "fov": 105,
+      "calibration": {
+        "fixtureGain": 0.5,
+        "exposurePresets": {
+          "morning": 1,
+          "noon": 0.92,
+          "dusk": 1.04,
+          "night": 0.86
+        },
+        "exposurePolicy": "fixed per time; shared by lights on and off",
+        "time": "night",
+        "userLampMultiplier": 1,
+        "effectiveLampPower": 0.5,
+        "exposure": 0.86
+      }
+    }
+  ],
+  "errors": [],
+  "ui": [
+    {
+      "file": "ui-1440x960.png",
+      "width": 1440,
+      "height": 960,
+      "overflow": false,
+      "light": {
+        "x": 1280,
+        "y": 160,
+        "w": 136,
+        "h": 40
+      },
+      "decor": {
+        "x": 24,
+        "y": 160,
+        "w": 119.984375,
+        "h": 38
+      }
+    },
+    {
+      "file": "ui-390x844.png",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "light": {
+        "x": 250,
+        "y": 249,
+        "w": 128,
+        "h": 42
+      },
+      "decor": {
+        "x": 12,
+        "y": 249,
+        "w": 112.15625,
+        "h": 38
+      }
+    },
+    {
+      "file": "ui-320x740.png",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "light": {
+        "x": 180,
+        "y": 249,
+        "w": 128,
+        "h": 42
+      },
+      "decor": {
+        "x": 12,
+        "y": 249,
+        "w": 112.15625,
+        "h": 38
+      }
+    },
+    {
+      "file": "ui-740x360.png",
+      "width": 740,
+      "height": 360,
+      "overflow": false,
+      "light": {
+        "x": 600,
+        "y": 77,
+        "w": 128,
+        "h": 42
+      },
+      "decor": {
+        "x": 12,
+        "y": 127,
+        "w": 112.15625,
+        "h": 38
+      }
+    }
+  ],
+  "result": "passed",
+  "comparisons": [
+    {
+      "mobile": false,
+      "time": "noon",
+      "room": "living",
+      "meanAbsoluteRGBDifference": 0.013809585048010975,
+      "maxRGBDifference": 21
+    },
+    {
+      "mobile": false,
+      "time": "noon",
+      "room": "master",
+      "meanAbsoluteRGBDifference": 0.010723165294924555,
+      "maxRGBDifference": 25
+    },
+    {
+      "mobile": false,
+      "time": "noon",
+      "room": "second",
+      "meanAbsoluteRGBDifference": 0.00010909636488340192,
+      "maxRGBDifference": 7
+    },
+    {
+      "mobile": false,
+      "time": "noon",
+      "room": "kitchen",
+      "meanAbsoluteRGBDifference": 0.003805834190672154,
+      "maxRGBDifference": 25
+    },
+    {
+      "mobile": false,
+      "time": "noon",
+      "room": "bath",
+      "meanAbsoluteRGBDifference": 0.011025162894375856,
+      "maxRGBDifference": 33
+    },
+    {
+      "mobile": false,
+      "time": "night",
+      "room": "living",
+      "meanAbsoluteRGBDifference": 0.01032150205761317,
+      "maxRGBDifference": 17
+    },
+    {
+      "mobile": false,
+      "time": "night",
+      "room": "master",
+      "meanAbsoluteRGBDifference": 0.008744748799725652,
+      "maxRGBDifference": 18
+    },
+    {
+      "mobile": false,
+      "time": "night",
+      "room": "second",
+      "meanAbsoluteRGBDifference": 8.841306584362139e-05,
+      "maxRGBDifference": 8
+    },
+    {
+      "mobile": false,
+      "time": "night",
+      "room": "kitchen",
+      "meanAbsoluteRGBDifference": 0.002222650891632373,
+      "maxRGBDifference": 14
+    },
+    {
+      "mobile": false,
+      "time": "night",
+      "room": "bath",
+      "meanAbsoluteRGBDifference": 0.006306370027434842,
+      "maxRGBDifference": 33
+    },
+    {
+      "mobile": true,
+      "time": "noon",
+      "room": "living",
+      "meanAbsoluteRGBDifference": 0.0,
+      "maxRGBDifference": 0
+    },
+    {
+      "mobile": true,
+      "time": "noon",
+      "room": "master",
+      "meanAbsoluteRGBDifference": 3.735659343874194e-05,
+      "maxRGBDifference": 1
+    },
+    {
+      "mobile": true,
+      "time": "noon",
+      "room": "second",
+      "meanAbsoluteRGBDifference": 0.0,
+      "maxRGBDifference": 0
+    },
+    {
+      "mobile": true,
+      "time": "noon",
+      "room": "kitchen",
+      "meanAbsoluteRGBDifference": 0.001517217788939748,
+      "maxRGBDifference": 12
+    },
+    {
+      "mobile": true,
+      "time": "noon",
+      "room": "bath",
+      "meanAbsoluteRGBDifference": 0.0010509354901140052,
+      "maxRGBDifference": 27
+    },
+    {
+      "mobile": true,
+      "time": "night",
+      "room": "living",
+      "meanAbsoluteRGBDifference": 0.0,
+      "maxRGBDifference": 0
+    },
+    {
+      "mobile": true,
+      "time": "night",
+      "room": "master",
+      "meanAbsoluteRGBDifference": 5.9410485950770314e-05,
+      "maxRGBDifference": 1
+    },
+    {
+      "mobile": true,
+      "time": "night",
+      "room": "second",
+      "meanAbsoluteRGBDifference": 0.0,
+      "maxRGBDifference": 0
+    },
+    {
+      "mobile": true,
+      "time": "night",
+      "room": "kitchen",
+      "meanAbsoluteRGBDifference": 0.0009703712705292485,
+      "maxRGBDifference": 12
+    },
+    {
+      "mobile": true,
+      "time": "night",
+      "room": "bath",
+      "meanAbsoluteRGBDifference": 0.0005427958034593106,
+      "maxRGBDifference": 14
+    }
+  ]
+}
