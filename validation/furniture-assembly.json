@@ -1,6 +1,6 @@
 {
   "scope": "Check assembled shipped LODs. Run with Blender --background --python this_file.\nBVH surface intersections and inside-solid tests prove contact; sampled nearest\nsurface distances are upper bounds, with 0.7 mm export/assembly tolerance.\nSeparate wall-mounted mirror and upper cabinet may use the architectural wall.\n",
-  "modelSHA": "ec3e1536fbf9d62f1ed6cee7087b07bb6647e644cacba9a30103041e0d895a6e",
+  "modelSHA": "230b01e5d1c04b4182c024228599eb20793f28b9b5e0ed0c8c76ec9e96f2f15d",
   "toleranceMm": 0.7,
   "models": {
     "sofa": {
@@ -2426,7 +2426,7 @@
           [
             "second-wardrobe / top panel",
             "second-wardrobe / laminated end panel.001",
-            0
+            0.0
           ],
           [
             "second-wardrobe / top panel",
@@ -2667,7 +2667,7 @@
           [
             "second-wardrobe / top panel",
             "second-wardrobe / laminated end panel.001",
-            0
+            0.0
           ],
           [
             "second-wardrobe / top panel",
@@ -4117,7 +4117,7 @@
     },
     "kitchen-north": {
       "high": {
-        "parts": 15,
+        "parts": 12,
         "components": [
           [
             "kitchen-north / toe kick",
@@ -4126,10 +4126,7 @@
             "kitchen-north / cabinet end.001",
             "kitchen-north / cabinet back",
             "kitchen-north / counter front support",
-            "kitchen-north / counter end",
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail",
-            "kitchen-north / counter rail.001",
+            "kitchen-north / single opening countertop",
             "kitchen-north / flanged sink vessel",
             "kitchen-north / mounted cabinet pull",
             "kitchen-north / mounted cabinet pull.001",
@@ -4181,7 +4178,7 @@
           ],
           [
             "kitchen-north / cabinet end",
-            "kitchen-north / counter end",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
@@ -4201,7 +4198,7 @@
           ],
           [
             "kitchen-north / cabinet end.001",
-            "kitchen-north / counter end.001",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
@@ -4211,71 +4208,16 @@
           ],
           [
             "kitchen-north / cabinet back",
-            "kitchen-north / counter end",
-            0
-          ],
-          [
-            "kitchen-north / cabinet back",
-            "kitchen-north / counter end.001",
-            0
-          ],
-          [
-            "kitchen-north / cabinet back",
-            "kitchen-north / counter rail",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
             "kitchen-north / counter front support",
-            "kitchen-north / counter end",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
-            "kitchen-north / counter front support",
-            "kitchen-north / counter end.001",
-            0
-          ],
-          [
-            "kitchen-north / counter front support",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / counter rail",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter rail",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter rail.001",
+            "kitchen-north / single opening countertop",
             "kitchen-north / flanged sink vessel",
             0
           ],
@@ -4292,7 +4234,7 @@
         ]
       },
       "mobile": {
-        "parts": 15,
+        "parts": 12,
         "components": [
           [
             "kitchen-north / toe kick",
@@ -4301,10 +4243,7 @@
             "kitchen-north / cabinet end.001",
             "kitchen-north / cabinet back",
             "kitchen-north / counter front support",
-            "kitchen-north / counter end",
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail",
-            "kitchen-north / counter rail.001",
+            "kitchen-north / single opening countertop",
             "kitchen-north / flanged sink vessel",
             "kitchen-north / mounted cabinet pull",
             "kitchen-north / mounted cabinet pull.001",
@@ -4356,7 +4295,7 @@
           ],
           [
             "kitchen-north / cabinet end",
-            "kitchen-north / counter end",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
@@ -4376,7 +4315,7 @@
           ],
           [
             "kitchen-north / cabinet end.001",
-            "kitchen-north / counter end.001",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
@@ -4386,71 +4325,16 @@
           ],
           [
             "kitchen-north / cabinet back",
-            "kitchen-north / counter end",
-            0
-          ],
-          [
-            "kitchen-north / cabinet back",
-            "kitchen-north / counter end.001",
-            0
-          ],
-          [
-            "kitchen-north / cabinet back",
-            "kitchen-north / counter rail",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
             "kitchen-north / counter front support",
-            "kitchen-north / counter end",
+            "kitchen-north / single opening countertop",
             0
           ],
           [
-            "kitchen-north / counter front support",
-            "kitchen-north / counter end.001",
-            0
-          ],
-          [
-            "kitchen-north / counter front support",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / counter rail",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / counter rail.001",
-            0
-          ],
-          [
-            "kitchen-north / counter end.001",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter rail",
-            "kitchen-north / flanged sink vessel",
-            0
-          ],
-          [
-            "kitchen-north / counter rail.001",
+            "kitchen-north / single opening countertop",
             "kitchen-north / flanged sink vessel",
             0
           ],
@@ -4808,7 +4692,7 @@
           [
             "laundry-stack / full height cabinet side.001",
             "laundry-stack / structural shelf.003",
-            0.0
+            0
           ],
           [
             "laundry-stack / wall backing",
@@ -5209,7 +5093,7 @@
           [
             "laundry-stack / full height cabinet side.001",
             "laundry-stack / structural shelf.003",
-            0.0
+            0
           ],
           [
             "laundry-stack / wall backing",

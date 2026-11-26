@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8879/docs/quality-report/exposure-overlap.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 48,
+      "motionFrames": 24,
+      "slider": "passed",
+      "images": "all decoded",
+      "links": 12,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 48,
+      "motionFrames": 24,
+      "slider": "passed",
+      "images": "all decoded",
+      "links": 12,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

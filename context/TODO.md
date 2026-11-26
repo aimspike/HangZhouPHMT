@@ -124,3 +124,5 @@
 - 2026-11-25：T01新增Cycles离线固定状态光照、全场景AO和房间反射数据接入，16状态、双档独立家具烘焙及实际网页对比。整体目视与真机性能仍待验收，T01保持进行中。
 
 - 2026-11-26 · T01：`ca18464`修复稳定正午关灯墙顶斑驳与陶瓷三角折痕/放射纹，采用更高采样、独立UV区域HDR降噪、16位照明数据及规则陶瓷曲面；`0729e62`记录公开验证。新增[20组实际网页前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/surface-fixes.html)，PC/手机模拟/Windows WebKit/缺扩展/离线和门通道回归通过，公开43张图片与本地一致。默认灯光/曝光保持；单HTML约40MB，首次加载和真机持续性能仍需实际验收，T01保持进行中。
+
+- 2026-11-26 · T01追加：根据“仍过曝、部分模型穿插/Z-fighting”反馈，实际校正灯光基准能量50%和室内曝光80%，保存倍率保持；修正衣柜、洗烘柜、厨房、餐椅、书桌及门框共面接头，厨房北台面单实体重构并消除30mm交叠。新增[过曝与穿插对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/exposure-overlap.html)、144张正常/诊断源图、横移与几何抽样；T01继续进行中，真机持续性能待验收。

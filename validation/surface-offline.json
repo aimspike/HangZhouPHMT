@@ -21,13 +21,13 @@
       "states": 16,
       "architectureMeshes": 73,
       "furnitureMeshes": 125,
-      "matchedVertices": 518496,
+      "matchedVertices": 516792,
       "decodedImages": 8,
       "decodeCacheBytes": 42240000,
       "updates": 1,
       "reflectionBakes": 1,
       "error": null,
-      "composeMs": 6883.4000000059605,
+      "composeMs": 5286.300000000279,
       "irradianceBits": 16,
       "atlasTextureSize": [
         1024,
@@ -250,36 +250,36 @@
         "kitchen-east": {
           "high": {
             "triangles": 5940,
-            "vertices": 4742,
+            "vertices": 4748,
             "drawGroups": 5
           },
           "mobile": {
             "triangles": 5940,
-            "vertices": 4742,
+            "vertices": 4748,
             "drawGroups": 5
           }
         },
         "kitchen-north": {
           "high": {
-            "triangles": 3624,
-            "vertices": 2946,
+            "triangles": 3256,
+            "vertices": 2650,
             "drawGroups": 5
           },
           "mobile": {
-            "triangles": 2912,
-            "vertices": 2408,
+            "triangles": 2344,
+            "vertices": 1981,
             "drawGroups": 5
           }
         },
         "study-desk": {
           "high": {
             "triangles": 1692,
-            "vertices": 1336,
+            "vertices": 1338,
             "drawGroups": 4
           },
           "mobile": {
             "triangles": 1692,
-            "vertices": 1336,
+            "vertices": 1338,
             "drawGroups": 4
           }
         },
@@ -324,6 +324,6 @@
     "night": true,
     "settingsClosed": true
   },
-  "HTMLSHA256": "d73e873ce48d82723de78bc707d6d2891a9f8d77f0aa64a72199900bf79b97fe",
+  "HTMLSHA256": "fc062aba2a76635068df24cbc5f527640ebe79d0abae3c9f3a2f93febac8db45",
   "result": "passed"
 }

@@ -186,7 +186,7 @@ for x in [-.195,.195]:
     tube('continuous cantilever leg',[(x,.038,.19),(x,.038,-.2),(x,.075,-.22),(x,.435,-.22),(x,.47,-.185),(x,.47,.18),(x,.62,.235),(x,.83,.27)],.009,'chrome')
     cube('armrest',(x,.65,-.035),(.034,.026,.28),'oak',.012,4)
     tube('arm support',[(x,.47,-.15),(x,.64,-.15),(x,.65,-.1)],.007,'chrome')
-    tube('rear arm attachment',[(x,.65,.095),(x,.65,.24)],.008,'chrome')
+    tube('rear arm attachment',[(x,.65,.095),(x,.65,.236)],.008,'chrome')
     for yy in [.65,.80]:
         zz=.184+.12*(1-(x/.23)**2)
         tube('back fixing boss',[(x,yy,zz-.003),(x,yy,.235+(yy-.62)/.21*.035)],.012,'black')
@@ -239,8 +239,9 @@ def cabinetry(id,width,height,depth,doors=3):
     global current
     current=id
     cube('recessed plinth',(0,.057,.015),(width-.06,.114,depth-.05),'black',.002)
-    cube('base panel',(0,.12,0),(width,.018,depth),'wood',.002)
-    cube('top panel',(0,height-.009,0),(width,.018,depth),'cream',.002)
+    # Panels terminate inside the side/back boards. No coincident outer skins.
+    cube('base panel',(0,.12,.006),(width-.036,.018,depth-.012),'wood',.002)
+    cube('top panel',(0,height-.009,0),(width-.036,.018,depth),'cream',.002)
     for x in [-width/2+.009,width/2-.009]:cube('laminated end panel',(x,height/2,0),(.018,height,depth),'cream',.002)
     cube('backing panel',(0,height/2,-depth/2+.006),(width-.036,height-.04,.012),'cream',.001)
     for i in range(1,doors):cube('internal hinge partition',(-width/2+width*i/doors,height/2,0),(.018,height-.04,depth-.036),'cream',.001)
@@ -255,7 +256,7 @@ cabinetry('master-wardrobe',1.6,2.4,.6)
 cabinetry('second-wardrobe',1.5,2.4,.55)
 
 current='sideboard'
-cube('cabinet bottom',(0,.13,0),(1.06,.018,.28),'wood',.002)
+cube('cabinet bottom',(0,.13,.00875),(1.024,.018,.2625),'wood',.002)
 cube('oak counter',(0,.815,0),(1.06,.027,.28),'oak',.004)
 for x in [-.521,.521]:cube('side panel',(x,.47,0),(.018,.68,.28),'wood',.002)
 cube('back board',(0,.46,-.13),(1.024,.66,.015),'wood',.001)
@@ -280,11 +281,11 @@ for j in range(16):cube('vent fin',(-.25+j*.033,.06,-.358),(.004,.044,.004),'app
 
 current='kitchen-east'
 # Local X is cabinet run, local +Z faces the room. Rotation maps it west.
-cube('toe kick',(0,.085,-.012),(2.53,.17,.51),'black',.002)
-cube('carcass bottom',(0,.17,0),(2.53,.018,.62),'wood',.002)
+cube('toe kick',(0,.085,-.012),(2.49,.17,.51),'black',.002)
+cube('carcass bottom',(0,.17,.009),(2.494,.018,.602),'wood',.002)
 cube('stone worktop',(0,.91,.02),(2.56,.055,.67),'ceramic',.005,4)
 for x in [-1.256,1.256]:cube('side return',(x,.528,0),(.018,.714,.62),'oak',.002)
-cube('carcass backing',(0,.528,-.301),(2.53,.714,.018),'wood',.002)
+cube('carcass backing',(0,.528,-.301),(2.494,.714,.018),'wood',.002)
 cube('counter front support',(0,.866,.287),(2.51,.038,.026),'wood',.002)
 for j in range(5):
     x=-1.012+j*.506
@@ -295,14 +296,25 @@ for j in range(5):
         for yy in [.38,.6]:cube('drawer shadow joint',(x,yy,.328),(.478,.004,.003),'black',.001)
 
 current='kitchen-north'
-cube('toe kick',(0,.089,0),(1.03,.178,.49),'black',.002)
-cube('carcass bottom',(0,.179,0),(1.03,.018,.59),'oak',.002)
-for x in [-.506,.506]:cube('cabinet end',(x,.532,0),(.018,.706,.59),'oak',.002)
-cube('cabinet back',(0,.532,-.286),(.994,.706,.018),'oak',.002)
-cube('counter front support',(0,.866,.275),(.994,.038,.026),'oak',.002)
-# Four counter strips leave a real sink opening.
-for x in [-.46,.46]:cube('counter end',(x,.91,0),(.14,.055,.63),'ceramic',.004)
-for z in [-.25,.25]:cube('counter rail',(0,.91,z),(.8,.055,.13),'ceramic',.004)
+cube('toe kick',(-.015,.089,0),(1.,.178,.49),'black',.002)
+cube('carcass bottom',(-.015,.179,.009),(.964,.018,.572),'oak',.002)
+for x in [-.506,.476]:cube('cabinet end',(x,.532,0),(.018,.706,.59),'oak',.002)
+cube('cabinet back',(-.015,.532,-.286),(.964,.706,.018),'oak',.002)
+cube('counter front support',(-.015,.866,.275),(.964,.038,.026),'oak',.002)
+# One closed countertop ring, with a real opening and no overlapping strips.
+# Its right end butts against the east worktop instead of penetrating it.
+vertices=[];faces=[]
+outer=[(-.53,-.315),(.50,-.315),(.50,.315),(-.53,.315)]
+inner=[(-.39,-.185),(.39,-.185),(.39,.185),(-.39,.185)]
+for y in [.8825,.9375]:
+    for ring in [outer,inner]:vertices.extend(xyz((x,y,z)) for x,z in ring)
+for j in range(4):
+    k=(j+1)%4
+    faces.extend([(8+j,8+k,12+k,12+j),(j,4+j,4+k,k),(j,k,8+k,8+j),(4+j,12+j,12+k,4+k)])
+me=bpy.data.meshes.new('single sink countertop');me.from_pydata(vertices,[],faces);me.update();counter=bpy.data.objects.new('counter',me);scene.collection.objects.link(counter)
+finish(counter,'single opening countertop','ceramic')
+mod=counter.modifiers.new('Counter edge radius','BEVEL');mod.width=.002;mod.segments=3;bpy.context.view_layer.objects.active=counter;bpy.ops.object.modifier_apply(modifier=mod.name)
+mod=counter.modifiers.new('Counter panel normals','WEIGHTED_NORMAL');mod.keep_sharp=True;bpy.ops.object.modifier_apply(modifier=mod.name)
 # One watertight vessel with a continuous inset lip. Its flange covers the
 # .78 x .37 m counter opening by >=18 mm, including the rounded corners.
 def sink_vessel():
@@ -324,15 +336,15 @@ def sink_vessel():
         for j in range(n):faces.append((centre,rings[index][j],rings[index][(j+1)%n]))
     mesh=bpy.data.meshes.new('continuous sink vessel');mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new('sink',mesh);scene.collection.objects.link(o);finish(o,'flanged sink vessel','chrome')
 sink_vessel()
-for x in [-.26,.26]:
-    cube('cabinet door',(x,.53,.303),(.517,.69,.018),'wood',.003)
+for x,width in [(-.26,.517),(.245,.487)]:
+    cube('cabinet door',(x,.53,.303),(width,.69,.018),'wood',.003)
     tube('mounted cabinet pull',[(x-.07,.72,.310),(x-.07,.72,.327),(x+.07,.72,.327),(x+.07,.72,.310)],.005,'chrome')
 
 current='study-desk'
 cube('veneered writing top',(0,.75,0),(.73,.055,1.38),'oak',.006)
 for z in [-.58,.58]:
     for x in [-.3,.3]:cube('desk welded upright',(x,.368,z),(.026,.706,.026),'chrome',.005)
-    cube('desk welded top rail',(0,.71,z),(.626,.026,.026),'chrome',.005)
+    cube('desk welded top rail',(0,.71,z),(.580,.026,.022),'chrome',.005)
 cube('slim drawer',(0,.674,0),(.6,.1,.8),'wood',.003)
 cube('recessed drawer pull',(.301,.674,0),(.006,.012,.15),'black',.002)
 
@@ -356,7 +368,7 @@ current='laundry-stack'
 # East-wall cabinet, local front -Z. Two independent 840 mm appliance bodies.
 for x in [-.331,.331]:cube('full height cabinet side',(x,1.12,0),(.018,2.24,.68),'applianceWhite',.002)
 cube('wall backing',(0,1.12,.331),(.644,2.24,.018),'applianceWhite',.001)
-for y in [.009,.909,1.8,2.231]:cube('structural shelf',(0,y,0),(.644,.018,.68),'oak',.002)
+for y in [.009,.909,1.8,2.231]:cube('structural shelf',(0,y,-.009),(.644,.018,.662),'oak',.002)
 for base,dryer in [(.048,False),(.936,True)]:
     label='dryer' if dryer else 'washer'
     cube(label+' enamel shell',(0,base+.42,.011),(.596,.84,.60),'applianceWhite',.014,5)
@@ -387,7 +399,7 @@ cube('upper storage divider',(0,2.015,0),(.018,.414,.644),'oak',.001)
 
 current='balcony-vanity'
 cube('recessed plinth',(0,.05,.024),(.456,.10,.49),'graphite',.002)
-cube('cabinet floor',(0,.109,0),(.464,.018,.56),'oak',.002)
+cube('cabinet floor',(0,.109,-.009),(.464,.018,.542),'oak',.002)
 for x in [-.241,.241]:cube('basin cabinet side',(x,.4365,0),(.018,.657,.56),'applianceWhite',.002)
 cube('basin cabinet backing',(0,.436,.271),(.464,.654,.018),'applianceWhite',.001)
 for x in [-.12,.12]:

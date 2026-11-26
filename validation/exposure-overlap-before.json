@@ -1,0 +1,4291 @@
+{
+  "stage": "before",
+  "url": "http://127.0.0.1:8879/work/exposure-overlap/before.html",
+  "scope": "Actual settled WebGL canvas; phone viewport/WeChat UA simulated",
+  "cases": [
+    {
+      "mobile": false,
+      "captures": [
+        {
+          "file": "before-pc-night-living.webp",
+          "time": "night",
+          "room": "living",
+          "metrics": {
+            "mean": 180.4880737794193,
+            "brightFraction": 0.010035493827160494,
+            "clippedFraction": 0,
+            "darkFraction": 0.0015987654320987654
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 8,
+              "decodeCacheBytes": 43696128,
+              "updates": 1,
+              "reflectionBakes": 1,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "living",
+              "captures": 2,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -0.3999999999999999,
+              1.5,
+              -2.25
+            ],
+            "angles": [
+              2.7032560937318353,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-master.webp",
+          "time": "night",
+          "room": "master",
+          "metrics": {
+            "mean": 195.0097906787864,
+            "brightFraction": 0.018919753086419754,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 10,
+              "decodeCacheBytes": 44482560,
+              "updates": 1,
+              "reflectionBakes": 2,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 3,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -0.5500000000000003,
+              1.5,
+              2.8499999999999996
+            ],
+            "angles": [
+              2.1319597390832485,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-kitchen.webp",
+          "time": "night",
+          "room": "kitchen",
+          "metrics": {
+            "mean": 203.0061383503045,
+            "brightFraction": 0.1862422839506173,
+            "clippedFraction": 0.012424382716049382,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 12,
+              "decodeCacheBytes": 45268992,
+              "updates": 1,
+              "reflectionBakes": 3,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "kitchen",
+              "captures": 4,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.6199999999999997,
+              1.5,
+              -3.75
+            ],
+            "angles": [
+              -0.5305578870294475,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-dining.webp",
+          "time": "night",
+          "room": "dining",
+          "metrics": {
+            "mean": 188.92188137138132,
+            "brightFraction": 0.020567901234567903,
+            "clippedFraction": 0,
+            "darkFraction": 0.0007746913580246914
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 12,
+              "decodeCacheBytes": 45268992,
+              "updates": 1,
+              "reflectionBakes": 3,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              0.020000000000000018,
+              1.5,
+              -2.45
+            ],
+            "angles": [
+              -2.183028881381311,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-second.webp",
+          "time": "night",
+          "room": "second",
+          "metrics": {
+            "mean": 192.08199449115432,
+            "brightFraction": 0.03542901234567901,
+            "clippedFraction": 0.0000046296296296296296,
+            "darkFraction": 0.0002330246913580247
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 14,
+              "decodeCacheBytes": 46055424,
+              "updates": 1,
+              "reflectionBakes": 4,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "second",
+              "captures": 5,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              0.5499999999999998,
+              1.5,
+              4.199999999999999
+            ],
+            "angles": [
+              -1.0943289073211906,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-bath.webp",
+          "time": "night",
+          "room": "bath",
+          "metrics": {
+            "mean": 189.3183115559565,
+            "brightFraction": 0.14110802469135802,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 16,
+              "decodeCacheBytes": 46841856,
+              "updates": 1,
+              "reflectionBakes": 5,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "bath",
+              "captures": 6,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.75,
+              1.5,
+              1.4500000000000002
+            ],
+            "angles": [
+              1.6951513213416576,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-balcony.webp",
+          "time": "night",
+          "room": "balcony",
+          "metrics": {
+            "mean": 140.72015225149846,
+            "brightFraction": 0.05117283950617284,
+            "clippedFraction": 0.012635802469135803,
+            "darkFraction": 0.04452469135802469
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 18,
+              "decodeCacheBytes": 47628288,
+              "updates": 1,
+              "reflectionBakes": 6,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "balcony",
+              "captures": 7,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.3000000000000003,
+              1.5,
+              5.449999999999999
+            ],
+            "angles": [
+              -1.797595174848783,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-storage.webp",
+          "time": "night",
+          "room": "storage",
+          "metrics": {
+            "mean": 160.8295625440226,
+            "brightFraction": 0.04683333333333333,
+            "clippedFraction": 0.0005972222222222222,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 20,
+              "decodeCacheBytes": 48414720,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "storage",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.6999999999999997,
+              1.5,
+              0.6500000000000004
+            ],
+            "angles": [
+              -1.5707963267948966,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-night-balconyBasin.webp",
+          "time": "night",
+          "room": "balconyBasin",
+          "metrics": {
+            "mean": 193.70522140740556,
+            "brightFraction": 0.07863734567901234,
+            "clippedFraction": 0.00016049382716049382,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 20,
+              "decodeCacheBytes": 48414720,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "balcony",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.8299999999999996,
+              1.3,
+              5.029999999999999
+            ],
+            "angles": [
+              -1.6548086386023912,
+              -0.4747612885134051
+            ],
+            "fov": 58
+          }
+        },
+        {
+          "file": "before-pc-night-pillow.webp",
+          "time": "night",
+          "room": "pillow",
+          "metrics": {
+            "mean": 189.20789979886086,
+            "brightFraction": 0.010677469135802468,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 20,
+              "decodeCacheBytes": 48414720,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.3,
+              1.1,
+              3.0500000000000007
+            ],
+            "angles": [
+              2.1224513093234427,
+              -0.26850672700781286
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-pc-night-kitchenCorner.webp",
+          "time": "night",
+          "room": "kitchenCorner",
+          "metrics": {
+            "mean": 159.2768518013001,
+            "brightFraction": 0.013095679012345679,
+            "clippedFraction": 0,
+            "darkFraction": 0.010046296296296296
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 20,
+              "decodeCacheBytes": 48414720,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "kitchen",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.9499999999999997,
+              1.4,
+              -5.25
+            ],
+            "angles": [
+              -0.8685393952858897,
+              -0.5221917939829506
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-pc-night-wardrobe.webp",
+          "time": "night",
+          "room": "wardrobe",
+          "metrics": {
+            "mean": 208.0170870038597,
+            "brightFraction": 0,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 20,
+              "decodeCacheBytes": 48414720,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 10388.899999999907,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.6,
+              1.4,
+              2.6500000000000004
+            ],
+            "angles": [
+              1.1902899496825314,
+              -0.27165712367757383
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-pc-noon-living.webp",
+          "time": "noon",
+          "room": "living",
+          "metrics": {
+            "mean": 206.52571872050063,
+            "brightFraction": 0.016314814814814813,
+            "clippedFraction": 0.00002623456790123457,
+            "darkFraction": 0.00000771604938271605
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 23,
+              "decodeCacheBytes": 37945344,
+              "updates": 2,
+              "reflectionBakes": 8,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "living",
+              "captures": 9,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -0.3999999999999999,
+              1.5,
+              -2.25
+            ],
+            "angles": [
+              2.7032560937318353,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-master.webp",
+          "time": "noon",
+          "room": "master",
+          "metrics": {
+            "mean": 210.4615085991706,
+            "brightFraction": 0.031816358024691356,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 24,
+              "decodeCacheBytes": 38338560,
+              "updates": 2,
+              "reflectionBakes": 9,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 10,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -0.5500000000000003,
+              1.5,
+              2.8499999999999996
+            ],
+            "angles": [
+              2.1319597390832485,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-kitchen.webp",
+          "time": "noon",
+          "room": "kitchen",
+          "metrics": {
+            "mean": 214.39049183934452,
+            "brightFraction": 0.26283487654320986,
+            "clippedFraction": 0.02991820987654321,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 25,
+              "decodeCacheBytes": 38731776,
+              "updates": 2,
+              "reflectionBakes": 10,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "kitchen",
+              "captures": 11,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.6199999999999997,
+              1.5,
+              -3.75
+            ],
+            "angles": [
+              -0.5305578870294475,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-dining.webp",
+          "time": "noon",
+          "room": "dining",
+          "metrics": {
+            "mean": 201.26132362395518,
+            "brightFraction": 0.02960185185185185,
+            "clippedFraction": 0,
+            "darkFraction": 0.000515432098765432
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 25,
+              "decodeCacheBytes": 38731776,
+              "updates": 2,
+              "reflectionBakes": 10,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "living",
+              "captures": 11,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              0.020000000000000018,
+              1.5,
+              -2.45
+            ],
+            "angles": [
+              -2.183028881381311,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-second.webp",
+          "time": "noon",
+          "room": "second",
+          "metrics": {
+            "mean": 216.1102084819687,
+            "brightFraction": 0.061717592592592595,
+            "clippedFraction": 0.000006172839506172839,
+            "darkFraction": 0.00022839506172839507
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 26,
+              "decodeCacheBytes": 39124992,
+              "updates": 2,
+              "reflectionBakes": 11,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "second",
+              "captures": 12,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              0.5499999999999998,
+              1.5,
+              4.199999999999999
+            ],
+            "angles": [
+              -1.0943289073211906,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-bath.webp",
+          "time": "noon",
+          "room": "bath",
+          "metrics": {
+            "mean": 213.12870093298528,
+            "brightFraction": 0.19314506172839507,
+            "clippedFraction": 0.0000030864197530864196,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 27,
+              "decodeCacheBytes": 39518208,
+              "updates": 2,
+              "reflectionBakes": 12,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "bath",
+              "captures": 13,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.75,
+              1.5,
+              1.4500000000000002
+            ],
+            "angles": [
+              1.6951513213416576,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-balcony.webp",
+          "time": "noon",
+          "room": "balcony",
+          "metrics": {
+            "mean": 201.01277247844564,
+            "brightFraction": 0.15146913580246912,
+            "clippedFraction": 0.03002314814814815,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 28,
+              "decodeCacheBytes": 39911424,
+              "updates": 2,
+              "reflectionBakes": 13,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "balcony",
+              "captures": 14,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.3000000000000003,
+              1.5,
+              5.449999999999999
+            ],
+            "angles": [
+              -1.797595174848783,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-storage.webp",
+          "time": "noon",
+          "room": "storage",
+          "metrics": {
+            "mean": 175.9529492707222,
+            "brightFraction": 0.058401234567901236,
+            "clippedFraction": 0.003921296296296296,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 29,
+              "decodeCacheBytes": 40304640,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "storage",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.6999999999999997,
+              1.5,
+              0.6500000000000004
+            ],
+            "angles": [
+              -1.5707963267948966,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-pc-noon-balconyBasin.webp",
+          "time": "noon",
+          "room": "balconyBasin",
+          "metrics": {
+            "mean": 222.06547816565762,
+            "brightFraction": 0.26486265432098766,
+            "clippedFraction": 0.010487654320987654,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 29,
+              "decodeCacheBytes": 40304640,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "balcony",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.8299999999999996,
+              1.3,
+              5.029999999999999
+            ],
+            "angles": [
+              -1.6548086386023912,
+              -0.4747612885134051
+            ],
+            "fov": 58
+          }
+        },
+        {
+          "file": "before-pc-noon-pillow.webp",
+          "time": "noon",
+          "room": "pillow",
+          "metrics": {
+            "mean": 201.79516874779324,
+            "brightFraction": 0.024640432098765434,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 29,
+              "decodeCacheBytes": 40304640,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.3,
+              1.1,
+              3.0500000000000007
+            ],
+            "angles": [
+              2.1224513093234427,
+              -0.26850672700781286
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-pc-noon-kitchenCorner.webp",
+          "time": "noon",
+          "room": "kitchenCorner",
+          "metrics": {
+            "mean": 197.00109810320592,
+            "brightFraction": 0.017415123456790124,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 29,
+              "decodeCacheBytes": 40304640,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "kitchen",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.9499999999999997,
+              1.4,
+              -5.25
+            ],
+            "angles": [
+              -0.8685393952858897,
+              -0.5221917939829506
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-pc-noon-wardrobe.webp",
+          "time": "noon",
+          "room": "wardrobe",
+          "metrics": {
+            "mean": 213.83602520644158,
+            "brightFraction": 0,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 759768,
+              "decodedImages": 29,
+              "decodeCacheBytes": 40304640,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 103.10000000009313,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "high",
+              "ao": true,
+              "probeRoom": "master",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": true,
+              "aoPolicy": "highp-screen-depth",
+              "depthTextureAttached": true,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                1344,
+                945
+              ],
+              "samples": 20,
+              "probeResolution": 128,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.6,
+              1.4,
+              2.6500000000000004
+            ],
+            "angles": [
+              1.1902899496825314,
+              -0.27165712367757383
+            ],
+            "fov": 65
+          }
+        }
+      ]
+    },
+    {
+      "mobile": true,
+      "captures": [
+        {
+          "file": "before-mobile-night-living.webp",
+          "time": "night",
+          "room": "living",
+          "metrics": {
+            "mean": 186.81540101365485,
+            "brightFraction": 0,
+            "clippedFraction": 0,
+            "darkFraction": 0.00007548431274229117
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 8,
+              "decodeCacheBytes": 42240000,
+              "updates": 1,
+              "reflectionBakes": 1,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 2,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -0.3999999999999999,
+              1.5,
+              -2.25
+            ],
+            "angles": [
+              2.7032560937318353,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-master.webp",
+          "time": "night",
+          "room": "master",
+          "metrics": {
+            "mean": 197.96567234082283,
+            "brightFraction": 0.05845181674565561,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 10,
+              "decodeCacheBytes": 43026432,
+              "updates": 1,
+              "reflectionBakes": 2,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 3,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -0.5500000000000003,
+              1.5,
+              2.8499999999999996
+            ],
+            "angles": [
+              2.1319597390832485,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-kitchen.webp",
+          "time": "night",
+          "room": "kitchen",
+          "metrics": {
+            "mean": 196.18080022957287,
+            "brightFraction": 0.12296933719381675,
+            "clippedFraction": 0.03673390162237355,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 12,
+              "decodeCacheBytes": 43812864,
+              "updates": 1,
+              "reflectionBakes": 3,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "kitchen",
+              "captures": 4,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.6199999999999997,
+              1.5,
+              -3.75
+            ],
+            "angles": [
+              -0.5305578870294475,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-dining.webp",
+          "time": "night",
+          "room": "dining",
+          "metrics": {
+            "mean": 206.85190334887534,
+            "brightFraction": 0.014234184688546333,
+            "clippedFraction": 0,
+            "darkFraction": 0.0010082547487720319
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 12,
+              "decodeCacheBytes": 43812864,
+              "updates": 1,
+              "reflectionBakes": 3,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 4,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              0.020000000000000018,
+              1.5,
+              -2.45
+            ],
+            "angles": [
+              -2.183028881381311,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-second.webp",
+          "time": "night",
+          "room": "second",
+          "metrics": {
+            "mean": 218.74076185859946,
+            "brightFraction": 0.0747564282979905,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 14,
+              "decodeCacheBytes": 44599296,
+              "updates": 1,
+              "reflectionBakes": 4,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "second",
+              "captures": 5,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              0.5499999999999998,
+              1.5,
+              4.199999999999999
+            ],
+            "angles": [
+              -1.0943289073211906,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-bath.webp",
+          "time": "night",
+          "room": "bath",
+          "metrics": {
+            "mean": 227.07251445861792,
+            "brightFraction": 0.30776571826019444,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 16,
+              "decodeCacheBytes": 45385728,
+              "updates": 1,
+              "reflectionBakes": 5,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "bath",
+              "captures": 6,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.75,
+              1.5,
+              1.4500000000000002
+            ],
+            "angles": [
+              1.6951513213416576,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-balcony.webp",
+          "time": "night",
+          "room": "balcony",
+          "metrics": {
+            "mean": 185.3142700320341,
+            "brightFraction": 0.11538855549984095,
+            "clippedFraction": 0.038836678905908806,
+            "darkFraction": 0.013155837363656461
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 18,
+              "decodeCacheBytes": 46172160,
+              "updates": 1,
+              "reflectionBakes": 6,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "balcony",
+              "captures": 7,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.3000000000000003,
+              1.5,
+              5.449999999999999
+            ],
+            "angles": [
+              -1.797595174848783,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-storage.webp",
+          "time": "night",
+          "room": "storage",
+          "metrics": {
+            "mean": 160.19438572142636,
+            "brightFraction": 0.03989345928430088,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 20,
+              "decodeCacheBytes": 46958592,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "storage",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.6999999999999997,
+              1.5,
+              0.6500000000000004
+            ],
+            "angles": [
+              -1.5707963267948966,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-night-balconyBasin.webp",
+          "time": "night",
+          "room": "balconyBasin",
+          "metrics": {
+            "mean": 220.40872242534414,
+            "brightFraction": 0.13675061600590935,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 20,
+              "decodeCacheBytes": 46958592,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "balcony",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.8299999999999996,
+              1.3,
+              5.029999999999999
+            ],
+            "angles": [
+              -1.6548086386023912,
+              -0.4747612885134051
+            ],
+            "fov": 58
+          }
+        },
+        {
+          "file": "before-mobile-night-pillow.webp",
+          "time": "night",
+          "room": "pillow",
+          "metrics": {
+            "mean": 185.55580554376635,
+            "brightFraction": 0.027778227089163148,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 20,
+              "decodeCacheBytes": 46958592,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.3,
+              1.1,
+              3.0500000000000007
+            ],
+            "angles": [
+              2.1224513093234427,
+              -0.26850672700781286
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-mobile-night-kitchenCorner.webp",
+          "time": "night",
+          "room": "kitchenCorner",
+          "metrics": {
+            "mean": 172.9373484689901,
+            "brightFraction": 0.00042594719333150015,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 20,
+              "decodeCacheBytes": 46958592,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "kitchen",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              1.9499999999999997,
+              1.4,
+              -5.25
+            ],
+            "angles": [
+              -0.8685393952858897,
+              -0.5221917939829506
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-mobile-night-wardrobe.webp",
+          "time": "night",
+          "room": "wardrobe",
+          "metrics": {
+            "mean": 231.95723663563825,
+            "brightFraction": 0,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "night",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 20,
+              "decodeCacheBytes": 46958592,
+              "updates": 1,
+              "reflectionBakes": 7,
+              "error": null,
+              "composeMs": 3968.2999999998137,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 8,
+              "revision": 26,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.1880000000000002,
+            "lamp": "1",
+            "camera": [
+              -1.6,
+              1.4,
+              2.6500000000000004
+            ],
+            "angles": [
+              1.1902899496825314,
+              -0.27165712367757383
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-mobile-noon-living.webp",
+          "time": "noon",
+          "room": "living",
+          "metrics": {
+            "mean": 199.4745122730842,
+            "brightFraction": 0.00009705125924008864,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 23,
+              "decodeCacheBytes": 48586752,
+              "updates": 2,
+              "reflectionBakes": 8,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 9,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -0.3999999999999999,
+              1.5,
+              -2.25
+            ],
+            "angles": [
+              2.7032560937318353,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-master.webp",
+          "time": "noon",
+          "room": "master",
+          "metrics": {
+            "mean": 210.90423246673743,
+            "brightFraction": 0.07015188522071074,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 24,
+              "decodeCacheBytes": 48979968,
+              "updates": 2,
+              "reflectionBakes": 9,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 10,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -0.5500000000000003,
+              1.5,
+              2.8499999999999996
+            ],
+            "angles": [
+              2.1319597390832485,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-kitchen.webp",
+          "time": "noon",
+          "room": "kitchen",
+          "metrics": {
+            "mean": 212.4978750506576,
+            "brightFraction": 0.17941003617855275,
+            "clippedFraction": 0.06884708495759399,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 25,
+              "decodeCacheBytes": 49373184,
+              "updates": 2,
+              "reflectionBakes": 10,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "kitchen",
+              "captures": 11,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.6199999999999997,
+              1.5,
+              -3.75
+            ],
+            "angles": [
+              -0.5305578870294475,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-dining.webp",
+          "time": "noon",
+          "room": "dining",
+          "metrics": {
+            "mean": 215.46010903392508,
+            "brightFraction": 0.030517229294383427,
+            "clippedFraction": 0,
+            "darkFraction": 0.0008033687570429559
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 25,
+              "decodeCacheBytes": 49373184,
+              "updates": 2,
+              "reflectionBakes": 10,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "living",
+              "captures": 11,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              0.020000000000000018,
+              1.5,
+              -2.45
+            ],
+            "angles": [
+              -2.183028881381311,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-second.webp",
+          "time": "noon",
+          "room": "second",
+          "metrics": {
+            "mean": 226.2135837576297,
+            "brightFraction": 0.10680491079371755,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 26,
+              "decodeCacheBytes": 49766400,
+              "updates": 2,
+              "reflectionBakes": 11,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "second",
+              "captures": 12,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              0.5499999999999998,
+              1.5,
+              4.199999999999999
+            ],
+            "angles": [
+              -1.0943289073211906,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-bath.webp",
+          "time": "noon",
+          "room": "bath",
+          "metrics": {
+            "mean": 233.277182244441,
+            "brightFraction": 0.38723991610457814,
+            "clippedFraction": 0.000005391736624449369,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 27,
+              "decodeCacheBytes": 50159616,
+              "updates": 2,
+              "reflectionBakes": 12,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "bath",
+              "captures": 13,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.75,
+              1.5,
+              1.4500000000000002
+            ],
+            "angles": [
+              1.6951513213416576,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-balcony.webp",
+          "time": "noon",
+          "room": "balcony",
+          "metrics": {
+            "mean": 214.27330905603338,
+            "brightFraction": 0.21935202109247368,
+            "clippedFraction": 0.08343173252672953,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 28,
+              "decodeCacheBytes": 37969920,
+              "updates": 2,
+              "reflectionBakes": 13,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "balcony",
+              "captures": 14,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.3000000000000003,
+              1.5,
+              5.449999999999999
+            ],
+            "angles": [
+              -1.797595174848783,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-storage.webp",
+          "time": "noon",
+          "room": "storage",
+          "metrics": {
+            "mean": 164.67030436766663,
+            "brightFraction": 0.050790159002313054,
+            "clippedFraction": 0.0032673923944163174,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 29,
+              "decodeCacheBytes": 38363136,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "storage",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.6999999999999997,
+              1.5,
+              0.6500000000000004
+            ],
+            "angles": [
+              -1.5707963267948966,
+              -0.12
+            ],
+            "fov": 105
+          }
+        },
+        {
+          "file": "before-mobile-noon-balconyBasin.webp",
+          "time": "noon",
+          "room": "balconyBasin",
+          "metrics": {
+            "mean": 230.72311400359513,
+            "brightFraction": 0.44775676797739783,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 29,
+              "decodeCacheBytes": 38363136,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "balcony",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.8299999999999996,
+              1.3,
+              5.029999999999999
+            ],
+            "angles": [
+              -1.6548086386023912,
+              -0.4747612885134051
+            ],
+            "fov": 58
+          }
+        },
+        {
+          "file": "before-mobile-noon-pillow.webp",
+          "time": "noon",
+          "room": "pillow",
+          "metrics": {
+            "mean": 194.89721815398315,
+            "brightFraction": 0.058662094474009135,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 29,
+              "decodeCacheBytes": 38363136,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.3,
+              1.1,
+              3.0500000000000007
+            ],
+            "angles": [
+              2.1224513093234427,
+              -0.26850672700781286
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-mobile-noon-kitchenCorner.webp",
+          "time": "noon",
+          "room": "kitchenCorner",
+          "metrics": {
+            "mean": 189.03267212631118,
+            "brightFraction": 0.0012832333166189498,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 29,
+              "decodeCacheBytes": 38363136,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "kitchen",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              1.9499999999999997,
+              1.4,
+              -5.25
+            ],
+            "angles": [
+              -0.8685393952858897,
+              -0.5221917939829506
+            ],
+            "fov": 65
+          }
+        },
+        {
+          "file": "before-mobile-noon-wardrobe.webp",
+          "time": "noon",
+          "room": "wardrobe",
+          "metrics": {
+            "mean": 236.12594236800265,
+            "brightFraction": 0,
+            "clippedFraction": 0,
+            "darkFraction": 0
+          },
+          "state": {
+            "static": {
+              "enabled": true,
+              "ready": true,
+              "layout": "a",
+              "time": "noon",
+              "reason": "matched fixed state",
+              "atlasSize": 1024,
+              "states": 16,
+              "architectureMeshes": 73,
+              "furnitureMeshes": 125,
+              "matchedVertices": 518496,
+              "decodedImages": 29,
+              "decodeCacheBytes": 38363136,
+              "updates": 2,
+              "reflectionBakes": 14,
+              "error": null,
+              "composeMs": 82.79999999981374,
+              "irradianceBits": 16,
+              "atlasTextureSize": [
+                1024,
+                2048
+              ],
+              "engine": "Blender 5.3 / Cycles OptiX offline bake",
+              "samples": 2048,
+              "bounces": 4,
+              "scope": "Fixed default doors and authored material palettes; diffuse transport + full-scene AO + room reflection bases",
+              "runtimePathTracing": false
+            },
+            "quality": {
+              "quality": "auto",
+              "effective": "balanced",
+              "ao": false,
+              "probeRoom": "master",
+              "captures": 15,
+              "revision": 29,
+              "reflectionError": null,
+              "reflectionSource": "Blender Cycles static bases + PMREM",
+              "probeReady": true,
+              "hdrSupported": true,
+              "depthSupported": true,
+              "screenAOAllowed": false,
+              "aoPolicy": "mobile-baked-shadows",
+              "depthTextureAttached": false,
+              "shaderPrecision": "highp",
+              "aoSize": [
+                293,
+                633
+              ],
+              "samples": 12,
+              "probeResolution": 64,
+              "cachedRooms": [
+                "living",
+                "master",
+                "kitchen",
+                "second",
+                "bath",
+                "balcony",
+                "storage"
+              ],
+              "materials": 302,
+              "mode": "walk",
+              "activeAO": "Cycles baked AO",
+              "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+              "pathTracing": false
+            },
+            "exposure": 1.3064,
+            "lamp": "1",
+            "camera": [
+              -1.6,
+              1.4,
+              2.6500000000000004
+            ],
+            "angles": [
+              1.1902899496825314,
+              -0.27165712367757383
+            ],
+            "fov": 65
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "HTMLSHA256": "d73e873ce48d82723de78bc707d6d2891a9f8d77f0aa64a72199900bf79b97fe",
+  "result": "passed"
+}

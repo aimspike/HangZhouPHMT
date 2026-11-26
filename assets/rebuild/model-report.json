@@ -148,36 +148,36 @@
     "kitchen-east": {
       "high": {
         "triangles": 5940,
-        "vertices": 4742,
+        "vertices": 4748,
         "drawGroups": 5
       },
       "mobile": {
         "triangles": 5940,
-        "vertices": 4742,
+        "vertices": 4748,
         "drawGroups": 5
       }
     },
     "kitchen-north": {
       "high": {
-        "triangles": 3624,
-        "vertices": 2946,
+        "triangles": 3256,
+        "vertices": 2650,
         "drawGroups": 5
       },
       "mobile": {
-        "triangles": 2912,
-        "vertices": 2408,
+        "triangles": 2344,
+        "vertices": 1981,
         "drawGroups": 5
       }
     },
     "study-desk": {
       "high": {
         "triangles": 1692,
-        "vertices": 1336,
+        "vertices": 1338,
         "drawGroups": 4
       },
       "mobile": {
         "triangles": 1692,
-        "vertices": 1336,
+        "vertices": 1338,
         "drawGroups": 4
       }
     },
@@ -218,6 +218,6 @@
       }
     }
   },
-  "sourceObjects": 330,
+  "sourceObjects": 327,
   "editableMaster": "reference-a-master.blend"
 }

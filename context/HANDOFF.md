@@ -415,3 +415,18 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 
 
 修复提交 `ca184640cfedf10ebca26a2f8e0625a508aa0651` 已推送并部署。公开main HTML SHA256 `db9bd657259dc26d67523c768b1d98f10fcaad429005296b0dcf1289db8585cd` 与本地按Pages标题/设置命名空间转换后的内容一致。公开Chrome桌面/手机微信UA20机位、static 16位/反射加载及报告两宽度各20比较通过，43张图片逐字节一致，2份JSON按Git LF换行规范一致；无脚本/Shader错误或外部依赖请求。见 `validation/surface-public.json`、`surface-report-public.json`、`surface-public-assets.json`、`surface-deployment.json`。正式release仍7b53b23，HTML hash仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9。后续证据提交不改变已验证应用与图片。
+
+
+## 过曝与模型穿插 / Z-fighting（2026-11-26）
+
+用户反馈仍过曝且部分模型穿插。前轮仅做亮度试验未实际改变默认，本轮已实施：`interiorLighting.fixtureGain=.5`、`exposureGain=.8`。真实灯、发光灯罩/饰条、新旧漫反射和房间反射使用一致的灯光基准；原`lightPower`与全部个人保存控制保持，刷新180%仍为180%但有效灯能量按新基准计算。室内曝光夜晚.9504、正午1.04512；总览按原preset、平面.87。改门/材质/顶面回退也应用相同校正。公开诊断`houseViewer.lightingCalibration`可读用户倍率/有效灯能量/曝光。
+
+衣柜顶/底板缩入侧板、背板内侧；餐边柜底板、洗烘柜层板、阳台台盆柜底板和厨房柜体板件按实际厚度收口。餐椅后扶手端面埋入连接座4mm；书桌横撑缩入立柱。厨房北台面原四块相交条改为单个闭合实体，保留真实水槽开孔，右端缩短30mm与东台面相接，柜体/柜门同步收短。门框竖边终止于横边/门槛，消除顶部共面叠面；门洞/门轴/原建筑快照/墙线未改。未使用全局polygonOffset、改双面或移动建筑墙掩盖。
+
+新模型18类327部件，high/mobile合计654份、269524三角；开放边/非流形/退化/绕序/反法线0，装配各一个连通组。北台面每档4284覆盖射线无缺口。通过`asset-rebuild.js`和decor merge保留部件范围，`scripts/export_surface_audit.cjs`导出实际组装三角供`verify-exposed-overlap.py`法线射线抽样：原high26/mobile27近共面家具候选降至0；厨房台面原29.9997mm交叠变high0/mobile0.102mm接缝。数据在exposed-overlap.json；该抽样针对18类重建资产的保留实体范围，不是全场任意自交证明，原墙体底面/隐藏装配接触不作全零承诺。导出中间文件仅work/exposure-overlap，未提交。
+
+按新家具/门框重新导出完整Cycles场景，全量重生成124图，high143004/mobile102692独立样本，16位编码/缓存、独立chart降噪保持，旧219图不变。应用单HTML39,952,908字节，SHA256 fc062aba2a76635068df24cbc5f527640ebe79d0abae3c9f3a2f93febac8db45，自包含/WebGL1，未加外部请求。
+
+`quality-report/exposure-overlap.html`含48组正常前后对比（96张，PC/手机×昼夜×8房间+4近景）及4处×3横移机位×PC/手机前后诊断48张。诊断仅把各实体换固定颜色，几何和深度不变，用于观察衣柜条纹/台面交叠；不进入家装页。相机、角度、FOV、灯光滑块100%一致，曝光变化确为.8。正常图等待static enabled和probe ready再等3帧，无亮度修图；3并排图仅裁切缩放排版。夜晚桌面高亮像素占比（>=245）厨房18.62%→0.54%、卫生间14.11%→0、阳台台盆7.86%→0，显示像素统计不是照度。
+
+本地验证：exposure-overlap-before/after、overlap-motion-before/after、exposed-overlap、exposure-calibration、exposure-static-lighting、exposure-render-quality、exposure-decor、exposure-report-layout、surface-offline及模型相关结果。Chrome/触控微信UA模拟/缺HDR-depth/Windows WebKit共64固定状态、昼夜开关/自定义表面与门型回退/保存/横竖屏、219图/13PBR、屋顶、门扫掠闭合、床三侧与家具通道和离线通过。报告1280/390宽各48正常比较、24诊断机位及滑块/链接正常。旧亮度与曲面页保留原图，增加历史基线提示并链接当前校正。仅main，release7b53b23保持；手机均为模拟，真机持续性能仍待验收。

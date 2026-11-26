@@ -7,7 +7,7 @@
   "bounces": 4,
   "states": 16,
   "images": 124,
-  "bytes": 15862684,
+  "bytes": 15890574,
   "layouts": {
     "bare": {
       "reflectionRooms": 10,
@@ -32,8 +32,8 @@
         "lamps",
         "ao"
       ],
-      "vertexSamples": 143052,
-      "mobileVertexSamples": 102840
+      "vertexSamples": 143004,
+      "mobileVertexSamples": 102692
     }
   },
   "result": "passed",

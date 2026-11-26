@@ -97,6 +97,10 @@ T01 保持进行中。该状态是对最终质量标准的明确记录，不以�
 
 ## 入口
 
+当前追加修复（2026-11-26）：`quality-report/exposure-overlap.html`记录过曝与共面穿插校正。衣柜顶底板、洗烘柜/台盆柜背板与板件、厨房柜板、餐椅连接座和书桌横撑改为按板厚或连接座收口；北侧厨房台面改为单一闭合开孔实体，右端缩短30mm后与东侧台面相接，原外露交叠消除。18类资产327个实体，high/mobile合计654份；闭合、连通及每档4284条水槽台面射线通过。合并后的网页保留实体范围，`export_surface_audit.cjs`可导出实际装配数据供法线射线检查；原26/27组重建家具近共面抽样候选降至0，不代表任意自交的数学证明。
+
+独立诊断色的4处×3横移机位×PC/手机前后图用于检查深度争夺，不进入实际家装材质。实际灯光基准能量50%、室内曝光80%；144张正常/诊断源图和3张并排图均由WebGL画布采集。墙线、门洞与原建筑快照保持，新完整Cycles数据按新家具和门框重新导出/烘焙。真机微信与持续性能仍待实际验收，T01保持进行中。
+
 - [重建测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)
 - [PC 报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/#pc)
 - [手机视口报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/#mobile)

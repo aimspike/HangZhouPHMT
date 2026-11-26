@@ -184,36 +184,36 @@
             "kitchen-east": {
               "high": {
                 "triangles": 5940,
-                "vertices": 4742,
+                "vertices": 4748,
                 "drawGroups": 5
               },
               "mobile": {
                 "triangles": 5940,
-                "vertices": 4742,
+                "vertices": 4748,
                 "drawGroups": 5
               }
             },
             "kitchen-north": {
               "high": {
-                "triangles": 3624,
-                "vertices": 2946,
+                "triangles": 3256,
+                "vertices": 2650,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 2912,
-                "vertices": 2408,
+                "triangles": 2344,
+                "vertices": 1981,
                 "drawGroups": 5
               }
             },
             "study-desk": {
               "high": {
                 "triangles": 1692,
-                "vertices": 1336,
+                "vertices": 1338,
                 "drawGroups": 4
               },
               "mobile": {
                 "triangles": 1692,
-                "vertices": 1336,
+                "vertices": 1338,
                 "drawGroups": 4
               }
             },
@@ -306,9 +306,9 @@
         }
       },
       "performanceSample": {
-        "elapsedMs": 6001.4000000059605,
-        "frames": 360,
-        "fps": 59.98600326584504
+        "elapsedMs": 6002.199999999721,
+        "frames": 361,
+        "fps": 60.144613641667526
       },
       "geometry": {
         "same": true,
@@ -658,36 +658,36 @@
             "kitchen-east": {
               "high": {
                 "triangles": 5940,
-                "vertices": 4742,
+                "vertices": 4748,
                 "drawGroups": 5
               },
               "mobile": {
                 "triangles": 5940,
-                "vertices": 4742,
+                "vertices": 4748,
                 "drawGroups": 5
               }
             },
             "kitchen-north": {
               "high": {
-                "triangles": 3624,
-                "vertices": 2946,
+                "triangles": 3256,
+                "vertices": 2650,
                 "drawGroups": 5
               },
               "mobile": {
-                "triangles": 2912,
-                "vertices": 2408,
+                "triangles": 2344,
+                "vertices": 1981,
                 "drawGroups": 5
               }
             },
             "study-desk": {
               "high": {
                 "triangles": 1692,
-                "vertices": 1336,
+                "vertices": 1338,
                 "drawGroups": 4
               },
               "mobile": {
                 "triangles": 1692,
-                "vertices": 1336,
+                "vertices": 1338,
                 "drawGroups": 4
               }
             },
@@ -753,10 +753,10 @@
           "ao": false,
           "probeRoom": "living",
           "captures": 1,
-          "revision": 24,
+          "revision": 23,
           "reflectionError": null,
-          "reflectionSource": "awaiting current state",
-          "probeReady": false,
+          "reflectionSource": "dynamic scene capture",
+          "probeReady": true,
           "hdrSupported": true,
           "depthSupported": true,
           "screenAOAllowed": false,
@@ -774,15 +774,15 @@
           ],
           "materials": 302,
           "mode": "walk",
-          "activeAO": "Cycles baked AO",
+          "activeAO": "compatible shadows",
           "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
           "pathTracing": false
         }
       },
       "performanceSample": {
-        "elapsedMs": 6003.600000008941,
-        "frames": 180,
-        "fps": 29.982010793479237
+        "elapsedMs": 6000.200000000186,
+        "frames": 181,
+        "fps": 30.165661144627578
       },
       "geometry": {
         "same": true,

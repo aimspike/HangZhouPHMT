@@ -1,5 +1,5 @@
 {
-  "authoringScriptSha256": "ec3e1536fbf9d62f1ed6cee7087b07bb6647e644cacba9a30103041e0d895a6e",
+  "authoringScriptSha256": "230b01e5d1c04b4182c024228599eb20793f28b9b5e0ed0c8c76ec9e96f2f15d",
   "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
   "legacy": false,
   "models": {
@@ -1350,7 +1350,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000026227686606641746,
+            "signedVolume": 0.00002550414509011188,
             "minTriangleArea": 0.0000132671821799768
           },
           {
@@ -1383,7 +1383,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000026227686606641763,
+            "signedVolume": 0.000025504145090111815,
             "minTriangleArea": 0.0000132671821799768
           },
           {
@@ -1551,7 +1551,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000026227686606641746,
+            "signedVolume": 0.00002550414509011188,
             "minTriangleArea": 0.0000132671821799768
           },
           {
@@ -1584,7 +1584,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000026227686606641763,
+            "signedVolume": 0.000025504145090111815,
             "minTriangleArea": 0.0000132671821799768
           },
           {
@@ -2635,7 +2635,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.017288291511429826,
+            "signedVolume": 0.01656137383216518,
             "minTriangleArea": 2.276571536304643e-7
           },
           {
@@ -2646,7 +2646,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.017288213885193953,
+            "signedVolume": 0.01689931477506433,
             "minTriangleArea": 2.2762627783669698e-7
           },
           {
@@ -2927,7 +2927,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.017288291511429826,
+            "signedVolume": 0.01656137383216518,
             "minTriangleArea": 2.276571536304643e-7
           },
           {
@@ -2938,7 +2938,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.017288213885193953,
+            "signedVolume": 0.01689931477506433,
             "minTriangleArea": 2.2762627783669698e-7
           },
           {
@@ -3221,7 +3221,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.01485644739868518,
+            "signedVolume": 0.014183435837904336,
             "minTriangleArea": 2.329631056044953e-7
           },
           {
@@ -3232,7 +3232,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.014856380763264718,
+            "signedVolume": 0.014499955294423376,
             "minTriangleArea": 2.329318725247226e-7
           },
           {
@@ -3513,7 +3513,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.01485644739868518,
+            "signedVolume": 0.014183435837904336,
             "minTriangleArea": 2.329631056044953e-7
           },
           {
@@ -3524,7 +3524,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.014856380763264718,
+            "signedVolume": 0.014499955294423376,
             "minTriangleArea": 2.329318725247226e-7
           },
           {
@@ -3796,8 +3796,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.005337677200821589,
-            "minTriangleArea": 2.322364935287015e-7
+            "signedVolume": 0.004833955677088819,
+            "minTriangleArea": 2.3223203844776225e-7
           },
           {
             "name": "sideboard / side panel",
@@ -4033,8 +4033,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.005337677200821589,
-            "minTriangleArea": 2.322364935287015e-7
+            "signedVolume": 0.004833955677088819,
+            "minTriangleArea": 2.3223203844776225e-7
           },
           {
             "name": "sideboard / side panel",
@@ -4814,8 +4814,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.21934459760257546,
-            "minTriangleArea": 2.3811623634967836e-7
+            "signedVolume": 0.2158765960111826,
+            "minTriangleArea": 2.38080196120678e-7
           },
           {
             "name": "kitchen-east / drawer shadow joint",
@@ -4869,8 +4869,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.02821588444056537,
-            "minTriangleArea": 2.3812739711854952e-7
+            "signedVolume": 0.027006263254776914,
+            "minTriangleArea": 2.411888466873604e-7
           },
           {
             "name": "kitchen-east / carcass backing",
@@ -4880,8 +4880,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.03250885611382006,
-            "minTriangleArea": 2.3811385520995333e-7
+            "signedVolume": 0.03204608582324445,
+            "minTriangleArea": 2.38077815174558e-7
           },
           {
             "name": "kitchen-east / counter front support",
@@ -5167,8 +5167,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.21934459760257546,
-            "minTriangleArea": 2.3811623634967836e-7
+            "signedVolume": 0.2158765960111826,
+            "minTriangleArea": 2.38080196120678e-7
           },
           {
             "name": "kitchen-east / drawer shadow joint",
@@ -5222,8 +5222,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.02821588444056537,
-            "minTriangleArea": 2.3812739711854952e-7
+            "signedVolume": 0.027006263254776914,
+            "minTriangleArea": 2.411888466873604e-7
           },
           {
             "name": "kitchen-east / carcass backing",
@@ -5233,8 +5233,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.03250885611382006,
-            "minTriangleArea": 2.3811385520995333e-7
+            "signedVolume": 0.03204608582324445,
+            "minTriangleArea": 2.38077815174558e-7
           },
           {
             "name": "kitchen-east / counter front support",
@@ -5522,8 +5522,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0898273066595702,
-            "minTriangleArea": 2.318401564171201e-7
+            "signedVolume": 0.08721094724874759,
+            "minTriangleArea": 2.321607617417061e-7
           },
           {
             "name": "kitchen-north / carcass bottom",
@@ -5533,8 +5533,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.010929965306392453,
-            "minTriangleArea": 2.3184460775481036e-7
+            "signedVolume": 0.009917039270316844,
+            "minTriangleArea": 2.32174125098196e-7
           },
           {
             "name": "kitchen-north / cabinet end",
@@ -5544,8 +5544,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0074935011046763575,
-            "minTriangleArea": 2.3184905913607746e-7
+            "signedVolume": 0.0074972931068998105,
+            "minTriangleArea": 2.3216967062299582e-7
           },
           {
             "name": "kitchen-north / cabinet end.001",
@@ -5555,8 +5555,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0074935011046763506,
-            "minTriangleArea": 2.3184905913607746e-7
+            "signedVolume": 0.00749730536637952,
+            "minTriangleArea": 2.3217857964853854e-7
           },
           {
             "name": "kitchen-north / cabinet back",
@@ -5566,8 +5566,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.012625445807880782,
-            "minTriangleArea": 2.3184905913714115e-7
+            "signedVolume": 0.012244120833139352,
+            "minTriangleArea": 2.321696706017711e-7
           },
           {
             "name": "kitchen-north / counter front support",
@@ -5577,52 +5577,19 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000978052221944045,
-            "minTriangleArea": 2.2756490197962163e-7
+            "signedVolume": 0.0009485118835095791,
+            "minTriangleArea": 2.278825732076016e-7
           },
           {
-            "name": "kitchen-north / counter end",
-            "triangles": 188,
+            "name": "kitchen-north / single opening countertop",
+            "triangles": 384,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0048377073486924466,
-            "minTriangleArea": 9.177709427698613e-7
-          },
-          {
-            "name": "kitchen-north / counter end.001",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.004837707348692443,
-            "minTriangleArea": 9.177709427698613e-7
-          },
-          {
-            "name": "kitchen-north / counter rail",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.005703870134354187,
-            "minTriangleArea": 9.274051393706515e-7
-          },
-          {
-            "name": "kitchen-north / counter rail.001",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.005703894526506011,
-            "minTriangleArea": 9.274051393706515e-7
+            "signedVolume": 0.019802766520758866,
+            "minTriangleArea": 1.8262097688791367e-7
           },
           {
             "name": "kitchen-north / flanged sink vessel",
@@ -5632,8 +5599,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.005206571735090765,
-            "minTriangleArea": 0.000014660669693176804
+            "signedVolume": 0.005206631065193407,
+            "minTriangleArea": 0.000014667367568436109
           },
           {
             "name": "kitchen-north / mounted cabinet pull",
@@ -5643,8 +5610,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012838265274842457,
-            "minTriangleArea": 9.69397228252102e-7
+            "signedVolume": 0.000012838510876858683,
+            "minTriangleArea": 9.66492345574057e-7
           },
           {
             "name": "kitchen-north / mounted cabinet pull.001",
@@ -5654,8 +5621,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012838265117765452,
-            "minTriangleArea": 9.69404762500808e-7
+            "signedVolume": 0.000012838472740534257,
+            "minTriangleArea": 9.6792087998868e-7
           },
           {
             "name": "kitchen-north / cabinet door",
@@ -5665,8 +5632,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006410431334834718,
-            "minTriangleArea": 5.23936405924575e-7
+            "signedVolume": 0.006410306918602589,
+            "minTriangleArea": 5.211297040403695e-7
           },
           {
             "name": "kitchen-north / cabinet door.001",
@@ -5676,11 +5643,11 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006410431334834717,
-            "minTriangleArea": 5.23936405924575e-7
+            "signedVolume": 0.006038066568699724,
+            "minTriangleArea": 5.211430511309574e-7
           }
         ],
-        "maxPositionErrorMm": 0.011948544086656245,
+        "maxPositionErrorMm": 0.011794828430371948,
         "stitches": [],
         "assemblyFit": {
           "kind": "carcass-to-counter",
@@ -5689,7 +5656,7 @@
           "maxEmbedMm": 8
         },
         "counterCoverage": {
-          "rays": 4386,
+          "rays": 4284,
           "gaps": 0,
           "examples": [],
           "cavity": {
@@ -5709,8 +5676,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0898273066595702,
-            "minTriangleArea": 2.318401564171201e-7
+            "signedVolume": 0.08720950926989693,
+            "minTriangleArea": 2.3211176602572156e-7
           },
           {
             "name": "kitchen-north / carcass bottom",
@@ -5720,8 +5687,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.010929965306392453,
-            "minTriangleArea": 2.3184460775481036e-7
+            "signedVolume": 0.009917043195296535,
+            "minTriangleArea": 2.3211176602572156e-7
           },
           {
             "name": "kitchen-north / cabinet end",
@@ -5731,8 +5698,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0074935011046763575,
-            "minTriangleArea": 2.3184905913607746e-7
+            "signedVolume": 0.007489293087846197,
+            "minTriangleArea": 2.3211621997865034e-7
           },
           {
             "name": "kitchen-north / cabinet end.001",
@@ -5742,8 +5709,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0074935011046763506,
-            "minTriangleArea": 2.3184905913607746e-7
+            "signedVolume": 0.007495809235739399,
+            "minTriangleArea": 2.3211621997865034e-7
           },
           {
             "name": "kitchen-north / cabinet back",
@@ -5753,8 +5720,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.012625445807880782,
-            "minTriangleArea": 2.3184905913714115e-7
+            "signedVolume": 0.012249002398841358,
+            "minTriangleArea": 2.3211621997865034e-7
           },
           {
             "name": "kitchen-north / counter front support",
@@ -5764,52 +5731,19 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000978052221944045,
-            "minTriangleArea": 2.2756490197962163e-7
+            "signedVolume": 0.0009483692561996868,
+            "minTriangleArea": 2.2782961107459868e-7
           },
           {
-            "name": "kitchen-north / counter end",
-            "triangles": 188,
+            "name": "kitchen-north / single opening countertop",
+            "triangles": 184,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0048377073486924466,
-            "minTriangleArea": 9.177709427698613e-7
-          },
-          {
-            "name": "kitchen-north / counter end.001",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.004837707348692443,
-            "minTriangleArea": 9.177709427698613e-7
-          },
-          {
-            "name": "kitchen-north / counter rail",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.005703870134354187,
-            "minTriangleArea": 9.274051393706515e-7
-          },
-          {
-            "name": "kitchen-north / counter rail.001",
-            "triangles": 188,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.005703894526506011,
-            "minTriangleArea": 9.274051393706515e-7
+            "signedVolume": 0.01973700116384227,
+            "minTriangleArea": 3.885929383213565e-7
           },
           {
             "name": "kitchen-north / flanged sink vessel",
@@ -5819,8 +5753,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00518940325469186,
-            "minTriangleArea": 0.000022954595802260336
+            "signedVolume": 0.00518858082798169,
+            "minTriangleArea": 0.000022977092305254132
           },
           {
             "name": "kitchen-north / mounted cabinet pull",
@@ -5830,8 +5764,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00001287259264413996,
-            "minTriangleArea": 0.000005306361491449957
+            "signedVolume": 0.000012874292166970739,
+            "minTriangleArea": 0.0000053065728452889405
           },
           {
             "name": "kitchen-north / mounted cabinet pull.001",
@@ -5841,8 +5775,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012872501435715234,
-            "minTriangleArea": 0.000005306389391910504
+            "signedVolume": 0.000012875211042005064,
+            "minTriangleArea": 0.000005306684615691246
           },
           {
             "name": "kitchen-north / cabinet door",
@@ -5852,8 +5786,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006410431334834718,
-            "minTriangleArea": 5.23936405924575e-7
+            "signedVolume": 0.0064094096285573395,
+            "minTriangleArea": 5.21007397550754e-7
           },
           {
             "name": "kitchen-north / cabinet door.001",
@@ -5863,11 +5797,11 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006410431334834717,
-            "minTriangleArea": 5.23936405924575e-7
+            "signedVolume": 0.006037161580276186,
+            "minTriangleArea": 5.21007397550754e-7
           }
         ],
-        "maxPositionErrorMm": 0.011948544086656245,
+        "maxPositionErrorMm": 0.011793405859233556,
         "stitches": [],
         "assemblyFit": {
           "kind": "carcass-to-counter",
@@ -5876,7 +5810,7 @@
           "maxEmbedMm": 8
         },
         "counterCoverage": {
-          "rays": 4386,
+          "rays": 4284,
           "gaps": 0,
           "examples": [],
           "cavity": {
@@ -5931,8 +5865,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00040652967569692233,
-            "minTriangleArea": 0.000001439762593998087
+            "signedVolume": 0.00031633091324841664,
+            "minTriangleArea": 0.000001439718223771088
           },
           {
             "name": "study-desk / desk welded upright.002",
@@ -5964,8 +5898,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000406529675696922,
-            "minTriangleArea": 0.000001439762593998087
+            "signedVolume": 0.0003163309132484163,
+            "minTriangleArea": 0.000001439718223771088
           },
           {
             "name": "study-desk / slim drawer",
@@ -6036,8 +5970,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00040652967569692233,
-            "minTriangleArea": 0.000001439762593998087
+            "signedVolume": 0.00031633091324841664,
+            "minTriangleArea": 0.000001439718223771088
           },
           {
             "name": "study-desk / desk welded upright.002",
@@ -6069,8 +6003,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000406529675696922,
-            "minTriangleArea": 0.000001439762593998087
+            "signedVolume": 0.0003163309132484163,
+            "minTriangleArea": 0.000001439718223771088
           },
           {
             "name": "study-desk / slim drawer",
@@ -6443,8 +6377,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882741764918863,
-            "minTriangleArea": 2.2551791248265644e-7
+            "signedVolume": 0.00767399331495245,
+            "minTriangleArea": 2.286633467705503e-7
           },
           {
             "name": "laundry-stack / structural shelf.001",
@@ -6454,8 +6388,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882754641732348,
-            "minTriangleArea": 2.2550529100790274e-7
+            "signedVolume": 0.00767400584864792,
+            "minTriangleArea": 2.286506357129337e-7
           },
           {
             "name": "laundry-stack / structural shelf.002",
@@ -6465,8 +6399,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007867919940133593,
-            "minTriangleArea": 2.2552285141540453e-7
+            "signedVolume": 0.007659565761093093,
+            "minTriangleArea": 2.2866832075944327e-7
           },
           {
             "name": "laundry-stack / structural shelf.003",
@@ -6476,8 +6410,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882754568389317,
-            "minTriangleArea": 2.2548773127463163e-7
+            "signedVolume": 0.0076740057763285295,
+            "minTriangleArea": 2.2863295135474424e-7
           },
           {
             "name": "laundry-stack / upper storage grip",
@@ -6955,8 +6889,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882837671264983,
-            "minTriangleArea": 2.2552669312316338e-7
+            "signedVolume": 0.007674079525014148,
+            "minTriangleArea": 2.286633467705503e-7
           },
           {
             "name": "laundry-stack / structural shelf.001",
@@ -6966,8 +6900,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882850547948341,
-            "minTriangleArea": 2.2551407140000134e-7
+            "signedVolume": 0.007674092058563342,
+            "minTriangleArea": 2.286506357129337e-7
           },
           {
             "name": "laundry-stack / structural shelf.002",
@@ -6977,8 +6911,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007868015977792247,
-            "minTriangleArea": 2.2553163215312032e-7
+            "signedVolume": 0.007659652121067838,
+            "minTriangleArea": 2.2866832075944327e-7
           },
           {
             "name": "laundry-stack / structural shelf.003",
@@ -6988,8 +6922,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007882850475008803,
-            "minTriangleArea": 2.254965113211526e-7
+            "signedVolume": 0.0076740919866462,
+            "minTriangleArea": 2.2863295135474424e-7
           },
           {
             "name": "laundry-stack / upper storage grip",
@@ -7337,7 +7271,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.004667561362407067,
+            "signedVolume": 0.004517493380343428,
             "minTriangleArea": 2.3123075426247113e-7
           },
           {
@@ -7607,7 +7541,7 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.004667561362407067,
+            "signedVolume": 0.004517493380343428,
             "minTriangleArea": 2.3123075426247113e-7
           },
           {
@@ -7859,8 +7793,8 @@
     }
   },
   "totals": {
-    "parts": 660,
-    "triangles": 270460,
+    "parts": 654,
+    "triangles": 269524,
     "boundaryEdges": 0,
     "nonmanifoldEdges": 0,
     "windingErrors": 0,

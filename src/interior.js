@@ -133,8 +133,8 @@ function createHouseDoors(options){
   const leftJamb=.032,rightJamb=.032;
   const hingedFrame=item.hingedFrame=new THREE.Group();container.add(hingedFrame);
   for(const [x,jamb] of [[revealStart+leftJamb/2,leftJamb],[W-rightJamb/2,rightJamb]]){
-   box(hingedFrame,x,h/2,0,jamb,h,depth+.004,item.materials.frame);
-   for(const face of [-1,1])box(hingedFrame,x+(config.entry&&x<W/2?.004:0),h/2,face*(depth/2+.008),.04,h+.02,.012,item.materials.frame);
+   box(hingedFrame,x,1.04,0,jamb,2.044,depth+.004,item.materials.frame);
+   for(const face of [-1,1])box(hingedFrame,x+(config.entry&&x<W/2?.004:0),1.035,face*(depth/2+.008),.04,2.07,.012,item.materials.frame);
   }
   box(hingedFrame,(W+revealStart)/2,2.081,0,W-revealStart,.038,depth+.004,item.materials.frame);
   for(const face of [-1,1])box(hingedFrame,(W+revealStart)/2,2.09,face*(depth/2+.008),W-revealStart+(config.entry?0:.008),.04,.012,item.materials.frame);
@@ -166,8 +166,8 @@ function createHouseDoors(options){
   // There is no hinged stop or raised threshold in the sliding installation.
   const slidingFrame=item.slidingFrame=new THREE.Group();container.add(slidingFrame);
   for(const x of [.017,W-.017]){
-   box(slidingFrame,x,1.05,0,.034,2.1,depth+.006,item.materials.frame);
-   for(const face of [-1,1])box(slidingFrame,x,1.05,face*(depth/2+.008),.046,2.1,.012,item.materials.frame);
+   box(slidingFrame,x,1.039,0,.034,2.078,depth+.006,item.materials.frame);
+   for(const face of [-1,1])box(slidingFrame,x,1.039,face*(depth/2+.008),.046,2.078,.012,item.materials.frame);
   }
   box(slidingFrame,W/2,2.089,0,W,.022,depth+.006,item.materials.frame);
   for(const face of [-1,1])box(slidingFrame,W/2,2.097,face*(depth/2+.008),W+.012,.038,.012,item.materials.frame);

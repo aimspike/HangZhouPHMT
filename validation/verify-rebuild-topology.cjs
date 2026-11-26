@@ -47,7 +47,9 @@ function downward(x,z,entries){
 function sinkCoverage(meshes){
  const entries=meshes.filter(m=>['chrome','ceramic'].includes(m.material)).map(m=>[m,decode(m)]);
  let rays=0,gaps=0;const examples=[];
- for(let x=-.51;x<.52;x+=.012)for(let z=-.30;z<.31;z+=.012){
+ // The north run now ends at x=.50 to butt against the east counter.
+ const maxX=meshes.some(m=>m.parts?.some(p=>p.name.endsWith('/ single opening countertop')))?.49:.52;
+ for(let x=-.51;x<maxX;x+=.012)for(let z=-.30;z<.31;z+=.012){
   const hit=downward(x,z,entries);rays++;
   if(!Number.isFinite(hit.height)){gaps++;if(examples.length<8)examples.push([x,z]);}
  }
@@ -62,7 +64,7 @@ function assemblyFits(id,meshes){
   return {kind:'quilt-to-mattress',gapMm:(quilt.min[1]-mattress.max[1])*1000,allowedGapMm:.05,maxEmbedMm:12};
  }
  if(id.startsWith('kitchen-')){
-  const counter=bounds.filter(p=>/\/ (stone worktop|counter end|counter rail)/.test(p.name)),ends=bounds.filter(p=>/\/ (side return|cabinet end)/.test(p.name));
+  const counter=bounds.filter(p=>/\/ (stone worktop|counter end|counter rail|single opening countertop)/.test(p.name)),ends=bounds.filter(p=>/\/ (side return|cabinet end)/.test(p.name));
   return {kind:'carcass-to-counter',gapMm:(Math.min(...counter.map(p=>p.min[1]))-Math.min(...ends.map(p=>p.max[1])))*1000,allowedGapMm:.05,maxEmbedMm:8};
  }
  return null;

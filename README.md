@@ -12,9 +12,11 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 新增：[Cycles固定光照 / AO / 反射前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/static-lighting.html)。16种固定组合、双档家具照明与房间反射，数据与流程见 [静态烘焙资产](assets/static-bake/README.md)。
 
-室内亮度测试：[降低灯光与降低曝光效果对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)。含70张同机位实际画布和4张并排总览，当前应用默认参数保持。
+首次室内亮度测试：[降低灯光与降低曝光效果对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)。保留70张同机位试验画布和4张并排总览，使用当时的原亮度基线。
 
 稳定画面修复：[墙顶斑驳与陶瓷折面前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/surface-fixes.html)。提高离线采样、分 UV 区域降噪，16位照明数据消除暗部量化色带；两处台盆的曲面、平面法线和马桶陶瓷材质同步修正，保留默认灯光与曝光。
+
+当前亮度与装配校正：[过曝、模型穿插与 Z-fighting 前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/exposure-overlap.html)。实际采用原灯光基准能量50%、原室内曝光80%，保存的用户滑块值保持。重做厨房台面并修正衣柜、洗烘柜、餐椅、书桌和门框共面接头；报告含正常画面和独立诊断色横移对比。
 
 ## 文档分工与任务入口
 

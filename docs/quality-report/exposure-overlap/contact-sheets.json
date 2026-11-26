@@ -1,0 +1,100 @@
+{
+  "scope": "Arrange real WebGL captures with labels; no tone or shadow retouching.",
+  "sheets": [
+    {
+      "file": "night-calibrated.jpg",
+      "sources": [
+        {
+          "file": "before-pc-night-living.webp",
+          "sha256": "722c8a23549af6782df314b5a509bab6287bbaaaf3ff4a9edbb8ada686cac0b0"
+        },
+        {
+          "file": "after-pc-night-living.webp",
+          "sha256": "ad1298c271b645842c71a930b701d3ba1bf42c1628c53dc9657f77fac2a700f7"
+        },
+        {
+          "file": "before-pc-night-kitchen.webp",
+          "sha256": "c36d5c318e7848735d5fd9099cf3c9437d1e2b6615111991ff0fb1fae70e77d0"
+        },
+        {
+          "file": "after-pc-night-kitchen.webp",
+          "sha256": "b6c951d226cc9a7fab39003923a93aee1c8195728cb9c76f40ba59335722f8a2"
+        },
+        {
+          "file": "before-pc-night-balconyBasin.webp",
+          "sha256": "5a82a0a9964af62c9e4c2b28e760f7a5ec72d0318a164731cf071ee639ec6fbc"
+        },
+        {
+          "file": "after-pc-night-balconyBasin.webp",
+          "sha256": "235e545072a2a5cdc67f6804d4aa6451c438c01c0c9857e89ad1a23ccf9f027a"
+        }
+      ]
+    },
+    {
+      "file": "noon-calibrated.jpg",
+      "sources": [
+        {
+          "file": "before-pc-noon-second.webp",
+          "sha256": "2470849f26a5074854ecd4a2130af56fdb3000374ef0caeac1499afa3b67e42c"
+        },
+        {
+          "file": "after-pc-noon-second.webp",
+          "sha256": "e7df44d75a81eeb8b4552a6163932ec0ae3fd2ab011272c4551881acaab82ad2"
+        },
+        {
+          "file": "before-pc-noon-bath.webp",
+          "sha256": "2a0dada916f6a6397ab0491c6c22a55516a9a51a521ea91541a3015eb90b676d"
+        },
+        {
+          "file": "after-pc-noon-bath.webp",
+          "sha256": "a39c158d43a11694dd4660fbf984278d8347983c559b8c0c641cb52c0c23c36e"
+        },
+        {
+          "file": "before-pc-noon-balconyBasin.webp",
+          "sha256": "1f3b62c3d37e8288bc544449b6c708dfc015c04d476ce983ec55009474d7e629"
+        },
+        {
+          "file": "after-pc-noon-balconyBasin.webp",
+          "sha256": "8821d75dd7f31990f8c9627194ae1a9ff964941c521172aee517e38b520389d9"
+        }
+      ]
+    },
+    {
+      "file": "overlap-diagnostic.jpg",
+      "sources": [
+        {
+          "file": "before-diagnostic-pc-wardrobeBase-1.webp",
+          "sha256": "2e44ee4bbde2df78e9eec06c6bb10d4edfb3645734db4501716df6337de6ffbf"
+        },
+        {
+          "file": "after-diagnostic-pc-wardrobeBase-1.webp",
+          "sha256": "644888bc0056950161b5c3ccdc2392e7413777653618f30bb69c0d48672c6428"
+        },
+        {
+          "file": "before-diagnostic-pc-kitchenJoin-1.webp",
+          "sha256": "ac886a3e41ce82e163cc3aac5dc960810277bbffd9e42d523fb2eb2fb0882410"
+        },
+        {
+          "file": "after-diagnostic-pc-kitchenJoin-1.webp",
+          "sha256": "1d0efb4336fb52f2c40a8a5cb960621adafcc30f9df1c53abbeb793f57c49ef6"
+        },
+        {
+          "file": "before-diagnostic-pc-chairBoss-1.webp",
+          "sha256": "a7772bb0f1c765af1d71eada9d3c8403725c09e51e9f6c59b57e8be50a23525b"
+        },
+        {
+          "file": "after-diagnostic-pc-chairBoss-1.webp",
+          "sha256": "4072648c95f1e65425169626471e0f45a1d5f07f33ef37c89cdfa5584ae06ce6"
+        },
+        {
+          "file": "before-diagnostic-pc-doorHeader-1.webp",
+          "sha256": "ce6820b61c49665f795ae9946b101dd3d73726ebaf971f9bd90769807036009c"
+        },
+        {
+          "file": "after-diagnostic-pc-doorHeader-1.webp",
+          "sha256": "ce6820b61c49665f795ae9946b101dd3d73726ebaf971f9bd90769807036009c"
+        }
+      ]
+    }
+  ]
+}
