@@ -216,3 +216,12 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 公开PC/手机共24实际机位检查通过：盆沿/北台面/右台面高度差均0，盆/出口中心误差小于0.1mm，淋浴底盘169个顶面位置与实际中心照明、玻璃透明/深度设置和门净空正常；电视柜贴墙、次卧衣柜两墙接触及主卧床头柜east朝向保留。报告1280/390宽各24组切换、图片和链接正常，50张图片逐字节一致，HTML/JSON按Git LF规范一致，共52资源。证据`validation/bathroom-public.json`、`bathroom-report-public.json`、`bathroom-rebuild-public-assets.json`与`bathroom-deployment.json`。后续证据提交不改变已验证应用和图像。
 
 release仍`7b53b23568d18550822fbf98fb5f42e5cda60487`，正式HTML哈希仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9，feature历史预览保持。没有正式发布；手机为浏览器/微信UA模拟，未真机验收。单HTML约42MB的首次加载成本仍存在，VIS-05枕头黑斑不在本次修复范围。
+
+
+## 2026-11-26 · 保存与账号同步暂停公开验证
+
+功能提交`f514f641a1fbbe2872422de0739065a5eaa35469`已部署main。公开HTML SHA256 `1872aaec31139b5e939ec039268e13e5d0d292b9c2a7c6c66840b692ccea8f32`与Pages转换后的本地内容一致；原始规范化HTML hash为4685302864d7ed6efe6caeb604d50f5f3f976107326b754b9cd023dbc0dc24ff，逻辑UTF-8构建42,104,622字节。
+
+公开Chrome桌面、手机微信UA、旧游客/旧账号模拟记录与Windows WebKit均通过：入口完全移除，显示本次浏览说明；原记录只读恢复，新灯强/画质/时段修改和online/focus/pagehide事件不写入、不联网，刷新恢复原记录，三视图/屋顶/建筑快照/手机旋转及通用截图正常。无JS/Shader错误或外部资源请求。证据`validation/storage-suspended-public.json`、`storage-suspended-deployment.json`；只使用隔离的模拟缓存，未接触用户实际账号。后续证据提交不改应用。
+
+T06为待开始，保存/账号同步重新设计与恢复需用户新要求。release仍7b53b23568d18550822fbf98fb5f42e5cda60487，正式HTML hash5057ce9c…，feature历史预览保持。未正式发布，手机为模拟。

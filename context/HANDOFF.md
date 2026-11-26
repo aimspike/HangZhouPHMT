@@ -480,3 +480,12 @@ T06新增为待开始，子任务为简化本机/账号/恢复流程、明确保
 validation/verify-storage-suspended.cjs包含5种纯函数边界（空/游客/账号/损坏/存储禁用）验证无DOM访问、写入、网络或事件/定时器；实际Chrome桌面、手机微信UA与Windows WebKit检查旧记录只读恢复、改灯强/画质/时段后刷新不写入、在线/聚焦/离开事件无同步、正式/预览键隔离、三模式/画布/屋顶/建筑快照与通用截图。browser测试使用专用模拟记录，不读取用户真实会话。核心结果storage-suspended.json，家具门/通道/4移动视口/方案材质即时切换为storage-suspended-decor.json，HDR/depth缺扩展与画质切换为storage-suspended-render-quality.json，独立单HTML为surface-offline.json。Pages8项装配检查通过。
 
 保存相关回归按storage.suspended分支检查刷新回默认/不持久化，启用状态仍保留旧断言；覆盖decor、render-quality、static-lighting、furniture-placement、balcony、exposure-calibration、room-refinements、mobile-compatibility。实际核心新测试仍专门验证旧记录恢复和无写入，不能以跳过保存测试代替暂停验收。模型和124/219烘焙均保持，无需重烘焙；重新从模板构建单HTML42,104,622字节。仅推main，release保持。
+
+
+## 2026-11-26 · 保存与账号同步暂停公开验证
+
+功能提交`f514f641a1fbbe2872422de0739065a5eaa35469`已部署main。公开HTML SHA256 `1872aaec31139b5e939ec039268e13e5d0d292b9c2a7c6c66840b692ccea8f32`与Pages转换后的本地内容一致；原始规范化HTML hash为4685302864d7ed6efe6caeb604d50f5f3f976107326b754b9cd023dbc0dc24ff，逻辑UTF-8构建42,104,622字节。
+
+公开Chrome桌面、手机微信UA、旧游客/旧账号模拟记录与Windows WebKit均通过：入口完全移除，显示本次浏览说明；原记录只读恢复，新灯强/画质/时段修改和online/focus/pagehide事件不写入、不联网，刷新恢复原记录，三视图/屋顶/建筑快照/手机旋转及通用截图正常。无JS/Shader错误或外部资源请求。证据`validation/storage-suspended-public.json`、`storage-suspended-deployment.json`；只使用隔离的模拟缓存，未接触用户实际账号。后续证据提交不改应用。
+
+T06为待开始，保存/账号同步重新设计与恢复需用户新要求。release仍7b53b23568d18550822fbf98fb5f42e5cda60487，正式HTML hash5057ce9c…，feature历史预览保持。未正式发布，手机为模拟。
