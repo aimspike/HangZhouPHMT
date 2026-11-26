@@ -76,7 +76,7 @@ function createHouseSettingsStorage(options){
  }
  function signOut(){save();const token=session?.access_token,oldConfig=config;epoch++;setSession(null);account='guest';record=loadRecord('guest',defaults);restore(record.payload);conflict=null;$('cloudConflict').hidden=true;renderAccount();if(token&&navigator.onLine)fetch(oldConfig.url+'/auth/v1/logout?scope=local',{method:'POST',headers:{apikey:oldConfig.publishableKey,Authorization:'Bearer '+token}}).catch(()=>{});}
  // Track settings only, never login fields, exported tokens or camera movement.
- for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))schedule();});
+ for(const event of ['input','change'])document.addEventListener(event,e=>{if(e.target.matches('#showLights')||e.target.closest('#sidebar')&&!e.target.closest('#settingsStorage'))schedule();});
  document.addEventListener('click',e=>{if(e.target.closest('button[data-time], [data-door], #openAllDoors, #closeAllDoors, #resetFinishes'))schedule();});
  $('exportSettings').onclick=()=>{save();const blob=new Blob([JSON.stringify(record.payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='89-A-settings.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);};
  $('importSettings').onclick=()=>$('settingsFile').click();

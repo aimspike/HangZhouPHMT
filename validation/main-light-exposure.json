@@ -1,0 +1,83 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Actual WebGL1 calibration, saved multiplier and legacy fallback; isolated storage",
+  "errors": [],
+  "cases": [
+    {
+      "time": "morning",
+      "fixtureGain": 0.5,
+      "exposurePresets": {
+        "morning": 1,
+        "noon": 0.92,
+        "dusk": 1.04,
+        "night": 0.86
+      },
+      "exposurePolicy": "fixed per time; shared by lights on and off",
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 1
+    },
+    {
+      "time": "noon",
+      "fixtureGain": 0.5,
+      "exposurePresets": {
+        "morning": 1,
+        "noon": 0.92,
+        "dusk": 1.04,
+        "night": 0.86
+      },
+      "exposurePolicy": "fixed per time; shared by lights on and off",
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 0.92
+    },
+    {
+      "time": "dusk",
+      "fixtureGain": 0.5,
+      "exposurePresets": {
+        "morning": 1,
+        "noon": 0.92,
+        "dusk": 1.04,
+        "night": 0.86
+      },
+      "exposurePolicy": "fixed per time; shared by lights on and off",
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 1.04
+    },
+    {
+      "time": "night",
+      "fixtureGain": 0.5,
+      "exposurePresets": {
+        "morning": 1,
+        "noon": 0.92,
+        "dusk": 1.04,
+        "night": 0.86
+      },
+      "exposurePolicy": "fixed per time; shared by lights on and off",
+      "userLampMultiplier": 1,
+      "effectiveLampPower": 0.5,
+      "exposure": 0.86
+    }
+  ],
+  "savedMultiplierRestored": false,
+  "persistenceSuspended": true,
+  "legacyFallback": {
+    "fixtureGain": 0.5,
+    "exposurePresets": {
+      "morning": 1,
+      "noon": 0.92,
+      "dusk": 1.04,
+      "night": 0.86
+    },
+    "exposurePolicy": "fixed per time; shared by lights on and off",
+    "time": "noon",
+    "userLampMultiplier": 1.8,
+    "effectiveLampPower": 0.9,
+    "exposure": 0.92
+  },
+  "offHasZeroLampEnergy": true,
+  "outsideExposureRetained": true,
+  "result": "passed",
+  "HTMLSHA256": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421"
+}

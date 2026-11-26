@@ -1,5 +1,17 @@
 # Codex 续接上下文
 
+## 主界面灯开关与时段默认灯状态（2026-11-26）
+
+用户要求开灯功能独立放到主界面，切换白天默认关灯、切换夜晚强制开灯。`showLights`原生checkbox由设置移至室内主画面右侧，带“室内灯”和“已开/已关”，不复制控件；桌面右上独立区域、手机与家装按钮同高，横屏避开时间栏。三维/平面不显示室内灯控件，进入室内无需打开设置；设置只保留灯光亮度。
+
+`setDaylight(id,{resetLights=true})`在选择任何时段时设灯状态为`id==='night'`，包括再次点击当前时段；不是每帧强制，之后可以手动开关。切换房间/模式不调用该重置，保持手动选择。恢复旧设置时只有明确boolean `controls.showLights`会跳过时段重置，以只读保留用户既有状态；没有该字段的旧记录使用对应时段新默认。保存功能继续暂停，不新增写入或云请求。
+
+主控件已在sidebar外，`render-quality.js`/`static-lighting.js`的input/change监听显式包含`#showLights`，保证反射和静态照明同步重算。settings-storage启用分支同步识别，暂停分支仍早返回。保留`button[data-time]`精准匹配，未恢复canvas松手误触发。手机诊断固定样片先选时段再显式开灯，避免新默认改变诊断样片；static-lighting/exposure/render-quality检查的设置顺序和主控件位置同步更新。
+
+无几何、材质、灯具能量、四时段曝光、太阳方向/时刻或烘焙修改，无需重烘焙。`verify-main-light-control.cjs`覆盖桌面1280、微信触屏模拟390/320、740×360横屏、Windows WebKit和缺HDR/depth扩展；通过真实时间按钮/checkbox点击和键盘验证时段默认、手动覆盖、再次选择时段重置、跨房间/模式保持、控件无遮挡/无溢出/40px以上触点。另验证旧清晨开灯/夜晚关灯记录只读恢复、之后选择夜晚强制开灯。219图/屋顶/建筑快照与保存暂停保持；64种静态照明（4环境×16组合）回归通过。证据`main-light-control.json`和`main-light-static.json`，截图在`work/main-light-control/captures`，手机仅模拟。
+
+最终构建42,107,618字节，规范化HTML SHA256 `3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421`。`main-light-render-quality.json`的桌面/手机/缺扩展画质切换通过；`main-light-mouse.json`的16组实际鼠标松手检查通过；`main-light-exposure.json`四曝光/显式灯强与旧照明回退通过；`main-light-storage.json`旧游客/账号只读恢复、无新增写入/云请求、手机横竖屏及截图通过；`surface-offline.json`带家具单HTML离线通过，Pages8项装配通过。只推main，正式release保持。
+
 ## 电脑鼠标松开瞬间闪光（2026-11-26）
 
 用户进一步定位到电脑拖动转动视角、鼠标松开一瞬间闪光。同步干净main到`c57fff0`后，用Playwright真实鼠标按下/移动/按住/松开复现：pointerup之后的普通canvas click使静态照明disabled、合成updates增加、反射revision变化，出现短暂旧照明回退后恢复；正午/夜晚、开/关灯均可见。此前直接改相机参数的转向检查没有产生浏览器click，未覆盖此问题。

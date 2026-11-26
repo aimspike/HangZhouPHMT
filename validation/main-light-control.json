@@ -1,0 +1,1741 @@
+{
+  "url": "http://127.0.0.1:8879/docs/",
+  "scope": "Actual main-interface checkbox and time buttons; real WebGL1 desktop and simulated touch/WeChat/WebKit",
+  "cases": [
+    {
+      "id": "pc",
+      "width": 1280,
+      "height": 900,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 1120,
+          "y": 160,
+          "width": 136,
+          "height": 40
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 250,
+          "y": 249,
+          "width": 128,
+          "height": 42
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    },
+    {
+      "id": "compact",
+      "width": 320,
+      "height": 740,
+      "mobile": true,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 180,
+          "y": 249,
+          "width": 128,
+          "height": 42
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    },
+    {
+      "id": "landscape",
+      "width": 740,
+      "height": 360,
+      "mobile": true,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 600,
+          "y": 77,
+          "width": 128,
+          "height": 42
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    },
+    {
+      "id": "webkit",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "webkit": true,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 250,
+          "y": 249,
+          "width": 128,
+          "height": 42
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    },
+    {
+      "id": "fallback",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "fallback": true,
+      "states": [
+        {
+          "time": "morning",
+          "auto": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 2,
+            "revision": 26
+          },
+          "manual": {
+            "time": "morning",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1
+            },
+            "updates": 3,
+            "revision": 29
+          },
+          "reset": {
+            "time": "morning",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "morning",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1
+            },
+            "updates": 4,
+            "revision": 31
+          }
+        },
+        {
+          "time": "noon",
+          "auto": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 5,
+            "revision": 33
+          },
+          "manual": {
+            "time": "noon",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.92
+            },
+            "updates": 6,
+            "revision": 36
+          },
+          "reset": {
+            "time": "noon",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "noon",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.92
+            },
+            "updates": 7,
+            "revision": 38
+          }
+        },
+        {
+          "time": "dusk",
+          "auto": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 8,
+            "revision": 40
+          },
+          "manual": {
+            "time": "dusk",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 1.04
+            },
+            "updates": 9,
+            "revision": 43
+          },
+          "reset": {
+            "time": "dusk",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "dusk",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 1.04
+            },
+            "updates": 10,
+            "revision": 45
+          }
+        },
+        {
+          "time": "night",
+          "auto": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 11,
+            "revision": 47
+          },
+          "manual": {
+            "time": "night",
+            "on": false,
+            "label": "已关",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0,
+              "exposure": 0.86
+            },
+            "updates": 12,
+            "revision": 50
+          },
+          "reset": {
+            "time": "night",
+            "on": true,
+            "label": "已开",
+            "calibration": {
+              "fixtureGain": 0.5,
+              "exposurePresets": {
+                "morning": 1,
+                "noon": 0.92,
+                "dusk": 1.04,
+                "night": 0.86
+              },
+              "exposurePolicy": "fixed per time; shared by lights on and off",
+              "time": "night",
+              "userLampMultiplier": 1,
+              "effectiveLampPower": 0.5,
+              "exposure": 0.86
+            },
+            "updates": 13,
+            "revision": 52
+          }
+        }
+      ],
+      "crossTimeReset": true,
+      "manualChoiceRetainedAcrossRoomsAndModes": true,
+      "keyboardToggle": true,
+      "layout": {
+        "box": {
+          "x": 250,
+          "y": 249,
+          "width": 128,
+          "height": 42
+        },
+        "covered": false,
+        "overflow": false
+      },
+      "snapshotMatches": true
+    }
+  ],
+  "restores": [
+    {
+      "time": "morning",
+      "on": true,
+      "readOnly": true,
+      "nextNightForcedOn": true
+    },
+    {
+      "time": "night",
+      "on": false,
+      "readOnly": true,
+      "nextNightForcedOn": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "htmlSHA256": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+  "result": "passed"
+}
