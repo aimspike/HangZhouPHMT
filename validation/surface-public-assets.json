@@ -1,0 +1,277 @@
+{
+  "base": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/",
+  "files": [
+    {
+      "file": "after-mobile-balconyBasin.webp",
+      "bytes": 35680,
+      "sha256": "8a5f5edea57714412644c1ace39fdecfdf17a54aaed62095c8bb1d646a3afd85",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-bath.webp",
+      "bytes": 49844,
+      "sha256": "758add2a64dd2d19bdf70e69b4672d6a66038ad915a759f894f1453491a8714b",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-bathBasin.webp",
+      "bytes": 36934,
+      "sha256": "47e6a3f83fea545c8e81e909aea13e60f94c2135bece46df401e132a2d07c2f3",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-dining.webp",
+      "bytes": 61062,
+      "sha256": "c625ee1566a34121794043cfb53f7e54a9e00bd38344d8daa5b9e876d66e15a3",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-living.webp",
+      "bytes": 84912,
+      "sha256": "0bd16dc5d521b94807d60d7b76a7b9c91d1c473e677adc8ff97f7676877c24d2",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-master.webp",
+      "bytes": 91106,
+      "sha256": "36e79802bec4ab0ee41329cd0810ddc6a4c699e1167b37b9439ecb7870c8116e",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-night-balconyBasin.webp",
+      "bytes": 29416,
+      "sha256": "57b3d3129816115ee498cdf94c5189f4f2b974777f0163d1970293cba97a351c",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-night-bathBasin.webp",
+      "bytes": 41820,
+      "sha256": "b9926f812a7a8fa2dba4ce6b978478394e996f1a89212321a8c4e5411ad553d3",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-night-toilet.webp",
+      "bytes": 22690,
+      "sha256": "d2bd5d744be7ed1a4b239a0e68b8ec82cc11d4590baaffdeb79088d8dc25d8d6",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-mobile-toilet.webp",
+      "bytes": 21744,
+      "sha256": "b91b7e6faef4979788f1424471cbb78d9b93b827eda8ee22b2c98d1118d38557",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-balconyBasin.webp",
+      "bytes": 141564,
+      "sha256": "d722a16f2c469646a28f5ba50ea3972e83d53cbfaa8bb8789645af6226666d28",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-bath.webp",
+      "bytes": 83224,
+      "sha256": "59b5a5a38ee35fc49086bd30523d6f878fa5b8c16eb6cf850a6078a412fe264d",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-bathBasin.webp",
+      "bytes": 80200,
+      "sha256": "2de5b1684043064ba3f0b2265d3759d0892f1c6ca9370cbac3739d324bb7c0a5",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-dining.webp",
+      "bytes": 207584,
+      "sha256": "70fa53d3a32f2e4721f7a5c7b0d3977f98f702b55db9046860d61b4b10f2939e",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-living.webp",
+      "bytes": 301998,
+      "sha256": "eae8abf9a24d87ca50614500b6f813b6784c55310b8d25c51c2fa9c08935992f",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-master.webp",
+      "bytes": 233230,
+      "sha256": "5ce6431f4b33512e4a45c9792416fb9bd9180f135bd5f02e869559c4357cb017",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-night-balconyBasin.webp",
+      "bytes": 128728,
+      "sha256": "fa3784527961e9776a9c2429e167d3713732225120e4068413f2add733e1afc6",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-night-bathBasin.webp",
+      "bytes": 95906,
+      "sha256": "182ab008ff44019154162657d00e881902b7bd3e490dadf30d56fe9ecbb51bcb",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-night-toilet.webp",
+      "bytes": 70538,
+      "sha256": "ea3005e92bb98e8b9438b3b5281e24d779b0067b32dcaa8db766020c849c882d",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "after-pc-toilet.webp",
+      "bytes": 57484,
+      "sha256": "4803d899093a99561ee42d1e888b83c816a8a181980a3d6008ca7b079681e2c3",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-balconyBasin.webp",
+      "bytes": 38658,
+      "sha256": "06afc3dde5a1048f7cf416c63419ded514d88362a9e2bdfa43a451415a3c577f",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-bath.webp",
+      "bytes": 54838,
+      "sha256": "d8bf4491977b9cc7eb8057eeea513f1f8a9b97fdbefa6c5d675ab0107e52473e",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-bathBasin.webp",
+      "bytes": 45732,
+      "sha256": "8bfb9b483d15eb3f8adbfa19cdbac1d217c39933439c35a4afd931756caa3b7d",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-dining.webp",
+      "bytes": 74762,
+      "sha256": "1e2cdc1ff0b9c0a9dbbaa5d6394824b0d9d1879ffe93df6dd96259ba7d6be5bb",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-living.webp",
+      "bytes": 96974,
+      "sha256": "06700552d2b65ff499de07ca3e181f6a3d02230a34246093854e741cf53e4013",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-master.webp",
+      "bytes": 101728,
+      "sha256": "708dabc78d9f4935a02e71d5aca5aed4c913e5a8521ab5980601dcb3ea2aa8f2",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-night-balconyBasin.webp",
+      "bytes": 30762,
+      "sha256": "3dc7af81af5a8e19809d26cc85dce8b4613b37698ab45cba21095b1eef378ee3",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-night-bathBasin.webp",
+      "bytes": 42044,
+      "sha256": "578f99b6db6517cdd084a05fc036256968410be66339c23d89742704e567578f",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-night-toilet.webp",
+      "bytes": 25986,
+      "sha256": "08909f5ce06975fb9641c72bf815da7162779ba6fb3691469c9b6638a4806045",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-mobile-toilet.webp",
+      "bytes": 32122,
+      "sha256": "c4b26e3286c6c2cf77fc3117c8761b4cbb6ade8ce3b4699108416bf4317da2c1",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-balconyBasin.webp",
+      "bytes": 152386,
+      "sha256": "25b65c451a29388759b07b90a2c183c4b0ad6302478acfb5a28da639bbc077eb",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-bath.webp",
+      "bytes": 93006,
+      "sha256": "81bf136852b212a4709902942b957b324dd3623f33d79b533cc619d99c2ff5ba",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-bathBasin.webp",
+      "bytes": 98870,
+      "sha256": "6b7a414e21b4e1176cfda214eca221b17a1c17e5648482fbf7f79ccac3ff47c2",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-dining.webp",
+      "bytes": 249030,
+      "sha256": "ec40796cdffa42bfa6555ec46f3d49c750facfeb1b3dae5845da6df6400a009e",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-living.webp",
+      "bytes": 338666,
+      "sha256": "959e7baea68235a31fa222891597f59d54c35483dffd059dd41b7dd9a6359043",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-master.webp",
+      "bytes": 263140,
+      "sha256": "b1644289071964f44dcaa3612b28ee7bf7a7fc100ef0772f3a91211f775f4283",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-night-balconyBasin.webp",
+      "bytes": 134368,
+      "sha256": "ddf4d5585e77e3601bcd48272d0051803b743da88322d0e0b816b7fe5b39a971",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-night-bathBasin.webp",
+      "bytes": 96068,
+      "sha256": "6e403787b2f28b57334394fa7077c5bf1e421325bdf0a2f0ac9171f2fd83f8ed",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-night-toilet.webp",
+      "bytes": 73126,
+      "sha256": "2a7a311db2e3334a558a8e92388b497affe21d2b3c954fc1e2eb1d694d622bc2",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "before-pc-toilet.webp",
+      "bytes": 72202,
+      "sha256": "9f6aec158f1bb678d8a4bc0db5987c47a480589f454d428681987ee7e79f06cf",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "captures.json",
+      "bytes": 109950,
+      "sha256": "425199f6a7ff8249015440721b34a63ace208fee249cf409efe1263300d047f8",
+      "comparison": "LF-normalized JSON"
+    },
+    {
+      "file": "ceramic-night.jpg",
+      "bytes": 453965,
+      "sha256": "3434f830b9fb128aadc9f8b3e6bafd87838802e963f462f3c8ef8a07453bb709",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "ceramic-noon.jpg",
+      "bytes": 506015,
+      "sha256": "791fccac5cb2b3f897d67718d9c994b5fe0f70866e8bae820e81db914bebb595",
+      "comparison": "exact bytes"
+    },
+    {
+      "file": "contact-sheets.json",
+      "bytes": 4835,
+      "sha256": "18f8060d66501eb597a4a4c9d77a8aa528642f4d6724e21bf544bc474e0cc352",
+      "comparison": "LF-normalized JSON"
+    },
+    {
+      "file": "walls-noon.jpg",
+      "bytes": 1183271,
+      "sha256": "c925d0733179944a7a4545f3e2003e1608e8a3d4121016c509fc6e1d1fa0b881",
+      "comparison": "exact bytes"
+    }
+  ],
+  "result": "passed",
+  "reportHTMLSHA256": "0a09f22cd4afb7a4171c4cdebd8cf9fe8d16db08955a4250841f3f2ceabd13d2"
+}

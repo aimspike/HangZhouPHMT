@@ -193,3 +193,7 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 用户要求 `feature/render-quality` 合入main，后续在主干开发。以main `a2a50d6` 与feature `7bdea26` 建立真实merge提交，不改写历史。保留阳台顶板、顶灯和219张新烘焙，接入V16.1重建资产；主模板、生成HTML和文档冲突已组合解决。main新入口 /preview/main/?decor=a，PC/手机报告 /preview/main/quality-report/；feature历史预览与release独立保留。正式发布仍需用户另行要求。
 
 本地验证见 validation/merge-source-integrity.json、merge-visual.json、merge-balcony-validation.json 与 rebuild-*.json，主干合并提交 `50dc9b1` 已推送，Pages工作流 [45561896113](https://github.com/aimspike/HangZhouPHMT/actions/runs/45561896113) 成功。公开main HTML SHA256 `ed37ce230e7b2a95d5fdfe0c8c2b64730ea81262486e20c58b304f44f926e661`，与Git装配一致。PC Chrome、手机微信UA、WebKit、219烘焙/13PBR、设备检测、设置隔离与磁盘单HTML通过；公网阳台开关/调光/材质保存/旋转及报告12对合并对比/10对接缝近检/4张阳台图通过。release `7b53b23` 和feature `7bdea26` 内容分别匹配其Git，未修改。后续证据提交不改变已验证应用。
+
+
+## 2026-11-26 · 稳定墙顶与陶瓷曲面修复
+修复提交 `ca184640cfedf10ebca26a2f8e0625a508aa0651` 已推送并部署。公开main HTML SHA256 `db9bd657259dc26d67523c768b1d98f10fcaad429005296b0dcf1289db8585cd` 与本地按Pages标题/设置命名空间转换后的内容一致。公开Chrome桌面/手机微信UA20机位、static 16位/反射加载及报告两宽度各20比较通过，43张图片逐字节一致，2份JSON按Git LF换行规范一致；无脚本/Shader错误或外部依赖请求。见 `validation/surface-public.json`、`surface-report-public.json`、`surface-public-assets.json`、`surface-deployment.json`。正式release仍7b53b23，HTML hash仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9。后续证据提交不改变已验证应用与图片。

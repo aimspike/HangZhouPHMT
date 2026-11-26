@@ -404,3 +404,6 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 本地验证：surface-before/after、surface-bake、ceramic-surfaces、surface-static-lighting、surface-render-quality、surface-decor、surface-offline、surface-report-layout及rebuild-assets/topology/furniture-assembly。Chrome桌面/手机/缺HDR-depth/Windows WebKit共64固定状态、改门/材质/顶面回退、保存与横竖屏、219图/13PBR、屋顶0缺口、门扫掠/闭合/家具通道和单HTML离线均通过。未变屋顶内部典型高频残差中位数降低约73–80%，平均天光能量变化<0.2%；全区RMS受真实阴影边界影响仅降低约5–8%，该指标不等于视觉评分。真机微信仍待实际检查。
 
 自包含HTML约40.0MB（39,950,766字节），比前版约24MB增加；高精度数据带来首次加载和解析成本，模拟通过不代表物理手机持续性能。应用规范化SHA256为 `d73e873ce48d82723de78bc707d6d2891a9f8d77f0aa64a72199900bf79b97fe`。仅推送main并检查公开测试页，release保持7b53b23568d18550822fbf98fb5f42e5cda60487。
+
+
+修复提交 `ca184640cfedf10ebca26a2f8e0625a508aa0651` 已推送并部署。公开main HTML SHA256 `db9bd657259dc26d67523c768b1d98f10fcaad429005296b0dcf1289db8585cd` 与本地按Pages标题/设置命名空间转换后的内容一致。公开Chrome桌面/手机微信UA20机位、static 16位/反射加载及报告两宽度各20比较通过，43张图片逐字节一致，2份JSON按Git LF换行规范一致；无脚本/Shader错误或外部依赖请求。见 `validation/surface-public.json`、`surface-report-public.json`、`surface-public-assets.json`、`surface-deployment.json`。正式release仍7b53b23，HTML hash仍5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9。后续证据提交不改变已验证应用与图片。

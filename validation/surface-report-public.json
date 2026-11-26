@@ -1,0 +1,23 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/surface-fixes.html",
+  "cases": [
+    {
+      "width": 1280,
+      "comparisons": 20,
+      "slider": "passed",
+      "images": "all decoded",
+      "localLinks": 10,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "comparisons": 20,
+      "slider": "passed",
+      "images": "all decoded",
+      "localLinks": 10,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}
