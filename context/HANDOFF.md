@@ -12,6 +12,8 @@
 
 真正的时段按钮、灯开关、门状态回退/恢复均通过；`verify-storage-suspended.cjs`验证PC、390宽手机与WebKit、旧设置只读恢复、无写入/云请求；单HTML离线与8项Pages装配通过。80组每环境219贴图/屋顶/保存暂停保持。证据`mouse-release-before.json`、`mouse-release-after.json`、`mouse-release-storage.json`及`surface-offline.json`；报告`quality-report/mouse-release.html`含同机位/曝光的真实小画布，仅放大排版，不做亮度修补。报告34资源hash和1280/390宽4种状态切换通过。正式release不推进，真机验收仍待完成。
 
+功能提交`10e1b1d`已部署main，公开HTML SHA256 `5164fa35ed648c32b5c0163eb87c888fdc40f074f3c532e1c324fbb4f0de52cf`与Pages装配后的本地内容一致。公开Chrome16组四时段/灯/装修、758帧实际鼠标事件全部通过，无静态回退、缓存版本/合成次数/曝光/机位变化；公开PC、390宽手机旧游客/旧账号与WebKit保存暂停/启动/屋顶/设置隔离通过。公开报告34资源hash、1280/390宽各4组切换通过，见`mouse-release-public.json`、`mouse-release-storage-public.json`、`mouse-release-report-public.json`、`mouse-release-deployment.json`。release仍`7b53b23`、正式HTML hash `5057ce9c…`；后续证据提交不改应用和已验图片。
+
 ## 白天天光、四时段固定曝光与关灯瞬态（2026-11-26）
 
 用户要求提高白天特别正午的日光和天光，修复关灯后移动视角短暂高亮，并为各时段按画面分别校准固定曝光；漫游镜头高度扩为1.0–1.8米。用户已撤回太阳位置问题，明确现有早中晚位置正确，不修改太阳方向、时刻、光斑位置或烘焙。保存/账号同步仍暂停（T06）。

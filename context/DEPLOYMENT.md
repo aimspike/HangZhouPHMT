@@ -1,5 +1,15 @@
 # 发布信息
 
+## 电脑鼠标松开闪光 main 修复（2026-11-26）
+
+提交[`10e1b1d`](https://github.com/aimspike/HangZhouPHMT/commit/10e1b1d99e1fbfde0a1a9923433cf2b66295efb2)已部署至[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。将全局click事件的时段匹配限定为真正按钮，避免canvas拖动结束的click匹配body[data-time]，使静态光照回退、反射重载。四时段曝光、光源能量、太阳方向、模型与烘焙保持；保存/账号同步仍暂停。
+
+公开应用规范化SHA256 `5164fa35ed648c32b5c0163eb87c888fdc40f074f3c532e1c324fbb4f0de52cf`与本地Pages装配一致；公开Chrome实际鼠标按下/拖动/松开16组、758帧保持静态照明/合成次数/缓存版本/曝光/机位，真正的时段、灯与门更新正常。公开PC、390宽手机、旧游客/旧账号模拟记录和Windows WebKit的启动、219图/屋顶、只读恢复、无写入/云请求及隔离通过。
+
+[逐帧前后报告](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/mouse-release.html)34资源逐字节匹配，1280/390宽各4组状态切换和图片通过。证据`validation/mouse-release-public.json`、`mouse-release-storage-public.json`、`mouse-release-report-public.json`、`mouse-release-deployment.json`；本地80组3342帧详见`mouse-release-after.json`。浏览器/触屏/微信UA模拟不能称为真机验证。
+
+正式release保持`7b53b23568d18550822fbf98fb5f42e5cda60487`，HTML SHA256仍`5057ce9c7ddd0471b0f06fa52efa4ca20582bbc755d804a1fe8c5f2b6a7311a9`，feature历史预览保留。后续证据提交不改变已验应用与画面。
+
 ## 白天天光、四时段曝光和漫游高度 main 验证（2026-11-26）
 
 功能提交[`5f3c374`](https://github.com/aimspike/HangZhouPHMT/commit/5f3c374)和报告hash修正[`87c823b`](https://github.com/aimspike/HangZhouPHMT/commit/87c823b)已部署至[main家装A](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。仅室内增强自然光：清晨日光/天光1.18/1.30、正午1.35/1.65、黄昏1.10/1.20；四时段固定曝光分别1.00/0.92/1.04/0.86，灯具能量基准50%。太阳方向/参考时刻/光斑位置按用户复核保持。镜头高度可调1.0–1.8米，默认1.5米；保存与账号同步继续暂停。
