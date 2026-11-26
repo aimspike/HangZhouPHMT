@@ -18,6 +18,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 当前亮度与装配校正：[过曝、模型穿插与 Z-fighting 前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/exposure-overlap.html)。实际采用原灯光基准能量50%、原室内曝光80%，保存的用户滑块值保持。重做厨房台面并修正衣柜、洗烘柜、餐椅、书桌和门框共面接头；报告含正常画面和独立诊断色横移对比。
 
+家具位置调整：[电视柜贴墙、次卧衣柜两面贴墙与主卧床头柜转向](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/furniture-placement.html)。电视柜默认贴北墙，书房切外挂推拉门时连同电视和物品前移13厘米留出门扇空间，切回平开门后恢复贴墙；次卧衣柜背板、右侧板使用平直接触面，主卧床头柜旋转90°朝东。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |

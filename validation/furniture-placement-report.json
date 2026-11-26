@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:8879/docs/quality-report/furniture-placement.html",
+  "cases": [
+    {
+      "width": 1280,
+      "pairs": 12
+    },
+    {
+      "width": 390,
+      "pairs": 12
+    }
+  ],
+  "errors": [],
+  "result": "passed"
+}

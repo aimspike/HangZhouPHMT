@@ -26,7 +26,9 @@ function createHouseDecor(options) {
  const clone=v=>JSON.parse(JSON.stringify(v));
  const palette={wall:{color:'#e7dfd2',material:'paint'},ceiling:{color:'#f3eee4',material:'paint'},floor:{color:'#b08c67',material:'parquet'}};
  const barePalette={wall:{color:'#b8b6ae',material:'concrete'},ceiling:{color:'#c5c2b9',material:'concrete'},floor:{color:'#a29f96',material:'concrete'}};
- const placements=[],mounting=[],shifts={};
+ const placements=[],mounting=[],shifts={},tvItems=new Set(['tv-console','television','tv-console-accessories']);
+ let tvOffset=0;
+ const studySlidingOffset=.13;
  const wallFace=(id,axis,side)=>{const wall=options.planLayout.walls.find(w=>w.id===id);return wall.a[axis]+side*wall.t/2;};
  function boundsOf(meshes){root.updateMatrixWorld(true);const b=new THREE.Box3();for(const m of meshes)b.union(new THREE.Box3().setFromObject(m));return b.applyMatrix4(root.matrixWorld.clone().invert());}
  function translateParts(meshes,delta){
@@ -35,7 +37,7 @@ function createHouseDecor(options) {
  }
  function fitItem(id,meshes){
   const rules={
-   'living-sofa':[['bath-north',2,'max',-1]],'dining-sideboard':[['east',0,'max',-1]],fridge:[['east',0,'max',-1]],
+   'living-sofa':[['bath-north',2,'max',-1]],'tv-console':[['study-south',2,'min',1],['study-west',0,'min',1]],'dining-sideboard':[['east',0,'max',-1]],fridge:[['east',0,'max',-1]],
    'kitchen-east-cabinets':[['east',0,'max',-1]],'kitchen-north-cabinets':[['kitchen-north',2,'min',1]],
    'kitchen-upper-cabinets':[['east',0,'max',-1]],'kitchen-hood':[['east',0,'max',-1]],
    'study-desk':[['study-west',0,'min',1]],'bath-vanity':[['bath-south',2,'max',-1]],toilet:[['bath-north',2,'min',1]],
@@ -47,16 +49,30 @@ function createHouseDecor(options) {
   const floor=['living-sofa','coffee-table','tv-console','dining-table','dining-sideboard','fridge','kitchen-east-cabinets','kitchen-north-cabinets','study-desk','study-chair','toilet','master-bed','second-bed','master-wardrobe','second-wardrobe','master-nightstand','second-nightstand','balcony-laundry','balcony-vanity'].includes(id)||id.startsWith('chair-')||id.startsWith('storage-rack-');
   const delta=[0,0,0],b=boundsOf(meshes),support=id==='coffee-table'?.025:.0015;
   if(floor)delta[1]=support-b.min.y;
-  if(id==='television')delta[1]=items.find(i=>i.id==='tv-console').max[1]-b.min.y;
+  if(id==='television'){delta[1]=items.find(i=>i.id==='tv-console').max[1]-b.min.y;delta[0]=shifts['tv-console'][0];delta[2]=shifts['tv-console'][2];}
   for(const [wall,axis,side,sign] of rules[id]||[])delta[axis]=wallFace(wall,axis===2?1:0,sign)-b[side].getComponent(axis);
   translateParts(meshes,delta);shifts[id]=delta;
   const fitted=boundsOf(meshes);
   for(const [wall,axis,side,sign] of rules[id]||[])mounting.push({id,wall,axis,side,gap:Math.abs(fitted[side].getComponent(axis)-wallFace(wall,axis===2?1:0,sign))});
   if(floor)mounting.push({id,support:id==='coffee-table'?'rug':'floor',height:support,gap:fitted.min.y-support});
-  if(id==='tv-console')mounting.push({id,reserved:'study exterior sliding-door parking',wallGap:fitted.min.z-wallFace('study-south',1,1)});
   return fitted;
  }
  function carry(meshes,id){if(shifts[id])translateParts(meshes,shifts[id]);}
+ function televisionOffset(type){return type==='sliding'?studySlidingOffset:0;}
+ function updateTelevision(){
+  if(!built)return;
+  const offset=televisionOffset(options.studyDoorType()),delta=offset-tvOffset;
+  if(Math.abs(delta)<1e-10)return;
+  for(const kind of ['tv-furniture','tv-wall'])if(layers['living-'+kind])layers['living-'+kind].position.z=offset;
+  for(const item of items)if(tvItems.has(item.id)){item.min[2]+=delta;item.max[2]+=delta;}
+  for(const item of blockers)if(tvItems.has(item.id)){item.minZ+=delta;item.maxZ+=delta;}
+  const mount=mounting.find(m=>m.id==='tv-console'&&m.wall==='study-south');if(mount)mount.gap=offset;
+  tvOffset=offset;root.updateMatrixWorld(true);renderer.shadowMap.needsUpdate=true;
+ }
+ function itemsForDoor(id,type){
+  const offset=id==='study'?televisionOffset(type):tvOffset;
+  return items.map(item=>{const v=clone(item);if(tvItems.has(v.id)){v.min[2]+=offset-tvOffset;v.max[2]+=offset-tvOffset;}return v;});
+ }
 
  function surfaceTexture(kind) {
   if(geometries['texture-'+kind])return geometries['texture-'+kind];
@@ -102,7 +118,8 @@ function createHouseDecor(options) {
   m.userData.houseMaterial=name;options.shade(m,room);materials[key]=m;return m;
  }
  function layer(room,kind='furniture') {
-  const key=room+'-'+kind;if(!layers[key]){const g=new THREE.Group();g.name=key;g.userData.layer=kind;group.add(g);layers[key]=g;}return layers[key];
+  if(tvItems.has(currentItem?.id))kind='tv-'+kind;
+  const key=room+'-'+kind;if(!layers[key]){const g=new THREE.Group();g.name=key;g.userData.layer=kind.replace(/^tv-/,'');group.add(g);layers[key]=g;}return layers[key];
  }
  function shape(type,dimensions) {
   const key=type+dimensions.join(',');if(geometries[key])return geometries[key];let g;
@@ -217,7 +234,7 @@ function createHouseDecor(options) {
   });
   item('tv-console','living',()=>{round('living',2.44,.31,3.43,1.45,.4,.34,'wood');for(let i=0;i<3;i++){const x=1.956+i*.484;box('living',x,.31,3.609,.47,.34,.014,i===1?'oak':'wood');box('living',x,.425,3.624,.11,.006,.012,'brass');}for(const x of [1.86,3.02])cylinder('living',x,.075,3.43,.013,.011,.15,'steel');});
   item('television','living',()=>{round('living',2.44,1.0,3.41,1.3,.76,.048,'black','wall');box('living',2.44,.57,3.44,.32,.065,.16,'black');cylinder('living',2.44,.624,3.43,.026,.026,.08,'black');},false);
-  const screenCanvas=document.createElement('canvas');screenCanvas.width=512;screenCanvas.height=288;const sc=screenCanvas.getContext('2d');sc.fillStyle='#26313c';sc.fillRect(0,0,512,288);sc.fillStyle='#d7d1bd';sc.beginPath();sc.arc(185,136,80,0,Math.PI*2);sc.fill();sc.fillStyle='#3c5363';sc.beginPath();sc.arc(205,119,73,0,Math.PI*2);sc.fill();sc.fillStyle='#9aa9ad';for(let i=0;i<4;i++)sc.fillRect(306,105+i*23,135-i*17,4);const screenTexture=new THREE.CanvasTexture(screenCanvas);screenTexture.encoding=THREE.sRGBEncoding;const screen=new THREE.Mesh(new THREE.PlaneGeometry(1.22,.68),new THREE.MeshBasicMaterial({map:screenTexture,toneMapped:false}));screen.position.set(2.44,1.0+shifts.television[1],3.436);layer('living','wall').add(screen);
+  const screenCanvas=document.createElement('canvas');screenCanvas.width=512;screenCanvas.height=288;const sc=screenCanvas.getContext('2d');sc.fillStyle='#26313c';sc.fillRect(0,0,512,288);sc.fillStyle='#d7d1bd';sc.beginPath();sc.arc(185,136,80,0,Math.PI*2);sc.fill();sc.fillStyle='#3c5363';sc.beginPath();sc.arc(205,119,73,0,Math.PI*2);sc.fill();sc.fillStyle='#9aa9ad';for(let i=0;i<4;i++)sc.fillRect(306,105+i*23,135-i*17,4);const screenTexture=new THREE.CanvasTexture(screenCanvas);screenTexture.encoding=THREE.sRGBEncoding;const screen=new THREE.Mesh(new THREE.PlaneGeometry(1.22,.68),new THREE.MeshBasicMaterial({map:screenTexture,toneMapped:false}));screen.position.set(2.44+shifts.television[0],1.0+shifts.television[1],3.436+shifts.television[2]);layer('living','tv-wall').add(screen);
   for(let i=0;i<3;i++)art('living',.85+i*.5,1.85,6.34,.36,.45,Math.PI,i);
   art('living',1.45,1.83,3.0,.35,.52,0,2);
   // Round dining set, separate from the entry-door swept area.
@@ -255,7 +272,8 @@ function createHouseDecor(options) {
   // Bedrooms are mapped by balcony adjacency, not by an assumed photograph compass.
   bed('master',1.1,10.2,1.55,2.02,Math.PI/2,'mustard');box('master',1.25,.014,10.2,2.3,.022,2.1,'rug');
   wardrobe('master','master-wardrobe',.95,8.5425,1.6,.6,'bath-south');
-  item('master-nightstand','master',()=>{box('master',.43,.26,11.31,.45,.52,.37,'wood');cylinder('master',.43,.605,11.31,.12,.12,.17,'cream');});
+  assembledItem('master-nightstand','master',.43,11.31,Math.PI/2,()=>{box('master',0,.26,0,.45,.52,.37,'wood');cylinder('master',0,.605,0,.12,.12,.17,'cream');});
+  placements.push({id:'master-nightstand',backWall:'west',wallFace:wallFace('west',0,1),gap:items[items.length-1].min[0]-wallFace('west',0,1),facing:'east',rotation:Math.PI/2});
   art('master',.105,1.75,10.05,.55,.75,Math.PI/2,0);art('master',.105,1.7,10.85,.36,.48,Math.PI/2,1);
   bed('second',5.14,9.65,1.35,1.94,-Math.PI/2,'linen');box('second',5.0,.014,9.65,2.25,.022,1.85,'blue');
   wardrobe('second','second-wardrobe',5.25,7.9175,1.5,.55,'storage-south');
@@ -310,7 +328,7 @@ function createHouseDecor(options) {
   item('kitchen-counter-accessories','kitchen',()=>{
    round('kitchen',5.89,1.0875,.85,.21,.3,.015,'wood');cylinder('kitchen',5.69,1.0175,.95,.048,.045,.16,'cream');
   },false);
-  for(const [r,x,z] of [['master',.43,11.31],['second',5.88,8.66]])item(r+'-nightstand-detail',r,()=>{book(r,x,r==='master'?.535:.565,z,.23,.022,.16,'blue');},false);
+  for(const [r,x,z] of [['master',.43,11.31],['second',5.88,8.66]])item(r+'-nightstand-detail',r,()=>{book(r,x,r==='master'?.535:.565,z,.23,.022,.16,'blue',r==='master'?Math.PI/2:0);},false);
   item('bath-vanity-detail','bath',()=>{cylinder('bath',.79,.932,8.015,.027,.027,.17,'ceramic');box('bath',.79,1.021,8.015,.032,.015,.025,'black');},false);
   item('bath-shower-detail','bath',()=>{
    tube('bath',[[1.66,.96,6.69],[1.66,2.1,6.69],[1.57,2.13,6.69]],.011,'steel');
@@ -359,6 +377,7 @@ function createHouseDecor(options) {
   }
  }
  function update(nextMode=mode) {
+  updateTelevision();
   mode=nextMode;$('showFurniture').disabled=preset==='bare';if(preset==='bare')$('showFurniture').checked=false;const visible=$('showFurniture').checked;group.visible=preset==='a'&&visible;
   for(const g of Object.values(layers))g.visible=g.userData.layer==='ceiling'?mode==='walk'&&$('showCeiling').checked:g.userData.layer==='wall'?mode==='walk':true;
   const on=$('showLights').checked;for(const m of glowing)m.emissiveIntensity=on?.65*(options.fixtureGain??.5)*Number($('lightPower').value):0;
@@ -376,5 +395,5 @@ function createHouseDecor(options) {
  }
  finishes.restore(presetPalette('bare'));
  $('decorPreset').addEventListener('change',e=>apply(e.target.value));
- return {apply,update,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,doubleSidedMaterials:Object.keys(materials).filter(k=>materials[k].side===THREE.DoubleSide),mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),mounting:clone(mounting),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials'};}};
+ return {apply,update,itemsForDoor,restore(data){bareFinishes=data?.bareFinishes&&typeof data.bareFinishes==='object'?clone(data.bareFinishes):null;aFinishes=data?.aFinishes&&typeof data.aFinishes==='object'?clone(data.aFinishes):null;apply(data?.preset||'bare',true);if(preset==='bare')finishes.restore(bareFinishes||presetPalette('bare'));},read(){return {preset,bareFinishes:preset==='bare'?clone(finishes.diagnostics.rooms):bareFinishes?clone(bareFinishes):null,aFinishes:preset==='a'?clone(finishes.diagnostics.rooms):aFinishes?clone(aFinishes):null};},clearAt(x,z){if(preset!=='a'||!$('showFurniture').checked)return true;const px=x+3.1,pz=z+6.25,r=.13;return !blockers.some(b=>px>b.minX-r&&px<b.maxX+r&&pz>b.minZ-r&&pz<b.maxZ+r);},get diagnostics(){return {preset,built,visible:group.visible,parts,doubleSidedMaterials:Object.keys(materials).filter(k=>materials[k].side===THREE.DoubleSide),mergedMeshes:Object.values(layers).reduce((n,g)=>n+g.children.length,0),items:clone(items),placements:clone(placements),mounting:clone(mounting),blockingObjects:blockers.length,furnitureCount:preset==='bare'?0:items.length,architectureUnchanged:true,lighting:'Architectural bake; shadowed sunlight, room-captured PMREM reflections, depth contact occlusion, linear PBR materials'};}};
 }

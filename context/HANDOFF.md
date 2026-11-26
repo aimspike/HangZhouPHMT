@@ -435,3 +435,11 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 功能提交 `32a37de28fff38e2186aba28621386e8b461d613` 已部署main；公开HTML SHA256 `7dc5e1967b803f86318e2b15700e7bdf842117dc7fd9847e0595a11a4bb2fec1` 与本地Pages转换内容一致。公开桌面/手机48实际机位、灯光基准/曝光校正、180%保存刷新、关灯/顶面回退及报告两宽度各48正常比较/24诊断机位均通过，无脚本/Shader错误或外部依赖。147张图片逐字节一致，4份JSON按Git LF规则一致。首次公共CDN一文件503和大HTML30秒下载超时，降低并发/延长下载时限后检查完成；单HTML约40MB的加载成本仍存在。见`validation/exposure-overlap-public.json`、`exposure-calibration-public.json`、`exposure-report-public.json`、`exposure-public-assets.json`、`exposure-deployment.json`。release与feature保持，后续证据提交不改应用。
 
 任务期间已有复审提交420dba8进入同一main历史，已完整保留。其VIS-01对应的默认过亮已在32a37de实际校正；VIS-04原自定义门状态回退按既有约定保持。VIS-05枕头前沿/角部黑斑在新版本正午关灯近景仍可复现：关闭反射后保留，暂时统一家具顶点照明后消失，说明应继续检查烘焙顶点照明/AO与近接缝采样，不能将其标为本轮Z-fighting修复完成。诊断原图在work/exposure-overlap/pillow-*.png，未处理最终截图。本轮未修改床品几何/材质，T01与真机整体验收继续保持进行中。
+
+## 家具贴墙与床头柜朝向（2026-11-26）
+
+电视柜原后空约302.5mm，默认书房平开门下改为贴study-south内沿z2.9575，同时向东约65mm避开原墙角补片123（x1.70–1.78/z2.9575–2.99），范围x1.78–3.23000005。电视/屏幕/台面物品同步平移，保持支撑。为保留可选书房外挂推拉停车空间，新增独立合并层：切sliding整组前移130mm，切回hinged贴墙；阻挡范围和诊断同步。保存sliding刷新保持，切回hinged后全部家具重新匹配固定烘焙。门扫掠验证按实际门型对应布置计算，并另以真实当前家具位置检查，未排除电视柜碰撞。
+
+次卧衣柜位置本已在北/东墙角，改平贴墙的右侧板和背板边缘，避免圆角退让。high/mobile分别从北、东两侧各9条实际网页射线检查接触面，最大偏差小于0.1mm。主卧床头柜绕Y+90°朝东，深/宽方向交换，台灯、书本同步；柜背仍贴西墙x.09，范围z11.085–11.535，床三侧通行保留。
+
+新场景完整导出并重生成124图，high142804/mobile102492独立家具样本；原133mesh/roof130建筑快照、墙线/门洞和219张回退烘焙不变。WebGL1单HTML39,958,984字节。12组前后对比、24张真实WebP画布及一张并排图见quality-report/furniture-placement.html；仅缩放编码排版，无曝光后期处理。验证见validation/furniture-placement-before/after/decor/static/report.json及rebuild-topology.json、static-bake-data.json。Chrome桌面/手机/缺扩展/Windows WebKit共64固定状态，4种移动视口/旋转、设置/门型保存、全门型扫掠和建筑墙碰撞通过。手机均为模拟；VIS-05及整体真机验收仍待完成。仅main，不推进release。

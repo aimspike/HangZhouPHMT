@@ -242,8 +242,9 @@ def cabinetry(id,width,height,depth,doors=3):
     # Panels terminate inside the side/back boards. No coincident outer skins.
     cube('base panel',(0,.12,.006),(width-.036,.018,depth-.012),'wood',.002)
     cube('top panel',(0,height-.009,0),(width-.036,.018,depth),'cream',.002)
-    for x in [-width/2+.009,width/2-.009]:cube('laminated end panel',(x,height/2,0),(.018,height,depth),'cream',.002)
-    cube('backing panel',(0,height/2,-depth/2+.006),(width-.036,height-.04,.012),'cream',.001)
+    # Wall-contact faces on the corner wardrobe stay planar up to their edges.
+    for x in [-width/2+.009,width/2-.009]:cube('laminated end panel',(x,height/2,0),(.018,height,depth),'cream',0 if id=='second-wardrobe' and x>0 else .002)
+    cube('backing panel',(0,height/2,-depth/2+.006),(width-.036,height-.04,.012),'cream',0 if id=='second-wardrobe' else .001)
     for i in range(1,doors):cube('internal hinge partition',(-width/2+width*i/doors,height/2,0),(.018,height-.04,depth-.036),'cream',.001)
     for i in range(doors):
         x=-width/2+width*(i+.5)/doors

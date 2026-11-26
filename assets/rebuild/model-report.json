@@ -111,13 +111,13 @@
     },
     "second-wardrobe": {
       "high": {
-        "triangles": 4888,
-        "vertices": 3897,
+        "triangles": 4536,
+        "vertices": 3617,
         "drawGroups": 5
       },
       "mobile": {
-        "triangles": 4888,
-        "vertices": 3897,
+        "triangles": 4536,
+        "vertices": 3617,
         "drawGroups": 5
       }
     },

@@ -1,5 +1,5 @@
 {
-  "authoringScriptSha256": "230b01e5d1c04b4182c024228599eb20793f28b9b5e0ed0c8c76ec9e96f2f15d",
+  "authoringScriptSha256": "3953088e179e0848b895e6336ebc0ea14d35046e2048c4a4da91e784579c896c",
   "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
   "legacy": false,
   "models": {
@@ -3248,25 +3248,25 @@
           },
           {
             "name": "second-wardrobe / laminated end panel.001",
-            "triangles": 188,
+            "triangles": 12,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.02373574600120243,
-            "minTriangleArea": 2.3708567262657654e-7
+            "signedVolume": 0.023747493643800587,
+            "minTriangleArea": 0.004947394312533326
           },
           {
             "name": "second-wardrobe / backing panel",
-            "triangles": 188,
+            "triangles": 12,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.04146929251600115,
-            "minTriangleArea": 5.653670542014277e-8
+            "signedVolume": 0.04147321370169552,
+            "minTriangleArea": 0.008786663485533808
           },
           {
             "name": "second-wardrobe / internal hinge partition",
@@ -3540,25 +3540,25 @@
           },
           {
             "name": "second-wardrobe / laminated end panel.001",
-            "triangles": 188,
+            "triangles": 12,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.02373574600120243,
-            "minTriangleArea": 2.3708567262657654e-7
+            "signedVolume": 0.023747493643800587,
+            "minTriangleArea": 0.004947394312533326
           },
           {
             "name": "second-wardrobe / backing panel",
-            "triangles": 188,
+            "triangles": 12,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.04146929251600115,
-            "minTriangleArea": 5.653670542014277e-8
+            "signedVolume": 0.04147321370169552,
+            "minTriangleArea": 0.008786663485533808
           },
           {
             "name": "second-wardrobe / internal hinge partition",
@@ -7794,7 +7794,7 @@
   },
   "totals": {
     "parts": 654,
-    "triangles": 269524,
+    "triangles": 268820,
     "boundaryEdges": 0,
     "nonmanifoldEdges": 0,
     "windingErrors": 0,
