@@ -75,25 +75,25 @@
     },
     "master-bed": {
       "high": {
-        "triangles": 18188,
-        "vertices": 11942,
+        "triangles": 13228,
+        "vertices": 8382,
         "drawGroups": 7
       },
       "mobile": {
-        "triangles": 9132,
-        "vertices": 6281,
+        "triangles": 8752,
+        "vertices": 5655,
         "drawGroups": 7
       }
     },
     "second-bed": {
       "high": {
-        "triangles": 18188,
-        "vertices": 11950,
+        "triangles": 13228,
+        "vertices": 8390,
         "drawGroups": 5
       },
       "mobile": {
-        "triangles": 9132,
-        "vertices": 6276,
+        "triangles": 8752,
+        "vertices": 5660,
         "drawGroups": 5
       }
     },
@@ -242,6 +242,6 @@
       }
     }
   },
-  "sourceObjects": 429,
+  "sourceObjects": 425,
   "editableMaster": "reference-a-master.blend"
 }

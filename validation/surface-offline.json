@@ -21,13 +21,13 @@
       "states": 16,
       "architectureMeshes": 73,
       "furnitureMeshes": 136,
-      "matchedVertices": 564258,
+      "matchedVertices": 561978,
       "decodedImages": 8,
-      "decodeCacheBytes": 42627072,
+      "decodeCacheBytes": 42608640,
       "updates": 1,
       "reflectionBakes": 1,
       "error": null,
-      "composeMs": 5609.39999999851,
+      "composeMs": 5530.5,
       "irradianceBits": 16,
       "atlasTextureSize": [
         1024,
@@ -179,25 +179,25 @@
         },
         "master-bed": {
           "high": {
-            "triangles": 18188,
-            "vertices": 11942,
+            "triangles": 13228,
+            "vertices": 8382,
             "drawGroups": 7
           },
           "mobile": {
-            "triangles": 9132,
-            "vertices": 6281,
+            "triangles": 8752,
+            "vertices": 5655,
             "drawGroups": 7
           }
         },
         "second-bed": {
           "high": {
-            "triangles": 18188,
-            "vertices": 11950,
+            "triangles": 13228,
+            "vertices": 8390,
             "drawGroups": 5
           },
           "mobile": {
-            "triangles": 9132,
-            "vertices": 6276,
+            "triangles": 8752,
+            "vertices": 5660,
             "drawGroups": 5
           }
         },
@@ -350,6 +350,6 @@
     "night": true,
     "settingsClosed": true
   },
-  "HTMLSHA256": "3e0c591f57b606c3a6b1fdf3f1a02bcc51bc4ca4181fe16c9b6c67a3ac114421",
+  "HTMLSHA256": "c4872f39981452d8c39d9cb354658b7768a34b71f6a8dbbdb424a0758eded0bc",
   "result": "passed"
 }

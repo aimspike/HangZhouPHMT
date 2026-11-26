@@ -1,0 +1,414 @@
+{
+  "scope": "Desktop/WebGL1 and Android WeChat UA simulation; not a real WeChat device",
+  "errors": [],
+  "external": [],
+  "cases": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 900,
+      "initial": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 24,
+        "reflectionError": null,
+        "reflectionSource": "awaiting current state",
+        "probeReady": false,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 125.44095833333355,
+        "black": 0.006,
+        "white": 0
+      },
+      "day": {
+        "mean": 111.6138333333321,
+        "black": 0.0065,
+        "white": 0
+      },
+      "otherTimes": [
+        {
+          "time": "morning",
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 4,
+            "revision": 29,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "image": {
+            "mean": 88.93266666666685,
+            "black": 0.01475,
+            "white": 0
+          }
+        },
+        {
+          "time": "dusk",
+          "quality": {
+            "quality": "auto",
+            "effective": "high",
+            "ao": true,
+            "probeRoom": "living",
+            "captures": 5,
+            "revision": 31,
+            "reflectionError": null,
+            "reflectionSource": "Blender Cycles static bases + PMREM",
+            "probeReady": true,
+            "hdrSupported": true,
+            "depthSupported": true,
+            "screenAOAllowed": true,
+            "aoPolicy": "highp-screen-depth",
+            "depthTextureAttached": true,
+            "shaderPrecision": "highp",
+            "aoSize": [
+              1344,
+              945
+            ],
+            "samples": 20,
+            "probeResolution": 128,
+            "cachedRooms": [
+              "living"
+            ],
+            "materials": 310,
+            "mode": "walk",
+            "activeAO": "Cycles baked AO",
+            "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+            "pathTracing": false
+          },
+          "image": {
+            "mean": 69.8337291666655,
+            "black": 0.02125,
+            "white": 0
+          }
+        }
+      ],
+      "light": {
+        "mean": 64.12466666666816,
+        "black": 0.0180625,
+        "white": 0
+      },
+      "persistence": "suspended; new quality choice not written",
+      "storage": {
+        "mean": 107.03091666666754,
+        "black": 0,
+        "white": 0
+      },
+      "balcony": {
+        "mean": 170.44920833333543,
+        "black": 0,
+        "white": 0
+      },
+      "architectureUnchanged": true,
+      "final": {
+        "quality": "auto",
+        "effective": "high",
+        "ao": true,
+        "probeRoom": "balcony",
+        "captures": 4,
+        "revision": 28,
+        "reflectionError": null,
+        "reflectionSource": "Blender Cycles static bases + PMREM",
+        "probeReady": true,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": true,
+        "aoPolicy": "highp-screen-depth",
+        "depthTextureAttached": true,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          1344,
+          945
+        ],
+        "samples": 20,
+        "probeResolution": 128,
+        "cachedRooms": [
+          "storage",
+          "balcony"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "wechat",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "initial": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 24,
+        "reflectionError": null,
+        "reflectionSource": "awaiting current state",
+        "probeReady": false,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          293,
+          633
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 125.52166666666366,
+        "black": 0.0084375,
+        "white": 0
+      },
+      "day": {
+        "mean": 112.19633333333556,
+        "black": 0.0095,
+        "white": 0
+      },
+      "rotated": {
+        "v": [
+          844,
+          390
+        ],
+        "q": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 2,
+          "revision": 27,
+          "reflectionError": null,
+          "reflectionSource": "Blender Cycles static bases + PMREM",
+          "probeReady": true,
+          "hdrSupported": true,
+          "depthSupported": true,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            633,
+            293
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 310,
+          "mode": "walk",
+          "activeAO": "Cycles baked AO",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "final": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 2,
+        "revision": 27,
+        "reflectionError": null,
+        "reflectionSource": "Blender Cycles static bases + PMREM",
+        "probeReady": true,
+        "hdrSupported": true,
+        "depthSupported": true,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          633,
+          293
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    },
+    {
+      "id": "fallback",
+      "width": 740,
+      "height": 360,
+      "mobile": true,
+      "fallback": true,
+      "initial": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 1,
+        "revision": 24,
+        "reflectionError": null,
+        "reflectionSource": "awaiting current state",
+        "probeReady": false,
+        "hdrSupported": false,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          555,
+          270
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      },
+      "night": {
+        "mean": 125.3245416666656,
+        "black": 0.0046875,
+        "white": 0
+      },
+      "day": {
+        "mean": 113.53820833333315,
+        "black": 0.0044375,
+        "white": 0
+      },
+      "rotated": {
+        "v": [
+          360,
+          740
+        ],
+        "q": {
+          "quality": "auto",
+          "effective": "balanced",
+          "ao": false,
+          "probeRoom": "living",
+          "captures": 2,
+          "revision": 27,
+          "reflectionError": null,
+          "reflectionSource": "Blender Cycles static bases + PMREM",
+          "probeReady": true,
+          "hdrSupported": false,
+          "depthSupported": false,
+          "screenAOAllowed": false,
+          "aoPolicy": "mobile-baked-shadows",
+          "depthTextureAttached": false,
+          "shaderPrecision": "highp",
+          "aoSize": [
+            270,
+            555
+          ],
+          "samples": 12,
+          "probeResolution": 64,
+          "cachedRooms": [
+            "living"
+          ],
+          "materials": 310,
+          "mode": "walk",
+          "activeAO": "Cycles baked AO",
+          "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+          "pathTracing": false
+        }
+      },
+      "final": {
+        "quality": "auto",
+        "effective": "balanced",
+        "ao": false,
+        "probeRoom": "living",
+        "captures": 2,
+        "revision": 27,
+        "reflectionError": null,
+        "reflectionSource": "Blender Cycles static bases + PMREM",
+        "probeReady": true,
+        "hdrSupported": false,
+        "depthSupported": false,
+        "screenAOAllowed": false,
+        "aoPolicy": "mobile-baked-shadows",
+        "depthTextureAttached": false,
+        "shaderPrecision": "highp",
+        "aoSize": [
+          270,
+          555
+        ],
+        "samples": 12,
+        "probeResolution": 64,
+        "cachedRooms": [
+          "living"
+        ],
+        "materials": 310,
+        "mode": "walk",
+        "activeAO": "Cycles baked AO",
+        "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
+        "pathTracing": false
+      }
+    }
+  ],
+  "result": "passed"
+}

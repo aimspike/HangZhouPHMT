@@ -50,6 +50,8 @@
 
 该轮`84a30f4`已部署main；公开六种环境的主控件/时段/旧记录只读恢复及219图/屋顶/建筑快照验证通过，见`validation/main-light-control-public.json`和`main-light-deployment.json`。正式release保持，模拟不替代真机验收。
 
+2026-11-26枕头修复：针对VIS-05，将主次卧4个枕头改为连续闭合布面/细缝边，保留手机轮廓并全量重烘焙124张固定照明/AO/反射；原曝光/太阳/建筑/219图保持。Chrome桌面、手机均衡与Windows WebKit的48组同机位前后/2秒重复帧完成，实际枕面测量与850份拓扑通过。证据`validation/pillow-geometry.json`、`pillow-fix-*.json`、`pillow-surface-*.json`及`quality-report/pillow-fix.html`。VIS-04房门状态导致全局固定照明回退仍是独立待办，T01整体和真机验收继续进行。
+
 **验收标准**：按确认后的视觉参考逐场景验收；昼夜切换无明显条纹、漏光、异常反射或材质失真；记录设备、首屏耗时、帧率和 HTML 体积，并按确定后的预算检查。截图来自实际页面，模拟检查与真机结果分别记录。沿用现有实时渲染基础，路径追踪继续保持移除状态。
 
 <a id="t02"></a>

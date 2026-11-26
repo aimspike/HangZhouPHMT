@@ -1,5 +1,5 @@
 {
-  "authoringScriptSha256": "1bfef8d1376b949c305ce5e4b29c19f384f6db7f8ea6cb24368455e77dad7635",
+  "authoringScriptSha256": "659fd7ac61356325b7863e7c60a666b36884c8b605a425f01b3c318851e3a454",
   "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
   "legacy": false,
   "models": {
@@ -1783,26 +1783,26 @@
             "minTriangleArea": 0.000006740108451759045
           },
           {
-            "name": "master-bed / pillow with crown",
-            "triangles": 2352,
+            "name": "master-bed / pillow with continuous sewn edge",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.046093635061808406,
-            "minTriangleArea": 0.000012121356229851045
+            "signedVolume": 0.03633941950428217,
+            "minTriangleArea": 0.00002398030766367141
           },
           {
-            "name": "master-bed / pillow with crown.001",
-            "triangles": 2352,
+            "name": "master-bed / pillow with continuous sewn edge.001",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.046093635065441764,
-            "minTriangleArea": 0.000012121356229851045
+            "signedVolume": 0.036339422855667505,
+            "minTriangleArea": 0.000023980240191781745
           },
           {
             "name": "master-bed / mattress top piping",
@@ -1814,28 +1814,6 @@
             "invertedNormals": 0,
             "signedVolume": 0.000037700629345894024,
             "minTriangleArea": 0.000021820658718499744
-          },
-          {
-            "name": "master-bed / pillow flange",
-            "triangles": 2048,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.000011501711650943299,
-            "minTriangleArea": 0.000008063611885282916
-          },
-          {
-            "name": "master-bed / pillow flange.001",
-            "triangles": 2048,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.00001150170143164041,
-            "minTriangleArea": 0.00000806343557156074
           },
           {
             "name": "master-bed / upholstered headboard",
@@ -1936,20 +1914,6 @@
             "allowedDistanceMm": 3
           },
           {
-            "name": "master-bed / pillow flange",
-            "surface": "master-bed / pillow with crown",
-            "samples": 32,
-            "maxDistanceMm": 1.3139997586864698,
-            "allowedDistanceMm": 3
-          },
-          {
-            "name": "master-bed / pillow flange.001",
-            "surface": "master-bed / pillow with crown.001",
-            "samples": 32,
-            "maxDistanceMm": 1.3140008974591082,
-            "allowedDistanceMm": 3
-          },
-          {
             "name": "master-bed / headboard seam",
             "surface": "master-bed / upholstered headboard",
             "samples": 32,
@@ -1996,26 +1960,26 @@
             "minTriangleArea": 0.000022288266160389353
           },
           {
-            "name": "master-bed / pillow with crown",
-            "triangles": 1128,
+            "name": "master-bed / pillow with continuous sewn edge",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0460536689930661,
-            "minTriangleArea": 0.00004513036706938418
+            "signedVolume": 0.036339407804443585,
+            "minTriangleArea": 0.00002395357354329686
           },
           {
-            "name": "master-bed / pillow with crown.001",
-            "triangles": 1128,
+            "name": "master-bed / pillow with continuous sewn edge.001",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.046053740437193805,
-            "minTriangleArea": 0.00004513036706938418
+            "signedVolume": 0.036339409553574065,
+            "minTriangleArea": 0.000023953506106269025
           },
           {
             "name": "master-bed / mattress top piping",
@@ -2027,28 +1991,6 @@
             "invertedNormals": 0,
             "signedVolume": 0.000037747035885119315,
             "minTriangleArea": 0.00002169178007075505
-          },
-          {
-            "name": "master-bed / pillow flange",
-            "triangles": 982,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.000011489736524595305,
-            "minTriangleArea": 0.00000810341632555001
-          },
-          {
-            "name": "master-bed / pillow flange.001",
-            "triangles": 982,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.00001149036332862366,
-            "minTriangleArea": 0.000008089898434670283
           },
           {
             "name": "master-bed / upholstered headboard",
@@ -2149,20 +2091,6 @@
             "allowedDistanceMm": 3
           },
           {
-            "name": "master-bed / pillow flange",
-            "surface": "master-bed / pillow with crown",
-            "samples": 32,
-            "maxDistanceMm": 1.972985543081293,
-            "allowedDistanceMm": 3
-          },
-          {
-            "name": "master-bed / pillow flange.001",
-            "surface": "master-bed / pillow with crown.001",
-            "samples": 32,
-            "maxDistanceMm": 1.9274722707912721,
-            "allowedDistanceMm": 3
-          },
-          {
             "name": "master-bed / headboard seam",
             "surface": "master-bed / upholstered headboard",
             "samples": 32,
@@ -2211,26 +2139,26 @@
             "minTriangleArea": 0.000006716847220533707
           },
           {
-            "name": "second-bed / pillow with crown",
-            "triangles": 2352,
+            "name": "second-bed / pillow with continuous sewn edge",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.039816032698617575,
-            "minTriangleArea": 0.000012108358240432558
+            "signedVolume": 0.03165015331149486,
+            "minTriangleArea": 0.000022463253927079624
           },
           {
-            "name": "second-bed / pillow with crown.001",
-            "triangles": 2352,
+            "name": "second-bed / pillow with continuous sewn edge.001",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.03981601966676128,
-            "minTriangleArea": 0.000012108390088872367
+            "signedVolume": 0.03165015333374049,
+            "minTriangleArea": 0.000022463262290062084
           },
           {
             "name": "second-bed / mattress top piping",
@@ -2264,28 +2192,6 @@
             "invertedNormals": 0,
             "signedVolume": 0.1802859277926087,
             "minTriangleArea": 0.0011049346217770761
-          },
-          {
-            "name": "second-bed / pillow flange",
-            "triangles": 2048,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.000010545072201179729,
-            "minTriangleArea": 0.000007364730619578614
-          },
-          {
-            "name": "second-bed / pillow flange.001",
-            "triangles": 2048,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.000010545826066002912,
-            "minTriangleArea": 0.000007364562771705656
           },
           {
             "name": "second-bed / headboard seam",
@@ -2364,20 +2270,6 @@
             "allowedDistanceMm": 3
           },
           {
-            "name": "second-bed / pillow flange",
-            "surface": "second-bed / pillow with crown",
-            "samples": 32,
-            "maxDistanceMm": 1.3185679515671425,
-            "allowedDistanceMm": 3
-          },
-          {
-            "name": "second-bed / pillow flange.001",
-            "surface": "second-bed / pillow with crown.001",
-            "samples": 32,
-            "maxDistanceMm": 1.3187687083053306,
-            "allowedDistanceMm": 3
-          },
-          {
             "name": "second-bed / headboard seam",
             "surface": "second-bed / upholstered headboard",
             "samples": 32,
@@ -2424,26 +2316,26 @@
             "minTriangleArea": 0.000022343785596113992
           },
           {
-            "name": "second-bed / pillow with crown",
-            "triangles": 1128,
+            "name": "second-bed / pillow with continuous sewn edge",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.03977917282048308,
-            "minTriangleArea": 0.0000467871557250745
+            "signedVolume": 0.031650259240182804,
+            "minTriangleArea": 0.000022461980184919105
           },
           {
-            "name": "second-bed / pillow with crown.001",
-            "triangles": 1128,
+            "name": "second-bed / pillow with continuous sewn edge.001",
+            "triangles": 1920,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.03977903326817651,
-            "minTriangleArea": 0.00004669599288859345
+            "signedVolume": 0.031650215467890826,
+            "minTriangleArea": 0.00002246643778517349
           },
           {
             "name": "second-bed / mattress top piping",
@@ -2477,28 +2369,6 @@
             "invertedNormals": 0,
             "signedVolume": 0.18027519217341784,
             "minTriangleArea": 0.000054337317229702364
-          },
-          {
-            "name": "second-bed / pillow flange",
-            "triangles": 982,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.000010534519289317919,
-            "minTriangleArea": 0.0000073636055107511335
-          },
-          {
-            "name": "second-bed / pillow flange.001",
-            "triangles": 982,
-            "boundaryEdges": 0,
-            "nonmanifoldEdges": 0,
-            "windingErrors": 0,
-            "degenerateTriangles": 0,
-            "invertedNormals": 0,
-            "signedVolume": 0.00001053621324664347,
-            "minTriangleArea": 0.000007363773335968286
           },
           {
             "name": "second-bed / headboard seam",
@@ -2574,20 +2444,6 @@
             "surface": "second-bed / mattress",
             "samples": 32,
             "maxDistanceMm": 1.895951377746531,
-            "allowedDistanceMm": 3
-          },
-          {
-            "name": "second-bed / pillow flange",
-            "surface": "second-bed / pillow with crown",
-            "samples": 32,
-            "maxDistanceMm": 1.93091327856514,
-            "allowedDistanceMm": 3
-          },
-          {
-            "name": "second-bed / pillow flange.001",
-            "surface": "second-bed / pillow with crown.001",
-            "samples": 32,
-            "maxDistanceMm": 1.8963309173377425,
             "allowedDistanceMm": 3
           },
           {
@@ -10065,8 +9921,8 @@
     }
   },
   "totals": {
-    "parts": 858,
-    "triangles": 323094,
+    "parts": 850,
+    "triangles": 312414,
     "boundaryEdges": 0,
     "nonmanifoldEdges": 0,
     "windingErrors": 0,

@@ -260,6 +260,47 @@ lathe('socket',[(0,2.34),(.025,2.34),(.025,2.43),(.018,2.43),(.018,2.35),(0,2.35
 lathe('continuous shade hub',[(0,2.185),(.031,2.185),(.031,2.365),(0,2.365)],'cream',32)
 tube('fabric flex',[(0,2.345,0),(.005,2.61,.008),(0,2.79,0)],.0025,'cream')
 
+def sewn_pillow(cx,cz,width,depth):
+    # One closed cloth shell. A partially buried, separately decimated piping
+    # tube made invisible corner samples turn black in the vertex-light bake.
+    # The subtle seam is a continuous pair of rings on the same surface.
+    profile=[(0,.735),(.24,.734),(.52,.730),(.75,.719),(.90,.696),
+             (.98,.668),(.99,.656),(1,.650),(1.002,.647),(1,.644),
+             (.992,.640),(.985,.625),(.95,.604),(.84,.584),
+             (.65,.570),(.32,.560),(0,.557)]
+    count=64;vertices=[];rings=[];owners=[];faces=[]
+    for ri,(radius,y) in enumerate(profile):
+        ring=[]
+        for j in range(count if radius else 1):
+            angle=j*2*math.pi/count;c=math.cos(angle);s=math.sin(angle)
+            x=math.copysign(abs(c)**.5,c)*width*.5*radius
+            z=math.copysign(abs(s)**.5,s)*depth*.5*radius
+            ring.append(len(vertices));owners.append((ri,j));vertices.append(xyz((cx+x,y,cz+z)))
+        rings.append(ring)
+    for first,second in zip(rings,rings[1:]):
+        for j in range(count):
+            k=(j+1)%count
+            if len(first)==1:faces.append((first[0],second[j],second[k]))
+            elif len(second)==1:faces.append((first[j],second[0],first[k]))
+            else:faces.append((first[j],second[j],second[k],first[k]))
+    me=bpy.data.meshes.new('continuous pillow shell');me.from_pydata(vertices,[],faces);me.update()
+    ob=bpy.data.objects.new('continuous sewn pillow',me);scene.collection.objects.link(ob)
+    finish(ob,'pillow with continuous sewn edge','white');ob['preserve_surface']=True
+    normals=[]
+    for poly in me.polygons:
+        for li in poly.loop_indices:
+            ri,j=owners[me.loops[li].vertex_index];ring=rings[ri]
+            if len(ring)==1:normal=Vector((0,0,1 if ri==0 else -1))
+            else:
+                tangent=Vector(vertices[ring[(j+1)%count]])-Vector(vertices[ring[(j-1)%count]])
+                before=rings[ri-1];after=rings[ri+1]
+                slope=Vector(vertices[after[j%len(after)]])-Vector(vertices[before[j%len(before)]])
+                normal=tangent.cross(slope).normalized()
+                if normal.dot(poly.normal)<0:normal=-normal
+            normals.append(normal)
+    me.normals_split_custom_set(normals)
+    return ob
+
 def make_bed(id,w,l,cover,head):
     global current
     current=id
@@ -286,8 +327,7 @@ def make_bed(id,w,l,cover,head):
     for a,b in zip(perimeter,perimeter[1:]+perimeter[:1]):f.append((a,b,b+count,a+count))
     mesh=bpy.data.meshes.new('quilt');mesh.from_pydata(v,[],f);mesh.update();o=bpy.data.objects.new('duvet',mesh);scene.collection.objects.link(o);finish(o,'closed quilt shell',cover)
     for x in [-w*.245,w*.245]:
-        o=cube('pillow with crown',(x,.645,-l/2+.36),(w*.43,.18,.44),'white',.075,6,True)
-        seam('pillow flange',x,.653,-l/2+.36,w*.42,.43,'linen',o)
+        sewn_pillow(x,-l/2+.36,w*.43,.44)
     for x in [-w/2+.1,w/2-.1]:
         for z in [-l/2+.15,l/2-.15]:
             o=lathe('recessed bed foot',[(0,0),(.014,0),(.017,.14),(0,.14)],'black',20);move(o,(x,0,z))
