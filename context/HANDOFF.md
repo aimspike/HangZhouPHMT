@@ -387,3 +387,5 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 观察建议优先灯光50%、曝光不变：压低室内墙顶/白柜而保留自然光与窗外；70%为更温和方案。曝光65%也能压暗，但室内/窗外/暗部一起降低，正午关灯时继续影响自然光。夜晚客厅画面加权像素均值约180.4→149.8（灯50%）/161.3（曝光65%），只是显示像素统计，不是照度。正午关灯时降低灯光滑块的画面均值不变。该建议用于用户挑选，未擅自改默认。
 
 `quality-report/brightness-comparison.html`提供桌面/手机、昼夜/关灯、三房间、四调整方案对比滑块、5档原图及4张下载总览；`verify-brightness-report.cjs`在1280/390宽各56种对比，70图/4总览、交互及链接/无溢出检查通过。219原烘焙/13PBR、固定照明与反射均有效、快照一致/屋顶0缺口、零JS/Shader错误和外部依赖请求。手机均为模拟。仅推main报告，不推进release。
+
+亮度对比报告`c3415f5`已上线main。70原图/4总览逐字节匹配本地，公开PC/手机宽度各56组对比、滑块/原图/链接和无溢出通过；见brightness-public-assets.json、brightness-report-public.json和brightness-deployment.json。应用默认/HTML及烘焙保持，release未推进。

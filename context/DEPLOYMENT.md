@@ -1,5 +1,12 @@
 # 发布信息
 
+## 室内灯光与曝光对比 main 验证（2026-11-26）
+
+对比报告提交[`c3415f5`](https://github.com/aimspike/HangZhouPHMT/commit/c3415f50d757846cb59db4957a410135551c4ec1)已部署。[亮度对比页](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/brightness-comparison.html)的70张实际WebGL原图与4张并排总览全部逐字节匹配本地；1280/390宽各56组比较、滑块、5档原图、总览/证据链接与无横向溢出检查通过。见brightness-public-assets.json、brightness-report-public.json。
+
+本轮仅测试灯光70%/50%与相对曝光80%/65%，保留100%基线；建议优先灯光50%、原曝光，由用户看图选择，当前默认参数保持。主应用HTML/烘焙/模型未修改，公开应用规范化SHA256仍`b3483ec26903532a57c9ae453dd51fc3027138777a9aaafd56238a8ae5dcc76c`；release仍7b53b23、原HTML哈希保持。部署记录见brightness-deployment.json。后续证据提交不改变已测图像/应用。
+
+
 ## Cycles固定光照烘焙 main 验证（2026-11-25）
 
 功能提交[`83f8ad1`](https://github.com/aimspike/HangZhouPHMT/commit/83f8ad1ae67e14466b419bc04abdecfc4e9a4d83)已部署至[main测试页](https://aimspike.github.io/HangZhouPHMT/preview/main/?decor=a)。实际公开HTML与本地/Git装配一致，规范化SHA256 `b3483ec26903532a57c9ae453dd51fc3027138777a9aaafd56238a8ae5dcc76c`。
