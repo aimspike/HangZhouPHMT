@@ -20,14 +20,14 @@
       "atlasSize": 1024,
       "states": 16,
       "architectureMeshes": 73,
-      "furnitureMeshes": 125,
-      "matchedVertices": 516792,
+      "furnitureMeshes": 136,
+      "matchedVertices": 564258,
       "decodedImages": 8,
-      "decodeCacheBytes": 42240000,
+      "decodeCacheBytes": 42627072,
       "updates": 1,
       "reflectionBakes": 1,
       "error": null,
-      "composeMs": 5286.300000000279,
+      "composeMs": 6993.300000000745,
       "irradianceBits": 16,
       "atlasTextureSize": [
         1024,
@@ -64,7 +64,7 @@
       "cachedRooms": [
         "balcony"
       ],
-      "materials": 302,
+      "materials": 310,
       "mode": "walk",
       "activeAO": "Cycles baked AO",
       "reflection": "Scene-captured linear cubemap + PMREM, room bounds projection; cached on scene changes",
@@ -89,9 +89,11 @@
         "second-bed",
         "second-wardrobe",
         "vanity",
+        "toilet",
         "study-desk",
         "laundry-stack",
-        "balcony-vanity"
+        "balcony-vanity",
+        "shower"
       ],
       "texturesReady": 13,
       "texturesExpected": 13,
@@ -213,13 +215,13 @@
         },
         "second-wardrobe": {
           "high": {
-            "triangles": 4888,
-            "vertices": 3897,
+            "triangles": 4536,
+            "vertices": 3617,
             "drawGroups": 5
           },
           "mobile": {
-            "triangles": 4888,
-            "vertices": 3897,
+            "triangles": 4536,
+            "vertices": 3617,
             "drawGroups": 5
           }
         },
@@ -261,14 +263,14 @@
         },
         "kitchen-north": {
           "high": {
-            "triangles": 3256,
-            "vertices": 2650,
-            "drawGroups": 5
+            "triangles": 8728,
+            "vertices": 7402,
+            "drawGroups": 8
           },
           "mobile": {
-            "triangles": 2344,
-            "vertices": 1981,
-            "drawGroups": 5
+            "triangles": 8166,
+            "vertices": 6980,
+            "drawGroups": 8
           }
         },
         "study-desk": {
@@ -285,14 +287,38 @@
         },
         "vanity": {
           "high": {
-            "triangles": 6772,
-            "vertices": 4440,
-            "drawGroups": 6
+            "triangles": 8792,
+            "vertices": 6400,
+            "drawGroups": 8
           },
           "mobile": {
-            "triangles": 6498,
-            "vertices": 4237,
-            "drawGroups": 6
+            "triangles": 7668,
+            "vertices": 5706,
+            "drawGroups": 8
+          }
+        },
+        "toilet": {
+          "high": {
+            "triangles": 8620,
+            "vertices": 6952,
+            "drawGroups": 4
+          },
+          "mobile": {
+            "triangles": 7666,
+            "vertices": 6339,
+            "drawGroups": 4
+          }
+        },
+        "shower": {
+          "high": {
+            "triangles": 12288,
+            "vertices": 9792,
+            "drawGroups": 5
+          },
+          "mobile": {
+            "triangles": 11216,
+            "vertices": 9014,
+            "drawGroups": 5
           }
         },
         "laundry-stack": {
@@ -324,6 +350,6 @@
     "night": true,
     "settingsClosed": true
   },
-  "HTMLSHA256": "fc062aba2a76635068df24cbc5f527640ebe79d0abae3c9f3a2f93febac8db45",
+  "HTMLSHA256": "4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba",
   "result": "passed"
 }

@@ -32,7 +32,7 @@ for name,lods in models['models'].items():
                 selected=points[np.unique(tris)];vertices=[Vector(p) for p in selected]
                 samples=vertices[::max(1,len(vertices)//240)]
                 centres=points[tris].mean(axis=1);samples += [Vector(p) for p in centres[::max(1,len(centres)//120)]]
-                parts.append({'name':part['name'],'bvh':BVHTree.FromPolygons([Vector(p) for p in points],tris,all_triangles=True),'samples':samples,'min':selected.min(axis=0),'max':selected.max(axis=0)})
+                parts.append({'name':part['name'],'bvh':BVHTree.FromPolygons([Vector(p) for p in points],tris,all_triangles=True),'samples':samples,'min':selected.min(axis=0),'max':selected.max(axis=0),'wallMount':part.get('wallMount')})
         parent=list(range(len(parts)));nearest=[(1e9,None) for p in parts];contacts=[]
         def find(i):
             while parent[i]!=i:i=parent[i]
@@ -48,10 +48,21 @@ for name,lods in models['models'].items():
                 if distance<.0007:parent[find(i)]=find(j);contacts.append([a['name'],b['name'],round(distance*1000,4)])
         components={}
         for i,p in enumerate(parts):components.setdefault(find(i),[]).append(p['name'])
-        separated=[{'name':p['name'],'nearest':nearest[i][1],'gapMm':round(nearest[i][0]*1000,3)} for i,p in enumerate(parts) if nearest[i][0]>.0007]
-        result={'parts':len(parts),'components':list(components.values()),'separated':separated,'contacts':contacts}
+        wall_supports=[];supported=set()
+        for i,p in enumerate(parts):
+            mount=p['wallMount']
+            if mount:
+                gap=abs(p[mount['side']][mount['axis']]-mount['plane'])
+                if gap<.0007:
+                    supported.add(find(i));wall_supports.append({'part':p['name'],'component':find(i),'gapMm':round(gap*1000,4),'plane':mount})
+        # Independently mounted shower equipment shares the architectural wall.
+        # Every permitted separate group must have an actual labelled mounting
+        # solid that reaches the declared wall plane within export tolerance.
+        detached_roots=set(components)-supported
+        separated=[{'name':p['name'],'nearest':nearest[i][1],'gapMm':round(nearest[i][0]*1000,3)} for i,p in enumerate(parts) if nearest[i][0]>.0007 and find(i) not in supported]
+        result={'parts':len(parts),'components':list(components.values()),'wallSupports':wall_supports,'separated':separated,'contacts':contacts}
         report['models'][name][lod]=result
-        if separated or len(components)!=1:report['result']='failed'
+        if separated or len(detached_roots)>1:report['result']='failed'
 out=ROOT/os.environ.get('ASSEMBLY_REPORT','validation/furniture-assembly.json');out.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({'result':report['result'],'groups':{name:{lod:len(v['components']) for lod,v in lods.items()} for name,lods in report['models'].items()}}))
 if report['result']!='passed':raise RuntimeError('See '+str(out)+' for detached components')

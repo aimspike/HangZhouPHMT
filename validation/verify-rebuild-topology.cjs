@@ -45,7 +45,7 @@ function downward(x,z,entries){
  return {height:highest,material};
 }
 function sinkCoverage(meshes){
- const entries=meshes.filter(m=>['chrome','ceramic'].includes(m.material)).map(m=>[m,decode(m)]);
+ const entries=meshes.filter(m=>['chrome','ceramic','stainless','silicone'].includes(m.material)).map(m=>[m,decode(m)]);
  let rays=0,gaps=0;const examples=[];
  // The north run now ends at x=.50 to butt against the east counter.
  const maxX=meshes.some(m=>m.parts?.some(p=>p.name.endsWith('/ single opening countertop')))?.49:.52;
@@ -123,7 +123,7 @@ for(const [id,lods] of Object.entries(models.models)){
   }
  }
 }
-for(const lod of ['high','mobile'])if(!legacy){const c=report.models['kitchen-north'][lod].counterCoverage;if(c.gaps||c.cavity.material!=='chrome'||c.cavity.height<.79||c.cavity.height>.81)report.result='failed';}
+for(const lod of ['high','mobile'])if(!legacy){const c=report.models['kitchen-north'][lod].counterCoverage;if(c.gaps||c.cavity.material!=='stainless'||c.cavity.height<.79||c.cavity.height>.81)report.result='failed';}
 const out=process.env.TOPOLOGY_REPORT||path.join(root,'validation/rebuild-topology.json');
 fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({result:report.result,legacy,totals:report.totals,sink:Object.fromEntries(['high','mobile'].map(lod=>[lod,report.models['kitchen-north'][lod].counterCoverage]))},null,2));

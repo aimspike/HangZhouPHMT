@@ -1,0 +1,408 @@
+{
+  "scope": "Check real exported surface separation; run with Blender's Python.\n\nThe audit retains authored part ranges through runtime material merging. Normal\nrays find same-facing near-coplanar surface candidates. It samples triangle\ncentres, not every possible self-intersection. Authored solid ranges identify\nthe rebuilt asset types; procedural pieces with a shared label and hidden\nstructural contact are not an exhaustive intersection audit. Exact closure is\nchecked elsewhere.\n",
+  "toleranceMm": 0.4,
+  "cases": {
+    "before": {
+      "high": {
+        "triangles": 287444,
+        "furnitureSurfaceSamples": 215572,
+        "nearCoplanarPairs": [
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / cabinet bottom",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / side panel",
+            "samples": 4,
+            "sampledTriangleArea": 0.001954795761709211,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / cabinet bottom",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / side panel.001",
+            "samples": 4,
+            "sampledTriangleArea": 0.001954793408324202,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / black / chair / back fixing boss",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / chrome / chair / rear arm attachment",
+            "samples": 15,
+            "sampledTriangleArea": 0.0005595169683942913,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / black / chair / back fixing boss.002",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / chrome / chair / rear arm attachment.001",
+            "samples": 16,
+            "sampledTriangleArea": 0.0008190596147983342,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / black / kitchen-east / toe kick",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass bottom",
+            "samples": 1,
+            "sampledTriangleArea": 0.00431350866412572,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-east / side return",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass backing",
+            "samples": 20,
+            "sampledTriangleArea": 0.011093198052598528,
+            "maxSeparationMm": 0.0001360278130135839
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-east / side return.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass backing",
+            "samples": 18,
+            "sampledTriangleArea": 0.0011557361206648166,
+            "maxSeparationMm": 8.33174951253568e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet end",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 6,
+            "sampledTriangleArea": 0.004138350484000534,
+            "maxSeparationMm": 5.7468895420242916e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet end.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 5,
+            "sampledTriangleArea": 0.004131128836436147,
+            "maxSeparationMm": 5.7644975015591626e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet back",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 1,
+            "sampledTriangleArea": 0.007182151343840815,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / wood / master-wardrobe / base panel",
+            "samples": 4,
+            "sampledTriangleArea": 0.008352176009037718,
+            "maxSeparationMm": 0.00011510265807146425
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / wood / master-wardrobe / base panel",
+            "samples": 1,
+            "sampledTriangleArea": 0.004168851462438283,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / top panel",
+            "samples": 30,
+            "sampledTriangleArea": 0.010273916539334772,
+            "maxSeparationMm": 0.0002228871238685315
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / top panel",
+            "samples": 8,
+            "sampledTriangleArea": 0.012543033043181955,
+            "maxSeparationMm": 6.088431803163985e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 8,
+            "sampledTriangleArea": 0.007681593778488956,
+            "maxSeparationMm": 0.00033870094284793595
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / backing panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 2,
+            "sampledTriangleArea": 0.02092848151983162,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 1,
+            "sampledTriangleArea": 0.0038191402248699546,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / top panel",
+            "samples": 29,
+            "sampledTriangleArea": 0.013219477508572062,
+            "maxSeparationMm": 0.0003837508302240167
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / top panel",
+            "samples": 5,
+            "sampledTriangleArea": 0.0038533648000206155,
+            "maxSeparationMm": 0.00023093214451819222
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.001",
+            "samples": 4,
+            "sampledTriangleArea": 0.0002974602347175554,
+            "maxSeparationMm": 0.00011508623032341347
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright",
+            "samples": 1,
+            "sampledTriangleArea": 0.00012801386685623584,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.002",
+            "samples": 4,
+            "sampledTriangleArea": 0.0002974461000621626,
+            "maxSeparationMm": 0.00011518326914483623
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.003",
+            "samples": 3,
+            "sampledTriangleArea": 6.209458909310059e-05,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / laundry-stack / wall backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / laundry-stack / structural shelf.001",
+            "samples": 1,
+            "sampledTriangleArea": 0.004473424556863392,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / laundry-stack / wall backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / laundry-stack / structural shelf.002",
+            "samples": 1,
+            "sampledTriangleArea": 0.004484372564434125,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / balcony-vanity / basin cabinet backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / balcony-vanity / cabinet floor",
+            "samples": 1,
+            "sampledTriangleArea": 0.003223234245240292,
+            "maxSeparationMm": 0
+          }
+        ],
+        "kitchenCounterJoinMm": -29.999732971191406
+      },
+      "mobile": {
+        "triangles": 186092,
+        "furnitureSurfaceSamples": 157744,
+        "nearCoplanarPairs": [
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / cabinet bottom",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / side panel",
+            "samples": 3,
+            "sampledTriangleArea": 0.001947514865607488,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / cabinet bottom",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / wood / sideboard / side panel.001",
+            "samples": 4,
+            "sampledTriangleArea": 0.001954793408324202,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / black / chair / back fixing boss",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / chrome / chair / rear arm attachment",
+            "samples": 15,
+            "sampledTriangleArea": 0.0005595169683942913,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / black / chair / back fixing boss.002",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/dining-furniture/dining-furniture / chrome / chair / rear arm attachment.001",
+            "samples": 16,
+            "sampledTriangleArea": 0.0008190596147983342,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / black / kitchen-east / toe kick",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass bottom",
+            "samples": 1,
+            "sampledTriangleArea": 0.00431350866412572,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-east / side return",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass backing",
+            "samples": 18,
+            "sampledTriangleArea": 0.0011557473156008269,
+            "maxSeparationMm": 0.0001360278130135839
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-east / side return.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / wood / kitchen-east / carcass backing",
+            "samples": 18,
+            "sampledTriangleArea": 0.0011559063928797003,
+            "maxSeparationMm": 8.33174951253568e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet end",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 6,
+            "sampledTriangleArea": 0.004138350484000534,
+            "maxSeparationMm": 5.7468895420242916e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet end.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 5,
+            "sampledTriangleArea": 0.004131128836436147,
+            "maxSeparationMm": 5.7644975015591626e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / cabinet back",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/kitchen-furniture/kitchen-furniture / oak / kitchen-north / carcass bottom",
+            "samples": 1,
+            "sampledTriangleArea": 0.007182151343840815,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / wood / master-wardrobe / base panel",
+            "samples": 4,
+            "sampledTriangleArea": 0.008352176009037718,
+            "maxSeparationMm": 0.00011510265807146425
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / wood / master-wardrobe / base panel",
+            "samples": 1,
+            "sampledTriangleArea": 0.004168851462438283,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / top panel",
+            "samples": 26,
+            "sampledTriangleArea": 0.014406590229808584,
+            "maxSeparationMm": 0.0002228871238685315
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/master-furniture/master-furniture / cream / master-wardrobe / top panel",
+            "samples": 7,
+            "sampledTriangleArea": 0.008374186021280502,
+            "maxSeparationMm": 6.088431803163985e-05
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 8,
+            "sampledTriangleArea": 0.007681593778488956,
+            "maxSeparationMm": 0.00033870094284793595
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / backing panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 2,
+            "sampledTriangleArea": 0.02092848151983162,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / wood / second-wardrobe / base panel",
+            "samples": 2,
+            "sampledTriangleArea": 0.007638280449739909,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / top panel",
+            "samples": 26,
+            "sampledTriangleArea": 0.005574070410546449,
+            "maxSeparationMm": 0.0003837508302240167
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / laminated end panel.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/second-furniture/second-furniture / cream / second-wardrobe / top panel",
+            "samples": 7,
+            "sampledTriangleArea": 0.011496849510175053,
+            "maxSeparationMm": 0.00023093214451819222
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.001",
+            "samples": 2,
+            "sampledTriangleArea": 4.143250100508371e-05,
+            "maxSeparationMm": 0.00011508623032341347
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright",
+            "samples": 1,
+            "sampledTriangleArea": 0.00012801386685623584,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.002",
+            "samples": 6,
+            "sampledTriangleArea": 0.00033870235280635376,
+            "maxSeparationMm": 0.00011518326914483623
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded top rail.001",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/study-furniture/study-furniture / chrome / study-desk / desk welded upright.003",
+            "samples": 5,
+            "sampledTriangleArea": 0.00031812232280557226,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / laundry-stack / wall backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / laundry-stack / structural shelf.003",
+            "samples": 1,
+            "sampledTriangleArea": 0.005137787504281732,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / laundry-stack / wall backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / laundry-stack / structural shelf.001",
+            "samples": 1,
+            "sampledTriangleArea": 0.004473424556863392,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / laundry-stack / wall backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / laundry-stack / structural shelf.002",
+            "samples": 1,
+            "sampledTriangleArea": 0.004484372564434125,
+            "maxSeparationMm": 0
+          },
+          {
+            "a": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / applianceWhite / balcony-vanity / basin cabinet backing",
+            "b": "\u5bb6\u88c5\u9884\u8bbe A/balcony-furniture/balcony-furniture / oak / balcony-vanity / cabinet floor",
+            "samples": 1,
+            "sampledTriangleArea": 0.003223234245240292,
+            "maxSeparationMm": 0
+          }
+        ],
+        "kitchenCounterJoinMm": -29.999732971191406
+      }
+    },
+    "after": {
+      "high": {
+        "triangles": 305640,
+        "furnitureSurfaceSamples": 233724,
+        "nearCoplanarPairs": [],
+        "kitchenCounterJoinMm": 0.0
+      },
+      "mobile": {
+        "triangles": 201562,
+        "furnitureSurfaceSamples": 173170,
+        "nearCoplanarPairs": [],
+        "kitchenCounterJoinMm": 0.0
+      }
+    }
+  },
+  "result": "passed"
+}

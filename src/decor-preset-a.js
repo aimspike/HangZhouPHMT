@@ -40,13 +40,13 @@ function createHouseDecor(options) {
    'living-sofa':[['bath-north',2,'max',-1]],'tv-console':[['study-south',2,'min',1],['study-west',0,'min',1]],'dining-sideboard':[['east',0,'max',-1]],fridge:[['east',0,'max',-1]],
    'kitchen-east-cabinets':[['east',0,'max',-1]],'kitchen-north-cabinets':[['kitchen-north',2,'min',1]],
    'kitchen-upper-cabinets':[['east',0,'max',-1]],'kitchen-hood':[['east',0,'max',-1]],
-   'study-desk':[['study-west',0,'min',1]],'bath-vanity':[['bath-south',2,'max',-1]],toilet:[['bath-north',2,'min',1]],
+   'study-desk':[['study-west',0,'min',1]],'bath-vanity':[['bath-south',2,'max',-1]],toilet:[['bath-north',2,'min',1]],'bath-shower-detail':[['bath-north',2,'min',1],['bath-east',0,'max',-1]],
    'master-bed':[['west',0,'min',1]],'second-bed':[['east',0,'max',-1]],
    'master-wardrobe':[['bath-south',2,'min',1],['west',0,'min',1]],'second-wardrobe':[['storage-south',2,'min',1],['east',0,'max',-1]],
    'master-nightstand':[['west',0,'min',1]],'second-nightstand':[['east',0,'max',-1]],
    'balcony-laundry':[['balcony-east',0,'max',-1]],'balcony-vanity':[['balcony-east',0,'max',-1]]
   };
-  const floor=['living-sofa','coffee-table','tv-console','dining-table','dining-sideboard','fridge','kitchen-east-cabinets','kitchen-north-cabinets','study-desk','study-chair','toilet','master-bed','second-bed','master-wardrobe','second-wardrobe','master-nightstand','second-nightstand','balcony-laundry','balcony-vanity'].includes(id)||id.startsWith('chair-')||id.startsWith('storage-rack-');
+  const floor=['living-sofa','coffee-table','tv-console','dining-table','dining-sideboard','fridge','kitchen-east-cabinets','kitchen-north-cabinets','study-desk','study-chair','toilet','master-bed','second-bed','master-wardrobe','second-wardrobe','master-nightstand','second-nightstand','bath-shower-detail','balcony-laundry','balcony-vanity'].includes(id)||id.startsWith('chair-')||id.startsWith('storage-rack-');
   const delta=[0,0,0],b=boundsOf(meshes),support=id==='coffee-table'?.025:.0015;
   if(floor)delta[1]=support-b.min.y;
   if(id==='television'){delta[1]=items.find(i=>i.id==='tv-console').max[1]-b.min.y;delta[0]=shifts['tv-console'][0];delta[2]=shifts['tv-console'][2];}
@@ -105,7 +105,7 @@ function createHouseDecor(options) {
  function material(name,room) {
   const key=room+'-'+name;if(materials[key])return materials[key];
   const definitions={wood:['#96704e','wood'],oak:['#bc936b','wood'],cream:['#eee6d8'],white:['#f4f0e7'],navy:['#2e3c4b','stripe'],blue:['#45576d','fabric'],linen:['#c3b8a6','fabric'],mustard:['#b3a05e','fabric'],rug:['#c6bfb1','fabric'],black:['#252b2d'],steel:['#a4aaa7'],orange:['#b95d30'],green:['#617260'],tile:['#c5bfb2','tiles'],stone:['#ddd5c4','stone'],glow:['#fff0d0'],mirror:['#839ba0'],red:['#944e39'],chrome:['#b9bdbb'],seam:['#596975'],ceramic:['#dcd4bf'],brass:['#8d7652'],leaf:['#546b47'],soil:['#403b32'],applianceIvory:['#eeeade']};
-  Object.assign(definitions,{porcelain:['#f2f0e9'],applianceWhite:['#f1f0e9'],graphite:['#24282b'],smokeGlass:['#19282d']});
+  Object.assign(definitions,{porcelain:['#f2f0e9'],applianceWhite:['#f1f0e9'],graphite:['#24282b'],smokeGlass:['#19282d'],showerGlass:['#c5d7d4'],stainless:['#b7bfba'],silicone:['#c9c2b8']});
   const [color,texture]=definitions[name],fabric=['fabric','stripe'].includes(texture),metal=['steel','brass','chrome'].includes(name);const m=new THREE.MeshStandardMaterial({color,roughness:name==='chrome'?.16:metal?.25:name==='mirror'?.13:fabric?.93:texture==='wood'?.46:name==='stone'?.36:name==='ceramic'?.3:.65,metalness:metal?.82:name==='mirror'?.8:0});m.color.convertSRGBToLinear();
   if(texture){const tx=options.assets.maps(texture==='wood'?'wood':fabric?(name==='navy'?'fabric':'fabric_plain'):texture==='stone'?'stone':'none');if(tx){m.map=tx.color;m.normalMap=tx.normal;m.normalScale.set(fabric?(name==='navy'?.12:.035):.15,fabric?(name==='navy'?.12:.035):.15);m.roughnessMap=tx.roughness;}else{const old=surfaceTexture(texture);m.map=old.map;m.bumpMap=old.bump;m.roughnessMap=old.bump;m.bumpScale=.0006;}}
   m.envMap=reflections();m.userData.envStrength=metal?.75:name==='mirror'?.95:fabric?.015:.12;m.envMapIntensity=m.userData.envStrength;
@@ -114,6 +114,9 @@ function createHouseDecor(options) {
   if(name==='porcelain'){m.roughness=.24;m.metalness=0;m.userData.houseReflectionStrength=.3;}
   if(name==='applianceWhite'){m.roughness=.48;m.userData.houseReflectionStrength=.22;}
   if(name==='graphite'){m.roughness=.32;m.userData.houseReflectionStrength=.24;}
+  if(name==='silicone'){m.roughness=.9;m.userData.envStrength=.02;m.userData.houseReflectionStrength=.05;}
+  if(name==='stainless'){m.roughness=.42;m.metalness=.92;m.userData.envStrength=.75;m.userData.houseReflectionStrength=.8;}
+  if(name==='showerGlass'){m.transparent=true;m.opacity=.13;m.depthWrite=false;m.roughness=.08;m.metalness=.08;m.userData.envStrength=.5;m.userData.houseReflectionStrength=.45;}
   if(name==='smokeGlass'){m.roughness=.12;m.userData.houseReflectionStrength=.6;}
   m.userData.houseMaterial=name;options.shade(m,room);materials[key]=m;return m;
  }
@@ -147,7 +150,7 @@ function createHouseDecor(options) {
  function book(room,x,y,z,w,h,d,color,angle=0){box(room,x,y,z,w,h,d,'white','furniture',angle);for(const side of [-1,1])box(room,x,y+side*(h/2+.002),z,w+.012,.005,d+.008,color,'furniture',angle);}
  function plant(room,x,y,z,size=.14){cylinder(room,x,y+size*.45,z,size*.5,size*.4,size*.9,'ceramic');cylinder(room,x,y+size*.9,z,size*.43,size*.43,.008,'soil');for(let i=0;i<5;i++){const angle=i*2.4,tip=[x+Math.cos(angle)*size*.6,y+size*(2.2+i*.12),z+Math.sin(angle)*size*.6];tube(room,[[x,y+size*.8,z],[(x+tip[0])/2,y+size*1.8,(z+tip[2])/2],tip],.003,'leaf');const leaf=mesh(room,'furniture','sphere',...tip,[size*.35],'leaf');leaf.scale.set(.45,1.5,.65);leaf.rotation.z=Math.sin(angle)*.7;}}
  function item(id,room,build,blocking=true) {
-  currentItem={id,room,meshes:[]};const replacements={'living-sofa':['sofa',[1.8,0,5.9]],'coffee-table':['coffee',[1.75,0,4.68]],'tv-console':['console',[2.44,0,3.43]],'dining-table':['dining-table',[4.48,0,4.87]],'dining-sideboard':['sideboard',[5.95,0,4.6],-Math.PI/2],'fridge':['fridge',[5.76,0,5.9],Math.PI/2],'kitchen-east-cabinets':['kitchen-east',[5.79,0,1.43],-Math.PI/2],'kitchen-north-cabinets':['kitchen-north',[4.94,0,.4]],'study-desk':['study-desk',[2.25,0,1.63]],'bath-vanity':['vanity',[.55,0,7.91]],'balcony-laundry':['laundry-stack',[5.77,0,11.95],Math.PI/2],'balcony-vanity':['balcony-vanity',[5.83,0,11.36],Math.PI/2]},replacement=replacements[id];if(replacement){currentItem.meshes.push(...options.assets.add(replacement[0],layer(room),name=>material(name,room),replacement[1],replacement[2]||0));parts+=currentItem.meshes.length;}else build();root.updateMatrixWorld(true);
+  currentItem={id,room,meshes:[]};const replacements={'living-sofa':['sofa',[1.8,0,5.9]],'coffee-table':['coffee',[1.75,0,4.68]],'tv-console':['console',[2.44,0,3.43]],'dining-table':['dining-table',[4.48,0,4.87]],'dining-sideboard':['sideboard',[5.95,0,4.6],-Math.PI/2],'fridge':['fridge',[5.76,0,5.9],Math.PI/2],'kitchen-east-cabinets':['kitchen-east',[5.79,0,1.43],-Math.PI/2],'kitchen-north-cabinets':['kitchen-north',[4.94,0,.4]],'study-desk':['study-desk',[2.25,0,1.63]],'bath-vanity':['vanity',[.55,0,7.91]],'toilet':['toilet',[.47,0,6.86]],'bath-shower-detail':['shower',[1.35,0,6.86]],'balcony-laundry':['laundry-stack',[5.77,0,11.95],Math.PI/2],'balcony-vanity':['balcony-vanity',[5.83,0,11.36],Math.PI/2]},replacement=replacements[id];if(replacement){currentItem.meshes.push(...options.assets.add(replacement[0],layer(room),name=>material(name,room),replacement[1],replacement[2]||0));parts+=currentItem.meshes.length;}else build();root.updateMatrixWorld(true);
   const parents={'tv-console-accessories':'tv-console','dining-sideboard-accessories':'dining-sideboard','study-accessories':'study-desk','master-nightstand-detail':'master-nightstand','second-nightstand-detail':'second-nightstand','bath-vanity-detail':'bath-vanity','kitchen-cookware':'kitchen-east-cabinets','kitchen-sink-accessories':'kitchen-north-cabinets','kitchen-counter-accessories':'kitchen-east-cabinets'};
   if(parents[id])carry(currentItem.meshes,parents[id]);
   const local=fitItem(id,currentItem.meshes);
@@ -281,7 +284,6 @@ function createHouseDecor(options) {
   // Keep bathroom fixtures inside its original boundary; the reference dry-area relocation is unconfirmed.
   item('bath-vanity','bath',()=>{box('bath',.55,.56,7.91,.7,.48,.36,'wood');box('bath',.55,.82,7.91,.74,.06,.39,'stone');cylinder('bath',.55,.85,7.9,.18,.18,.025,'cream');round('bath',.55,1.48,8.135,.64,.78,.025,'glow','wall',Math.PI);round('bath',.55,1.48,8.115,.59,.73,.018,'mirror','wall',Math.PI);box('bath',.55,1.02,8.07,.08,.05,.07,'steel');});
   item('toilet','bath',()=>{cylinder('bath',.47,.22,6.96,.16,.13,.36,'porcelain');const bowl=mesh('bath','furniture','sphere',.47,.36,6.98,[1],'porcelain');bowl.scale.set(.21,.14,.29);const lid=mesh('bath','furniture','sphere',.47,.46,6.99,[1],'porcelain');lid.scale.set(.206,.025,.28);round('bath',.47,.61,6.73,.37,.43,.17,'porcelain');box('bath',.47,.83,6.73,.09,.009,.045,'steel');});
-  box('bath',1.35,.025,6.86,.69,.04,.72,'stone');cylinder('bath',1.65,2.04,6.76,.055,.055,.025,'steel','wall');
   // Secondary spaces keep generous circulation and unobstructed doors.
   item('study-desk','study',()=>{box('study',2.25,.75,1.63,.73,.055,1.38,'oak');for(const z of [1.05,2.21])box('study',2.25,.37,z,.58,.72,.035,'steel');});
   item('study-chair','study',()=>{round('study',2.97,.46,1.62,.45,.08,.46,'green');round('study',3.16,.7,1.62,.06,.43,.45,'linen');for(const z of [1.45,1.8])box('study',2.97,.23,z,.03,.44,.03,'steel');});
@@ -299,14 +301,14 @@ function createHouseDecor(options) {
   const trimRoom=(x,z)=>rooms.find(r=>!['balcony','equipment1','equipment2'].includes(r.id)&&x>r.x+.001&&x<r.x+r.w-.001&&z>r.z+.001&&z<r.z+r.d-.001);
   for(const wall of options.planLayout.walls){if(wall.guard)continue;const along=wall.a[1]===wall.b[1],length=along?wall.b[0]-wall.a[0]:wall.b[1]-wall.a[1];
     for(const side of [-1,1]){let start=null,lastRoom=null;const n=Math.ceil(length/.04);for(let i=0;i<=n;i++){const distance=i*length/n,x=wall.a[0]+(along?distance:side*(wall.t/2+.006)),z=wall.a[1]+(along?side*(wall.t/2+.006):distance),r=trimRoom(x,z),opening=(wall.openings||[]).some(o=>o.kind!=='window'&&distance>o.a-.025&&distance<o.b+.025),behind=blockers.some(b=>x>b.minX-.018&&x<b.maxX+.018&&z>b.minZ-.018&&z<b.maxZ+.018),valid=i<n&&r&&!opening&&!behind;
-      if(start!==null&&(!valid||r!==lastRoom)){const mid=(start+distance)/2,span=distance-start;if(span>.06){const cx=wall.a[0]+(along?mid:side*(wall.t/2+.006)),cz=wall.a[1]+(along?side*(wall.t/2+.006):mid);box(lastRoom.id,cx,.036,cz,along?span:.014,.072,along?.014:span,'oak','wall');}start=null;}
+      if(start!==null&&(!valid||r!==lastRoom)){const mid=(start+distance)/2,span=distance-start;if(span>.06){const cx=wall.a[0]+(along?mid:side*(wall.t/2+.006)),cz=wall.a[1]+(along?side*(wall.t/2+.006):mid);box(lastRoom.id,cx,.036,cz,along?span:.014,.072,along?.014:span,lastRoom.id==='bath'?'stone':'oak','wall');}start=null;}
     if(valid&&start===null){start=distance;lastRoom=r;}
    }}
   }
   // Separate finish layer: visible interior aluminium profiles and timber sill.
   for(const wall of options.planLayout.walls)for(const opening of wall.openings||[]){if(opening.kind!=='window')continue;const along=wall.a[1]===wall.b[1],mid=(opening.a+opening.b)/2,span=opening.b-opening.a;
    for(const side of [-1,1]){const x=wall.a[0]+(along?mid:side*(wall.t/2+.018)),z=wall.a[1]+(along?side*(wall.t/2+.018):mid),r=trimRoom(x,z);if(!r)continue;
-    box(r.id,x,.905,z,along?span:.065,.025,along?.065:span,'oak','wall');
+    box(r.id,x,.905,z,along?span:.065,.025,along?.065:span,r.id==='bath'?'stone':'oak','wall');
     for(const height of [.93,2.27])box(r.id,x,height,z,along?span:.025,.025,along?.025:span,'black','wall');
     for(const end of [opening.a+.015,opening.b-.015,mid])box(r.id,wall.a[0]+(along?end:side*(wall.t/2+.018)),1.6,wall.a[1]+(along?side*(wall.t/2+.018):end),along?.025:.03,1.34,along?.03:.025,'black','wall');
    }
@@ -323,17 +325,17 @@ function createHouseDecor(options) {
   for(const z of [.43,.91,1.39,1.87,2.35]){box('kitchen',5.448,.18,z,.012,.008,.38,'black');}
   item('kitchen-cookware','kitchen',()=>{for(const z of [1.92,2.23]){const ring=new THREE.Mesh(new THREE.TorusGeometry(.071,.008,6,32),material('steel','kitchen'));ring.rotation.x=-Math.PI/2;ring.position.set(5.74,1.08,z);layer('kitchen').add(ring);currentItem.meshes.push(ring);parts++;cylinder('kitchen',5.74,1.09,z,.019,.019,.028,'black');for(const x of [5.61,5.87])box('kitchen',x,1.025,z,.055,.022,.035,'steel');}},false);
   item('kitchen-sink-accessories','kitchen',()=>{
-   tube('kitchen',[[5.19,.94,.26],[5.19,1.18,.26],[5.16,1.21,.26],[5.05,1.21,.26],[5.02,1.18,.26]],.012,'steel');box('kitchen',5.23,1.02,.26,.035,.006,.015,'steel');
+   const x=4.925,back=.135;cylinder('kitchen',x,.9575,back,.024,.024,.040,'stainless').name='kitchen sink mixer base';
+   tube('kitchen',[[x,.9575,back],[x,1.155,back],[x,1.195,.175],[x,1.195,.36],[x,1.16,.40]],.012,'stainless').name='kitchen sink mixer spout';
+   cylinder('kitchen',x,1.156,.40,.012,.012,.014,'stainless').name='kitchen sink aerator';
+   box('kitchen',x+.030,1.005,back,.040,.012,.016,'stainless');
   },false);
   item('kitchen-counter-accessories','kitchen',()=>{
    round('kitchen',5.89,1.0875,.85,.21,.3,.015,'wood');cylinder('kitchen',5.69,1.0175,.95,.048,.045,.16,'cream');
   },false);
   for(const [r,x,z] of [['master',.43,11.31],['second',5.88,8.66]])item(r+'-nightstand-detail',r,()=>{book(r,x,r==='master'?.535:.565,z,.23,.022,.16,'blue',r==='master'?Math.PI/2:0);},false);
-  item('bath-vanity-detail','bath',()=>{cylinder('bath',.79,.932,8.015,.027,.027,.17,'ceramic');box('bath',.79,1.021,8.015,.032,.015,.025,'black');},false);
-  item('bath-shower-detail','bath',()=>{
-   tube('bath',[[1.66,.96,6.69],[1.66,2.1,6.69],[1.57,2.13,6.69]],.011,'steel');
-   round('bath',1.66,1.14,6.69,.11,.055,.07,'steel');
-  },false);
+  item('bath-vanity-detail','bath',()=>{cylinder('bath',.24,.932,8.015,.027,.027,.17,'ceramic');box('bath',.24,1.021,8.015,.032,.015,.025,'black');},false);
+  item('bath-shower-detail','bath',()=>{});
   item('study-accessories','study',()=>{book('study',2.24,.795,1.34,.26,.025,.2,'green');book('study',2.24,.825,1.34,.23,.025,.17,'blue');plant('study',2.2,.778,2.09,.08);},false);
   // Pleated fabric panels sit beside the glazing rather than covering a doorway.
   const curtainMaterials={},curtainMobile=options.assets.diagnostics.lod==='mobile';

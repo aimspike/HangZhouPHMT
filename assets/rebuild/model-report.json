@@ -159,14 +159,14 @@
     },
     "kitchen-north": {
       "high": {
-        "triangles": 3256,
-        "vertices": 2650,
-        "drawGroups": 5
+        "triangles": 8728,
+        "vertices": 7402,
+        "drawGroups": 8
       },
       "mobile": {
-        "triangles": 2344,
-        "vertices": 1981,
-        "drawGroups": 5
+        "triangles": 8166,
+        "vertices": 6980,
+        "drawGroups": 8
       }
     },
     "study-desk": {
@@ -183,14 +183,38 @@
     },
     "vanity": {
       "high": {
-        "triangles": 6772,
-        "vertices": 4440,
-        "drawGroups": 6
+        "triangles": 8792,
+        "vertices": 6400,
+        "drawGroups": 8
       },
       "mobile": {
-        "triangles": 6498,
-        "vertices": 4237,
-        "drawGroups": 6
+        "triangles": 7668,
+        "vertices": 5706,
+        "drawGroups": 8
+      }
+    },
+    "toilet": {
+      "high": {
+        "triangles": 8620,
+        "vertices": 6952,
+        "drawGroups": 4
+      },
+      "mobile": {
+        "triangles": 7666,
+        "vertices": 6339,
+        "drawGroups": 4
+      }
+    },
+    "shower": {
+      "high": {
+        "triangles": 12288,
+        "vertices": 9792,
+        "drawGroups": 5
+      },
+      "mobile": {
+        "triangles": 11216,
+        "vertices": 9014,
+        "drawGroups": 5
       }
     },
     "laundry-stack": {
@@ -218,6 +242,6 @@
       }
     }
   },
-  "sourceObjects": 327,
+  "sourceObjects": 429,
   "editableMaster": "reference-a-master.blend"
 }

@@ -15,7 +15,7 @@ import os
 
 import bpy
 import bmesh
-from mathutils import Vector
+from mathutils import Vector, Matrix
 import numpy as np
 from mathutils.bvhtree import BVHTree
 
@@ -32,12 +32,12 @@ models = defaultdict(list)
 current = ''
 
 COLORS = {'navy':(.025,.04,.065,1),'linen':(.64,.58,.47,1),'mustard':(.5,.35,.09,1),'oak':(.48,.28,.13,1),'wood':(.3,.15,.065,1),'cream':(.84,.8,.7,1),'white':(.9,.9,.85,1),'chrome':(.62,.65,.64,1),'black':(.025,.028,.027,1),'orange':(.55,.12,.035,1),'ceramic':(.67,.65,.58,1),'seam':(.065,.085,.1,1),'blue':(.08,.12,.2,1),'brass':(.36,.25,.1,1),'rug':(.63,.6,.54,1),'applianceIvory':(.86,.84,.77,1)}
-COLORS.update(porcelain=(.91,.90,.87,1),applianceWhite=(.91,.90,.86,1),graphite=(.025,.028,.03,1),smokeGlass=(.015,.024,.03,1),mirror=(.45,.53,.54,1),glow=(1,.9,.7,1))
+COLORS.update(porcelain=(.91,.90,.87,1),applianceWhite=(.91,.90,.86,1),graphite=(.025,.028,.03,1),smokeGlass=(.015,.024,.03,1),mirror=(.45,.53,.54,1),glow=(1,.9,.7,1),showerGlass=(.78,.88,.87,.13),tile=(.73,.70,.64,1),stone=(.67,.65,.58,1),stainless=(.52,.56,.54,1),silicone=(.58,.55,.49,1))
 for name, color in COLORS.items():
     m=bpy.data.materials.new(name);m.diffuse_color=color;m.use_nodes=True
     p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color
-    p.inputs['Roughness'].default_value=.19 if name=='chrome' else .37 if name in ('wood','oak','ceramic') else .8
-    p.inputs['Metallic'].default_value=1 if name in ('chrome','brass') else 0
+    p.inputs['Roughness'].default_value=.42 if name=='stainless' else .19 if name=='chrome' else .37 if name in ('wood','oak','ceramic') else .8
+    p.inputs['Metallic'].default_value=1 if name in ('chrome','brass') else .92 if name=='stainless' else 0
     materials[name]=m
 
 def xyz(p): return (p[0],-p[2],p[1])
@@ -111,6 +111,66 @@ def tube(name,points,radius=.012,mat='chrome',closed=False,surface=None):
     return result
 
 def move(o,p):o.location+=Vector(xyz(p));return o
+
+def sampled_slab(name,width,depth,height,mat):
+    # Vertex transport needs interior floor samples, not four occluded corners.
+    n=12;vertices=[];faces=[];stride=n+1;plane=stride*stride
+    for y in [0,height]:
+        for k in range(stride):
+            for j in range(stride):vertices.append(xyz((-width/2+width*j/n,y,-depth/2+depth*k/n)))
+    for k in range(n):
+        for j in range(n):
+            a=k*stride+j;b=a+1;c=a+stride+1;d=a+stride
+            faces.append((a,b,c,d));faces.append((plane+a,plane+d,plane+c,plane+b))
+    boundary=list(range(stride))+[k*stride+n for k in range(1,stride)]+[n*stride+j for j in range(n-1,-1,-1)]+[k*stride for k in range(n-1,0,-1)]
+    for i,a in enumerate(boundary):b=boundary[(i+1)%len(boundary)];faces.append((a,plane+a,plane+b,b))
+    me=bpy.data.meshes.new(name);me.from_pydata(vertices,[],faces);me.update();ob=bpy.data.objects.new(name,me);scene.collection.objects.link(ob);finish(ob,name,mat)
+    for p in me.polygons:p.use_smooth=False
+    ob['preserve_surface']=True;return ob
+
+def ceramic_shell(name,profiles,planes=(),material='porcelain'):
+    # Equal regular rings, with single vertices at poles. No collapsed fans.
+    vertices=[];rings=[];faces=[];owners=[];count=96
+    for kind,rx,rz,y,cz,*radius in profiles:
+        ring=[]
+        for j in range(count if rx else 1):
+            a=2*math.pi*j/count
+            if kind=='rect':
+                # Match the ellipse's angular parameter. Starting a rectangle
+                # at its corner twists the deck-to-bowl quad strips.
+                r=radius[0] if radius else .012;lo=0.;hi=2.
+                for _ in range(32):
+                    t=(lo+hi)/2;x=rx*math.cos(a)*t;z=rz*math.sin(a)*t
+                    qx=abs(x)-(rx-r);qz=abs(z)-(rz-r)
+                    distance=math.hypot(max(qx,0),max(qz,0))+min(max(qx,qz),0)-r
+                    if distance>0:hi=t
+                    else:lo=t
+                x=rx*math.cos(a)*(lo+hi)/2;z=rz*math.sin(a)*(lo+hi)/2
+            else:x=rx*math.cos(a);z=rz*math.sin(a)
+            ring.append(len(vertices));vertices.append(xyz((x,y,z+cz)));owners.append((len(rings),j))
+        rings.append(ring)
+    for i,first in enumerate(rings):
+        second=rings[(i+1)%len(rings)]
+        if len(first)==len(second)==1:continue
+        for j in range(count):
+            k=(j+1)%count
+            if len(first)==1:faces.append((first[0],second[j],second[k]))
+            elif len(second)==1:faces.append((first[j],second[0],first[k]))
+            else:faces.append((first[j],second[j],second[k],first[k]))
+    me=bpy.data.meshes.new(name);me.from_pydata(vertices,[],faces);me.update();ob=bpy.data.objects.new(name,me);scene.collection.objects.link(ob);finish(ob,name,material);ob['preserve_surface']=True
+    normals=[]
+    for poly in me.polygons:
+        for li in poly.loop_indices:
+            vi=me.loops[li].vertex_index;i,j=owners[vi];ring=rings[i]
+            if len(ring)==1:normal=Vector((0,0,1 if poly.normal.z>=0 else -1))
+            elif i in planes and abs(poly.normal.z)>.999:normal=Vector((0,0,1 if poly.normal.z>=0 else -1))
+            else:
+                tangent=Vector(vertices[ring[(j+1)%count]])-Vector(vertices[ring[(j-1)%count]])
+                a=rings[(i-1)%len(rings)];b=rings[(i+1)%len(rings)];slope=Vector(vertices[b[j%len(b)]])-Vector(vertices[a[j%len(a)]])
+                normal=tangent.cross(slope).normalized()
+                if normal.dot(poly.normal)<0:normal=-normal
+            normals.append(normal)
+    me.normals_split_custom_set(normals);return ob
 
 def seam(name,cx,y,cz,w,d,mat='seam',surface=None):
     r=min(.055,w*.12,d*.12);points=[]
@@ -304,39 +364,30 @@ cube('cabinet back',(-.015,.532,-.286),(.964,.706,.018),'oak',.002)
 cube('counter front support',(-.015,.866,.275),(.964,.038,.026),'oak',.002)
 # One closed countertop ring, with a real opening and no overlapping strips.
 # Its right end butts against the east worktop instead of penetrating it.
-vertices=[];faces=[]
-outer=[(-.53,-.315),(.50,-.315),(.50,.315),(-.53,.315)]
-inner=[(-.39,-.185),(.39,-.185),(.39,.185),(-.39,.185)]
-for y in [.8825,.9375]:
-    for ring in [outer,inner]:vertices.extend(xyz((x,y,z)) for x,z in ring)
-for j in range(4):
-    k=(j+1)%4
-    faces.extend([(8+j,8+k,12+k,12+j),(j,4+j,4+k,k),(j,k,8+k,8+j),(4+j,12+j,12+k,4+k)])
-me=bpy.data.meshes.new('single sink countertop');me.from_pydata(vertices,[],faces);me.update();counter=bpy.data.objects.new('counter',me);scene.collection.objects.link(counter)
-finish(counter,'single opening countertop','ceramic')
-mod=counter.modifiers.new('Counter edge radius','BEVEL');mod.width=.002;mod.segments=3;bpy.context.view_layer.objects.active=counter;bpy.ops.object.modifier_apply(modifier=mod.name)
-mod=counter.modifiers.new('Counter panel normals','WEIGHTED_NORMAL');mod.keep_sharp=True;bpy.ops.object.modifier_apply(modifier=mod.name)
-# One watertight vessel with a continuous inset lip. Its flange covers the
-# .78 x .37 m counter opening by >=18 mm, including the rounded corners.
-def sink_vessel():
-    vertices=[];rings=[];faces=[];segments=8
-    for halfx,halfz,radius,y in [(.412,.208,.025,.936),(.412,.208,.025,.942),(.36,.157,.035,.942),(.348,.145,.035,.925),(.30,.12,.035,.802),(.29,.11,.035,.795),(.29,.11,.035,.787),(.307,.127,.035,.787),(.356,.153,.035,.923)]:
-        ring=[]
-        for cx,cz,start in [(halfx-radius,halfz-radius,0),(-halfx+radius,halfz-radius,90),(-halfx+radius,-halfz+radius,180),(halfx-radius,-halfz+radius,270)]:
-            for j in range(segments):
-                a=math.radians(start+j*90/segments);ring.append(len(vertices));vertices.append(xyz((cx+radius*math.cos(a),y,cz+radius*math.sin(a))))
-        rings.append(ring)
-    n=len(rings[0])
-    # The interior and exterior bottoms are disks, joined around their edges.
-    for i in range(len(rings)-1):
-        if i==5:continue
-        for j in range(n):k=(j+1)%n;faces.append((rings[i][j],rings[i][k],rings[i+1][k],rings[i+1][j]))
-    for j in range(n):k=(j+1)%n;faces.append((rings[-1][j],rings[-1][k],rings[0][k],rings[0][j]))
-    for index in [5,6]:
-        centre=len(vertices);vertices.append(xyz((0,[.795,.787][index-5],0)))
-        for j in range(n):faces.append((centre,rings[index][j],rings[index][(j+1)%n]))
-    mesh=bpy.data.meshes.new('continuous sink vessel');mesh.from_pydata(vertices,[],faces);mesh.update();o=bpy.data.objects.new('sink',mesh);scene.collection.objects.link(o);finish(o,'flanged sink vessel','chrome')
-sink_vessel()
+counter=ceramic_shell('single opening countertop',[
+ ('rect',.515,.315,.8825,0,.002),('rect',.515,.315,.9355,0,.002),
+ ('rect',.513,.313,.9375,0,.002),('rect',.414,.210,.9375,0,.027),
+ ('rect',.414,.210,.9315,0,.027),('rect',.390,.185,.9315,0,.020),
+ ('rect',.390,.185,.8825,0,.020)],planes=[0,2,3,4,5,6],material='ceramic')
+move(counter,(-.015,0,0))
+seal=ceramic_shell('flush sink perimeter seal',[
+ ('rect',.414,.210,.9345,0,.027),('rect',.414,.210,.9375,0,.027),
+ ('rect',.412,.208,.9375,0,.025),('rect',.412,.208,.9345,0,.025)],planes=[0,1,2,3],material='silicone')
+move(seal,(-.015,0,0))
+sink=ceramic_shell('satin stainless sink vessel',[
+ ('rect',.412,.208,.936,0,.025),('rect',.412,.208,.940,0,.025),('rect',.410,.206,.942,0,.027),
+ ('rect',.369,.166,.942,0,.035),('rect',.361,.158,.940,0,.037),('rect',.354,.151,.935,0,.038),
+ ('rect',.348,.145,.926,0,.040),('rect',.344,.141,.908,0,.041),('rect',.343,.140,.840,0,.041),
+ ('rect',.337,.134,.818,0,.041),('rect',.325,.122,.802,0,.040),('rect',.305,.102,.795,0,.036),
+ ('rect',.28,.084,.793,0,.030),('ellipse',0,0,.793,0),('ellipse',0,0,.789,0),
+ ('rect',.28,.084,.789,0,.030),('rect',.307,.104,.791,0,.036),('rect',.329,.127,.799,0,.040),
+ ('rect',.347,.144,.835,0,.041),('rect',.352,.154,.925,0,.038),('rect',.365,.167,.936,0,.035)],
+ planes=[2,3,12,13,14,15],material='stainless')
+move(sink,(-.015,-.0045,0))
+move(lathe('sink strainer flange',[(0,.792),(.026,.792),(.028,.796),(.025,.799),(0,.799)],'stainless',48),(-.015,-.0045,0))
+for a in range(8):
+    x=-.015+.017*math.cos(a*math.pi/4);z=.017*math.sin(a*math.pi/4)
+    move(lathe('strainer drainage slot',[(0,.798),(.002,.798),(.002,.800),(0,.800)],'graphite',12),(x,-.0045,z))
 for x,width in [(-.26,.517),(.245,.487)]:
     cube('cabinet door',(x,.53,.303),(width,.69,.018),'wood',.003)
     tube('mounted cabinet pull',[(x-.07,.72,.310),(x-.07,.72,.327),(x+.07,.72,.327),(x+.07,.72,.310)],.005,'chrome')
@@ -350,14 +401,95 @@ cube('slim drawer',(0,.674,0),(.6,.1,.8),'wood',.003)
 cube('recessed drawer pull',(.301,.674,0),(.006,.012,.15),'black',.002)
 
 current='vanity'
-cube('floating carcass',(0,.56,0),(.7,.48,.36),'wood',.003)
-for yy in [.45,.68]:
-    cube('drawer front',(0,yy,-.188),(.676,.217,.018),'oak',.003)
-    cube('handle shadow',(0,yy+.096,-.201),(.45,.012,.008),'black',.002)
-cube('stone slab',(0,.82,0),(.74,.06,.39),'ceramic',.005)
-vessel=lathe('porcelain vessel',[(0,.849),(.04,.849),(.08,.849),(.115,.849),(.125,.852),(.138,.859),(.151,.869),(.163,.882),(.173,.897),(.179,.908),(.179,.912),(.176,.915),(.172,.914),(.168,.908),(.162,.899),(.154,.889),(.144,.880),(.131,.874),(.114,.872),(.08,.872),(.04,.872),(0,.872)],'porcelain',128)
-vessel['preserve_surface']=True
-tube('curved tap',[(.23,.85,.1),(.23,1.1,.1),(.19,1.13,.1),(.08,1.13,.1),(.06,1.1,.1)],.012,'chrome')
+# Suspended oak drawers with an inset basin and a wall-mounted mixer.
+for x in [-.371,.371]:cube('floating cabinet side',(x,.575,0),(.018,.410,.40),'wood',.002)
+cube('cabinet bottom',(0,.379,0),(.724,.018,.40),'wood',.002)
+cube('cabinet back',(0,.575,.191),(.724,.392,.018),'wood',.001)
+for yy,hh in [(.4775,.195),(.6825,.185)]:
+    cube('inset oak drawer',(0,yy,-.207),(.730,hh,.018),'oak',.003)
+    cube('integrated finger pull',(0,yy+hh/2-.008,-.218),(.66,.009,.004),'graphite',.001)
+for x in [-.27,.27]:cube('hidden wall bracket',(x,.68,.204),(.06,.16,.032),'chrome',.001)
+ceramic_shell('continuous inset basin deck',[
+ ('rect',.40,.201,.780,0),('rect',.40,.201,.842,0),('rect',.395,.196,.850,0),
+ ('rect',.32,.18,.850,-.01),('ellipse',.257,.157,.850,-.025),('ellipse',.249,.149,.850,-.025),
+ ('ellipse',.243,.143,.848,-.025),('ellipse',.236,.136,.842,-.025),('ellipse',.227,.128,.831,-.025),
+ ('ellipse',.215,.119,.814,-.025),('ellipse',.198,.106,.792,-.025),('ellipse',.174,.089,.768,-.025),
+ ('ellipse',.143,.070,.748,-.025),('ellipse',.105,.049,.735,-.025),('ellipse',.055,.025,.730,-.025),
+ ('ellipse',0,0,.730,-.025),('ellipse',0,0,.715,-.025),('ellipse',.055,.028,.715,-.025),
+ ('ellipse',.12,.061,.721,-.025),('ellipse',.165,.09,.740,-.025),('ellipse',.211,.122,.766,-.025),('ellipse',.26,.16,.780,-.025)],planes=[2,3,4,5,14,15,16,17])
+move(lathe('basin drain cap',[(0,.729),(.018,.729),(.018,.733),(0,.733)],'chrome',40),(0,0,-.025))
+cube('vertical tile backsplash',(0,1.215,.2105),(.80,1.81,.019),'tile',.001)
+cube('mirror illuminated surround',(0,1.59,.190),(.66,.80,.024),'glow',.027,6)
+cube('mirror slim metal backing',(0,1.59,.173),(.632,.772,.014),'graphite',.026,6)
+cube('rounded mirror face',(0,1.59,.163),(.612,.752,.006),'mirror',.025,6)
+cube('mixer wall rosette',(0,1.075,.195),(.07,.07,.014),'chrome',.006)
+tube('wall mixer spout',[(0,1.075,.194),(0,1.075,.11),(0,1.075,.015),(0,1.051,.008)],.012,'chrome')
+cube('mixer lever rosette',(.11,1.075,.195),(.065,.065,.014),'chrome',.005)
+cube('slim mixer lever',(.11,1.085,.175),(.045,.01,.038),'chrome',.003)
+
+current='toilet'
+ceramic_shell('one piece ceramic bowl',[
+ ('ellipse',0,0,.006,-.025),('ellipse',.13,.19,.006,-.025),('ellipse',.147,.212,.025,-.025),
+ ('ellipse',.155,.23,.11,-.015),('ellipse',.169,.25,.24,.005),('ellipse',.188,.278,.35,.020),
+ ('ellipse',.193,.282,.391,.025),('ellipse',.190,.28,.402,.025),('ellipse',.151,.224,.402,.025),
+ ('ellipse',.145,.217,.39,.025),('ellipse',.135,.20,.36,.025),('ellipse',.116,.165,.31,.018),
+ ('ellipse',.085,.12,.25,.008),('ellipse',.043,.065,.211,0),('ellipse',0,0,.204,0)],planes=[0,1,7,8])
+ceramic_shell('soft close oval seat',[
+ ('ellipse',.191,.279,.415,.025),('ellipse',.197,.285,.421,.025),('ellipse',.197,.285,.432,.025),
+ ('ellipse',.190,.278,.438,.025),('ellipse',.145,.224,.438,.025),('ellipse',.139,.218,.432,.025),
+ ('ellipse',.139,.218,.421,.025),('ellipse',.145,.224,.415,.025)],planes=[3,4,7,0])
+for x in [-.131,.131]:
+    for z in [-.13,.16]:cube('seat support bumper',(x,.4085,z),(.018,.017,.026),'applianceWhite',.004)
+cube('ceramic rear bridge',(0,.35,-.26),(.28,.12,.14),'porcelain',.014,5)
+cube('one piece cistern',(0,.559,-.35),(.35,.322,.15),'porcelain',.035,8)
+cube('cistern top lid',(0,.729,-.35),(.352,.024,.152),'porcelain',.010,5)
+cube('dual flush button',(0,.743,-.35),(.087,.008,.037),'chrome',.008,4)
+cube('dual flush split',(.008,.7475,-.35),(.002,.001,.029),'graphite',.0004)
+for x in [-.109,.109]:
+    cube('soft close hinge base',(x,.412,-.249),(.045,.018,.035),'chrome',.006)
+    cube('hinge pivot cover',(x,.438,-.249),(.029,.042,.027),'porcelain',.008)
+lid=ceramic_shell('raised oval lid',[
+ ('ellipse',0,0,.440,.018),('ellipse',.185,.272,.440,.018),('ellipse',.194,.281,.448,.018),
+ ('ellipse',.193,.28,.459,.018),('ellipse',.184,.271,.465,.018),('ellipse',0,0,.465,.018)],planes=[0,1,4,5])
+pivot=Vector(xyz((0,.443,-.255)));lid.matrix_world=Matrix.Translation(pivot)@Matrix.Rotation(math.radians(-82),4,'X')@Matrix.Translation(-pivot)@lid.matrix_world
+
+current='shower'
+# Compact north-east corner enclosure. Every glass sheet has actual thickness.
+sampled_slab('low stone shower tray',.78,.80,.036,'stone')
+for x in [-.381,.381]:cube('tray side upstand',(x,.043,0),(.018,.020,.80),'stone',.003)
+for z in [-.391,.391]:cube('tray end upstand',(0,.043,z),(.744,.020,.018),'stone',.003)
+cube('linear drain recessed bed',(0,.038,-.29),(.45,.004,.042),'graphite',.002)
+for x in [-.225,.225]:cube('drain trim end',(x,.041,-.29),(.006,.006,.042),'chrome',.001)
+for z in [-.309,-.271]:cube('drain trim side',(0,.041,z),(.444,.006,.004),'chrome',.001)
+for x in [-.20,-.15,-.10,-.05,0,.05,.10,.15,.20]:cube('drain grate bridge',(x,.040,-.29),(.019,.003,.034),'chrome',.001)
+for x,z in [(-.381,-.391),(-.381,.391),(.381,.391)]:cube('18 mm enclosure upright',(x,1.075,z),(.018,2.05,.018),'graphite',.002)
+cube('side upper rail',(-.381,2.098,0),(.018,.018,.782),'graphite',.002)
+cube('front upper rail',(0,2.098,.391),(.744,.018,.018),'graphite',.002)
+cube('side lower channel',(-.381,.064,0),(.018,.022,.782),'graphite',.002)
+cube('8 mm fixed side glass',(-.381,1.075,0),(.008,1.998,.764),'showerGlass',.0008,2)
+cube('8 mm shower door',(0,1.075,.391),(.744,1.998,.008),'showerGlass',.0008,2)
+for y in [.40,1.75]:
+    cube('glass door hinge',(-.363,y,.391),(.042,.066,.020),'chrome',.004)
+    cube('hinge axle',(-.376,y,.391),(.012,.070,.024),'chrome',.004)
+for z in [.371,.411]:
+    tube('vertical door pull',[(.265,.94,z),(.265,1.12,z)],.008,'chrome')
+    for y in [.94,1.12]:cube('door pull mounting foot',(.265,y,(z+.391)/2),(.016,.016,.032),'chrome',.003)
+cube('door magnetic seal',(.371,1.075,.391),(.005,1.998,.011),'graphite',.001)
+for y in [1.04,1.82]:cube('shower pipe wall rosette',(.08,y,-.388),(.055,.055,.024),'chrome',.006)['wall_mount']=True
+tube('rain shower riser',[(.08,1.04,-.365),(.08,2.03,-.365),(.08,2.08,-.33),(.08,2.08,-.06)],.012,'chrome')
+move(lathe('overhead rain shower',[(0,2.067),(.095,2.067),(.102,2.073),(.102,2.085),(.095,2.090),(0,2.090)],'chrome',64),(.08,0,-.06))
+for x,z in [(-.045,-.045),(0,-.055),(.045,-.045),(-.055,0),(0,0),(.055,0),(-.045,.045),(0,.055),(.045,.045)]:move(lathe('rain head silicone nozzle',[(0,2.064),(.004,2.064),(.004,2.068),(0,2.068)],'graphite',12),(.08+x,0,-.06+z))
+cube('thermostatic mixer body',(.08,1.025,-.355),(.30,.046,.058),'chrome',.016,5)
+for x in [-.055,.215]:cube('mixer end control',(x,1.025,-.355),(.036,.050,.061),'chrome',.014,4)
+tube('hand shower hose',[(.18,1.01,-.34),(.20,.55,-.33),(.28,.47,-.32),(.29,1.33,-.33)],.005,'chrome')
+tube('hand shower handle',[(.29,1.30,-.33),(.29,1.47,-.30)],.014,'chrome')
+o=lathe('hand shower head',[(0,0),(.034,0),(.038,.008),(.038,.020),(.034,.025),(0,.025)],'chrome',40);o.rotation_euler.x=math.pi/2;o.location=Vector(xyz((.29,1.50,-.30)))
+cube('hand shower wall clip',(.29,1.35,-.365),(.043,.065,.070),'chrome',.006)['wall_mount']=True
+cube('wall soap shelf',(-.20,1.20,-.33),(.26,.018,.11),'graphite',.005)
+cube('shelf mounting bracket',(-.20,1.22,-.392),(.20,.08,.016),'graphite',.002)['wall_mount']=True
+for x,h in [(-.26,.16),(-.15,.135)]:
+    cube('shower bottle',(x,1.208+h/2,-.33),(.060,h,.046),'applianceWhite',.008)
+    cube('bottle pump',(x,1.211+h,-.33),(.044,.012,.023),'graphite',.003)
 
 def front_lathe(name,profile,p,mat='graphite',segments=64):
     obj=lathe(name,profile,mat,segments)
@@ -463,7 +595,7 @@ cube('under cabinet task strip',(0,1.807,.04),(.40,.006,.025),'glow',.001)
 
 # Wire every master material to the same packaged PBR sources used by the web.
 for name,material in materials.items():
-    key='fabric' if name=='navy' else 'fabric_plain' if name in ('linen','mustard','blue','white','rug') else 'wood' if name in ('wood','oak') else 'stone' if name=='ceramic' else None
+    key='fabric' if name=='navy' else 'fabric_plain' if name in ('linen','mustard','blue','white','rug') else 'wood' if name in ('wood','oak') else 'stone' if name in ('ceramic','stone') else None
     if not key:continue
     nodes=material.node_tree.nodes;links=material.node_tree.links;p=nodes.get('Principled BSDF')
     tex=nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(OUT/(key+'-desktop-color.jpg')),check_existing=True);tex.image.pack()
@@ -518,6 +650,7 @@ def encode(objects,light):
                 normal=obj.matrix_world.to_3x3().inverted().transposed()@mesh.corner_normals[loop].vector;normal.normalize()
                 rows.append((co.x,co.z,-co.y,normal.x,normal.z,-normal.y,*uv[loop].uv))
         part={'name':obj.name,'start':len(buckets[material]),'count':len(rows)}
+        if obj.get('wall_mount'):part['wallMount']={'axis':2,'side':'min','plane':-.4}
         if obj.get('sewn_surface'):part.update(surface=obj['sewn_surface'],radius=obj['sewn_radius'])
         parts[material].append(part)
         ev.to_mesh_clear();buckets[material].extend(rows)

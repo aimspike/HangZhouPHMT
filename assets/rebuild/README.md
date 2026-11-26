@@ -2,7 +2,7 @@
 
 基准为用户确认的 `references/interior/preset-a/`，沿用当前墙线、门洞和家具布局。目标是建立专业建筑可视化资产流程；完成本批资产不等同于全屋视觉效果或手机微信最终验收。
 
-- `reference-a-master.blend`：Blender 5.3 可编辑米制源文件，18 个按资产编号组织的集合，已打包 PBR 图像。各集合为原点局部坐标，打开时可单独显示集合编辑。
+- `reference-a-master.blend`：Blender 5.3 可编辑米制源文件，20 个按资产编号组织的集合，已打包 PBR 图像。各集合为原点局部坐标，打开时可单独显示集合编辑。
 - `models.json`：WebGL1 离线导出资源，high / mobile 两档；位置量化为 Uint16、法线为 Int8、UV 为 Uint16（恢复后误差约 0.0001 repeat）、索引为 Uint16，另含离线局部 AO。运行时只解码所需档位，材质按房间合并提交。
 - `model-report.json`：两档三角形、顶点和材质组预算。
 - `materials/`：Poly Haven 原始 CC0 输入及来源 / 哈希记录。
@@ -19,3 +19,5 @@
 V16.1：共220个实体部件，管件焊接封口、旋转轴三角扇与闭合截面、被褥连续厚壳、连续水槽盆沿及橱柜收口。同一模型的全部材质使用同一位置量化网格，`parts`保存逐部件索引范围。导出后运行 `node validation/verify-rebuild-topology.cjs`，验证 high / mobile 的闭合、绕序、法线、退化面和指定装配接触；报告为 `validation/rebuild-topology.json`。UV / 硬法线处允许属性顶点分裂，几何坐标必须完全相同。不能把独立板件接触误判为实体非流形，也不能用全局双面材质掩盖缺面。
 
 2026-11-25：现为18类、330实体部件，新增洗烘高柜与阳台台盆/镜柜。全库连接检查见validation/furniture-assembly.json；真实网页昼夜对比见docs/quality-report/compact.html。拓扑闭合与装配接触分别检查，保留合理柜门分缝。
+
+2026-11-26：卫浴与厨房水槽重做后为20类、429实体。新增独立马桶和窄边淋浴房，洗手台重做为悬浮木柜/内凹盆/墙出龙头/背光镜；厨房水槽采用高密度规则轮廓、缎面不锈钢、凹槽嵌平与细密封边。卫生间踢脚线与窗台改浅石收口。`wallMount`记录独立淋浴花洒/置物架支座，装配验证要求真实支座到声明墙面的误差小于0.7mm，不能以标签豁免悬浮组件。结果为validation/bathroom-topology.json、bathroom-assembly.json；实际网页对比见docs/quality-report/bathroom-rebuild.html。

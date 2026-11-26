@@ -1,5 +1,5 @@
 {
-  "authoringScriptSha256": "3953088e179e0848b895e6336ebc0ea14d35046e2048c4a4da91e784579c896c",
+  "authoringScriptSha256": "1bfef8d1376b949c305ce5e4b29c19f384f6db7f8ea6cb24368455e77dad7635",
   "scope": "Quantized shipped high/mobile meshes; per authored solid, UV seams welded only at identical integer positions",
   "legacy": false,
   "models": {
@@ -5522,8 +5522,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.08721094724874759,
-            "minTriangleArea": 2.321607617417061e-7
+            "signedVolume": 0.08721484158041014,
+            "minTriangleArea": 2.3142426815551394e-7
           },
           {
             "name": "kitchen-north / carcass bottom",
@@ -5533,8 +5533,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.009917039270316844,
-            "minTriangleArea": 2.32174125098196e-7
+            "signedVolume": 0.009916936742104358,
+            "minTriangleArea": 2.3143526503105174e-7
           },
           {
             "name": "kitchen-north / cabinet end",
@@ -5544,8 +5544,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0074972931068998105,
-            "minTriangleArea": 2.3216967062299582e-7
+            "signedVolume": 0.007497202013443824,
+            "minTriangleArea": 2.3142637028978492e-7
           },
           {
             "name": "kitchen-north / cabinet end.001",
@@ -5555,8 +5555,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00749730536637952,
-            "minTriangleArea": 2.3217857964853854e-7
+            "signedVolume": 0.007497214272943496,
+            "minTriangleArea": 2.3143526503105174e-7
           },
           {
             "name": "kitchen-north / cabinet back",
@@ -5566,8 +5566,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.012244120833139352,
-            "minTriangleArea": 2.321696706017711e-7
+            "signedVolume": 0.012243971558787703,
+            "minTriangleArea": 2.314263701501669e-7
           },
           {
             "name": "kitchen-north / counter front support",
@@ -5577,52 +5577,140 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0009485118835095791,
-            "minTriangleArea": 2.278825732076016e-7
+            "signedVolume": 0.0009482685593595825,
+            "minTriangleArea": 2.314263701501669e-7
           },
           {
             "name": "kitchen-north / single opening countertop",
-            "triangles": 384,
+            "triangles": 1344,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.019802766520758866,
-            "minTriangleArea": 1.8262097688791367e-7
+            "signedVolume": 0.019493304934345337,
+            "minTriangleArea": 0.00002900476269454779
           },
           {
-            "name": "kitchen-north / flanged sink vessel",
-            "triangles": 576,
+            "name": "kitchen-north / flush sink perimeter seal",
+            "triangles": 768,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.005206631065193407,
-            "minTriangleArea": 0.000014667367568436109
+            "signedVolume": 0.000014649689836193488,
+            "minTriangleArea": 0.000013602694948122306
           },
           {
-            "name": "kitchen-north / mounted cabinet pull",
-            "triangles": 396,
+            "name": "kitchen-north / satin stainless sink vessel",
+            "triangles": 3648,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012838510876858683,
-            "minTriangleArea": 9.66492345574057e-7
+            "signedVolume": 0.003174682408355691,
+            "minTriangleArea": 0.000019158184628762056
           },
           {
-            "name": "kitchen-north / mounted cabinet pull.001",
-            "triangles": 396,
+            "name": "kitchen-north / sink strainer flange",
+            "triangles": 288,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012838472740534257,
-            "minTriangleArea": 9.6792087998868e-7
+            "signedVolume": 0.000015766801503649344,
+            "minTriangleArea": 0.000006904667359055982
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.397364560510907e-8,
+            "minTriangleArea": 9.890699794888443e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.001",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094947846989747e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.002",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094952354865687e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.003",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.409494775714221e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.004",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.3973644771359877e-8,
+            "minTriangleArea": 9.890700957762649e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.005",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4074519818707224e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.006",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094789520170193e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.007",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.407451991564771e-8,
+            "minTriangleArea": 9.890699646346313e-7
           },
           {
             "name": "kitchen-north / cabinet door",
@@ -5632,8 +5720,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006410306918602589,
-            "minTriangleArea": 5.211297040403695e-7
+            "signedVolume": 0.006410268296440803,
+            "minTriangleArea": 5.194625344561533e-7
           },
           {
             "name": "kitchen-north / cabinet door.001",
@@ -5643,15 +5731,37 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006038066568699724,
-            "minTriangleArea": 5.211430511309574e-7
+            "signedVolume": 0.006038030209241011,
+            "minTriangleArea": 5.19475860658858e-7
+          },
+          {
+            "name": "kitchen-north / mounted cabinet pull",
+            "triangles": 396,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000012839925451316197,
+            "minTriangleArea": 9.658812585195236e-7
+          },
+          {
+            "name": "kitchen-north / mounted cabinet pull.001",
+            "triangles": 396,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00001283988763891707,
+            "minTriangleArea": 9.673193994761395e-7
           }
         ],
-        "maxPositionErrorMm": 0.011794828430371948,
+        "maxPositionErrorMm": 0.011773939863902246,
         "stitches": [],
         "assemblyFit": {
           "kind": "carcass-to-counter",
-          "gapMm": -2.501070499420166,
+          "gapMm": -2.5034546852111816,
           "allowedGapMm": 0.05,
           "maxEmbedMm": 8
         },
@@ -5660,8 +5770,8 @@
           "gaps": 0,
           "examples": [],
           "cavity": {
-            "height": 0.7949970960617065,
-            "material": "chrome"
+            "height": 0.7945038676261902,
+            "material": "stainless"
           },
           "scope": "Vertical rays through the complete countertop and intended sink cavity, on exported geometry"
         }
@@ -5676,8 +5786,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.08720950926989693,
-            "minTriangleArea": 2.3211176602572156e-7
+            "signedVolume": 0.08721484158041014,
+            "minTriangleArea": 2.3142426815551394e-7
           },
           {
             "name": "kitchen-north / carcass bottom",
@@ -5687,8 +5797,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.009917043195296535,
-            "minTriangleArea": 2.3211176602572156e-7
+            "signedVolume": 0.009916936742104358,
+            "minTriangleArea": 2.3143526503105174e-7
           },
           {
             "name": "kitchen-north / cabinet end",
@@ -5698,8 +5808,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007489293087846197,
-            "minTriangleArea": 2.3211621997865034e-7
+            "signedVolume": 0.007497202013443824,
+            "minTriangleArea": 2.3142637028978492e-7
           },
           {
             "name": "kitchen-north / cabinet end.001",
@@ -5709,8 +5819,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.007495809235739399,
-            "minTriangleArea": 2.3211621997865034e-7
+            "signedVolume": 0.007497214272943496,
+            "minTriangleArea": 2.3143526503105174e-7
           },
           {
             "name": "kitchen-north / cabinet back",
@@ -5720,8 +5830,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.012249002398841358,
-            "minTriangleArea": 2.3211621997865034e-7
+            "signedVolume": 0.012243971558787703,
+            "minTriangleArea": 2.314263701501669e-7
           },
           {
             "name": "kitchen-north / counter front support",
@@ -5731,52 +5841,140 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0009483692561996868,
-            "minTriangleArea": 2.2782961107459868e-7
+            "signedVolume": 0.0009482685593595825,
+            "minTriangleArea": 2.314263701501669e-7
           },
           {
             "name": "kitchen-north / single opening countertop",
-            "triangles": 184,
+            "triangles": 1344,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.01973700116384227,
-            "minTriangleArea": 3.885929383213565e-7
+            "signedVolume": 0.019493304934345337,
+            "minTriangleArea": 0.00002900476269454779
           },
           {
-            "name": "kitchen-north / flanged sink vessel",
-            "triangles": 276,
+            "name": "kitchen-north / flush sink perimeter seal",
+            "triangles": 768,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00518858082798169,
-            "minTriangleArea": 0.000022977092305254132
+            "signedVolume": 0.000014649689836193488,
+            "minTriangleArea": 0.000013602694948122306
           },
           {
-            "name": "kitchen-north / mounted cabinet pull",
-            "triangles": 190,
+            "name": "kitchen-north / satin stainless sink vessel",
+            "triangles": 3648,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012874292166970739,
-            "minTriangleArea": 0.0000053065728452889405
+            "signedVolume": 0.003174682408355691,
+            "minTriangleArea": 0.000019158184628762056
           },
           {
-            "name": "kitchen-north / mounted cabinet pull.001",
-            "triangles": 190,
+            "name": "kitchen-north / sink strainer flange",
+            "triangles": 138,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000012875211042005064,
-            "minTriangleArea": 0.000005306684615691246
+            "signedVolume": 0.000015732406396377645,
+            "minTriangleArea": 0.0000044381893469619925
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.397364560510907e-8,
+            "minTriangleArea": 9.890699794888443e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.001",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094947846989747e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.002",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094952354865687e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.003",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.409494775714221e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.004",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.3973644771359877e-8,
+            "minTriangleArea": 9.890700957762649e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.005",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4074519818707224e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.006",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.4094789520170193e-8,
+            "minTriangleArea": 9.890699646346313e-7
+          },
+          {
+            "name": "kitchen-north / strainer drainage slot.007",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 2.407451991564771e-8,
+            "minTriangleArea": 9.890699646346313e-7
           },
           {
             "name": "kitchen-north / cabinet door",
@@ -5786,8 +5984,8 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0064094096285573395,
-            "minTriangleArea": 5.21007397550754e-7
+            "signedVolume": 0.006410268296440803,
+            "minTriangleArea": 5.194625344561533e-7
           },
           {
             "name": "kitchen-north / cabinet door.001",
@@ -5797,15 +5995,37 @@
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.006037161580276186,
-            "minTriangleArea": 5.21007397550754e-7
+            "signedVolume": 0.006038030209241011,
+            "minTriangleArea": 5.19475860658858e-7
+          },
+          {
+            "name": "kitchen-north / mounted cabinet pull",
+            "triangles": 190,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00001287264138302567,
+            "minTriangleArea": 0.00000527118020352113
+          },
+          {
+            "name": "kitchen-north / mounted cabinet pull.001",
+            "triangles": 190,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000012872359200320897,
+            "minTriangleArea": 0.000005282847208643704
           }
         ],
-        "maxPositionErrorMm": 0.011793405859233556,
+        "maxPositionErrorMm": 0.011773939863902246,
         "stitches": [],
         "assemblyFit": {
           "kind": "carcass-to-counter",
-          "gapMm": -2.501070499420166,
+          "gapMm": -2.5034546852111816,
           "allowedGapMm": 0.05,
           "maxEmbedMm": 8
         },
@@ -5814,8 +6034,8 @@
           "gaps": 0,
           "examples": [],
           "cavity": {
-            "height": 0.7949970960617065,
-            "material": "chrome"
+            "height": 0.7945038676261902,
+            "material": "stainless"
           },
           "scope": "Vertical rays through the complete countertop and intended sink cavity, on exported geometry"
         }
@@ -6037,189 +6257,2241 @@
       "high": {
         "parts": [
           {
-            "name": "vanity / floating carcass",
+            "name": "vanity / floating cabinet side",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.1209451894981993,
-            "minTriangleArea": 5.229465166346925e-7
+            "signedVolume": 0.0029496189460414338,
+            "minTriangleArea": 2.2430463360845274e-7
           },
           {
-            "name": "vanity / drawer front",
+            "name": "vanity / floating cabinet side.001",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0026322480246759724,
-            "minTriangleArea": 5.229331459748228e-7
+            "signedVolume": 0.0029496189460414355,
+            "minTriangleArea": 2.2430463360845274e-7
           },
           {
-            "name": "vanity / drawer front.001",
+            "name": "vanity / cabinet bottom",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0026321585718218415,
-            "minTriangleArea": 5.172396742022891e-7
+            "signedVolume": 0.005210318574639887,
+            "minTriangleArea": 2.2432214697466518e-7
           },
           {
-            "name": "vanity / handle shadow",
+            "name": "vanity / cabinet back",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00004137253842138298,
-            "minTriangleArea": 2.28672761294764e-7
+            "signedVolume": 0.005107699811733394,
+            "minTriangleArea": 5.8385548626648215e-8
           },
           {
-            "name": "vanity / handle shadow.001",
+            "name": "vanity / inset oak drawer",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00004133418463283818,
-            "minTriangleArea": 2.3247272313359032e-7
+            "signedVolume": 0.0025537825524106893,
+            "minTriangleArea": 5.154525664270025e-7
           },
           {
-            "name": "vanity / stone slab",
+            "name": "vanity / inset oak drawer.001",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0172868563759519,
-            "minTriangleArea": 0.0000014348305283020024
+            "signedVolume": 0.00242249707712844,
+            "minTriangleArea": 5.154525664270025e-7
           },
           {
-            "name": "vanity / porcelain vessel",
-            "triangles": 5120,
+            "name": "vanity / integrated finger pull",
+            "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0020062807823846666,
-            "minTriangleArea": 0.00001734556098286308
+            "signedVolume": 0.000023100796186067073,
+            "minTriangleArea": 5.657636234415228e-8
           },
           {
-            "name": "vanity / curved tap",
-            "triangles": 524,
+            "name": "vanity / integrated finger pull.001",
+            "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0001855736014183585,
-            "minTriangleArea": 0.000010219786525746544
+            "signedVolume": 0.000023091711523804983,
+            "minTriangleArea": 5.656757099032261e-8
+          },
+          {
+            "name": "vanity / mirror slim metal backing",
+            "triangles": 588,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.006773249088164915,
+            "minTriangleArea": 4.853910159741151e-7
+          },
+          {
+            "name": "vanity / hidden wall bracket",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003069216270501821,
+            "minTriangleArea": 5.657197153602411e-8
+          },
+          {
+            "name": "vanity / hidden wall bracket.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003069216270501825,
+            "minTriangleArea": 5.657197153602411e-8
+          },
+          {
+            "name": "vanity / basin drain cap",
+            "triangles": 160,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000004059366399126374,
+            "minTriangleArea": 0.0000056394192950429725
+          },
+          {
+            "name": "vanity / mixer wall rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006343654972426326,
+            "minTriangleArea": 0.0000021035280278759396
+          },
+          {
+            "name": "vanity / wall mixer spout",
+            "triangles": 396,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000845300590921337,
+            "minTriangleArea": 5.255709141573888e-7
+          },
+          {
+            "name": "vanity / mixer lever rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00005575734101518588,
+            "minTriangleArea": 0.0000014494405819126473
+          },
+          {
+            "name": "vanity / slim mixer lever",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000016307162543101173,
+            "minTriangleArea": 5.184503003974673e-7
+          },
+          {
+            "name": "vanity / continuous inset basin deck",
+            "triangles": 3840,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.018773970948700567,
+            "minTriangleArea": 0.000029576393889797304
+          },
+          {
+            "name": "vanity / vertical tile backsplash",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.027510123661733502,
+            "minTriangleArea": 5.657636727847443e-8
+          },
+          {
+            "name": "vanity / mirror illuminated surround",
+            "triangles": 588,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012499366779612093,
+            "minTriangleArea": 0.0000014309792620923155
+          },
+          {
+            "name": "vanity / rounded mirror face",
+            "triangles": 588,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0027522887489060325,
+            "minTriangleArea": 8.869097853620769e-8
           }
         ],
-        "maxPositionErrorMm": 0.009041182076539379,
+        "maxPositionErrorMm": 0.01546684562047519,
         "stitches": []
       },
       "mobile": {
         "parts": [
           {
-            "name": "vanity / floating carcass",
+            "name": "vanity / floating cabinet side",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.1209454765658641,
-            "minTriangleArea": 5.228662952411459e-7
+            "signedVolume": 0.0029496189460414338,
+            "minTriangleArea": 2.2430463360845274e-7
           },
           {
-            "name": "vanity / drawer front",
+            "name": "vanity / floating cabinet side.001",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.0026322558565938757,
-            "minTriangleArea": 5.228662952411459e-7
+            "signedVolume": 0.0029496189460414355,
+            "minTriangleArea": 2.2430463360845274e-7
           },
           {
-            "name": "vanity / drawer front.001",
+            "name": "vanity / cabinet bottom",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.002632252429484461,
-            "minTriangleArea": 5.228662952411459e-7
+            "signedVolume": 0.005210318574639887,
+            "minTriangleArea": 2.2432214697466518e-7
           },
           {
-            "name": "vanity / handle shadow",
+            "name": "vanity / cabinet back",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.000041365090490486735,
-            "minTriangleArea": 2.2865507865137958e-7
+            "signedVolume": 0.005107699811733394,
+            "minTriangleArea": 5.8385548626648215e-8
           },
           {
-            "name": "vanity / handle shadow.001",
+            "name": "vanity / inset oak drawer",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00004136653732928846,
-            "minTriangleArea": 2.2863739670966526e-7
+            "signedVolume": 0.0025537825524106893,
+            "minTriangleArea": 5.154525664270025e-7
           },
           {
-            "name": "vanity / stone slab",
+            "name": "vanity / inset oak drawer.001",
             "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.017287379125736246,
-            "minTriangleArea": 0.0000014346533539195115
+            "signedVolume": 0.00242249707712844,
+            "minTriangleArea": 5.154525664270025e-7
           },
           {
-            "name": "vanity / porcelain vessel",
-            "triangles": 5120,
+            "name": "vanity / integrated finger pull",
+            "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.002006268734047289,
-            "minTriangleArea": 0.000017345378721240384
+            "signedVolume": 0.000023100796186067073,
+            "minTriangleArea": 5.657636234415228e-8
           },
           {
-            "name": "vanity / curved tap",
-            "triangles": 250,
+            "name": "vanity / integrated finger pull.001",
+            "triangles": 188,
             "boundaryEdges": 0,
             "nonmanifoldEdges": 0,
             "windingErrors": 0,
             "degenerateTriangles": 0,
             "invertedNormals": 0,
-            "signedVolume": 0.00018544902042195747,
-            "minTriangleArea": 0.000028390870262323028
+            "signedVolume": 0.000023091711523804983,
+            "minTriangleArea": 5.656757099032261e-8
+          },
+          {
+            "name": "vanity / mirror slim metal backing",
+            "triangles": 282,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.006678127449003618,
+            "minTriangleArea": 0.0000011165958439823364
+          },
+          {
+            "name": "vanity / hidden wall bracket",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003069216270501821,
+            "minTriangleArea": 5.657197153602411e-8
+          },
+          {
+            "name": "vanity / hidden wall bracket.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003069216270501825,
+            "minTriangleArea": 5.657197153602411e-8
+          },
+          {
+            "name": "vanity / basin drain cap",
+            "triangles": 160,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000004059366399126374,
+            "minTriangleArea": 0.0000056394192950429725
+          },
+          {
+            "name": "vanity / mixer wall rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006343654972426326,
+            "minTriangleArea": 0.0000021035280278759396
+          },
+          {
+            "name": "vanity / wall mixer spout",
+            "triangles": 190,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00008452331528658942,
+            "minTriangleArea": 0.000012613348350622985
+          },
+          {
+            "name": "vanity / mixer lever rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00005575734101518588,
+            "minTriangleArea": 0.0000014494405819126473
+          },
+          {
+            "name": "vanity / slim mixer lever",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000016307162543101173,
+            "minTriangleArea": 5.184503003974673e-7
+          },
+          {
+            "name": "vanity / continuous inset basin deck",
+            "triangles": 3840,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.018773970948700567,
+            "minTriangleArea": 0.000029576393889797304
+          },
+          {
+            "name": "vanity / vertical tile backsplash",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.027510123661733502,
+            "minTriangleArea": 5.657636727847443e-8
+          },
+          {
+            "name": "vanity / mirror illuminated surround",
+            "triangles": 282,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012318831857391882,
+            "minTriangleArea": 0.0000033179772134941278
+          },
+          {
+            "name": "vanity / rounded mirror face",
+            "triangles": 282,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0027118891128856387,
+            "minTriangleArea": 2.0403748358282666e-7
           }
         ],
-        "maxPositionErrorMm": 0.009040359562612753,
+        "maxPositionErrorMm": 0.01546684562047519,
+        "stitches": []
+      }
+    },
+    "toilet": {
+      "high": {
+        "parts": [
+          {
+            "name": "toilet / one piece ceramic bowl",
+            "triangles": 2496,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.040388314793151456,
+            "minTriangleArea": 0.00006591319503025181
+          },
+          {
+            "name": "toilet / soft close oval seat",
+            "triangles": 1536,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0017672971010617522,
+            "minTriangleArea": 0.0000386087340445377
+          },
+          {
+            "name": "toilet / ceramic rear bridge",
+            "triangles": 428,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.004611753182180653,
+            "minTriangleArea": 0.0000030538971120117473
+          },
+          {
+            "name": "toilet / one piece cistern",
+            "triangles": 972,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.016079829669145118,
+            "minTriangleArea": 0.000007490211398062589
+          },
+          {
+            "name": "toilet / cistern top lid",
+            "triangles": 428,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0012370096807260106,
+            "minTriangleArea": 0.000001552942004595665
+          },
+          {
+            "name": "toilet / hinge pivot cover",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00002748324937137017,
+            "minTriangleArea": 0.0000036959939339714305
+          },
+          {
+            "name": "toilet / hinge pivot cover.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000027483249371370275,
+            "minTriangleArea": 0.0000036959939339714305
+          },
+          {
+            "name": "toilet / raised oval lid",
+            "triangles": 768,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0041690767340073175,
+            "minTriangleArea": 0.00006506501680916224
+          },
+          {
+            "name": "toilet / seat support bumper",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007088659735804795,
+            "minTriangleArea": 9.284960496476075e-7
+          },
+          {
+            "name": "toilet / seat support bumper.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007088659926398904,
+            "minTriangleArea": 9.284915956017677e-7
+          },
+          {
+            "name": "toilet / seat support bumper.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007088659735804791,
+            "minTriangleArea": 9.284960496476075e-7
+          },
+          {
+            "name": "toilet / seat support bumper.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007088659926398932,
+            "minTriangleArea": 9.284915956017677e-7
+          },
+          {
+            "name": "toilet / dual flush button",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000023996290695670472,
+            "minTriangleArea": 2.3552215341557197e-7
+          },
+          {
+            "name": "toilet / soft close hinge base",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00002519584967538353,
+            "minTriangleArea": 0.0000020823436930699543
+          },
+          {
+            "name": "toilet / soft close hinge base.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000025195849675383263,
+            "minTriangleArea": 0.0000020823436930699543
+          },
+          {
+            "name": "toilet / dual flush split",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.284860471568562e-8,
+            "minTriangleArea": 9.17013137566329e-9
+          }
+        ],
+        "maxPositionErrorMm": 0.00986184778265515,
+        "stitches": []
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "toilet / one piece ceramic bowl",
+            "triangles": 2496,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.040388285063384016,
+            "minTriangleArea": 0.00006593140376294787
+          },
+          {
+            "name": "toilet / soft close oval seat",
+            "triangles": 1536,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0017673377983034035,
+            "minTriangleArea": 0.00003860506816179249
+          },
+          {
+            "name": "toilet / ceramic rear bridge",
+            "triangles": 204,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.004568370155413869,
+            "minTriangleArea": 0.000009677355346440455
+          },
+          {
+            "name": "toilet / one piece cistern",
+            "triangles": 466,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.015983180252729122,
+            "minTriangleArea": 0.000017848222713955543
+          },
+          {
+            "name": "toilet / cistern top lid",
+            "triangles": 204,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0012145838335738594,
+            "minTriangleArea": 0.000004941435228711422
+          },
+          {
+            "name": "toilet / hinge pivot cover",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000027477257201939,
+            "minTriangleArea": 0.000003695371905546744
+          },
+          {
+            "name": "toilet / hinge pivot cover.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000027477257201939015,
+            "minTriangleArea": 0.000003695371905546744
+          },
+          {
+            "name": "toilet / raised oval lid",
+            "triangles": 768,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0041687485390442735,
+            "minTriangleArea": 0.00006507195949802814
+          },
+          {
+            "name": "toilet / seat support bumper",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007087950607116876,
+            "minTriangleArea": 9.283357107722194e-7
+          },
+          {
+            "name": "toilet / seat support bumper.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007089444314455214,
+            "minTriangleArea": 9.28331257113548e-7
+          },
+          {
+            "name": "toilet / seat support bumper.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007087950607116683,
+            "minTriangleArea": 9.283357107722194e-7
+          },
+          {
+            "name": "toilet / seat support bumper.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007089444314455428,
+            "minTriangleArea": 9.28331257113548e-7
+          },
+          {
+            "name": "toilet / dual flush button",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000023997398175822897,
+            "minTriangleArea": 2.3662135140057635e-7
+          },
+          {
+            "name": "toilet / soft close hinge base",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000025197680430442462,
+            "minTriangleArea": 0.0000020820101953485375
+          },
+          {
+            "name": "toilet / soft close hinge base.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000025197680430442492,
+            "minTriangleArea": 0.0000020820101953485375
+          },
+          {
+            "name": "toilet / dual flush split",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 5.284176111985206e-8,
+            "minTriangleArea": 9.168360891064748e-9
+          }
+        ],
+        "maxPositionErrorMm": 0.009861039711323608,
+        "stitches": []
+      }
+    },
+    "shower": {
+      "high": {
+        "parts": [
+          {
+            "name": "shower / low stone shower tray",
+            "triangles": 672,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.022457232952466488,
+            "minTriangleArea": 0.0011695875428593405
+          },
+          {
+            "name": "shower / tray side upstand",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00028070900065287237,
+            "minTriangleArea": 5.189779753364042e-7
+          },
+          {
+            "name": "shower / tray side upstand.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002807090006528726,
+            "minTriangleArea": 5.189779753364042e-7
+          },
+          {
+            "name": "shower / tray end upstand",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002610339829008369,
+            "minTriangleArea": 5.189912952499966e-7
+          },
+          {
+            "name": "shower / tray end upstand.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00026119108001001557,
+            "minTriangleArea": 5.189912952499966e-7
+          },
+          {
+            "name": "shower / linear drain recessed bed",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00007376630164603596,
+            "minTriangleArea": 7.936499263875256e-8
+          },
+          {
+            "name": "shower / 18 mm enclosure upright",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006556560571554931,
+            "minTriangleArea": 2.282353512884307e-7
+          },
+          {
+            "name": "shower / 18 mm enclosure upright.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006560270685272941,
+            "minTriangleArea": 2.282353512884307e-7
+          },
+          {
+            "name": "shower / 18 mm enclosure upright.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006560270685272947,
+            "minTriangleArea": 2.282353512884307e-7
+          },
+          {
+            "name": "shower / side upper rail",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002500203938460941,
+            "minTriangleArea": 2.2823535157540148e-7
+          },
+          {
+            "name": "shower / front upper rail",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002380006521943813,
+            "minTriangleArea": 2.2823535149820155e-7
+          },
+          {
+            "name": "shower / side lower channel",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003062315048415762,
+            "minTriangleArea": 2.2824418464747894e-7
+          },
+          {
+            "name": "shower / door magnetic seal",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00010791859165251499,
+            "minTriangleArea": 5.710538057520193e-8
+          },
+          {
+            "name": "shower / rain head silicone nozzle",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9198626929947578e-7,
+            "minTriangleArea": 0.000003995706773451957
+          },
+          {
+            "name": "shower / rain head silicone nozzle.001",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9181325959089605e-7,
+            "minTriangleArea": 0.000003995706773451957
+          },
+          {
+            "name": "shower / rain head silicone nozzle.002",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9198618692192516e-7,
+            "minTriangleArea": 0.0000039957013264757535
+          },
+          {
+            "name": "shower / rain head silicone nozzle.003",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9181323383372526e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.004",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.918133111849862e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.005",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.918134143198648e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.006",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9181325070823178e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.007",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9181326567452257e-7,
+            "minTriangleArea": 0.000003995712418301128
+          },
+          {
+            "name": "shower / rain head silicone nozzle.008",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9181316823752193e-7,
+            "minTriangleArea": 0.000003995707777718072
+          },
+          {
+            "name": "shower / wall soap shelf",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0005051841763402866,
+            "minTriangleArea": 0.0000014356390242767584
+          },
+          {
+            "name": "shower / shelf mounting bracket",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002547979856297352,
+            "minTriangleArea": 2.2824197651748827e-7
+          },
+          {
+            "name": "shower / bottle pump",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000011477962734243782,
+            "minTriangleArea": 5.243111011185952e-7
+          },
+          {
+            "name": "shower / bottle pump.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000011472899478110033,
+            "minTriangleArea": 5.18982970264968e-7
+          },
+          {
+            "name": "shower / drain trim end",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000014580647188198116,
+            "minTriangleArea": 5.701540316306526e-8
+          },
+          {
+            "name": "shower / drain trim end.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000014580647188198082,
+            "minTriangleArea": 5.701540316306526e-8
+          },
+          {
+            "name": "shower / drain trim side",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000010191839170885415,
+            "minTriangleArea": 5.701540316306526e-8
+          },
+          {
+            "name": "shower / drain trim side.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000010191837213501548,
+            "minTriangleArea": 5.7019816120833893e-8
+          },
+          {
+            "name": "shower / drain grate bridge",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018838211148278178,
+            "minTriangleArea": 5.526445205487219e-8
+          },
+          {
+            "name": "shower / drain grate bridge.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018838211835931682,
+            "minTriangleArea": 5.526445205487219e-8
+          },
+          {
+            "name": "shower / drain grate bridge.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018836804973203522,
+            "minTriangleArea": 5.701485101802564e-8
+          },
+          {
+            "name": "shower / drain grate bridge.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018836807404402277,
+            "minTriangleArea": 5.701485101802564e-8
+          },
+          {
+            "name": "shower / drain grate bridge.004",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000001883680686895548,
+            "minTriangleArea": 5.701498897381187e-8
+          },
+          {
+            "name": "shower / drain grate bridge.005",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018836807404402285,
+            "minTriangleArea": 5.701485101802564e-8
+          },
+          {
+            "name": "shower / drain grate bridge.006",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018840302697440732,
+            "minTriangleArea": 5.701485101802564e-8
+          },
+          {
+            "name": "shower / drain grate bridge.007",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00000188382118359317,
+            "minTriangleArea": 5.526445205487219e-8
+          },
+          {
+            "name": "shower / drain grate bridge.008",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000001883821114827823,
+            "minTriangleArea": 5.526445205487219e-8
+          },
+          {
+            "name": "shower / glass door hinge",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00005352676924880491,
+            "minTriangleArea": 9.129944052475389e-7
+          },
+          {
+            "name": "shower / hinge axle",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00001857447056379491,
+            "minTriangleArea": 9.200393919288427e-7
+          },
+          {
+            "name": "shower / glass door hinge.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00005352543633465624,
+            "minTriangleArea": 9.129590726166066e-7
+          },
+          {
+            "name": "shower / hinge axle.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00001857393771965209,
+            "minTriangleArea": 9.2000392166366e-7
+          },
+          {
+            "name": "shower / vertical door pull",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00003260973736261804,
+            "minTriangleArea": 0.000013225767927504961
+          },
+          {
+            "name": "shower / door pull mounting foot",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007666430517002658,
+            "minTriangleArea": 5.189962902576765e-7
+          },
+          {
+            "name": "shower / door pull mounting foot.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007663056147033397,
+            "minTriangleArea": 5.189696504573342e-7
+          },
+          {
+            "name": "shower / vertical door pull.001",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000326097373626181,
+            "minTriangleArea": 0.000013225767927504961
+          },
+          {
+            "name": "shower / door pull mounting foot.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00000766642968369971,
+            "minTriangleArea": 5.189829702868581e-7
+          },
+          {
+            "name": "shower / door pull mounting foot.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007663055313832624,
+            "minTriangleArea": 5.189563308290533e-7
+          },
+          {
+            "name": "shower / shower pipe wall rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006814658735912375,
+            "minTriangleArea": 0.0000020760317815132207
+          },
+          {
+            "name": "shower / shower pipe wall rosette.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006811512574983858,
+            "minTriangleArea": 0.0000020760317815132207
+          },
+          {
+            "name": "shower / rain shower riser",
+            "triangles": 396,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000540949025103694,
+            "minTriangleArea": 0.000026626570340310623
+          },
+          {
+            "name": "shower / overhead rain shower",
+            "triangles": 512,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0007262633123084432,
+            "minTriangleArea": 0.000040005735575478716
+          },
+          {
+            "name": "shower / thermostatic mixer body",
+            "triangles": 428,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0007121630282463388,
+            "minTriangleArea": 0.000003966360143574874
+          },
+          {
+            "name": "shower / mixer end control",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00008694670372583819,
+            "minTriangleArea": 0.000007106120048726974
+          },
+          {
+            "name": "shower / mixer end control.001",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00008695078127843512,
+            "minTriangleArea": 0.0000071061273900598506
+          },
+          {
+            "name": "shower / hand shower hose",
+            "triangles": 396,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00010498658260426235,
+            "minTriangleArea": 0.000005154114333811048
+          },
+          {
+            "name": "shower / hand shower handle",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000957062905013439,
+            "minTriangleArea": 0.0000405847708264645
+          },
+          {
+            "name": "shower / hand shower head",
+            "triangles": 320,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00010695919083375677,
+            "minTriangleArea": 0.000016982155023801628
+          },
+          {
+            "name": "shower / hand shower wall clip",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00018959345336623596,
+            "minTriangleArea": 0.0000020866815518730656
+          },
+          {
+            "name": "shower / 8 mm fixed side glass",
+            "triangles": 108,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012206917672738474,
+            "minTriangleArea": 1.4244261033182896e-7
+          },
+          {
+            "name": "shower / 8 mm shower door",
+            "triangles": 108,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011905960449006025,
+            "minTriangleArea": 1.4398673455878265e-7
+          },
+          {
+            "name": "shower / shower bottle",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0004254734863929331,
+            "minTriangleArea": 0.0000036951053237862036
+          },
+          {
+            "name": "shower / shower bottle.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000358082676756142,
+            "minTriangleArea": 0.000003695123094547185
+          }
+        ],
+        "maxPositionErrorMm": 0.01828784851196513,
+        "stitches": []
+      },
+      "mobile": {
+        "parts": [
+          {
+            "name": "shower / low stone shower tray",
+            "triangles": 672,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.02245487348982155,
+            "minTriangleArea": 0.0011694646604845094
+          },
+          {
+            "name": "shower / tray side upstand",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002806899728308367,
+            "minTriangleArea": 5.189413464347257e-7
+          },
+          {
+            "name": "shower / tray side upstand.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00028068997283083714,
+            "minTriangleArea": 5.189413464347257e-7
+          },
+          {
+            "name": "shower / tray end upstand",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002610163328275125,
+            "minTriangleArea": 5.189546658795138e-7
+          },
+          {
+            "name": "shower / tray end upstand.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002611734146065231,
+            "minTriangleArea": 5.189546658795138e-7
+          },
+          {
+            "name": "shower / linear drain recessed bed",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00007434856083204774,
+            "minTriangleArea": 7.935582449044506e-8
+          },
+          {
+            "name": "shower / 18 mm enclosure upright",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006556516445484037,
+            "minTriangleArea": 2.2821989382470182e-7
+          },
+          {
+            "name": "shower / 18 mm enclosure upright.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006560226467675135,
+            "minTriangleArea": 2.2821989382470182e-7
+          },
+          {
+            "name": "shower / 18 mm enclosure upright.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006560226467675089,
+            "minTriangleArea": 2.2821989382470182e-7
+          },
+          {
+            "name": "shower / side upper rail",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00024999106332425456,
+            "minTriangleArea": 2.2823535157540148e-7
+          },
+          {
+            "name": "shower / front upper rail",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00023797273246114724,
+            "minTriangleArea": 2.2823535149820155e-7
+          },
+          {
+            "name": "shower / side lower channel",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00030624400024726077,
+            "minTriangleArea": 2.2822872688183902e-7
+          },
+          {
+            "name": "shower / door magnetic seal",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00010791770976535859,
+            "minTriangleArea": 5.7103170140374753e-8
+          },
+          {
+            "name": "shower / rain head silicone nozzle",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9197482246727204e-7,
+            "minTriangleArea": 0.000003995706773451957
+          },
+          {
+            "name": "shower / rain head silicone nozzle.001",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180182307404884e-7,
+            "minTriangleArea": 0.000003995706773451957
+          },
+          {
+            "name": "shower / rain head silicone nozzle.002",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9197474009461727e-7,
+            "minTriangleArea": 0.0000039957013264757535
+          },
+          {
+            "name": "shower / rain head silicone nozzle.003",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180179731860897e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.004",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180187466512185e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.005",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180197779384042e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.006",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180181419197708e-7,
+            "minTriangleArea": 0.000003995713224708153
+          },
+          {
+            "name": "shower / rain head silicone nozzle.007",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.91801829157276e-7,
+            "minTriangleArea": 0.000003995712418301128
+          },
+          {
+            "name": "shower / rain head silicone nozzle.008",
+            "triangles": 48,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 1.9180173172624016e-7,
+            "minTriangleArea": 0.000003995707777718072
+          },
+          {
+            "name": "shower / wall soap shelf",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0005051306316937428,
+            "minTriangleArea": 0.000001435461800294728
+          },
+          {
+            "name": "shower / shelf mounting bracket",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0002547832732213856,
+            "minTriangleArea": 2.2824197651748827e-7
+          },
+          {
+            "name": "shower / bottle pump",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000011496103477358277,
+            "minTriangleArea": 5.243111011185952e-7
+          },
+          {
+            "name": "shower / bottle pump.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000011471748496724164,
+            "minTriangleArea": 5.18982970264968e-7
+          },
+          {
+            "name": "shower / drain trim end",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000001463984873206391,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain trim end.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000014639848732063867,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain trim side",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000010228325741727445,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain trim side.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000010228323572058364,
+            "minTriangleArea": 5.7015398873719216e-8
+          },
+          {
+            "name": "shower / drain grate bridge",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000001882813346242758,
+            "minTriangleArea": 5.5260650129785805e-8
+          },
+          {
+            "name": "shower / drain grate bridge.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018828134148601638,
+            "minTriangleArea": 5.5260650129785805e-8
+          },
+          {
+            "name": "shower / drain grate bridge.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018826789147150222,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain grate bridge.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018826791539075866,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain grate bridge.004",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018826791003607875,
+            "minTriangleArea": 5.7011124027028715e-8
+          },
+          {
+            "name": "shower / drain grate bridge.005",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018826791539075834,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain grate bridge.006",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018830286511625027,
+            "minTriangleArea": 5.701098607627745e-8
+          },
+          {
+            "name": "shower / drain grate bridge.007",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000018828134148601638,
+            "minTriangleArea": 5.5260650129785805e-8
+          },
+          {
+            "name": "shower / drain grate bridge.008",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000001882813346242765,
+            "minTriangleArea": 5.5260650129785805e-8
+          },
+          {
+            "name": "shower / glass door hinge",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000053521819895083505,
+            "minTriangleArea": 9.129237406591978e-7
+          },
+          {
+            "name": "shower / hinge axle",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00001857371334545584,
+            "minTriangleArea": 9.199684520798297e-7
+          },
+          {
+            "name": "shower / glass door hinge.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000053525273285398936,
+            "minTriangleArea": 9.12888409375391e-7
+          },
+          {
+            "name": "shower / hinge axle.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000018574555990150555,
+            "minTriangleArea": 9.199329831774305e-7
+          },
+          {
+            "name": "shower / vertical door pull",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00003260629288800639,
+            "minTriangleArea": 0.000013225767927504961
+          },
+          {
+            "name": "shower / door pull mounting foot",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007667659345168012,
+            "minTriangleArea": 5.189430113412645e-7
+          },
+          {
+            "name": "shower / door pull mounting foot.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007662266968903654,
+            "minTriangleArea": 5.189696504573342e-7
+          },
+          {
+            "name": "shower / vertical door pull.001",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00003260629288800618,
+            "minTriangleArea": 0.000013225767927504961
+          },
+          {
+            "name": "shower / door pull mounting foot.002",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007667658516917404,
+            "minTriangleArea": 5.189296920554948e-7
+          },
+          {
+            "name": "shower / door pull mounting foot.003",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.000007662266135779374,
+            "minTriangleArea": 5.189563308290533e-7
+          },
+          {
+            "name": "shower / shower pipe wall rosette",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006813285050029915,
+            "minTriangleArea": 0.0000020759252211185925
+          },
+          {
+            "name": "shower / shower pipe wall rosette.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00006813361421644843,
+            "minTriangleArea": 0.0000020758186634611465
+          },
+          {
+            "name": "shower / rain shower riser",
+            "triangles": 190,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0005398234322969721,
+            "minTriangleArea": 0.000029800793907241996
+          },
+          {
+            "name": "shower / overhead rain shower",
+            "triangles": 244,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0007262786319747008,
+            "minTriangleArea": 0.00004257673537462481
+          },
+          {
+            "name": "shower / thermostatic mixer body",
+            "triangles": 204,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0006990645715146249,
+            "minTriangleArea": 0.000013507665587920961
+          },
+          {
+            "name": "shower / mixer end control",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0000869291396925754,
+            "minTriangleArea": 0.0000071356573396292376
+          },
+          {
+            "name": "shower / mixer end control.001",
+            "triangles": 300,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00008693322333008868,
+            "minTriangleArea": 0.0000071356647422266986
+          },
+          {
+            "name": "shower / hand shower hose",
+            "triangles": 190,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00009678867844115789,
+            "minTriangleArea": 0.000013198207669338653
+          },
+          {
+            "name": "shower / hand shower handle",
+            "triangles": 140,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00009570735211032539,
+            "minTriangleArea": 0.000040584566511268224
+          },
+          {
+            "name": "shower / hand shower head",
+            "triangles": 152,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00010646381963520129,
+            "minTriangleArea": 0.000018625128580751493
+          },
+          {
+            "name": "shower / hand shower wall clip",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00018958268762249086,
+            "minTriangleArea": 0.0000020864678872718374
+          },
+          {
+            "name": "shower / 8 mm fixed side glass",
+            "triangles": 108,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.012206843439956275,
+            "minTriangleArea": 1.4251126454579534e-7
+          },
+          {
+            "name": "shower / 8 mm shower door",
+            "triangles": 108,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.011905888201339709,
+            "minTriangleArea": 1.4397909143352775e-7
+          },
+          {
+            "name": "shower / shower bottle",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.00042542873627503535,
+            "minTriangleArea": 0.0000036948209949042647
+          },
+          {
+            "name": "shower / shower bottle.001",
+            "triangles": 188,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0,
+            "degenerateTriangles": 0,
+            "invertedNormals": 0,
+            "signedVolume": 0.0003580476048332475,
+            "minTriangleArea": 0.0000036948387649780056
+          }
+        ],
+        "maxPositionErrorMm": 0.018286355394756853,
         "stitches": []
       }
     },
@@ -7793,8 +10065,8 @@
     }
   },
   "totals": {
-    "parts": 654,
-    "triangles": 268820,
+    "parts": 858,
+    "triangles": 323094,
     "boundaryEdges": 0,
     "nonmanifoldEdges": 0,
     "windingErrors": 0,

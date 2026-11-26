@@ -203,3 +203,7 @@ AO增加接收平面判定、16位深度误差偏置与更稳定的法线，消�
 功能提交 `32a37de28fff38e2186aba28621386e8b461d613` 已部署main；公开HTML SHA256 `7dc5e1967b803f86318e2b15700e7bdf842117dc7fd9847e0595a11a4bb2fec1` 与本地Pages转换内容一致。公开桌面/手机48实际机位、灯光基准/曝光校正、180%保存刷新、关灯/顶面回退及报告两宽度各48正常比较/24诊断机位均通过，无脚本/Shader错误或外部依赖。147张图片逐字节一致，4份JSON按Git LF规则一致。首次公共CDN一文件503和大HTML30秒下载超时，降低并发/延长下载时限后检查完成；单HTML约40MB的加载成本仍存在。见`validation/exposure-overlap-public.json`、`exposure-calibration-public.json`、`exposure-report-public.json`、`exposure-public-assets.json`、`exposure-deployment.json`。release与feature保持，后续证据提交不改应用。
 
 任务期间已有复审提交420dba8进入同一main历史，已完整保留。其VIS-01对应的默认过亮已在32a37de实际校正；VIS-04原自定义门状态回退按既有约定保持。VIS-05枕头前沿/角部黑斑在新版本正午关灯近景仍可复现：关闭反射后保留，暂时统一家具顶点照明后消失，说明应继续检查烘焙顶点照明/AO与近接缝采样，不能将其标为本轮Z-fighting修复完成。诊断原图在work/exposure-overlap/pillow-*.png，未处理最终截图。本轮未修改床品几何/材质，T01与真机整体验收继续保持进行中。
+
+## 2026-11-26 · 家具贴墙与床头柜朝向
+
+`40d146239431050a44bd3f3d3dfbed2f6b9231ce` 已推送并部署main。公开HTML SHA256 `0b40090f7d73567514799310289fb0f1a0d196b18ce07b7681226306d89a301f` 与Pages装配后的本地内容一致。公开桌面/手机三处昼夜画布、次卧两面实际柜板射线、书房平开/推拉的实际家具避让与刷新保存检查通过，报告全部资源按二进制或LF规范与本地一致。证据为validation/furniture-placement-public.json、furniture-placement-public-assets.json和furniture-placement-deployment.json。release仍7b53b23，内容哈希5057ce9c…，未正式发布。

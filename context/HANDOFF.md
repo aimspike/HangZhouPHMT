@@ -443,3 +443,18 @@ README 增加入口，REQUIREMENTS 第43项记录原始需求。本轮为文档�
 次卧衣柜位置本已在北/东墙角，改平贴墙的右侧板和背板边缘，避免圆角退让。high/mobile分别从北、东两侧各9条实际网页射线检查接触面，最大偏差小于0.1mm。主卧床头柜绕Y+90°朝东，深/宽方向交换，台灯、书本同步；柜背仍贴西墙x.09，范围z11.085–11.535，床三侧通行保留。
 
 新场景完整导出并重生成124图，high142804/mobile102492独立家具样本；原133mesh/roof130建筑快照、墙线/门洞和219张回退烘焙不变。WebGL1单HTML39,958,984字节。12组前后对比、24张真实WebP画布及一张并排图见quality-report/furniture-placement.html；仅缩放编码排版，无曝光后期处理。验证见validation/furniture-placement-before/after/decor/static/report.json及rebuild-topology.json、static-bake-data.json。Chrome桌面/手机/缺扩展/Windows WebKit共64固定状态，4种移动视口/旋转、设置/门型保存、全门型扫掠和建筑墙碰撞通过。手机均为模拟；VIS-05及整体真机验收仍待完成。仅main，不推进release。
+
+
+## 卫生间重做与厨房水槽嵌平（2026-11-26）
+
+前项家具修改40d1462已推送并公开验证，证据furniture-placement-public/public-assets/deployment.json。用户随后追加卫生间马桶/洗手台/淋浴间重做，明确选择窄边透明玻璃淋浴房；再指出厨房洗菜盆错位、光影异常并强调盆口与右侧台面要同高。本轮保留前述家具修改和A风格，原墙、门窗、基本分区不改。
+
+模型库新增toilet/shower至20类429实体，high/mobile合计858份、323094三角，闭合/非流形/退化/绕序/反法线均0。洗手台为悬浮双抽木柜、一体内凹盆、墙出龙头、竖砖背板及背光镜；马桶有连续陶瓷壳体/座圈/支撑/桥接/冲水键与前倾掀起的盖板，盖板避水箱。淋浴房8mm玻璃、18mm窄框、铰链/把手/磁封、低挡水边、线性排水槽、顶喷/手持花洒/软管/混水器/置物架齐备，透明材质FrontSide、opacity .13、depthWrite/castShadow false。卫生间踢脚线及窗台改浅石色。
+
+独立淋浴花洒/架体经真实壁座接触北墙，未强加穿过空间的杆件使所有物体连成一块。导出parts记录wallMount，装配验证只在真实支座到声明平面误差<.7mm时承认该组受墙支承；其余悬空组件仍失败。新淋浴房3组（框/底盘/玻璃，花洒，置物架），其余各资产1组。排水盖、龙头底座和花洒夹座等意外悬空间隙同时消除。
+
+厨房旧龙头仍沿早期小盆坐标，出水口比当前盆中心偏东约95mm、偏后约140mm。现在盆/开孔/柜体统一中心，出口x≈4.925/z≈.395，基座同x。水槽规则高密度环带、独立平面法线、roughness .42/metalness .92不锈钢，替代旧角部折痕。盆沿下移4.5mm嵌平，台面做真实承托凹槽、2mm密封边；高/手机实际网页盆沿、北台面、右台面均y=.9390000105，检查容差.15mm。没有叠共面顶面遮掩落差。北台面4284射线各档0缺口，实际组装近共面抽样两档0组、L台面接缝均0mm；该抽样不是任意自交的数学证明。
+
+最终画布曾暴露新淋浴底盘仅四角采样、全被挡水边遮挡导致插值发黑；底盘改12×12闭合格网，两档保留169个顶面位置。重新全量烘焙后桌面/手机中心照明和实际昼夜画布复核，底盘恢复正常，未增加曝光/移除挡水边来掩盖。新Cycles124图，high154802/mobile113227独立采样；原建筑133mesh/roof130/219图及墙线/门洞保持。单HTML42,106,390字节，规范化SHA256 4fe7490253a0b21b385cce8ef38b680ff89bf47ef125b835c2b6fd7bff2faaba。fixtureGain .5、室内exposureGain .8和所有个人保存设置保持。
+
+报告quality-report/bathroom-rebuild.html包含24组前后同机位（PC/手机×昼夜×整体/洗手台/马桶/淋浴/水槽/盆沿）48张真实WebP和2张并排图，仅编码/缩放排版。等待static enabled和probe ready再等3帧；前后相机/角度/FOV/亮度校正一致。验证入口capture-bathroom-rebuild.cjs；其数据含玻璃、实际盆腔、盆/出口中心、台面高度、169样本与中心照明。辅助结果bathroom-topology/assembly/overlap/static/render-quality/report/decor.json、rebuild-assets.json、surface-offline.json和static-bake-data.json。Chrome桌面/手机/缺扩展/Windows WebKit64固定状态与回退、13PBR/219图、屋顶0缺口、门与通道/保存/移动适配、单HTML离线及Pages装配回归。手机为模拟，整体真机验收和VIS-05枕头黑斑仍待完成；不推进release。

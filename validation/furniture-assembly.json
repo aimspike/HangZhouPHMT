@@ -1,6 +1,6 @@
 {
   "scope": "Check assembled shipped LODs. Run with Blender --background --python this_file.\nBVH surface intersections and inside-solid tests prove contact; sampled nearest\nsurface distances are upper bounds, with 0.7 mm export/assembly tolerance.\nSeparate wall-mounted mirror and upper cabinet may use the architectural wall.\n",
-  "modelSHA": "230b01e5d1c04b4182c024228599eb20793f28b9b5e0ed0c8c76ec9e96f2f15d",
+  "modelSHA": "1bfef8d1376b949c305ce5e4b29c19f384f6db7f8ea6cb24368455e77dad7635",
   "toleranceMm": 0.7,
   "models": {
     "sofa": {
@@ -33,6 +33,7 @@
             "sofa / loose scatter pillow.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -246,6 +247,7 @@
             "sofa / loose scatter pillow.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -444,6 +446,7 @@
             "coffee / porcelain cup"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -485,6 +488,7 @@
             "coffee / porcelain cup"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -537,6 +541,7 @@
             "console / bent console legs.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -677,6 +682,7 @@
             "console / bent console legs.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -807,6 +813,7 @@
             "dining-table / chromed flared foot"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -830,6 +837,7 @@
             "dining-table / chromed flared foot"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -869,6 +877,7 @@
             "chair / welded front frame tie"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1076,6 +1085,7 @@
             "chair / welded front frame tie"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1274,6 +1284,7 @@
             "pendant / fabric flex"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1320,6 +1331,7 @@
             "pendant / fabric flex"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1377,6 +1389,7 @@
             "master-bed / recessed bed foot.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1502,6 +1515,7 @@
             "master-bed / recessed bed foot.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1629,6 +1643,7 @@
             "second-bed / recessed bed foot.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1754,6 +1769,7 @@
             "second-bed / recessed bed foot.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -1892,6 +1908,7 @@
             "master-wardrobe / concealed hinge body.005"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -2133,6 +2150,7 @@
             "master-wardrobe / concealed hinge body.005"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -2376,6 +2394,7 @@
             "second-wardrobe / concealed hinge body.005"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -2426,7 +2445,7 @@
           [
             "second-wardrobe / top panel",
             "second-wardrobe / laminated end panel.001",
-            0.0
+            0
           ],
           [
             "second-wardrobe / top panel",
@@ -2617,6 +2636,7 @@
             "second-wardrobe / concealed hinge body.005"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -2667,7 +2687,7 @@
           [
             "second-wardrobe / top panel",
             "second-wardrobe / laminated end panel.001",
-            0.0
+            0
           ],
           [
             "second-wardrobe / top panel",
@@ -2855,6 +2875,7 @@
             "sideboard / slender leg.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -3011,6 +3032,7 @@
             "sideboard / slender leg.003"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -3172,6 +3194,7 @@
             "fridge / toe ventilation"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -3401,6 +3424,7 @@
             "fridge / toe ventilation"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -3639,6 +3663,7 @@
             "kitchen-east / handle mounting foot.009"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -3895,6 +3920,7 @@
             "kitchen-east / handle mounting foot.009"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -4117,7 +4143,7 @@
     },
     "kitchen-north": {
       "high": {
-        "parts": 12,
+        "parts": 22,
         "components": [
           [
             "kitchen-north / toe kick",
@@ -4127,13 +4153,24 @@
             "kitchen-north / cabinet back",
             "kitchen-north / counter front support",
             "kitchen-north / single opening countertop",
-            "kitchen-north / flanged sink vessel",
-            "kitchen-north / mounted cabinet pull",
-            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / flush sink perimeter seal",
+            "kitchen-north / satin stainless sink vessel",
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot",
+            "kitchen-north / strainer drainage slot.001",
+            "kitchen-north / strainer drainage slot.002",
+            "kitchen-north / strainer drainage slot.003",
+            "kitchen-north / strainer drainage slot.004",
+            "kitchen-north / strainer drainage slot.005",
+            "kitchen-north / strainer drainage slot.006",
+            "kitchen-north / strainer drainage slot.007",
             "kitchen-north / cabinet door",
-            "kitchen-north / cabinet door.001"
+            "kitchen-north / cabinet door.001",
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / mounted cabinet pull.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -4218,23 +4255,78 @@
           ],
           [
             "kitchen-north / single opening countertop",
-            "kitchen-north / flanged sink vessel",
+            "kitchen-north / flush sink perimeter seal",
             0
           ],
           [
-            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / single opening countertop",
+            "kitchen-north / satin stainless sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / flush sink perimeter seal",
+            "kitchen-north / satin stainless sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / satin stainless sink vessel",
+            "kitchen-north / sink strainer flange",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.001",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.002",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.003",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.004",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.005",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.006",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.007",
+            0
+          ],
+          [
             "kitchen-north / cabinet door",
+            "kitchen-north / mounted cabinet pull",
             0
           ],
           [
-            "kitchen-north / mounted cabinet pull.001",
             "kitchen-north / cabinet door.001",
+            "kitchen-north / mounted cabinet pull.001",
             0
           ]
         ]
       },
       "mobile": {
-        "parts": 12,
+        "parts": 22,
         "components": [
           [
             "kitchen-north / toe kick",
@@ -4244,13 +4336,24 @@
             "kitchen-north / cabinet back",
             "kitchen-north / counter front support",
             "kitchen-north / single opening countertop",
-            "kitchen-north / flanged sink vessel",
-            "kitchen-north / mounted cabinet pull",
-            "kitchen-north / mounted cabinet pull.001",
+            "kitchen-north / flush sink perimeter seal",
+            "kitchen-north / satin stainless sink vessel",
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot",
+            "kitchen-north / strainer drainage slot.001",
+            "kitchen-north / strainer drainage slot.002",
+            "kitchen-north / strainer drainage slot.003",
+            "kitchen-north / strainer drainage slot.004",
+            "kitchen-north / strainer drainage slot.005",
+            "kitchen-north / strainer drainage slot.006",
+            "kitchen-north / strainer drainage slot.007",
             "kitchen-north / cabinet door",
-            "kitchen-north / cabinet door.001"
+            "kitchen-north / cabinet door.001",
+            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / mounted cabinet pull.001"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -4335,17 +4438,72 @@
           ],
           [
             "kitchen-north / single opening countertop",
-            "kitchen-north / flanged sink vessel",
+            "kitchen-north / flush sink perimeter seal",
             0
           ],
           [
-            "kitchen-north / mounted cabinet pull",
+            "kitchen-north / single opening countertop",
+            "kitchen-north / satin stainless sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / flush sink perimeter seal",
+            "kitchen-north / satin stainless sink vessel",
+            0
+          ],
+          [
+            "kitchen-north / satin stainless sink vessel",
+            "kitchen-north / sink strainer flange",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.001",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.002",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.003",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.004",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.005",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.006",
+            0
+          ],
+          [
+            "kitchen-north / sink strainer flange",
+            "kitchen-north / strainer drainage slot.007",
+            0
+          ],
+          [
             "kitchen-north / cabinet door",
+            "kitchen-north / mounted cabinet pull",
             0
           ],
           [
-            "kitchen-north / mounted cabinet pull.001",
             "kitchen-north / cabinet door.001",
+            "kitchen-north / mounted cabinet pull.001",
             0
           ]
         ]
@@ -4367,6 +4525,7 @@
             "study-desk / recessed drawer pull"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -4426,6 +4585,7 @@
             "study-desk / recessed drawer pull"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -4473,107 +4633,1961 @@
     },
     "vanity": {
       "high": {
-        "parts": 8,
+        "parts": 20,
         "components": [
           [
-            "vanity / floating carcass",
-            "vanity / drawer front",
-            "vanity / drawer front.001",
-            "vanity / handle shadow",
-            "vanity / handle shadow.001",
-            "vanity / stone slab",
-            "vanity / porcelain vessel",
-            "vanity / curved tap"
+            "vanity / floating cabinet side",
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet bottom",
+            "vanity / cabinet back",
+            "vanity / inset oak drawer",
+            "vanity / inset oak drawer.001",
+            "vanity / integrated finger pull",
+            "vanity / integrated finger pull.001",
+            "vanity / mirror slim metal backing",
+            "vanity / hidden wall bracket",
+            "vanity / hidden wall bracket.001",
+            "vanity / basin drain cap",
+            "vanity / mixer wall rosette",
+            "vanity / wall mixer spout",
+            "vanity / mixer lever rosette",
+            "vanity / slim mixer lever",
+            "vanity / continuous inset basin deck",
+            "vanity / vertical tile backsplash",
+            "vanity / mirror illuminated surround",
+            "vanity / rounded mirror face"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
-            "vanity / floating carcass",
-            "vanity / drawer front",
+            "vanity / floating cabinet side",
+            "vanity / cabinet bottom",
             0
           ],
           [
-            "vanity / floating carcass",
-            "vanity / drawer front.001",
+            "vanity / floating cabinet side",
+            "vanity / cabinet back",
             0
           ],
           [
-            "vanity / floating carcass",
-            "vanity / stone slab",
+            "vanity / floating cabinet side",
+            "vanity / inset oak drawer",
             0
           ],
           [
-            "vanity / drawer front",
-            "vanity / handle shadow",
+            "vanity / floating cabinet side",
+            "vanity / inset oak drawer.001",
             0
           ],
           [
-            "vanity / drawer front.001",
-            "vanity / handle shadow.001",
+            "vanity / floating cabinet side",
+            "vanity / continuous inset basin deck",
             0
           ],
           [
-            "vanity / stone slab",
-            "vanity / porcelain vessel",
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet bottom",
             0
           ],
           [
-            "vanity / stone slab",
-            "vanity / curved tap",
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet back",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / inset oak drawer",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / inset oak drawer.001",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / continuous inset basin deck",
+            0
+          ],
+          [
+            "vanity / cabinet bottom",
+            "vanity / cabinet back",
+            0
+          ],
+          [
+            "vanity / cabinet bottom",
+            "vanity / inset oak drawer",
+            0
+          ],
+          [
+            "vanity / cabinet back",
+            "vanity / hidden wall bracket",
+            0
+          ],
+          [
+            "vanity / cabinet back",
+            "vanity / hidden wall bracket.001",
+            0
+          ],
+          [
+            "vanity / inset oak drawer",
+            "vanity / integrated finger pull",
+            0
+          ],
+          [
+            "vanity / inset oak drawer.001",
+            "vanity / integrated finger pull.001",
+            0
+          ],
+          [
+            "vanity / mirror slim metal backing",
+            "vanity / mirror illuminated surround",
+            0
+          ],
+          [
+            "vanity / mirror slim metal backing",
+            "vanity / rounded mirror face",
+            0
+          ],
+          [
+            "vanity / hidden wall bracket",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / hidden wall bracket.001",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / basin drain cap",
+            "vanity / continuous inset basin deck",
+            0
+          ],
+          [
+            "vanity / mixer wall rosette",
+            "vanity / wall mixer spout",
+            0
+          ],
+          [
+            "vanity / mixer wall rosette",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / mixer lever rosette",
+            "vanity / slim mixer lever",
+            0
+          ],
+          [
+            "vanity / mixer lever rosette",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / continuous inset basin deck",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / vertical tile backsplash",
+            "vanity / mirror illuminated surround",
             0
           ]
         ]
       },
       "mobile": {
-        "parts": 8,
+        "parts": 20,
         "components": [
           [
-            "vanity / floating carcass",
-            "vanity / drawer front",
-            "vanity / drawer front.001",
-            "vanity / handle shadow",
-            "vanity / handle shadow.001",
-            "vanity / stone slab",
-            "vanity / porcelain vessel",
-            "vanity / curved tap"
+            "vanity / floating cabinet side",
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet bottom",
+            "vanity / cabinet back",
+            "vanity / inset oak drawer",
+            "vanity / inset oak drawer.001",
+            "vanity / integrated finger pull",
+            "vanity / integrated finger pull.001",
+            "vanity / mirror slim metal backing",
+            "vanity / hidden wall bracket",
+            "vanity / hidden wall bracket.001",
+            "vanity / basin drain cap",
+            "vanity / mixer wall rosette",
+            "vanity / wall mixer spout",
+            "vanity / mixer lever rosette",
+            "vanity / slim mixer lever",
+            "vanity / continuous inset basin deck",
+            "vanity / vertical tile backsplash",
+            "vanity / mirror illuminated surround",
+            "vanity / rounded mirror face"
           ]
+        ],
+        "wallSupports": [],
+        "separated": [],
+        "contacts": [
+          [
+            "vanity / floating cabinet side",
+            "vanity / cabinet bottom",
+            0
+          ],
+          [
+            "vanity / floating cabinet side",
+            "vanity / cabinet back",
+            0
+          ],
+          [
+            "vanity / floating cabinet side",
+            "vanity / inset oak drawer",
+            0
+          ],
+          [
+            "vanity / floating cabinet side",
+            "vanity / inset oak drawer.001",
+            0
+          ],
+          [
+            "vanity / floating cabinet side",
+            "vanity / continuous inset basin deck",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet bottom",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / cabinet back",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / inset oak drawer",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / inset oak drawer.001",
+            0
+          ],
+          [
+            "vanity / floating cabinet side.001",
+            "vanity / continuous inset basin deck",
+            0
+          ],
+          [
+            "vanity / cabinet bottom",
+            "vanity / cabinet back",
+            0
+          ],
+          [
+            "vanity / cabinet bottom",
+            "vanity / inset oak drawer",
+            0
+          ],
+          [
+            "vanity / cabinet back",
+            "vanity / hidden wall bracket",
+            0
+          ],
+          [
+            "vanity / cabinet back",
+            "vanity / hidden wall bracket.001",
+            0
+          ],
+          [
+            "vanity / inset oak drawer",
+            "vanity / integrated finger pull",
+            0
+          ],
+          [
+            "vanity / inset oak drawer.001",
+            "vanity / integrated finger pull.001",
+            0
+          ],
+          [
+            "vanity / mirror slim metal backing",
+            "vanity / mirror illuminated surround",
+            0
+          ],
+          [
+            "vanity / mirror slim metal backing",
+            "vanity / rounded mirror face",
+            0.1298
+          ],
+          [
+            "vanity / hidden wall bracket",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / hidden wall bracket.001",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / basin drain cap",
+            "vanity / continuous inset basin deck",
+            0
+          ],
+          [
+            "vanity / mixer wall rosette",
+            "vanity / wall mixer spout",
+            0
+          ],
+          [
+            "vanity / mixer wall rosette",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / mixer lever rosette",
+            "vanity / slim mixer lever",
+            0
+          ],
+          [
+            "vanity / mixer lever rosette",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / continuous inset basin deck",
+            "vanity / vertical tile backsplash",
+            0
+          ],
+          [
+            "vanity / vertical tile backsplash",
+            "vanity / mirror illuminated surround",
+            0
+          ]
+        ]
+      }
+    },
+    "toilet": {
+      "high": {
+        "parts": 16,
+        "components": [
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / soft close oval seat",
+            "toilet / ceramic rear bridge",
+            "toilet / one piece cistern",
+            "toilet / cistern top lid",
+            "toilet / hinge pivot cover",
+            "toilet / hinge pivot cover.001",
+            "toilet / raised oval lid",
+            "toilet / seat support bumper",
+            "toilet / seat support bumper.001",
+            "toilet / seat support bumper.002",
+            "toilet / seat support bumper.003",
+            "toilet / dual flush button",
+            "toilet / soft close hinge base",
+            "toilet / soft close hinge base.001",
+            "toilet / dual flush split"
+          ]
+        ],
+        "wallSupports": [],
+        "separated": [],
+        "contacts": [
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / ceramic rear bridge",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.001",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.002",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.003",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.001",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.002",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.003",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / one piece cistern",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / soft close hinge base",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / soft close hinge base.001",
+            0
+          ],
+          [
+            "toilet / one piece cistern",
+            "toilet / cistern top lid",
+            0
+          ],
+          [
+            "toilet / one piece cistern",
+            "toilet / raised oval lid",
+            0
+          ],
+          [
+            "toilet / cistern top lid",
+            "toilet / dual flush button",
+            0
+          ],
+          [
+            "toilet / hinge pivot cover",
+            "toilet / soft close hinge base",
+            0
+          ],
+          [
+            "toilet / hinge pivot cover.001",
+            "toilet / soft close hinge base.001",
+            0
+          ],
+          [
+            "toilet / dual flush button",
+            "toilet / dual flush split",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 16,
+        "components": [
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / soft close oval seat",
+            "toilet / ceramic rear bridge",
+            "toilet / one piece cistern",
+            "toilet / cistern top lid",
+            "toilet / hinge pivot cover",
+            "toilet / hinge pivot cover.001",
+            "toilet / raised oval lid",
+            "toilet / seat support bumper",
+            "toilet / seat support bumper.001",
+            "toilet / seat support bumper.002",
+            "toilet / seat support bumper.003",
+            "toilet / dual flush button",
+            "toilet / soft close hinge base",
+            "toilet / soft close hinge base.001",
+            "toilet / dual flush split"
+          ]
+        ],
+        "wallSupports": [],
+        "separated": [],
+        "contacts": [
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / ceramic rear bridge",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.001",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.002",
+            0
+          ],
+          [
+            "toilet / one piece ceramic bowl",
+            "toilet / seat support bumper.003",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.001",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.002",
+            0
+          ],
+          [
+            "toilet / soft close oval seat",
+            "toilet / seat support bumper.003",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / one piece cistern",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / soft close hinge base",
+            0
+          ],
+          [
+            "toilet / ceramic rear bridge",
+            "toilet / soft close hinge base.001",
+            0
+          ],
+          [
+            "toilet / one piece cistern",
+            "toilet / cistern top lid",
+            0
+          ],
+          [
+            "toilet / one piece cistern",
+            "toilet / raised oval lid",
+            0
+          ],
+          [
+            "toilet / cistern top lid",
+            "toilet / dual flush button",
+            0
+          ],
+          [
+            "toilet / hinge pivot cover",
+            "toilet / soft close hinge base",
+            0
+          ],
+          [
+            "toilet / hinge pivot cover.001",
+            "toilet / soft close hinge base.001",
+            0
+          ],
+          [
+            "toilet / dual flush button",
+            "toilet / dual flush split",
+            0
+          ]
+        ]
+      }
+    },
+    "shower": {
+      "high": {
+        "parts": 64,
+        "components": [
+          [
+            "shower / low stone shower tray",
+            "shower / tray side upstand",
+            "shower / tray side upstand.001",
+            "shower / tray end upstand",
+            "shower / tray end upstand.001",
+            "shower / linear drain recessed bed",
+            "shower / 18 mm enclosure upright",
+            "shower / 18 mm enclosure upright.001",
+            "shower / 18 mm enclosure upright.002",
+            "shower / side upper rail",
+            "shower / front upper rail",
+            "shower / side lower channel",
+            "shower / door magnetic seal",
+            "shower / drain trim end",
+            "shower / drain trim end.001",
+            "shower / drain trim side",
+            "shower / drain trim side.001",
+            "shower / drain grate bridge",
+            "shower / drain grate bridge.001",
+            "shower / drain grate bridge.002",
+            "shower / drain grate bridge.003",
+            "shower / drain grate bridge.004",
+            "shower / drain grate bridge.005",
+            "shower / drain grate bridge.006",
+            "shower / drain grate bridge.007",
+            "shower / drain grate bridge.008",
+            "shower / glass door hinge",
+            "shower / hinge axle",
+            "shower / glass door hinge.001",
+            "shower / hinge axle.001",
+            "shower / vertical door pull",
+            "shower / door pull mounting foot",
+            "shower / door pull mounting foot.001",
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.002",
+            "shower / door pull mounting foot.003",
+            "shower / 8 mm fixed side glass",
+            "shower / 8 mm shower door"
+          ],
+          [
+            "shower / rain head silicone nozzle",
+            "shower / rain head silicone nozzle.001",
+            "shower / rain head silicone nozzle.002",
+            "shower / rain head silicone nozzle.003",
+            "shower / rain head silicone nozzle.004",
+            "shower / rain head silicone nozzle.005",
+            "shower / rain head silicone nozzle.006",
+            "shower / rain head silicone nozzle.007",
+            "shower / rain head silicone nozzle.008",
+            "shower / shower pipe wall rosette",
+            "shower / shower pipe wall rosette.001",
+            "shower / rain shower riser",
+            "shower / overhead rain shower",
+            "shower / thermostatic mixer body",
+            "shower / mixer end control",
+            "shower / mixer end control.001",
+            "shower / hand shower hose",
+            "shower / hand shower handle",
+            "shower / hand shower head",
+            "shower / hand shower wall clip"
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shelf mounting bracket",
+            "shower / bottle pump",
+            "shower / bottle pump.001",
+            "shower / shower bottle",
+            "shower / shower bottle.001"
+          ]
+        ],
+        "wallSupports": [
+          {
+            "part": "shower / shelf mounting bracket",
+            "component": 63,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / shower pipe wall rosette",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / shower pipe wall rosette.001",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / hand shower wall clip",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          }
         ],
         "separated": [],
         "contacts": [
           [
-            "vanity / floating carcass",
-            "vanity / drawer front",
+            "shower / low stone shower tray",
+            "shower / tray side upstand",
             0
           ],
           [
-            "vanity / floating carcass",
-            "vanity / drawer front.001",
+            "shower / low stone shower tray",
+            "shower / tray side upstand.001",
             0
           ],
           [
-            "vanity / floating carcass",
-            "vanity / stone slab",
+            "shower / low stone shower tray",
+            "shower / tray end upstand",
             0
           ],
           [
-            "vanity / drawer front",
-            "vanity / handle shadow",
+            "shower / low stone shower tray",
+            "shower / tray end upstand.001",
             0
           ],
           [
-            "vanity / drawer front.001",
-            "vanity / handle shadow.001",
+            "shower / low stone shower tray",
+            "shower / linear drain recessed bed",
             0
           ],
           [
-            "vanity / stone slab",
-            "vanity / porcelain vessel",
+            "shower / tray side upstand",
+            "shower / tray end upstand",
             0
           ],
           [
-            "vanity / stone slab",
-            "vanity / curved tap",
+            "shower / tray side upstand",
+            "shower / tray end upstand.001",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / 18 mm enclosure upright",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / 18 mm enclosure upright.001",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / tray end upstand",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / tray end upstand.001",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / 18 mm enclosure upright.002",
+            0
+          ],
+          [
+            "shower / tray end upstand",
+            "shower / 18 mm enclosure upright",
+            0.517
+          ],
+          [
+            "shower / tray end upstand.001",
+            "shower / 18 mm enclosure upright.001",
+            0.517
+          ],
+          [
+            "shower / tray end upstand.001",
+            "shower / 18 mm enclosure upright.002",
+            0.517
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim end",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim end.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / side upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / side upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / front upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / glass door hinge",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / hinge axle",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / glass door hinge.001",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / hinge axle.001",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / front upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / door magnetic seal",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / side upper rail",
+            "shower / front upper rail",
+            0
+          ],
+          [
+            "shower / door magnetic seal",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.001",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.002",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.003",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.004",
+            "shower / rain shower riser",
+            0.0
+          ],
+          [
+            "shower / rain head silicone nozzle.004",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.005",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.006",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.007",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.008",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shelf mounting bracket",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shower bottle",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shower bottle.001",
+            0
+          ],
+          [
+            "shower / bottle pump",
+            "shower / shower bottle",
+            0
+          ],
+          [
+            "shower / bottle pump.001",
+            "shower / shower bottle.001",
+            0
+          ],
+          [
+            "shower / drain trim end",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / drain trim end",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / drain trim end.001",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / drain trim end.001",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / hinge axle",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / hinge axle",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / hinge axle",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / hinge axle.001",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / hinge axle.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / hinge axle.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / vertical door pull",
+            "shower / door pull mounting foot",
+            0
+          ],
+          [
+            "shower / vertical door pull",
+            "shower / door pull mounting foot.001",
+            0
+          ],
+          [
+            "shower / door pull mounting foot",
+            "shower / door pull mounting foot.002",
+            0
+          ],
+          [
+            "shower / door pull mounting foot",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.001",
+            "shower / door pull mounting foot.003",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.002",
+            0
+          ],
+          [
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.003",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.002",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.003",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette",
+            "shower / rain shower riser",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette",
+            "shower / thermostatic mixer body",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette.001",
+            "shower / rain shower riser",
+            0
+          ],
+          [
+            "shower / rain shower riser",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain shower riser",
+            "shower / thermostatic mixer body",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / mixer end control",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / mixer end control.001",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / hand shower hose",
+            0
+          ],
+          [
+            "shower / hand shower hose",
+            "shower / hand shower handle",
+            0
+          ],
+          [
+            "shower / hand shower hose",
+            "shower / hand shower wall clip",
+            0
+          ],
+          [
+            "shower / hand shower handle",
+            "shower / hand shower head",
+            0
+          ],
+          [
+            "shower / hand shower handle",
+            "shower / hand shower wall clip",
+            0
+          ]
+        ]
+      },
+      "mobile": {
+        "parts": 64,
+        "components": [
+          [
+            "shower / low stone shower tray",
+            "shower / tray side upstand",
+            "shower / tray side upstand.001",
+            "shower / tray end upstand",
+            "shower / tray end upstand.001",
+            "shower / linear drain recessed bed",
+            "shower / 18 mm enclosure upright",
+            "shower / 18 mm enclosure upright.001",
+            "shower / 18 mm enclosure upright.002",
+            "shower / side upper rail",
+            "shower / front upper rail",
+            "shower / side lower channel",
+            "shower / door magnetic seal",
+            "shower / drain trim end",
+            "shower / drain trim end.001",
+            "shower / drain trim side",
+            "shower / drain trim side.001",
+            "shower / drain grate bridge",
+            "shower / drain grate bridge.001",
+            "shower / drain grate bridge.002",
+            "shower / drain grate bridge.003",
+            "shower / drain grate bridge.004",
+            "shower / drain grate bridge.005",
+            "shower / drain grate bridge.006",
+            "shower / drain grate bridge.007",
+            "shower / drain grate bridge.008",
+            "shower / glass door hinge",
+            "shower / hinge axle",
+            "shower / glass door hinge.001",
+            "shower / hinge axle.001",
+            "shower / vertical door pull",
+            "shower / door pull mounting foot",
+            "shower / door pull mounting foot.001",
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.002",
+            "shower / door pull mounting foot.003",
+            "shower / 8 mm fixed side glass",
+            "shower / 8 mm shower door"
+          ],
+          [
+            "shower / rain head silicone nozzle",
+            "shower / rain head silicone nozzle.001",
+            "shower / rain head silicone nozzle.002",
+            "shower / rain head silicone nozzle.003",
+            "shower / rain head silicone nozzle.004",
+            "shower / rain head silicone nozzle.005",
+            "shower / rain head silicone nozzle.006",
+            "shower / rain head silicone nozzle.007",
+            "shower / rain head silicone nozzle.008",
+            "shower / shower pipe wall rosette",
+            "shower / shower pipe wall rosette.001",
+            "shower / rain shower riser",
+            "shower / overhead rain shower",
+            "shower / thermostatic mixer body",
+            "shower / mixer end control",
+            "shower / mixer end control.001",
+            "shower / hand shower hose",
+            "shower / hand shower handle",
+            "shower / hand shower head",
+            "shower / hand shower wall clip"
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shelf mounting bracket",
+            "shower / bottle pump",
+            "shower / bottle pump.001",
+            "shower / shower bottle",
+            "shower / shower bottle.001"
+          ]
+        ],
+        "wallSupports": [
+          {
+            "part": "shower / shelf mounting bracket",
+            "component": 63,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / shower pipe wall rosette",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / shower pipe wall rosette.001",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          },
+          {
+            "part": "shower / hand shower wall clip",
+            "component": 58,
+            "gapMm": 0.0,
+            "plane": {
+              "axis": 2,
+              "side": "min",
+              "plane": -0.4
+            }
+          }
+        ],
+        "separated": [],
+        "contacts": [
+          [
+            "shower / low stone shower tray",
+            "shower / tray side upstand",
+            0
+          ],
+          [
+            "shower / low stone shower tray",
+            "shower / tray side upstand.001",
+            0
+          ],
+          [
+            "shower / low stone shower tray",
+            "shower / tray end upstand",
+            0
+          ],
+          [
+            "shower / low stone shower tray",
+            "shower / tray end upstand.001",
+            0
+          ],
+          [
+            "shower / low stone shower tray",
+            "shower / linear drain recessed bed",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / tray end upstand",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / tray end upstand.001",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / 18 mm enclosure upright",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / 18 mm enclosure upright.001",
+            0
+          ],
+          [
+            "shower / tray side upstand",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / tray end upstand",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / tray end upstand.001",
+            0
+          ],
+          [
+            "shower / tray side upstand.001",
+            "shower / 18 mm enclosure upright.002",
+            0
+          ],
+          [
+            "shower / tray end upstand",
+            "shower / 18 mm enclosure upright",
+            0.517
+          ],
+          [
+            "shower / tray end upstand.001",
+            "shower / 18 mm enclosure upright.001",
+            0.517
+          ],
+          [
+            "shower / tray end upstand.001",
+            "shower / 18 mm enclosure upright.002",
+            0.517
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim end",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim end.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / linear drain recessed bed",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / side upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / side upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / front upper rail",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / side lower channel",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / glass door hinge",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / hinge axle",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / glass door hinge.001",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / hinge axle.001",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / front upper rail",
+            0.0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / door magnetic seal",
+            0
+          ],
+          [
+            "shower / 18 mm enclosure upright.002",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / side upper rail",
+            "shower / front upper rail",
+            0
+          ],
+          [
+            "shower / door magnetic seal",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.001",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.002",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.003",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.004",
+            "shower / rain shower riser",
+            0.0
+          ],
+          [
+            "shower / rain head silicone nozzle.004",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.005",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.006",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.007",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain head silicone nozzle.008",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shelf mounting bracket",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shower bottle",
+            0
+          ],
+          [
+            "shower / wall soap shelf",
+            "shower / shower bottle.001",
+            0
+          ],
+          [
+            "shower / bottle pump",
+            "shower / shower bottle",
+            0
+          ],
+          [
+            "shower / bottle pump.001",
+            "shower / shower bottle.001",
+            0
+          ],
+          [
+            "shower / drain trim end",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / drain trim end",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / drain trim end.001",
+            "shower / drain trim side",
+            0
+          ],
+          [
+            "shower / drain trim end.001",
+            "shower / drain trim side.001",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / drain trim side",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.001",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.002",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.003",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.004",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.005",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.006",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.007",
+            0
+          ],
+          [
+            "shower / drain trim side.001",
+            "shower / drain grate bridge.008",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / hinge axle",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / glass door hinge",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / hinge axle",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / hinge axle",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / hinge axle.001",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / glass door hinge.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / hinge axle.001",
+            "shower / 8 mm fixed side glass",
+            0
+          ],
+          [
+            "shower / hinge axle.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / vertical door pull",
+            "shower / door pull mounting foot",
+            0
+          ],
+          [
+            "shower / vertical door pull",
+            "shower / door pull mounting foot.001",
+            0
+          ],
+          [
+            "shower / door pull mounting foot",
+            "shower / door pull mounting foot.002",
+            0
+          ],
+          [
+            "shower / door pull mounting foot",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.001",
+            "shower / door pull mounting foot.003",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.001",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.002",
+            0
+          ],
+          [
+            "shower / vertical door pull.001",
+            "shower / door pull mounting foot.003",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.002",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / door pull mounting foot.003",
+            "shower / 8 mm shower door",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette",
+            "shower / rain shower riser",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette",
+            "shower / thermostatic mixer body",
+            0
+          ],
+          [
+            "shower / shower pipe wall rosette.001",
+            "shower / rain shower riser",
+            0
+          ],
+          [
+            "shower / rain shower riser",
+            "shower / overhead rain shower",
+            0
+          ],
+          [
+            "shower / rain shower riser",
+            "shower / thermostatic mixer body",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / mixer end control",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / mixer end control.001",
+            0
+          ],
+          [
+            "shower / thermostatic mixer body",
+            "shower / hand shower hose",
+            0
+          ],
+          [
+            "shower / hand shower hose",
+            "shower / hand shower handle",
+            0
+          ],
+          [
+            "shower / hand shower hose",
+            "shower / hand shower wall clip",
+            0
+          ],
+          [
+            "shower / hand shower handle",
+            "shower / hand shower head",
+            0
+          ],
+          [
+            "shower / hand shower handle",
+            "shower / hand shower wall clip",
             0
           ]
         ]
@@ -4632,6 +6646,7 @@
             "laundry-stack / dryer display indicator.002"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -5033,6 +7048,7 @@
             "laundry-stack / dryer display indicator.002"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -5414,6 +7430,7 @@
             "balcony-vanity / under cabinet task strip"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [
@@ -5613,6 +7630,7 @@
             "balcony-vanity / under cabinet task strip"
           ]
         ],
+        "wallSupports": [],
         "separated": [],
         "contacts": [
           [

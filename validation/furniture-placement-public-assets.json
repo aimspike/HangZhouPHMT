@@ -1,0 +1,141 @@
+{
+  "url": "https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/",
+  "files": [
+    {
+      "file": "furniture-placement.html",
+      "sha256": "a3a30d9391c449b75116f25d8adbbffec1fc09b45ed9113320f65fc25f5397e1",
+      "bytes": 5971
+    },
+    {
+      "file": "furniture-placement/after-mobile-night-nightstand.webp",
+      "sha256": "77d03a86dae195b68cd1da7c49dacdc98fabd17dcb0b73c2727d49523b4816c8",
+      "bytes": 100386
+    },
+    {
+      "file": "furniture-placement/after-mobile-night-tv.webp",
+      "sha256": "fbaf1d282824e3866cf93a0bc476ba911d49c996260e41f2ca345dc13a9ae2de",
+      "bytes": 101542
+    },
+    {
+      "file": "furniture-placement/after-mobile-night-wardrobe.webp",
+      "sha256": "5784e3f3a218a69c963297e070a65b33014abb22e1923517b72370e43ae87be7",
+      "bytes": 32836
+    },
+    {
+      "file": "furniture-placement/after-mobile-noon-nightstand.webp",
+      "sha256": "b411a5b2c2226d22e5d5e6d7db647b0393e10c0377bbcddc2f48a161cbcc54f2",
+      "bytes": 104504
+    },
+    {
+      "file": "furniture-placement/after-mobile-noon-tv.webp",
+      "sha256": "9cf18e7fa68b52c47e7d2bae0a9285fb39222b8d115609094a32da7c1a3d7a5e",
+      "bytes": 98346
+    },
+    {
+      "file": "furniture-placement/after-mobile-noon-wardrobe.webp",
+      "sha256": "4a771fc28c73ef944064b0b8f660e8798b57a5c417f70c90001a408fec15e0f7",
+      "bytes": 31704
+    },
+    {
+      "file": "furniture-placement/after-pc-night-nightstand.webp",
+      "sha256": "f0bfa7e706db319cbd6872adaedbc70e3372aa27628460f8fd960dbe7f46e4be",
+      "bytes": 332746
+    },
+    {
+      "file": "furniture-placement/after-pc-night-tv.webp",
+      "sha256": "1fa4e11dc46eaccfce0b5cceb82b262086b505d810bd938b71669eca5f4b112d",
+      "bytes": 351984
+    },
+    {
+      "file": "furniture-placement/after-pc-night-wardrobe.webp",
+      "sha256": "030ebe3363add0aec3dcd7faef02e059b7b9ac97da45af48ed90ebec6319591d",
+      "bytes": 177308
+    },
+    {
+      "file": "furniture-placement/after-pc-noon-nightstand.webp",
+      "sha256": "4cf2123dd5a55316ca8989a3f41830ee63155e2fe894ff79ba7f4b22105c1f65",
+      "bytes": 336688
+    },
+    {
+      "file": "furniture-placement/after-pc-noon-tv.webp",
+      "sha256": "ca56b9f38173816bf3ebfe16306e640ec214f0f96cebbd8d10b15cf8ee315373",
+      "bytes": 354162
+    },
+    {
+      "file": "furniture-placement/after-pc-noon-wardrobe.webp",
+      "sha256": "7385dc7ca9e65a15297e7bb021e484b306069b3a045a2526094d6a0ef2e3563b",
+      "bytes": 164244
+    },
+    {
+      "file": "furniture-placement/before-mobile-night-nightstand.webp",
+      "sha256": "30085e97b5ddd594091ef73429b955fb08a73a5907d9b6fc307564f46d33a480",
+      "bytes": 98582
+    },
+    {
+      "file": "furniture-placement/before-mobile-night-tv.webp",
+      "sha256": "3a162b4c15cbb09408fd279d3c8cb07c68faf7a6680d9f08e24cb9e8c74666fd",
+      "bytes": 94364
+    },
+    {
+      "file": "furniture-placement/before-mobile-night-wardrobe.webp",
+      "sha256": "403b6c8daed2ef7657f3f70d089b1e723d23910d7478e20b6290f137264ceafc",
+      "bytes": 32498
+    },
+    {
+      "file": "furniture-placement/before-mobile-noon-nightstand.webp",
+      "sha256": "a241fcdb61ce1771bf69cf3539ae68a0854910a157e75edace4fcb6302b4662e",
+      "bytes": 102804
+    },
+    {
+      "file": "furniture-placement/before-mobile-noon-tv.webp",
+      "sha256": "53325ea63c9202e763860e40326666e35f9bdbc516cf3f7e77684419837e431f",
+      "bytes": 90526
+    },
+    {
+      "file": "furniture-placement/before-mobile-noon-wardrobe.webp",
+      "sha256": "2225d1bc8b2de5301fb2aae8e21e5c5f47f7ad9ba92f28c1acef726f8e42195e",
+      "bytes": 31316
+    },
+    {
+      "file": "furniture-placement/before-pc-night-nightstand.webp",
+      "sha256": "4edcad19531954ddf8045df3c4e5782dfc41e4564a03c446f784cdb7dbe63a19",
+      "bytes": 332820
+    },
+    {
+      "file": "furniture-placement/before-pc-night-tv.webp",
+      "sha256": "24c05d6c9a7caed7dd914c95c5152aac1e93ab6a4960f62527d6f9023f3fbb47",
+      "bytes": 345404
+    },
+    {
+      "file": "furniture-placement/before-pc-night-wardrobe.webp",
+      "sha256": "985589197ea70b983f6e89ed304e86b4213d94b75b285c95bb4b7b59188410b8",
+      "bytes": 177316
+    },
+    {
+      "file": "furniture-placement/before-pc-noon-nightstand.webp",
+      "sha256": "224915a70919d77044a7d99ffcb8b178b760aa608f617edbccf29e7bcf5659d9",
+      "bytes": 336764
+    },
+    {
+      "file": "furniture-placement/before-pc-noon-tv.webp",
+      "sha256": "c4ff0e801ddc98bd41b6f7af79fb850220e6068468beab942646e804241ac540",
+      "bytes": 342258
+    },
+    {
+      "file": "furniture-placement/before-pc-noon-wardrobe.webp",
+      "sha256": "11ba1b0d890f3f6f55990216e67ab124666855a1f671ab9ba0d9e2a4d4f033bf",
+      "bytes": 164778
+    },
+    {
+      "file": "furniture-placement/captures.json",
+      "sha256": "8355883a7e4207a21b7f63fa72672eb75f09e6db6f9040bbacf51336f25afa20",
+      "bytes": 296999
+    },
+    {
+      "file": "furniture-placement/comparison.jpg",
+      "sha256": "417c59701a459ba30f25ce351c4f6285f64cda1034e7121553024d067f241274",
+      "bytes": 733277
+    }
+  ],
+  "result": "passed"
+}

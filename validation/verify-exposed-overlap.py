@@ -3,7 +3,7 @@
 The audit retains authored part ranges through runtime material merging. Normal
 rays find same-facing near-coplanar surface candidates. It samples triangle
 centres, not every possible self-intersection. Authored solid ranges identify
-the 18 rebuilt asset types; procedural pieces with a shared label and hidden
+the rebuilt asset types; procedural pieces with a shared label and hidden
 structural contact are not an exhaustive intersection audit. Exact closure is
 checked elsewhere.
 """
@@ -15,7 +15,8 @@ from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1]
 report={'scope':__doc__,'toleranceMm':.4,'cases':{},'result':'pending'}
 for stage in ['before','after']:
-    scene=json.loads(gzip.decompress((ROOT/f'work/exposure-overlap/{stage}-audit.json.gz').read_bytes()))
+    source=Path(os.environ.get('AUDIT_'+stage.upper(),str(ROOT/f'work/exposure-overlap/{stage}-audit.json.gz')))
+    scene=json.loads(gzip.decompress(source.read_bytes()))
     report['cases'][stage]={}
     for lod,objects in scene['layouts'].items():
         vertices=[];triangles=[];labels=[];decor=[];transparent=[];partBounds={}
@@ -51,4 +52,4 @@ for lod in ['high','mobile']:
     assert len(report['cases']['before'][lod]['nearCoplanarPairs'])>=10
     assert report['cases']['before'][lod]['kitchenCounterJoinMm']< -20
 report['result']='passed'
-(ROOT/'validation/exposed-overlap.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+Path(os.environ.get('OVERLAP_REPORT',str(ROOT/'validation/exposed-overlap.json'))).write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')

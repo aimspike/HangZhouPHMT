@@ -128,3 +128,5 @@
 - 2026-11-26 · T01追加：根据“仍过曝、部分模型穿插/Z-fighting”反馈，实际校正灯光基准能量50%和室内曝光80%，保存倍率保持；修正衣柜、洗烘柜、厨房、餐椅、书桌及门框共面接头，厨房北台面单实体重构并消除30mm交叠。新增[过曝与穿插对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/exposure-overlap.html)、144张正常/诊断源图、横移与几何抽样；T01继续进行中，真机持续性能待验收。
 
 - 2026-11-26 · T01家具位置：电视柜默认贴北墙，整组避让可选书房外挂推拉门；次卧衣柜背板/右侧板改为平直接触面；主卧床头柜旋转90°朝东。更新固定场景烘焙与[三处实际网页前后对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/furniture-placement.html)。整体视觉和真机验收待完成，T01保持进行中。
+
+- 2026-11-26 · T01卫浴与厨房：按用户选择重做窄边透明玻璃淋浴房，并重做马桶与悬浮洗手台；厨房水槽、开孔与出水口统一中心，盆沿与右侧台面嵌平，修正规则曲面、法线与金属反射。保留原墙线/门窗和前述家具布局，更新固定烘焙与[卫浴/水槽实际画布对比](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/bathroom-rebuild.html)。T01保持进行中，真机与整体目视验收待完成。

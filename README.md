@@ -20,6 +20,8 @@ V16.1 家装 A 重建及接缝修复已合入 `main`，同时保留阳台顶板�
 
 家具位置调整：[电视柜贴墙、次卧衣柜两面贴墙与主卧床头柜转向](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/furniture-placement.html)。电视柜默认贴北墙，书房切外挂推拉门时连同电视和物品前移13厘米留出门扇空间，切回平开门后恢复贴墙；次卧衣柜背板、右侧板使用平直接触面，主卧床头柜旋转90°朝东。
 
+新增卫浴与水槽调整：[窄边玻璃淋浴房、洗手台、马桶及厨房水槽嵌平对齐](https://aimspike.github.io/HangZhouPHMT/preview/main/quality-report/bathroom-rebuild.html)。补齐淋浴围合与五金，台盆改为悬浮木柜和一体内凹盆；厨房盆口与右侧台面齐平，龙头出水口对准盆中心。
+
 ## 文档分工与任务入口
 
 | 文档 | 用途 |
