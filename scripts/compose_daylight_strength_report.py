@@ -49,8 +49,8 @@ for s in flash:
     peak=max((i for i,r in enumerate(flash[s]) if r['static']['enabled']),key=lambda i:flash[s][i]['mean'])
     for i in sorted(set([0,max(0,peak-1),peak,peak+1,24,31])):
         shutil.copyfile(ROOT/f'work/daylight-strength/flash-{s}/{i:03}.webp',OUT/f'flash-{s}-{i:03}.webp')
-(OUT/'flash-frames.json').write_text(json.dumps(flash_meta,indent=2)+'\n')
-(OUT/'captures.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(OUT/'flash-frames.json').write_text(json.dumps(flash_meta,indent=2)+'\n',newline='\n')
+(OUT/'captures.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 
 html='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>白天天光、固定曝光与关灯瞬态修复</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f5f2eb;color:#253d31;font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1440px;margin:auto;padding:28px 20px}h1{font-size:clamp(25px,4vw,40px);line-height:1.3}h2{margin-top:40px}p{max-width:1000px}a{color:#1f6446}nav,.controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}button{font:inherit;border:1px solid #c1cfc0;border-radius:8px;background:#fff;padding:7px 13px;color:inherit;cursor:pointer}button[aria-pressed=true]{background:#28583d;color:white}button:disabled{opacity:.35;cursor:default}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}figure{margin:0;background:white;border:1px solid #dce1d4;border-radius:10px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{padding:8px 12px}.sheet{margin:20px 0}.sheet img{max-height:1000px;object-fit:contain}table{border-collapse:collapse;width:100%;max-width:900px}td,th{border-bottom:1px solid #d1d7c9;padding:9px;text-align:left}.note{background:#e7eade;padding:14px 18px;border-radius:10px}.flash{display:grid;grid-template-columns:1fr 1fr;gap:12px}.flash img{width:100%;image-rendering:auto}.chart{width:100%;max-width:900px;background:#fff;border:1px solid #d1d7c9}footer{margin-top:35px;color:#586c5c}@media(max-width:650px){main{padding:20px 12px}.pair{grid-template-columns:1fr}button{padding:6px 10px}td,th{padding:6px;font-size:14px}}
@@ -78,7 +78,7 @@ for s,color,label in [('before','#b14f36','修复前'),('after','#2c6a49','修�
 for i in [0,8,16,24,31]:chart+=f'<text x="{45+i*26}" y="229" font-size="14">{i}帧</text>'
 for y in [0,5,10]:chart+=f'<text x="8" y="{210-y*16}" font-size="14">{y}</text>'
 html=html.replace('NAMES',json.dumps(NAMES,ensure_ascii=False)).replace('TIMES',json.dumps(TIMES,ensure_ascii=False)).replace('EXPOSURES',json.dumps(EXPOSURES)).replace('CHART',chart)
-(OUT.parent/'daylight-strength.html').write_text(html,encoding='utf-8')
+(OUT.parent/'daylight-strength.html').write_text(html,encoding='utf-8',newline='\n')
 manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.iterdir() if p.is_file() and p.name!='manifest.json'}
-(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',newline='\n')
 print('Generated daylight / exposure report:',len(manifest),'resources')

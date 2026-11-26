@@ -143,7 +143,7 @@
   "calibrated-pc-noon-on-living.webp": "fb29c07ac43b3f8dbb741a4a0a817b1fd682cb72e2a0df26b2eb42e184e41801",
   "calibrated-pc-noon-on-master.webp": "400e54b3db568eeb011bb5d8beb0c0efe6b9bb2bc4388bb9473cb7b9ac59a3f6",
   "calibrated-pc-noon-on-second.webp": "174af3f790d94a99386d74657959df4fa7b969ae40da9f8d0a2ffa1bacd3a51a",
-  "captures.json": "6091b8f2621102ba2680fe57d7cecd088e2a423d7cbc0241e2651e09022c8f3c",
+  "captures.json": "3cfdf588a7aac1bf1326b47391e0b413165fe8a5276819675c646d94e129c1a2",
   "exposure-before-dusk-off-bath.webp": "5a97bbc9dcf33bbdc8bc6c17e5e6667cd58cc2b107a263528ed4e2a504dbb6cb",
   "exposure-before-dusk-off-dining.webp": "cb394aa79de889373cd7228405fc2cadb491327aa976f8b5d9a7526a1aa8f96f",
   "exposure-before-dusk-off-living.webp": "7661d1fcb3b40b165b9af801dcada68e5c704b727c85c34e7300f619d6886624",
@@ -181,6 +181,6 @@
   "flash-before-014.webp": "1a556b94dcdf852ea5f373b17d9a37cdb206652114f79a71d6f956ac3efe3990",
   "flash-before-024.webp": "6848918189aab881a9ba66d5c5033246a532628299b440b5cc5f37e583cc1323",
   "flash-before-031.webp": "e4be9c098e7c341cfde7d31ced73ab5418970cf913ce17dd113b888e63a491a0",
-  "flash-frames.json": "5d588e588bacf1c421d860747cb22312b8f779c9365cce43dffc6ef9ad1e4328",
+  "flash-frames.json": "8685370b225c2cfc979cd537794367f359242bae89c6420a2489a8315ace443c",
   "noon-comparison.jpg": "eed9dbca43dc1997a3b5184f84c02a34f1579e98c5969faa4052e717acd36178"
 }
